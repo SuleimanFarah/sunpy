@@ -4,7 +4,7 @@ This page is meant as a temporary place to store coding standards developed by t
 In order to maintain a high-quality code, all code should be submitted as a pull requested so that the SunPy community can review the code and provide feedback. Pull requests can be accepted by the original author if more than 24 hours have passed.
 
 ## Variable Names
-In general the use of short cryptic variable names are discouraged.
+In general the use of short cryptic variable names is discouraged.
 
 ## Porting Code from IDL
 
