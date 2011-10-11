@@ -2,6 +2,7 @@
 * Transformations between any solar coordinate system.
 * GUI to download data files (VSO)
 * Implement API to download AIA JPG2000 files from Helioviewer.
+* Add automatic histogram equalization for displaying images.
 
 ## Milestone 0.3
 * Add HEK layer on top of images shown in SunPy GUI.
