@@ -26,9 +26,11 @@ from sunpy.net import vso
 # create a new VSOClient instance
 client = vso.VSOClient()
 
-result = client.query( vso.attrs.Time((2006, 9, 20), (2006, 9, 21,1)), vso.attrs.Instrument('eit') )
+result = client.query( vso.attrs.Time((2006, 9, 20), 
+  (2006, 9, 21,1)), vso.attrs.Instrument('eit') )
 result.no_records
-result = client.query( vso.attrs.Time((2006, 9, 20), (2006, 9, 21,1)), vso.attrs.Instrument('eit') | vso.attrs.Instrument('trace'))
+result = client.query( vso.attrs.Time((2006, 9, 20), 
+  (2006, 9, 21,1)), vso.attrs.Instrument('eit') | vso.attrs.Instrument('trace'))
 
 # now download the data
 res = client.get(result[:1]).wait()
