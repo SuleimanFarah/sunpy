@@ -8,3 +8,4 @@
 * wavelength range object, can easily convert to other units, accepted by everything
 * a goes object which can fetch GOES data and display it
 * net module to grab eve data (all the different levels)
+* add masks to maps (could be done by using numpy.ma module see [this](http://docs.scipy.org/doc/numpy/reference/maskedarray.generic.html#rationale)
