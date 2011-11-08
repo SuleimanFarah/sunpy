@@ -1,5 +1,5 @@
 ## Milestone 0.2
-* Transformations between any solar coordinate system.
+* Transformations between any solar coordinate system (solar wcs).
 * GUI to download data files (VSO)
 * Implement API to download AIA JPG2000 files from Helioviewer.
 * Add automatic histogram equalization for displaying images.
