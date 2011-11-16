@@ -6,4 +6,5 @@ Welcome to the SunPy wiki!
 * [Features Wishlist](http://github.com/sunpy/sunpy/wiki/Feature-Wishlist)
 
 # Latest News
-The latest docs are now hosted at [sunpy.readthedocs.org](http://sunpy.readthedocs.org/). This docs will update automatically as the sunpy git repo is updated.
+
+The latest docs are now hosted at [sunpy.readthedocs.org](http://sunpy.readthedocs.org/). This docs will update automatically as the sunpy git repo is updated (_16-Nov-2011_).
