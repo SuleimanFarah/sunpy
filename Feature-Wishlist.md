@@ -17,3 +17,13 @@
 * VSO etc. downloader
 * Replacement for MPL Tk Viewer
 
+## Lightcurve object
+* rebinning (count conserving)
+* power spectra
+* derivatives
+* peak finding
+* discrete average box car
+* convolution/smoothing
+
+## multiLightcurve object 
+* correlation/time lag
