@@ -2,9 +2,9 @@
 
 * <font color='#0066ff'><b>planning</b></font> - Plans for the component are currently being discussed. Little or no code has yet been written.
 * <font color='#798FFF'><b>alpha</b></font> - Initial (prototype) code written, but no final API or architecture has been chosen. The component is likely to change before being finalized, and should not be used in production code.
-* <font color='#00a800'><b>beta</b></font> - Development has been started and is finished or nearing completion for most parts of the component. Some further discussion may be required before agreeing on a final API.
-* <font color='#9FFF00'><b>release candidate</b></font> - Main pieces of the module or component have been developed, and the API has largely been decided. Although the interface and implementation may still evolve some and bugs may be worked out, the component is largely stable and ready for testing and use.
-* <font color='#00ff00'><b>stable</b></font> - Module work has largely been finished and the code has been extensively tested to ensure that no bugs are present. Although changes may still be required to the implementation or API in the future, this is not done lightly and a deprecation process should be used whereby the old method is supported for 6-12 months to enable users to update their code.
+* <font color='#9FFF00'><b>beta</b></font> - Development has been started and is finished or nearing completion for most parts of the component. Some further discussion may be required before agreeing on a final API.
+* <font color='#00ff00'><b>release candidate</b></font> - Main pieces of the module or component have been developed, and the API has largely been decided. Although the interface and implementation may still evolve some and bugs may be worked out, the component is largely stable and ready for testing and use.
+* <font color='#00a800'><b>stable</b></font> - Module work has largely been finished and the code has been extensively tested to ensure that no bugs are present. Although changes may still be required to the implementation or API in the future, this is not done lightly and a deprecation process should be used whereby the old method is supported for 6-12 months to enable users to update their code.
 
 # SunPy Modules/Components
 
@@ -19,7 +19,7 @@
 <tbody>
     <tr>
         <td>cm</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td></td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@
         <td></td>
     <tr>
         <td>map (BaseMap)</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td></td>
     </tr>
     <tr>
@@ -68,12 +68,12 @@
     </tr>
     <tr>
         <td>net.hek</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td><a href='https://groups.google.com/forum/?fromgroups#!topic/sunpy/CrOJ8JUBcXA'>[1]</a></td>
     </tr>
     <tr>
         <td>net.vso</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td></td>
     </tr>
     <tr>
@@ -93,7 +93,7 @@
     </tr>
     <tr>
         <td>sun</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td></td>
     </tr>
     <tr>
@@ -108,7 +108,7 @@
     </tr>
     <tr>
         <td>net.vso</td>
-        <td><font color='#00a800'><b>beta</b></font></td>
+        <td><font color='#9FFF00'><b>beta</b></font></td>
         <td></td>
     </tr>
     <tr>
