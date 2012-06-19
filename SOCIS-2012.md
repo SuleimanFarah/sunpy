@@ -6,5 +6,12 @@ Mentor: Craig DeForest?
 **Spectrum Object**: The SunPy project is built upon a number of object which hold data such as the map object (for image data), the lightcurve object (for time series data), and the spectrum object (for spectral data). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (usually describes with a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
 Mentor: Richard Schwartz?
 
-**Movies and Animation**: 
+**Light-curve object**:
 
+**Map cube object**: A map cube is a set of two dimensional maps ordered by a third quantity, such as time, Fourier frequency, or energy.  The map cube obj
+
+**Movies and Animation**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate map cube and light curve objects, and to animate composites of the 
+
+The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need in order
+
+**Solarsoft Capabilities**
