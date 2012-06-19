@@ -8,10 +8,10 @@ Mentor: Richard Schwartz?
 
 **Light-curve object**:
 
-**Map cube object**: A map cube is a set of two dimensional maps ordered by a third quantity, such as time, Fourier frequency, or energy.  The map cube obj
+**Map cube object**: A map cube is an ordered set of two dimensional maps.  The ordering can be by image observation time, Fourier frequency, or energy.  The map cube object must be general enough to handle ordering by numerical quantities other than time.  The map cube object can also provide the basis for animation.  For example, in a set of time-ordered maps, running through them in time-order will animate a movie.
 
-**Movies and Animation**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate map cube and light curve objects, and to animate composites of the 
+**Movies and Animation**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of the 
 
 The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need in order
 
-**Solarsoft Capabilities**
+**Solarsoft Capabilities**: some basic capabilities in Solarsoft should be reproduced in SunPy.  For example, implementing a function that describes the latitudinal dependence of the rotation of the Sun is essential.
