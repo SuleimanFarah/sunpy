@@ -25,7 +25,7 @@ SunPy will remove that barrier by developing open source, freely available, pack
 
 ## Software license(s)
 
-All packages within SunPy will be distributed under the [BSD 2-Clause](http://www.opensource.org/licenses/BSD-2-Clause) license.  If there is a need to use existing code distributed under an incompatable open-source license, that package will be made available as a separate download.
+All packages within SunPy will be distributed under the [BSD 2-Clause](http://www.opensource.org/licenses/BSD-2-Clause) license.  If there is a need to use existing code distributed under an incompatible open-source license, that package will be made available as a separate download.
 
 ## Project administrator
 
