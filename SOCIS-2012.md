@@ -91,3 +91,8 @@ Mentor: Richard Schwartz?
 
 **SunPy and High School**: develop a one day course that introduces students to solar data analysis using SunPy.  Will involve working on multiple parts of SunPy.  Knowledge of science required, as well as experience with Python programming.
 
+**Downloading SDO data cutouts**:
+
+**GOES object**:
+
+
