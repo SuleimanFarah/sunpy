@@ -37,7 +37,7 @@ dps.helio [AT] gmail.com
 
 ## SOCIS ideas page
 
-SOCIS 2011 ideas page
+[SOCIS ideas page](https://github.com/sunpy/sunpy/wiki/SOCIS-2012-Ideas-Page)
 
 ## Criteria for selecting mentors
 
