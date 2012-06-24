@@ -1,5 +1,8 @@
 # SOCIS 2012 Application
 
+website: http://sophia.estec.esa.int/socis2012/
+Application deadline: July 15th
+
 ## Project Name
 SunPy
 
