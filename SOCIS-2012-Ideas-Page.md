@@ -1,26 +1,25 @@
-**Image resampling algorithms**: Digital image data are now commonly used throughout the field of solar physics. Many steps of image data analysis, including image co-alignment, perspective reprojection of the solar surface, and compensation for solar rotation, require re-sampling original telescope image data under a distorting coordinate transformation. The most common image re-sampling methods introduce significant, unnecessary flaws into the data. More correct techniques have been known in the computer graphics community for some time but remain little known within the solar community and hence deserve further presentation. Furthermore, image distortion under specialized coordinate transformations is a powerful analysis technique with applications well beyond image resizing and perspective compensation. The goal of this project is to implement fast, efficient, and flux-conserving coordinate transformation algorithms in SunPy. See [this paper](http://adsabs.harvard.edu/abs/2004SoPh..219....3D) for reference. An implementation in perl already [exists](http://pdl.perl.org/PDLdocs/Transform.html).
+## Flux-conserving Image resampling algorithms
+Digital image data are now commonly used throughout the field of solar physics. Many steps of image data analysis, including image co-alignment, perspective reprojection of the solar surface, and compensation for solar rotation, require re-sampling original telescope image data under a distorting coordinate transformation. The most common image re-sampling methods introduce significant, unnecessary flaws into the data. More correct techniques have been known in the computer graphics community for some time but remain little known within the solar community and hence deserve further presentation. Furthermore, image distortion under specialized coordinate transformations is a powerful analysis technique with applications well beyond image resizing and perspective compensation. The goal of this project is to implement fast, efficient, and flux-conserving coordinate transformation algorithms in SunPy. See [this paper](http://adsabs.harvard.edu/abs/2004SoPh..219....3D) for reference. An implementation in perl already [exists](http://pdl.perl.org/PDLdocs/Transform.html).
 Mentor: Craig DeForest?
 
-**Spectrum Object**: The SunPy project is built upon a number of object which hold data such as the map object (for image data), the lightcurve object (for time series data), and the spectrum object (for spectral data). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (usually describes with a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
+## Spectrum Object
+The SunPy project is built upon a number of object which hold data such as the map object (for image data), the lightcurve object (for time series data), and the spectrum object (for spectral data). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (usually describes with a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
 Mentor: Richard Schwartz?
 
-**Light-curve object**: Mentor: Jack Ireland
+## Extending the capabilities of Map object
+A map cube is an ordered set of two dimensional maps.  The ordering can be by image observation time, Fourier frequency, or energy.  The map cube object must be general enough to handle ordering by numerical quantities other than time.  The map cube object can also provide the basis for animation.  For example, in a set of time-ordered maps, running through them in time-order will animate a movie. Memory mapping...
+Mentor: Steven Christe
 
-**Map cube object**: A map cube is an ordered set of two dimensional maps.  The ordering can be by image observation time, Fourier frequency, or energy.  The map cube object must be general enough to handle ordering by numerical quantities other than time.  The map cube object can also provide the basis for animation.  For example, in a set of time-ordered maps, running through them in time-order will animate a movie.
+## Movies and Animation
+The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of maps.  The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need.
 
-**Movies and Animation**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of maps.  The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need.
-
-**Solarsoft Capabilities**: some basic capabilities in Solarsoft should be reproduced in SunPy.  For example, implementing a function that describes the latitudinal dependence of the rotation of the Sun is essential.
-
-**SunPy and High School**: develop a one day course that introduces students to solar data analysis using SunPy.  Will involve working on multiple parts of SunPy.  Knowledge of science required, as well as experience with Python programming.
-
-**Downloading SDO data cutouts**:
-
-**GOES object**:
+## SunPy and High School
+develop a one day course that introduces students to solar data analysis using SunPy.  Will involve working on multiple parts of SunPy.  Knowledge of science required, as well as experience with Python programming. This project is meant for Python beginners and should be a quick project which will introduce the student to SunPy development.
+Mentor: Steven Christe
 
 ## Porting of Critical software from SolarSoft
 
-_Description_: SolarSoft is a software suite developed for IDL which already contains critical routines which are necessary for any basic analysis of solar data. Many of these routines must be ported to Python. This project aims to develop the basic framework of SunPy (coordinate transformations and projections, time manipulation, ephemeris calculations, etc.) which is currently based on IDL.<br/>
+_Description_: SolarSoft is a software suite developed for IDL which already contains critical routines which are necessary for any basic analysis of solar data. Many of these routines must be ported to Python. This project aims to develop the basic framework of SunPy (coordinate transformations and projections, ephemeris calculations, etc.) which is currently based on IDL.<br/>
 _Requirements_: Knowledge of IDL is necessary.<br/>
 _Mentor_: Jack Ireland<br/>
 
@@ -37,28 +36,11 @@ _Description_: The ''[http://www.virtualsolar.org/ Virtual Solar observatory]'' 
 _Requirements_: Knowledge of Python required; knowledge of web services (SOAP, REST) preferred.<br/>
 _Mentor_: Joe Hourclé and David Pérez-Suárez<br/>
 
-##  STIX Simulations 
-_Description_: STIX is an instrument on [http://sci.esa.int/science-e/www/area/index.cfm?fareaid=45 Solar Orbiter] an ESA Cosmic Vision Mission currently in development. The  primary goal of Solar Orbiter is to understand how the Sun creates and controls the heliosphere. STIX will provide imaging spectroscopy of solar thermal and non-thermal X-ray emission. Through such measurements, STIX will provide quantitative information on the timing, location, intensity, and spectra of accelerated electrons as well as of high temperature thermal plasmas, mostly associated with flares. The goal of this project is to develop simulations of the count rates which will be detected by STIX over the course of its orbit around the Sun. These simulations will be based on past data provided by the RHESSI spacecraft which is currently in orbit. These simulations tools will become the foundation of a suite of open source simulation tools for designing future missions.<br/>
-_Requirements_: Some scientific knowledge in X-ray astronomy is preferred.<br/>
-_Mentor_: Säm Krucker<br/>
-
-##  The PrepServer 
-
-_Description_: Many solar data products are provided in raw form such that the calibration can be performed by the end user. This gives a certain amount of flexibility for the user but also makes it necessary for users to have access to large up to date calibration files which are necessary to perform the calibration. The PrepServer is a service which handles data calibration in the cloud maintaining flexibility but removing the onus from the user to download and maintain the software and datafiles necessary to perform the calibration. The goal of this project is to develop the software in Python to connect with the PrepServer through its API.<br/>
-_Requirements_: Knowledge of Java and web services (WSDL, SOAP, etc.) is required.<br/>
-_Mentor_: Laszlo Etesi<br/>
-
 ##  Plotman GUI 
 
-_Description_: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images or comparing light curves to each other. This GUI interface could be written in either Tkinter or PyQT.<br/>
+_Description_: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images or comparing light curves to each other. This GUI interface could be written in both Tkinter and PyQT.<br/>
 _Requirements_: Basic knowledge of GUI interface design.<br/>
 _Mentor_: Steven Christe<br/>
-
-##  HEK connectors 
-
-_Description_: The immense volume of data generated by the suite of instruments on SDO has required new tools to efficiently identify and accessing data that is most relevant to research investigations. The [http://www.lmsal.com/hek/ Heliophysics Events Knowledgebase (HEK)] was developed to fill this need. The HER (Heliophysics Event Registry) system allows for submission of events and features found via automated data mining using feature-detection methods or detected ad-hoc. The HCR (Heliophysics Coverage Registry) contains instrument pointings and movies generated via the LMSAL cutout service.  [http://www.lmsal.com/hek/api.html Web services] and clients are provided for submitting items, searching the resulting metadata, and reviewing results. The goal of this project is to create a Python interface to these services.<br/>
-_Requirements_: Familiarity with Python and web services (REST)<br/>
-_Mentor_: David Pérez-Suárez; (with possible addition of subject matter expert Ankur Somani) <br/>
 
 ##  SDO JSOC Connector 
 
@@ -72,22 +54,9 @@ _Description_: As part of the Heliophysics Coverage Registry (HER) Lockheed Mart
 _Requirements_: Knowledge of web services preferred.<br/>
 _Mentor_: Joe Hourclé (with possible addition of subject matter expert Ankur Somani)
 
-##  SunPy and cloud computing 
+##  PyHelioviewer
 
-_Description:_ The goal is to allow solar scientists to handle large-scale SunPy processing more easily and more quickly than is possible on a single desktop PC. This is particularly important for independent researchers who may not have access to institutional computing services.
-The developer would extend SunPy to use [http://libcloud.apache.org/ libcloud] to provide the ability to run processing code at a large scale on private/public clouds. Related to this, the developer would create a virtual machine image containing SunPy libraries for use in the cloud.<br/>
-_Requirements:_ Some prior virtualization / cloud computing experience would be useful.<br/>
-_Mentor:_ David O'Callaghan (Trinity College Dublin)<br/>
-
-##  High level image processing
-
-_Description:_ Many of the image processing techniques used in solar physics are common in many other fields, and packages has been built for those like [http://opencv.willowgarage.com/wiki/ OpenCV] or [http://www.pythonware.com/products/pil/ PIL].  The goal of this project is to port the functionality of those packages to SunPy so to apply them on solar images.<br/>
-_Requirements:_ Familiarity with image processing concepts and image processing packages.<br/>
-_Mentor:_ Alex Young<br/>
-
-##  Blue Sky Ideas 
-
-_Description_: [http://jhelioviewer.org/ JHelioviewer] is client software for the [http://www.helioviewer.org/wiki Helioviewer Project], solar image visualization and data access project. JHelioviewer is a Java-based client that provides data browsing capabilities, image overlaying, and can quickly make movie of these images as a function of time. This blue-sky project consists of porting the JHelioviewer client to Python and extending its capabilities.
+_Description_: [http://jhelioviewer.org/ JHelioviewer] is client software for the [http://www.helioviewer.org/wiki Helioviewer Project], solar image visualization and data access project. JHelioviewer is a Java-based client that provides data browsing capabilities, image overlaying, and can quickly make movie of these images as a function of time. This project consists of porting the JHelioviewer client to Python and extending its capabilities.
 
 Mentors
 
@@ -95,9 +64,8 @@ Mentors
 * Keith Hughitt (NASA GSFC, USA)
 * André Csillaghy (FHNW, CH)
 * Laszlo Etesi (FHNW, CH)
-* Säm Krucker (FHNW, CH)
 * Jack Ireland (NASA GSFC, USA)
 * Alex Young (NASA GSFC, USA)
 * Joe Hourclé (NASA GSFC, USA)
 * David Pérez-Suárez (TCD, Ireland)
-* David O'Callaghan (TCD, Ireland)
+* Richard Schwartz (NASA GSFC, USA)
