@@ -5,7 +5,7 @@ The ideas shown below are based in little projects that we hope can be completed
 ## Spectrum Object
 * **Description**: The SunPy project is built upon a number of object which hold data such as the map object (for image data), the lightcurve object (for time series data), and the spectrum object (for spectral data). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (usually describes with a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
 * **Requirements**: 
-* **Mentor**: Richard Schwartz
+* **Mentor**: Richard Schwartz, David Pérez-Suárez
 
 ## Extending the capabilities of Map object
 ### Map Cube ordering
@@ -31,7 +31,7 @@ The ideas shown below are based in little projects that we hope can be completed
 ## SunPy and High School
 * **Description**: Develop a one day course that introduces students to solar data analysis using SunPy.  Will involve working on multiple parts of SunPy (getting data, visualize it, extract profiles, gaussian fitting,...).  Knowledge of science required, as well as experience with Python programming. This project is meant for Python beginners and should be a quick project which will introduce the student to SunPy development. 
 * **Requirements**: 
-* **Mentor**: Steven Christe
+* **Mentor**: Steven Christe, David Pérez-Suárez
 
 ## Porting of Critical software from SolarSoft
 * **Description**: SolarSoft is a software suite developed for IDL which already contains critical routines which are necessary for any basic analysis of solar data. Many of these routines must be ported to Python. This project aims to develop the basic framework of SunPy (coordinate transformations and projections, ephemeris calculations, etc.) which is currently based on IDL.
@@ -41,10 +41,10 @@ The ideas shown below are based in little projects that we hope can be completed
 * **Requirements**: Knowledge of IDL is necessary.
 * **Mentor**: Jack Ireland
 
-## Prep-server
+## Prep-server ??
 * **Description**: Prep-server is not part of sunpy, but its development will help to people to start to use it, as it will provide a service to reduce data remotely.
 * **Requirements**: Java
-* **Mentor**: Laszlo??
+* **Mentor**: László??, David Pérez-Suárez
 
 ## Flux-conserving Image resampling algorithms
 * **Description**: Digital image data are now commonly used throughout the field of solar physics. Many steps of image data analysis, including image co-alignment, perspective reprojection of the solar surface, and compensation for solar rotation, require re-sampling original telescope image data under a distorting coordinate transformation. The most common image re-sampling methods introduce significant, unnecessary flaws into the data. More correct techniques have been known in the computer graphics community for some time but remain little known within the solar community and hence deserve further presentation. Furthermore, image distortion under specialized coordinate transformations is a powerful analysis technique with applications well beyond image resizing and perspective compensation. The goal of this project is to implement fast, efficient, and flux-conserving coordinate transformation algorithms in SunPy. See [this paper](http://adsabs.harvard.edu/abs/2004SoPh..219....3D) for reference. An implementation in perl already [exists](http://pdl.perl.org/PDLdocs/Transform.html).
