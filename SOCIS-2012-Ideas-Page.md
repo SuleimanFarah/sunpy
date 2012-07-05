@@ -36,8 +36,8 @@ The ideas shown below are based in little projects that we hope can be completed
 ## Porting of Critical software from SolarSoft
 * **Description**: SolarSoft is a software suite developed for IDL which already contains critical routines which are necessary for any basic analysis of solar data. Many of these routines must be ported to Python. This project aims to develop the basic framework of SunPy (coordinate transformations and projections, ephemeris calculations, etc.) which is currently based on IDL.
 * **Order list**:
-8. Differential rotation of solar images. More than one possible input functions. [drot_map.pro](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/maps/drot_map.pro)
-1. ...
+  *  Differential rotation of solar images. More than one possible input functions. [drot_map.pro](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/maps/drot_map.pro)
+  *  ...
 * **Requirements**: Knowledge of IDL is necessary.
 * **Mentor**: Jack Ireland
 
