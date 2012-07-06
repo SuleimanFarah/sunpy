@@ -3,18 +3,18 @@ The [SOCIS 2012 application page](https://github.com/sunpy/sunpy/wiki/SOCIS-2012
 The ideas shown below are based in little projects that we hope can be completed during the SOCIS programming period (1 Aug - 31 Oct 2012).  The projects are sorted in order of interest within the SunPy community.
 
 ## Spectrum Object
-* **Description**: The SunPy project is built upon a number of object which hold data such as the map object (for image data), the lightcurve object (for time series data), and the spectrum object (for spectral data). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (usually describes with a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
+* **Description**: The SunPy project is built upon a number of objects which hold data such as the map object (for two-dimensional image data) and the lightcurve object (for time-ordered scalar data).  The third major object we require is the spectrum object, which is for data ordered by energy (or its equivalent, such as wavelength). The goal of this project is to design and implement the spectrum object for SunPy. This object will need to be able to display its data in a basic plot form. In addition, different sub-classes of the main spectrum object will also need to handle the various kinds of spectral data.  It will also need to be able to convert from data (e.g. counts) to physical quantities (e.g. photons) through knowledge of the detector response (for example, in RHESSI data the detector response is typically described using a matrix). A number of physical models are also necessary to interpret spectra. Coding up efficient forms of these models can also be part of this project if time allows.
 * **Requirements**: 
 * **Mentor**: Richard Schwartz, David Pérez-Suárez
 
 ## Extending the capabilities of Map object
 ### Map Cube ordering
-* **Description**: A map cube is an ordered set of two dimensional maps.  The ordering can be by image observation time, Fourier frequency, or energy.  The map cube object must be general enough to handle ordering by numerical quantities other than time.  The map cube object can also provide the basis for animation.  For example, in a set of time-ordered maps, running through them in time-order will animate a movie. Memory mapping...
+* **Description**: A map cube is an ordered set of two dimensional maps.  The ordering can be, for example, by image observation time, Fourier frequency, or energy.  The map cube object must be general enough to handle ordering by numerical quantities other than time.  The map cube object can also provide the basis for animation.  For example, in a set of time-ordered maps, running through them in time-order will animate a movie of data.
 * **Requirements**: 
 * **Mentor**: Steven Christe
 
 ### Movies and Animation
-* **Description**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of maps.  The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need.
+* **Description**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of maps.  The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need.  This functionality is highly desirable in exploratory data analysis, and would be a major step forward in Sunpy functionality.
 * **Requirements**: 
 * **Mentor**: Jack Ireland
 
