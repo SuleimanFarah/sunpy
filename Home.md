@@ -8,8 +8,8 @@ Welcome to the SunPy wiki!
 * [Meeting Notes](http://github.com/sunpy/sunpy/wiki/Meeting-Notes)
 
 # ESA Summer of Code in Space 2012
-* [SOCIS 2012]
-* [SOCIS 2012 Ideas Page]
+* [[SOCIS 2012]]
+* [[SOCIS 2012 Ideas Page]]
 
 # Latest News
 
