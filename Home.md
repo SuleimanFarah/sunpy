@@ -7,6 +7,10 @@ Welcome to the SunPy wiki!
 * [Features Wishlist](http://github.com/sunpy/sunpy/wiki/Feature-Wishlist)
 * [Meeting Notes](http://github.com/sunpy/sunpy/wiki/Meeting-Notes)
 
+# ESA Summer of Code in Space 2012
+* [SOCIS 2012]
+* [SOCIS 2012 Ideas Page]
+
 # Latest News
 
 The latest docs are now hosted at [sunpy.readthedocs.org](http://sunpy.readthedocs.org/). This docs will update automatically as the sunpy git repo is updated (_16-Nov-2011_).
