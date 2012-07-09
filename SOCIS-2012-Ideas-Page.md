@@ -54,8 +54,8 @@ It is helpful to plot a grid on the Sun that represents its true spherical natur
 * **Mentor**: Jack Ireland (with possible addition of subject matter experts Craig Deforest)
 
 ## JPEG 2000 in Python
-* **Description**: [JPEG 2000](http://en.wikipedia.org/wiki/JPEG_2000) is an image compression standard which has been developed to supersede the JPEG standard. It is currently being used by the [http://wiki.helioviewer.org/wiki/Main_Page Helioviewer project] to provide high-fidelity images of solar data for purposes of browsing data quickly and with limited bandwidth. The first goal of this project is to write a wrapper around the [http://www.openjpeg.org/ OpenJPEG C library] in order to be able to open JPEG 2000 files from Python. Next, network code must be developed to hook into the [http://helioviewer.org/api Helioviewer API] to request and download data from their archives.
-* **Requirements**: Knowledge of C is necessary.
+* **Description**: [JPEG 2000](http://en.wikipedia.org/wiki/JPEG_2000) is an image compression standard which has been developed to supersede the JPEG standard. It is currently being used by the [Helioviewer project](http://wiki.helioviewer.org/wiki/Main_Page) to provide high-fidelity images of solar data for purposes of browsing data quickly and with limited bandwidth. The first goal of this project is to write a wrapper around the [http://www.openjpeg.org/ OpenJPEG C library] in order to be able to open JPEG 2000 files from Python. Next, network code must be developed to hook into the [http://helioviewer.org/api Helioviewer API] to request and download data from their archives.
+* **Requirements**: Strong knowledge of C and Python; Cython experience helpful
 * **Mentor**: Keith Hughitt
 
 ##  SDO JSOC Connector 
