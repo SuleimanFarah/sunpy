@@ -24,7 +24,7 @@ The ideas shown below are projects that we believe can be completed during the S
 * **Mentor**: Joe Hourclé (with possible addition of subject matter expert Ankur Somani)
 
 ##  SunPy GUI 
-* **Description**: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images or comparing light curves to each other. This GUI interface should be written in using tools which work well on multiple platforms, such as Tkinter and PyQT (if time allows).
+* **Description**: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images, comparing light curves to each other. Interfaces to common tasks could include searching the vso for data, background subtraction, creating profile cuts in images, fitting curves such as gaussians. This GUI interface should be written in using tools which work well on multiple platforms, such as Tkinter and PyQT (if time allows).
 * **Requirements**: Basic knowledge of GUI interface design.
 * **Mentor**: Steven Christe
 
