@@ -21,7 +21,7 @@ The ideas shown below are projects that we believe can be completed during the S
 ##  SDO Cutout Service 
 * **Description**: As part of the Heliophysics Coverage Registry (HER) Lockheed Martin Solar and Astrophysics Laboratory provides a [cutout service](http://www.lmsal.com/get_aia_data/) to access SDO/AIA data. This service reduces bandwidth costs by allowing users to request subsamples of full Sun images. This service also connects to the HEK so that users can find cutouts that others have made reducing the number of cutouts which need to be created. This service provides an API. The goal of this project is to create an interface to this service in Python as well as a GUI tool to choose the area of the cutout.
 * **Requirements**: Knowledge of web services preferred.
-* **Mentor**: Joe Hourclé (with possible addition of subject matter expert Ankur Somani)
+* **Mentor**: Jack Ireland, Keith Hughitt
 
 ##  SunPy GUI 
 * **Description**: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images, comparing light curves to each other. Interfaces to common tasks could include searching the vso for data, background subtraction, creating profile cuts in images, fitting curves such as gaussians. A good example of a GUI interface for interacting with radio data is [ragview](http://hesperia.gsfc.nasa.gov/ssw/radio/ethz/idl/ragview/ragview.pro). This GUI interface should be written in using tools which work well on multiple platforms, such as Tkinter and PyQT (if time allows).
