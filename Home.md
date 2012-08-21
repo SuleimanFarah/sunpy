@@ -6,6 +6,7 @@ Welcome to the SunPy wiki!
 * [IDL to SunPy function mapping](http://github.com/sunpy/sunpy/wiki/IDL-to-SunPy-function-mapping)
 * [Features Wishlist](http://github.com/sunpy/sunpy/wiki/Feature-Wishlist)
 * [Meeting Notes](http://github.com/sunpy/sunpy/wiki/Meeting-Notes)
+* [Issue Labels](http://github.com/sunpy/sunpy/wiki/Issue-Labels)
 
 # ESA Summer of Code in Space 2012
 * [[SOCIS 2012]]
