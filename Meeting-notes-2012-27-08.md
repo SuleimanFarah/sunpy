@@ -9,7 +9,7 @@ SSWDB... what do we do with it? All calibration files, response curves... How do
 ## sunpy.lab
 Importing one submodule ends up importing a lot of unnecessary other modules which takes time and it cause unrelated ImportErrors. A sunpy.lab module could provide an environment for interactive use, giving some separation from the rest of the implementation. Florian will create some use cases for future discussion.
 
-## VSO mofulr focus
+## VSO module focus
 Florian has fixed some issues with VSO. Documentation should more explicitly show that VSO is a submodule of sunpy.net, and internal classes/methods should be removed from the docs where necessary. We will continue to focus on VSO for the time being.
 
 ## SWAVES
