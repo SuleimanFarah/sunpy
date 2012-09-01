@@ -37,3 +37,6 @@ Much of the code in SolarSoft has its roots in Fortran. Fortran is restrictive p
 
 ### Documentation
 Copying the explanation (being careful to make modifications if things have changed) from the original IDL documentation, and including a reference to exactly where the code came is the standard. While it may be informative to have the entire IDL documentation preserved in the Python code, this is discouraged. If the user really needs to find out more information about the original version of the function, they can use the reference provided (e.g. under See Also) to the IDL routine.
+
+## Affiliated Packages
+tbw
