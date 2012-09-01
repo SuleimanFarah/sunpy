@@ -44,4 +44,7 @@ Copying the explanation (being careful to make modifications if things have chan
 tbw
 
 ## Code Examples
-tbw
+
+# Creating a class
+
+# Creating plots (the show command)
