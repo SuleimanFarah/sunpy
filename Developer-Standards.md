@@ -1,6 +1,6 @@
 This page is meant as a temporary place to store coding standards developed by the SunPy coding community.
 
-### Language Standard
+## Language Standard
 English is the default language for all doc strings and inline commands. Variables names should also be based on english words. In addition, the standard for spelling is American english.
 
 ## Submitting Code
