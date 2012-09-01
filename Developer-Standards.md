@@ -1,5 +1,8 @@
 This page is meant as a temporary place to store coding standards developed by the SunPy coding community.
 
+### Language Standard
+English is the default language for all doc strings and inline commands. Variables names should also be based on english words. In addition, the standard for spelling is American english.
+
 ## Submitting Code
 In order to maintain a high-quality code, all code should be submitted as a pull requested so that the SunPy community can review the code and provide feedback. Pull requests can be accepted by the original author if more than 24 hours have passed.
 
