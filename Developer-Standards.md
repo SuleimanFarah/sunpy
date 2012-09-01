@@ -1,3 +1,5 @@
+The purpose of the page is to describe the standards that are expected of all code in sunpy. All potential developer should read and abide by the following standards. Code which does not follow these standards closely will not be accepted.
+
 ## Submitting Code
 In order to maintain a high-quality code, all code should be submitted as a pull requested so that the SunPy community can review the code and provide feedback. Pull requests can be accepted by the original author if more than 24 hours have passed.
 
