@@ -25,7 +25,7 @@ b = a[index]
 The b array now contains only those elements in a less than 30. The equivalent in Python/Sunpy is
 <pre><code>import numpy as np
 a = np.arange(0,100)
-b = a[a < 30]
+b = a[a &lt; 30]
 </code></pre>
 This is possible because the relationship, a < 30, returns a list of indices which are labeled as True or False. This list can then be used to index any other array.
 
