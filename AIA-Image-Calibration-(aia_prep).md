@@ -13,3 +13,8 @@ The aia_prep routine consits of an [affline transform](http://en.wikipedia.org/w
 The affline transform used in the SSWIDL routine is in the IDL [ROT](http://www.astro.washington.edu/docs/idl/cgi-bin/getpro/library32.html?ROT) routine. This uses a [bi-cubic convolution interpolation](http://en.wikipedia.org/wiki/Bicubic_interpolation#Bicubic_convolution_algorithm) method (by default in aia_prep.pro [with a interpolation parameter a = -0.5]). To maintain compatibility with the SSWIDL routine this method of interpolation for the affline transform was coded into a C-API extension and pushed into SunPy under the map.rotate() method in [PR #288](https://github.com/sunpy/sunpy/pull/288), along with support for the bilinear method supported with IDL's ROT.
 
 The affline transform method in [scipy](http://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.interpolation.affine_transform.html) is also supported, as a fall back in the case of no C-API extention, however this will not generate exactly the same results as the default SSWIDL aia_prep code.
+
+## SunPy Conversion
+SunPy uses `maps' as its primary data type for 2D data. So the SunPy equlavalent of aia_prep is designed to be used on maps, it has been developed to use the map attributes instead of raw fits header access. The affline transform code, as already mentioned is in map.rotate() with the C code under sunpy.image.Crotate. The actual aiaprep routine is under sunpy.instr.sdo.aia.aiaprep and will take a map and return a calibrated map. (Note: name change to aiaprep to better fit with Sunpy naming convention)
+
+## Testing and SSWIDL Comparison
