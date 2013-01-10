@@ -1,4 +1,4 @@
-
+``` idl 
 PRO aia_prep, input1, input2, oindex, odata, index_ref=index_ref, use_ref=use_ref, $
   infil=infil, cutout=cutout, nearest=nearest, $
   interp=interp, cubic=cubic, $
@@ -356,3 +356,4 @@ if keyword_set(qstop) then $
   stop,' Stopping on request.'
 
 end
+```
