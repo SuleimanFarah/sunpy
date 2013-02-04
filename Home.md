@@ -8,8 +8,8 @@ Welcome to the SunPy wiki!
 * [Meeting Notes](http://github.com/sunpy/sunpy/wiki/Meeting-Notes)
 * [Issue Labels](http://github.com/sunpy/sunpy/wiki/Issue-Labels)
 
-# The Great Refactor
-[Great Refactor Wiki Pages](https://github.com/sunpy/sunpy/wiki/The-Great-Refactor-of-0.3)
+# 0.3 Planning
+[Great Refactor Wiki Pages](https://github.com/sunpy/sunpy/wiki/0.3-Planning)
 
 # ESA Summer of Code in Space 2012
 * [[SOCIS 2012]]
