@@ -9,6 +9,7 @@ Welcome to the SunPy wiki!
 * [Issue Labels](http://github.com/sunpy/sunpy/wiki/Issue-Labels)
 
 # 0.3 Planning
+[Release Schedule](https://github.com/sunpy/sunpy/wiki/0.3-Release-Schedule)
 [Planning page including notes on the great refactoring](https://github.com/sunpy/sunpy/wiki/0.3-Planning)
 
 # ESA Summer of Code in Space 2012
