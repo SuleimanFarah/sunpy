@@ -1,0 +1,1 @@
+The SunPy repo was created with commit 37edfa67a0e2fd1446fedc519f08e4cdbf6dd47b on  Mon Mar 28 15:10:30 2011 -0400
