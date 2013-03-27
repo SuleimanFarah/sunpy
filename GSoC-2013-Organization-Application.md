@@ -5,11 +5,20 @@ sunpy
 SunPy
 
 ### Organization description
+SunPy is a new (just 2 years) open-source project which aims to provide a complete framework in Python for solar, heliospheric, and space weather data analysis. We envision it as an alternate choice to the ''de facto'' standard library [SolarSoft (SSW)][1] that is widely used within the solar community.  SSW is based on the  [Interactive Data Language (IDL)][2] programming environment, which is propriety software, with costly recurring licensing fees. Since SSW is built with IDL, it limits the access to solar data analysis to those people and institutions who can afford the license fees and makes it difficult for amateurs or institutions with limited resources to become involved.  Python is the perfect alternative to build a solar data analysis framework, as it is freely available to everyone and is already being used as a scientific data analysis environment in other science fields ([NumPy][3], [SciPy][4], [PyRAF][5], [Astropy][6]) with many already-written scientific libraries available. Additionally, it can be used interactively (Python command-line), which is very close to how users already work with SSW in IDL.
+
+[1]: http://www.mssl.ucl.ac.uk/surf/sswdoc/solarsoft/
+[2]: http://www.exelisvis.com/language/en-us/productsservices/idl.aspx
+[3]: http://numpy.scipy.org/
+[4]: http://scipy.org/
+[5]: http://www.stsci.edu/resources/software_hardware/pyraf
+[6]: http://www.astropy.org/
 
 ### Organization home page url
 http://www.sunpy.org/
 
 ### Main organization license
+New and Simplified BSD licenses
 
 ### Veteran/New
 New
@@ -24,6 +33,8 @@ N/A
 No.
 
 ### Why is your organization applying to participate in Google Summer of Code 2013? What do you hope to gain by participating?
+
+Participating in ESA's Summer of Code in Space would not only help us expand SunPy by incorporating new functionality, but it will also promote our efforts in the solar physics community and thereby attract new contributors.
 
 ### What is the URL for your Ideas list?
 [[GSoC 2013 Ideas]]
