@@ -54,6 +54,10 @@ sunpy on Freenode.net
 
 ### What criteria did you use to select your mentors for this year's program? Please be as specific as possible.
 
+Each idea proposed has two mentors linked with it.  These mentors are experts in the given subject area and they are active developers in Sunpy.  Though not all are experts Python programmers, the SunPy community will be available to support Python questions.  Also we have established links with webservice developers from solar and heliosphere data archives in Europe and USA which will participate in the discussions to help us to implement the access to their services.  All mentors are experienced users of solar data, with experience in data acquisition, analysis or both.
+
+If there's an idea proposed by any student that has not been proposed before, then we will choose the best mentors for achieving that purpose considering their expertise and their availability (no mentor should have more than two students).
+
 ### What is your plan for dealing with disappearing students?
 
 ### What is your plan for dealing with disappearing mentors?
