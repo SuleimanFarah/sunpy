@@ -2,7 +2,7 @@
 # What is it?
 
 ## Guidelines to apply
- [[GSoC Students Application template]]
+ [[GSoC Students Application Guidelines]]
 ## Editions
 
 ### [GSoC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
