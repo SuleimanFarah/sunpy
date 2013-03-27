@@ -1,4 +1,4 @@
-### Organizer
+### Administrator
 David PS
 ### Organization ID
 sunpy
@@ -59,6 +59,10 @@ Each idea proposed has two mentors linked with it.  These mentors are experts in
 If there's an idea proposed by any student that has not been proposed before, then we will choose the best mentors for achieving that purpose considering their expertise and their availability (no mentor should have more than two students).
 
 ### What is your plan for dealing with disappearing students?
+
+The students will have the flexibility to accommodate his/her other duties as a student with the project.  However, students are expected to be in regular contact with the mentors assigned and with the community (irc, mail-list, dev-Google+ hangouts and by writing blog posts on a regular basis on the SunPy site).  The mentors and the student have to agree on a time to meet every week for at least one hour, and discuss the evolution of the project.  Also, the student is expected to have his git repository on github up to date, so the mentors and all the SunPy community can review the progress achieved.
+
+In the case that the student does not show any progress, the administrator of SunPy will study the specific case to solve any issues the student may have with the project.  However, if the student completely disappears and if there is no reply after efforts to contact him/her, then we will understand as s/he has broken the agreement and we will contact the administration of GSOC for further actions. The student's progress will be evaluated and the project mentors will be responsible for folding the existing code into the SunPy project.
 
 ### What is your plan for dealing with disappearing mentors?
 
