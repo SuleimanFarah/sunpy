@@ -66,7 +66,19 @@ In the case that the student does not show any progress, the administrator of Su
 
 ### What is your plan for dealing with disappearing mentors?
 
+In case any of the mentors has either a temporal or permanent unavailability to commit as such, the project administrator will be responsible for finding a new mentor. The SunPy project is large enough that it will not be difficult to find another mentor that is familiar with the project.
+
 ### What steps will you take to encourage students to interact with your project's community before and during the program?
+
+We have created a [page with guidelines][8] on how to get more likely to be accepted by us under the GSoC programme.  This includes the interaction with the community (IRC, mail-list) and ask mentors for further details in the projects they would like to participate.  The community will also encourage them to think on which problems will be interesting to tackle (there's a large list of feature request on the [SunPy github repository][9]).
+
+Once the students has started to work with us under GSoC, they have to meet with their mentors weekly, they shall write regularly blog post on the SunPy site describing their progress, they will be encourage to discuss code implementation using the mailing-list when the discussion involves a large fraction of the community, and should be available on the IRC channel to ask and offer help to the rest of the team.
+
+Also, they will be asked to participate in the creation of posters, presentation an/or tutorials to show in [solar physics conferences][10]. If the work done leads on a research publication the student will be animated to collaborate in the preparation of the publication.
+
+[8]: https://github.com/sunpy/sunpy/wiki/GSoC-students-application-guidelines
+[9]: https://github.com/sunpy/sunpy/issues?labels=Feature+Request&page=1&state=open
+[10]: http://figshare.com/articles/search?q=sunpy&quick=1
 
 ### What will you do to encourage that your accepted students stick with the project after Google Summer of Code concludes?
 
