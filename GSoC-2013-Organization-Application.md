@@ -82,6 +82,13 @@ Also, they will be asked to participate in the creation of posters, presentation
 
 ### What will you do to encourage that your accepted students stick with the project after Google Summer of Code concludes?
 
+We aim to involve all the new people with the community as much as we can.  GSoC students won't be less.  We hope to convince them of the attractive and usability that our projects have for the long shoot.  As solar physicist are new to Python, we will try to invite the students to give SunPy tutorials to the solar physics institutes near their home location.  This will help to the student to get a better understanding of the needs in the community and to get closer to the users and the field.  This may provide the students a big push in his career, and open new doors in the solar physics research world.
+
+
 ### Are you a new organization who has a Googler or other organization to vouch for you? If so, please list their name(s) here.
 
+No (is it here where we would put PSF?)
+
 ### Are you an established or larger organization who would like to vouch for a new organization applying this year? If so, please list their name(s) here.
+
+No
