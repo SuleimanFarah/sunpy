@@ -1,10 +1,10 @@
-# Google Summer of code
+# Google Summer of Code
 # What is it?
 
 ## Guidelines to apply
- [[GSOC Students Application template]]
+ [[GSoC Students Application template]]
 ## Editions
 
-### [GSOC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
-* [[GSOC 2013 Organization Application]]
-* [[GSOC 2013 Ideas]]
+### [GSoC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
+* [[GSoC 2013 Organization Application]]
+* [[GSoC 2013 Ideas]]
