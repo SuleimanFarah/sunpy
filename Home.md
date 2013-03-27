@@ -12,9 +12,10 @@ Welcome to the SunPy wiki!
 [Release Schedule](https://github.com/sunpy/sunpy/wiki/0.3-Release-Schedule)  
 [Planning page including notes on the great refactoring](https://github.com/sunpy/sunpy/wiki/0.3-Planning)
 
-# ESA Summer of Code in Space 2012
-* [[SOCIS 2012]]
-* [[SOCIS 2012 Ideas Page]]
+## Summer of Codes
+* [[ESA Summer of Code in Space]] is the ESA summer of code program.  Sunpy has participated for 2 years already!
+* [[Google Summer of Code]] is the Google summer of code program.  SunPy is applying for first time! 
+
 
 # Latest News
 
