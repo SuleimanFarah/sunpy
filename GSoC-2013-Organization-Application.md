@@ -37,9 +37,9 @@ No.
 
 ### Why is your organization applying to participate in Google Summer of Code 2013? What do you hope to gain by participating?
 
-Participating in Google Summer of Code would not only help us expand SunPy by incorporating new functionalities, but it will also promote our efforts in other communities beside solar physics community and thereby attract new contributors.
+Participating in Google Summer of Code would not only help us expand SunPy by incorporating new functionalities, but it will also promote our efforts in other communities beside solar physics community and hopefully attract new contributors.
 
-After two years of development, this is the first time that SunPy applies to participate in the Google Summer of Code.  In this two years we have gathered more and more developers, but it has been the ESA summer of code in Space programme which have boost our development by funding 2 students to work in SunPy the last two summers.  The first one was then contracted the last summer by Trinity College Dublin (Ireland) to add a functionality to SunPy to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.  This has enabled to these institutes with low resources to don't depend of IDL. 
+After two years of development, this is the first time that SunPy has applied to participate in the Google Summer of Code scheme.  Despite the increase in our users and developers, it is our succesful participation in the ESA Summer of Code in Space programme have made massive contributions to the projects development.  The first one was then contracted the last summer by Trinity College Dublin (Ireland) to add a functionality to SunPy to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.  This has enabled to these institutes with low resources to don't depend of IDL. 
 
 By participating on Google Summer of Code we also hope to use it as an educational instrument to the wonders of solar physics and space weather, and attract more people to study of astrophysics.
 
