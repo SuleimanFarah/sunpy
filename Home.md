@@ -15,8 +15,3 @@ Welcome to the SunPy wiki!
 ## Summer of Codes
 * [[ESA Summer of Code in Space]] is the ESA summer of code program.  Sunpy has participated for 2 years already!
 * [[Google Summer of Code]] is the Google summer of code program.  SunPy is applying for first time! 
-
-
-# Latest News
-
-The latest docs are now hosted at [sunpy.readthedocs.org](http://sunpy.readthedocs.org/). This docs will update automatically as the sunpy git repo is updated (_16-Nov-2011_).
