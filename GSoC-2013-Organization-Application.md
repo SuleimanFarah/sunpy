@@ -39,9 +39,9 @@ No.
 
 Participating in Google Summer of Code would not only help us expand SunPy by incorporating new functionalities, but it will also promote our efforts in other communities beside solar physics community and hopefully attract new contributors.
 
-After two years of development, this is the first time that SunPy has applied to participate in the Google Summer of Code scheme.  Despite the increase in our users and developers, it is our succesful participation in the ESA Summer of Code in Space programme have made massive contributions to the projects development.  The first one was then contracted the last summer by Trinity College Dublin (Ireland) to add a functionality to SunPy to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.  This has enabled to these institutes with low resources to don't depend of IDL. 
+After two years of development, this is the first time that SunPy has applied to participate in the Google Summer of Code scheme. We have, however, succesfully participated in the ESA Summer Of Code In Space program, through which we have had two students participate in SunPy. Our student from 2011 has become part of our project and was contracted the last summer by Trinity College Dublin (Ireland). Where he added further functionality to SunPy to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.
 
-By participating on Google Summer of Code we also hope to use it as an educational instrument to the wonders of solar physics and space weather, and attract more people to study of astrophysics.
+We also hope to use this oppertunity for our potential summer student to be introduced to astronomy and solar physics, while contributing code to a project that will help solar phyiscists around the world.
 
 [7]: http://www.e-callisto.org/
 ### What is the URL for your Ideas list?
@@ -55,7 +55,7 @@ sunpy on Freenode.net
 
 ### What criteria did you use to select your mentors for this year's program? Please be as specific as possible.
 
-Each idea proposed has two mentors linked with it.  These mentors are experts in the given subject area and they are active developers in Sunpy.  Though not all are experts Python programmers, the SunPy community will be available to support Python questions.  Also we have established links with webservice developers from solar and heliosphere data archives in Europe and USA which will participate in the discussions to help us to implement the access to their services.  All mentors are experienced users of solar data, with experience in data acquisition, analysis or both.
+Each idea proposed has two mentors linked with it.  These mentors are experts in the given subject area and they are active developers in Sunpy.  Though not all are expert Python programmers, the SunPy community will be available to support Python questions.  Also we have established links with webservice developers from solar and heliosphere data archives in Europe and USA which will participate in the discussions to help us to implement the access to their services.  All mentors are experienced users of solar data, with experience in data acquisition, analysis or both.
 
 If there's an idea proposed by any student that has not been proposed before, then we will choose the best mentors for achieving that purpose considering their expertise and their availability (no mentor should have more than two students).
 
@@ -63,7 +63,7 @@ If there's an idea proposed by any student that has not been proposed before, th
 
 The students will have the flexibility to accommodate his/her other duties as a student with the project.  However, students are expected to be in regular contact with the mentors assigned and with the community (irc, mail-list, dev-Google+ hangouts and by writing blog posts on a regular basis on the SunPy site).  The mentors and the student have to agree on a time to meet every week for at least one hour, and discuss the evolution of the project.  Also, the student is expected to have his git repository on github up to date, so the mentors and all the SunPy community can review the progress achieved.
 
-In the case that the student does not show any progress, the administrator of SunPy will study the specific case to solve any issues the student may have with the project.  However, if the student completely disappears and if there is no reply after efforts to contact him/her, then we will understand as s/he has broken the agreement and we will contact the administration of GSOC for further actions. The student's progress will be evaluated and the project mentors will be responsible for folding the existing code into the SunPy project.
+In the case that the student does not show any progress, the GSOC administrator for SunPy will study the specific case to solve any issues the student may have with the project.  However, if the student completely disappears and if there is no reply after efforts to contact them, then we will understand they have broken the agreement and we will contact the administration of GSOC for further actions. The student's progress will be evaluated and the project mentors will be responsible for folding the existing code into the SunPy project.
 
 ### What is your plan for dealing with disappearing mentors?
 
