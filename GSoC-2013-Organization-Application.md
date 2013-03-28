@@ -51,7 +51,7 @@ We also hope to use this oppertunity for our potential summer student to be intr
 [SunPy-Dev](https://groups.google.com/forum/#!forum/sunpy-dev)
 
 ### What is the main IRC channel for your organization?
-sunpy on Freenode.net
+#sunpy on Freenode.net
 
 ### What criteria did you use to select your mentors for this year's program? Please be as specific as possible.
 
