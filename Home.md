@@ -13,5 +13,5 @@ Welcome to the SunPy wiki!
 [Planning page including notes on the great refactoring](https://github.com/sunpy/sunpy/wiki/0.3-Planning)
 
 ## Summer of Codes
-* [[ESA Summer of Code in Space]] is the ESA summer of code program.  Sunpy has participated for 2 years already!
-* [[Google Summer of Code]] is the Google summer of code program.  SunPy is applying for first time! 
+* [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy participated in 2011 and 2012 
+* [[Google Summer of Code]] is the Google Summer Of Code program.  SunPy is applying for first time in 2013.
