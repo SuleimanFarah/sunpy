@@ -48,4 +48,6 @@
 
 * Requirements: Python, Cython, C; some familiarity with JPEG 2000 standard and the OpenJPEG tools is a plus.
 
-* Mentors: Jack Ireland
+* References: https://github.com/khughitt/pyopenjpeg, https://code.google.com/p/openjpeg/
+
+* Mentors: Jack Ireland (ADNET Systems, Inc.)
