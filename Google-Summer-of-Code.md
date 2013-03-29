@@ -5,7 +5,7 @@
 [GSOC](https://google-melange.appspot.com/gsoc/homepage/google/gsoc2013)
 
 ## Guidelines to apply
- [[GSoC Students Application Guidelines]]
+ [[GSoC Student Application Guidelines]]
 ## Editions
 
 ### [GSoC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
