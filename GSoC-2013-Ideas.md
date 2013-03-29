@@ -40,3 +40,12 @@
 * Requirements: basic notion of databases (sqlite), willingness to understand the the data retrieval tools in sunpy (ie. VSO)
 
 * Mentors: Florian Mayer
+
+
+## PyOpenJPEG 
+
+* Description: JPEG 2000 is an advanced image standard that is useful in the storage and transfer of image data and associated image data.  OpenJPEG is an open-source implementation of that standard.  PyOpenJPEG is a partially complete Python wrapper around the OpenJPEG Library that allows users to read a JPEG2000 file into Python.  This project seeks to expose the full functionality of the OpenJPEG Library via Python, and so allow Python users to read, manipulate and write JPEG 2000 files.
+
+* Requirements: Python, Cython, C; some familiarity with JPEG 2000 standard and the OpenJPEG tools is a plus.
+
+* Mentors: Jack Ireland
