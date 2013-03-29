@@ -31,7 +31,7 @@
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data docummentation (link?)
 
-* Mentors: David, + anyone with spectroscopy/3d data experience?
+* Mentors: David, Stuart Mumford
 
 ## Database of local data
 
