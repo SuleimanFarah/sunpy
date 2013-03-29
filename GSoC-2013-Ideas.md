@@ -4,7 +4,7 @@
 
 * Requirements: Some knowledge of or willingness to learn basic IDL maybe useful.
 
-* Mentor: Stuart Mumford / ??
+* Mentor: Stuart Mumford and Russell Hewett
 
 
 ## Improvements to Mapcube and Image Registration.
@@ -13,7 +13,7 @@
 
 * Requirements: Knowledge of image processing a registration would be a plus.
 
-* Mentors: Stuart Mumford and Russ Hewett
+* Mentors: Stuart Mumford and Russell Hewett
 
 
 ## HELIO & HEK
@@ -39,4 +39,4 @@
 
 * Requirements: basic notion of databases (sqlite), willingness to understand the the data retrieval tools in sunpy (ie. VSO)
 
-* Mentors: anyone? Florian?
+* Mentors: Florian Mayer
