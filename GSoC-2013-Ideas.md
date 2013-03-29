@@ -50,4 +50,4 @@
 
 * References: https://github.com/khughitt/pyopenjpeg, https://code.google.com/p/openjpeg/
 
-* Mentors: Jack Ireland (ADNET Systems, Inc.)
+* Mentors: Jack Ireland (ADNET Systems, Inc./ NASA GSFC), Keith Hughitt (U. Maryland)
