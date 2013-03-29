@@ -31,7 +31,7 @@
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data docummentation (link?)
 
-* Mentors: David, Stuart Mumford
+* Mentors: David, Stuart Mumford?
 
 ## Database of local data
 
