@@ -39,7 +39,7 @@ No.
 
 Participating in the Google Summer of Code would not only help us expand SunPy by incorporating new functionality, but it will also promote our efforts in other communities beside solar physics and hopefully attract new contributors.
 
-After two years of development, this is the first time that SunPy has applied to participate in the Google Summer of Code scheme. We have, however, succesfully participated in the ESA Summer Of Code In Space program, through which we have had two students contribute to SunPy's development. Our student from 2011 has become part of our project and was contracted last summer by Trinity College Dublin (Ireland), where he added further functionality to SunPy by creating the code base to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.
+After two years of development, this is the first time that SunPy has applied to participate in the Google Summer of Code scheme. We have, however, successfully participated in the ESA Summer Of Code In Space program, through which we have had two students contribute to SunPy's development. Our student from 2011 has become part of our project and was contracted last summer by Trinity College Dublin (Ireland), where he added further functionality to SunPy by creating the code base to analyse data from a network of solar radio spectrometers ([e-callisto][7]) hosted in many places around the world.
 
 We also hope to use this opportunity for our potential summer student to be introduced to astronomy and solar physics, while contributing code to a project that will help solar physicists around the world.
 
@@ -51,7 +51,7 @@ We also hope to use this opportunity for our potential summer student to be intr
 [SunPy-Dev](https://groups.google.com/forum/#!forum/sunpy-dev)
 
 ### What is the main IRC channel for your organization?
-#sunpy on Freenode.net
+\#sunpy on Freenode.net
 
 ### What criteria did you use to select your mentors for this year's program? Please be as specific as possible.
 
@@ -77,7 +77,7 @@ Once the students has started to work with us under GSoC, they will have to meet
 
 They will also be asked to participate in the creation of posters, presentations an/or tutorials to show in [solar physics conferences][10]. If the work done leads on to a research publication, the student will be animated to collaborate in the preparation of the publication.
 
-[8]: https://github.com/sunpy/sunpy/wiki/GSoC-students-application-guidelines
+[8]: https://github.com/sunpy/sunpy/wiki/GSoC-student-application-guidelines
 [9]: https://github.com/sunpy/sunpy/issues?labels=Feature+Request&page=1&state=open
 [10]: http://figshare.com/articles/search?q=sunpy&quick=1
 
