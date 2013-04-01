@@ -31,7 +31,7 @@
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data docummentation (link?)
 
-* Mentors: David, Stuart Mumford?
+* Mentors: David Perez-Suarez, Stuart Mumford
 
 ## Database of local data
 
@@ -39,7 +39,7 @@
 
 * Requirements: basic notion of databases (sqlite), willingness to understand the the data retrieval tools in sunpy (ie. VSO)
 
-* Mentors: Florian Mayer
+* Mentors: Florian Mayer, David Perez-Suarez
 
 
 ## PyOpenJPEG 
