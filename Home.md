@@ -1,18 +1,17 @@
 Welcome to the SunPy wiki!
 
-* [Development Status](https://github.com/sunpy/sunpy/wiki/Development-Status)
-* [Developers](http://github.com/sunpy/sunpy/wiki/Developers)
-* [Coding Standards](http://github.com/sunpy/sunpy/wiki/Developer-Standards)
-* [IDL to SunPy function mapping](http://github.com/sunpy/sunpy/wiki/IDL-to-SunPy-function-mapping)
-* [Features Wishlist](http://github.com/sunpy/sunpy/wiki/Feature-Wishlist)
-* [Meeting Notes](http://github.com/sunpy/sunpy/wiki/Meeting-Notes)
-* [Issue Labels](http://github.com/sunpy/sunpy/wiki/Issue-Labels)
+* [[Development Status]]
+* [[Developers]]
+* [[Coding Standards|Developer Standards]]
+* [[IDL to SunPy function mapping|IDL to SunPy Translation]]
+* [[Feature Wishlist]]
+* [[Meeting Notes]]
+* [[Issue Labels]]
 
 # 0.3 Planning
-[Release Schedule](https://github.com/sunpy/sunpy/wiki/0.3-Release-Schedule)  
-[Planning page including notes on the great refactoring](https://github.com/sunpy/sunpy/wiki/0.3-Planning)
-
-[[Data samples]]
+* [[Release Schedule|0.3 Release Schedule]]
+* [[Planning page including notes on the great refactoring|0.3 Planning]]
+* [[Data samples]]
 
 ## Summer of Codes
 * [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy participated in 2011 and 2012 
