@@ -22,7 +22,7 @@
 
 * Requirements: All the services from HEK and HELIO are through webservices (SOAP, REST), thus some understanding on that would be benefitial.
 
-* Mentors: David, + anyone with HEK experience?
+* Mentors: David Perez-Suarez, Jack Ireland (ADNET Systems, Inc. / NASA GSFC)
 
 
 ## Spectroscopy object (EIS, CDS, SUMER)
