@@ -56,4 +56,4 @@ The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://w
 * Mentors: Jack Ireland (ADNET Systems, Inc./ NASA GSFC), Keith Hughitt (U. Maryland)
 
 
-[Screen capture of the JHelioviewer client application.](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png)
+![Screen capture of the JHelioviewer client application.](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png)
