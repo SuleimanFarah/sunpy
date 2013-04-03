@@ -60,5 +60,5 @@ _Screen capture of the http://www.helioviewer.org web application._
 ![Screen capture of the www.helioviewer.org web application.](http://blog.helioviewer.org/wp-content/uploads/2013/04/hv-Screenshot-from-2013-04-03-101858.png)
 
 <BR>
-_Screen capture of the (JHelioviewer)[www.jhelioviewer.org) client application._
+_Screen capture of the [JHelioviewer](http://www.jhelioviewer.org) client application._
 ![Screen capture of the JHelioviewer client application.](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png)
