@@ -46,6 +46,8 @@
 
 * Description: JPEG 2000 is an advanced image standard that is useful in the storage and transfer of image data and associated image data.  OpenJPEG is an open-source implementation of the JPEG 2000 standard.  PyOpenJPEG is a partially complete Python wrapper around the OpenJPEG Library that allows users to read a JPEG2000 file into Python.  This project seeks to expose the full functionality of the OpenJPEG Library via Python, and so allow SunPy (and Python) users to read, manipulate and write JPEG 2000 files.
 
+The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://wiki.helioviewer.org/wiki/Main_Page), an effort to visualize solar and heliospheric data from multiple sources.
+
 * Requirements: Python, Cython, C; some familiarity with JPEG 2000 standard and the OpenJPEG tools is a plus.
 
 * References: https://github.com/khughitt/pyopenjpeg, https://code.google.com/p/openjpeg/
