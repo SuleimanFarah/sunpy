@@ -46,7 +46,7 @@
 
 * Description: JPEG 2000 is an advanced image standard that is useful in the storage and transfer of image data and associated image data.  OpenJPEG is an open-source implementation of the JPEG 2000 standard.  PyOpenJPEG is a partially complete Python wrapper around the OpenJPEG Library that allows users to read a JPEG2000 file into Python.  This project seeks to expose the full functionality of the OpenJPEG Library via Python, and so allow SunPy (and Python) users to read, manipulate and write JPEG 2000 files.
 
-The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://wiki.helioviewer.org/wiki/Main_Page), an effort to visualize solar and heliospheric data from multiple [sources](http://helioviewer.org/?date=2013-03-28T22:36:36.000Z&imageScale=38.727054&centerX=38.727054&centerY=0&imageLayers=%5BPROBA2,SWAP,SWAP,174,1,100%5D,%5BSDO,AIA,AIA,304,1,50%5D,%5BSOHO,LASCO,C2,white-light,1,100%5D,%5BSOHO,LASCO,C3,white-light,1,60%5D). ![Screen capture of the JHelioviewer client application. ](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png) Users of Helioviewer Project clients can make images and [movies](http://www.youtube.com/watch?feature=player_embedded&v=4xESw6G8JdM) of solar features and events.
+The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://wiki.helioviewer.org/wiki/Main_Page), an effort to [visualize](www.helioviewer.org) [solar](www.jhelioviewer.org) and heliospheric data from multiple [sources](http://helioviewer.org/?date=2013-03-28T22:36:36.000Z&imageScale=38.727054&centerX=38.727054&centerY=0&imageLayers=%5BPROBA2,SWAP,SWAP,174,1,100%5D,%5BSDO,AIA,AIA,304,1,50%5D,%5BSOHO,LASCO,C2,white-light,1,100%5D,%5BSOHO,LASCO,C3,white-light,1,60%5D). ! Users of Helioviewer Project clients (see images below) can make and share images and [movies](http://www.youtube.com/watch?feature=player_embedded&v=4xESw6G8JdM) of solar features and events.  PyOpenJPEG would allow users of Python-based software to create images of solar data and other science products for use with Helioviewer Project clients.
 
 
 * Requirements: Python, Cython, C; some familiarity with JPEG 2000 standard and the OpenJPEG tools is a plus.
@@ -54,3 +54,6 @@ The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://w
 * References: https://github.com/khughitt/pyopenjpeg, https://code.google.com/p/openjpeg/
 
 * Mentors: Jack Ireland (ADNET Systems, Inc./ NASA GSFC), Keith Hughitt (U. Maryland)
+
+
+[Screen capture of the JHelioviewer client application.](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png)
