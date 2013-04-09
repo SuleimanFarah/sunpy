@@ -9,5 +9,6 @@
 ## Editions
 
 ### [GSoC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
-* [[GSoC 2013 Organization Application]]
+In 2013 SunPy is participating under the umbrella of the Python Software Foundation's umbrella for information about applying through the PSF [click here](http://wiki.python.org/moin/SummerOfCode/2013)
 * [[GSoC 2013 Ideas]]
+* [[GSoC 2013 Organization Information]]
