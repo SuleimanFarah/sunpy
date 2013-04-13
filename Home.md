@@ -12,6 +12,7 @@ Welcome to the SunPy wiki!
 * [[Release Schedule|0.3 Release Schedule]]
 * [[Planning page including notes on the great refactoring|0.3 Planning]]
 * [[Data samples]]
+* [[Running changelog|0.3-Release-Notes]]
 
 ## Summer of Codes
 * [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy participated in 2011 and 2012 
