@@ -2,6 +2,26 @@ This is a list of which kind of data is needed to be distributed within SunPy fo
 
 Should we rename them to remove the date and keep them simple like: AIA171.fits?
 
+from G+ hangout on 8/4/13:
+        Sample data:
+
+            7th June 2011:
+
+                SOHO: EIT, LASCO
+
+                SDO: AIA (1 line), HMI
+
+                RHESSI
+
+                STEREO: EUVI COR1 COR2 SWAVES
+
+                PROBA2: Lyra + Swap?
+
+                GOES
+
+                HINODE: XRT
+
+                Callisto
 
 **Map**
 * AIA 171 - actual file: AIA20110319_105400_0171.fits 4.1 MB
