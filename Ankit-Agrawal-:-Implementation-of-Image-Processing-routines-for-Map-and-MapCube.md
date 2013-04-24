@@ -1,4 +1,4 @@
-##### This proposal is still in progress. Making things are yet to be added, especially the how part of the last two routines to be implemented.
+##### This proposal is still in progress. Many things are yet to be added, especially the how part of the last two routines to be implemented.
 // Please be critical and leave any comments/suggestions you have at any place this way along with thy. - Name.
 ### Contact and Username info:
 
