@@ -2,7 +2,7 @@
 
 ***
 
-#### Contact and Username info:
+### Contact and Username info:
 Name : Ankit Agrawal  
 
 Email : aaaagrawal@iitb.ac.in  
@@ -13,23 +13,37 @@ IRC nick : AnkitAgrawal
 
 Skype : aaaagrawal  
 
+***
+
+### Personal Bio:
+I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them for various other projects. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision.
+
 
 ***
 
-### Description:
-
-
+### Project Description:
+A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.
+* Sorting Maps in a Mapcube by time, frequency and other units
+* Image Registration to align images in a Mapcube
+* De-rotating images to compensate for Sun's rotation
+* 
 ***
 
 ### Timeline:
+
+I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress on this blog.
+
+##### Community Bonding Period (27th May - 16th June)
+Read papers mentioned in the reference to select the best possible algorithm for a particular task. Fix bugs and add tests to get comfortable with the code-base as much as possible.
+
 ##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy.
+Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
-Review the code design. Add tests and Documentation. Fix bugs if any.
+Buffer week. Review the code design with the community. Add tests and Documentation. Fix bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
 Implementing a method for de-rotating solar images
@@ -37,5 +51,7 @@ Implementing a method for de-rotating solar images
 ##### Week 10 and 11 (24th Aug - 6th Sep):
 Implementing routine for compensating the dimming on Sun's edge
  
-##### Week 12 (7th Sep - 13th Sep):
-Buffer period, Adding tests and docs, fixing bugs if any.
+##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
+Buffer period. Review the code design with the community. Add tests and Documentation. Fix bugs if any.
+
+Reference:
