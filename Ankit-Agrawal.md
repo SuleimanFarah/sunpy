@@ -7,7 +7,6 @@ Sorting Maps in a Mapcube by time, frequency and other units
 Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy.
  
 #### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
-Preparation for Midterm Evaluation:
 Review the code design. Add tests and Documentation. Fix bugs if any.
  
 #### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
