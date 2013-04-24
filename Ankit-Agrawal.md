@@ -1,7 +1,6 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
-#### Week 1 and 2:
-(17th June - 30th June)
+#### Week 1 and 2: (17th June - 30th June)
 Sorting Maps in a Mapcube by time, frequency and other units
  
 #### Week 3, 4 and 5:
