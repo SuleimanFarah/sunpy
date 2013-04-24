@@ -34,8 +34,11 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 
 ***
 
+### Proposal Title
 
-### Project Description:
+##### Implementation of Image Processing routines for Map and MapCube
+
+### Proposal Description:
 
 ***
 
