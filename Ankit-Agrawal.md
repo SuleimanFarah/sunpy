@@ -28,7 +28,8 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 
 ***
 
-A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.
+A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
+
 * Sorting Maps in a Mapcube by time, frequency and other units
 * Image Registration to align images in a Mapcube
 * De-rotating images to compensate for Sun's rotation
@@ -48,18 +49,20 @@ Read papers mentioned in the reference to select the best possible algorithm for
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
+Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
-Buffer week. Review the code design with the community. Add tests and Documentation. Fix bugs if any.
+Buffer period. Get the code design reviewed by the community. Add tests and Documentation. Fix bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
-Implementing a method for de-rotating solar images
+Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Implementing routine for compensating the dimming on Sun's edge
+Implementing a routine that compensates for the observed dimming on the edge of the Sun.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
-Buffer period. Review the code design with the community. Add tests and Documentation. Fix bugs if any.
+Buffer period. Get the code design reviewed by the community. Add tests and Documentation. Fix bugs if any.
 
-Reference:
+### Reference:
+
+***
