@@ -1,8 +1,10 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
-***
 
 ### Contact and Username info:
+
+***
+
 Name : Ankit Agrawal  
 
 Email : aaaagrawal@iitb.ac.in  
@@ -16,12 +18,18 @@ Skype : aaaagrawal
 ***
 
 ### Personal Bio:
+
+***
+
 I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them for various other projects. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision.
 
 
 ***
 
 ### Project Description:
+
+***
+
 A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.
 * Sorting Maps in a Mapcube by time, frequency and other units
 * Image Registration to align images in a Mapcube
@@ -30,6 +38,8 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 ***
 
 ### Timeline:
+
+***
 
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress on this blog.
 
