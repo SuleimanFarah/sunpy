@@ -1,7 +1,7 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
 ##### This proposal is still in progress.
-// Please leave any comments/suggestions you have at any place this way along with thy. - Name.
+// Please be as critical as possible and leave any comments/suggestions you have at any place this way along with thy. - Name.
 ### Contact and Username info:
 
 ***
@@ -81,3 +81,4 @@ Buffer period. Get the code design reviewed by the community. Add tests and Docu
 ### Reference:
 
 ***
+Please mention any links/pointers/text you know that discuss the algorithms or concepts on tasks I am going to implement, especially on De-rotating images to compensate for Sun's rotation and Compensating the effect of Limb Darkening.
