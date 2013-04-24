@@ -1,4 +1,3 @@
-
 ##### This proposal is still in progress.
 // Please be critical and leave any comments/suggestions you have at any place this way along with thy. - Name.
 ### Contact and Username info:
