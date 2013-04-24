@@ -1,5 +1,6 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
+##### This proposal is still in progress.
 
 ### Contact and Username info:
 
@@ -34,10 +35,10 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 * Sorting Maps in a Mapcube by time, frequency and other units
 * Image Registration to align images in a Mapcube
 * De-rotating images to compensate for Sun's rotation
-* 
+* Compensate the observed dimming on the edge of the Sun.
 ***
 
-### Timeline:
+### Implementation Timeline:
 
 ***
 
