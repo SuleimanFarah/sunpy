@@ -58,16 +58,16 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress on this blog.
 
 ##### Community Bonding Period (27th May - 16th June):
-Read papers mentioned in the reference to select the best possible algorithm for a particular task. Fix bugs and add tests to get comfortable with the code-base as much as possible.
+Reading papers mentioned in the reference to select the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get comfortable with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementation of Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
+Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
-Buffer period. Get the code design reviewed by the community. Add tests and Documentation. Fix bugs if any.
+Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun.
@@ -76,8 +76,7 @@ Implementing a routine for de-rotating solar images in solar coordinates to comp
 Implementing a routine that compensates for the observed dimming on the edge of the Sun.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
-Buffer period. Get the code design reviewed by the community. Add tests and Documentation. Fix bugs if any.
-  
+Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
 ### Reference:
 
