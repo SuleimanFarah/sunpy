@@ -1,5 +1,7 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
+***
+
 ##### Contact and Username info:
 Name : Ankit Agrawal
 Email : aaaagrawal@iitb.ac.in
@@ -7,8 +9,12 @@ github : ankit-maverick
 IRC nick : AnkitAgrawal
 Skype : aaaagrawal
 
+***
+
 ### Description:
 
+
+***
 
 ### Timeline:
 ##### Week 1 and 2 (17th June - 30th June):
