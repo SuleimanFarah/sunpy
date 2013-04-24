@@ -1,4 +1,4 @@
-## Project Idea : Implementation of Image Processing methods for Map and MapCube
+## Implementation of Image Processing methods for Map and MapCube
 
 ### Week 1 and 2:
 (17th June - 30th June)
