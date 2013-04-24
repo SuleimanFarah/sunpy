@@ -25,11 +25,17 @@ Skype : aaaagrawal
 I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them for various other projects. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision.
 
 ### Contributions to Sunpy:
+
+***
+
 * Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
 * Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
 * Bug filed https://github.com/sunpy/sunpy/issues/432
 
 ### Contributions to Image Processing package scikit-image:
+
+***
+
 
 ### Project Description:
 
