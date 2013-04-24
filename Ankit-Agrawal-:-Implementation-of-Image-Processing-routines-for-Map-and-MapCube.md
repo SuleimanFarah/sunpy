@@ -8,7 +8,7 @@ Name : Ankit Agrawal
 
 Email : aaaagrawal@iitb.ac.in  
 
-github : ankit-maverick  
+github : [ankit-maverick](https://github.com/ankit-maverick)  
 
 IRC nick : AnkitAgrawal  
 
