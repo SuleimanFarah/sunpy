@@ -1,7 +1,7 @@
 ## Implementation of Image Processing methods for Map and MapCube
 
 ##### This proposal is still in progress.
-// Please leave any comments/suggestions you have at any place this way with ur - Name.
+// Please leave any comments/suggestions you have at any place this way along with thy. - Name.
 ### Contact and Username info:
 
 ***
