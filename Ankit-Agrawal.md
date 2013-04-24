@@ -15,6 +15,7 @@ github : ankit-maverick
 IRC nick : AnkitAgrawal  
 
 Skype : aaaagrawal  
+  
 
 
 ### Personal Bio:
@@ -23,6 +24,7 @@ Skype : aaaagrawal
 
 I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them for various other projects. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision.
 
+  
 
 ### Project Description:
 
@@ -35,6 +37,7 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 * De-rotating images to compensate for Sun's rotation
 * Compensate the observed dimming on the edge of the Sun.
 
+  
 
 ### Implementation Timeline:
 
@@ -62,6 +65,7 @@ Implementing a routine that compensates for the observed dimming on the edge of 
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Get the code design reviewed by the community. Add tests and Documentation. Fix bugs if any.
+  
 
 ### Reference:
 
