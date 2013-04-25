@@ -44,7 +44,7 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 
 A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
 
-* Sorting Maps in a Mapcube by time, frequency and other units
+* Sorting and Resampling Maps in a Mapcube and by time, frequency and other units
 * Image Registration to align images in a Mapcube
 * De-rotating images to compensate for Sun's rotation
 * Compensate the observed dimming on the edge of the Sun.
@@ -61,7 +61,7 @@ I don't have any other commitment during summer hence I will work the normal 40 
 Reading papers mentioned in the reference to select the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get comfortable with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort.
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
 Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
