@@ -58,7 +58,7 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress on this blog.
 
 ##### Community Bonding Period (27th May - 16th June):
-Reading papers mentioned in the reference to select the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get comfortable with the code-base as much as possible.
+Reading papers mentioned in the reference to select the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis.
