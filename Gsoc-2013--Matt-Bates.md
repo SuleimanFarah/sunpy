@@ -1,4 +1,4 @@
-The formal application can be found (here)[https://google-melange.appspot.com/gsoc/proposal/review/google/gsoc2013/mattbates/7001#]
+The formal application can be found [here](https://google-melange.appspot.com/gsoc/proposal/review/google/gsoc2013/mattbates/7001#).
 
 Student Information:
 --------------------
