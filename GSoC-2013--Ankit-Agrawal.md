@@ -36,7 +36,8 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 
 ***
 * Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
-* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511
+* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
+
 ### Related Projects
 
 ***
