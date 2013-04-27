@@ -91,6 +91,9 @@ Implementing a routine that compensates for the observed dimming on the edge of 
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
 ### Reference:
+
+***
+
 [(1)](http://library.utia.cas.cz/prace/20030125.pdf) Image Registration Methods : A Survey  
 
 [(2)](http://profs.info.uaic.ro/~ancai/DIP/articole/Image%20Processing%20Techniques%20and%20Feature%20Recognition%20in%20Solar%20Physics.pdf) Image Processing Techniques and Feature Recognition in Solar Physics  
@@ -99,6 +102,3 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 [(5)](http://www.iucaa.ernet.in/~dipankar/ph217/contrib/limb.pdf) Limb Darkening
 
-
-***
-Please mention any links/pointers/text you know that discuss the algorithms or concepts on tasks I am going to implement, especially on De-rotating images to compensate for Sun's rotation and Compensating the effect of Limb Darkening.
