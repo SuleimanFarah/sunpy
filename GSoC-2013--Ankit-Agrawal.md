@@ -90,7 +90,10 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 [(2)](http://profs.info.uaic.ro/~ancai/DIP/articole/Image%20Processing%20Techniques%20and%20Feature%20Recognition%20in%20Solar%20Physics.pdf) Image Processing Techniques and Feature Recognition in Solar Physics  
 
-[(3)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(4)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images
+[(3)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(4)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
+
+[(5)](http://www.iucaa.ernet.in/~dipankar/ph217/contrib/limb.pdf) Limb Darkening
+
 
 ***
 Please mention any links/pointers/text you know that discuss the algorithms or concepts on tasks I am going to implement, especially on De-rotating images to compensate for Sun's rotation and Compensating the effect of Limb Darkening.
