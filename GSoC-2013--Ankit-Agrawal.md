@@ -24,7 +24,9 @@ Skype : aaaagrawal
 
 I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementing Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects.  
 
-I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.
+I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.  
+
+I have been interested in Astronomy since past two years. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis using Solar Images which makes the use of Image Processing very prominent. Because of the above reasons, I would like to become a part of core development team of Sunpy and contribute to the Image Processing needs of the library in future.
 
 ### Project Experience in Image Processing and Data Analysis
 
@@ -69,13 +71,13 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 
 ***
 
-I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress on this blog.
+I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
 
 ##### Community Bonding Period (27th May - 16th June):
-Reading papers mentioned in the reference to select the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
+Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis.
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis using common.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
 Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
@@ -91,6 +93,9 @@ Implementing a routine that compensates for the observed dimming on the edge of 
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
+
+##### Post GSoC:
+Implementing more Image Processing ideas that I get/get suggested during the summer.  
 
 ### Reference:
 
