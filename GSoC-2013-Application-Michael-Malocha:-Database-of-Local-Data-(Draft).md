@@ -29,7 +29,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 *	Provide documentation and testing
 
 ###Schedule
-**Community Bonding (May 27th - June 16th)**
+**Community Bonding (May 27th - Jun. 16th)**
 * Become a Git power user
 * Generally Review codebase and submit tests
 * Review SQLite-Python API
