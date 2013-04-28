@@ -11,7 +11,7 @@ Email : aaaagrawal@iitb.ac.in
 github : [ankit-maverick](https://github.com/ankit-maverick)  
 IRC nick : AnkitAgrawal  
 Skype : aaaagrawal  
-Blog : sunpythonic.blogspot.com  
+Blog : http://sunpythonic.blogspot.com  
 University : Indian Institute of Technology(IIT), Bombay  
 Major : Electrical Engineering with Masters in Communication and Signal Processing  
 Current Year : Third year  
