@@ -7,16 +7,20 @@
 ***
 
 Name : Ankit Agrawal  
-
 Email : aaaagrawal@iitb.ac.in  
-
 github : [ankit-maverick](https://github.com/ankit-maverick)  
-
 IRC nick : AnkitAgrawal  
-
 Skype : aaaagrawal  
-  
+Blog : sunpythonic.blogspot.com
+University : Indian Institute of Technology(IIT), Bombay
+Major : Electrical Engineering with Masters in Communication and Signal Processing
+Current Year : Third year
+Expected Graduation date : June 2015
+Degree : Dual Degree(B.Tech + Masters in 5 yrs) 
 
+### Proposal Title
+
+#### Image Processing routines for Map and MapCube in SunPy
 
 ### Personal Bio:
 
@@ -27,6 +31,20 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.  
 
 I have been interested in Astronomy since past two years. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis on Solar Images which makes the use of Image Processing very prominent. Because of the above reasons, I would like to become a part of core development team of Sunpy and contribute to the Image Processing needs of the library in future.
+
+
+### Proposal Description:
+
+***
+
+A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
+
+* Sorting and Resampling Maps in a Mapcube and by time, frequency and other units
+* Image Registration to align images in a Mapcube
+* De-rotating images to compensate for Sun's rotation
+* Compensate the observed dimming on the edge of the Sun.
+
+
 
 ### Project Experience in Image Processing and Data Analysis
 
@@ -51,27 +69,12 @@ I have been interested in Astronomy since past two years. In the last two semest
 * Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
 
 
-### Proposal Title
-
-#### Image Processing routines for Map and MapCube in SunPy
-
-### Proposal Description:
-
-***
-
-A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
-
-* Sorting and Resampling Maps in a Mapcube and by time, frequency and other units
-* Image Registration to align images in a Mapcube
-* De-rotating images to compensate for Sun's rotation
-* Compensate the observed dimming on the edge of the Sun.
-
   
 ### Implementation Timeline:
 
 ***
 
-I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
+I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least three times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply via mail within 12 hrs of message sent. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
 
 ##### Community Bonding Period (27th May - 16th June):
 Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
