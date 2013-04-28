@@ -53,7 +53,7 @@ I have been interested in Astronomy since past two years. In the last two semest
 
 ### Proposal Title
 
-##### Implementation of Image Processing routines for Map and MapCube in SunPy
+#### Image Processing routines for Map and MapCube in SunPy
 
 ### Proposal Description:
 
@@ -80,13 +80,13 @@ Reading papers mentioned in the reference. Discussing the possible ideas with th
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis by a factor.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
+Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration would be to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
-Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun.
+Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [3] and [4].
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
 Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
@@ -95,7 +95,7 @@ Adding a routine that compensates for the observed dimming on the edge of the Su
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
 ##### Post GSoC:
-Implementing more Image Processing ideas that I get/get suggested during the summer.  
+Implementing more Image Processing ideas that I get/get suggested by the community during the summer.  
 
 ### Reference:
 
