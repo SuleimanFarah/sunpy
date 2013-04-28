@@ -53,8 +53,13 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
     * Use or create a flag that determines the first use of SunPy
 * Configuration file for local database
 
-**Week 4, 5, 6 (Jun. 8th - Jul. 28th)**
-* Designing, coding and testing  
+**Week 4, 5 and 6 (Jun. 8th - Jul. 28th)**
+* Outline namespace, classes, functions and constants for python framework to interface with the SQLite database
+    * Needs to refer to a config file
+    * Provide optimized infrastructure for querying the local database and quickly storing downloaded data
+* Review and refine model with mentors
+* Write code
+* Test and refine
 
 **Week 7 and Midterm Review (Jul. 29th - Aug. 2nd)**
 * Midterm and Mentor review  
@@ -80,4 +85,3 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Vacation Days
 It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.
-
