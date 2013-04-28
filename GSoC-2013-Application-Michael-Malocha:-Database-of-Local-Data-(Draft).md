@@ -45,7 +45,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Populate with example data
 * Run tests and refine
 
-**Week 3 Database Local Build Scripts (Jul. 1st - Jul. 7th)**
+**Week 3 Local Database Build Scripts (Jul. 1st - Jul. 7th)**
 * Write python script to create local database when SunPy is first run (for each user)
     * Should prompt user
     * Allow user to specify a destination directory or use the default
