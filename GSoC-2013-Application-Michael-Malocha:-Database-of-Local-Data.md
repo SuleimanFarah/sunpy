@@ -1,6 +1,6 @@
 #Personal Information:
-Name: Michael J. Malocha
-Email: mjm159@humboldt.edu
+Name: Michael J. Malocha /n
+Email: mjm159@humboldt.edu /n
 Alternate Email: mmalocha13@yahoo.com
 Telephone: +1 (206) 375-1040
 IRC handle: mjm159@irc.freenode.net
