@@ -16,7 +16,7 @@ Expected Graduation Date: May 23rd, 2014
 Degree: BSc  
 
 #Project Proposal Information
-SunPy: Database of Local Data  
+**SunPy: Database of Local Data**  
 Proposal Abstract (*)  
 (In progress...)  
 Proposal Detailed Description (*)  
