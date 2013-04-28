@@ -35,28 +35,27 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Review SQLite-Python API
 * Become familiar with VSO toolkit
 
-**June 17th, 2013 - July 28th, 2013**
+**(Jun. 17th - Jul. 28th)**
 * Designing, coding and testing  
 
-**July 29th, 2013 - August 2nd, 2013**
+**(Jul. 29th - Aug. 2nd)**
 * Midterm and Mentor review  
 
-**August 3rd, 2013 - August 25th, 2013**
+**(Aug. 3rd - Aug. 25th)**
 * More coding, testing and revising
 
-**August 26th, 2013 - September 15th, 2013**
+**(Aug. 26th - Sept. 15th)**
 * Fall instruction begins, reduced hours on project
 * More coding, testing and revising
 
-**September 16th, 2013 - September 23rd, 2013**
+**(Sept. 16th - Sept. 23rd)**
 * Polish code
 * Complete final tests
 * Finish Documentation
 
-**Final Evaluations (September 23rd - September 27th)**
-* Final evaluations
+**Final Evaluations (Sept. 23rd - Sept. 27th)**
 
-**GSoC 2013 Code Submit Deadline (September 27th - October 1st)**
+**GSoC 2013 Code Submit Deadline (Sept. 27th - Oct. 1st)**
 
 ##Additional Information:
 ###Patch
