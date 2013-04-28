@@ -29,8 +29,31 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 *	Provide documentation and testing
 
 ###Schedule
-May 27th, 2013 - June 17th, 2013  
-* does it really matter?
+May 27th, 2013 - June 16th, 2013  
+* Community Bonding
+* Generally Review codebase
+* Review SQLite-Python API
+* Become familiar with VSO toolkit  
+
+June 17th, 2013 - July 28th, 2013
+* Designing, coding and testing  
+
+July 29th, 2013 - August 2nd, 2013
+* Midterm and Mentor review  
+
+August 3rd, 2013 - September 15th, 2013
+* More coding, testing and revising  
+
+September 16th, 2013 - September 23rd, 2013
+* Polish code
+* Complete final tests
+* Finish Documentation
+
+September 23rd, 2013 - September 27th, 2013
+* Final evaluations
+
+September 27th, 2013 - October 1st, 2013
+* Submit final code samples to Google
 
 ##Additional Information:
 ###Sample Code
