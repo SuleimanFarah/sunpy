@@ -35,17 +35,25 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Review SQLite-Python API
 * Become familiar with VSO toolkit
 
-**Week 1 and 2: Database Construction (Jun. 17th - Jun. 30th)**
+**Week 1 and 2: Database Design and Construction (Jun. 17th - Jun. 30th)**
 * Work with mentors to define important data fields
 * Use fields to define tables
 * Determine primary and foreign keys
 * Create an entity relationship diagram
 * Hone diagram and table details with community
-* Build Database
+* Build example database
 * Populate with example data
 * Run tests and refine
 
-**Week 3, 4, 5, 6 (Jun. 17th - Jul. 28th)**
+**Week 3 Database Local Build Scripts (Jul. 1st - Jul. 7th)**
+* Write python script to create local database when SunPy is first run (for each user)
+    * Should prompt user
+    * Allow user to specify a destination directory or use the default
+* Interface with SunPy configuration file
+    * Use or create a flag that determines the first use of SunPy
+* Configuration file for local database
+
+**Week 4, 5, 6 (Jun. 8th - Jul. 28th)**
 * Designing, coding and testing  
 
 **Week 7 and Midterm Review (Jul. 29th - Aug. 2nd)**
