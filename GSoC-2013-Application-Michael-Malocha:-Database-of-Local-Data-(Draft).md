@@ -29,12 +29,11 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 *	Provide documentation and testing
 
 ###Schedule
-**May 27th, 2013 - June 16th, 2013**
-* Community Bonding
+**Community Bonding (May 27th - June 16th)**
 * Become a Git power user
-* Generally Review codebase
+* Generally Review codebase and submit tests
 * Review SQLite-Python API
-* Become familiar with VSO toolkit  
+* Become familiar with VSO toolkit
 
 **June 17th, 2013 - July 28th, 2013**
 * Designing, coding and testing  
@@ -54,11 +53,10 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Complete final tests
 * Finish Documentation
 
-**September 23rd, 2013 - September 27th, 2013**
+**Final Evaluations (September 23rd - September 27th)**
 * Final evaluations
 
-**September 27th, 2013 - October 1st, 2013**
-* Submit final code samples to Google
+**GSoC 2013 Code Submit Deadline (September 27th - October 1st)**
 
 ##Additional Information:
 ###Patch
