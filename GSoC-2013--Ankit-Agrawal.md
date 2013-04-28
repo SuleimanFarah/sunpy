@@ -89,7 +89,7 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Adding a routine that compensates for the observed dimming on the edge of the Sun.
+Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
@@ -107,4 +107,4 @@ Implementing more Image Processing ideas that I get/get suggested during the sum
 
 [(3)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(4)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
 
-[(5)](http://www.iucaa.ernet.in/~dipankar/ph217/contrib/limb.pdf) Limb Darkening
+[(5)](http://astrowww.phys.uvic.ca/~tatum/stellatm/atm6.pdf) Limb Darkening
