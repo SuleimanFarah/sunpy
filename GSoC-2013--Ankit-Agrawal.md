@@ -3,9 +3,6 @@
 ##### This proposal is still in progress.
 
 ### Contact and Username info:
-
-***
-
 Name : Ankit Agrawal  
 Email : aaaagrawal@iitb.ac.in  
 github : [ankit-maverick](https://github.com/ankit-maverick)  
