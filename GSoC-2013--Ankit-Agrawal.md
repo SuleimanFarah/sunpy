@@ -20,6 +20,8 @@ Degree : Dual Degree(B.Tech + Masters in 5 yrs)
 
 ### Proposal Title :
 
+***
+
 #### SunPy : Implementation of Image Processing routines for Map and MapCube
 
 ### Personal Bio :
