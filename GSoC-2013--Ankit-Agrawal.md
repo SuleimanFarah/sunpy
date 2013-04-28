@@ -1,7 +1,7 @@
-##Image Processing routines for Map and MapCube in SunPy
+## SunPy : Implementation of Image Processing routines for Map and MapCube
 
 ##### This proposal is still in progress.
-// Please be critical and leave any comments/suggestions you have at any place this way along with thy. - Name.
+
 ### Contact and Username info:
 
 ***
@@ -20,13 +20,13 @@ Degree : Dual Degree(B.Tech + Masters in 5 yrs)
 
 ### Proposal Title
 
-#### Image Processing routines for Map and MapCube in SunPy
+#### SunPy : Implementation of Image Processing routines for Map and MapCube
 
 ### Personal Bio:
 
 ***
 
-I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementing Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects.  
+I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementation of Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects.  
 
 I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.  
 
