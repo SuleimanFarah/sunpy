@@ -64,7 +64,7 @@ Implementing Image Registration methods to align the images in a MapCube with a 
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
-Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [3] and [4].
+Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
 Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
@@ -106,8 +106,9 @@ Implementing more Image Processing ideas that I get/get suggested by the communi
 
 [(1)](http://library.utia.cas.cz/prace/20030125.pdf) Image Registration Methods : A Survey  
 
-[(2)](http://profs.info.uaic.ro/~ancai/DIP/articole/Image%20Processing%20Techniques%20and%20Feature%20Recognition%20in%20Solar%20Physics.pdf) Image Processing Techniques and Feature Recognition in Solar Physics  
+[(2)] (http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf) Computer Vision by Richard Szeliski : Chapter 6 , Pg. no. 309, Feature based Alignment
+[(3)](http://profs.info.uaic.ro/~ancai/DIP/articole/Image%20Processing%20Techniques%20and%20Feature%20Recognition%20in%20Solar%20Physics.pdf) Image Processing Techniques and Feature Recognition in Solar Physics  
 
-[(3)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(4)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
+[(4)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(5)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
 
-[(5)](http://astrowww.phys.uvic.ca/~tatum/stellatm/atm6.pdf) Limb Darkening
+[(6)](http://astrowww.phys.uvic.ca/~tatum/stellatm/atm6.pdf) Limb Darkening
