@@ -28,10 +28,11 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 *	When using VSO to gather new data, query the local database to prevent redundant downloads of data  
 *	Provide documentation and testing
   
-Link to a patch/code sample(*)  
-(In progress...)  
-Links to additional information (*)  
-(In progress...)  
 
-##Schedule Information:
+##Additional Information:
+###Sample Code
+###Patch
+###Curriculum Vitae
+###Vacation Days
 It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.
+
