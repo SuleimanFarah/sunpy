@@ -11,12 +11,12 @@ Email : aaaagrawal@iitb.ac.in
 github : [ankit-maverick](https://github.com/ankit-maverick)  
 IRC nick : AnkitAgrawal  
 Skype : aaaagrawal  
-Blog : sunpythonic.blogspot.com
-University : Indian Institute of Technology(IIT), Bombay
-Major : Electrical Engineering with Masters in Communication and Signal Processing
-Current Year : Third year
-Expected Graduation date : June 2015
-Degree : Dual Degree(B.Tech + Masters in 5 yrs) 
+Blog : sunpythonic.blogspot.com  
+University : Indian Institute of Technology(IIT), Bombay  
+Major : Electrical Engineering with Masters in Communication and Signal Processing  
+Current Year : Third year  
+Expected Graduation date : June 2015  
+Degree : Dual Degree(B.Tech + Masters in 5 yrs)   
 
 ### Proposal Title
 
