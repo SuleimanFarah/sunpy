@@ -22,7 +22,16 @@ Skype : aaaagrawal
 
 ***
 
-       I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementing Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects. I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.
+I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementing Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects.
+I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a community reviewed collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.
+
+### Project Experience in Image Processing and Data Analysis
+
+***
+
+* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
+* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
+* [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
 
 ### Contributions to Sunpy:
 
@@ -38,13 +47,6 @@ Skype : aaaagrawal
 * Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
 * Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
 
-### Related Projects
-
-***
-
-* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
-* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
-* [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
 
 ### Proposal Title
 
@@ -101,4 +103,3 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 [(3)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(4)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
 
 [(5)](http://www.iucaa.ernet.in/~dipankar/ph217/contrib/limb.pdf) Limb Darkening
-
