@@ -106,7 +106,8 @@ Implementing more Image Processing ideas that I get/get suggested by the communi
 
 [(1)](http://library.utia.cas.cz/prace/20030125.pdf) Image Registration Methods : A Survey  
 
-[(2)] (http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf) Computer Vision by Richard Szeliski : Chapter 6 , Pg. no. 309, Feature based Alignment
+[(2)] (http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf) Computer Vision by Richard Szeliski : Chapter 6 , Pg. no. 309, Feature based Alignment  
+
 [(3)](http://profs.info.uaic.ro/~ancai/DIP/articole/Image%20Processing%20Techniques%20and%20Feature%20Recognition%20in%20Solar%20Physics.pdf) Image Processing Techniques and Feature Recognition in Solar Physics  
 
 [(4)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(5)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
