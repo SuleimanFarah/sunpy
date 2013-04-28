@@ -40,4 +40,10 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 * split(int) function added to time_range 
 
+## Code Samples :
+
+* My current group project in C++: [Terraria Clone](https://github.com/rmbreak/terraria-clone)
+* My past project in Java, showing web interactions relevant to the project: [Zombies!](http://www.mediafire.com/download.php?4o1q659fbw85l28)
+* My group mobile app hackathon project working with Dominion Enterprises' Boats.com API, showing knowledge using databases: [Boat Thing](https://github.com/dominionenterprises/dmm-hacku)
+
 Thanks to [Ankit Agrawal](https://github.com/sunpy/sunpy/wiki/GSoC-2013--Ankit-Agrawal) for the help setting up this page
