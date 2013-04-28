@@ -77,7 +77,7 @@ I don't have any other commitment during summer hence I will work the normal 40 
 Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis using common.
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routines for Resampling Maps on z-axis by a factor.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
 Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are finding the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
@@ -89,7 +89,7 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Implementing a routine that compensates for the observed dimming on the edge of the Sun.
+Adding a routine that compensates for the observed dimming on the edge of the Sun.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
