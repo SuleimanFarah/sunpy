@@ -31,6 +31,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 ###Schedule
 **May 27th, 2013 - June 16th, 2013**
 * Community Bonding
+* Become a Git power user
 * Generally Review codebase
 * Review SQLite-Python API
 * Become familiar with VSO toolkit  
