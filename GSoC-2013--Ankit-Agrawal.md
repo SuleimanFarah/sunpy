@@ -2,7 +2,7 @@
 
 ##### This proposal is still in progress.
 
-### Contact and Username info:
+## Contact and Username info:
 Name : Ankit Agrawal  
 Email : aaaagrawal@iitb.ac.in  
 github : [ankit-maverick](https://github.com/ankit-maverick)  
@@ -16,12 +16,10 @@ Expected Graduation date : June 2015
 Degree : Dual Degree(B.Tech + Masters in 5 yrs)   
 
 ## Proposal Title :
-#### SunPy : Implementation of Image Processing routines for Map and MapCube  
+### SunPy : Implementation of Image Processing routines for Map and MapCube  
 
 
-### Personal Bio :
-
-***
+## Personal Bio :
 
 I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Program(B.Tech and Masters) in Electrical Engineering at IIT Bombay. My Masters specialization is in Communication and Signal Processing. I want to work on the idea of 'Implementation of Image Processing Routines for Map and MapCube'. The relevant coursework that I have done in the past related to this project are Linear Algebra, Image Processing, Data Analysis and Interpretation and Computer Vision. Python is the programming language I am most confident with. I also know C++, Java, Matlab and R and have used them in various projects.  
 
@@ -30,9 +28,7 @@ I have been using many open source softwares for my daily programming purposes a
 I have been interested in Astronomy since last two and a half years at my university. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis on Solar Images which makes the use of Image Processing techniques very prominent. Because of the above reasons, I would like to become a part of core development team of SunPy and contribute to the Image Processing needs of the library in future.
 
 
-### Proposal Abstract :
-
-***
+## Proposal Abstract :
 
 A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
 
@@ -42,9 +38,8 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 * Compensate the observed dimming on the edge of the Sun.
 
   
-### Proposal Detailed Description 
+## Proposal Detailed Description 
 
-***
 
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/). The Implementation Timeline is as follows -
 
@@ -72,33 +67,27 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 ##### Post GSoC:
 Implementing more Image Processing ideas that I get or get suggested by the community.
 
-### Project Experience in Image Processing and Data Analysis :
-
-***
+## Project Experience in Image Processing and Data Analysis :
 
 * Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
 * Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
 * [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
 
-### Contributions to Sunpy :
-
-***
+## Contributions to Sunpy :
 
 * Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
 * Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
 * Bug filed https://github.com/sunpy/sunpy/issues/432
 
-### Contributions to Image Processing package scikit-image :
+## Contributions to Image Processing package scikit-image :
 
-***
 * Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
 * Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
 
 
 
-### Reference :
+## Reference :
 
-***
 
 [(1)](http://library.utia.cas.cz/prace/20030125.pdf) Image Registration Methods : A Survey  
 
