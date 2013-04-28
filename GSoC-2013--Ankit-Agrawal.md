@@ -33,7 +33,7 @@ I am Ankit Agrawal, a third year student enrolled in a 5 year Dual Degree Progra
 
 I have been using many open source softwares for my daily programming purposes and have always felt the desire to contribute back to the open source community. The last few weeks have been very satisfying to me because of the learning curve I have ascended by writing good quality test-driven code in a collaborative environment while contributing to some open source projects in Python. Becoming a part of development team of such open source projects requires time to gain trust in the code you write and the decisions you make. Google Summer of Code provides a perfect platform for someone like me to become a part of well established open source project.  
 
-I have been interested in Astronomy since past two and a half years at my university. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis on Solar Images which makes the use of Image Processing techniques very prominent. Because of the above reasons, I would like to become a part of core development team of SunPy and contribute to the Image Processing needs of the library in future.
+I have been interested in Astronomy since last two and a half years at my university. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis on Solar Images which makes the use of Image Processing techniques very prominent. Because of the above reasons, I would like to become a part of core development team of SunPy and contribute to the Image Processing needs of the library in future.
 
 
 ### Proposal Abstract :
@@ -76,8 +76,7 @@ Adding a routine that compensates for the observed dimming on the edge of the Su
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
 ##### Post GSoC:
-Implementing more Image Processing ideas that I get/get suggested by the community during the summer.  
-
+Implementing more Image Processing ideas that I get or get suggested by the community.
 
 ### Project Experience in Image Processing and Data Analysis :
 
