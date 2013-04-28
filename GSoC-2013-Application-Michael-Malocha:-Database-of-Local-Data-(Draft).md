@@ -27,7 +27,10 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 *	Create a namespace for querying the local database for specific sets of data  
 *	When using VSO to gather new data, query the local database to prevent redundant downloads of data  
 *	Provide documentation and testing
-  
+
+###Schedule
+May 27th, 2013 - June 17th, 2013  
+* does it really matter?
 
 ##Additional Information:
 ###Sample Code
