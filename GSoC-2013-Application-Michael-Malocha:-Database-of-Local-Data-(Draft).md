@@ -60,7 +60,6 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Submit final code samples to Google
 
 ##Additional Information:
-###Sample Code
 ###Patch
 ###Curriculum Vitae
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
