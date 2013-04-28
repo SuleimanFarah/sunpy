@@ -35,7 +35,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Review SQLite-Python API
 * Become familiar with VSO toolkit
 
-**Week 1 and 2: Database Construction (Jun. 17th - Jun. 30th)
+**Week 1 and 2: Database Construction (Jun. 17th - Jun. 30th)**
 * Work with mentors to define important data fields
 * Use fields to define tables
 * Determine primary and foreign keys
