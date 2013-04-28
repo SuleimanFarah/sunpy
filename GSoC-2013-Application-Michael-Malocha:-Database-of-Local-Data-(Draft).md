@@ -41,8 +41,12 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 **July 29th, 2013 - August 2nd, 2013**
 * Midterm and Mentor review  
 
-**August 3rd, 2013 - September 15th, 2013**
-* More coding, testing and revising  
+**August 3rd, 2013 - August 25th, 2013**
+* More coding, testing and revising
+
+**August 26th, 2013 - September 15th, 2013**
+* Fall instruction begins, reduced hours on project
+* More coding, testing and revising
 
 **September 16th, 2013 - September 23rd, 2013**
 * Polish code
@@ -59,6 +63,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 ###Sample Code
 ###Patch
 ###Curriculum Vitae
+Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Vacation Days
 It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.
 
