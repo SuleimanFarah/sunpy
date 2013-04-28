@@ -18,11 +18,11 @@ Current Year : Third year
 Expected Graduation date : June 2015  
 Degree : Dual Degree(B.Tech + Masters in 5 yrs)   
 
-### Proposal Title
+### Proposal Title :
 
 #### SunPy : Implementation of Image Processing routines for Map and MapCube
 
-### Personal Bio:
+### Personal Bio :
 
 ***
 
@@ -33,7 +33,7 @@ I have been using many open source softwares for my daily programming purposes a
 I have been interested in Astronomy since past two years. In the last two semesters, I have found my interest Image Processing and Computer Vision and want to pursue my Masters(next two years) in the same. Solar physics involves a great deal of analysis on Solar Images which makes the use of Image Processing techniques very prominent. Because of the above reasons, I would like to become a part of core development team of Sunpy and contribute to the Image Processing needs of the library in future.
 
 
-### Proposal Abstract:
+### Proposal Abstract :
 
 ***
 
@@ -44,33 +44,8 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 * De-rotating images to compensate for Sun's rotation
 * Compensate the observed dimming on the edge of the Sun.
 
-
-
-### Project Experience in Image Processing and Data Analysis
-
-***
-
-* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
-* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
-* [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
-
-### Contributions to Sunpy:
-
-***
-
-* Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
-* Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
-* Bug filed https://github.com/sunpy/sunpy/issues/432
-
-### Contributions to Image Processing package scikit-image:
-
-***
-* Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
-* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
-
-
   
-### Implementation Timeline:
+### Implementation Timeline :
 
 ***
 
@@ -99,6 +74,31 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 ##### Post GSoC:
 Implementing more Image Processing ideas that I get/get suggested by the community during the summer.  
+
+
+### Project Experience in Image Processing and Data Analysis :
+
+***
+
+* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
+* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
+* [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
+
+### Contributions to Sunpy :
+
+***
+
+* Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
+* Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
+* Bug filed https://github.com/sunpy/sunpy/issues/432
+
+### Contributions to Image Processing package scikit-image :
+
+***
+* Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
+* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
+
+
 
 ### Reference:
 
