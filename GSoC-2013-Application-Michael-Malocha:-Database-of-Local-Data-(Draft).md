@@ -62,7 +62,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Test and refine
 
 **Week 7 and Midterm Review (Jul. 29th - Aug. 2nd)**
-* Midterm and Mentor review  
+* Buffer for editing, testing, documenting and auditing progress 
 
 **Week 8, 9, 10 (Aug. 5th - Aug. 25th)**
 * More coding, testing and revising
