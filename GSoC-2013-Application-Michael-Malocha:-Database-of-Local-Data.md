@@ -9,7 +9,7 @@ Skype: mmalocha13
 Blog: http://mjm159.wordpress.com/  
 
 #University Information
-University: Humboldt State University  
+School: Humboldt State University  
 Major: Computer Science  
 Current Year: 4  
 Expected Graduation Date: May 23rd, 2014  
