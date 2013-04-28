@@ -49,7 +49,8 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 * Compensate the observed dimming on the edge of the Sun.
 
   
-### Implementation Timeline :
+### Proposal Detailed Description 
+#### Implementation Timeline :
 
 ***
 
