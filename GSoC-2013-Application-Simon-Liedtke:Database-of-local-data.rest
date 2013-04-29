@@ -1,0 +1,108 @@
+Application for GSOC 2013
+=========================
+
+Student Information
+-------------------
+:Name: Simon Liedtke
+:Email: liedtke.simon@googlemail.com
+:Telephone: (+49) 160 98 46 03 68
+:IRC handle: derdon@irc.freenode.net
+:GitHub account: derdon
+:Jabber account: derdon@jabber.ccc.de
+:Blog: http://derdon.github.io/blog/
+
+University Information
+----------------------
+:University: University Of Bremen
+:Major: Computer Science
+:Current Semester: 2
+:Expected Graduation Date: Summer 2015
+:Degree: Bachelor of Science (BSc)
+
+Project Proposal Information
+----------------------------
+Title: *SunPy: Database of local data*
+
+Abstract
+~~~~~~~~
+The SunPy package offers the module vso (Virtual Solar Observatory)
+which represents an interface to query and download astronomical data
+from multiple data providers simultaneously. Currently, each time some
+data from a data provider is examined, it must be downloaded from
+the remote server. This causes unnecessary high bandwidth if the same
+data is requested multiple times. It is also not possible to save
+multiple query results with their metadata in the same place. With a
+**SQLite database on the local hard drive** these problems will be solved in
+a convenient way.
+
+Another benefit of having a personal local database is the possibility to
+allow **grouping of results** (e.g. "group all results that are from the
+instrument EIT and are currently opened"). As the (informal!) example
+demonstrates, results can be grouped by **chaining logical operators**.
+
+Detailed Description
+~~~~~~~~~~~~~~~~~~~~
+Milestones:
+
+:May 27 -- June 2 (1 week): Read and understand the relevant parts of the code
+  and documentation. This includes *sunpy/net/download.py*,
+  *sunpy/net/vso/vso.py* and the documents
+  http://sunpy.readthedocs.org/en/staging/guide/vso.html,
+  http://sunpy.readthedocs.org/en/staging/guide/tutorial.html#querying-the-vso,
+  and http://sunpy.readthedocs.org/en/staging/reference/vso.html.
+
+:June 3 -- June 9 (1 week): Design the database: Define which columns will
+                            be included in the database and which types
+                            they will have.
+:June 10 -- June 23 (2 weeks): Design an API for downloading data to a
+                               local database and discuss the proposal
+                               with the mentors.
+:June 24 -- July 14 (3 weeks): Implement the database interface.
+:July 15 -- July 28 (2 weeks): Document all implemented code and check for
+                               missing tests.
+:August 1: Mid-term evaluation: Database interface must be stable and
+           tested thoroughly.
+:July 29 -- August 18 (3 weeks): Implement grouping of results.
+:August 19 -- September 1 (2 weeks): document and test the grouping
+                                     feature.
+:September 2 -- September 8 (1 week): Extend grouping to support boolean
+                                      operations
+:September 9 -- September 15 (1 week): test and document boolean
+                                       operations on groups.
+:September 16: Suggested 'pencils down' date. Add more tests, improve the
+               documentation, refactor.
+
+Code Sample
+-----------
+A pull request by me can be found at https://github.com/sunpy/sunpy/pull/445.
+This patch makes it possible to parse time strings with more than six
+zeros in the microsecond part. An example for input that can be parsed
+with this patch but could not be before is ``2007-05-04T21:08:12.00000000``
+(note the eight zeros instead of six). The corresponding issue can be found at
+https://github.com/sunpy/sunpy/issues/289.
+
+Biography
+---------
+I am a 21 year old student studying computer science in Bremen, Germany.
+I dived into the world of coding when I was 12 and started to interest
+myself for the Internet and the www. I wanted to find out how web pages
+are made, so I learned HTML, CSS, and JavaScript. When I read
+documentation about JavaScript, it was often mentioned that it works on
+the client side, the browser, and thus cannot be used for interfacing with
+a database from the webserver (back in my days, there was no fancy thing
+like Node.js). So I became corious again and learned PHP (it seemed to me
+that there was no alternative option). Five years ago, I read about a
+programming language called Python and found out that PHP has many flaws
+which I could not notice when I learned it because I was a beginner back
+then. The time I started learning Python was also the time I started
+supporting the German Python community: I am an active member both in the
+IRC channel #python.de at freenode and in the German Python forum at
+http://www.python-forum.de/index.php. I have thorough experience with git,
+sphinx, the testing framework py.test and working on open source projects
+in general.
+
+Other Schedule Information
+--------------------------
+Summer vacancies start for me on July 6, so I cannot work 40 hours per
+week before that date. But I promise to spend as much time as possible
+during this period to achieve my goals.
