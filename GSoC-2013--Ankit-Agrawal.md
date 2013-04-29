@@ -54,10 +54,11 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 ### Deliverables :
 By the end of the summer, I intend to have delivered routines for the following tasks in Map and MapCube class:
 * Sorting Maps in a MapCube and by time, frequency and other units
-* Resampling Maps in a Mapcube along the z-axis
-* Image Registration to align images in a Mapcube
-* De-rotating images to compensate for Sun's rotation
+* Resampling Maps in a Mapcube along the z-axis.
+* Image Registration to align images in a Mapcube.
+* De-rotating images to compensate for Sun's rotation.
 * Compensate the observed dimming on the edge of the Sun.
+* (If time remains in the end) Synoptic Maps method for MapCubes.
 
 ### Commitment and Communication :
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
@@ -74,16 +75,16 @@ Sorting Maps in a Mapcube by time, frequency and other units. This would be impl
 Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame. A reasonable first implementation would be completed in the first week followed by improvements and optimizations in the next two weeks to achieve high accuracy.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
-Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
+Buffer period. Finishing off any previous incomplete work. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
 
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. Finishing off any previous incomplete work.
+Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. If some time remains, Implementing a method for generating Synoptic Maps from MapCubes as described in [7] and  [8] of reference section.
 
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
-Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
+Buffer period. Finishing off any previous incomplete work. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
 ##### Post GSoC:
 Implementing more Image Processing ideas that I get or get suggested by the community.
@@ -99,3 +100,5 @@ Implementing more Image Processing ideas that I get or get suggested by the comm
 [(4)](http://hesperia.gsfc.nasa.gov/ssw/gen/idl/solar/drot_nar.pro), [(5)](http://ssrt.iszf.irk.ru/~grechnev/idl/sunrot.pro) De-rotating Solar Images  
 
 [(6)](http://astrowww.phys.uvic.ca/~tatum/stellatm/atm6.pdf) Limb Darkening
+
+[(7)](http://sun.stanford.edu/synop/), [(8)](http://solar.physics.montana.edu/nuggets/2002/020215/020215.html) Synoptic Maps
