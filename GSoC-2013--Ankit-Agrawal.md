@@ -32,8 +32,12 @@ I have been interested in Astronomy since last two and a half years at my univer
 
 A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the above two classes to improve existing solar image analysis capabilities in SunPy.  
 
+  
+## Proposal Detailed Description 
 
-## Deliverables :
+I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
+
+### Deliverables :
 By the end of the summer, I intend to have delivered routines for the following tasks in Map and MapCube class:
 * Sorting Maps in a MapCube and by time, frequency and other units
 * Resampling Maps in a Mapcube along the z-axis
@@ -41,10 +45,7 @@ By the end of the summer, I intend to have delivered routines for the following 
 * De-rotating images to compensate for Sun's rotation
 * Compensate the observed dimming on the edge of the Sun.
 
-  
-## Proposal Detailed Description 
-
-I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/). The Implementation Timeline is as follows -
+### Implementation Timeline :
 
 ##### Community Bonding Period (27th May - 16th June):
 Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
