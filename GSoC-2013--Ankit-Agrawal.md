@@ -53,17 +53,17 @@ Reading papers mentioned in the reference. Discussing the possible ideas with th
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Adding a method for resampling Maps in MapCube along z-axis by a factor.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration would be to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
+Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame. A reasonable first implementation would be completed in the first week followed by improvements and optimizations in the next two weeks to achieve high accuracy.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
- 
+
 ##### Week 10 and 11 (24th Aug - 6th Sep):
 Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. Finishing off any previous incomplete work.
- 
+
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
