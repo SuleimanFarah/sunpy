@@ -30,8 +30,10 @@ I have been interested in Astronomy since last two and a half years at my univer
 
 ## Proposal Abstract :
 
-A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the following tasks for the above two classes to improve existing solar image analysis capabilities in SunPy.  
+A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the above two classes to improve existing solar image analysis capabilities in SunPy.  
 
+
+## Deliverables :
 * Sorting and Resampling Maps in a Mapcube and by time, frequency and other units
 * Image Registration to align images in a Mapcube
 * De-rotating images to compensate for Sun's rotation
