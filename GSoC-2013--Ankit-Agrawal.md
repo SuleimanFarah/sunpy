@@ -34,7 +34,9 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 
 
 ## Deliverables :
-* Sorting and Resampling Maps in a Mapcube and by time, frequency and other units
+By the end of the summer, I intend to have delivered routines for the following tasks related to Map and MapCube :
+* Sorting Maps in a MapCube and by time, frequency and other units
+* Resampling Maps in a Mapcube along the z-axis
 * Image Registration to align images in a Mapcube
 * De-rotating images to compensate for Sun's rotation
 * Compensate the observed dimming on the edge of the Sun.
@@ -42,14 +44,13 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
   
 ## Proposal Detailed Description 
 
-
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/). The Implementation Timeline is as follows -
 
 ##### Community Bonding Period (27th May - 16th June):
 Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Routine for Resampling Maps on z-axis by a factor.
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Adding a method for resampling Maps in MapCube along z-axis by a factor.
  
 ##### Week 3, 4 and 5 (1st July - 21st July):
 Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration would be to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame.
@@ -61,7 +62,7 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
+Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. Finishing off any previous work.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
