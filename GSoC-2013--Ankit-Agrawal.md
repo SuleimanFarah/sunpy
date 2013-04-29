@@ -32,7 +32,23 @@ I have been interested in Astronomy since last two and a half years at my univer
 
 A great percentage of analysis in Solar Physics is performed using Images. Hence Image Processing methods play a major role in Solar Data Analysis. Sunpy provides a data-type Map to hold such 2D images and a data-type MapCube, to store a list or series of Maps. This project focuses on implementing important Image Processing routines for the above two classes to improve existing solar image analysis capabilities in SunPy.  
 
-  
+## Project Experience in Image Processing and Data Analysis :
+
+* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
+* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
+* Machine Learning and Data Analysis competitions on [Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
+
+## Contributions to Sunpy :
+
+* Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
+* Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
+* Bug filed https://github.com/sunpy/sunpy/issues/432
+
+## Contributions to Image Processing package scikit-image :
+
+* Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
+* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
+
 ## Proposal Detailed Description 
 
 ### Deliverables :
@@ -71,24 +87,6 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 ##### Post GSoC:
 Implementing more Image Processing ideas that I get or get suggested by the community.
-
-## Project Experience in Image Processing and Data Analysis :
-
-* Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
-* Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
-* Machine Learning and Data Analysis competitions on [Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
-
-## Contributions to Sunpy :
-
-* Addition of tests to sunpy.map.map https://github.com/sunpy/sunpy/pull/439
-* Minor fixes in documentation and map.peek() https://github.com/sunpy/sunpy/pull/438
-* Bug filed https://github.com/sunpy/sunpy/issues/432
-
-## Contributions to Image Processing package scikit-image :
-
-* Basic Pixelwise Image Transforms(WIP) https://github.com/scikit-image/scikit-image/pull/505
-* Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
-
 
 ## Reference :
 
