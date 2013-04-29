@@ -74,7 +74,7 @@ Implementing more Image Processing ideas that I get or get suggested by the comm
 
 * Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
 * Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
-* [Machine Learning and Data Analysis competitions on Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
+* Machine Learning and Data Analysis competitions on [Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
 
 ## Contributions to Sunpy :
 
