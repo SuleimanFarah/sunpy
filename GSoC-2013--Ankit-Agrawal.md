@@ -49,7 +49,7 @@ I don't have any other commitment during summer hence I will work the normal 40 
 ### Implementation Timeline :
 
 ##### Community Bonding Period (27th May - 16th June):
-Reading papers mentioned in the reference. Discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task . Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
+Reading papers mentioned in the reference and discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
 Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Adding a method for resampling Maps in MapCube along z-axis by a factor.
@@ -90,9 +90,7 @@ Implementing more Image Processing ideas that I get or get suggested by the comm
 * Upsampling and Downsampling of Images(Downsampling similar to superpixel() in sunpy.map.map)(WIP) https://github.com/scikit-image/scikit-image/pull/511  
 
 
-
 ## Reference :
-
 
 [(1)](http://library.utia.cas.cz/prace/20030125.pdf) Image Registration Methods : A Survey  
 
