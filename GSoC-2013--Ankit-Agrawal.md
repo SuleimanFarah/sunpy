@@ -34,7 +34,7 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 
 
 ## Deliverables :
-By the end of the summer, I intend to have delivered routines for the following tasks related to Map and MapCube :
+By the end of the summer, I intend to have delivered routines for the following tasks in Map and MapCube class:
 * Sorting Maps in a MapCube and by time, frequency and other units
 * Resampling Maps in a Mapcube along the z-axis
 * Image Registration to align images in a Mapcube
