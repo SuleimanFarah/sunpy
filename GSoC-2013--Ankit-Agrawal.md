@@ -62,7 +62,7 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
  
 ##### Week 10 and 11 (24th Aug - 6th Sep):
-Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. Finishing off any previous work.
+Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. Finishing off any previous incomplete work.
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
