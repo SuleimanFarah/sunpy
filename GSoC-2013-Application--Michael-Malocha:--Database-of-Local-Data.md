@@ -9,6 +9,9 @@ Github name: mjm159
 Skype: mmalocha13  
 Blog: http://mjm159.wordpress.com/  
 
+##Bio
+This is my bio
+
 ##University Information:
 School: Humboldt State University  
 Link: www.humboldt.edu  
