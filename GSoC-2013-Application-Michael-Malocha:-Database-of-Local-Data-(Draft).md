@@ -43,7 +43,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Hone diagram and table details with community
 * Create interaction model between database, python interface, VSO toolkit
 
-**Week 2 and 3: Database Construction (Jun. 24th - Jul. 7th)
+**Week 2 and 3: Database Construction (Jun. 24th - Jul. 7th)**
 * Build example database
 * Populate with example data
 * Run tests and refine
