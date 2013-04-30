@@ -22,7 +22,8 @@ Degree: BSc
 
 ##Project Proposal: SunPy - Database of Local Data  
 ###Abstract
-When using the Sunpy library, the VSO toolkit allows users to download solar data to their local systems. One of the problems with this data, is that after it is downloaded and used, it is stored in such a way that it is not super conducive for future re-use. The proposed idea is to add the functionality of a SQLite database to the sunpy library. This local database would interact with the VSO toolkit during downloads to keep track of the data and its corresponding metadata in a functional local database, thus enabling future querying and re-use. 
+ When using the SunPy library, the VSO toolkit allows users to download solar data to their local systems. One of the problems with this data, is that after it is downloaded and used, it is stored in such a way that it is not super conducive for future re-use. The proposed idea is to add the functionality of a SQLite database. It would interact with the VSO toolkit during downloads to keep track of the data and its corresponding metadata in a functional local database, thus enabling future querying and re-use.
+
 ###Deliverables
 
 *	Create framework for a local SQLite database that interfaces with VSO  
