@@ -80,7 +80,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Write and edit a lot of the documentation for the newly developed code base
 
 **Week 13: Buffer (Sept. 9th - Sept. 15th)**
-* Just planning a little time in case I've had any miscalculations in part size for the project
+* Just planning a little time in case I've had any miscalculations in time requirements for project chunks
 
 **Week 14: Polish and Final Evaluations (Sept. 16th - Sept. 27th)**
 * Polish code
