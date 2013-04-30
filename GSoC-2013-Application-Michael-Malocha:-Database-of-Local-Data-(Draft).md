@@ -35,17 +35,20 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Review SQLite-Python API
 * Become familiar with VSO toolkit
 
-**Week 1 and 2: Database Design and Construction (Jun. 17th - Jun. 30th)**
+**Week 1: Database & Codebase Design (Jun. 17th - Jun. 23rd)**
 * Work with mentors to define important data fields
 * Use fields to define tables
 * Determine primary and foreign keys
 * Create an entity relationship diagram
 * Hone diagram and table details with community
+* Create interaction model between database, python interface, VSO toolkit
+
+**Week 2 and 3: Database Construction (Jun. 24th - Jul. 7th)
 * Build example database
 * Populate with example data
 * Run tests and refine
 
-**Week 3 Local Database Build Scripts (Jul. 1st - Jul. 7th)**
+**Week 4: Local Database Build Scripts (Jul. 8th - Jul. 14th)**
 * Write python script to create local database when SunPy is first run (for each user)
     * Should prompt user
     * Allow user to specify a destination directory or use the default
@@ -53,7 +56,7 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
     * Use or create a flag that determines the first use of SunPy
 * Configuration file for local database
 
-**Week 4, 5 and 6 (Jun. 8th - Jul. 28th)**
+**Week 5, 6 and 7: Python Interface Build and Midterm Review (Jul. 15th - Aug. 4th)**
 * Outline namespace, classes, functions and constants for python framework to interface with the SQLite database
     * Needs to refer to a config file
     * Provide optimized infrastructure for querying the local database and quickly storing downloaded data
@@ -61,16 +64,20 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 * Write code
 * Test and refine
 
-**Week 7 and Midterm Review (Jul. 29th - Aug. 2nd)**
-* Buffer for editing, testing, documenting and auditing progress 
+**Week 8: Refine (Aug. 5th - Aug. 11th)**
+* Editing, testing, documenting and auditing progress 
 
-**Week 8, 9, 10 (Aug. 5th - Aug. 25th)**
+**Week 9 and 10: (Aug. 12th - Aug. 25th)**
 * Integrate with the VSO toolkit
-    * 
+    * Create framework to translate VSO requests into queries for local database via the previously developed
+    * Build algorithm to refer to local database for pre-existing data when making VSO request
 
-**Week 11, 12, 13 (Aug. 26th - Sept. 15th)**
+**Week 11 and 12 (Aug. 26th - Sept. 8th)**
 * Fall instruction begins, reduced hours on project
 * More coding, testing and revising
+
+**Week 13 (Sept. 9th - Sept. 15th)**
+* Buffer Week
 
 **Week 14 and Final Evaluations (Sept. 16th - Sept. 27rd)**
 * Polish code
@@ -81,7 +88,6 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 **GSoC 2013 Code Submit Deadline (Sept. 27th - Oct. 1st)**
 
 ##Additional Information:
-###Patch
 ###Curriculum Vitae
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Vacation Days
