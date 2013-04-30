@@ -78,10 +78,10 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
     * Create configuration protocols that allow users to set preferences during VSO requests in regards to the new data downloaded and the already stored data.
 * Write and edit a lot of the documentation for the newly developed code base
 
-**Week 13 (Sept. 9th - Sept. 15th)**
-* Buffer Week
+**Week 13: Buffer (Sept. 9th - Sept. 15th)**
+* Just planning a little time in case I've had any miscalculations in part size for the project
 
-**Week 14 and Final Evaluations (Sept. 16th - Sept. 27rd)**
+**Week 14: Polish and Final Evaluations (Sept. 16th - Sept. 27rd)**
 * Polish code
 * Complete final tests
 * Finish Documentation
