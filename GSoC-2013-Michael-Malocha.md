@@ -10,7 +10,7 @@ Skype: mmalocha13
 Blog: http://mjm159.wordpress.com/  
 
 ##Bio
-This is my bio
+As an applicant for the Google summer of code, I feel that I should make a small introduction about myself. From my application you can see that my full name is Michael Malocha, I go by Mike and Michael, but if I to pick, I prefer to go by Michael. I am from Seattle, and go to school in the lovely region of Northern California. I am finishing my 4th year of school I didn't decide to study Computer Science until 2 years ago. I started University pursuing Marine Biology, but soon felt that it wasn't what I wanted to do with my life. I decided to take a couple different classes to try out some of the different sciences and in the process I took the "Introduction to Computer Science" course that my school offered. When the semester ended, I wasn't satisfied stopping there, and needed to know more about these incredible machines we so often take for granted. I'll be the first to admit that I am not the most experienced applicant in this program, but I feel that my very intense desire to improve my understanding of this field coupled with budding desire to contribute to the open source community will lend themselves to the SunPy project. Thank you for taking the time to consider my application.
 
 ##University Information:
 School: Humboldt State University  
@@ -100,3 +100,5 @@ Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159
 ###Vacation Days
 It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.  
 Another thing to take into account is that Fall instruction will begin part way through the last couple weeks of the program. That said, I feel that I should just have small aspects of the project left to finish, and the way my schedule is looking I should have a lot of hours after class to work on the project.
+###Final note
+Subscribing to the concept of quality over quantity, I decided to focus my energies on a single proposal and after searching through the database of projects, I chose to focus on the SunPy project, and should I be considered please note that there won't be any conflict with other possible GSoC projects.
