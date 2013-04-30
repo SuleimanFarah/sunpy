@@ -67,14 +67,16 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 **Week 8: Refine (Aug. 5th - Aug. 11th)**
 * Editing, testing, documenting and auditing progress 
 
-**Week 9 and 10: (Aug. 12th - Aug. 25th)**
+**Week 9 and 10: Interface with VSO (Aug. 12th - Aug. 25th)**
 * Integrate with the VSO toolkit
     * Create framework to translate VSO requests into queries for local database via the previously developed
     * Build algorithm to refer to local database for pre-existing data when making VSO request
 
-**Week 11 and 12 (Aug. 26th - Sept. 8th)**
+**Week 11 and 12: Configuration files and Documentation (Aug. 26th - Sept. 8th)**
 * Fall instruction begins, reduced hours on project
-* More coding, testing and revising
+* Implement user settings
+    * Create configuration protocols that allow users to set preferences during VSO requests in regards to the new data downloaded and the already stored data.
+* Write and edit a lot of the documentation for the newly developed code base
 
 **Week 13 (Sept. 9th - Sept. 15th)**
 * Buffer Week
@@ -91,4 +93,5 @@ When using the Sunpy library, the VSO toolkit allows users to download solar dat
 ###Curriculum Vitae
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Vacation Days
-It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.
+It's very probably that over the summer I will go on some weekend trips such as camping or driving up north to visit my family. This would mostly be over weekends but might require some weekdays for travel. It would be a good guess to say that I will probably need a total of a weeks worth of time, but that would be spread out over the whole summer. I'd be working on weekly objectives and I believe that with a few hours on weekends I could easily account for any missed days.  
+Another thing to take into account is that Fall instruction will begin part way through the last couple weeks of the program. That said, I feel that I should just have small aspects of the project left to finish, and the way my schedule is looking I should have a lot of hours after class to work on the project.
