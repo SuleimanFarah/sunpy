@@ -58,7 +58,7 @@ By the end of the summer, I intend to have delivered routines for the following 
 * Image Registration to align images in a Mapcube.
 * De-rotating images to compensate for Sun's rotation.
 * Compensate the observed dimming on the edge of the Sun.
-* (If time remains in the end) Synoptic Maps method for MapCubes.
+* (If time remains in the end) Constructing Synoptic Maps from MapCubes.
 
 ### Commitment and Communication :
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
