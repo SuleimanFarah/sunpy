@@ -42,6 +42,8 @@ Degree: BSc
 
 **Week 1: Database & Codebase Design (Jun. 17th - Jun. 23rd)**
 * Work with mentors to define important data fields
+    * What types of metadata should be included (i.e. parts from the heliophysical event metadata webservice) 
+    * How it should be organized
 * Use fields to define tables
 * Determine primary and foreign keys
 * Create an entity relationship diagram
