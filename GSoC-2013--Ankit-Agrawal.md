@@ -1,6 +1,5 @@
 ## SunPy : Implementation of Image Processing routines for Map and MapCube
 
-##### This proposal is still in progress.
 
 ## Contact and Username info:
 Name : Ankit Agrawal  
@@ -36,6 +35,7 @@ A great percentage of analysis in Solar Physics is performed using Images. Hence
 
 * Image Processing course : [Mini-project 1](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project1.pdf) and [Mini-project 2](http://home.iitb.ac.in/~aaaagrawal/projects/ip_project2.pdf) based on the paper '[Undersampled Radial MRI with Multiple Coils. Iterative Image Reconstruction Using a Total Variation Constraint](http://www-mrsrl.stanford.edu/studygroup/2/Files/Block_2007_Undersampled.pdf)'
 * Computer Vision Course Project(WIP) : [Parallel Tracking and Mapping in 3D](https://github.com/ankit-maverick/ComputerVisionProject) using Kinect based on [Parallel Tracking and Mapping for Small AR Workspaces](http://www.robots.ox.ac.uk/~lav/Papers/klein_murray_ismar2007/klein_murray_ismar2007.pdf)
+* Implementation of [Search Engine features](https://github.com/ankit-maverick/InformationRetrievalassignment) : Predicting Similar Queries, Query Auto-completion, Spell checker using 20M query data from AOL
 * Machine Learning and Data Analysis competitions on [Kaggle](http://www.kaggle.com/users/43981/ankit-agrawal)
 
 ## Contributions to Sunpy :
