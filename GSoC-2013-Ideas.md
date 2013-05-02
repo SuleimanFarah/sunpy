@@ -35,7 +35,7 @@
 
 ## Database of local data
 
-* Description: In solar physics the analysis of observational data plays a big role, and the size of the data files varies from few kB to TB for a whole day observation depending the instruments used.  Therefore, it is common that not all the downloaded data is storage in the same place.  This project aims to create a personal database which registers the local path where the data is saved, but also some other metadata (wavelength, provider, etc... ).  This will benefit the user on being able to choose a sub-set of the data stored locally and by saved on bandwidth if the data is requested again.
+* Description: In solar physics the analysis of observational data plays a big role, and the size of the data files varies from few kB to TB for a whole day observation depending the instruments used.  Therefore, it is common that not all the downloaded data is stored in the same place.  This project aims to create a personal database which registers the local path where the data is saved, but also some other metadata (wavelength, provider, etc... ).  This will benefit the user on being able to choose a sub-set of the data stored locally and by saved on bandwidth if the data is requested again.
 
 * Requirements: basic notion of databases (sqlite), willingness to understand the the data retrieval tools in sunpy (ie. VSO)
 
