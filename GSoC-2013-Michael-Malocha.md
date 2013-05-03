@@ -98,7 +98,7 @@ Degree: BSc
 
 ##Additional Information:
 ###Contribution to SunPy
-Change coordinate system using peek(): https://github.com/sunpy/sunpy/pull/450
+Change coordinates when using peek(): https://github.com/sunpy/sunpy/pull/450
 ###Curriculum Vitae
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Vacation Days
