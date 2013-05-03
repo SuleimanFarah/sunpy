@@ -66,7 +66,7 @@ I don't have any other commitment during summer hence I will work the normal 40 
 ### Implementation Timeline :
 
 ##### Community Bonding Period (27th May - 16th June):
-* Reading papers mentioned in the reference and discussing the possible ideas with the mentors to finalize the best possible algorithm for a particular task.
+* Reading papers mentioned in the reference and discussing implementation details and possible ideas with the mentors to finalize the best possible algorithm for a particular task.
 * Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
 ##### Week 1 (17th June - 23rd June):
