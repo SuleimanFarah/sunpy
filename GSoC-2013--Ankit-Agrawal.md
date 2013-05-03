@@ -79,14 +79,14 @@ Implementing Image Registration methods to align the images in a MapCube with a 
 * deshake the series of Maps in Mapcube using Sun's center as the reference
 * find the features/keypoints in both the images
 * correspond/match the detected features in both the images
-* find the transformation between two images and then align the second image in first's co-ordinate frame.
+* find the transformation between two images and then align the second image in first's co-ordinate frame.  
 A reasonable first implementation would be completed in two weeks with scipy.ndimage as the base library followed by improvements and optimizations in the next week to achieve high accuracy.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
 Buffer period. Finishing off any previous incomplete work. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
-Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section. 
+Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section. Related issue : https://github.com/sunpy/sunpy/issues/358
 
 ##### Week 10 (24th Aug - 30th Aug):
 Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
