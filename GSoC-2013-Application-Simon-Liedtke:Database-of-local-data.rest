@@ -149,15 +149,31 @@ Milestones:
 :September 16: Suggested 'pencils down' date. Add more tests, improve the
                documentation, refactor and fix bugs.
 
-Code Sample
------------
-
+Code Sample(s)
+--------------
 A pull request by me can be found at https://github.com/sunpy/sunpy/pull/445.
 This patch makes it possible to parse time strings with more than six
 zeros in the microsecond part. An example for input that can be parsed
 with this patch but could not be before is ``2007-05-04T21:08:12.00000000``
-(note the eight zeros instead of six). The corresponding issue can be found at
-https://github.com/sunpy/sunpy/issues/289.
+(note the eight zeros instead of six). The corresponding issue can be
+found at https://github.com/sunpy/sunpy/issues/289.
+
+I am interested in esoteric programming languages and therefore wrote a
+`an interpreter for the language chef`_. To simplify developing and
+debugging programs written in befunge_, I wrote an interactive shell
+for it, see befungeshell_.
+
+To excercise my newly developed skills in the programming language Go, I
+wrote a (still experimental) library for parsing and making images in the
+`Netpbm format`_, see netpbm_ to have a look at the code.
+
+Writing code is not the only way to contribute to open source projects: To
+help the developers of a project with improving it, it is important to
+report bugs the users have encountered. An example of a bug I have
+reported is from the urwid_ project: there is an issue with putting an
+application into the background and fetching it back into the foreground.
+The complete bug report can be found here:
+https://github.com/wardi/urwid/issues/25.
 
 Biography
 ---------
@@ -174,23 +190,39 @@ programming language called Python and found out that PHP has many flaws
 which I could not notice when I learned it because I was a beginner back
 then. The time I started learning Python was also the time I started
 supporting the German Python community: I am an active member both in the
-IRC channel #python.de at freenode and in the German Python forum at
-http://www.python-forum.de/index.php. I have thorough experience with git,
-sphinx, the testing framework py.test and working on open source projects
-in general. When I used Python from web programming, I used Werkzeug_ and
-Flask_ as web frameworks and Genshi_ as the template engine. I also have
-basic experience with (web-based) databse applications using SQLAlchemy_.
+IRC channel #python.de at freenode and in the `German Python forum`_.
+I have thorough experience with git, sphinx, the testing framework py.test
+and working on open source projects in general. When I used Python from
+web programming, I used Werkzeug_ and Flask_ as web frameworks and Genshi_
+as the template engine. I also have basic experience with (web-based)
+databse applications using SQLAlchemy_.
 
 Other Schedule Information
 --------------------------
+Important remark: the times mentioned in this section are all GMT+1!
+
 Summer vacancies start for me on July 6, so I cannot work 40 hours per
 week before that date. But I promise to spend as much time as possible
-during this period to achieve my goals.
+during this period to achieve my goals. Until July 6, I plan to work from
+8:00 to 13:00 on Tuesdays and Wednesdays and from 8:00 to 11:00 on
+Thursdays. Depending on how much homework has to be done, I will also be
+able to work on the weekends during that time.
+
+After the July 6, I can work much more flexible, i.e. 40 hours per week
+(or more if possible, to compensate for the previous weeks).
 
 .. _A Guide to NumPy/SciPy Documentation: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
 .. _py.test: http://pytest.org
-.. _coverage.py: http://nedbatchelder.com/code/coverage/
-.. _Werkzeug: http://werkzeug.pocoo.org/
-.. _Flask: http://flask.pocoo.org/
-.. _Genshi: http://genshi.edgewall.org/
-.. _SQLAlchemy: http://www.sqlalchemy.org/
+.. _coverage.py: http://nedbatchelder.com/code/coverage
+.. _German Python forum: http://www.python-forum.de/index.php
+.. _Werkzeug: http://werkzeug.pocoo.org
+.. _Flask: http://flask.pocoo.org
+.. _Genshi: http://genshi.edgewall.org
+.. _SQLAlchemy: http://www.sqlalchemy.org
+.. _an interpreter for the language chef: https://github.com/derdon/chef
+.. _piet: http://www.dangermouse.net/esoteric/piet.html
+.. _befunge: http://en.wikipedia.org/wiki/Befunge
+.. _befungeshell: https://github.com/derdon/befungeshell
+.. _netpbm: https://github.com/derdon/netbpm
+.. _Netpbm format: http://en.wikipedia.org/wiki/Netpbm_format
+.. _urwid: http://excess.org/urwid
