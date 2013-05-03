@@ -28,12 +28,22 @@ Abstract
 The SunPy package offers the module vso (Virtual Solar Observatory)
 which represents an interface to query and download astronomical data
 from multiple data providers simultaneously. Currently, each time some
-data from a data provider is examined, it must be downloaded from
+data from a data provider is fetched, it must be downloaded from
 the remote server. This causes unnecessary high bandwidth if the same
 data is requested multiple times. It is also not possible to save
 multiple query results with their metadata in the same place. With a
-**SQLite database on the local hard drive** these problems will be solved in
-a convenient way.
+**SQLite database on the local hard drive or a server database
+accessible over a network** these problems will be solved in a convenient
+way.
+
+With sqlite as a database, it will be possible to save data in-memory which
+would be especially convenient in interactive sessions.
+
+The users can choose whether they wants to set a data limit or not. If there
+is one, the **database is used as a cache** whose method can be chosen by the
+user. The default one is a LRU (Least Recently Used) cache. The API will
+also support to use a custom cache method by subclassing a general caching
+class and overriding methods to remove entries.
 
 Another benefit of having a personal local database is the possibility to
 allow **grouping of results** (e.g. "group all results that are from the
@@ -42,6 +52,7 @@ demonstrates, results can be grouped by **chaining logical operators**.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
+
 Milestones:
 
 :May 27 -- June 2 (1 week): Read and understand the relevant parts of the code
@@ -53,27 +64,94 @@ Milestones:
 
 :June 3 -- June 9 (1 week): Design the database: Define which columns will
                             be included in the database and which types
-                            they will have.
-:June 10 -- June 23 (2 weeks): Design an API for downloading data to a
-                               local database and discuss the proposal
-                               with the mentors.
-:June 24 -- July 14 (3 weeks): Implement the database interface.
-:July 15 -- July 28 (2 weeks): Document all implemented code and check for
-                               missing tests.
+                            they will have. Use SQLAlchemy for a
+                            dialect-independent solution. If the database
+                            is stored on the local hard drive, SQLite is
+                            used (the default). But it is also possible to
+                            use a server database such as PostgreSQL which
+                            may be located on a remote server connected
+                            over some network. Because of SQLAlchemy's
+                            ``create_engine`` function, it is very easy
+                            for users to define the SQL driver, the user
+                            and password, the host, the database name and
+                            possibly more options (like the encoding).
+                            This information will be saved in the config
+                            file.
+:June 10 -- June 16 (1 week): Design an API for downloading data and
+                              saving the relevant information of it in a
+                              database and discuss the proposal with the
+                              mentors. Also discuss the API of caching
+                              classes and how to write custom caching
+                              classes.
+:June 17 -- July 7 (3 weeks): Implement the database interface. This is
+                              the main part of the project. The path of
+                              the database is either the one specified in
+                              the configuration file or if the according
+                              option is not set, an operating
+                              system-dependent value will be used. For
+                              unix-like systems this is $XDG_DATA_HOME or 
+                              $HOME/.local/share, if this environment
+                              variable is not set. For windows it is
+                              the directory AppData in the home directory
+                              of the user. Implement the APIs planned in
+                              the week before, i.e. the API for
+                              downloading data and saving information of
+                              it in a database and the API for caching.
+                              The caching method can be set in the
+                              configuration file.
+:July 8 -- July 24 (2.5 weeks): Document all implemented code and check for
+                                missing tests. The Sphinx documentation
+                                generator will be used for all parts of the
+                                documentation. To document the API, I will
+                                use the rst directives and roles Sphinx
+                                provides and will follow the rules which
+                                can be found in the recommended document
+                                `A Guide to NumPy/SciPy Documentation`_. A
+                                tutorial will take the user by the hand and
+                                show how to connect to the database, how to
+                                add, modify and delete entries and how to
+                                close the connection. It should only be
+                                shallow, because topic-specific user guides
+                                will go deeper into the topic and cover
+                                every aspect und usage possibility of the
+                                classes and methods.
+
+                                To test the implemented methods, the
+                                Python testing framework py.test_ will be
+                                used. To check how many parts of the
+                                implementation have been tested, the tool
+                                coverage.py_ is used.
+:July 25 -- August 4 (1.5 weeks): Buffer zone: Fix bugs, refactor code,
+                                  have code review done.
 :August 1: Mid-term evaluation: Database interface must be stable and
            tested thoroughly.
-:July 29 -- August 18 (3 weeks): Implement grouping of results.
-:August 19 -- September 1 (2 weeks): document and test the grouping
-                                     feature.
+:August 5 -- August 18 (2 weeks): Implement grouping of results. Because
+                                  SQLAlchemy is used, this can relatively
+                                  easily be achieved by writing a handy
+                                  wrapper for  the method
+                                  ``orm.query.Query.filter`` from the
+                                  sqlalchemy package.
+:August 19 -- September 1 (2 weeks): Document and test the grouping
+                                     feature. Again, there will be three
+                                     kinds of documentation: an API
+                                     reference, a step-by-step tutorial,
+                                     and a more detailed topic guide.
 :September 2 -- September 8 (1 week): Extend grouping to support boolean
-                                      operations
-:September 9 -- September 15 (1 week): test and document boolean
-                                       operations on groups.
+                                      operations. That means that group
+                                      filters can be chained together via
+                                      *and*, *or*, and *exclusive or*
+                                      (xor) operations.
+:September 9 -- September 15 (1 week): Test and document boolean
+                                       operations on groups. The
+                                       documentation of this will be part
+                                       of the documentation of the
+                                       grouping feature.
 :September 16: Suggested 'pencils down' date. Add more tests, improve the
-               documentation, refactor.
+               documentation, refactor and fix bugs.
 
 Code Sample
 -----------
+
 A pull request by me can be found at https://github.com/sunpy/sunpy/pull/445.
 This patch makes it possible to parse time strings with more than six
 zeros in the microsecond part. An example for input that can be parsed
@@ -90,7 +168,7 @@ are made, so I learned HTML, CSS, and JavaScript. When I read
 documentation about JavaScript, it was often mentioned that it works on
 the client side, the browser, and thus cannot be used for interfacing with
 a database from the webserver (back in my days, there was no fancy thing
-like Node.js). So I became corious again and learned PHP (it seemed to me
+like Node.js). So I became curious again and learned PHP (it seemed to me
 that there was no alternative option). Five years ago, I read about a
 programming language called Python and found out that PHP has many flaws
 which I could not notice when I learned it because I was a beginner back
@@ -99,10 +177,20 @@ supporting the German Python community: I am an active member both in the
 IRC channel #python.de at freenode and in the German Python forum at
 http://www.python-forum.de/index.php. I have thorough experience with git,
 sphinx, the testing framework py.test and working on open source projects
-in general.
+in general. When I used Python from web programming, I used Werkzeug_ and
+Flask_ as web frameworks and Genshi_ as the template engine. I also have
+basic experience with (web-based) databse applications using SQLAlchemy_.
 
 Other Schedule Information
 --------------------------
 Summer vacancies start for me on July 6, so I cannot work 40 hours per
 week before that date. But I promise to spend as much time as possible
 during this period to achieve my goals.
+
+.. _A Guide to NumPy/SciPy Documentation: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+.. _py.test: http://pytest.org
+.. _coverage.py: http://nedbatchelder.com/code/coverage/
+.. _Werkzeug: http://werkzeug.pocoo.org/
+.. _Flask: http://flask.pocoo.org/
+.. _Genshi: http://genshi.edgewall.org/
+.. _SQLAlchemy: http://www.sqlalchemy.org/
