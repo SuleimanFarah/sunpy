@@ -58,7 +58,7 @@ By the end of the summer, I intend to have delivered routines for the following 
 * Image Registration to align images in a Mapcube.
 * De-rotating images to compensate for Sun's rotation.
 * Compensate the observed dimming on the edge of the Sun.
-* (If time remains in the end) Constructing Synoptic Maps from MapCubes.
+* Constructing Synoptic Maps from a MapCube.
 
 ### Commitment and Communication :
 I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I will commit at least four times a week to ensure that my code is reviewed regularly by the mentors and I can work on the received feedback immediately. I will be available daily on IRC and weekly on Hangouts as my preferred means of communication. I will reply to mails within 12 hrs of their reception. I will report my weekly progress [on this blog](http://sunpythonic.blogspot.in/).
@@ -68,20 +68,31 @@ I don't have any other commitment during summer hence I will work the normal 40 
 ##### Community Bonding Period (27th May - 16th June):
 Reading papers mentioned in the reference and discussing the possible ideas with the developer community to finalize the best possible algorithm for a particular task. Fixing bugs tagged with 0.3 milestone and adding tests to get familiar with the code-base as much as possible.
 
-##### Week 1 and 2 (17th June - 30th June):
-Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort. Adding a method for resampling Maps in MapCube along z-axis by a factor.
- 
+##### Week 1 (17th June - 23rd June):
+Sorting Maps in a Mapcube by time, frequency and other units. This would be implemented using standard sorting algorithms like Quicksort.
+
+##### Week 2 (24th June - 30th June):
+Adding a method for resampling Maps in MapCube along z-axis by a factor.
+
 ##### Week 3, 4 and 5 (1st July - 21st July):
-Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps in Image Registration are to find the features/keypoints in both the images, correspond/match the detected features in both the images, find the transformation between two images and then align the second image in first's co-ordinate frame. A reasonable first implementation would be completed in the first week followed by improvements and optimizations in the next two weeks to achieve high accuracy.
+Implementing Image Registration methods to align the images in a MapCube with a high degree of accuracy. The basic steps while implementation would be to -
+* deshake the series of Maps in Mapcube using Sun's center as the reference
+* find the features/keypoints in both the images
+* correspond/match the detected features in both the images
+* find the transformation between two images and then align the second image in first's co-ordinate frame.
+A reasonable first implementation would be completed in two weeks with scipy.ndimage as the base library followed by improvements and optimizations in the next week to achieve high accuracy.
  
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug):
 Buffer period. Finishing off any previous incomplete work. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.
  
 ##### Week 7, 8 and 9 (3rd Aug - 23rd Aug):
-Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section.
+Implementing a routine for de-rotating solar images in solar coordinates to compensate for the rotation of the Sun as mentioned in [4] and [5] in reference section. 
 
-##### Week 10 and 11 (24th Aug - 6th Sep):
-Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation. If some time remains, Implementing a method for generating Synoptic Maps from MapCubes as described in [7] and  [8] of reference section.
+##### Week 10 (24th Aug - 30th Aug):
+Adding a routine that compensates for the observed dimming on the edge of the Sun using the Limb Darkening equation.
+
+##### Week 11 (31st Aug - 6th Sep):
+Implementing a method for generating Synoptic Maps from MapCubes as described in [7] and  [8] of reference section.
 
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Finishing off any previous incomplete work. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
