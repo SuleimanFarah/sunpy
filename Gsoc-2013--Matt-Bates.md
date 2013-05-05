@@ -16,7 +16,7 @@ In solar physics the analysis of observational data plays a big role, and the si
 
 ## Proposal Detailed Description 
 
-I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I plan on implementing things such as tunable capacity and local data compression. I will regularly blog about (among other projects of mine) the problems that I encounter and my achievements in working with SunPy.
+I don't have any other commitment during summer hence I will work the normal 40 hr/week throughout the summer. I plan on implementing things such as tunable capacity and local data compression. I will regularly blog about (among other projects of mine) the problems that I encounter and my achievements in working with SunPy. This will be implemented without changing the net interface at all if possible.
 
 ##### Week 1 and 2 (17th June - 30th June):
 Storage and retrieval of data and metadata on disk.
@@ -35,6 +35,12 @@ Possibly restructuring how test cases are handled, including them by default int
  
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
+
+## Other Possible Projects :
+
+* [PyOpenJPEG](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#pyopenjpeg): This project aims to expose more functionality of OpenJPEG with the PyOpenJPEG library.
+* [Spectroscopy object](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#spectroscopy-object-eis-cds-sumer): Handling spectroscopy data and allow it to interoperate with already implemented classes like Map and Spectrum.
+
 
 ## Contributions to Sunpy :
 
