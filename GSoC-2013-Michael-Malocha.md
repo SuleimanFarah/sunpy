@@ -99,7 +99,10 @@ Degree: BSc
 ##Additional Information:
 ###Contribution to SunPy
 Change coordinates when using peek(): https://github.com/sunpy/sunpy/pull/450
-###Curriculum Vitae
+###Alternate Project Choices:
+[HELIO & HEK](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#helio--hek) - Adding queries and advanced functionality  
+[Improvements to Mapcube and image registration](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#improvements-to-mapcube-and-image-registration) - Adding sorting and precision alignment functionality
+###Curriculum Vitae:
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Why SunPy:
 After looking through the database of projects and organizations, the SunPy project caught my attention. I love sci-fi novels and the idea of working on a project exploring our friendly, neighborhood star, makes me think of a more advanced time when we as humans have charted and explored our local solar system. I’ve wanted to learn more about astronomy in general for about a year, and this opportunity seems like a great place to learn. As a last reason why SunPy became my focus for this year’s GSoC is that it has the database project. Since my first database class, I’ve been really interested in learning use and integrate databases with applications and this project would really allow me hone those skills. All those points together add up to why I’m interested in applying to this project.
