@@ -39,7 +39,7 @@ way.
 With sqlite as a database, it will be possible to save data in-memory which
 would be especially convenient in interactive sessions.
 
-The users can choose whether they wants to set a data limit or not. If there
+The users can choose whether they want to set a data limit or not. If there
 is one, the **database is used as a cache** whose method can be chosen by the
 user. The default one is a LRU (Least Recently Used) cache. The API will
 also support to use a custom cache method by subclassing a general caching
@@ -49,6 +49,17 @@ Another benefit of having a personal local database is the possibility to
 allow **grouping of results** (e.g. "group all results that are from the
 instrument EIT and are currently opened"). As the (informal!) example
 demonstrates, results can be grouped by **chaining logical operators**.
+
+The database interface itself is separated from the class VSOClient (which
+is responsible for querying and downloading data) so that one does not need
+to be connected to a data provider to be able do add entries.
+
+If an operation on the database (adding, removing or editing entries) was
+done by accident, the user can undo this operation, and redo it again if
+the undo action should be reverted. If there is more time for implementing
+features, it will also be possible to undo and redo multiple actions in
+one run. The undo-redo feature is especially useful in an interactive
+session if the user has removed or edited a database entry by mistake.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -125,17 +136,33 @@ Milestones:
                                   have code review done.
 :August 1: Mid-term evaluation: Database interface must be stable and
            tested thoroughly.
-:August 5 -- August 18 (2 weeks): Implement grouping of results. Because
+:August 5 -- August 11 (1 week):  Implement grouping of results. Because
                                   SQLAlchemy is used, this can relatively
                                   easily be achieved by writing a handy
                                   wrapper for  the method
                                   ``orm.query.Query.filter`` from the
                                   sqlalchemy package.
-:August 19 -- September 1 (2 weeks): Document and test the grouping
-                                     feature. Again, there will be three
-                                     kinds of documentation: an API
-                                     reference, a step-by-step tutorial,
-                                     and a more detailed topic guide.
+:August 12 -- August 18 (1 week): Document and test the grouping
+                                  feature. Again, there will be three
+                                  kinds of documentation: an API
+                                  reference, a step-by-step tutorial,
+                                  and a more detailed topic guide.
+:August 19 -- August 25 (1 week): Implement the undo and redo
+                                  functionality for the database
+                                  interface.
+:August 26 -- September 1 (1 week): Document and test the undo and redo
+                                    features. Because this is part of the
+                                    database interface which is seperated
+                                    from the query and download
+                                    functionality, these features can be
+                                    tested without any connections to a
+                                    data provider. Undoing and redoing is
+                                    especially useful in interactive
+                                    sessions, therefore the documentation
+                                    consists of many examples from a REPL
+                                    session so that the reader can copy &
+                                    paste the code and comprehend the
+                                    behaviour.
 :September 2 -- September 8 (1 week): Extend grouping to support boolean
                                       operations. That means that group
                                       filters can be chained together via
@@ -147,7 +174,8 @@ Milestones:
                                        of the documentation of the
                                        grouping feature.
 :September 16: Suggested 'pencils down' date. Add more tests, improve the
-               documentation, refactor and fix bugs.
+               documentation, refactor and fix bugs. This is also a buffer
+               zone if features require more time than planned.
 
 Code Sample(s)
 --------------
@@ -204,9 +232,9 @@ Important remark: the times mentioned in this section are all GMT+1!
 Summer vacancies start for me on July 6, so I cannot work 40 hours per
 week before that date. But I promise to spend as much time as possible
 during this period to achieve my goals. Until July 6, I plan to work from
-8:00 to 13:00 on Tuesdays and Wednesdays and from 8:00 to 11:00 on
-Thursdays. Depending on how much homework has to be done, I will also be
-able to work on the weekends during that time.
+8:00 to 13:00 on Tuesdays, 8:00 to 14:00 on Wednesdays and from 8:00 to
+11:00 on Thursdays. Depending on how much homework has to be done, I will
+also be able to work on the weekends during that time.
 
 After the July 6, I can work much more flexible, i.e. 40 hours per week
 (or more if possible, to compensate for the previous weeks).
