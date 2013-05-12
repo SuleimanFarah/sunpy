@@ -115,8 +115,8 @@ Community bonding period:
 - Play with HELIO and HEK databases
 
 Week 1 & 2:
-- Understand the HEK & HELIO databases
-    _ Learn the API's
+- Understand the HEK & HELIO databases  
+    - Learn the API's
     - Create test cases and implementations
 - Learn VSO codebase
 - Create Entity-Relationship diagrams of the databases
