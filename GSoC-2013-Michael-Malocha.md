@@ -99,9 +99,63 @@ Degree: BSc
 ##Additional Information:
 ###Contribution to SunPy
 Change coordinates when using peek(): https://github.com/sunpy/sunpy/pull/450
-###Alternate Project Choices:
+###Alternate Project Idea:
 [HELIO & HEK](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#helio--hek) - Adding queries and advanced functionality  
-[Improvements to Mapcube and image registration](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#improvements-to-mapcube-and-image-registration) - Adding sorting and precision alignment functionality
+
+**Deliverables:**
+- A library of functions that allow a user to query the HEK database and run a VSO query based on the results
+- A library of functions that allow a user to query the HELIO database and run a VSO query based on the results
+- Meta-data translation dictionary between VSO, HEK and HELIO
+
+**Schedule Outline:**
+Community bonding period:
+- Become GIT power user
+- Become familiar with SunPy codebase
+- Become more proficient in Python
+- Play with HELIO and HEK databases
+
+Week 1 & 2:
+- Understand the HEK & HELIO databases
+    _ Learn the API's
+    - Create test cases and implementations
+- Learn VSO codebase
+- Create Entity-Relationship diagrams of the databases
+    - Some kind of map of the meta-data
+
+Week 3:
+- Work to create a translating meta-data/database-field dictionary between HEK & VSO
+- Work to create a translating meta-data/database-field dictionary between HELIO & VSO
+
+Week 4:
+- Outline classes and functions for taking HEK results and generating VSO queries
+- Outline classes and functions for taking HELIO results and generating VSO queries
+
+Week 5 & 6:
+- Write classes and functions to take HEK & HELIO results and generating VSO queries
+
+Week 7 & 8:
+- Testing, editing and documenting new functions
+- Midterm review
+
+Week 9:
+- Outline classes and functions needed to overplot event contours on images from combined HEK and VSO results
+
+Week 10 & 11:
+- Write classes and functions needed to overplot
+
+Week 12:
+- Test, edit, document newly written functions
+- Test interactions between between newly contributed classes and functions
+
+Week 13:
+- Buffer
+
+Week 14:
+- Polish code
+- Final tests
+- Final documentation
+- Submit evaluations
+
 ###Curriculum Vitae:
 Here is a link to my [curriculum vitae](http://nrs-projects.humboldt.edu/~mjm159/documents/cv2.pdf)
 ###Why SunPy:
