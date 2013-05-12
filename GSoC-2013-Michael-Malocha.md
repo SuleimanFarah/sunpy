@@ -107,7 +107,7 @@ Change coordinates when using peek(): https://github.com/sunpy/sunpy/pull/450
 - A library of functions that allow a user to query the HELIO database and run a VSO query based on the results
 - Meta-data translation dictionary between VSO, HEK and HELIO
 
-**Schedule Outline:**
+**Schedule Outline:** 
 Community bonding period:
 - Become GIT power user
 - Become familiar with SunPy codebase
