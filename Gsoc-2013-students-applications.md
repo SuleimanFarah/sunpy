@@ -3,5 +3,5 @@ Please add to the list your name and a short description of your project with a 
 * [[Ankit Agrawal|GSoC-2013  Ankit Agrawal]] - Image Processing routines for Map and Mapcube
 * [[Matt Bates|GSoC-2013  Matt Bates]] - Database of local data.
 * [[Michael Malocha|GSoC-2013 Michael Malocha]] - Database of local data
-* [[Simon Liedtke|GSoC-2013-Application-Simon-Liedtke:Database-of-local-data]] - Database of local data
+* [[Simon Liedtke|GSoC-2013 Simon-Liedtke]] - Database of local data
 
