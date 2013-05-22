@@ -2,7 +2,7 @@ The formal application can be found [here](https://google-melange.appspot.com/gs
 
 ## Proposal Title :
 
-#### SunPy : Local Database of Queried Data, or Extending PyOpenJPEG
+#### SunPy : Local Database of Queried Data, Extending PyOpenJPEG, or Spectroscopy Data
 
 ## Personal Bio :
 
@@ -69,14 +69,43 @@ Commit the new changes and additions to the library
 
 Update projects that implement PyOpenJPEG(SunPy) to take advantage of the new utility of PyOpenJPEG and repeat the analysis/implementation/update-projects cycle for the end goal of an easy to use and powerful python implementation of the OpenJPEG
 
-## Other Possible Projects :
+## Spectroscopy Objects
 
-* [Spectroscopy object](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#spectroscopy-object-eis-cds-sumer): Handling spectroscopy data and allow it to interoperate with already implemented classes like Map and Spectrum.
+## Proposal Abstract :
 
+SunPy currently does not have the capabilities to easily manage spectroscopy data, this project with implement new classes to manage this data and it's interactions with the many already implemented features that SunPy includes.
 
-## Contributions to Sunpy :
+## Proposal Detailed Description 
 
-* split(int) function added to time_range 
+Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges). The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like intensity at different wavelengths, turbulence in the medium, and speed of the plasma. Besides, other information such as temperature or electron density of the plasma can also be obtained. The project will consist in finding the most appropiate class to handle this dataset, and how to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
+
+##### Week 1:
+
+Understand how this problem is currently solved and design a class that can be implemented with the least change
+
+##### Weeks 2, 3:
+
+Implement a basic class that has the appropriate interface and can store data in either the (x,y,lambda) format or the (time,y,lambda) format
+
+##### Weeks 4, 5, 6:
+
+Allow data to be read from the VSO web client into a spectroscopy data object and test the functions with the real data
+
+##### Weeks 7, 8:
+
+Create an interface between the spectroscopy data object and the current SunPy projects objects such as Map.
+
+##### Weeks 9, 10:
+
+Work to allow further information to be obtained from the information, such as temperature or electron density of the plasma.
+
+##### Weeks 11, 12:
+
+Buffer period to be used to finish previous milestones or if time allows complete more things relevant to the project.
+
+## Contributions to SunPy :
+
+* [split(int) function added to time_range](https://github.com/sunpy/sunpy/pull/428)
 
 ## Code Samples :
 
