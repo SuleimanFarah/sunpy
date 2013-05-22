@@ -2,13 +2,16 @@ The formal application can be found [here](https://google-melange.appspot.com/gs
 
 ## Proposal Title :
 
-#### SunPy : Local Database of Queried Data
+#### SunPy : Local Database of Queried Data, or Extending PyOpenJPEG
 
 ## Personal Bio :
 
 I am a freshman at Virginia Commonwealth University in Richmond, Virginia aiming for a B.S. in Computer Science. I've never contributed to an open source project other than SunPy and am looking forward to this helping me find my place in open source software. The majority of my experience comes from video games I've created and coding competitions that I've participated in. I believe my experience in developing games is especially relevant to the proposed project as having a local database is an idea used frequently in games with online play. While the my knowledge is greatest in Java and C++, python is my next strongest language and I should have no trouble using it.
 
 Solar physics has been an interest of mine for a long time, but one that I have never been fortunate enough to invest into. I've taken all of the available physics and astronomy courses available in high school and my first year in university and am looking forward to do my own independent learning in the subject. I chose the database idea because of my limited knowledge on the subject, but I plan on using this summer's time to learn more about solar physics and continue contributing to SunPy.
+
+
+## Local Database
 
 ## Proposal Abstract :
 
@@ -36,9 +39,38 @@ Possibly restructuring how test cases are handled, including them by default int
 ##### Week 12 and Final Evaluation (7th Sep - 16th Sep):
 Buffer period. Getting the code design reviewed by the community. Adding tests and documentation. Fixing bugs if any.  
 
+## PyOpenJPEG
+
+## Proposal Abstract :
+
+JPEG 2000 is an advanced image standard that is useful in the storage and transfer of image data and associated image data. OpenJPEG is an open-source implementation of the JPEG 2000 standard. PyOpenJPEG is a partially complete Python wrapper around the OpenJPEG Library that allows users to read a JPEG2000 file into Python. This project seeks to expose the full functionality of the OpenJPEG Library via Python, and so allow SunPy (and Python) users to read, manipulate and write JPEG 2000 files.
+
+## Proposal Detailed Description 
+
+One significant application of PyOpenJPEG is in the visualization of data from the Sun. The JPEG 2000 image format forms the basis of the Helioviewer Project, an effort to visualize solar and heliospheric data from multiple sources. Users of Helioviewer Project clients (see images below) can make and share images and movies of solar features and events. PyOpenJPEG would allow users of Python-based software to create images of solar data and other science products for use with Helioviewer Project clients, increasing the number and type of images available.
+
+##### Week 1:
+
+Analyze the current PyOpenJPEG implementation and determine what additions or modifications should be made, with attention to not only what is available in OpenJPEG but how the current library in implemented.
+
+##### Week 2, 3:
+
+Implement the designs
+
+##### Week 4:
+
+Reanalyze the current library, it's implementation and other possible additions or modifications
+
+##### Week 5, 6, and Midterm Evaluation Period:
+
+Commit the new changes and additions to the library
+
+##### Remaining time:
+
+Update projects that implement PyOpenJPEG(SunPy) to take advantage of the new utility of PyOpenJPEG and repeat the analysis/implementation/update-projects cycle for the end goal of an easy to use and powerful python implementation of the OpenJPEG
+
 ## Other Possible Projects :
 
-* [PyOpenJPEG](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#pyopenjpeg): This project aims to expose more functionality of OpenJPEG with the PyOpenJPEG library.
 * [Spectroscopy object](https://github.com/sunpy/sunpy/wiki/GSoC-2013-Ideas#spectroscopy-object-eis-cds-sumer): Handling spectroscopy data and allow it to interoperate with already implemented classes like Map and Spectrum.
 
 
@@ -48,8 +80,8 @@ Buffer period. Getting the code design reviewed by the community. Adding tests a
 
 ## Code Samples :
 
-* My current group project in C++: [Terraria Clone](https://github.com/rmbreak/terraria-clone)
-* My past project in Java, showing web interactions relevant to the project: [Zombies!](http://www.mediafire.com/download.php?4o1q659fbw85l28)
+* My current group project in C++, showing knowledge many things including working with external libraries: [Terraria Clone](https://github.com/rmbreak/terraria-clone)
+* My past project in Java, showing web interactions relevant to the projects: [Zombies!](http://www.mediafire.com/download.php?4o1q659fbw85l28)
 * My group mobile app hackathon project working with Dominion Enterprises' Boats.com API, showing knowledge using databases: [Boat Thing](https://github.com/dominionenterprises/dmm-hacku)
 
 Thanks to [Ankit Agrawal](https://github.com/sunpy/sunpy/wiki/GSoC-2013--Ankit-Agrawal) for the help setting up this page
