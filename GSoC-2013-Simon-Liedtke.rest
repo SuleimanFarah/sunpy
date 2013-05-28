@@ -4,20 +4,10 @@ Application for GSOC 2013
 Student Information
 -------------------
 :Name: Simon Liedtke
-:Email: liedtke.simon@googlemail.com
-:Telephone: (+49) 160 98 46 03 68
 :IRC handle: derdon@irc.freenode.net
 :GitHub account: derdon
 :Jabber account: derdon@jabber.ccc.de
 :Blog: http://derdon.github.io/blog/
-
-University Information
-----------------------
-:University: University Of Bremen
-:Major: Computer Science
-:Current Semester: 2
-:Expected Graduation Date: Summer 2015
-:Degree: Bachelor of Science (BSc)
 
 Project Proposal Information
 ----------------------------
