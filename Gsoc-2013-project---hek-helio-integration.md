@@ -1,0 +1,1 @@
+The Heliophysics Event Knowledgebase (HEK) is a US-based effort to collect and catalog solar and heliospheric events.  Its focus is mainly the inner heliosphere.
