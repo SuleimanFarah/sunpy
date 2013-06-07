@@ -25,3 +25,5 @@ Summary List Database fields
 * **associated hek event tag** (this would allow multiple observations to be linked to a single event)
 * **camera position or position of observer**
 * **file size**?
+* **user comment**
+* **starred** boolean field. convenience method to get all starred entries.
