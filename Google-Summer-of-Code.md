@@ -12,6 +12,6 @@
 In 2013 SunPy is participating under the umbrella of the Python Software Foundation's umbrella for information about applying through the PSF [click here](http://wiki.python.org/moin/SummerOfCode/2013)
 * [[GSoC 2013 Ideas]]
 * [[GSoC 2013 Students applications]]
-* [[GSOC 2013 Use cases]]
-* [[Gsoc 2013 Project - sunpy local database]]
-* [[GSOC 2013 Project - HEK/HELIO Integration]]
+* [[GSoC 2013 Use cases]]
+* [[GSoC 2013 Project - sunpy local database]]
+* [[GSoC 2013 Project - HEK/HELIO Integration]]
