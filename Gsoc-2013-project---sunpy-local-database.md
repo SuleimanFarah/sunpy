@@ -21,7 +21,7 @@ Summary List Database fields
 * **wavelength**
 * **time of observation**
 * **data level** (e.g. 1.0)
-* **small thumbnail?** this would be useful for large files but maybe we make this optional. thumbnail could also be saved in a file elsewhere and not in the database itself.
+* **small thumbnail?** this would be useful for large files but maybe we make this optional. thumbnail could also be saved in a file elsewhere and not in the database itself. alternatively as a blob. evaluate both options.
 * **associated hek event tag** (this would allow multiple observations to be linked to a single event)
 * **camera position or position of observer**
 * **file size**?
