@@ -13,5 +13,5 @@ In 2013 SunPy is participating under the umbrella of the Python Software Foundat
 * [[GSoC 2013 Ideas]]
 * [[GSoC 2013 Students applications]]
 * [[GSOC 2013 Use cases]]
-* [[GSOC 2013 Project - SunPy Local Database]]
+* [[Gsoc 2013 Project - SunPy Local Database]]
 * [[GSOC 2013 Project - HEK/HELIO Integration]]
