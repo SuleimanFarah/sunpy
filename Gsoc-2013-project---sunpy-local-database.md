@@ -27,3 +27,4 @@ Summary List Database fields
 * **file size**?
 * **user comment**
 * **starred** boolean field. convenience method to get all starred entries.
+* **user tags**?
