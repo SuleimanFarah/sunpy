@@ -24,3 +24,4 @@ Summary List Database fields
 * **small thumbnail?** this would be useful for large files but maybe we make this optional. thumbnail could also be saved in a file elsewhere and not in the database itself.
 * **associated hek event tag** (this would allow multiple observations to be linked to a single event)
 * **camera position or position of observer**
+* **file size**?
