@@ -9,7 +9,25 @@ The event and the feature catalogue contains a list of catalogues similar to tho
 #### Events
 
 #### Features
+The feature catalogue is accessible through any of its [webservices](http://voparis-helio.obspm.fr/helio-hfc/HelioService) (I've just asked which one we should use).  This catalogue uses [PQL](http://wiki.ivoa.net/internal/IVOA/TableAccess/PQL-0.2-20090520.pdf)
+and example of how to query Active Regions is:
+```python
+from suds import client
+hfq = client.Client('http://voparis-helio.obspm.fr/hfc-hqi/HelioService?wsdl')
+ARs2days = hfq.service.TimeQuery('2010-01-01T00:00:00','2010-01-02T00:00:00','VIEW_AR_HQI')
+ARsLat = hfq.service.Query('2010-01-01T00:00:00','2010-01-01T02:00:00','VIEW_AR_HQI','FEAT_HG_LAT_DEG,-30/0; CODE,*smart*')
+```
+The first example ARs2days searchs using TimeQuery and it just allows a time range from a certain table. The second example ARsLat searchs with conditions.  This is following PQL syntax where the fields are separated by ';' and the values by ','.  In the example above it searching for ARs between -30 and 0 degrees in heliographic latitude and code name like 'smart'.
 
+The interface for this should hide most of this PQL and table names away.  It should accept time objects.
+Using [Taverna webservice]() we can get more info and do some sql queries
+```python
+hfqTav = client.Client('http://voparis-helio.obspm.fr:80/hfc-hqi/HelioTavernaService?wsdl')
+print hfqTav
+print hfqTav.service.getTableNames()
+ARsLat = hfqTav.service.SQLSelect('CC_X_PIX,CC_Y_PIX,CC','VIEW_AR_HQI',"FEAT_HG_LAT_DEG between -30 and 0 AND CODE like '%smart%'")
+```
+Should provide the same results than the query from above but using SQL sintax.
 
 ### Instrument Location
 ILS provides information about the location of planets and spacecraft.
