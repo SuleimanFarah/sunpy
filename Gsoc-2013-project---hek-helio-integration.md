@@ -23,11 +23,17 @@ The interface for this should hide most of this PQL and table names away.  It sh
 Using [Taverna webservice]() we can get more info and do some sql queries
 ```python
 hfqTav = client.Client('http://voparis-helio.obspm.fr:80/hfc-hqi/HelioTavernaService?wsdl')
-print hfqTav
-print hfqTav.service.getTableNames()
-ARsLat = hfqTav.service.SQLSelect('CC_X_PIX,CC_Y_PIX,CC','VIEW_AR_HQI',"FEAT_HG_LAT_DEG between -30 and 0 AND CODE like '%smart%'")
+print hfqTav #Shows the methods allowed from this webservice
+print hfqTav.service.getTableNames() #Tells which tables we can query
+ARsLatCC = hfqTav.service.SQLSelect('CC_X_PIX,CC_Y_PIX,CC','VIEW_AR_HQI',"DATE(DATE_OBS) BETWEEN DATE('2010-01-01T00:00:00') AND DATE('2010-01-02T00:00:00') AND FEAT_HG_LAT_DEG between -30 and 0 AND CODE like '%smart%'")
 ```
-Should provide the same results than the query from above but using SQL sintax.
+Should give the chaincode (and their starting point) for the same results than the query from above, this time using SQL sintax.  The chaincode could then be used with the chaincode routine to overplot them on a map.
+
+Notice these examples have been based on time queries, they could work similarly without date inputs. For example if we would like to get all the active regions with certain property.
+```python
+ARsPropertX = hfq.service.Query('', '', 'VIEW_AR_HQI', 'FEAT_HG_LAT_DEG,-5/5; CODE,*smart*; FEAT_AREA_DEG2,/5')
+ARsLatCC = hfqTav.service.SQLSelect('CC_X_PIX,CC_Y_PIX,CC','VIEW_AR_HQI',"FEAT_HG_LAT_DEG between -5 and 5 AND CODE like '%smart%' AND FEAT_AREA_DEG2 < 5")
+```
 
 ### Instrument Location
 ILS provides information about the location of planets and spacecraft.
