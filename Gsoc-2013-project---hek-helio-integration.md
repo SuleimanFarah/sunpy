@@ -3,9 +3,13 @@ The Heliophysics Event Knowledgebase (HEK) is a US-based effort to collect and c
 ## Uses of HEK
 
 ## Uses of HELIO
-HELIO provides a large set of services, even more than the ones set above, therefore it uses can vary on what the user wants.  For now we should focus on single uses on some of the services. Notice that the webservices produces votables (AstroPy has support to that file format).
+HELIO provides a large set of services, even more than the ones set above, therefore it uses can vary on what the user wants.  For now we should focus on single uses on some of the services. Notice that the webservices produces votables (AstroPy has support to that file format).  Also, it should be helpful to see what's been implemented in [solarsoft](http://www.helio-vo.eu/documents/help/ssw/helio_ssw_intro.html).
 ### HELIO Catalogues
 The event and the feature catalogue contains a list of catalogues similar to those in HEK, but for events in all the heliosphere.
+#### Events
+
+#### Features
+
 
 ### Instrument Location
 ILS provides information about the location of planets and spacecraft.
