@@ -28,3 +28,7 @@ Summary List Database fields
 * **user comment**
 * **starred** boolean field. convenience method to get all starred entries.
 * **user tags**?
+
+## Questions to answer
+* Should a user be able to query the database directly or only through a data search?
+* If so, what should be the result of a query? Define the query response object.
