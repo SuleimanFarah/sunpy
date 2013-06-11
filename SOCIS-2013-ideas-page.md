@@ -19,6 +19,10 @@ It is invisaged that a student undertaking a project designed to improve SunPy's
 
 * Mentor: Stuart Mumford and Russell Hewett
 
+## Region of Interest object
+* Description: a co-ordinate system aware object that describes a region in space and time.  Use cases: this could be passed to the HEK/HELIO to find all the features/events within that region of space/time.  It could be passed to the SDO cutout service to acquire SDO data.  Note that transforming from one co-ordinate system to another could result in non-rectangular regions of interest.  The TimeRange object could be used to store the time extent of the "region".
+
+* Mentors: Jack Ireland and ?
 
 ## Improvements to Mapcube and Image Registration.
 
