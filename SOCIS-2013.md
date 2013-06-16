@@ -1,6 +1,6 @@
 # SOCIS 2013 Application
 
-website: http://sophia.estec.esa.int/socis2013/
+[SOCIS website](http://sophia.estec.esa.int/socis2013/)
 Application deadline: June 20th
 
 ## Project Name
@@ -9,7 +9,7 @@ SunPy
 ## Project description
 _Describe in a few word your open-source project, why you would like to participate to SOCIS and what you hope to gain by participating._
 
-SunPy is a new open-source project which aims to provide a complete framework in Python for solar, heliospheric, and space weather data analysis. We envision it as an alternate choice to the ''de facto'' standard library [SolarSoft](http://www.mssl.ucl.ac.uk/surf/sswdoc/solarsoft/) (SSW) that is widely used within the solar community.  SSW is based on the  [Interactive Data Language](http://www.ittvis.com/language/en-us/productsservices/idl.aspx) (IDL) programming environment, which is propriety software, with costly recurring licensing fees. Since SSW is built with IDL, it limits the access to solar data analysis to those people and institutions who can afford the license fees and makes it difficult for amateurs or institutions with limited resources to become involved.  Python is the perfect alternative to build a solar data analysis framework, as it is freely available to everyone and is already being used as a scientific data analysis environment in other science fields ([NumPy](http://numpy.scipy.org/), [SciPy](http://scipy.org/), [PyRaf](http://www.stsci.edu/resources/software_hardware/pyraf), [Astropy](http://www.astropy.org/)) with many already-written scientific libraries available. Additionally, it can be used interactively (Python command-line), which is very close to how users already work with SSW in IDL.
+SunPy is a two years old open-source project which aims to provide a complete framework in Python for solar, heliospheric, and space weather data analysis. We envision it as an alternate choice to the ''de facto'' standard library [SolarSoft](http://www.mssl.ucl.ac.uk/surf/sswdoc/solarsoft/) (SSW) that is widely used within the solar community.  SSW is based on the  [Interactive Data Language](http://www.ittvis.com/language/en-us/productsservices/idl.aspx) (IDL) programming environment, which is propriety software, with costly recurring licensing fees. Since SSW is built with IDL, it limits the access to solar data analysis to those people and institutions who can afford the license fees and makes it difficult for amateurs or institutions with limited resources to become involved.  Python is the perfect alternative to build a solar data analysis framework, as it is freely available to everyone and is already being used as a scientific data analysis environment in other science fields ([NumPy](http://numpy.scipy.org/), [SciPy](http://scipy.org/), [PyRaf](http://www.stsci.edu/resources/software_hardware/pyraf), [Astropy](http://www.astropy.org/)) with many already-written scientific libraries available. Additionally, it can be used interactively (Python command-line), which is very close to how users already work with SSW in IDL.
 
 Participating in ESA's Summer of Code in Space would not only help us expand SunPy by incorporating new functionality, but it will also promote our efforts in the solar physics community and thereby attract new contributors.
 
@@ -20,7 +20,7 @@ The study of solar physics, space weather and other related sciences often invol
 
 Much solar, heliospheric and space weather data are available to everyone in near real-time.  Large and important archives of these data going back many decades also exist. However, the tools to reduce and analyze them are often based on privately held analysis packages that require restrictive, and often expensive licenses.  This often puts a barrier between those wishing to analyze the data and the science goals of ESA, and space science in general.
 
-SunPy will remove that barrier by developing open source, freely available, packages that enable ''anyone'' to analyze solar, heliospheric, and space weather data.  As an alternate to the Solarsoft/IDL environment, SunPy ''deals directly with solar, heliospheric and space weather data, and so is directly relevant to activities in our local space environment''. We choose Python as our development language as it allows us to use many open source and free packages already developed for other astronomical disciplines.  SunPy will allow anyone to take data from ESA's solar and helipsheric space missions and perform their own analyses, free from any restriction, thus increasing awareness of ESA's mission in the scientific community.  Free and open source technology for analyzing solar and heliospheric data will make it easy for students to begin their scientific careers in space science, and will make the existing open-source science community aware of solar, heliospheric and space weather data.
+SunPy is removing that barrier by developing open source, freely available, packages that enable ''anyone'' to analyze solar, heliospheric, and space weather data.  As an alternate to the Solarsoft/IDL environment, SunPy ''deals directly with solar, heliospheric and space weather data, and so is directly relevant to activities in our local space environment''. We choose Python as our development language as it allows us to use many open source and free packages already developed for other astronomical disciplines.  SunPy will allow anyone to take data from ESA's solar and helipsheric space missions and perform their own analyses, free from any restriction, thus increasing awareness of ESA's mission in the scientific community.  Free and open source technology for analyzing solar and heliospheric data will make it easy for students to begin their scientific careers in space science, and will make the existing open-source science community aware of solar, heliospheric and space weather data.
 
 ## Website
 
@@ -48,7 +48,7 @@ Each idea proposed has one or more mentors linked with it.  These mentors are ex
 
 ## Disappearing mentor
 
-In case of a disappearing mentor, the project administrator will be responsible for finding a new mentor. The SunPy project is large enough that it will not be difficult to find another mentor that is familiar with the project.
+Each project has two assigned mentors to it, this will cover the situations when there are some unavailability by any of them (holidays, conferences, ...).  But in case of a disappearing mentor, the project administrator will be responsible for finding a new one. The SunPy project has grown enough so it is not difficult to find another mentor that is familiar with the project (we have weekly teleconferences within the developers to discuss what has been done).
 
 ## Disappearing student
 
@@ -57,21 +57,24 @@ The students will have the flexibility to accommodate his/her other duties as a 
 ## Interaction with students during and after the program
 _How do you plan to encourage the students to interact with your project's community before, during and after SOCIS? How are you going to ensure your students' continued involvement with the project after SOCIS concludes?_
 
-During the program, the students will be encouraged to actively participate in community discussions through our mail list and/or forum.  We will also require students to write posts on the [blog](http://www.sunpy.org/blog/) describing the status of their work.  This will give visibility to their work to all members of the project, and beyond into the wider open-source community. In addition, the SunPy project uses GitHub so that students can easily upload code to project and GitHub also provides tools to track their progress.
+During the program, the students will be encouraged to actively participate in community discussions through our mail list and/or forum.  We will also require students to write posts on the project's [blog](http://www.sunpy.org/blog/) describing the status of their work.  This will give visibility to their work to all members of the project, and beyond into the wider open-source community. In addition, the SunPy project uses GitHub so that students can easily upload code to project and GitHub also provides tools to track their progress.
 
 We will do our best to make sure that the students enjoy their work experience, so they feel part of the SunPy effort and the wider open-source / solar physics community.  The best way to encourage students to continue with SunPy after their SOCIS time is over is for us to ensure that their efforts earn a prominent place in the solar physics community.  We anticipate that an increasing openness in the solar physics community to new approaches to data analysis and space science will ensure that SunPy will become a useful and well-used tool.
 
+It is worth to mention that our first SOCIS students has kept participating within SunPy being a fundamental part of the project.  Thanks to such experience he has been hired as a summer student during the two following summers (2012 and 2013) by European research institutes related with space physics.
+
 ## Mailing list(s):
 
-[https://groups.google.com/forum/?hl=en#!forum/sunpy](https://groups.google.com/forum/?hl=en#!forum/sunpy)
+[Users](https://groups.google.com/forum/?hl=en#!forum/sunpy) and 
+[developers](https://groups.google.com/forum/?hl=en#!forum/sunpy-dev)
 
 ## Forum(s):
 
-[http://www.sunpy.org/forum](http://www.sunpy.org/forum)
+Mailing list.
 
 ## IRC channel(s)
  #sunpy at Freenode.net
 
 ## Additional notes:
 
-ESA Summer of Code 2012 will be recognized as the sponsor within the documentation of the packages developed under this funding.
+ESA Summer of Code 2011-2013 will be recognized as the sponsor within the documentation of the packages developed under this funding.
