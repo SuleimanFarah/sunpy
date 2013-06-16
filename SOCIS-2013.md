@@ -44,7 +44,7 @@ dps.helio [AT] gmail.com
 
 ## Criteria for selecting mentors
 
-Each idea proposed has one or more mentors linked with it.  These mentors are experts in the given subject area, with many being developers of the web services or other functionality being integrated.  As not all subject experts are Python programmers, the SunPy community will be available to support Python questions.  All mentors are experienced users of solar data, with experience in data acquisition, analysis or both.
+Each idea proposed has at least two mentors linked with it.  These mentors are experts in the given subject area, with many being developers of the web services or other functionality being integrated.  As not all subject experts are Python programmers, the SunPy community will be available to support Python questions.  All mentors are experienced users of solar data, with experience in data acquisition, analysis or both.
 
 ## Disappearing mentor
 
@@ -77,4 +77,4 @@ Mailing list.
 
 ## Additional notes:
 
-ESA Summer of Code 2011-2013 will be recognized as the sponsor within the documentation of the packages developed under this funding.
+ESA Summer of Code 2013 will be recognized as the sponsor within the documentation of the packages developed under this funding (as done with the two previous editions).
