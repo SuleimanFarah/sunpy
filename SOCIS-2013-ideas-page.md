@@ -79,6 +79,7 @@ _Screen capture of the [JHelioviewer](http://www.jhelioviewer.org) client applic
 
 * Stuart Mumford
 * Russell Hewett
+* Keith Hughitt
 * Jack Ireland
 * David Pérez-Suárez
 * Peter Young
