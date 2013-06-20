@@ -21,11 +21,14 @@ It is envisaged that a student undertaking a project designed to improve SunPy's
 
 * Mentor: Stuart Mumford and Russell Hewett
 
-## Improvements to Mapcube and Image Registration.
+## Improvements to 3D Map classes.
 
-* Description: SunPy also implements a mapcube object that is designed to hold series of images, currently primarily time-series. This object requires development to allow many desired features to be implemented, such as being able to sort the Maps in the cube by time or frequency or other units. As well as this it is desired that a image registration routine should be implemented to align the images in the cube to a very high degree of accuracy.
+* Description: SunPy also implements a mapcube object that is designed to hold series of spatially aliged images, *e.g.* time-series. This object requires development to allow many desired features to be implemented, such as being able to sort the Maps in the cube by time or frequency or other units. As well as this it is desired that a image registration routine should be implemented to align the images in the cube to a very high degree of accuracy.
+MapCube is currently implemented as a list of Map objects, further work is required to allow the conversion between a list of Maps and a 3D Map object, where all the data is contained in one 3D np.ndarray. This would allow for fast indexing of the data cube and better processing. This conversion however requires a high degree of homogeneity between the arrays so a single array can be created.
 
-* Requirements: Knowledge of image processing a registration would be a plus.
+As well as MapCube SunPy also has a CompositeMap type which is designed to hold temporally aligned data. This data type requires a lot of work and improvement. Also improvements to MapCube should be made so it is possible to store a MapCube of ComposisteMaps
+
+* Requirements: Knowledge of image processing and registration would be a plus.
 
 * Mentors: Stuart Mumford and Russell Hewett
 
