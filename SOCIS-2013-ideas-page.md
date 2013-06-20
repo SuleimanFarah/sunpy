@@ -21,6 +21,11 @@ It is envisaged that a student undertaking a project designed to improve SunPy's
 
 * Mentor: Stuart Mumford and Russell Hewett
 
+### Movies and Animation
+* **Description**: The Sun is a dynamic object, and so the capability to visualize its dynamism is very important.  We require the ability to animate a map cube object, and to animate composites of maps.  The matplotlib package has an animation module that looks like it can provide much of the movie playing capability we need.  This functionality is highly desirable in exploratory data analysis, and would be a major step forward in Sunpy functionality.
+* **Requirements**: Basic knowledge of GUI design a plus.
+* **Mentor**: Jack Ireland & Steven Christe
+
 ## Improvements to 3D Map classes.
 
 * Description: SunPy also implements a mapcube object that is designed to hold series of spatially aliged images, *e.g.* time-series. This object requires development to allow many desired features to be implemented, such as being able to sort the Maps in the cube by time or frequency or other units. As well as this it is desired that a image registration routine should be implemented to align the images in the cube to a very high degree of accuracy.
@@ -36,6 +41,12 @@ As well as MapCube SunPy also has a CompositeMap type which is designed to hold 
 * Description: a co-ordinate system aware object that describes a region in space, time and possibly energy.  Use cases: this could be passed to the HEK/HELIO to find all the features/events within that region of space/time.  It could be passed to the SDO cutout service to acquire SDO data.  Note that transforming from one co-ordinate system to another could result in non-rectangular regions of interest.  The TimeRange object could be used to store the time extent of the "region".  The region of interest object should also be derivable from the the main object classes - Map, LightCurve, MapCube, Spectrum.
 
 * Mentors: Jack Ireland
+
+##  SunPy GUI 
+* **Description**: The goal of this project is to develop a standardized interface to plots such as that of lightcurves, spectrograms, or images. Such a tool would provide basic functionality to interact with the plots contained therein such as overlaying multiple images, comparing light curves to each other. Interfaces to common tasks could include searching the vso for data, background subtraction, creating profile cuts in images, fitting curves such as gaussians. A good example of a GUI interface for interacting with radio data is [ragview](http://hesperia.gsfc.nasa.gov/ssw/radio/ethz/idl/ragview/ragview.pro). This GUI interface should be written in using Tkinter. Additionally, this project will also include adding sunpy functionality through modifying the standard matplotlib window. For example, a button to change the default coordinate system used to display a map. If a mapcube is displayed, buttons to show the next image or the previous image.
+
+* **Requirements**: Basic knowledge of GUI interface design.
+* **Mentor**: Steven Christe
 
 ## PyOpenJPEG 
 
