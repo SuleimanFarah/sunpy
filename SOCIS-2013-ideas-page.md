@@ -42,7 +42,7 @@ It is envisaged that a student undertaking a project designed to improve SunPy's
 * One significant application of PyOpenJPEG is in the visualization of data from the Sun.  The JPEG 2000 image format forms the basis of the [Helioviewer Project](http://wiki.helioviewer.org/wiki/Main_Page), an effort to [visualize](http://www.helioviewer.org) [solar](http://www.jhelioviewer.org) and heliospheric data from multiple [sources](http://helioviewer.org/?date=2013-03-28T22:36:36.000Z&imageScale=38.727054&centerX=38.727054&centerY=0&imageLayers=%5BPROBA2,SWAP,SWAP,174,1,100%5D,%5BSDO,AIA,AIA,304,1,50%5D,%5BSOHO,LASCO,C2,white-light,1,100%5D,%5BSOHO,LASCO,C3,white-light,1,60%5D). Users of Helioviewer Project clients (see images below) can make and share images and [movies](http://www.youtube.com/watch?feature=player_embedded&v=4xESw6G8JdM) of solar features and events.  PyOpenJPEG would allow users of Python-based software to create images of solar data and other science products for use with Helioviewer Project clients, increasing the number and type of images available.
 
 
-* Requirements: Python, Cython, C; some familiarity with JPEG 2000 standard and the OpenJPEG tools is a plus.
+* Requirements: Python, C; some familiarity with Cython, JPEG 2000 standard and the OpenJPEG tools is a plus.
 
 * References: https://github.com/khughitt/pyopenjpeg, https://code.google.com/p/openjpeg/
 
