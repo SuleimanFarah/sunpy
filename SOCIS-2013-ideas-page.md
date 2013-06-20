@@ -58,7 +58,7 @@ _Screen capture of the http://www.helioviewer.org web application._
 _Screen capture of the [JHelioviewer](http://www.jhelioviewer.org) client application._
 ![Screen capture of the JHelioviewer client application.](http://blog.helioviewer.org/wp-content/uploads/2011/12/JHelioviewer_Screenshot-at-2011-12-15-133426.png)
 
-## AAA
+## 
 * **Description**: A ...
 * **Requirements**: Basic knowledge of ...
 * **Mentor**: A and B
@@ -71,3 +71,4 @@ _Screen capture of the [JHelioviewer](http://www.jhelioviewer.org) client applic
 * Jack Ireland
 * David Pérez-Suárez
 * Peter Young
+* Steven Christe
