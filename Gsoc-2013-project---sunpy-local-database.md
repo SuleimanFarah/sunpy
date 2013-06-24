@@ -32,5 +32,6 @@ Summary List Database fields
 ## Questions to answer
 * Should a user be able to query the database directly or only through a data search?
 * If so, what should be the result of a query? Define the query response object.
+* What field values are optional? What are required?
 
 ## Usage Case Examples
