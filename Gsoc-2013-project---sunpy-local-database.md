@@ -15,7 +15,7 @@ Summary List Database fields
 * **hash of downloaded file** - observational data is often updated as new calibrations are made available, and so the same file name could refer to different data that have created at different times.  The user should be made aware if there is a difference in the checksum if data is redownloaded.  Both copies of the data should be retained in this case.
 * **file name**
 * **date downloaded or request time** - useful for knowing when data was downloaded in relation to possible changes in the content.
-* **source html**
+* **source URL**
 * **instrument** (e.g. AIA)
 * **observatory** (e.g. SDO)
 * **wavelength**
