@@ -5,7 +5,7 @@ About me
 - diploma computer science
 - IRC Nick: Moomoc
 - Github account: humenda
-- Mail: s7369 \\at// mailbox DOT tu-dresden.de
+- Mail: s7369 \\\\at// mailbox DOT tu-dresden.de
 - Web: http://crustulus.de
 
 Project Description
@@ -29,7 +29,7 @@ Timeline
 
 
 - 10.08-20.08: Holiday, but with some reading about the subject
-- 20.08-25.08: get familar with the techniques needed for implementation
+- 20.08-25.08: get familiar with the techniques needed for implementation
     - read information about coordinate systems (where Region of Interest are
       specified in)
 - 25.08-30.08: analyse phase
