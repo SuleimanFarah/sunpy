@@ -42,11 +42,16 @@ Will be determined with mentor.
 * Red Hat Enterprise Linux
 
 ### COMMUNICATION
-email: lukassvaty `at` gmail `dot` com, lsvaty `at` redhat `dot` com
-irc: stluke/lsvaty @freenode #sunpy
+email:
+- lukassvaty `at` gmail `dot` com, 
+- lsvaty `at` redhat `dot` com
+irc: 
+ - stluke/lsvaty @freenode #sunpy
 mentor:
-email: john.g.evans.ne `at` gmail `dot` com
-irc: jevans @ freenode #sunpy
+email:
+ - john.g.evans.ne `at` gmail `dot` com
+irc:
+ - jevans @ freenode #sunpy
 
 ### QUALIFICATION
 I am student of Brno University of Technology in Czech republic and 
