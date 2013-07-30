@@ -41,6 +41,17 @@ Will be determined with mentor.
 * ArchLinux
 * Red Hat Enterprise Linux
 
+
+### Timeline
+this is a hard timeline in the worst-case scenario
+- august: 
+    - 1. 8 - 31. 9 - getting familiar with sunpy, glymur, python-ctype, openJPEG
+- september: study interface of openJPEG 1.5, 1.4, 1.3
+    - 1. 9. - 15. 9. - getting familiar with openJPEG interface for older versions
+    - 15. 9. - 30. 9. - implementation of interface for openJPEG 1.5
+- october: review by mentor
+    - 1. 10. - 20. 10. - if suceessfull adding implementation of interface for openJPEG 1.4 and 1.3
+    - 23. 10 - 31. 10. - finishing work 
 ### COMMUNICATION
 - lukassvaty `at` gmail `dot` com, 
 - lsvaty `at` redhat `dot` com
