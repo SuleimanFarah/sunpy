@@ -52,6 +52,7 @@ this is a hard timeline in the worst-case scenario
 - october: review by mentor
     - 1. 10. - 20. 10. - if suceessfull adding implementation of interface for openJPEG 1.4 and 1.3
     - 23. 10 - 31. 10. - finishing work 
+
 ### COMMUNICATION
 - lukassvaty `at` gmail `dot` com, 
 - lsvaty `at` redhat `dot` com
