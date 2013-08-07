@@ -8,6 +8,7 @@ Welcome to the SunPy wiki!
 * [[Meeting Notes]]
 * [[Issue Labels]]
 * [[Instruments and data types]]
+* [[3-month Projects ideas]]
 
 # 0.3 Planning
 * [[Release Schedule|0.3 Release Schedule]]
