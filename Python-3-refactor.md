@@ -16,3 +16,9 @@ like:
 ```
 find sunpy/<submodule> -name "*.py" -exec 2to3 -w -n -f basestring -f dict -f except -f has_key -f idioms -f imports -f itertools -f itertools_imports -f unicode -f xrange {} \;
 ```
+
+Also import six from astropy:
+
+```python
+import astropy.extern.six as six
+```
