@@ -9,7 +9,7 @@ find . -name "*.py" -print | xargs sed -i 's/from __future__ import absolute_imp
 then run some 2to3:
 
 ```bash
-2to3 -f basestring -f dict -f except -f has_key -f idioms -f imports -f itertools -f itertools_imports -f unicode -f xrange
+2to3 -f basestring -f dict -f except -f has_key -f idioms -f imports -f itertools -f itertools_imports -f unicode -f xrange -f print
 ```
 
 like:
