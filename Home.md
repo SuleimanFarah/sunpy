@@ -9,6 +9,7 @@ Welcome to the SunPy wiki!
 * [[Issue Labels]]
 * [[Instruments and data types]]
 * [[3-month Projects ideas]]
+* [[Documentation Sprint 2013]]
 
 # 0.3 Planning
 * [[Release Schedule|0.3 Release Schedule]]
