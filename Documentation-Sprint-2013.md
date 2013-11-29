@@ -9,7 +9,7 @@ The workflow for the sprint is:
 Tips:
 * PR often and commit even more
 * Claim an issue / task before you start working on it
-* Join IRC(#SunPy on irc.freenode.net) and the google plus [hangout](https://plus.google.com/events/cil7ndamh5edn8ucis02cffslg0)
+* Join IRC(#SunPy on irc.freenode.net) and the Google + [hangout](https://plus.google.com/events/cil7ndamh5edn8ucis02cffslg0)
 
 The user guide section and the gallery are the main targets, the user guide target structure will be merged into the feature branch as first task in the morning.
 
