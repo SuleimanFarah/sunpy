@@ -43,7 +43,7 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
 
 1. URL -> resolve to file
     1. Filename:
-        1. Attempt to read with sunpy.io: (Like Map())
+        1. Attempt to read with `sunpy.io`: (Like `Map()`)
             1. Parse metadata to `_is_source_for` and find relevant subclass
             1. Create that LightCurve.
         1. Match ‘source’ flag to subclass and get subclass to read file:
@@ -52,10 +52,10 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
 1. Daterange:
     1. Match ‘source’ flag to subclass and get URI
     1. Download data
-    1. Attempt read with sunpy.io, parse (data, meta) to subclass __init__.
+    1. Attempt read with `sunpy.io`, parse (data, meta) to subclass `__init__`.
     1. Attempt to read with subclass.
     1. fail
-1. Other kwargs are processed and passed to subclass class method for returning (data, meta).
+1. Other kwargs are processed and passed to subclass class method for returning `(data, meta)`.
 
 ### Required class methods:
 
