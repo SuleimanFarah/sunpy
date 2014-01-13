@@ -44,7 +44,7 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
 1. URL -> resolve to file
     1. Filename:
         1. Attempt to read with sunpy.io: (Like Map())
-            1. Parse metadata to _is_source_for and find relevant subclass
+            1. Parse metadata to `_is_source_for` and find relevant subclass
             1. Create that LightCurve.
         1. Match ‘source’ flag to subclass and get subclass to read file:
             1. return data, meta pair, create instance.
