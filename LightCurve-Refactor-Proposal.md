@@ -57,7 +57,8 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
     1. fail
 1. Other kwargs are processed and passed to subclass class method for returning (data, meta).
 
-Subclasses of GenericLightCurve provide specific classmethods to:
+### Required class methods:
+
 1. parse specific data files that cannot be read by the `sunpy.io` module, i.e. CSV or ASCII files.
 1. Parse input to the LightCurve factory such as date range and return a file download URI.
 1. Provide a `_is_source_for` which if possible auto detects the data type from a (data, meta) pair, and also matches string names for the subclass i.e. 'goes' or 'lyra', which will be passed into the factory to specify type for download etc.
