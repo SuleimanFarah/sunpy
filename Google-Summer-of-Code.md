@@ -7,6 +7,12 @@
 ## Guidelines to apply
  [[GSoC Student Application Guidelines]]
 ## Editions
+### [GSoC 2014](http://www.google-melange.com/gsoc/homepage/google/gsoc2014)
+* [[GSoC 2014 Ideas]]
+* [[GSoC 2014 Students applications]]
+* [[GSoC 2014 Use cases]]
+* [[GSoC 2014 Project - xxx]]
+* [[GSoC 2014 Project - yyy]]
 
 ### [GSoC 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)
 In 2013 SunPy is participating under the umbrella of the Python Software Foundation's umbrella for information about applying through the PSF [click here](http://wiki.python.org/moin/SummerOfCode/2013)
