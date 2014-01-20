@@ -12,7 +12,8 @@ Astropy is a core package for astronomy. A lot of the code in astropy is diectly
 
 * Requirements: Python
 
-* Mentor: 
+* Mentor: Stuart
+
 ## LightCurve refactor
 
 * Description: 
