@@ -1,4 +1,4 @@
-Welcome to the SunPy wiki!
+Welcome to the SunPy wiki.
 
 * [[Development Status]]
 * [[Developers]]
@@ -6,9 +6,6 @@ Welcome to the SunPy wiki!
 * [[Feature Wishlist]]
 * [[Roadmap]]
 * [[Issue Labels]]
-* [[Instruments and data types]]
-* [[3-month Projects ideas]]
-* [[Documentation Sprint 2013]]
 
 ## Summer of Codes
 * [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy is applying for support in 2013, following participation in 2011 and 2012. 
