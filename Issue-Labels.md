@@ -1,16 +1,14 @@
 This explains the various labels that we use in the issue tracker.
 
-## Bug? (unconfirmed-bug)
-No dev has acknowledged it.
-## confirmed-bug (not yet available)
-A core dev has acknowledged it with a comment.
-## Testing
-Need to add testing code for this feature.
-## Documentation
-It's a known behavior that can be addressed through docs. Err on the side of this rather than "feature" whenever possible.
-## Feature Request
-This is a new feature which is not currently included in SunPy.
-## Refactoring
-Code needs to be reorganized in some way.
-## wont-fix (not yet available)
-An issue that we've decided not to fix. This is a last resort: see if "needs-docs" works before using this label.
+* **astropy**: Issue related to integration of astropy
+* **Bug?**: This may be a bug but it has not yet been confirmed.
+* **Confirmed-bug**: A core dev has acknowledged it with a comment.
+* **Documentation**: It's a known behavior that can be addressed through docs. Err on the side of this rather 
+than "feature" whenever possible.
+* **Easy**: This issue can be fixed easily, without too much work.
+* **Feature Request**: This is a new feature which is not currently included in SunPy.
+* **Map Improvement**: Feature request related to the map object
+* **Python 3.x**: This is an issue which is related to Python 3.
+* **Refactoring**: To fix this issue code needs to be reorganized.
+* **Testing**: Need to add testing code for this feature.
+* **Use Case**: ???
