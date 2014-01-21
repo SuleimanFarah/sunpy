@@ -1,16 +1,18 @@
-## Milestone 0.2
-* Transformations between any solar coordinate system (solar wcs).
-* GUI to download data files (VSO)
-* Implement API to download AIA JPG2000 files from Helioviewer.
-* Add automatic histogram equalization for displaying images.
+## Release 0.5
+Summary of this release: This release will continue integration with Astropy. 
+* Functions should accept astropy quantities
+* Integrate Astropy time object into parse_time() and the Time Range object
 
-## Milestone 0.3
-* Add HEK layer on top of images shown in SunPy GUI.
-* Implement CLEAN imaging algorithm for RHESSI data.
+## Release 0.6
+* Include high quality solar ephemeris library
+* Integrate astropy coordinates
+* Re-factor of WCS into an object-oriented approach. For example, define an observer object which gives distance from Sun, heliographic longitude and latitude, etc.
 
-## Milestone 0.4
-*
+## Release 0.7
 
-...
+
+## Release 0.8
+
+## Release 0.9
+
 ## Release 1.0
-* Implement data calibration routines.
