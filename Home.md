@@ -6,6 +6,7 @@ Welcome to the SunPy wiki!
 * [[IDL to SunPy function mapping|IDL to SunPy Translation]]
 * [[Feature Wishlist]]
 * [[Meeting Notes]]
+* [[Roadmap]]
 * [[Issue Labels]]
 * [[Instruments and data types]]
 * [[3-month Projects ideas]]
