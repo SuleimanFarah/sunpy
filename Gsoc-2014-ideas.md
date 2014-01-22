@@ -8,7 +8,7 @@ Currently, a GUI program does not fully exist for Python. However, with the rele
 
 Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.
 
-We would want a plugin that uses SunPy's database explorer module and AstroPy's WCS module.  
+We would want a plugin that uses SunPy's database explorer module and supporting Solar coordinates using AstroPy's WCS module.  
 Further, we want to expand other Ginga plugins to work on 3D data among other items.
 
 * Requirements: Python, QT/GTK (depending on back-end choice) 
