@@ -51,7 +51,7 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
         1. fail.
 1. Daterange:
     1. Match ‘source’ flag to subclass and get URI
-    1. Download data
+    1. Download data (support multiple files)
     1. Attempt read with `sunpy.io`, parse (data, meta) to subclass `__init__`.
     1. Attempt to read with subclass.
     1. fail
