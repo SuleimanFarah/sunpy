@@ -4,7 +4,7 @@
 
 In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and as such make ugly GUIs. Exploring solar data for interesting events and extracting the information required is important for being able to publish papers. 
 
-Currently, a GUI program does not fully exist for Python. However, with the release of Ginga, it offers a very good base to expand further to meet the requirements for solar data. Ginga has already several features such as FITs support and several plugins that allow basic analysis of data. It also supports several back-ends. 
+Currently, a GUI program does not fully exist for Python. However, with the release of Ginga, it offers a very good base to expand further to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
 
 Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.
 
