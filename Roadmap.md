@@ -10,6 +10,7 @@ Summary of this release: This release will continue integration with Astropy.
 * Include high quality solar ephemeris library
 * Integrate astropy coordinates
 * Re-factor of WCS into an object-oriented approach. For example, define an observer object which gives distance from Sun, heliographic longitude and latitude, etc.
+* Refactor plotting functions outside of core datatypes
 
 ## Release 0.7
 
