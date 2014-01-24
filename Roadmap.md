@@ -3,7 +3,7 @@ Summary of this release: This release will continue integration with Astropy.
 * 70%+ Test coverage
 * Functions should accept astropy quantities
 * Integrate Astropy time object into parse_time() and the Time Range object
-* LightCurve Refactor
+* LightCurve Refactor, downloading function should be removed
 
 ## Release 0.6
 * 80%+ Test coverage
