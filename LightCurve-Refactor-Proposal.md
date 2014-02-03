@@ -65,3 +65,7 @@ def LightCurve(filename=None, source=None, dates=None, *kwargs):
 
 ## Backwards Compatibility:
 None, due to the current implementation of LightCurve it will be very hard to maintain backwards compatibility. It may be possible to implement a `.create()` method that calls the Factory, however I would not recommend it.
+
+#Notes:
+
+* Make a check that the index column of the LightCurve is actually a time
