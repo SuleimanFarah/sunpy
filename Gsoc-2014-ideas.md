@@ -35,7 +35,7 @@ Extensions to this project would be to implemet transformations from solar coord
 
 Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time. The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
 
-As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` facotry class, like `Map()` see [[LightCurve Refactor Proposal]] for deatils on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retreival from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental set towards uniting the data types in the core library.
+As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` facotry class, like `Map()` see [[LightCurve Refactor Proposal]] for deatils on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retreival from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental step towards uniting the data types in the core library.
 
 
 
@@ -52,18 +52,4 @@ As well as the integration of astropy into the lightcurve module, it is importan
 * Requirements: Some knowledge of...
 
 * Mentor: 
-## Idea A
 
-* Description: 
-
-* Requirements: Some knowledge of...
-
-* Mentor: 
-
-## Idea B
-
-* Description: 
-
-* Requirements: Some knowledge of...
-
-* Mentor: 
