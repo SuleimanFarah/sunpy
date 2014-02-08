@@ -13,7 +13,7 @@ Further, we want to expand other Ginga plugins to work on 3D data among other it
 
 * Requirements: Python, QT/GTK (depending on back-end choice) 
 
-* Mentor: Anyone and Everyone!
+* Mentor: Nabil Freij, Stuart Mumford
 
 ## Astropy integration
 
@@ -22,17 +22,21 @@ Astropy is a core package for astronomy. A lot of the code in astropy is diectly
 
 * Requirements: Python
 
-* Mentor: Stuart
+* Mentor: Stuart Mumford, (Steven Christe?)
 
 ## LightCurve refactor
 
 * Description: 
 
-Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time.  A clean implementation along the lines of the existing Map code is a good place to start for how to do this.  The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
+Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time. The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
+
+As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` facotry class, like `Map()` see 
+
+
 
 * Requirements: Knowledge of the pandas and astropy libraries
 
-* Mentor: J. Ireland, A. R. Inglis, someone who knows about the map refactor!
+* Mentor: J. Ireland, A. R. Inglis, Stuart Mumford
 
 
 
