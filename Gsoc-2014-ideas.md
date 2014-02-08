@@ -1,6 +1,6 @@
 ## A [ginga](http://ejeschke.github.io/ginga/) based data explorer / database browser 
 
-* Description: 
+###Description: 
 
 In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and as such make ugly GUIs. Exploring solar data for interesting events and extracting the information required is important for being able to publish papers. 
 
@@ -17,7 +17,7 @@ Further, we want to expand other Ginga plugins to work on 3D data among other it
 
 ## Re-implementation of `sunpy.wcs` as `sunpy.coordinates` using `astropy.coordinates`
 
-* Description: 
+### Description: 
 
 Coordinates for solar image data are described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T). Current a subset of the systems and transformation described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T) are implemented in `sunpy.wcs`. Astropy, a core package for astronomy, has a flexible spatial coordinates package in `astropy.coordinates`. However, this package is currently in the planning phase of a large re-design, which will make it even more applicable for use for solar coordinate data. Astrpy Proposal for Enhancement (APE) number 5 [APE5](https://github.com/astropy/astropy-APEs/pull/6) describes the proposed API. It is anticipated that this code will form part of the Astropy 0.4 release scheduled for June/July 2014, and therefore be implemented well before this point.
 
@@ -31,7 +31,7 @@ Extensions to this project would be to implemet transformations from solar coord
 
 ## LightCurve refactor
 
-* Description: 
+### Description: 
 
 Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time. The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
 
