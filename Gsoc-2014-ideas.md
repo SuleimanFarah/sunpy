@@ -53,3 +53,24 @@ As well as the integration of astropy into the lightcurve module, it is importan
 
 * Mentor: 
 
+## Increase SunPy's Image processing capability, image alignment, rotation and warping.
+
+### Description: 
+
+A large amount of solar physics data analysis is image processing based. Features in [scikit-image](http://scikit-image.org/) such as feature detection and tracking as well as image warping and transformation. There are a few sub-projects under this project idea that could be tackled and expanded by a student.
+
+* Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than mantaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to issue [#741](https://github.com/sunpy/sunpy/issues/741) could be devised.
+
+* Implemet a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
+
+* Requirements: Python
+
+* Mentor: 
+
+## Implement various differential rotation rouintes in SunPy
+
+### Description:
+
+* Requirements: Python
+
+* Mentor: 
