@@ -11,7 +11,7 @@ Ginga is designed to use a plugin system. This enables SunPy specific plugins to
 We would want a plugin that uses SunPy's database explorer module and supporting Solar coordinates using AstroPy's WCS module.  
 Further, we want to expand other Ginga plugins to work on 3D data among other items.
 
-* Requirements: Python, QT/GTK (depending on back-end choice) 
+* Requirements: Python, Qt/GTK (depending on back-end choice) 
 
 * Mentor: Nabil Freij, Stuart Mumford
 
