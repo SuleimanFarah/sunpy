@@ -28,9 +28,14 @@ Astropy is a core package for astronomy. A lot of the code in astropy is diectly
 
 * Description: 
 
-* Requirements: Some knowledge of...
+Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time.  A clean implementation along the lines of the existing Map code is a good place to start for how to do this.  The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
 
-* Mentor: 
+* Requirements: Knowledge of the pandas and astropy libraries
+
+* Mentor: J. Ireland, A. R. Inglis, someone who knows about the map refactor!
+
+
+
 ## spectrogram refactor
 
 * Description: 
