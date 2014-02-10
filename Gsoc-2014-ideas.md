@@ -21,9 +21,9 @@ Further, we want to expand other Ginga plugins to work on 3D data among other it
 
 Coordinates for solar image data are described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T). Current a subset of the systems and transformation described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T) are implemented in `sunpy.wcs`. Astropy, a core package for astronomy, has a flexible spatial coordinates package in `astropy.coordinates`. However, this package is currently in the planning phase of a large re-design, which will make it even more applicable for use for solar coordinate data. Astrpy Proposal for Enhancement (APE) number 5 [APE5](https://github.com/astropy/astropy-APEs/pull/6) describes the proposed API. It is anticipated that this code will form part of the Astropy 0.4 release scheduled for June/July 2014, and therefore be implemented well before this point.
 
-This project involves using the `CoordinateFrame` and `CooridnateRepresentation` framework described in [APE5](https://github.com/astropy/astropy-APEs/pull/6) to implement Helio-Projective and Helio-Centric `CoordinateFrames` that can be transformed between, Cartesian, Spherical and Cylindrical representations and between each other using the bi-directional transformation graph in `astropy.coordinates`. This project will involve collaboration with the astropy project and potentially pushing patches upstream.
+This project involves using the `CoordinateFrame` and `CoordinateRepresentation` framework described in [APE5](https://github.com/astropy/astropy-APEs/pull/6) to implement Helio-Projective and Helio-Centric `CoordinateFrames` that can be transformed into Cartesian, Spherical and Cylindrical representations and between each other using the bi-directional transformation graph in `astropy.coordinates`. This project will involve collaboration with the astropy project and potentially pushing patches upstream.
 
-Extensions to this project would be to implemet transformations from solar coordinates to other celestial coordinates as supported by astropy. As well as work on integrating `astropy.units` into the SunPy code base.
+Extensions to this project would be to implement transformations from solar coordinates to other celestial coordinates as supported by astropy. As well as work on integrating `astropy.units` into the SunPy code base.
 
 * Requirements: Python
 
@@ -35,7 +35,7 @@ Extensions to this project would be to implemet transformations from solar coord
 
 Lightcurves are a major datatype in solar physics.  A lightcurve is a time-ordered list of scalar measurements.  A typical lightcurve consists of observation times, and measurements taken at that time.  These measurements could be numeric, such as the amount of soft X-ray flux from the Sun (arising from GOES data), or some kind of string, for example, the Mt. Wilson classification of an active region as a function of time. The current LightCurve object implementation uses the pandas library, since pandas has very many useful capabilities for handling time-ordered data.  However, the current implementation needs to be considered in the light of the astropy Time module and the astropy Table module.
 
-As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` facotry class, like `Map()` see [[LightCurve Refactor Proposal]] for deatils on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retreival from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental step towards uniting the data types in the core library.
+As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` factory class, like `Map()` see [[LightCurve Refactor Proposal]] for details on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retrieval from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental step towards uniting the data types in the core library.
 
 
 
@@ -61,13 +61,13 @@ A large amount of solar physics data analysis is image processing based. Feature
 
 * Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than mantaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to issue [#741](https://github.com/sunpy/sunpy/issues/741) could be devised.
 
-* Implemet a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
+* Implement a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
 
 * Requirements: Python
 
 * Mentor: 
 
-## Implement various differential rotation rouintes in SunPy
+## Implement various differential rotation routines in SunPy
 
 ### Description:
 
