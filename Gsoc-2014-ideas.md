@@ -47,11 +47,11 @@ As well as the integration of astropy into the lightcurve module, it is importan
 
 ## spectrogram refactor
 
-* Description: 
+* Description: TBA
 
 * Requirements: Some knowledge of...
 
-* Mentor: 
+* Mentor: TBA
 
 ## Increase SunPy's Image processing capability, image alignment, rotation and warping.
 
@@ -65,12 +65,12 @@ A large amount of solar physics data analysis is image processing based. Feature
 
 * Requirements: Python
 
-* Mentor: 
+* Mentor: TBA
 
 ## Implement various differential rotation routines in SunPy
 
-### Description:
+* Description: TBA
 
 * Requirements: Python
 
-* Mentor: 
+* Mentor: TBA
