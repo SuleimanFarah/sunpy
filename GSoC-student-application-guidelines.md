@@ -38,8 +38,8 @@ SunPy. Prepare a plan on how you will tackle that project and the time it will t
 6. **Submit your application.**
   Don't forget to [submit your application](http://www.google-melange.com) before the deadline.  
 Following SymPy, we are also open to give comments on your proposal if you like.  Feel free to 
-add your application to the wiki following this format: "GSoC-2013 Application \<Your Name\>:\<Project Name\>"
-and link such page in [[GSoC 2013 Applications]].
+add your application to the wiki following this format: "GSoC-2014 Application \<Your Name\>:\<Project Name\>"
+and link such page in [[GSoC 2014 Applications]].
 
 Following these points will assure you to be high rated, but don't hesitate to ask us anything.
 
