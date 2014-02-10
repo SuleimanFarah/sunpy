@@ -6,16 +6,18 @@ Summary of this release: This release will continue integration with Astropy. Ma
 * LightCurve Refactor, downloading function should be removed
 * Convert to numpy standard for accessing data in image arrays (see [link](http://docs.scipy.org/doc/numpy/reference/internals.html#internal-organization-of-numpy-arrays))
 * Create observation Map classes
+* Integrate astropy coordinates
+* First cut at SunPy Gallery implemented
 
 ## Release 0.6
 * 80%+ Test coverage
 * Include high quality solar ephemeris library
-* Integrate astropy coordinates
 * Re-factor of WCS into an object-oriented approach. For example, define an observer object which gives distance from Sun, heliographic longitude and latitude, etc.
 * Refactor plotting functions outside of core datatypes
+* database should integrate with light curve data
 
 ## Release 0.7
-
+* Full support for Python 3.x
 
 ## Release 0.8
 
