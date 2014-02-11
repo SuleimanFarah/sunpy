@@ -4,7 +4,7 @@
 
 In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and make ugly GUIs. Exploring solar data for interesting events and extracting important information is important for being able to do research. 
 
-Currently, such a GUI program does not exist for Python. However, with the current capabilties of [Ginga](https://github.com/ejeschke/ginga), it offers a very good base. It allows us to expand to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
+Currently, such a GUI program does not exist for Python. However, with the current capabilities of [Ginga](https://github.com/ejeschke/ginga), it offers a very good base. It allows us to expand to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
 
 Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.
 
@@ -47,7 +47,7 @@ As well as the integration of astropy into the lightcurve module, it is importan
 
 A large amount of solar physics data analysis is image processing based. Features in [scikit-image](http://scikit-image.org/) such as feature detection and tracking as well as image warping and transformation. There are a few sub-projects under this project idea that could be tackled and expanded by a student.
 
-* Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than mantaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to [issue #741](https://github.com/sunpy/sunpy/issues/741) could be devised.
+* Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than maintaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to [issue #741](https://github.com/sunpy/sunpy/issues/741) could be devised.
 
 * Implement a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
 
@@ -63,3 +63,21 @@ The outer layers of the Sun do not rotate as a solid body, the equatorial region
 * Requirements: Python, IDL might be useful
 
 * Mentor: TBA
+
+## HELIO - capabilities improvement
+
+* Description: SunPy has already the capability to access to the Heliophysics Events Catalogue provided by the HELiophysics Integrated Observatory.  This catalogue provides access to different lists of events observed anywhere in the heliosphere.  However, HELIO offers a lot more web services of interest for the solar community.  Some of the services can provide information of when and where a planet or instrument where located, properties on features detected on the sun, or properties of some heliospheric observations; moreover it also allow the discovery of new data by a propagation model which simulates three different scenarios - Coronal Mass Ejections, High speed solar wind and Solar Energetic Particles events.
+
+This project would consist in the creation of an interface to access to HELIO services in a similar way that other services like HEK or VSO are accessible at the moment. HELIO uses VOTables as the standard to transfer the data, astropy provides support for reading such file format, therefore some understanding of astropy may be needed.   
+
+* Requirements: All the services from HELIO are through webservices (SOAP, REST), thus some understanding on that would be beneficial. VOTable parser provided from astropy will be used, so familiarization with such interface will be helpful.
+
+* Mentors: David Perez-Suarez, (Marco Soldati, Kevin Benson - HELIO)
+
+## Spectroscopy object (EIS, CDS, SUMER)
+
+* Description: Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges).  The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like Intensity at different wavelengths, turbulence in the medium, and speed of the plasma.  Besides, other information such as temperature or electron density of the plasma can also be obtained.  The project will consist in work over the hypermap class and the astropy efforts to be able to handle this dataset, and to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
+
+* Requirements: FITS dataformat file understanding, read EIS, CDS data documentation (link?)
+
+* Mentors: David Perez-Suarez, ???
