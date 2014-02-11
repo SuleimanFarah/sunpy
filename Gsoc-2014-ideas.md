@@ -2,18 +2,18 @@
 
 ###Description: 
 
-In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and as such make ugly GUIs. Exploring solar data for interesting events and extracting the information required is important for being able to publish papers. 
+In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and make ugly GUIs. Exploring solar data for interesting events and extracting important information is important for being able to publish papers. 
 
-Currently, a GUI program does not fully exist for Python. However, with the release of Ginga, it offers a very good base to expand further to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
+Currently, such a GUI program does not exist for Python. However, with the current capabilties of [Ginga](https://github.com/ejeschke/ginga), it offers a very good base. It allows us to expand to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
 
 Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.
 
 We would want a plugin that uses SunPy's database explorer module and supporting Solar coordinates using AstroPy's WCS module.  
-Further, we want to expand other Ginga plugins to work on 3D data among other items.
+Further, we want to expand other Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
 
 * Requirements: Python, Qt/GTK (depending on back-end choice) 
 
-* Mentor: Nabil Freij, Stuart Mumford
+* Mentor: Stuart Mumford or an Arab Wizard
 
 ## Re-implementation of `sunpy.wcs` as `sunpy.coordinates` using `astropy.coordinates`
 
