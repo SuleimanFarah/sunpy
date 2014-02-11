@@ -39,19 +39,9 @@ As well as the integration of astropy into the lightcurve module, it is importan
 
 
 
-* Requirements: Knowledge of the pandas and astropy libraries
+* Requirements: Knowledge of, or willingness to learn, the pandas and astropy libraries
 
 * Mentor: J. Ireland, A. R. Inglis, Stuart Mumford
-
-
-
-## spectrogram refactor
-
-* Description: TBA
-
-* Requirements: Some knowledge of...
-
-* Mentor: TBA
 
 ## Increase SunPy's Image processing capability, image alignment, rotation and warping.
 
@@ -69,8 +59,9 @@ A large amount of solar physics data analysis is image processing based. Feature
 
 ## Implement various differential rotation routines in SunPy
 
-* Description: TBA
+###Description:
+The outer layers of the Sun do not rotate as a solid body, the equatorial regions rotate faster than the poles. When considering analysis of surface features on the Sun compensating for this rotation is essential. This project would involve finishing work already started on this and understanding the physical processes behind the computational algorithms. Some of the differential rotation algorithms also require 
 
-* Requirements: Python
+* Requirements: Python, IDL might be useful
 
 * Mentor: TBA
