@@ -15,18 +15,18 @@ A factory instance (as proposed in #729) called LightCurve will be available in 
 
 ```Python
 def LightCurve(filename=None, source=None, dates=None, *kwargs):
-        “””
-        Parameters
-        ----------------
-        filename: string or File
-            A file to read.
-        source: string or iterable of strings
-            A string identifier for a registered subclass, matched by that subclasses `_is_source_for` method.
-        dates: DateTime instance or iterable of.
-            The time range to create the lightcurve in between.
-        
-        All other keywords are passed to subclass
-        “””
+    """
+    Parameters
+    ----------------
+    filename: string or File
+        A file to read.
+    source: string or iterable of strings
+        A string identifier for a registered subclass, matched by that subclasses `_is_source_for` method.
+    dates: DateTime instance or iterable of.
+        The time range to create the lightcurve in between.
+    
+    All other keywords are passed to subclass
+    """
 ```
 
 ### Examples:
