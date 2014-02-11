@@ -2,7 +2,7 @@
 
 ###Description: 
 
-In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and make ugly GUIs. Exploring solar data for interesting events and extracting important information is important for being able to publish papers. 
+In IDL, there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and make ugly GUIs. Exploring solar data for interesting events and extracting important information is important for being able to do research. 
 
 Currently, such a GUI program does not exist for Python. However, with the current capabilties of [Ginga](https://github.com/ejeschke/ginga), it offers a very good base. It allows us to expand to meet the requirements for solar data. Ginga has already several features such as FITS support and several plugins that allow basic analysis of data. It also supports several back-ends. 
 
@@ -19,7 +19,7 @@ Further, we want to expand other Ginga plugins like the slit plugin to work on 3
 
 ### Description: 
 
-Coordinates for solar image data are described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T). Current a subset of the systems and transformation described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T) are implemented in `sunpy.wcs`. Astropy, a core package for astronomy, has a flexible spatial coordinates package in `astropy.coordinates`. However, this package is currently in the planning phase of a large re-design, which will make it even more applicable for use for solar coordinate data. Astrpy Proposal for Enhancement (APE) number 5 [APE5](https://github.com/astropy/astropy-APEs/pull/6) describes the proposed API. It is anticipated that this code will form part of the Astropy 0.4 release scheduled for June/July 2014, and therefore be implemented well before this point.
+Coordinates for solar image data are described in [Thompson, W. (2009)](http://adsabs.harvard.edu/abs/2006A%26A...449..791T). Currently a subset of these systems and transformation are implemented in `sunpy.wcs`. Astropy, a core package for astronomy, has a flexible spatial coordinates package in `astropy.coordinates`. However, this package is currently in the planning phase of a large re-design, which will make it even more applicable for use for solar coordinate data. Astropy Proposal for Enhancement (APE) number 5 [APE5](https://github.com/astropy/astropy-APEs/pull/6) describes the proposed API. It is anticipated that this code will form part of the Astropy 0.4 release scheduled for June/July 2014, and therefore be implemented well before this point.
 
 This project involves using the `CoordinateFrame` and `CoordinateRepresentation` framework described in [APE5](https://github.com/astropy/astropy-APEs/pull/6) to implement Helio-Projective and Helio-Centric `CoordinateFrames` that can be transformed into Cartesian, Spherical and Cylindrical representations and between each other using the bi-directional transformation graph in `astropy.coordinates`. This project will involve collaboration with the astropy project and potentially pushing patches upstream.
 
@@ -37,8 +37,6 @@ Lightcurves are a major datatype in solar physics.  A lightcurve is a time-order
 
 As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` factory class, like `Map()` see [[LightCurve Refactor Proposal]] for details on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retrieval from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental step towards uniting the data types in the core library.
 
-
-
 * Requirements: Knowledge of, or willingness to learn, the pandas and astropy libraries
 
 * Mentor: J. Ireland, A. R. Inglis, Stuart Mumford
@@ -49,7 +47,7 @@ As well as the integration of astropy into the lightcurve module, it is importan
 
 A large amount of solar physics data analysis is image processing based. Features in [scikit-image](http://scikit-image.org/) such as feature detection and tracking as well as image warping and transformation. There are a few sub-projects under this project idea that could be tackled and expanded by a student.
 
-* Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than mantaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to issue [#741](https://github.com/sunpy/sunpy/issues/741) could be devised.
+* Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than mantaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to [issue #741](https://github.com/sunpy/sunpy/issues/741) could be devised.
 
 * Implement a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
 
