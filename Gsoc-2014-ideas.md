@@ -58,6 +58,7 @@ A large amount of solar physics data analysis is image processing based. Feature
 ## Implement various differential rotation routines in SunPy
 
 ###Description:
+
 The outer layers of the Sun do not rotate as a solid body, the equatorial regions rotate faster than the poles. When considering analysis of surface features on the Sun compensating for this rotation is essential. This project would involve finishing work already started on this and understanding the physical processes behind the computational algorithms. Some of the differential rotation algorithms also require 
 
 * Requirements: Python, IDL might be useful
@@ -66,7 +67,9 @@ The outer layers of the Sun do not rotate as a solid body, the equatorial region
 
 ## HELIO - capabilities improvement
 
-* Description: SunPy has already the capability to access to the Heliophysics Events Catalogue provided by the HELiophysics Integrated Observatory.  This catalogue provides access to different lists of events observed anywhere in the heliosphere.  However, HELIO offers a lot more web services of interest for the solar community.  Some of the services can provide information of when and where a planet or instrument where located, properties on features detected on the sun, or properties of some heliospheric observations; moreover it also allow the discovery of new data by a propagation model which simulates three different scenarios - Coronal Mass Ejections, High speed solar wind and Solar Energetic Particles events.
+### Description:
+
+SunPy has already the capability to access to the Heliophysics Events Catalogue provided by the HELiophysics Integrated Observatory.  This catalogue provides access to different lists of events observed anywhere in the heliosphere.  However, HELIO offers a lot more web services of interest for the solar community.  Some of the services can provide information of when and where a planet or instrument where located, properties on features detected on the sun, or properties of some heliospheric observations; moreover it also allow the discovery of new data by a propagation model which simulates three different scenarios - Coronal Mass Ejections, High speed solar wind and Solar Energetic Particles events.
 
 This project would consist in the creation of an interface to access to HELIO services in a similar way that other services like HEK or VSO are accessible at the moment. HELIO uses VOTables as the standard to transfer the data, astropy provides support for reading such file format, therefore some understanding of astropy may be needed.   
 
@@ -76,7 +79,8 @@ This project would consist in the creation of an interface to access to HELIO se
 
 ## Spectroscopy object (EIS, CDS, SUMER)
 
-* Description: Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges).  The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like Intensity at different wavelengths, turbulence in the medium, and speed of the plasma.  Besides, other information such as temperature or electron density of the plasma can also be obtained.  The project will consist in work over the hypermap class and the astropy efforts to be able to handle this dataset, and to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
+### Description
+Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges).  The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like Intensity at different wavelengths, turbulence in the medium, and speed of the plasma.  Besides, other information such as temperature or electron density of the plasma can also be obtained.  The project will consist in work over the hypermap class and the astropy efforts to be able to handle this dataset, and to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data documentation (link?)
 
