@@ -13,7 +13,7 @@ Further, we want to expand other Ginga plugins like the slit plugin to work on 3
 
 * Requirements: Python, Qt/GTK (depending on back-end choice) 
 
-* Mentor: Stuart Mumford or an Arab Wizard
+* Mentor: Stuart Mumford, Steven Christe
 
 ## Re-implementation of `sunpy.wcs` as `sunpy.coordinates` using `astropy.coordinates`
 
@@ -27,7 +27,7 @@ Extensions to this project would be to implement transformations from solar coor
 
 * Requirements: Python
 
-* Mentor: Stuart Mumford, (Steven Christe?)
+* Mentor: Stuart Mumford, Steven Christe
 
 ## LightCurve refactor
 
@@ -51,19 +51,13 @@ A large amount of solar physics data analysis is image processing based. Feature
 
 * Implement a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
 
+* The outer layers of the Sun do not rotate as a solid body, the equatorial regions rotate faster than the poles. When considering analysis of surface features on the Sun compensating for this rotation is essential. This project would involve finishing work already started on this and understanding the physical processes behind the computational algorithms.
+
 * Requirements: Python
 
-* Mentor: TBA
+* Mentor: Albert Shih, 
 
 ## Implement various differential rotation routines in SunPy
-
-###Description:
-
-The outer layers of the Sun do not rotate as a solid body, the equatorial regions rotate faster than the poles. When considering analysis of surface features on the Sun compensating for this rotation is essential. This project would involve finishing work already started on this and understanding the physical processes behind the computational algorithms. Some of the differential rotation algorithms also require 
-
-* Requirements: Python, IDL might be useful
-
-* Mentor: TBA
 
 ## HELIO - capabilities improvement
 
@@ -84,4 +78,4 @@ Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or ti
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data documentation (link?)
 
-* Mentors: David Perez-Suarez, ???
+* Mentors: David Perez-Suarez, Albert Shih
