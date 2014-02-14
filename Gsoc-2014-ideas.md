@@ -13,6 +13,8 @@ Further, we want to expand other Ginga plugins like the slit plugin to work on 3
 
 * Requirements: Python, Qt/GTK (depending on back-end choice) 
 
+* Difficulty: Medium to Hard
+
 * Mentor: Stuart Mumford, Steven Christe
 
 ## Re-implementation of `sunpy.wcs` as `sunpy.coordinates` using `astropy.coordinates`
@@ -27,6 +29,8 @@ Extensions to this project would be to implement transformations from solar coor
 
 * Requirements: Python
 
+* Difficulty: Medium
+
 * Mentor: Stuart Mumford, Steven Christe
 
 ## LightCurve refactor
@@ -38,6 +42,8 @@ Lightcurves are a major datatype in solar physics.  A lightcurve is a time-order
 As well as the integration of astropy into the lightcurve module, it is important to create a `Lightcurve` factory class, like `Map()` see [[LightCurve Refactor Proposal]] for details on the proposed factory implementation. There are more challenges faced by the `Lightcurve` factory than by the `Map` factory, due to the diverse nature of the Lightcurve data files both for retrieval from online sources and parsing of the CSV files. Having the `Lightcurve` API follow that of `Map` is a fundamental step towards uniting the data types in the core library.
 
 * Requirements: Knowledge of, or willingness to learn, the pandas and astropy libraries
+
+* Difficulty: Medium
 
 * Mentor: J. Ireland, A. R. Inglis, Stuart Mumford
 
@@ -55,7 +61,9 @@ A large amount of solar physics data analysis is image processing based. Feature
 
 * Requirements: Python
 
-* Mentor: Albert Shih, 
+* Difficulty: Medium to Hard
+
+* Mentor: Albert Shih, David Perez-Suarez
 
 ## Implement various differential rotation routines in SunPy
 
@@ -69,6 +77,8 @@ This project would consist in the creation of an interface to access to HELIO se
 
 * Requirements: All the services from HELIO are through webservices (SOAP, REST), thus some understanding on that would be beneficial. VOTable parser provided from astropy will be used, so familiarization with such interface will be helpful.
 
+* Difficulty: Medium
+
 * Mentors: David Perez-Suarez, (Marco Soldati, Kevin Benson - HELIO)
 
 ## Spectroscopy object (EIS, CDS, SUMER)
@@ -77,5 +87,7 @@ This project would consist in the creation of an interface to access to HELIO se
 Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges).  The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like Intensity at different wavelengths, turbulence in the medium, and speed of the plasma.  Besides, other information such as temperature or electron density of the plasma can also be obtained.  The project will consist in work over the hypermap class and the astropy efforts to be able to handle this dataset, and to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
 
 * Requirements: FITS dataformat file understanding, read EIS, CDS data documentation (link?)
+
+* Difficulty: Hard
 
 * Mentors: David Perez-Suarez, Albert Shih
