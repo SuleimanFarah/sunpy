@@ -38,8 +38,3 @@ Copying the explanation (being careful to make modifications if things have chan
 
 ## Affiliated Packages
 tbw
-
-## Code Examples
-
-# Creating a class
-
