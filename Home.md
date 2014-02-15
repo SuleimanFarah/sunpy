@@ -11,8 +11,6 @@ More information about [installation](http://docs.sunpy.org/en/stable/guide/inst
 
 ## For Developers
 
-* [[Development Status]]
-* [[Developers]]
 * [[Coding Standards|Developer Standards]]
 * [[Feature Wishlist]]
 * The SunPy [[Roadmap]] - the plan for the future of SunPy
