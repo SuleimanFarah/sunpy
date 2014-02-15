@@ -15,7 +15,7 @@ More information about [installation](http://docs.sunpy.org/en/stable/guide/inst
 * [[Developers]]
 * [[Coding Standards|Developer Standards]]
 * [[Feature Wishlist]]
-* [[The SunPy Roadmap]] - the plan for the future of SunPy
+* The SunPy [[Roadmap]] - the plan for the future of SunPy
 * [[Issue Labels]] - an explanation and description of the tags on issues
 
 ## Summer of Code
