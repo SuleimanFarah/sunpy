@@ -19,21 +19,28 @@ All SPEs creators should begin with the SPE template which is known as SPE1. SPE
 All new SPE should be pull requested into the sunpy/sunpy-SPE repository.
 
 # Review Process
-New SPEs currently undergoing discussion are pull requests into the sunpy-SPE repository. Discussions about the SPE can take place as part of the pull request but also using the standard SunPy discussion channels (IRC channel, mailing list, hangout). 
+New SPEs currently undergoing discussion are pull requests into the sunpy-SPE repository. Discussions about the SPE can take place as part of the pull request but also using the standard SunPy discussion channels (IRC channel, mailing list, hangout). Once a SPE is officially submitted by pull request an SunPy editor must be assigned from the SunPy core or SunPy maintainer communities. The role of the editor is to aid the submitter and make sure that the SPE follows the accepted standard. The author and editor can be the same person if the submitting author is part of the SunPy team. A SPE must be accepted by a majority of the sunpy core as well as a majority of the sunpy maintainers. The status of a SPE can be any of the following
 
-# Acceptance Process
-A SPE must be accepted by a majority of the sunpy core as well as a majority of the sunpy maintainers.
+* **Discussion**: This means that SPE is currently being considered and a decision has not been made.
+* **Accepted**: The SPE has been accepted and it will be assigned a number and merged into the sunpy-spe repository. A decision rational must be drafted and added to the SPE. If the SPE is of the Standard type then it can now be implemented.
+* **Implemented**: Only valid for a Standard SPE. This status means that the feature discussed in the SPE is implemented and has been merged into the main SunPy repository.
+* **Rejected**: The SPE has been rejected. A decision rationale should be provided by the community and the SPE should still be assigned a number and merged in order to close the issue. It should be noted that a future SPE can supersede the decision.
 
 # SPE Template
 
 ## Header
-Author(s): First Last, First Last
-Contact Email: me@myemail.org
-date-creation: YYYY-MM-DD
-date-last-revision: YYYY-MM-DD
-type: standard/process
-status: accepted/rejected
+* **author(s)**: First Last, First Last
+* **contact email**: me@myemail.org
+* **date-creation**: YYYY-MM-DD
+* **date-last-revision**: YYYY-MM-DD
+* **type**: standard/process
+* **status**: accepted/rejected
 
 ## Abstract
 A short description of the SPE including a statement of the problem the SPE is seeking to solve
 
+## Detailed Description
+If this is a standard SPE this section should contain usage examples.
+
+## Decision Rational
+This is a great idea because...
