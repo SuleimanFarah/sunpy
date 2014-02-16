@@ -10,15 +10,15 @@ There are generally two types of SPE.
 
 # SPE Workflow
 
-# Creation
+## Creation
 SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the community in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPE can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the community. It is generally a good idea to discuss the new idea with the community before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance. 
 
 All SPEs creators should begin with the SPE template which is known as SPE1. SPE1 is stored in the sunpy/sunpy-SPE repository. Fork the repo and create a new file with your SPE. SPE are written with markdown.
 
-# Submission
+## Submission
 All new SPE should be pull requested into the sunpy/sunpy-SPE repository.
 
-# Review Process
+## Review Process
 New SPEs currently undergoing discussion are pull requests into the sunpy-SPE repository. Discussions about the SPE can take place as part of the pull request but also using the standard SunPy discussion channels (IRC channel, mailing list, hangout). Once a SPE is officially submitted by pull request an SunPy editor must be assigned from the SunPy core or SunPy maintainer communities. The role of the editor is to aid the submitter and make sure that the SPE follows the accepted standard. The author and editor can be the same person if the submitting author is part of the SunPy team. A SPE must be accepted by a majority of the sunpy core as well as a majority of the sunpy maintainers. The status of a SPE can be any of the following
 
 * **Discussion**: This means that SPE is currently being considered and a decision has not been made.
