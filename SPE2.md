@@ -33,3 +33,20 @@ Developers are responsible for developing and maintaining the sunpy code base.  
 
 ## The Community Manager
 The role of the community manager (CM) is to promote the project to the community. The community manager may be a member of the board though it is not required. The CM is chosen by the executive director.
+
+# Initial Members
+Initial member of the board shall be (in alphabetical order)
+* Steven Christe
+* Jack Ireland
+* Simon Lietke
+* Florian Mayer
+* Stuart Mumford (ED?)
+* David Perez-Suarez (CM?)
+* Albert Shih
+* Juan Carlos(?)
+* Russ?
+* Andrew Inglis?
+
+Members of the advisory board
+* Keith Hughitt
+* Richard Schwartz(?)
