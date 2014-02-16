@@ -1,4 +1,3 @@
-
 # What is a SPE?
 SPE stands for SunPy proposal for Enhancements. A SPE is a design document modeled after the Python Proposal for Enhancements which describes a new SunPy feature, process, or major changes to existing processes or features. The purpose of the document is to present a concise technical specification and rational for the new feature or change to the SunPy community. The community is then charged to review the SPE and reach a decision as to whether the proposal should be accepted, rejected, or modified.
 
@@ -25,5 +24,16 @@ New SPEs currently undergoing discussion are pull requests into the sunpy-SPE re
 # Acceptance Process
 A SPE must be accepted by a majority of the sunpy core as well as a majority of the sunpy maintainers.
 
+# SPE Template
 
+## Header
+Author(s): First Last, First Last
+Contact Email: me@myemail.org
+date-creation: YYYY-MM-DD
+date-last-revision: YYYY-MM-DD
+type: standard/process
+status: accepted/rejected
+
+## Abstract
+A short description of the SPE including a statement of the problem the SPE is seeking to solve
 
