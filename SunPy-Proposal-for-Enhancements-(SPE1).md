@@ -1,5 +1,5 @@
 # What is a SPE?
-SPE stands for SunPy proposal for Enhancements. A SPE is a design document modeled after the Python Proposal for Enhancements which describes a new SunPy feature, process, or major changes to existing processes or features. The purpose of the document is to present a concise technical specification and rational for the new feature or change to the SunPy community. The community is then charged to review the SPE and reach a decision as to whether the proposal should be accepted, rejected, or modified.
+SPE stands for SunPy proposal for Enhancements. A SPE is a design document modeled after the Python Proposal for Enhancements which describes a new SunPy feature, process, or major changes to existing processes or features. The purpose of the document is to present a concise technical specification and rational for the new feature or change to the SunPy community. The SunPy board is then charged to review the SPE and reach a decision as to whether the proposal should be accepted, rejected, or modified. The SunPy board shall also review the implementation of all SPEs. A member of the SunPy board may also request that a change to SunPy requires that a SPE be written and reviewed.
 
 # SPE Types
 There are generally two types of SPE.
@@ -11,7 +11,7 @@ There are generally two types of SPE.
 # SPE Workflow
 
 ## Creation
-SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the SunPy board in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPEs can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the SunPy board. It is generally a good idea to discuss the new idea with the community before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance. All SPE must be nominated by at least one SunPy board member.
+SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the SunPy board in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPEs can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the SunPy board. It is generally a good idea to discuss the new idea with the community and the board before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance but it is not required. All SPEs shall be sponsored by at least one SunPy board member.
 
 All SPEs creators should begin with the SPE template which is known as SPE1. SPE1 is stored in the sunpy/sunpy-SPE repository. Fork the repo and create a new file with your SPE. SPE are written with markdown.
 
@@ -23,7 +23,7 @@ New SPEs currently undergoing discussion are pull requests into the sunpy-SPE re
 
 * **Discussion**: This means that SPE is currently being considered and a decision has not been made.
 * **Accepted**: The SPE has been accepted and it will be assigned a number and merged into the sunpy-spe repository. A decision rational must be drafted and added to the SPE. If the SPE is of the Standard type then it can now be implemented.
-* **Implemented**: Only valid for a Standard SPE. This status means that the feature discussed in the SPE is implemented and has been merged into the main SunPy repository.
+* **Implemented**: Only valid for a Standard SPE. This status means that the feature discussed in the SPE is implemented and has been merged into the main SunPy repository. At least X members of the SunPy board must sign off on implementation for it to be accepted.
 * **Rejected**: The SPE has been rejected. A decision rationale should be provided by the board and the SPE should still be assigned a number and merged in order to close the issue. It should be noted that a future SPE can supersede the decision.
 
 # SPE Template
