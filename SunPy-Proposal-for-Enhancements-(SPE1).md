@@ -1,6 +1,15 @@
 # What is a SPE?
 SPE stands for SunPy proposal for Enhancements. A SPE is a design document modeled after the Python Proposal for Enhancements which describes a new SunPy feature, process, or major changes to existing processes or features. The purpose of the document is to present a concise technical specification and rational for the new feature or change to the SunPy community. The SunPy board is then charged to review the SPE and reach a decision as to whether the proposal should be accepted, rejected, or modified. The SunPy board shall also review the implementation of all SPEs. A member of the SunPy board may also request that a change to SunPy requires that a SPE be written and reviewed.
 
+Changes that typically require a SPE
+* the addition of a new feature to SunPy
+* changes to the user-facing API
+* major refactoring of the backend
+Changes that do not typically require a SPE
+* the addition of new sources to maps, light curves, spectra, etc.
+* bug fixes
+* minor enhancements
+
 # SPE Types
 There are generally two types of SPE.
 
@@ -14,6 +23,9 @@ There are generally two types of SPE.
 SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the SunPy board in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPEs can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the SunPy board. It is generally a good idea to discuss the new idea with the community and the board before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance but it is not required. All SPEs shall be sponsored by at least one SunPy board member.
 
 All SPEs creators should begin with the SPE template which is known as SPE1. SPE1 is stored in the sunpy/sunpy-SPE repository. Fork the repo and create a new file with your SPE. SPE are written with markdown.
+
+### Amending a SPE
+If a topic is already covered by an existing SPE and the change is not a major one than it is appropriate to propose an amendment to an existing SPE. All the usual rules apply and processes apply to the amendment of a SPE as for the creation of a new SPE.
 
 ## Submission
 All new SPE should be pull requested into the sunpy/sunpy-SPE repository.
