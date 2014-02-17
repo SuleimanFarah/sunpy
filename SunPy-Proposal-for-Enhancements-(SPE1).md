@@ -11,7 +11,7 @@ There are generally two types of SPE.
 # SPE Workflow
 
 ## Creation
-SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the community in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPE can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the community. It is generally a good idea to discuss the new idea with the community before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance. 
+SPEs should contain a concise description of a single new idea or proposal. SPEs are generally not necessary for small enhancements though a SPE may sometimes be requested by the SunPy board in some cases. A SPE begins its life as a proposal. Legibility, organization, and focus are key features of a successful SPE. SPEs can be rejected out-right if they lack any of those characteristics. All SPEs must identify a champion (usually the author) whose job it is to present and defend the proposal to the SunPy board. It is generally a good idea to discuss the new idea with the community before going to the trouble of writing a SPE in order to gauge whether there is any chance of acceptance. All SPE must be nominated by at least one SunPy board member.
 
 All SPEs creators should begin with the SPE template which is known as SPE1. SPE1 is stored in the sunpy/sunpy-SPE repository. Fork the repo and create a new file with your SPE. SPE are written with markdown.
 
@@ -19,12 +19,12 @@ All SPEs creators should begin with the SPE template which is known as SPE1. SPE
 All new SPE should be pull requested into the sunpy/sunpy-SPE repository.
 
 ## Review Process
-New SPEs currently undergoing discussion are pull requests into the sunpy-SPE repository. Discussions about the SPE can take place as part of the pull request but also using the standard SunPy discussion channels (IRC channel, mailing list, hangout). Once a SPE is officially submitted by pull request an SunPy editor must be assigned from the SunPy core or SunPy maintainer communities. The role of the editor is to aid the submitter and make sure that the SPE follows the accepted standard. The author and editor can be the same person if the submitting author is part of the SunPy team. A SPE must be accepted by a majority of the sunpy core as well as a majority of the sunpy maintainers. The status of a SPE can be any of the following
+New SPEs currently undergoing discussion are pull requests into the sunpy-SPE repository. Discussions about the SPE can take place as part of the pull request but also using the standard SunPy discussion channels (IRC channel, mailing list, hangout). Once a SPE is officially submitted by pull request an SunPy editor must be assigned by the SunPy board. The role of the editor is to aid the submitter and make sure that the SPE follows the accepted standard. The author and editor can be the same person. A SPE must be accepted by a majority of the SunPy board. The status of a SPE can be any of the following
 
 * **Discussion**: This means that SPE is currently being considered and a decision has not been made.
 * **Accepted**: The SPE has been accepted and it will be assigned a number and merged into the sunpy-spe repository. A decision rational must be drafted and added to the SPE. If the SPE is of the Standard type then it can now be implemented.
 * **Implemented**: Only valid for a Standard SPE. This status means that the feature discussed in the SPE is implemented and has been merged into the main SunPy repository.
-* **Rejected**: The SPE has been rejected. A decision rationale should be provided by the community and the SPE should still be assigned a number and merged in order to close the issue. It should be noted that a future SPE can supersede the decision.
+* **Rejected**: The SPE has been rejected. A decision rationale should be provided by the board and the SPE should still be assigned a number and merged in order to close the issue. It should be noted that a future SPE can supersede the decision.
 
 # SPE Template
 
