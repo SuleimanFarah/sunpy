@@ -5,6 +5,7 @@ Changes that typically require a SPE
 * the addition of a new feature to SunPy
 * changes to the user-facing API
 * major refactoring of the backend
+
 Changes that do not typically require a SPE
 * the addition of new sources to maps, light curves, spectra, etc.
 * bug fixes
