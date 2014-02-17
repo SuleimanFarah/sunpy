@@ -68,4 +68,6 @@ None, due to the current implementation of LightCurve it will be very hard to ma
 
 #Notes:
 
-* Make a check that the index column of the LightCurve is actually a time
+* Make a check that the index column of the LightCurve is actually a time.
+* Since there is no standard for storing time-series data (FITS files have a standard) then we can expect that each instrument subclass will be highly tailored to however the data is stored.
+* Do we still want to use pandas time-series to store the data?
