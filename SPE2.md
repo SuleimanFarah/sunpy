@@ -86,3 +86,7 @@ Initial member of the board shall be (in alphabetical order)
 Members of the advisory board
 * Keith Hughitt
 * Richard Schwartz(?)
+
+# References
+* http://form1023.org/how-to-draft-nonprofit-bylaws-with-examples
+* http://www.python.org/dev/peps/pep-0001/#pep-review-resolution
