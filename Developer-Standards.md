@@ -6,7 +6,7 @@ In order to maintain a high-quality code, all code should be submitted as a pull
 ## Core Requirements and Recommendations
 
 ###  Language Standard
-English is the default language for all doc strings and inline commands. Variables names should also be based on english words. In addition, the standard for spelling is American english.
+English is the default language for all doc strings and inline commands. Variables names should also be based on English words. In addition, the standard for spelling is American English.
 
 * Packages must be compatible with Python 2.6, 2.7, and 3.x (for 3.x compatibility, the 2to3 tool will be used).
 * The code _should_ be importable with no dependencies other than the Python Standard Library (v2.6), NumPy, SciPy, matplotlib, and components already in the core library. Adding dependencies to SunPy will be considered by are highly discouraged.
