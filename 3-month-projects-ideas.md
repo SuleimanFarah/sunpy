@@ -5,6 +5,8 @@ The list of projects below will be changing as they are being taken by someone o
 
 **Requirements**
 
+**Expected Outcomes**
+
 **Idea from:**
 
 **Possible mentors/help by**
