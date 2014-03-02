@@ -30,7 +30,7 @@ if there is something that you could do.  This is not a requirement as with SymP
 play on your side.
 
 5. **Plan your application.**
-  Think which is your favourite project from the [ideas page]() or think on a new one that will benefit
+  Think which is your favourite project from the [ideas page](Gsoc-2014-ideas) or think on a new one that will benefit
 SunPy. Prepare a plan on how you will tackle that project and the time it will take you to solve it.  Do not worry much in providing exact dates, but plan it as best as you can (if you are planing to have some holidays during the GSoC programme, then you should mention it too). 
 
   Don't be shy when describing yourself!
