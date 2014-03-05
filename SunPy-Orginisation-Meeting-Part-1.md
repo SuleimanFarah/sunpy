@@ -38,4 +38,4 @@ Below is the notes and full IRC log.
 <li>everyone left</li>
 </ul>
 <h4>Meeting ended at 19:20:30 UTC</h4>
-<a href="https://home.cadair.com/sunpy/%23SunPy/2014-03-05-17%3A00_SunPy-Organisation-Meeting.log">Full log</a>
+<a href="https://github.com/sunpy/sunpy/wiki/SunPy-Org-Meeting-IRC-log">Full log</a>
