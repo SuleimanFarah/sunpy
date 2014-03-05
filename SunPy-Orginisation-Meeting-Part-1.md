@@ -1,6 +1,6 @@
 On the 5/3/14 a 2.5 hour meeting took place to discuss and formalise the SunPy Project's organisation structure. The video of this discussion is here: http://www.youtube.com/watch?v=5pUYYHGPnvc
 
-Below is the notes and full IRC log.
+Below are the notes and full IRC log.
 <h2>SunPy Organisation Meeting at #SunPy, 2014-03-05 17:00</h2>
 <h4>Meeting started by davidps</h4><ul>
 <li><span style="font-weight: bold">Meeting chairs are: </span>cadair, </li>
