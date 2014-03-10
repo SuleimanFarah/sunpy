@@ -21,6 +21,7 @@ SunPy has participated successfully in both the ESA Summer of Code (ESOC) and th
 
 ##GSOC 2014
 * [[GSOC 2014 Ideas]]
+* [[GSoC 2014 Students applications]]
 
 Past Programs
 
