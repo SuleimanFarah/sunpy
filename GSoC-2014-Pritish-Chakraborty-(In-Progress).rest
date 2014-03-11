@@ -26,11 +26,11 @@ Project Proposal Information
 Title: *SunPy: Re-implementation of sunpy.wcs using astropy.coordinates*
 
 Abstract
-~~~~~~~~
+--------
 
 
 Detailed Description
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Milestones:
 
