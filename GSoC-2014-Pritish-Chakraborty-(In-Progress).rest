@@ -38,9 +38,9 @@ Milestones:
 Code Sample(s)
 --------------
 I have uploaded some patches on SunPy's Github which have been merged by 
-means of pull requests. For example, the PR regarding `repr for Wave`
+means of pull requests. For example, the PR regarding `repr for Wave`_
 provides a repr method for Wave objects, which are a part of VSO
-attributes. The PR which was made for `distinguishing supported VSO objects` 
+attributes. The PR which was made for `distinguishing supported VSO objects`_ 
 provides a frozenset which contains attributes of VSO which are currently
 supported. This work has helped me get up to speed with SunPy's
 workflow.
