@@ -18,7 +18,6 @@ University Information
 :University: Manav Rachna International University
 :Major: Computer Science and Engineering
 :Current Year: 2014
-:Expected Graduation: 2014
 :Degree: Bachelor of Technology
 
 Project Proposal Information
@@ -77,7 +76,7 @@ as a potential future career.
 
 Other Schedule Information
 --------------------------
-Note: Times in this section are GMT+530
+Note: Times in this section are GMT+530.
 
 According to the tentative schedule released by my university, my semester exams
 will begin around the time of the coding period. I will try my best to complete
