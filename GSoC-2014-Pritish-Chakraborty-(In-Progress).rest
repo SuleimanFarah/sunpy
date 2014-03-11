@@ -85,7 +85,8 @@ will begin around the time of the coding period. I will try my best to complete
 only five subjects whose exams will be conducted in this semester. In keeping with
 GSoC rules, I will be enrolled as a student as of April 27th, 2014.
 
-.. _distinguishing supported VSO objects: https://github.com/sunpy/sunpy/pull/801
+
 .. _repr for Wave: https://github.com/sunpy/sunpy/pull/786
+.. _distinguishing supported VSO objects: https://github.com/sunpy/sunpy/pull/801
 .. _final year project: https://github.com/VaticanCameos/pdfparsing
 .. _DSA in Java: https://github.com/VaticanCameos/dsajava
