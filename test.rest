@@ -1,2 +1,21 @@
-Hello world
------------
+Application for GSOC 2014 - In Progress
+---------------------------------------
+
+Student Information
+###################
+
+:Name: Pritish Chakraborty
+:Time Zone: +0530 GMT
+:IRC handle: VaticanCameos@irc.freenode.net
+:GitHub account: VaticanCameos
+:Blog: http://thejoyofpython.wordpress.com/
+:Blog RSS Feed: http://www.thejoyofpython.wordpress.com/?tag=gsoc,python&feed=rss2
+
+University Information
+######################
+
+:University: Manav Rachna International University
+:Major: Computer Science and Engineering
+:Current Year: 2014
+:Graduation: July, 2014
+:Degree: Bachelor of Technology
