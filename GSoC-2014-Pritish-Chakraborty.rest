@@ -1,5 +1,5 @@
-Application for GSOC 2014 In
-============================
+Application for GSOC 2014 In Pro
+================================
 
 Student Information
 -------------------
