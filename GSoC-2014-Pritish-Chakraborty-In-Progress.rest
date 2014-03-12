@@ -4,12 +4,9 @@ Application for GSOC 2014
 Student Information
 -------------------
 :Name: Pritish Chakraborty
-:Email: chakrabortypritish@gmail.com
-:Telephone: +919999xxxxxx
 :Time Zone: +0530 GMT
 :IRC handle: VaticanCameos@irc.freenode.net
 :GitHub account: VaticanCameos
-:Skype: pritish_dbz
 :Blog: http://thejoyofpython.wordpress.com/
 :Blog RSS Feed: http://www.thejoyofpython.wordpress.com/?tag=gsoc,python&feed=rss2
 
