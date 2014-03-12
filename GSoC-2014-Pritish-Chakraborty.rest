@@ -1,0 +1,95 @@
+Application for GSOC 2014
+=========================
+
+Student Information
+-------------------
+
+:Name: Pritish Chakraborty
+:Time Zone: +0530 GMT
+:IRC handle: VaticanCameos@irc.freenode.net
+:GitHub account: VaticanCameos
+:Blog: http://thejoyofpython.wordpress.com/
+:Blog RSS Feed: http://www.thejoyofpython.wordpress.com/?tag=gsoc,python&feed=rss2
+
+University Information
+----------------------
+
+:University: Manav Rachna International University
+:Major: Computer Science and Engineering
+:Current Year: 2014
+:Graduation: July, 2014
+:Degree: Bachelor of Technology
+
+Project Proposal Information
+----------------------------
+
+Title: *SunPy: Re-implementation of sunpy.wcs using astropy.coordinates*
+
+Abstract
+~~~~~~~~
+
+
+Detailed Description
+~~~~~~~~~~~~~~~~~~~~
+
+Milestones:
+
+
+Code Sample(s)
+--------------
+
+I have uploaded some patches on SunPy's Github which have been merged by 
+means of pull requests. For example, the PR regarding `repr for Wave`_
+provides a repr method for Wave objects, which are a part of VSO
+attributes. The PR which was made for `distinguishing supported VSO objects`_ 
+provides a frozenset which contains attributes of VSO which are currently
+supported. This work has helped me get up to speed with SunPy's
+workflow.
+
+I am currently working on a `final year project`_ for college which
+aims to convert PDF files to HTML files, which is a part of my
+industrial training which began last year. The PDF shall be 
+single-columnar and have a simple layout, and may have images and 
+some graphics which are not too complex in nature.
+
+To strengthen my grasp on Java, I had decided to find problems on
+data structures and algorithms and implement them in Java. While these
+may not exactly count as code samples, they are instrumental to my
+growth as a programmer. See `DSA in Java`_.
+
+Lastly, while I may not be able to present its code here, I would like
+to mention that I had completed my industrial training under a well 
+known IT services company last year. In a team of four, I was made 
+the lead and we built the offline version of their flagship assessment 
+exam center product over a period of six months, in C#. This training 
+taught me a lot about how different real-world development is from 
+writing simple programs as a hobby. Most importantly, it taught me 
+how to absorb pressure and work against the odds, while working together
+as a team.
+
+Biography
+---------
+
+I am a 21 year old college student, studying computer science and engineering
+and am in my final year. The first programming language that I ever touched was C,
+and it aroused a lot of interest in me. I delved into C++ using a college book
+and the Dev-C++ compiler, and taught myself a few things about classes and objects.
+I haven't looked back since then. I am also very interested in information security
+as a potential future career.
+
+Other Schedule Information
+--------------------------
+
+Note: Times in this section are GMT+530.
+
+According to the tentative schedule released by my university, my semester exams
+will begin around the time of the coding period. I will try my best to complete
+40 hours a week despite this minor tiff with exams. The good thing is that I have 
+only five subjects whose exams will be conducted in this semester. In keeping with
+GSoC rules, I will be enrolled as a student as of April 27th, 2014.
+
+
+.. _repr for Wave: https://github.com/sunpy/sunpy/pull/786
+.. _distinguishing supported VSO objects: https://github.com/sunpy/sunpy/pull/801
+.. _final year project: https://github.com/VaticanCameos/pdfparsing
+.. _DSA in Java: https://github.com/VaticanCameos/dsajava
