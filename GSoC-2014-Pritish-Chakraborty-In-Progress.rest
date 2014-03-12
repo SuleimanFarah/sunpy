@@ -18,7 +18,7 @@ University Information
 :University: Manav Rachna International University
 :Major: Computer Science and Engineering
 :Current Year: 2014
-:Expected Graduation: July, 2014
+:Graduation: July, 2014
 :Degree: Bachelor of Technology
 
 Project Proposal Information
