@@ -3,6 +3,7 @@ Application for GSOC 2014
 
 Student Information
 -------------------
+
 :Name: Pritish Chakraborty
 :Time Zone: +0530 GMT
 :IRC handle: VaticanCameos@irc.freenode.net
@@ -12,6 +13,7 @@ Student Information
 
 University Information
 ----------------------
+
 :University: Manav Rachna International University
 :Major: Computer Science and Engineering
 :Current Year: 2014
@@ -20,6 +22,7 @@ University Information
 
 Project Proposal Information
 ----------------------------
+
 Title: *SunPy: Re-implementation of sunpy.wcs using astropy.coordinates*
 
 Abstract
@@ -34,6 +37,7 @@ Milestones:
 
 Code Sample(s)
 --------------
+
 I have uploaded some patches on SunPy's Github which have been merged by 
 means of pull requests. For example, the PR regarding `repr for Wave`_
 provides a repr method for Wave objects, which are a part of VSO
@@ -65,6 +69,7 @@ as a team.
 
 Biography
 ---------
+
 I am a 21 year old college student, studying computer science and engineering
 and am in my final year. The first programming language that I ever touched was C,
 and it aroused a lot of interest in me. I delved into C++ using a college book
@@ -74,6 +79,7 @@ as a potential future career.
 
 Other Schedule Information
 --------------------------
+
 Note: Times in this section are GMT+530.
 
 According to the tentative schedule released by my university, my semester exams
