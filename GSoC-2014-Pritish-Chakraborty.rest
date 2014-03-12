@@ -1,2 +1,0 @@
-Application for GSOC 2014 - In Progress
-=======================================
