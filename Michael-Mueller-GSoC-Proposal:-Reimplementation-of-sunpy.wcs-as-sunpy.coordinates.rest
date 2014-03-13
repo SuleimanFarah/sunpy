@@ -28,7 +28,7 @@ Accordingly, my proposal is to use Astropy's new coordinate framework to impleme
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
-Not yet decided.
+Working on this...
 
 Additional Information
 ----------------------
