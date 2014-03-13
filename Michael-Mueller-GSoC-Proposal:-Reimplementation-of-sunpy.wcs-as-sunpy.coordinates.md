@@ -14,12 +14,17 @@ My programming background extends back to 7th grade, when I discovered MIT’s e
 
 I have been using Python in particular for about three years, and I find it very useful as a language whenever high-level programming is appropriate. Although there is somewhat of a performance hit in using Python compared to more mid-level languages like C or C++, its ease of use and natural syntax have allowed me to program more quickly and with less propensity for error. I particularly enjoy the most distinctive, or “Pythonic”, aspects of Python, such as list comprehensions, generators, and lambda expressions. In fact, I’ve often found that when I return to C++ or Java after using Python for a while, I become annoyed at having to translate one of these features into a more cumbersome syntax. In my opinion, Python’s most useful language feature is the existence of iterables and functions relating to them. ``for i, elem in enumerate(elem_set): foo(elem, i)`` is far clearer and easier to use than the C++ equivalent ``for (std::set<int>::iterator it = elem_set.begin(); it != elem_set.end(); ++it) { foo(*it, it - elem_set.begin()); }``, and standard library functions like map() and zip() make it much simpler to operate on elements of a container.
 
-I am reasonably comfortable with git, having previously contributed to a friend’s project on BitBucket and having begun contributing to Sunpy on GitHub. As of this writing, I have ...
+I am reasonably comfortable with git, having previously contributed to a friend’s project on BitBucket and having begun contributing to Sunpy on GitHub. As of this writing, I have four merged pull requests for Sunpy (https://github.com/sunpy/sunpy/pull/854, https://github.com/sunpy/sunpy/pull/859, https://github.com/sunpy/sunpy/pull/861, http://github.com/sunpy/sunpy/pull/877) as well as two currently unmerged pull requests (https://github.com/sunpy/sunpy/pull/883 and https://github.com/sunpy/sunpy/pull/901). These have mostly involved documentation and renaming, but #859 involved adding tests for each public function in the previously untested module ``util.util``.
 
 Project Details
 ---------------
 Abstract
 ~~~~~~~~
+Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for converting between various coordinate systems. However, this system is less than ideal as it simply uses ``bumpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
+
+Luckily, the project Astropy (closely related to the Sunpy project) contains a useful coordinate package in ``astropy.coordinates``. However, as part of APE5 (Astropy Proposal for Enhancement #5), Astropy will be switching to a new coordinate framework involving the classes ``CoordinateFrame`` and ``CoordinateRepresentation``, which reduces ambiguity regarding the definition of various terms regarding coordinates and fixes previous issues with the ``satrapy.coordinates`` package. It would be extremely helpful to incorporate this new framework into the Sunpy library.
+
+Accordingly, my proposal is to use Astropy's new coordinate framework to implement Helio-Projective and Helio-Centric ``CoordinateFrame``s using the new inheritance model spelled out in APE5. After doing so, I plan on implementing functions allowing for easy conversion between the two systems and for conversion between these coordinate systems and other coordinate systems in Astropy.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
