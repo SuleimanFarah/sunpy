@@ -20,7 +20,7 @@ Project Details
 ---------------
 Abstract
 ~~~~~~~~
-Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for converting between various coordinate systems. However, this system is less than ideal as it simply uses ``bumpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
+ Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for converting between various coordinate systems. However, this system is less than ideal as it simply uses ``bumpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
 
 Luckily, the project Astropy (closely related to the Sunpy project) contains a useful coordinate package in ``astropy.coordinates``. However, as part of APE5 (Astropy Proposal for Enhancement #5), Astropy will be switching to a new coordinate framework involving the classes ``CoordinateFrame`` and ``CoordinateRepresentation``, which reduces ambiguity regarding the definition of various terms regarding coordinates and fixes previous issues with the ``satrapy.coordinates`` package. It would be extremely helpful to incorporate this new framework into the Sunpy library.
 
