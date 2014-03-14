@@ -16,19 +16,49 @@ I have been using Python in particular for about three years, and I find it very
 
 I am reasonably comfortable with git, having previously contributed to a friend’s project on BitBucket and having begun contributing to Sunpy on GitHub. As of this writing, I have four merged pull requests for Sunpy (https://github.com/sunpy/sunpy/pull/854, https://github.com/sunpy/sunpy/pull/859, https://github.com/sunpy/sunpy/pull/861, http://github.com/sunpy/sunpy/pull/877) as well as two currently unmerged pull requests (https://github.com/sunpy/sunpy/pull/883 and https://github.com/sunpy/sunpy/pull/901). These have mostly involved documentation and renaming, but #859 involved adding tests for each public function in the previously untested module ``util.util``.
 
+I have also become involved with Astropy, and the prospect of working with both Sunpy and Astropy simultaneously is part of the reason why this project interests me. I currently have three merged pull requests for minor issues (http://github.com/astropy/astropy/pull/2110, https://github.com/astropy/astropy/pull/2114, and https://github.com/astropy/astropy/pull/2142). These pull requests have involved adding documentation for time formats supported by Astropy, removing exceptions from comparison operators in the Time class, and documenting classes in ``astropy.io.ascii.core``. I have also been working on a more significant open pull request implementing an HTML reader and writer in ``astropy.io.ascii``, which may be viewed at https://github.com/astropy/astropy/pull/2160.
+
 Project Details
 ---------------
 Abstract
 ~~~~~~~~
-Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for converting between various coordinate systems. However, this system is less than ideal as it simply uses ``bumpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
+Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. `Thompson, W. (2009) <http://adsabs.harvard.edu/abs/2006A%26A...449..791T>`_ describes a number of solar coordinate systems which are particularly convenient for use in solar physics. These systems range between Cartesian, Cylindrical, and Spherical representations and are each applicable in a variety of situations, varying based on the importance of the observer’s position, whether angles or distances are most appropriate, etc. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for switching between various solar coordinate systems. However, this system is less than ideal as it simply uses ``numpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
 
-Luckily, the project Astropy (closely related to the Sunpy project) contains a useful coordinate package in ``astropy.coordinates``. However, as part of APE5 (Astropy Proposal for Enhancement #5), Astropy will be switching to a new coordinate framework involving the classes ``CoordinateFrame`` and ``CoordinateRepresentation``, which reduces ambiguity regarding the definition of various terms regarding coordinates and fixes previous issues with the ``satrapy.coordinates`` package. It would be extremely helpful to incorporate this new framework into the Sunpy library.
+The project Astropy (closely related to the Sunpy project) contains a useful coordinate package in ``astropy.coordinates``. However, as part of `APE5 <https://github.com/astropy/astropy-APEs/pull/6>`_ (Astropy Proposal for Enhancement #5), Astropy will be switching to a new coordinate framework involving the classes CoordinateFrame and CoordinateRepresentation, which allows for the more efficient creation of new reference systems and fixes previous issues with the ``astropy.coordinates`` package. It would be extremely helpful to be able to use this framework in the Sunpy library.
 
-Accordingly, my proposal is to use Astropy's new coordinate framework to implement Helio-Projective and Helio-Centric ``CoordinateFrame``s using the new inheritance model spelled out in APE5. After doing so, I plan on implementing functions allowing for easy conversion between the two systems and for conversion between these coordinate systems and other coordinate systems in Astropy.
+Accordingly, my proposal is to use Astropy's new coordinate framework to implement Helio-Projective and Helio-Centric coordinates using the new inheritance model spelled out in APE5. In this model, high-level classes such as ``SphericalRepresentation`` and ``CartesianRepresentation`` inherit from ``CoordinateRepresentation`` and store actual spatial information, while lower-level classes combining both reference systems and frames inherit from ``CoordinateFrame``. I intend to create subclasses from ``CoordinateFrame`` for these Helio-Projective and Helio-Centric coordinate reference systems and add functionality for such reference frames as Heliocentric Aries Ecliptic, Heliocentric Earth Equatorial, and more.
+
+At this point, my primary concern will be with the integration between these newly implemented reference systems (Helio-Projective and Helio-Centric) and the future Astropy coordinate package, as well as the redesign of current functionality in ``sunpy.wcs``. This will involve implementing transformations between solar reference systems and the Cartesian, Cylindrical, and Spherical coordinate representations, as well as adding general functionality for converting between Helio-Projective and Helio-Centric coordinates.
+
+Finally, I plan to take even further advantage of the new Astropy coordinate system by implementing transformations between the celestial coordinate systems of Astropy and the solar coordinate systems I have implemented as part of this project. If there is enough time left over, I also hope to work on the general task of integrating the ``astropy.units`` package, which provides a powerful framework for handling the units of physical quantities, into Sunpy.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
-Working on this...
+Community bonding period (April 21 — May 18): Read in detail about solar and other celestial coordinate systems to gain a solid understanding of these systems and of the algorithms for converting between them. Become more familiar with both Sunpy and Astropy, reading documentation (particularly regarding the changes accompanying APE5) and trying to fix issues on GitHub.
+
+:May 19 — June 1 (2 weeks):
+ Begin writing classes ``HelioProjective`` and ``HelioCentric`` extending ``CoordinateFrame``, using the new Astropy inheritance framework as a guide. Use extensive testing to ensure that this implementation works as intended. Start implementing specific reference frames for these systems after discussing with my project mentor which frames will be of particular use.
+
+:June 2 — June 8 (1 week):
+ Finish the implementation of classes ``HelioProjective`` and ``HelioCentric`` and fix any issues or bugs that arise that this point. Once this is done, implement transformations between coordinate representations, such as ``SphericalRepresentation``, ``CartesianRepresentation``, etc.
+
+:June 9 — June 22 (2 weeks):
+ During these two weeks I will focus on extending the functionality of my new implementation. Use the bi-directional transformation graph in ``astropy.coordinates`` to implement conversion between Helio-Projective and Helio-Centric coordinates, replacing the current functions in ``sunpy.wcs``.
+
+:June 23 — June 29 (1 week):
+ Mid-term evaluations take place during this week. Since the project should be at least halfway completed, use this week to write up extensive documentation for the current functionality, write tests I might have missed in previous weeks, and work on any potential patches that might be submitted to the Astropy code base involving the coordinates package.
+
+:June 30 — July 13 (2 weeks):
+ Explore the Astropy codebase in order to determine how conversion between existing celestial coordinate systems and the newly implemented solar coordinate systems might work. Create the functionality for these conversions. This part will involve reading more about mathematical conversions between coordinate systems and other nuances similar to the use of the small-angle approximation in converting heliocentric to helioprojective coordinates.
+
+:July 14 — July 27 (2 weeks):
+ After performing unit testing and fixing any unforeseen issues that may arise, work on the integration of ``astropy.units`` into the Sunpy code base. This will allow the Sunpy library to make use of functionality like unit conversion, decomposing units into irreducible parts, and dynamically creating new units which seamlessly fit into the existing  ``astropy.units`` framework.
+
+:July 28 — August 10 (2 weeks):
+ These two weeks will serve as a buffer period in case earlier steps of the proposal require more time, unforeseen difficulties arise, etc. If everything runs smoothly and the buffer period is unnecessary, then continue to work on integrating ``astropy.units`` into Sunpy. There are also other opportunities I might be able to take on relating to this task, such as the integration of the highly important Astropy class ``Quantity`` into the Sunpy code base.
+
+:August 11 (suggested pencils down date) — August 22 (final evaluation deadline):
+ Write documentation for all previous code and add any tests I may have missed during the main coding period. Look for potential bugs and fix any that arise.
 
 Additional Information
 ----------------------
