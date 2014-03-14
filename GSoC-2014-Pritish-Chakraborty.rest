@@ -1,5 +1,5 @@
 Application for GSOC 2014 - In Progress
-######################################
+#######################################
 
 Student Information
 -------------------
@@ -33,7 +33,7 @@ The paper by `WT Thompson`_ proposes a set of formal systems for describing the 
 
 Currently, ``sunpy.wcs.wcs`` takes the help of ``numpy`` library to get the job done. However, given the advent of `Astropy APE5`_, which proposes to build a new framework for their package - ``astropy.coordinates`` - with the classes ``CoordinateRepresentation`` and ``CoordinateFrame``, the good folks at SunPy saw the opportunity to re-base their own coordinate system framework on ``astropy.coordinates``. The design decision to use inheritance will help in re-using existing code. That is to say, the new coordinate system framework will use the same algorithms but will have derived classes whose parents are ``CoordinateRepresentation`` and ``CoordinateFrame``, and will incorporate the Astropy API. This kind of design will also hold good stead in the future, when more coordinate systems and/or reference frames will be added. If required, the decorator design pattern may also be used at some point, if it is found that future coordinate systems differ little from their older counterparts.
 
-My main goal would be to generate for the Heliographic and Heliocentric systems their derived classes, their methods, their representations, and their inter-conversions. This would also involve potentially dabbling with Astropy, so learning about it - ``astropy.coordinates`` in particular - would be a priority. After having built the framework, I will look for areas where optimizations could possibly be made, if they haven't already. I will be following the test-driven development pattern, and every major change will be tested via ``py.test`` and all documentation so generated will be verified via ``sphinx``.
+My main goal would be to generate for the Helioprojective, Heliographic and Heliocentric systems their derived classes, their methods, their representations, and their inter-conversions. This would also involve potentially dabbling with Astropy, so learning about it - ``astropy.coordinates`` in particular - would be a priority. After having built the framework, I will look for areas where optimizations could possibly be made, if they haven't already. I will be following the test-driven development pattern, and every major change will be tested via ``py.test`` and all documentation so generated will be verified via ``sphinx``.
 
 My secondary goal would be to work on integrating the ``astropy.units`` package into SunPy, such that it works in a seamless and smooth manner. The main goal will, of course, be given priority.
 
@@ -44,8 +44,19 @@ Detailed Description
  Communicate with mentor(s) and take note of any extra requirements and helpful insights. Comb through and do an extensive reading of the Astropy and SunPy documentations for coordinate system implementation. Implement the relevant packages of Astropy and SunPy in the interpreter for a working understanding. Establish a thorough mental picture of the APE5 guidelines to help when programming. 
 
 :May 19 — May 26 (1 week):
- Create the ``HelioProj`` and ``HelioCent`` classes. These shall be made to derive from ``CoordinateFrame``
+ Begin with the creation of the ``HelioProj``, ``HelioCent`` and ``HelioGraph`` classes. These shall be made to derive from ``CoordinateFrame`` as already discussed. Create some unit tests to check whether the inheritance mechanism has been implemented properly.
 
+:May 27 — June 1 (1 week):
+ Based on feedback, possibly rework class design. Complete class design and basic methods by this week. Check whether any particular reference frames are required after discussion with mentor(s). Test the changes.
+
+:June 2 — June 8 (1 week):
+ Create the ``Cylindrical``, ``Spherical`` and ``Cartesian`` representations to the coordinate classes so created. Start setting up the inter-conversion framework. Test the new additions thoroughly. Fix any old or unexpected bugs and errors.
+
+:June 9 — June 22 (2 weeks):
+ Continue and complete the inter-conversion framework. As discussed on the ideas page, this will be done using the bi-directional transformation graph in ``astropy.coordinates``. Systematic phasing out of the older functions of ``sunpy.wcs`` and bringing in the new model. Thorough testing at every stage of this phasing out.
+
+:June 23 — June 29 (1 week):
+ Documentation week. Document every new feature added according to the documentation guidelines. Test the documentation with ``sphinx`` to verify that everything is neat, indented properly and in order. Put across some pull requests on GitHub if everything is satisfactory and in order. Set sights on the Astropy codebase for the next half.
 
 Code Sample(s)
 --------------
