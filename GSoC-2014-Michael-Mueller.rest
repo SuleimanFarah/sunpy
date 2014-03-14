@@ -34,7 +34,8 @@ Finally, I plan to take even further advantage of the new Astropy coordinate sys
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
-Community bonding period (April 21 — May 18): Read in detail about solar and other celestial coordinate systems to gain a solid understanding of these systems and of the algorithms for converting between them. Become more familiar with both Sunpy and Astropy, reading documentation (particularly regarding the changes accompanying APE5) and trying to fix issues on GitHub.
+:Community bonding period (April 21 — May 18): 
+ Read in detail about solar and other celestial coordinate systems to gain a solid understanding of these systems and of the algorithms for converting between them. Become more familiar with both Sunpy and Astropy, reading documentation (particularly regarding the changes accompanying APE5) and trying to fix issues on GitHub.
 
 :May 19 — June 1 (2 weeks):
  Begin writing classes ``HelioProjective`` and ``HelioCentric`` extending ``CoordinateFrame``, using the new Astropy inheritance framework as a guide. Use extensive testing to ensure that this implementation works as intended. Start implementing specific reference frames for these systems after discussing with my project mentor which frames will be of particular use.
