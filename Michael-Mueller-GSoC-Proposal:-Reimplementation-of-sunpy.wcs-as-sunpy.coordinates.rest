@@ -65,3 +65,5 @@ Additional Information
 The last day of classes for me will be May 27 (the beginning of the second week of coding), so I will not be able to devote 40 hours for the first week. However, I anticipate that I will have very little, if any, schoolwork and I should be able to complete the set tasks for week 1. If not, then I can make up for missed work the next couple of weeks. Except for the first week, I will be fully capable of spending 40 hours per week on Google Summer of Code.
 
 I have set up a blog for Google Summer of Code (http://muellergsoc.blogspot.com), which I intend to use weekly during the summer for progress reports. I will also be available for regular contact with my project mentor over the course of the summer through IRC, email, phone calls, or any other mutually convenient form of communication.
+
+Note: all times in this proposal are EST (UTC-5).
