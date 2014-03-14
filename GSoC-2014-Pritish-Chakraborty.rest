@@ -1,5 +1,5 @@
-Application for GSOC 2014 - In Progress
-#######################################
+Application for GSOC 2014
+#########################
 
 Student Information
 -------------------
