@@ -27,12 +27,24 @@ Title: *SunPy: Re-implementation of sunpy.wcs using astropy.coordinates*
 
 Abstract
 ~~~~~~~~
+There has always been a general consensus that SunPy needs Astropy to function most efficiently. This to-do has surely been in the minds of every distinguished person working on SunPy, for quite some time now. This is from where this particular project idea was conceived.
 
+The paper by `WT Thompson`_ proposes a set of formal systems for describing the coordinates of solar image data. It is the cornerstone of the ``sunpy.wcs.wcs`` package, which contains the relevant classes and methods pertaining to the World Coordinate System and its implementations. There are different types of coordinate systems, such as Heliocentric, Heliographic and Helioprojective systems. Heliocentric coordinates can be represented in Cartesian, Spherical and Cylindrical forms. Heliographic coordinates can be represented in  either Stonyhurst or Carrington format. Additionally, there are also the inter-conversions between different coordinate systems.
+
+Currently, ``sunpy.wcs.wcs`` takes the help of ``numpy`` library to get the job done. However, given the advent of `Astropy APE5`_, which proposes to build a new framework for their package - ``astropy.coordinates`` - with the classes ``CoordinateRepresentation`` and ``CoordinateFrame``, the good folks at SunPy saw the opportunity to re-base their own coordinate system framework on ``astropy.coordinates``. The design decision to use inheritance will help in re-using existing code. That is to say, the new coordinate system framework will use the same algorithms but will have derived classes whose parents are ``CoordinateRepresentation`` and ``CoordinateFrame``, and will incorporate the Astropy API. This kind of design will also hold good stead in the future, when more coordinate systems and/or reference frames will be added. If required, the decorator design pattern may also be used at some point, if it is found that future coordinate systems differ little from their older counterparts.
+
+My main goal would be to generate for the Heliographic and Heliocentric systems their derived classes, their methods, their representations, and their inter-conversions. This would also involve potentially dabbling with Astropy, so learning about it - ``astropy.coordinates`` in particular - would be a priority. After having built the framework, I will look for areas where optimizations could possibly be made, if they haven't already. I will be following the test-driven development pattern, and every major change will be tested via ``py.test`` and all documentation so generated will be verified via ``sphinx``.
+
+My secondary goal would be to work on integrating the ``astropy.units`` package into SunPy, such that it works in a seamless and smooth manner. The main goal will, of course, be given priority.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
 
-Milestones:
+:Community bonding period (April 21 — May 18): 
+ Communicate with mentor(s) and take note of any extra requirements and helpful insights. Comb through and do an extensive reading of the Astropy and SunPy documentations for coordinate system implementation. Implement the relevant packages of Astropy and SunPy in the interpreter for a working understanding. Establish a thorough mental picture of the APE5 guidelines to help when programming. 
+
+:May 19 — May 26 (1 week):
+ Create the ``HelioProj`` and ``HelioCent`` classes. These shall be made to derive from ``CoordinateFrame``
 
 
 Code Sample(s)
@@ -43,29 +55,24 @@ means of pull requests. For example, the PR regarding `repr for Wave`_
 provides a repr method for Wave objects, which are a part of VSO
 attributes. The PR which was made for `distinguishing supported VSO objects`_ 
 provides a frozenset which contains attributes of VSO which are currently
-supported. This work has helped me get up to speed with SunPy's
-workflow.
+supported. Yet another ongoing PR deals with the `restructuring`_ of the Map package folder structure.
+This work has helped me get up to speed with SunPy's workflow.
 
 I am currently working on a `final year project`_ for college which
 aims to convert PDF files to HTML files, which is a part of my
 industrial training which began last year. The PDF shall be 
 single-columnar and have a simple layout, and may have images and 
-some graphics which are not too complex in nature.
+some graphics which are not too complex in nature. The goal is to
+generate one HTML file per PDF page. These HTML files will then be
+used as input in a pre-built HTML to XML library, from where XML files
+which will contain whole exam question papers will be made. As such,
+this project is a sort of prequel to the industrial training project that I
+worked on.
 
 To strengthen my grasp on Java, I had decided to find problems on
 data structures and algorithms and implement them in Java. While these
 may not exactly count as code samples, they are instrumental to my
 growth as a programmer. See `DSA in Java`_.
-
-Lastly, while I may not be able to present its code here, I would like
-to mention that I had completed my industrial training under a well 
-known IT services company last year. In a team of four, I was made 
-the lead and we built the offline version of their flagship assessment 
-exam center product over a period of six months, in C#. This training 
-taught me a lot about how different real-world development is from 
-writing simple programs as a hobby. Most importantly, it taught me 
-how to absorb pressure and work against the odds, while working together
-as a team.
 
 Biography
 ---------
@@ -74,8 +81,20 @@ I am a 21 year old college student, studying computer science and engineering
 and am in my final year. The first programming language that I ever touched was C,
 and it aroused a lot of interest in me. I delved into C++ using a college book
 and the Dev-C++ compiler, and taught myself a few things about classes and objects.
-I haven't looked back since then. I am also very interested in information security
-as a potential future career.
+I haven't looked back since then. I am thankful to my high-school computer science 
+teacher for helping me develop a strong grasp in programming fundamentals. It was in
+high-school, again, that I got my mathematics and analytical capability sorted out.
+
+However, I did not get the chance to take part in coding competitions until I was in college, and it was only the beginning. I managed to get to the final round in one competition and completed four out of seven programs in another one which was organized by an Indian company. My programming interests had, by then, shifted to Java and C#. I worked to get myself Oracle certified for Java SE 6 in 2012, and it has helped me to grasp Java a lot better. I plan to get started on TopCoder and CodeChef very soon, as a way to plug my earlier deficiencies in data structures and algorithms.
+
+I completed my industrial training under a well known IT services company last year. In a team of four, I was made the lead and we built the offline version of their flagship assessment 
+exam center product over a period of six months, in C#. I helped build the
+heavier modules and guided the others on their prowess. This training 
+taught me a lot about how different real-world development is from writing 
+simple programs as a hobby. Most importantly, it taught me how to absorb 
+pressure and work against the odds, while working together as a team.
+
+When I was a kid, I really wanted to be an astronaut on growing up. While that has not materialized, and career interests have greatly changed since then, the childlike fascination with astronomy remains. It is perhaps this fascination that has led me to SunPy, and by extension, AstroPy. My current career goal is to enter the field of information security. It was from here that stemmed my interest in Python: Python is the most frequently used scripting language in the grayhat world. Its natural elegance and easy high-level syntax make it the perfect candidate for a scripting language that every programmer should know. It is a well known fact that study and work experience combined can help one master a language. What better way to learn Python than to contribute to SunPy, I thought, and here I am!
 
 Other Schedule Information
 --------------------------
@@ -88,8 +107,10 @@ will begin around the time of the coding period. I will try my best to complete
 only five subjects whose exams will be conducted in this semester. In keeping with
 GSoC rules, I will be enrolled as a student as of April 27th, 2014.
 
-
+.. _WT Thompson: http://fits.gsfc.nasa.gov/wcs/coordinates.pdf
+.. _Astropy APE5: https://github.com/astropy/astropy-APEs/pull/6
 .. _repr for Wave: https://github.com/sunpy/sunpy/pull/786
 .. _distinguishing supported VSO objects: https://github.com/sunpy/sunpy/pull/801
+.. _restructuring: https://github.com/sunpy/sunpy/pull/793
 .. _final year project: https://github.com/VaticanCameos/pdfparsing
 .. _DSA in Java: https://github.com/VaticanCameos/dsajava
