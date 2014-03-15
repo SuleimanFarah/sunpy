@@ -61,7 +61,7 @@ Detailed Description
  Before embarking on Astropy, perform some more unit testing on the code churned out so far. Go through the nitty-gritties of Astropy. Learn about the celestial coordinate systems which exist in Astropy and understand how to bring about conversions from celestial to solar coordinates. Code the basis for these conversions for future purposes.
 
 :July 14 — July 20 (1 week):
- Start work on the holy grail: integration of ``astropy.units``. It is of paramount importance to SunPy. ``astropy.units`` supports definition, conversions and arithmetic on physical quantities. Integration testing could be an indispensable tool for this particular piece of work.
+ Start work on the holy grail: integration of ``astropy.units``. It is of paramount importance to SunPy. ``astropy.units`` supports definition, conversions and arithmetic on physical quantities. The aim is to its ensure seamless integration into the SunPy codebase. Integration testing could be an indispensable tool for this particular piece of work.
 
 :July 21 — July 27 (1 week):
  Continue the integration work that was started last week. ``units`` utilizes the class ``Quantity`` to do its work. Try to absorb class ``Quantity`` into the SunPy codebase. Set up the framework for future additions - make it reliable and scalable.
