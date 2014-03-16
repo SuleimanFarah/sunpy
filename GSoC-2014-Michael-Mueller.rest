@@ -74,4 +74,4 @@ The last day of classes for me will be May 27 (the beginning of the second week 
 
 I have set up a blog for Google Summer of Code (http://muellergsoc.blogspot.com), which I intend to use weekly during the summer for progress reports. I will also be available for regular contact with my project mentor over the course of the summer through IRC, email, phone calls, or any other mutually convenient form of communication.
 
-Note: all times in this proposal are EST (UTC-5).
+Note: all times in this proposal are EST (GMT-5).
