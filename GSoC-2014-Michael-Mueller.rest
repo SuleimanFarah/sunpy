@@ -1,6 +1,6 @@
-==================================================
-Reimplementation of sunpy.wcs as sunpy.coordinates
-==================================================
+==============================================================================================================
+Reimplementation of sunpy.wcs as sunpy.coordinates and Creating a ginga based data explorer / database browser
+==============================================================================================================
 
 Background
 ----------
@@ -18,8 +18,8 @@ I am reasonably comfortable with git, having previously contributed to a friend�
 
 I have also become involved with Astropy, and the prospect of working with both Sunpy and Astropy simultaneously is part of the reason why this project interests me. I currently have three merged pull requests for minor issues (http://github.com/astropy/astropy/pull/2110, https://github.com/astropy/astropy/pull/2114, and https://github.com/astropy/astropy/pull/2142). These pull requests have involved adding documentation for time formats supported by Astropy, removing exceptions from comparison operators in the Time class, and documenting classes in ``astropy.io.ascii.core``. I have also been working on a more significant open pull request implementing an HTML reader and writer in ``astropy.io.ascii``, which may be viewed at https://github.com/astropy/astropy/pull/2160.
 
-Project Details
----------------
+Project Details: Reimplementation of sunpy.wcs as sunpy.coordinates
+-------------------------------------------------------------------
 Abstract
 ~~~~~~~~
 Since the Sunpy library is intended for use by solar physicists and is therefore highly scientific in nature, a powerful framework for describing the position of points in 3-dimensional space is highly important. `Thompson, W. (2009) <http://adsabs.harvard.edu/abs/2006A%26A...449..791T>`_ describes a number of solar coordinate systems which are particularly convenient for use in solar physics. These systems range between Cartesian, Cylindrical, and Spherical representations and are each applicable in a variety of situations, varying based on the importance of the observer’s position, whether angles or distances are most appropriate, etc. Currently, Sunpy contains a number of functions in ``sunpy.wcs.wcs``, such as ``convert_hpc_hcc`` and ``convert_hcc_hg``, for switching between various solar coordinate systems. However, this system is less than ideal as it simply uses ``numpy.ndarray`` for coordinate data and therefore misses out on useful coordinate functionality.
@@ -67,6 +67,22 @@ Detailed Description
 
 :August 11 (suggested pencils down date) — August 22 (final evaluation deadline):
  Write documentation for all previous code and add any tests I may have missed during the main coding period. Look for potential bugs and fix any that arise.
+
+Project Details: Creating a ginga based data explorer / database browser
+------------------------------------------------------------------------
+Abstract
+~~~~~~~~
+Although the SunPy library already contains numerous features for dealing with solar data, a powerful and easy-to-use GUI for visual exploration of solar data currently does not exist. Luckily, the Ginga toolkit (https://github.com/ejeschke/ginga) already contains extensive functionality for graphically representing scientific image data. In particular, Ginga is built to use the FITS (Flexible Image Transport System) format, a highly prevalent format in solar physics, which further suggests that Ginga would blend very well with the SunPy library and could be adapted for a number of SunPy-specific uses.
+
+Another major advantage of the Ginga framework is its flexibility, which stems from a highly configurable design pattern and will allow for easier implementation of useful features. The Ginga class structure follows a variant of the Model-View-Controller design pattern; the model (implemented in class ``BaseImage``) performs the bulk of the viewer’s algorithmic work, the view (in class ``ImageView``) is responsible for displaying output to the user, and the controller (implemented both in ``ImageView`` and the ``Bindings`` class) feeds user input back into the model. In addition to providing a convenient organizational structure, this three-tiered approach is highly extensible, as new subclasses can be built for each component. More importantly, Ginga also supports a plugin system through which one can create either local or global plugins and use the Ginga library in conjunction with a chosen backend (either Qt or GTK) to add new features easily.
+
+My proposal will involve using the Qt graphics library as a backend to create several Ginga plugins specific to SunPy. In particular, I first plan on implementing a database viewer plugin which will capitalize on the functionality of the ``sunpy.database`` package. The ``sunpy.database`` package currently allows for saving solar data that has been retrieved from an external service like the VSO (Virtual Solar Observatory). It would be very useful if this feature could be enhanced to allow for visual exploration of the information inside a database, so implementing this enhancement will form the first part of my project.
+
+In addition, I plan on creating a Ginga plugin which will support solar coordinates using the coordinate system in AstroPy. Ginga conveniently encapsulates its own world coordinate system behind an object in its ``AstroImage`` class (which extends ``BaseImage``), so it will be relatively simple to reconfigure Ginga to use a different World Coordinate System.
+
+Detailed Description
+~~~~~~~~~~~~~~~~~~~~
+
 
 Additional Information
 ----------------------
