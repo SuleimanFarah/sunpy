@@ -1,1 +1,0 @@
-moved to https://github.com/sunpy/sunpy-SEP/pulls
