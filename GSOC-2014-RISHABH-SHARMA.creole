@@ -1,0 +1,150 @@
+**A Proposal to Refactor LightCurve**
+
+Personal Information:
+
+Name          : Rishabh Sharma
+
+Email         : rishabh.sharma.gunner@gmail.com
+
+Telephone     : +91-7799045374
+
+Time zone     : +530 hrs GMT
+
+IRC Handle    : rishabh@irc.freenode.net
+
+Github        : gunner272
+
+Skype         : rishabh.sharma108
+
+Blog          : [[rishabhsharmagunner.wordpress.com|rishabhsharmagunner]]
+
+Blog Feed     : [[rishabhsharmagunner.wordpress.com/feed|rishabhsharmagunner blog feed]]
+
+**Abstract:**
+
+LightCurve object needs to move away from pandas DataFrame to astropy Table.This would be step in coherence with Factory based Implementation being currently worked on .
+
+**Reasoning:**
+
+--Astropy table allows specifically for individual elements to be  multi-dimensional ndarray with comfortable ease.This would prove to be helpful for astronomy community whose data comes in multi-dimensional format ( FITS ).
+
+--Astropy Table makes provision for meta information to be stored alongside data proving to be wrapper itself alongside having Column sub class better suited to sunpy needs which can have corresponding information as units adjoining data.
+
+**Detailed Description:**
+
+--I would like to address the issue of indexing LightCurve object based on timestamps(string).No specific solution is provided by Astropy , as to pandas which implements an Index class to do a label to indices mapping using Cython .As per the discussion held at irc channel,I propose the following methods
+1) Create a sub - class of column type which can store the astropy     Time instances.This would use numpy method searchsorted providing  exact/non-exact access required for extract and truncate methods but would have a slower response O( log ) .
+
+2) Use a dict object to map timestamps to indices providing faster lookup( O(1) ) for exact access but missing out on giving vital non exact access.
+Other class methods truncate, extract, peek would adapt to use the method chosen from above.
+
+--I wish to follow the following timeline.
+
+**Timeline**
+
+                                April 21  ---- May 18 ( community bonding period)
+
+Decide on final implementation detail with mentors,research about various sources and corresponding web api, Read astropy documentation ( code wherever required ),pandas code to look for scope of improvement.Become a Git PowerUser.
+
+                                May 19 ---- June 1 ( 2 Weeks )
+	
+Implement Generic LightCurve class with truncate, extract, plot methods, also ensure coherence with LightCurve factory implementation.
+
+                                June 2 ---- June 8 ( 1 week )
+
+Write test cases and test the same for the Generic LightCurve class, squash any related bugs.
+
+                                June 9 ---- June 15 ( 1 week )
+
+Implement EVE LightCurve Class with relevant source reading, helper methods.
+
+                                June 16 ---- June 22 ( 1 week )
+
+Implement Logical LightCurve class while also adding test cases for EVE Lightcurve class and logical LightCurve class, remove bugs if any.
+
+                               June 23 ---- June 29( Buffer Period )
+
+Finish any leftover work from previous week, score high in mid term evaluation.	
+
+                               June 30 ---- July 6 ( 1 week )
+
+Start working on Lyra sub class, finish it with relevant source reading ( fits ).
+
+                               July 7 ---- July 13 (1 week)
+
+Add test cases for Lyra sub class to thoroughly test for bugs.
+
+	                       July 14 ---- July 20 ( 1 week )
+
+Implement Norh sub class, while also adding corresponding test cases.
+
+                               July 21 ---- July 27 ( 1 week )
+
+Implement GOES sub class or the required alternative while adding  test cases for the same.
+
+                               July 28 ---- August  3 ( 1 week )
+
+Documentation Sprint: Check that the documentation created conforms to standards. Use sphinx, labeled properly.
+
+                                August 4 ---- August 18 ( Buffer Period )
+
+Fix any unresolved bugs,try make optimisations.
+
+                                      >August 18
+
+I plan to stick around and work on adding  the same functionality back to astropy.
+
+
+**Deliverables:**
+
+*     genericlightcurve.py,test_genericlightcurve.py
+
+*     index.py(Column sub class)
+
+*     eve.py,test_eve.py
+
+*     goes.py,test_goes.py/alternative
+
+*     logical.py,test_logical.py
+
+*     norh.py,test_norh.py
+
+*     lyra.py,test_lyra.py
+
+*     Corresponding documentation
+
+**Contributions to Sunpy**
+
+    **Ongoing Pull Requests**
+
+*     [[https://github.com/sunpy/sunpy/pull/892|https://github.com/sunpy/sunpy/pull/892]]
+
+         Solved issue #841 , hanged LightCurve meta data member to  return an Ordered
+         Dict instance, with special attention to EVE LightCurve object header.
+
+*     [[https://github.com/sunpy/sunpy/pull/887|https://github.com/sunpy/sunpy/pull/887]]
+
+        Added ability to parse time as measured from 1 Jan 1958 (TAI Format).
+
+
+   **Merged Pull Requests**
+
+*     https://github.com/sunpy/sunpy/pull/889
+
+        Solved issue #861 ,missing data value ( sans the hard coding ) converted to NaN .
+
+*     https://github.com/sunpy/sunpy/pull/894
+
+        Filed bug #882 , and solved it as a moral obligation.Small issue of repition in EVE
+        LightCurve header.
+Also made a small change to developer guide.
+
+These Pull  Request have helped me  immensely.They have given me an opportunity to interact with community, gain experience contributing open source project,familiarize with code . I now use git with added confidence.
+
+**About Me:**
+
+I am Rishabh Sharma studying in second year of undergraduate program at International Institute of information Technology pursuing Computer Science and Engineering degree. I plan to complete my honors in the area of Information Extraction and Retrieval.The feature I like about python is the simplicity and readability of the language which allows for rapid development.I have worked previously with python based web framework web2py ,using it to develop a web service which would group twitter users based on the context of their tweets using techniques borrowed from NLP and information extraction .For over two years now I've been coding on a Linux workstation..I have written a lot of scripts which make my life easier ,ranging from transferring music to my smartphone automatically at plugging of the mobile ,getting updates of matches from certain site. Currently I am working on project of creating a terminal based chat client allowing for peer to peer communication , trying to take my interest in socket programming to some final product.I have previously developed a wave file equalizer with accompanying GUI in python which helped me gain experience in GUI designing.
+
+**Summer Schedule:**
+
+I am free to code away this summer (40 hrs per week if required more).There may be a day or two travel but it is nothing that can not be compensated.
