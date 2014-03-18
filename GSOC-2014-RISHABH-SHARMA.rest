@@ -115,28 +115,28 @@ I plan to stick around and work on adding  the same functionality back to astrop
 
 **Contributions to Sunpy**
 
-    **Ongoing Pull Requests**
+**Ongoing Pull Requests**
 
 *     [[https://github.com/sunpy/sunpy/pull/892|https://github.com/sunpy/sunpy/pull/892]]
 
-         Solved issue #841 , hanged LightCurve meta data member to  return an Ordered
-         Dict instance, with special attention to EVE LightCurve object header.
+      Solved issue #841 , hanged LightCurve meta data member to  return an Ordered
+      Dict instance, with special attention to EVE LightCurve object header.
 
 *     [[https://github.com/sunpy/sunpy/pull/887|https://github.com/sunpy/sunpy/pull/887]]
 
-        Added ability to parse time as measured from 1 Jan 1958 (TAI Format).
+      Added ability to parse time as measured from 1 Jan 1958 (TAI Format).
 
 
-   **Merged Pull Requests**
+**Merged Pull Requests**
 
 *     https://github.com/sunpy/sunpy/pull/889
 
-        Solved issue #861 ,missing data value ( sans the hard coding ) converted to NaN .
+      Solved issue #861 ,missing data value ( sans the hard coding ) converted to NaN .
 
 *     https://github.com/sunpy/sunpy/pull/894
 
-        Filed bug #882 , and solved it as a moral obligation.Small issue of repition in EVE
-        LightCurve header.
+      Filed bug #882 , and solved it as a moral obligation.Small issue of repition in EVE
+      LightCurve header.
 Also made a small change to developer guide.
 
 These Pull  Request have helped me  immensely.They have given me an opportunity to interact with community, gain experience contributing open source project,familiarize with code . I now use git with added confidence.
@@ -144,6 +144,10 @@ These Pull  Request have helped me  immensely.They have given me an opportunity 
 **About Me:**
 
 I am Rishabh Sharma studying in second year of undergraduate program at International Institute of information Technology pursuing Computer Science and Engineering degree. I plan to complete my honors in the area of Information Extraction and Retrieval.The feature I like about python is the simplicity and readability of the language which allows for rapid development.I have worked previously with python based web framework web2py ,using it to develop a web service which would group twitter users based on the context of their tweets using techniques borrowed from NLP and information extraction .For over two years now I've been coding on a Linux workstation..I have written a lot of scripts which make my life easier ,ranging from transferring music to my smartphone automatically at plugging of the mobile ,getting updates of matches from certain site. Currently I am working on project of creating a terminal based chat client allowing for peer to peer communication , trying to take my interest in socket programming to some final product.I have previously developed a wave file equalizer with accompanying GUI in python which helped me gain experience in GUI designing.
+
+**Motivation:**
+
+The only related course work I have undertaken is Science 1 course. I believe the college curriculum will not teach me further. Thus it would amazing to learn about something different.Sunpy offers me more than this, the opportunity to contribute to FOSS seems to entice me more day by day so does working in a team of individuals having similar principles seem interesting.
 
 **Summer Schedule:**
 
