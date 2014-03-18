@@ -82,7 +82,14 @@ In addition, I plan on creating a Ginga plugin which will support solar coordina
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
+:Community bonding period (April 21 — May 18):
+ Read the Ginga documentation and explore its class structure in order to get a preliminary sense of how its functionality might be extended via plugins. Read the pertinent documentation in ``sunpy.database`` and experiment with SunPy’s database functionality. Become proficient in programming with the Qt library by reading the documentation and trying out some smaller programs.
 
+:May 19 — May 25 (1 week):
+ Create a plan for implementing a global Ginga plugin that allows for the use of a solar world coordinate system using ``astropy.coordinates``. The Astropy coordinates package is expected to undergo a major redesign as part of APE5 (Astropy Proposal for Enhancement 5), so this part will involve figuring out these changes and potentially communicating with another GSoC student if another coordinate reimplementation project is selected.
+
+:May 26 – June 8 (2 weeks):
+ Implement the world coordinate system plugin spelled out in the previous week. Ginga is sufficiently flexible to allow for an easy shift in world coordinates with ``AstroImage.set_wcsClass(customWCS)`` where ``customWCS`` is a coordinate system class that implements certain important functions. Therefore, this plugin should present little difficulty from an integration standpoint and I can focus instead on ensuring the correct functionality of the coordinate system.
 
 Additional Information
 ----------------------
