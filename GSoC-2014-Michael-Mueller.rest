@@ -76,9 +76,9 @@ Although the SunPy library already contains numerous features for dealing with s
 
 Another major advantage of the Ginga framework is its flexibility, which stems from a highly configurable design pattern and will allow for easier implementation of useful features. The Ginga class structure follows a variant of the Model-View-Controller design pattern; the model (implemented in class ``BaseImage``) performs the bulk of the viewer’s algorithmic work, the view (in class ``ImageView``) is responsible for displaying output to the user, and the controller (implemented both in ``ImageView`` and the ``Bindings`` class) feeds user input back into the model. In addition to providing a convenient organizational structure, this three-tiered approach is highly extensible, as new subclasses can be built for each component. More importantly, Ginga also supports a plugin system through which one can create either local or global plugins and use the Ginga library in conjunction with a chosen backend (either Qt or GTK) to add new features easily.
 
-My proposal will involve using the Qt graphics library as a backend to create several Ginga plugins specific to SunPy. In particular, I first plan on implementing a database viewer plugin which will capitalize on the functionality of the ``sunpy.database`` package. The ``sunpy.database`` package currently allows for saving solar data that has been retrieved from an external service like the VSO (Virtual Solar Observatory). It would be very useful if this feature could be enhanced to allow for visual exploration of the information inside a database, so implementing this enhancement will form the first part of my project.
+My proposal will involve using the Qt graphics library as a backend to create several Ginga plugins specific to SunPy. In particular, I first plan on implementing a database viewer plugin which will capitalize on the functionality of the ``sunpy.database`` package. The ``sunpy.database`` package currently allows for saving solar data that has been retrieved from an external service like the VSO (Virtual Solar Observatory). It would be very useful if this feature could be enhanced to allow for visual exploration of the information inside a database, so implementing this enhancement will be a major part of my project.
 
-In addition, I plan on creating a Ginga plugin which will support solar coordinates using the coordinate system in AstroPy. Ginga conveniently encapsulates its own world coordinate system behind an object in its ``AstroImage`` class (which extends ``BaseImage``), so it will be relatively simple to reconfigure Ginga to use a different World Coordinate System.
+In addition, I plan on creating a Ginga plugin which will support solar coordinates using the coordinate system in AstroPy. Ginga conveniently encapsulates its own world coordinate system behind an object in its ``AstroImage`` class (which extends ``BaseImage``), so it will be relatively simple to reconfigure Ginga to use a different World Coordinate System. If time allows, I hope to explore other possible plugins or extend Ginga's functionality, depending on what the project mentor might suggest or I happen to find.
 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -88,8 +88,29 @@ Detailed Description
 :May 19 — May 25 (1 week):
  Create a plan for implementing a global Ginga plugin that allows for the use of a solar world coordinate system using ``astropy.coordinates``. The Astropy coordinates package is expected to undergo a major redesign as part of APE5 (Astropy Proposal for Enhancement 5), so this part will involve figuring out these changes and potentially communicating with another GSoC student if another coordinate reimplementation project is selected.
 
-:May 26 – June 8 (2 weeks):
+:May 26 — June 8 (2 weeks):
  Implement the world coordinate system plugin spelled out in the previous week. Ginga is sufficiently flexible to allow for an easy shift in world coordinates with ``AstroImage.set_wcsClass(customWCS)`` where ``customWCS`` is a coordinate system class that implements certain important functions. Therefore, this plugin should present little difficulty from an integration standpoint and I can focus instead on ensuring the correct functionality of the coordinate system.
+
+:June 9 — June 15 (1 week):
+ Establish the basis for future code to add database functionality to Ginga. This will entail adapting the API in `sunpy.database`, which allows users to save retrieved data, to a form that will be usable for visual representation of databases. Create functions designed to handle the metadata in local or remote databases and retrieve linked data from file, making use of the ``Database.query()`` method. `sunpy.database` also contains a caching feature, so that should be a useful part of this intermediate API.
+
+:June 23 — June 29 (1 week):
+ Since this is the week of mid-term evaluations and the project should be at least halfway completed, use this week to write up extensive documentation for the current WCS functionality and create tests I might have missed in previous weeks.
+
+:June 30 — July 13 (1 week):
+ Use the intermediate API designed two weeks before to implement a local Ginga plugin for high-level viewing of database records. Make sure to communicate with the project mentor about how to format the GUI in Qt, so as to ensure that this and other plugins will be as useful as possible for SunPy's user base.
+
+:July 14 — July 20 (1 week):
+ Use the intermediate database API to implement another local Ginga plugin (or simply extend the functionality of the first plugin) for previewing database records in greater depth and examining their associated data.
+
+:July 21 — August 3 (2 weeks):
+ Look for other possible plugins to add to Ginga or for ways to extend its current functionality so as to make the tool more useful for SunPy users. For example, this might involve working on a tool for handling 3-dimensional data in FITS files.
+
+:August 4 — August 10 (1 week):
+ This week will serve as a buffer period in case earlier parts of the project require more time or unforeseen difficulties arise. If everything has gone according to schedule, use this week to improve documentation and provide thorough testing.
+
+:August 11 (suggested pencils down date) — August 22 (final evaluation deadline):
+ Write documentation for all previous code and add any tests I may have missed during the main coding period. Look for potential bugs and fix any that arise.
 
 Additional Information
 ----------------------
