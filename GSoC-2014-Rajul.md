@@ -1,23 +1,12 @@
 ## Student Information
     Name(*): Rajul
-    Email(*): rajul.iitkgp@gmail.com
-    Telephone(*): +91 - 80166 17078
     Time zone(*): UTC +5:30
     IRC handle including network: rajul@irc.freenode.net
     Source control username(s)(*): rajul-iitkgp
     Provide your user id on Launchpad, Github, Sourceforge, or whatever system your project uses
         Github : rajul-iitkgp, rajul
-    IM information:
-        Gtalk: rajul09
-    Skype: rajul.srivastava
     Blog(s)(*): http://pettycoder.blogspot.in
     GSoC Blog RSS feed(*): http://pettycoder.blogspot.com/feeds/posts/default?alt=rss
-
-## University Information
-    University(*): Indian Institute of Technology Kharagpur
-    Major(*): Chemistry
-    Current Year and Expected Graduation date(*): Fifth Year, Graduation Date: July, 2014
-    Degree(*) (e.g. BSc, PhD): Master of Science (Integrated)
 
 ## Proposal Title (*) 
 SunPy: A ginga based data explorer / database browser
@@ -194,8 +183,6 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 I am a final year undergraduate student at the Indian Institute of Technology Kharagpur. I am majoring in Chemistry and am very highly interested in Scientific Computing. I have taken up courses in Complex Networks, Distributed Computing, Algorithms, Data Structures, Computational Chemistry, Computational Biophysics, in the past. I have also taken up numerous research projects in varied fields, like Machine Learning, Computational Finance, Computational Chemistry, and Network Analysis. I have completed a Google Summer of Code in 2012, where I participated with the organization Network Time. I also interned at the Barclays' Technology division, and worked with their Market Risk IT team.
 I am an intermediate level programmer in Python, C/C++, Java. I am also knowledgeable about Groovy, Ruby, PHP. I have had little experience making GUI applications using Visual Studio. However, I have not yet used PyQt. Although, I have not worked on too many GUI applications, I have developed a number of websites using various technologies like Django, Grails, PHP, Drupal, etc. I have used many testing frameworks in the past, like pytest, Spock, NUnit, Junit. I have given links to a number of my code samples above.
-
-     Link to my CV: https://drive.google.com/file/d/0B2mFOuJDrIXmRGloNE5ZazRHZTA/edit?usp=sharing
 
 ## Other Schedule Information
 
