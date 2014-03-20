@@ -5,10 +5,6 @@
 ==========        ================================
 Name              Rishabh Sharma
 
-Email             rishabh.sharma.gunner@gmail.com
-
-Telephone         +91-7799045374
-
 Time zone         +530 hrs GMT
 
 IRC Handle        rishabh@irc.freenode.net
