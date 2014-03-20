@@ -3,5 +3,6 @@ to the full description of the project you propose and the timeline you plan to 
 * [[Michael Mueller |GSoC-2014 Michael Mueller]] - Reimplementation of `sunpy.wcs` as `sunpy.coordinates` and Creating a ginga based data explorer / database browser
 * [[Pritish Chakraborty |GSoC-2014 Pritish Chakraborty]] - Re-implementation of `sunpy.wcs` using `astropy.coordinates`
 * [[Asish Panda |GSoC-2014 Asish Panda]] - Re-implementation of `sunpy.wcs` as `sunpy.coordinates`.
+* [[Rajul |GSoC-2014 Rajul]] - A ginga based data explorer / database browser
+* [[Rishabh Sharma | GSOC-2014 RISHABH SHARMA]] - Lightcurve
 * [[Student_A |GSoC-2014  Student A]] - Finding octocat on the Sun.
-* [[Rajul |GSoC2014 Rajul]] - A ginga based data explorer / database browser
