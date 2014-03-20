@@ -40,15 +40,25 @@ LightCurve object needs to move away from pandas DataFrame to astropy Table.This
 
 **Detailed Description:**
 
---I would like to address the issue of indexing LightCurve object based on timestamps(string).No specific solution is provided by Astropy , as to pandas which implements an Index class to do a label to indices mapping using Cython .As per the discussion held at irc channel,I propose the following methods
-1) Create a sub - class of column type which can store the astropy     Time instances.This would use numpy method searchsorted providing  exact/non-exact access required for extract and truncate methods but would have a slower response O( log ) .
+--I would like to address the issue of indexing LightCurve object based on timestamps .No specific solution is provided by Astropy , as to pandas which implements an Index class to do a label to indices mapping using Cython .I propose the following methods
 
-2) Use a dict object to map timestamps to indices providing faster lookup( O(1) ) for exact access but missing out on giving vital non exact access.
-Other class methods truncate, extract, peek would adapt to use the method chosen from above.
+1)Creation of Indexed Table subclass which allows indexing based on any column whose values are is hashable
+and unique.A ```OrderedDict``` would internally map labels to indices .This method provides for exact
+access ,it is also generalizable allowing for tables to be indexed on basis of any object and future implementation in astropy could be based on this.This class would have an additional .loc method .
+Cases for .loc method.
 
---I wish to follow the following timeline.
+table.loc(label)-> row of table with corresponding label
+
+table.loc(label1,label2) -> returns list of rows (slicing)
+
+table.loc([label1,label2....])-> returns list of rows corresponding to labels
+
+2)Create a LightCurve class with Indexed Table as base data structure. As with the case Solar Data ,input data can be sorted according to time.This column can be made the index. This would allow usage of numpy.searchsorted on Table.index and provide non-exact access required for truncate method. 
+
 
 ------
+
+--I wish to follow the following timeline.
 
 **Timeline**
 
