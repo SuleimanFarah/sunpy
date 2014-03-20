@@ -1,6 +1,6 @@
 **A Proposal to Refactor LightCurve**
 
-Personal Information:
+**Personal Information:**
 
 ==========        ================================
 Name              Rishabh Sharma
@@ -58,8 +58,6 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 
 ------
-
---I wish to follow the following timeline.
 
 **Timeline**
 
@@ -121,7 +119,7 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 *     genericlightcurve.py,test_genericlightcurve.py
 
-*     index.py(Column sub class)
+*     index.py(Table sub class)
 
 *     eve.py,test_eve.py
 
@@ -177,6 +175,6 @@ The only related course work I have undertaken is Science 1 course. I believe th
 
 **Summer Schedule:**
 
-I am free to code away this summer (40 hrs per week if required more).There may be a day or two travel but it is nothing that can not be compensated.
+I am free to code away this summer (40 hrs per week if required more).As of now I do not have any travel plans for summer.
 
 ----------------------
