@@ -61,11 +61,11 @@ Detailed Description
 :July 14 — July 20 (1 week):
  Thoroughly test the previous week’s implementation and add support for conversion involving other celestial coordinate systems. Work with the Astropy library (which might involve submitting patches upstream) in order to facilitate all of these conversions. Make certain that all conversions are well documented.
 
-:July 21 — July 27 (1 week):
- After performing unit testing and fixing any unforeseen issues that may arise, work on integrating the new coordinate framework into existing Sunpy data types like ``Map`` and ``LightCurve``. Carefully document the changes that will be imposed by adding this new coordinate functionality.
+:July 21 — August 3 (2 weeks):
+ After performing unit testing and fixing any unforeseen issues that may arise, work on integrating the new coordinate framework into existing Sunpy data types like ``Map`` and ``LightCurve``. The full task of integration will likely be too extensive for me to cover by the end of the summer, so I plan on using these two weeks to plan out the structural changes involved in adapting to the new coordinate functionality, implement changes that can be done without a major redesign, and potentially draft an SEP (SunPy Enhancement Proposal) to facilitate future integration of ``sunpy.coordinates``. 
 
-:July 28 — August 10 (2 weeks):
- These two weeks will serve as a buffer period in case earlier steps of the proposal require more time, unforeseen difficulties arise, etc. If everything runs smoothly and the buffer period is unnecessary, then work on integrating ``astropy.units`` into Sunpy. This will allow the Sunpy library to make use of functionality like unit conversion, decomposing units into irreducible parts, and dynamically creating new units which seamlessly fit into the existing  ``astropy.units`` framework. There are also other opportunities I might be able to take on relating to this task, such as the integration of the highly important Astropy class ``Quantity`` into the Sunpy code base.
+:August 4 — August 10 (1 week):
+ This week will serve as a buffer period in case earlier steps of the proposal require more time, unforeseen difficulties arise, etc. If everything runs smoothly and the buffer period is unnecessary, then work on integrating ``astropy.units`` into Sunpy. This will allow the Sunpy library to make use of functionality like unit conversion, decomposing units into irreducible parts, and dynamically creating new units which seamlessly fit into the existing  ``astropy.units`` framework. There are also other opportunities I might be able to take on relating to this task, such as the integration of the highly important Astropy class ``Quantity`` into the Sunpy code base.
 
 :August 11 (suggested pencils down date) — August 22 (final evaluation deadline):
  Write documentation for all previous code and add any tests I may have missed during the main coding period. Look for potential bugs and fix any that arise.
