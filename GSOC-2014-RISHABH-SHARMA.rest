@@ -34,7 +34,8 @@ LightCurve object needs to move away from pandas DataFrame to astropy Table.This
 
 --Astropy table allows specifically for individual elements to be  multi-dimensional ndarray with comfortable ease.This would prove to be helpful for astronomy community whose data comes in multi-dimensional format ( FITS ).
 
---Astropy Table makes provision for meta information to be stored alongside data proving to be wrapper itself alongside having Column sub class better suited to sunpy needs which can have corresponding information as units adjoining data.
+--Astropy Table makes provision for meta information to be stored alongside data proving to be wrapper itself.It has a column sub class better suited to sunpy needs.It has data members such as units,description 
+adding more semantic knowledge.
 
 ------
 
