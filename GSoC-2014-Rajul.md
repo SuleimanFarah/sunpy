@@ -99,7 +99,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     * Extend Ginga itself to handle 3d analysis of fits files
                       # We need to expand some Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
 
-    * Develop import/export functionality from/to different file formats
+    * Packaging of the developed plugins
 
     * Develop capability to run various scientific operations on the solar data from within the GUI and viewing results and generation of reports
                       # Integrate various SunPy's modules and functionality with the GUI, to perform actions on the database and solar data files
@@ -142,7 +142,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 5 July to 11 July: (7 days)
 
-    * Develop import/export functionality from/to different file formats
+    * Packaging of the developed plugins
 
 12 July to 18 July: (7 days)
 
