@@ -93,8 +93,8 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
     * Develop plotting capability of solar data (solar co-ordinates) and rendering graph/image (ginga is basically an astronomical FITS file viewer)
                       # Ginga has fair plotting capabilities. We can build upon those.
-                      # Ginga uses matplotlib for plotting of data
-                      # Reference: https://github.com/ejeschke/ginga/blob/master/ginga/qtw/Plot.py
+                      # Ginga does direct rendering depending on backend and uses matplotlib for plotting of data
+                      # Reference: https://github.com/ejeschke/ginga/blob/master/ginga/qtw/Plot.py, https://github.com/ejeschke/ginga/blob/master/ginga/base/PlotBase.py
 
     * Extend Ginga itself to handle 3d analysis of fits files
                       # We need to expand some Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
