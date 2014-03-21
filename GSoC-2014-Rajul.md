@@ -1,7 +1,5 @@
 ## Student Information
 
-***
-
     Name(*): Rajul
     Time zone(*): UTC +5:30
     IRC handle including network: rajul@irc.freenode.net
