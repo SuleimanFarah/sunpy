@@ -22,26 +22,25 @@ Blog Feed         [[rishabhsharmagunner.wordpress.com/feed|rishabhsharmagunner b
 
 **Abstract:**
 
-LightCurve object needs to move away from pandas DataFrame to astropy Table.This would be step in coherence with Factory based Implementation being currently worked on .
+LightCurve object needs to move away from pandas DataFrame to Astropy Table. This would be step in coherence with Factory based Implementation being currently worked on.
 
 --------
 
 **Reasoning:**
 
---Astropy table allows specifically for individual elements to be  multi-dimensional ndarray with comfortable ease.This would prove to be helpful for astronomy community whose data comes in multi-dimensional format ( FITS ).
+--Astropy table allows specifically for individual elements to be  multi-dimensional array with comfortable ease. This would prove to be helpful for astronomy community whose data comes in multi-dimensional format ( FITS ).
 
---Astropy Table makes provision for meta information to be stored alongside data proving to be wrapper itself.It has a column sub class better suited to sunpy needs.It has data members such as units,description 
-adding more semantic knowledge.
+--Astropy Table makes provision for meta information to be stored alongside data proving to be wrapper itself. It has a column sub class better suited to sunpy needs. It has data members such as units,description adding more semantic knowledge.
 
 ------
 
 **Detailed Description:**
 
---I would like to address the issue of indexing LightCurve object based on timestamps .No specific solution is provided by Astropy , as to pandas which implements an Index class to do a label to indices mapping using Cython .I propose the following methods
+--I would like to address the issue of indexing LightCurve object based on timestamps. No specific solution is provided by Astropy , as to pandas which implements an Index class to do a label to indices mapping using Cython. I propose the following methods
 
 1)Creation of Indexed Table subclass which allows indexing based on any column whose values are is hashable
-and unique.A ```OrderedDict``` would internally map labels to indices .This method provides for exact
-access ,it is also generalizable allowing for tables to be indexed on basis of any object and future implementation in astropy could be based on this.This class would have an additional .loc method .
+and unique. A ```OrderedDict``` would internally map labels to indices. This method provides for exact
+access ,it is also generalizable allowing for tables to be indexed on basis of any object and future implementation in Astropy could be based on this. This class would have an additional .loc method .
 Cases for .loc method.
 
 table.loc(label)-> row of table with corresponding label
@@ -50,57 +49,72 @@ table.loc(label1,label2) -> returns list of rows (slicing)
 
 table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
-2)Create a LightCurve class with Indexed Table as base data structure. As with the case Solar Data ,input data can be sorted according to time.This column can be made the index. This would allow usage of numpy.searchsorted on Table.index and provide non-exact access required for truncate method. 
+2)Create a LightCurve class with Indexed Table as base data structure. As with the case solar data, input data can be sorted according to time. This column can be named the index. This would allow usage of numpy.searchsorted on Table.index and provide non-exact access required for truncate method. 
 
 
 ------
 
 **Timeline**
 
-
 +-------------------------------------------------------------------------------------------------------------+
-|                                April 21 ---- May 18 ( community bonding period )                            |
+|                                APR 21 ---- MAY 18 ( Community bonding period )                              |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Decide on final implementation detail with mentors,research about various sources and corresponding|
-|        | web  api, Read astropy documentation ( code wherever required ),pandas code to look for scope of   |
-|        | improvement .Become a Git PowerUser.	                                                              |
+|        | Decide on final implementation detail with mentors, research about various sources and             |
+|        | corresponding web  api, Read Astropy documentation ( code wherever required ), pandas code to look |
+|        | scope of improvement. Become a Git PowerUser.	                                              |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                May 19 ---- June 1 ( 2 weeks )						      |
+|                                MAY 19 ---- JUN 1                                                            | 
+|                                       ( 2 weeks )						              |
 +--------+----------------------------------------------------------------------------------------------------+
 |        | Start working on IndexedTable (sub class of Table) which allows timestamp based indexing.This class|
-|        | will have .loc method and would internally use a dict to map labels to indices.                    |
+|        | will have .loc method and would internally use a dict to map labels to indices.Ensure the          |
+|        | implementation is generalizable so as to be included in Astropy.Dict based implementation should   |
+|	 | help.                                                                                              |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                June 2 ---- June 22 ( 3 weeks )                                              |
+|                                JUN 2 ---- JUN 15                                                            |
+|                                      ( 2 weeks )                                                            |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Implement the Generic LightCurve class with the required plot,extract,truncate methods.            |
-|        | Write test cases and test the same for the Generic LightCurve class, squash any related bugs.      |
+|        | Implement the Generic LightCurve class with the required plot, extract, truncate methods.          |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                June 23 ---- June 29( Buffer Period )                                        |
+|                                JUN 16 ---- JUN 22                                                           |
+|                                      ( 1 week )                                                             |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Finish any leftover work from previous week, score high in mid term evaluation.	              |
+|        | Write test cases and test the same for the Generic LightCurve class.Ensure quality, error free code|
+|        | , squashing any related bugs.                                                                      |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                June 30 ---- July 6 ( 1 week )                                               |
+|                                JUN 23 ---- JUN 29                                                           |
+|                                       ( Buffer Period Week long)                                            |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Implement all the required sub classes of various sources .                                        |
+|        | Finish any leftover work from previous week, score high in mid term evaluation.Finish documentation| 
+|        | of work done up till now.                                                                          |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                July 7 ---- July 13 (1 week)                                                 |
+|                                JUN 30 ---- JUL 6                                                            |
+|                                       ( 1 week )                                                            |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Add test cases for all the sub classes ,finish any left over work.If finished early move on to the |
+|        | Implement all the required sub classes of various sources.                                         |
++--------+----------------------------------------------------------------------------------------------------+
+|                                JUL 7 ---- JUL 13                                                            |
+|                                      (1 week )                                                              |
++--------+----------------------------------------------------------------------------------------------------+
+|        | Add test cases for all the sub classes, finish any left over work.If finished early move on to the |
 |        | next stage.                                                                                        |
 +--------+----------------------------------------------------------------------------------------------------+
-|	                       July 14 ---- July 20 ( 2 week )                                                |
+|	                         JUL 14 ---- JUL 20                                                           |
+|                                       ( 2 weeks)                                                            |
 +--------+----------------------------------------------------------------------------------------------------+
 |        | Tailor IndexedTable subclass to Astropy needs.                                                     |
 +--------+----------------------------------------------------------------------------------------------------+
-|                             July 28 ---- August  3 ( 1 week )                                               |
+|                                JUL 28 ---- AUG  3                                                           |
+|                                       ( 1 week )                                                            |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Documentation Sprint: Check that the documentation created conforms to standards.                  |
+|        | I hope to finish documentation Sprint early and then continue working on integrating with Astropy  |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                August 4 ---- August 18 ( Buffer Period )                                    |
+|                                AUG 4 ---- AUG 18                                                            |
+|                                     ( Buffer Period )                                                       |
 +--------+----------------------------------------------------------------------------------------------------+
-|        | Fix any unresolved bugs,try make optimisations.                                                    |
+|        | Fix any unresolved bugs, try make optimisations.                                                   |
 +--------+----------------------------------------------------------------------------------------------------+
-|                                      >August 18                                                             |
+|                                      >AUG 18                                                                |
 +--------+----------------------------------------------------------------------------------------------------+
 |        | I plan to an active sunpy developer even after GSoC time-period and  continue the work I would     |
 |	 | undertake this summer .								              |
@@ -113,19 +127,19 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 **Deliverables:**
 
-*     genericlightcurve.py,test_genericlightcurve.py
+*     genericlightcurve.py, test_genericlightcurve.py
 
 *     index.py(Table sub class)
 
-*     eve.py,test_eve.py
+*     eve.py, test_eve.py
 
-*     goes.py,test_goes.py/alternative
+*     goes.py, test_goes.py/alternative
 
-*     logical.py,test_logical.py
+*     logical.py, test_logical.py
 
-*     norh.py,test_norh.py
+*     norh.py, test_norh.py
 
-*     lyra.py,test_lyra.py
+*     lyra.py, test_lyra.py
 
 *     Corresponding documentation
 
@@ -137,7 +151,7 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 *     [[https://github.com/sunpy/sunpy/pull/892|https://github.com/sunpy/sunpy/pull/892]]
 
-      Solved issue #841 , hanged LightCurve meta data member to  return an Ordered
+      Solved issue #841, hanged LightCurve meta data member to  return an Ordered
       Dict instance, with special attention to EVE LightCurve object header.
 
 *     [[https://github.com/sunpy/sunpy/pull/887|https://github.com/sunpy/sunpy/pull/887]]
@@ -149,25 +163,25 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 *     https://github.com/sunpy/sunpy/pull/889
 
-      Solved issue #861 ,missing data value ( sans the hard coding ) converted to NaN .
+      Solved issue #861, missing data value ( sans the hard coding ) converted to NaN .
 
 *     https://github.com/sunpy/sunpy/pull/894
 
-      Filed bug #882 , and solved it as a moral obligation.Small issue of repition in EVE
+      Filed bug #882, and solved it as a moral obligation. Small issue of repition in EVE
       LightCurve header.
 Also made a small change to developer guide.
 
-These Pull  Request have helped me  immensely.They have given me an opportunity to interact with community, gain experience contributing open source project,familiarize with code . I now use git with added confidence.
+These Pull  Request have helped me  immensely. They have given me an opportunity to interact with community, gain experience contributing open source project, familiarize with code. I now use git with added confidence.
 
 --------
 
 **About Me:**
 
-I am Rishabh Sharma studying in second year of undergraduate program at International Institute of information Technology pursuing Computer Science and Engineering degree. I plan to complete my honors in the area of Information Extraction and Retrieval.The feature I like about python is the simplicity and readability of the language which allows for rapid development.I have worked previously with python based web framework web2py ,using it to develop a web service which would group twitter users based on the context of their tweets using techniques borrowed from NLP and information extraction .For over two years now I've been coding on a Linux workstation..I have written a lot of scripts which make my life easier ,ranging from transferring music to my smartphone automatically at plugging of the mobile ,getting updates of matches from certain site. Currently I am working on project of creating a terminal based chat client allowing for peer to peer communication , trying to take my interest in socket programming to some final product.I have previously developed a wave file equalizer with accompanying GUI in python which helped me gain experience in GUI designing.
+I am Rishabh Sharma studying in second year of undergraduate program at International Institute of information Technology pursuing Computer Science and Engineering degree. I plan to complete my honors in the area of Information Extraction and Retrieval. The feature I like about python is the simplicity and readability of the language which allows for rapid development. I have worked previously with python based web framework web2py, using it to develop a web service which would group twitter users based on the context of their tweets using techniques borrowed from NLP and information extraction. For over two years now I've been coding on a Linux workstation. I have written a lot of scripts which make my life easier ,ranging from transferring music to my smartphone automatically at plugging of the mobile ,getting updates of matches from certain site. Currently I am working on project of creating a terminal based chat client allowing for peer to peer communication, trying to take my interest in socket programming to some final product. I have previously developed a wave file equalizer with accompanying GUI in python which helped me gain experience in GUI designing.
 
 **Motivation:**
 
-The only related course work I have undertaken is Science 1 course. I believe the college curriculum will not teach me further. Thus it would amazing to learn about something different.Sunpy offers me more than this, the opportunity to contribute to FOSS seems to entice me more day by day so does working in a team of individuals having similar principles seem interesting.
+The only related course work I have undertaken is Science 1 course. I believe the college curriculum will not teach me further. Thus it would amazing to learn about something different. SunPy offers me more than this, the opportunity to contribute to FOSS seems to entice me more day by day so does working in a team of individuals having similar principles seem interesting.
 
 **Summer Schedule:**
 
