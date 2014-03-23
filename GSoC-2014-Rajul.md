@@ -1,3 +1,5 @@
+# A Ginga based data explorer / database browser
+
 ## Student Information
 
     Name(*): Rajul
@@ -7,9 +9,6 @@
     Github : rajul-iitkgp, rajul
     Blog(s)(*): http://pettycoder.blogspot.in
     GSoC Blog RSS feed(*): http://pettycoder.blogspot.com/feeds/posts/default?alt=rss
-
-## Proposal Title (*)
-SunPy: A ginga based data explorer / database browser
 
 ## Proposal Abstract
 
