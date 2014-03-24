@@ -162,10 +162,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     * BUFFER TIME
     * 18 August to 22 August: Final Evaluation
 
-## Link to a patch/code sample, preferably one you have submitted to your sub-org
-
- 
-
+## Link to a patch/code sample
 ### Some other Code Samples:
 
 * GSOC 2012 work: https://www.google-melange.com/gsoc/project/google/gsoc2012/rajul09/5207287069147136
