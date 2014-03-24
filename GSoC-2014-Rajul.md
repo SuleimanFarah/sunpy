@@ -59,27 +59,27 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     + Writing plugins for the reference viewer: The philosophy behind the design of the reference viewer distributed with the Ginga is that it is simply a flexible layout shell for instantiating instances of the viewing widget described in the earlier section. All of the other important pieces of a modern FITS viewer--a panning widget, information panels, zoom widget, analysis panes--are implemented as plugins: encapsulated modules that interface with the viewing shell using a standardized API. This makes it easy to customize and to add, change or remove functionality in a very modular, flexible way.
     + I think that a data explorer / database browser for  SunPy, shall require the use of both the above described approaches during development. I plan to use Qt GUI library for development.
     + _**Reference**_: [https://github.com/ejeschke/ginga/blob/master/doc/manual/developers.rst](https://github.com/ejeschke/ginga/blob/master/doc/manual/developers.rst)
-    * Develop Solar coordinate handling capabilities in the plugin
-                + Use the Astropy's WCS module: astropy.wcs contains utilities for managing World Coordinate System (WCS) transformations in FITS files. These transformations map the pixel locations in an image to their real-world units, such as their position on the sky sphere.
-                + Implementation:
-                      # The World Coordinate System standard is often used in FITS files in order to describe the conversion from pixel to world (e.g. equatorial, galactic, etc.) coordinates. Given a FITS file with WCS information, we can create an object to represent the WCS transformation either by directly supplying the filename or the header of the FITS file
-                      # Once the WCS object has been created, you can use the wcs_pix2world method to convert pixel to world coordinates
-                      # Reference: http://python4astronomers.github.io/astropy/wcs.html
+* Develop Solar coordinate handling capabilities in the plugin
+  + Use the Astropy's WCS module: astropy.wcs contains utilities for managing World Coordinate System (WCS) transformations in FITS files. These transformations map the pixel locations in an image to their real-world units, such as their position on the sky sphere.
+  + Implementation: 
+    * The World Coordinate System standard is often used in FITS files in order to describe the conversion from pixel to world (e.g. equatorial, galactic, etc.) coordinates. Given a FITS file with WCS information, we can create an object to represent the WCS transformation either by directly supplying the filename or the header of the FITS file
+    * Once the WCS object has been created, you can use the wcs_pix2world method to convert pixel to world coordinates
+    * Reference: http://python4astronomers.github.io/astropy/wcs.html
 
-    * Developing an interactive viewing functionality of a database record (a typical database record in SunPy comprise meta-data and file_name that contains solar data for that entry). So need to fetch and render database records from the SunPy's database using Database Explorer module
-                      # Implementation: Integration of functionality for exploration within the database from the GUI by using the SunPy's database explorer module to perform the following functions
-                      # Connecting to the database
-                      # Fetching entries
-                      # Adding entries: Adding entires from one or more FITS (Flexible Image Transport System) files, from VSO (Virtual Solar Observatory) interface, and also manually
-                      # Displaying entries in a tabular form
-                      # Deleting entries
-                      # Editing entries: Starring and unstarring entries, Setting and removing tags, Changing custom attributes,
-                      # Undoing and redoing operations
-                      # Querying the database
-                            * Using VSO attributes
-                            * Database-specific attributes
-                      # Caching
-                      # Reference: http://docs.sunpy.org/en/stable/guide/acquiring_data/database.html
+* Developing an interactive viewing functionality of a database record (a typical database record in SunPy comprise meta-data and file_name that contains solar data for that entry). So need to fetch and render database records from the SunPy's database using Database Explorer module
+  * Implementation: Integration of functionality for exploration within the database from the GUI by using the SunPy's database explorer module to perform the following functions
+    * Connecting to the database
+    * Fetching entries
+    * Adding entries: Adding entires from one or more FITS (Flexible Image Transport System) files, from VSO (Virtual Solar Observatory) interface, and also manually
+    * Displaying entries in a tabular form
+    * Deleting entries
+    * Editing entries: Starring and unstarring entries, Setting and removing tags, Changing custom attributes,
+    * Undoing and redoing operations
+    * Querying the database
+      * Using VSO attributes
+      * Database-specific attributes
+    * Caching
+    * _**Reference**_: http://docs.sunpy.org/en/stable/guide/acquiring_data/database.html
 
     * Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates
                       # Ginga already has FITS (Flexible Image Transport System) support, as it is basically a scientific image viewer
