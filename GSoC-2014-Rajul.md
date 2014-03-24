@@ -7,7 +7,6 @@
 | Name | Rajul |
 | Time zone | UTC +5:30 |
 | IRC handle | rajul@irc.freenode.net |
-| Source control username | rajul-iitkgp |
 | Github | rajul-iitkgp, rajul |
 | Blog | http://pettycoder.blogspot.in |
 
@@ -48,14 +47,13 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 ## Project Implementation and Tasks
 
-    *Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data
-                + Design a GUI interface that can be used for simple browsing of database records in SunPy database
-                + Develop the above design into a Ginga plugin for Qt backend
-
-        * Implementation
-                + Ginga has two logical development paths:
-                      # using only the Ginga rendering class in a program
-                      # starting with the full-featured reference viewer that comes with Ginga and customizing it for some special purpose, typically by modifying one of the plugins or writing a new plugin.
+*Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data
++ Design a GUI interface that can be used for simple browsing of database records in SunPy database
++ Develop the above design into a Ginga plugin for Qt backend
+* **Implementation**
++ Ginga has two logical development paths:
+* using only the Ginga rendering class in a program
+* starting with the full-featured reference viewer that comes with Ginga and customizing it for some special purpose, typically by modifying one of the plugins or writing a new plugin.
                 + The first approach is probably best for when the developer has a custom application in mind, needs a minimal but powerful viewer or wants to develop an entirely new full-featured viewer. The second approach is probably best for end users or developers that are mostly satisfied with the reference viewer as a general purpose tool and want to add some specific enhancements or functionality. Because the reference viewer is based on a flexible plugin architecture this is fairly easy to do.
                 + Using the basic rendering class in new programs
                       # Ginga basically follows the Model-View-Controller (MVC) design pattern. The "view" classes are rooted in the base class ImageView. Ginga supports backends for different widget sets through various subclasses of this class.
