@@ -47,7 +47,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 ## Project Implementation and Tasks
 
-* Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data
+1. Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data
   + Design a GUI interface that can be used for simple browsing of database records in SunPy database
   + Develop the above design into a Ginga plugin for Qt backend
   * **Implementation**
@@ -60,14 +60,14 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     + I think that a data explorer / database browser for  SunPy, shall require the use of both the above described approaches during development. I plan to use Qt GUI library for development.
     + _**Reference**_: [https://github.com/ejeschke/ginga/blob/master/doc/manual/developers.rst](https://github.com/ejeschke/ginga/blob/master/doc/manual/developers.rst)
 
-* Develop Solar coordinate handling capabilities in the plugin
+1. Develop Solar coordinate handling capabilities in the plugin
   + Use the Astropy's WCS module: astropy.wcs contains utilities for managing World Coordinate System (WCS) transformations in FITS files. These transformations map the pixel locations in an image to their real-world units, such as their position on the sky sphere.
   + Implementation: 
     * The World Coordinate System standard is often used in FITS files in order to describe the conversion from pixel to world (e.g. equatorial, galactic, etc.) coordinates. Given a FITS file with WCS information, we can create an object to represent the WCS transformation either by directly supplying the filename or the header of the FITS file
     * Once the WCS object has been created, you can use the wcs_pix2world method to convert pixel to world coordinates
     * Reference: http://python4astronomers.github.io/astropy/wcs.html
 
-* Developing an interactive viewing functionality of a database record (a typical database record in SunPy comprise meta-data and file_name that contains solar data for that entry). So need to fetch and render database records from the SunPy's database using Database Explorer module
+1. Developing an interactive viewing functionality of a database record (a typical database record in SunPy comprise meta-data and file_name that contains solar data for that entry). So need to fetch and render database records from the SunPy's database using Database Explorer module
   * Implementation: Integration of functionality for exploration within the database from the GUI by using the SunPy's database explorer module to perform the following functions
     * Connecting to the database
     * Fetching entries
@@ -82,22 +82,22 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     * Caching
     * _**Reference**_: http://docs.sunpy.org/en/stable/guide/acquiring_data/database.html
 
-* Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates
+1. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates
   * Ginga already has FITS (Flexible Image Transport System) support, as it is basically a scientific image viewer
   * Implement functionality to read data (solar co-ordinates) from files, typically FITS files, and use the capabilities in AstroPy's WCS module to handle the data and map images as described above
   * Use the already implemented FITS reference viewer in Ginga complete with- a panning widget, information panels, zoom widget, analysis panes-- implemented as plugins: encapsulated modules that interface with the viewing shell using a standardized API, to render the data
 
-* Develop plotting capability of solar data (solar co-ordinates) and rendering graph/image (ginga is basically an astronomical FITS file viewer)
+1. Develop plotting capability of solar data (solar co-ordinates) and rendering graph/image (ginga is basically an astronomical FITS file viewer)
   * Ginga has fair plotting capabilities. We can build upon those.
   * Ginga does direct rendering depending on backend and uses matplotlib for plotting of data
   * Reference: https://github.com/ejeschke/ginga/blob/master/ginga/qtw/Plot.py, https://github.com/ejeschke/ginga/blob/master/ginga/base/PlotBase.py
 
-* Extend Ginga itself to handle 3d analysis of fits files
+1. Extend Ginga itself to handle 3d analysis of fits files
   * We need to expand some Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
 
-* Packaging of the developed plugins
+1. Packaging of the developed plugins
 
-* Develop capability to run various scientific operations on the solar data from within the GUI and viewing results and generation of reports
+1. Develop capability to run various scientific operations on the solar data from within the GUI and viewing results and generation of reports
   * Integrate various SunPy's modules and functionality with the GUI, to perform actions on the database and solar data files
 
 ## Tools and technologies to be used:
