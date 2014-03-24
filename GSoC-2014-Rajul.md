@@ -168,10 +168,10 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 ### Some other Code Samples:
 
-    * GSOC 2012 work: https://www.google-melange.com/gsoc/project/google/gsoc2012/rajul09/5207287069147136
-    * Fjord bug fix: https://github.com/mozilla/fjord/pull/123
-    * Financial Time-Series analysis for Stock Prices prediction: https://github.com/rajul/HMM-project
-    * Network Analysis of Natural Signals: https://github.com/psjinx/network-analysis-of-natural-signals
+* GSOC 2012 work: https://www.google-melange.com/gsoc/project/google/gsoc2012/rajul09/5207287069147136
+* Fjord bug fix: https://github.com/mozilla/fjord/pull/123
+* Financial Time-Series analysis for Stock Prices prediction: https://github.com/rajul/HMM-project
+* Network Analysis of Natural Signals: https://github.com/psjinx/network-analysis-of-natural-signals
 
 ## Additional Information:
 
