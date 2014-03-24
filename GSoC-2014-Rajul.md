@@ -102,9 +102,9 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 ## Tools and technologies to be used:
 
-    * Language : Python
-    * GUI library: Qt, PyQt
-    * GUI Framework: Ginga, a toolkit designed for building viewers for scientific image data in Python, visualizing 2D pixel data in numpy arrays. It can view astronomical data such as contained in files based on the FITS (Flexible Image Transport System) file format.
+* Language : Python
+* GUI library: Qt, PyQt
+* GUI Framework: Ginga, a toolkit designed for building viewers for scientific image data
 
 ## Project Timeline
 
@@ -162,24 +162,24 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
     * BUFFER TIME
     * 18 August to 22 August: Final Evaluation
 
-Link to a patch/code sample, preferably one you have submitted to your sub-org
+## Link to a patch/code sample, preferably one you have submitted to your sub-org
 
  
 
-Some other Code Samples:
+### Some other Code Samples:
     * GSOC 2012 work: https://www.google-melange.com/gsoc/project/google/gsoc2012/rajul09/5207287069147136
     * Fjord bug fix: https://github.com/mozilla/fjord/pull/123
     * Financial Time-Series analysis for Stock Prices prediction: https://github.com/rajul/HMM-project
     *  Network Analysis of Natural Signals: https://github.com/psjinx/network-analysis-of-natural-signals
 
-Additional Information:
+## Additional Information:
 
 I am a final year undergraduate student at the Indian Institute of Technology Kharagpur. I am majoring in Chemistry and am very highly interested in Scientific Computing. I have taken up courses in Complex Networks, Distributed Computing, Algorithms, Data Structures, Computational Chemistry, Computational Biophysics, in the past. I have also taken up numerous research projects in varied fields, like Machine Learning, Computational Finance, Computational Chemistry, and Network Analysis. I have completed a Google Summer of Code in 2012, where I participated with the organization Network Time. I also interned at the Barclays' Technology division, and worked with their Market Risk IT team.
 I am an intermediate level programmer in Python, C/C++, Java. I am also knowledgeable about Groovy, Ruby, PHP. I have had little experience making GUI applications using Visual Studio. However, I have not yet used PyQt. Although, I have not worked on too many GUI applications, I have developed a number of websites using various technologies like Django, Grails, PHP, Drupal, etc. I have used many testing frameworks in the past, like pytest, Spock, NUnit, Junit. I have given links to a number of my code samples above.
 
     *  Link to my CV: https://drive.google.com/file/d/0B2mFOuJDrIXmRGloNE5ZazRHZTA/edit?usp=sharing
 
-Other Schedule Information
+## Other Schedule Information
 
 My main focus during the period of GSoC, shall be development for GSoC itself. I suppose that I shall be able to devote my full attention and time to it and can easily work on the project for like 35-40 hours per week. However, I am ready to put in any extra time and effort that might be demanded by the project. As far as I can as I can anticipate, I shall be having my vacations during most part of GSoC. However, my college does open towards the end of GSoC, in August. I shall not be having any exams during this period and I do not have any travelling plans as of yet.
  
