@@ -2,13 +2,13 @@
 
 ## Student Information
 
-    Name(*): Rajul
-    Time zone(*): UTC +5:30
-    IRC handle including network: rajul@irc.freenode.net
-    Source control username(s)(*): rajul-iitkgp
-    Github : rajul-iitkgp, rajul
-    Blog(s)(*): http://pettycoder.blogspot.in
-    GSoC Blog RSS feed(*): http://pettycoder.blogspot.com/feeds/posts/default?alt=rss
+| Contact Field | Information |
+| :-----------: | :---------- |
+| Name | Rajul |
+| Time zone | UTC +5:30 |
+| IRC handle | rajul@irc.freenode.net |
+| Source control username | rajul-iitkgp |
+| Github | rajul-iitkgp, rajul |
 
 ## Proposal Abstract
 
