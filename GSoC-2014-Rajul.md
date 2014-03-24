@@ -33,16 +33,17 @@ A typical SunPy database record holds meta data and links to files on disk.
 
 We need a plugin for Ginga, that shall have the following capabilities for browsing SunPy's database:
 
-    * Solar coordinate handling capabilities
-    * Database record viewing. Browsing, edit, add and delete database records
-    * Viewing and Plotting of solar co-ordinates that are contained in files pointed to in the database. Browse, edit, add and delete solar co-ordinates from solar data files.
-    * Preview of one or multiple records and their associated data
-    * Filtering/Searching of records based on various parameters/meta-data in database like source, provider, instrument, etc.
-    * Plotting facility from Ginga as it is an image viewer
-    * We may need to extend Ginga itself to handle 3d analysis of fits files
-    * Ability to run various scientific operations from within the plugin and also display the results
-    * Import and export database records as text and from/to CSV, Spreadsheet, HTML files
-    * Import and export solar co-ordinates from one file format to another
+* Solar coordinate handling capabilities
+* Database record viewing. Browsing, edit, add and delete database records
+* Viewing and Plotting of solar co-ordinates that are contained in files pointed to in the database.
+* Browse, edit, add and delete solar co-ordinates from solar data files.
+* Preview of one or multiple records and their associated data
+* Filtering/Searching of records based on various parameters/meta-data in database like source, provider, instrument, etc.
+* Plotting facility from Ginga
+* We may need to extend Ginga itself to handle 3d analysis of fits files
+* Ability to run various scientific operations from within the plugin and also display the results
+* Import and export database records as text and from/to CSV, Spreadsheet, HTML files
+* Import and export solar co-ordinates from one file format to another
 
 ## Project Implementation and Tasks
 
