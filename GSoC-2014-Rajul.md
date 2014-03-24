@@ -9,6 +9,7 @@
 | IRC handle | rajul@irc.freenode.net |
 | Source control username | rajul-iitkgp |
 | Github | rajul-iitkgp, rajul |
+| Blog | http://pettycoder.blogspot.in |
 
 ## Proposal Abstract
 
