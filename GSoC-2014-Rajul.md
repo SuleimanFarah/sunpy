@@ -47,9 +47,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 ## Project Implementation and Tasks
 
-1. Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data
-  + Design a GUI interface that can be used for simple browsing of database records in SunPy database
-  + Develop the above design into a Ginga plugin for Qt backend
+1. Designing and Developing a GUI interface for browsing SunPy database and solar data, as a Ginga plugin using Qt backend
   * **Implementation**
     + Ginga has two logical development paths:
       * using only the Ginga rendering class in a program
