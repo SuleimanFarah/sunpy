@@ -90,13 +90,11 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
   * Ginga does direct rendering depending on backend and uses matplotlib for plotting of data
   * Reference: https://github.com/ejeschke/ginga/blob/master/ginga/qtw/Plot.py, https://github.com/ejeschke/ginga/blob/master/ginga/base/PlotBase.py
 
-1. Extend Ginga itself to handle 3d analysis of fits files
-  * We need to expand some Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
+1. Extend Ginga itself to handle 3d analysis of fits files, by expanding some Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
 
-1. Packaging of the developed plugins
+1. Develop capability to run various scientific operations on the solar data from within the GUI by integrating various SunPy's modules and functionality with the GUI, to perform actions on the database and solar data files, and viewing results and generation of reports
 
-1. Develop capability to run various scientific operations on the solar data from within the GUI and viewing results and generation of reports
-  * Integrate various SunPy's modules and functionality with the GUI, to perform actions on the database and solar data files
+1. Packaging of the developed plugin(s)
 
 ## Tools and technologies to be used:
 
