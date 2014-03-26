@@ -106,7 +106,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 | Time Period | Task Description |
 | :-------------: | :-------------: |
-| **21 April to 18 May** | Community Bonding period. Besides I shall also like to utilize this time to come up to speed with the Documentation and Design and codebase of the syslog-ng |
+| **21 April to 18 May** | Community Bonding period. Besides I shall also like to utilize this time to come up to speed with the Documentation and Design and codebase of SunPy, Ginga |
 | **19 May to 31 May (14 Days)** | Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data |
 | **1 June to 10 June (10 days)** | Develop Solar coordinate handling capabilities in the plugin |
 | **11 June to 20 June: (10 days)** | Developing an interactive viewing functionality of database records. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates |
