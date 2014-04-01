@@ -15,7 +15,8 @@
 Exploring solar data for interesting events and extracting important information is important for being able to do research. Currently, such a GUI program does not exist for Python. However, with the current capabilities of Ginga, it offers a very good base. It allows us to expand to meet the requirements for solar data. Ginga has already several features such as FITS (Flexible Image Transport System), a common image format used in solar physics, support and several plugins that allow basic analysis of data and enable rendering of graphical scientific data.
 
 It also supports several back-ends. Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.We would want a plugin that uses SunPy's database explorer module and supporting Solar coordinates using AstroPy's WCS module. Further, we want to expand other Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
-Project Background and Idea
+
+## Project Background and Idea
 
 In IDL (Interface Description Language), there are two major sources of GUIs for exploring solar data, Solarsoft packages and CRISPEX. Both are using IDL's widget system whose back-end is Motif and make ugly GUIs. Exploring solar data for interesting events and extracting important information is important for being able to do research.
 
