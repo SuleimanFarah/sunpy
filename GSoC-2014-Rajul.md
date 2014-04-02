@@ -63,7 +63,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
   + Use the Astropy's WCS module: astropy.wcs contains utilities for managing World Coordinate System (WCS) transformations in FITS files. These transformations map the pixel locations in an image to their real-world units, such as their position on the sky sphere.
   + _**Implementation**_: 
     * The World Coordinate System standard is often used in FITS files in order to describe the conversion from pixel to world (e.g. equatorial, galactic, etc.) coordinates. Given a FITS file with WCS information, we can create an object to represent the WCS transformation either by directly supplying the filename or the header of the FITS file
-    * Once the WCS object has been created, you can use the wcs_pix2world method to convert pixel to world coordinates
+    * Once the WCS object has been created, we can use the wcs_pix2world method to convert pixel to world coordinates
     * Reference: http://python4astronomers.github.io/astropy/wcs.html
 
 1. Developing an interactive viewing functionality of a database record (a typical database record in SunPy comprise meta-data and file_name that contains solar data for that entry). So need to fetch and render database records from the SunPy's database using Database Explorer module
