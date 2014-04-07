@@ -33,4 +33,4 @@ Past Programs
 * [[Google Summer of Code]] is the Google Summer Of Code program.  SunPy participated in 2013 for the first time in 2013, and was successful.
 
 # SunPy.org as an Org
-[[All the info|SunPyAsOrg]] regarding to SunPy formation as an org, minutes
+[[All the info|https://github.com/sunpy/sunpy/wiki/SunPy-Organisation-Information]] regarding to SunPy formation as an org, minutes
