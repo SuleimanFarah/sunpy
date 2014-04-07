@@ -23,6 +23,10 @@ SunPy has participated successfully in both the ESA Summer of Code (ESOC) and th
 * [[GSOC 2014 Ideas]]
 * [[GSoC 2014 Students applications]]
 
+##ESA's SOCIS 2014
+* [[SOCIS 2014 Ideas Page]]
+* [[SOCIS 2014 Students applications]]
+
 Past Programs
 
 * [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy is applying for support in 2013, following participation in 2011 and 2012. 
