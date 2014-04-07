@@ -17,14 +17,14 @@ Steven Christe, Jack Ireland, David Perez-Suarez, Stuart Mumford, Russ Hewitt, A
   - need a SEP that defines how we deal with optional dependencies
   - add an SEP todo list in the wiki for the SEP repo
   - board meeting should be private (4 against 2, 1 abstain) but people can be invited or can ask to observe (should generally say yes). meeting minutes will be public (unanimous)
-  - Andrew Inglis (unanimous vote) is secretary.
-  - Stuart Mumford is confirmed as Executive Director (unanimous vote)
-  - Steven Christe is confirmed as Chair of the Board (unanimous vote)
-  - David Perez-Suarez is confirmed as Vice-Chair of the Board (unanimous vote)
-  - Juan Carlos Martinez Oliveros confirmed as a new board member (unanimous vote)
-  - It was suggested to nominate a member of AstroPy to be on the board. Tom Robitaille was suggested as a candidate.
-  - It was decided that board meeting minutes should be recorded as a google doc, and uploaded to the SunPy Github Wiki upon conclusion of the meeting.
+  - **Andrew Inglis** (unanimous vote) is confirmed as secretary (unanimous vote)
+  - **Stuart Mumford** is confirmed as Executive Director (unanimous vote)
+  - **Steven Christe** is confirmed as Chair of the Board (unanimous vote)
+  - **David Perez-Suarez** is confirmed as Vice-Chair of the Board (unanimous vote)
+  - **Juan Carlos Martinez Oliveros** confirmed as a new board member (unanimous vote)
+  - It was suggested to nominate a member of AstroPy to be on the board. **Tom Robitaille** was suggested as a candidate.
+  - It was decided that board meeting minutes should be recorded as a google document, and uploaded to the SunPy Github Wiki upon conclusion of the meeting.
   - Decided that Chair, Vice-Chair and Executive Director should be the only ‘owners’ of the SunPy repository on Github
-  - Discussion of formalising the PR acceptance process - Stuart will present at the next meeting.
+  - Discussion of formalising the PR acceptance process - **Stuart** will present at the next meeting.
   - Next meeting will be one month from this meeting (5th May 2014 at 1pm EST)
   - Meeting concluded.
