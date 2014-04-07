@@ -16,7 +16,7 @@ Steven Christe, Jack Ireland, David Perez-Suarez, Stuart Mumford, Russ Hewitt, A
   - need a SEP for how we deal with meta-data, what should the default behavior be in general. For example, using rotate() will change the header information from the old format to the PSi_j matrix. need to define a meta object
   - need a SEP that defines how we deal with optional dependencies
   - add an SEP todo list in the wiki for the SEP repo
-  - board meeting should be private (4 against 2, 1 abstain) but people can be invited or can ask to observe (should generally say yes). meeting minutes will be public (unanimous)
+  - Decided that board meetings should be private (4 in favour, 2 against, 1 abstention) but people can be invited or can ask to observe (should generally say yes). Meeting minutes will be public (unanimous vote)
   - **Andrew Inglis** (unanimous vote) is confirmed as secretary (unanimous vote)
   - **Stuart Mumford** is confirmed as Executive Director (unanimous vote)
   - **Steven Christe** is confirmed as Chair of the Board (unanimous vote)
