@@ -1,8 +1,6 @@
-## 
-* **Description**: A ...
-* **Requirements**: Basic knowledge of ...
-* **Mentor**: A and B
-
+## Integration of the HESPE Data Archive
+* **Description**: The HESPE Data Archive (http://hespe.eu/browser) gives access to pre-processed science products from the RHESSI satellite. The data are organized by flare event and are available both as printable quicklook files (PNGs) that can be directly displayed in SunPy, and in their original data structures and formats (FITS) that may need some additional processing. Access is provided through a web interface (REST) that can be used from within SunPy. Each flare event can have hundreds of data products connected to it, which requires special attention when displaying the search results. The integration task includes: (1) basic integration of the HESPE search (with feedback to the HESPE project team, if necessary); (2) basic integration of the RHESSI data products using existing SunPy structures; (3) optimizing the handling and presentation of the search, the search results (e.g. allowing to filter), and the data products themselves. The outcome should be two clients, command-line and GUI.
+* **Requirements**: Knowledge of GUI design; Basic knowledge of working with web services (REST) and JSON is a plus.
+* **Mentor**: Laszlo I. Etesi, Steven Christe
 
 ### List of Mentors
-
