@@ -3,4 +3,11 @@
 * **Requirements**: Knowledge of GUI design; Basic knowledge of working with web services (REST) and JSON is a plus.
 * **Mentor**: Laszlo I. Etesi, Steven Christe
 
+## Idea
+* **Description**: The ...
+* **Requirements**: Knowledge of ...
+* **Mentor**: Mentor A, Mentor B
+
 ### List of Mentors
+* Laszlo I. Etesi
+* Steven Christe
