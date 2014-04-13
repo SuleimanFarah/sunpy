@@ -53,12 +53,33 @@ images.
 
 * **Requirements**: N/A
 
-* **Mentor**: David PS, Paul Higgins?, Eoin Carley? (SolarMonitor)
+* **Mentor**: David PS (SunPy), Paul Higgins?, Eoin Carley? (SolarMonitor)
 
 ## Idea
 * **Description**: The ...
 * **Requirements**: Knowledge of ...
 * **Mentor**: Mentor A, Mentor B
+
+## Spectrum Object
+* **Description**: The SunPy project is built upon a number of objects which hold 
+data such as the map object (for two-dimensional image data) and the lightcurve 
+object (for time-ordered scalar data).  
+The third major object we require is the spectrum object, which is for data ordered 
+by energy (or its equivalent, such as wavelength). 
+The goal of this project is to design and implement the spectrum object for SunPy. 
+This object will need to be able to display its data in a basic plot form. 
+In addition, different sub-classes of the main spectrum object will also need to 
+handle the various kinds of spectral data.  
+It will also need to be able to convert from data (e.g. counts) to physical 
+quantities (e.g. photons) through knowledge of the detector response (for example, 
+the detector response is typically described using a matrix). 
+A number of physical models are also necessary to interpret spectra. 
+Coding up efficient forms of these models can also be part of this project if time allows.
+
+* **Requirements**: Basic knowledge of spectral data analysis is a plus.
+
+* **Mentor**: David PS(SunPy) and Peter Young?(EIS)
+
 
 ### List of Mentors
 * Laszlo I. Etesi
