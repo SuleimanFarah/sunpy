@@ -1,3 +1,19 @@
+The [[SOCIS 2014 organization application page|SOCIS 2014]].
+
+*Students*: You need to apply in the 
+[SOCIS website](http://sophia.estec.esa.int/socis2014/) and also don't forget to 
+add your application to this [[wiki|Socis-2014-students-applications]].  
+Try to follow the [[application guidelines|GSoC-student-application-guidelines]] 
+we set for the GSoC, you will get more chances to be selected if you follow them.
+
+The ideas shown below are projects that we believe can be completed during the SOCIS 
+programming period (** - **).  
+The projects are sorted in order of interest to the SunPy community.  
+Please join the #sunpy IRC channel ([web client](http://webchat.freenode.net/)) to 
+talk with the SunPy community and do not hesitate to introduce yourself in any of our 
+mailing list ([users](https://groups.google.com/forum/?fromgroups#!forum/sunpy), 
+[developer](https://groups.google.com/forum/?fromgroups#!forum/sunpy-dev)).
+
 ## Integration of the HESPE Data Archive
 * **Description**: The [HESPE Data Archive](http://hespe.eu/browser) gives access
 to pre-processed science products from the RHESSI satellite. 
@@ -47,3 +63,4 @@ images.
 ### List of Mentors
 * Laszlo I. Etesi
 * Steven Christe
+* David PS
