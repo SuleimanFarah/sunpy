@@ -1,3 +1,3 @@
 ### Minutes of SunPy board meetings
 
-[Board Meeting 04/07/14](https://github.com/sunpy/sunpy/wiki/Minutes-of-SunPy-Board-Meeting-04-07-14)
+[[Board Meeting 2014-04-07|Minutes-of-SunPy-Board-Meeting-20140407]]
