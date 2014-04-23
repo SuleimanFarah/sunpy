@@ -15,6 +15,7 @@ More information about [installation](http://docs.sunpy.org/en/stable/guide/inst
 * [[Feature Wishlist]]
 * The SunPy [[Roadmap]] - the plan for the future of SunPy
 * [[Issue Labels]] - an explanation and description of the tags on issues
+* [[Pull Request Review Procedure]] - The procedure for PR review and SunPy GitHub organisation.
 
 # Summer of Code
 SunPy has participated successfully in both the ESA Summer of Code (ESOC) and the Google Summer of Code (GSOC) Programs.
