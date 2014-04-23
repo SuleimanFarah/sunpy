@@ -22,7 +22,7 @@ It is important that approval for merging the PR is done on the comment thread, 
 This document has already referred to two SunPy groups, namely 'developers' and 'maintainers' there is also a third primary SunPy group 'owners'.
 
 ## SunPy owners
-The SunPy owners group is the group of people who have total control over the SunPy GitHub organisation. The SunPy board have control over who is in this group, it has been decided that generally it will be the Executive Director (Lead Developer) and the SunPy board chairman.
+The SunPy owners group is the group of people who have total control over the SunPy GitHub organisation. The SunPy board have control over who is in this group, it has been decided that generally it will be the Executive Director (Lead Developer) and the SunPy board chair and vice-chair.
 
 ## SunPy Maintainers
 This is the group of people who have push access to the main SunPy repos. The membership of this group is at the discretion of the Executive Director, but shall generally be made up of people who have demonstrated themselves to be trust worthy and active contributors to the project.
