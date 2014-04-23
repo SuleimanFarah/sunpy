@@ -14,6 +14,7 @@ Before the 'merge' button is clicked the following criteria must be met:
 
 * The Travis build passes.
 * At least two members (not the author of the PR) of the sunpy-developers group have commented on the PR giving it their approval. (Normally via the :+1: emotion or +1).
+* All comments posted on the thread must be resolved, a +1 after any comments by the same author indicates that the comments have been satisfactorily resolved. (Note: do not +1 a pull request unless you would be willing for it to be merged in it *current* state.)
 
 It is important that approval for merging the PR is done on the comment thread, as this becomes part of the 'permanent record', this includes in developer hangouts and IRC meetings.
 
