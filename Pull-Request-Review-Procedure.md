@@ -30,3 +30,10 @@ This is the group of people who have push access to the main SunPy repos. The me
 
 ## SunPy Developers
 The members of this group have 'read' access to the SunPy orgs repos. As all these repos are open anyway, what this effectively means is that these people can be assigned to issues. The members of this group are people who are involved in the development of SunPy at a good frequency, they are people who's opinions have been demonstrated to be constructive and informative.
+
+# Pull Request Tags
+Like we use issue labels for sorting issues the following tags will be used for sorting Pull Requests. These tags will be both issue labels and also be placed in the title of PRs. To differentiate them from issue labels and to make the title of the PR clear the labels will be in square brackets.
+
+* `[Review]` - This PR is 'complete' and in need of a 'final' review.
+* `[Branch]` - This PR is to pull a feature branch of the SunPy repo into master.
+* `[BugFix]` - This is a lightweight bugfix PR, that should be handled rapidly.
