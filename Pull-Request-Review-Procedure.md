@@ -37,3 +37,4 @@ Like we use issue labels for sorting issues the following tags will be used for 
 * `[Review]` - This PR is 'complete' and in need of a 'final' review.
 * `[Branch]` - This PR is to pull a feature branch of the SunPy repo into master.
 * `[BugFix]` - This is a lightweight bugfix PR, that should be handled rapidly.
+* `[DocFix]` - This is a lightweight documentation patch that should also be fast-tacked.
