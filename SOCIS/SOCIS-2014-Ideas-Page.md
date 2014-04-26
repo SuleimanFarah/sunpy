@@ -55,11 +55,6 @@ images.
 
 * **Mentor**: David PS (SunPy), Paul Higgins?, Eoin Carley? (SolarMonitor)
 
-## Idea
-* **Description**: The ...
-* **Requirements**: Knowledge of ...
-* **Mentor**: Mentor A, Mentor B
-
 ## Spectrum Object
 * **Description**: The SunPy project is built upon a number of objects which hold 
 data such as the map object (for two-dimensional image data) and the lightcurve 
@@ -79,6 +74,39 @@ Coding up efficient forms of these models can also be part of this project if ti
 * **Requirements**: Basic knowledge of spectral data analysis is a plus.
 
 * **Mentor**: David PS(SunPy) and Peter Young?(EIS)
+
+## Increase SunPy's Image processing capability, image alignment, rotation and warping.
+
+* **Description**: A large amount of solar physics data analysis is image processing based. Features in [scikit-image](http://scikit-image.org/) such as feature detection and tracking as well as image warping and transformation. There are a few sub-projects under this project idea that could be tackled and expanded by a student.
+
+** Looking into the differences between `sunpy.image.Crotate` and [`skimage.transform`](http://scikit-image.org/docs/0.9.x/api/skimage.transform.html) specifically the `AffineTransform` type code. The motivation for this is using scikit-image rather than maintaining our own C extension code would make the SunPy code base easier to maintain as well as providing more features. As part of this work a patch to [issue #741](https://github.com/sunpy/sunpy/issues/741) could be devised.
+
+** Implement a fine alignment routine to be added to the `MapCube` API, to allow the stacking of various images. This is made possible by new features recently added to scikit-image https://github.com/scikit-image/scikit-image/pull/834
+
+** The outer layers of the Sun do not rotate as a solid body, the equatorial regions rotate faster than the poles. When considering analysis of surface features on the Sun compensating for this rotation is essential. This project would involve finishing work already started on this and understanding the physical processes behind the computational algorithms.
+
+* **Requirements**: Python
+
+* **Difficulty**: Medium to Hard
+
+* **Mentor**: Albert Shih, Jack Ireland, David Perez-Suarez
+
+## HELIO - capabilities improvement
+
+* **Description**: SunPy has already the capability to access to the Heliophysics Events Catalogue provided by the HELiophysics Integrated Observatory.  This catalogue provides access to different lists of events observed anywhere in the heliosphere.  However, HELIO offers a lot more web services of interest for the solar community.  Some of the services can provide information of when and where a planet or instrument where located, properties on features detected on the sun, or properties of some heliospheric observations; moreover it also allow the discovery of new data by a propagation model which simulates three different scenarios - Coronal Mass Ejections, High speed solar wind and Solar Energetic Particles events.
+
+ This project would consist in the creation of an interface to access to HELIO services in a similar way that other services like HEK or VSO are accessible at the moment. HELIO uses VOTables as the standard to transfer the data, astropy provides support for reading such file format, therefore some understanding of astropy may be needed.   
+
+* **Requirements**: All the services from HELIO are through webservices (SOAP, REST), thus some understanding on that would be beneficial. VOTable parser provided from astropy will be used, so familiarization with such interface will be helpful.
+
+* **Difficulty**: Medium
+
+* **Mentors**: David Perez-Suarez, (Marco Soldati, Kevin Benson - HELIO)
+
+## Idea
+* **Description**: The ...
+* **Requirements**: Knowledge of ...
+* **Mentor**: Mentor A, Mentor B
 
 
 ### List of Mentors
