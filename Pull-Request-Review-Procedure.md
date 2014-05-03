@@ -6,7 +6,8 @@ Each pull request *must* meet the following criteria before it is considered for
 
 * The code must be PEP 8 compliant and meet the ill-defined SunPy quality standards.
 * The PR must contain a CHANGELOG entry.
-* The test coverage **ABSOLUTELY** must not decrease, and for new features should be at or very close to 100%. 
+* The test coverage **ABSOLUTELY** must not decrease, and for new features should be at or very close to 100%.
+* All code must be properly documented. Each function and each class must have an associated doc string in the correct format.
 
 #Review Process
 
