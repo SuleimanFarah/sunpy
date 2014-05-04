@@ -1,11 +1,11 @@
 About Me
 ========
--Name: Mateo Inchaurrandieta
--Email: mateo.inchaurrandieta (at) gmail (dot) com
--Studies: First Year Computer Science at [University College London](http://www.cs.ucl.ac.uk)
--GitHub: mateoi
--IRC: mateoi
--Languages: English (native), Spanish (native)
+- Name: Mateo Inchaurrandieta
+- Email: mateo.inchaurrandieta (at) gmail (dot) com
+- Studies: First Year Computer Science at [University College London](http://www.cs.ucl.ac.uk)
+- GitHub: mateoi
+- IRC: mateoi
+- Languages: English (native), Spanish (native)
 
 Background
 ==========
