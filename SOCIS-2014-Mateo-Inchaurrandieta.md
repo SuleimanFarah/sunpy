@@ -53,7 +53,7 @@ Past Projects
 I'm currently working for a small, three-person team developing an Android app for an art gallery. It involves writing the code for static tablets that display video and audio about different pieces, and the files can be managed remotely from a desktop computer using a simple UI we wrote. Also, there is an Arduino-based ultrasound and motion sensor to attract passerby by playing audio snippets and to record usage statistics (i.e. percentage of people who interact with the tablet). I am in charge of the Arduino development, on top of being the project leader so having to manage internal communication, deadlines, deliverables, as well as communicating with the client to find out her requirements and proposing solutions. We fully intend to release the source code under the GPL once we're finished.
 
 Other Info
-##########
+==========
 ##Available Platforms
 I run Linux Mint 16 KDE, 64-bit and Windows 7, 64 bit. 
 
