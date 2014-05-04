@@ -11,7 +11,7 @@ Good luck!
 ***
 * [[SOCIS 2014]]
 * [[SOCIS 2014 Ideas Page]]
-* [[SoCiS 2014 Students applications]]
+* [[SoCiS 2014 Student Applications]]
 
 ### SOCIS 2013
 ***
