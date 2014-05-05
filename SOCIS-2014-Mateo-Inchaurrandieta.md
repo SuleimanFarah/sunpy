@@ -13,7 +13,7 @@ I first started programming when I was 13, when I found an old TI-83 that no one
 
 I'm familiar with git and the Linux shell. I have never contributed to an open source project before, because I was daunted and frankly a bit intimidated by some communities. I'm glad to have discovered SunPy - everybody here seems very nice and I look forward to working with you!
 
-Outside programming, my interests are football (american and otherwise), cooking, and eating the food I just cooked.
+Outside programming, my interests are football (american and otherwise) and cooking.
 
 Project
 =======
@@ -52,6 +52,8 @@ Past Projects
 =============
 I'm currently working for a small, three-person team developing an Android app for an art gallery. It involves writing the code for static tablets that display video and audio about different pieces, and the files can be managed remotely from a desktop computer using a simple UI we wrote. Also, there is an Arduino-based ultrasound and motion sensor to attract passerby by playing audio snippets and to record usage statistics (i.e. percentage of people who interact with the tablet). I am in charge of the Arduino development, on top of being the project leader so having to manage internal communication, deadlines, deliverables, as well as communicating with the client to find out her requirements and proposing solutions. We fully intend to release the source code under the GPL once we're finished.
 
+Some of my past projects can be found on my GitHub page [here](https://github.com/mateoi).
+
 Other Info
 ==========
 ##Available Platforms
@@ -59,3 +61,6 @@ I run Linux Mint 16 KDE, 64-bit and Windows 7, 64 bit.
 
 ##Availability
 I'm usually available from about 9 am to around 11 pm. My time zone is UTC +1 (British Summer Time / West Africa Time - so 0800 to 2200 UTC), but I will probably change that to UTC -5 (Canada/US/Mexico Central Daylight Time - so 1400 to 0400 UTC). I might take a week or so off, when I will have full internet access but little or no coding will take place.
+
+##Sunpy Contributions
+* [Solution](https://github.com/sunpy/sunpy/pull/967) for [Issue 960](https://github.com/sunpy/sunpy/issues/960)
