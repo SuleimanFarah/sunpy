@@ -5,10 +5,9 @@
   - Proposed election of Tom Robitaille to the SunPy board
 
 ### Attendance
-Andrew Inglis (Secretary), Albert Shih, Stuart Mumford, Jack Ireland, Russell Hewett
+**Present**: Andrew Inglis (Secretary), Albert Shih, Stuart Mumford, Jack Ireland, Russell Hewett
 
-### Absent
-Steven Christe (Chair), David Perez-Suarez (Vice-Chair), Juan Carlos Martinez Oliveros
+**Absent**: Steven Christe (Chair), David Perez-Suarez (Vice-Chair), Juan Carlos Martinez Oliveros
 
 ### Meeting notes
   - Discussion of what we should consider when proposing to add new board members. Current guidelines limit the size of the board to 10. Current size is 8, will increase to 9 with election of an additional member.
