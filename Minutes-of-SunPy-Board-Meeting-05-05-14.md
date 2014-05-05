@@ -5,7 +5,7 @@
  - Discussion on voting by proxy (Considerations include establishing quorum, verification of proxy status, dispute resolution, etc.) 
  - SOCIS 2014 
 
- - Lead Developer Report 
+ - Lead Developer Report
    - sub-domains (hosting) 
    - PR acceptance 
    - GSOC 2014 
@@ -26,7 +26,7 @@
 
  - **Discussion of SEP-0003**, regarding the **Lightcurve Factory** postponed until a future meeting.
 
- - The issue of proxy voting is raised. Currently no procedure for this within SunPy.
+ - The issue of **proxy voting** is raised. Currently no procedure for this within SunPy.
    - As SunPy becomes more international, this will become a more important issue, as Board members will inevitably be absent.
    - One possibility would be to arrange offline votes. The system would involve specifying a specific time window (e.g. 1 day) for Board members to cast their vote (e.g. by email, doodle poll). 
 
