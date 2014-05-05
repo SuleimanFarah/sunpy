@@ -1,3 +1,6 @@
+### Date of Meeting
+5th May 2014
+
 ### Agenda 
  - SEP-0004 Quantities (ready for vote?) 
  - Discussion on SEP-0003 Light curve factory 
