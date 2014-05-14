@@ -2,7 +2,7 @@ The [[SOCIS 2014 organization application page|SOCIS 2014]].
 
 *Students*: You need to apply in the 
 [SOCIS website](http://sophia.estec.esa.int/socis2014/) and also don't forget to 
-add your application to this [[wiki|Socis-2014-students-applications]].  
+add your application to this [[wiki|SoCiS 2014 Student Applications]].  
 Try to follow the [[application guidelines|GSoC-student-application-guidelines]] 
 we set for the GSoC, you will get more chances to be selected if you follow them.
 
