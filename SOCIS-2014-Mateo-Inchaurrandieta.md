@@ -64,4 +64,4 @@ I'm usually available from about 9 am to around 11 pm. My time zone is UTC +1 (B
 
 ##Sunpy Contributions
 * [Solution](https://github.com/sunpy/sunpy/pull/967) for [Issue 960](https://github.com/sunpy/sunpy/issues/960)
-* PEP-8 fixes: #984
+* PEP-8 fixes: #984 
