@@ -25,16 +25,16 @@ The generic spectrum object will simply generalize the capabilities of its inher
 Define and document an interface - what the class can do and what it can't. Research about the problem and how it can be solved best, as well as caveats and possible pitfalls. Get acquainted with the structure and style of the whole source and with the specifics of the more relevant parts.
 
 ###Week 3 / 4
-Write unit tests and outline the implementation of the various functions needed. Decide and document relevant data formatting, if any - for a possible file I/O capability? Research about the physical characteristics and limitations of the detectors used.
+Write unit tests and outline the implementation of the various functions needed. Decide and document relevant data formatting, if any - for a possible file I/O capability? Research about the physical characteristics and limitations of the detectors used. Also define interactions and interfacing with the Map and Lightcurve objects for display and data analysis purposes.
 
 ###Week 5 / 6
-Begin implementing the code, continue writing unit tests. Get familiar with relevant code and its features and bugs
+Begin implementing the backend code, continue writing unit tests. Get more familiar with the code that this object will interact with and its features and bugs.
 
 ###Week 7 / 8
-Begin writing relevant documentation and debugging written code, continue coding.
+Begin writing relevant documentation and debugging written code, continue coding. By the second half of the block, start interacting with Map and Lightcurve objects.
 
 ###Week 9 / 10
-Code should be in a more or less working state by now. Begin cleanup, continue debugging, testing and writing documentation.
+Finalize display properties and complete  major features. By the end of this block, the code should be in a more or less working state. Begin cleanup, continue debugging, testing and writing documentation.
 
 ###Week 11 / 12
 Clean code, optimize subroutines, test and debug.
@@ -46,7 +46,7 @@ Final code submission. Allow these two weeks to work on any outstanding bugs / e
 I intend to remain part of the SunPy community after the summer, maintaining and developing.
 
 ###All stages
-At all stages I intend to work closely with the whole community in general and my mentors in particular. I will keep them informed of my current work package and progress, and ask for reviews and feedback. I think criticism and advice are very useful and I always try to understand it and follow it.
+At all stages I plan to work closely with the whole community in general and my mentors in particular. I will keep them informed of my current work package and progress, and ask for reviews and feedback. I think criticism and advice are very useful and I always try to understand it and follow it.
 
 Past Projects
 =============
@@ -64,3 +64,4 @@ I'm usually available from about 9 am to around 11 pm. My time zone is UTC +1 (B
 
 ##Sunpy Contributions
 * [Solution](https://github.com/sunpy/sunpy/pull/967) for [Issue 960](https://github.com/sunpy/sunpy/issues/960)
+* PEP-8 fixes: #984
