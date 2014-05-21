@@ -10,7 +10,7 @@ Biography: I'm currently studying for a master in maths at Cambridge Uni, lookin
 
 Schedule: In June I'll mostly be celebrating having finished my exams, so I expect to do the bulk of the coding in July and August. I will also need to move from the UK to somewhere else in Europe (depending on where I will do my PhD) during the summer, so that will take up some time, and I want to go on a short holiday (less than a week).
 * Week 1-3: get a first port to Python 3 working, keeping track of features that will have to be imported from __future__ for python 2.7
-* Week 4: remove python <2.7 hacks and add __future__ imports to make the code run on pythons 2.7 and 3
+* Week 4: remove python <2.7 hacks and add \__future\__ imports to make the code run on pythons 2.7 and 3
 * Week 5: check the coverage of the test suite and add tests where incompatibility due to code changes is possible
 * Week 6: upgrade packaging, complete changes documentation
 * Week 7: finalize python 3 port, inform community
