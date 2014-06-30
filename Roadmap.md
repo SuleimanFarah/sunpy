@@ -1,14 +1,9 @@
 This page contains the major features desired in every release, general feature requests should like in the issue tracker. This is for milestones that link together to achieve milestones later on.
 
-## Release 0.5 (June 2014)
-* 70%+ Test coverage
-* Functions should accept astropy quantities
-* LightCurve Refactor, downloading function should be removed
-* First cut at SunPy Gallery implemented
-
 ## Release 0.6
 * 80%+ Test coverage
 * Integrate Astropy coordinates
+* Functions should accept astropy quantities
 * Include high quality solar ephemeris library
 * Replace our pixel to world transformation functions with Astropy.wcs
 * Enable storing of lightcurve data in the database.
