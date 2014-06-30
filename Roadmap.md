@@ -9,10 +9,12 @@ This page contains the major features desired in every release, general feature 
 * Enable storing of lightcurve data in the database.
 
 ## Release 0.7
+* 85%+ Test coverage
 * Full support for Python 3.x
 * Integrate Astropy time object into parse_time() and the Time Range object
 
 ## Release 0.8
+* 90%+ test coverage
 * Refactor plotting functions outside of core datatypes
 
 ## Release 0.9
