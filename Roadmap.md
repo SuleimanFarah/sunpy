@@ -11,7 +11,6 @@ Summary of this release: This release will continue integration with Astropy. Ma
 * Include high quality solar ephemeris library
 * Replace our pixel to world transformation functions with Astropy.wcs
 * database should integrate with light curve data
-* Convert to numpy standard for accessing data in image arrays (see [link](http://docs.scipy.org/doc/numpy/reference/internals.html#internal-organization-of-numpy-arrays))
 
 ## Release 0.7
 * Full support for Python 3.x
