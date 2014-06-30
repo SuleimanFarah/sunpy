@@ -11,7 +11,7 @@ This page contains the major features desired in every release, general feature 
 * Integrate Astropy coordinates
 * Include high quality solar ephemeris library
 * Replace our pixel to world transformation functions with Astropy.wcs
-* database should integrate with light curve data
+* Enable storing of lightcurve data in the database.
 
 ## Release 0.7
 * Full support for Python 3.x
