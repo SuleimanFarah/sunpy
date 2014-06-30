@@ -1,5 +1,6 @@
+This page contains the major features desired in every release, general feature requests should like in the issue tracker. This is for milestones that link together to achieve milestones later on.
+
 ## Release 0.5 (June 2014)
-Summary of this release: This release will continue integration with Astropy. Major refactor for light curve and addition of observation-based map classes.
 * 70%+ Test coverage
 * Functions should accept astropy quantities
 * LightCurve Refactor, downloading function should be removed
