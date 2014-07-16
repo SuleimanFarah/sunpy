@@ -1576,3 +1576,300 @@
 [23:39:34] *** Joins: astrofrog (~Adium@pD9528420.dip0.t-ipconnect.de)
 [23:42:29] *** Quits: astrofrog (~Adium@pD9528420.dip0.t-ipconnect.de) (Client Quit)
 ```
+
+# 15/07/2014
+```
+[21:28:37] <__name__> but i guess there's no proper python concept for it
+[21:28:43] <rishabh_kwt> I always wonder how databases manage this, unfortunately I have to wait for database systems course
+[21:28:44] <__name__> i've talked to people
+[21:28:56] <__name__> well, DBs just parse their SQL
+[21:29:04] <__name__> so they can have arbitrary syntax
+[21:29:16] <jhourcle> how databases manage what?
+[21:29:35] <rishabh_kwt> sql jhourcle 
+[21:29:47] <jhourcle> in what regards?
+[21:29:49] *** Quits: ehsteve (~Adium@gs-sv-1-49-ac1.gsfc.nasa.gov) (Client Quit)
+[21:30:04] <jhourcle> not all databases handle SQL
+[21:30:42] <jhourcle> I've been playing w/ elasticsearch lately … and years ago, I used to manage LDAP servers.
+[21:30:53] <Cadair> eught LDAP
+[21:31:04] <Cadair> I have a LDAP server on my home box
+[21:31:07] <Cadair> it is a PITA
+[21:31:25] <jhourcle> why do you have an LDAP server at home?
+[21:31:51] <Cadair> in an attempt to make various web services use a single set of logins
+[21:31:51] <jhourcle> let me guess … linux or MacOS ?
+[21:32:00] <Cadair> linux
+[21:32:04] <Cadair> obv :p
+[21:32:39] <jhourcle> Macs tried switching over to an LDAP-like system years ago … it makes it a pain to manage even a basic box.
+[21:32:55] <jhourcle> LDAP's great for when you're managing 38k users … which we were.
+[21:33:19] <Cadair> I am managing ~10
+[21:33:27] <Cadair> no k, just 10 :p
+[21:33:37] <Cadair> most of em don't use it anyway!
+[21:33:56] <jhourcle> Apple's default config, when they first set up LDAP auth ..
+[21:34:04] <jhourcle> if you had an account, you got access to the machine.
+[21:34:17] <jhourcle> so, NASA wanted us to point at their LDAP server ...
+[21:34:28] <jhourcle> I have no idea how many thousands of people they have on the NASA LDAP server
+[21:34:38] <Cadair> lol
+[21:34:39] <jhourcle> but every one of 'em would've been able to log in
+[21:34:54] <Cadair> XD
+[21:35:08] <Cadair> jhourcle, you seen what rishabh_kwt has done with the jsoc client I wrote?
+[21:35:17] <jhourcle> nope.  I don't use sunpy.
+[21:35:43] <jhourcle> I just write software … I never actually use any of it.
+[21:35:43] <Cadair> I know, I thought you might like this tho
+[21:36:10] <Cadair> this is an example of the API: https://github.com/gunner272/sunpy/pull/4/files#diff-61f5137ce8bef90efb1dd91756542acbR80
+[21:36:31] <Cadair> you can query the JSOC with a very similar API to our VSO client
+[21:37:28] <jhourcle> ah … okay.
+[21:37:45] <jhourcle> we've had talk about trying to put a concept of 'series' into the VSO ...
+[21:37:54] <jhourcle> but it's rather stalled.
+[21:39:03] <jhourcle> I had a poster at SPD that talked about the issue, but didn't say specifically why I cared about it:
+[21:39:13] <jhourcle> http://zenodo.org/record/10194
+[21:39:51] <Cadair> cool
+[21:40:23] <Cadair> jhourcle, I would like to be able to do some things to make the JSOC series more user friendly but I am struggling to work out how
+[21:40:44] <Cadair> I suppose to some extent if the user is querying the JSOC they have to be a little toughened!
+[21:40:51] <jhourcle> yes.
+[21:40:57] <jhourcle> the only thing I can recommend --
+[21:41:04] <jhourcle> dump a list of the series names
+[21:41:18] <jhourcle> and then you could potentially allow searching across them
+[21:41:24] <Cadair> jhourcle, I realised today that I can pull that from JSOC
+[21:41:31] <jhourcle> yes, you can
+[21:41:34] *** Joins: travis-ci (~travis-ci@ec2-23-20-93-133.compute-1.amazonaws.com)
+[21:41:34] <travis-ci> [travis-ci] Cadair/sunpy#444 (0.5_testing/temp_fitsfile - 27f62a9 : Stuart Mumford): The build has errored.
+[21:41:34] <travis-ci> [travis-ci] Change view : https://github.com/Cadair/sunpy/compare/19f1695cdebd^...27f62a9fcb23
+[21:41:34] <travis-ci> [travis-ci] Build details : http://travis-ci.org/Cadair/sunpy/builds/30014750
+[21:41:34] *** Parts: travis-ci (~travis-ci@ec2-23-20-93-133.compute-1.amazonaws.com) ()
+[21:41:42] <Cadair> oh travis!
+[21:42:00] <jhourcle> just make sure to pull from jsoc.stanford.edu, NOT jsoc2.stanford.edu
+[21:42:16] <Cadair> ok, I think that is the URL I am using for everything else
+[21:42:21] <jhourcle> jsoc2 has a few thousand series in it.
+[21:42:39] <Cadair> jhourcle, I would have to give some thought as to the API I would want to present to the user for series searching
+[21:42:45] <Cadair> can you pull descriptions for them as well?
+[21:42:45] <jhourcle> jsoc only has the 'published' serii (serieses?) in it
+[21:42:52] <Cadair> right
+[21:43:05] <jhourcle> their descriptions suck … and in some cases, are wrong
+[21:43:11] <Cadair> XD
+[21:43:41] <jhourcle> but yes, you can pull the string labels
+[21:44:14] <Cadair> jhourcle, you don't happen to have the post request for that to hand do you!?
+[21:44:26] <Cadair> I can work it out, but I thought it was worth asking ;)
+[21:44:43] <jhourcle> http://jsoc.stanford.edu/cgi-bin/ajax/show_series?filter=
+[21:44:56] * Cadair <3 jhourcle :p
+[21:45:08] <jhourcle> 'filter' is regex-like
+[21:45:31] <jhourcle> http://jsoc.stanford.edu/cgi-bin/ajax/show_series?filter=aia
+[21:45:39] <Cadair> what the smeg are "prime keys"
+[21:46:00] <jhourcle> oh … right ...
+[21:46:09] <jhourcle> um … have you been drinking?
+[21:46:25] <jhourcle> because I don't think you want me to explain it to you if you're sober
+[21:46:49] <Cadair> yes, I have been drinking
+[21:46:56] <jhourcle> okay then ...
+[21:46:58] <Cadair> nice glass of wine nearly gone
+[21:47:25] <jhourcle> do you know the concept of 'journal tables' in databases?
+[21:47:37] * Cadair senses that I am going to have to add this to our JSOC wiki page of shame: https://github.com/sunpy/sunpy/wiki/IRC-Logs---Talking-about-JSOC-and-VSO
+[21:47:44] <Cadair> jhourcle, no
+[21:48:02] <Cadair> sorry, my relational DB knowledge only really goes as far as high school
+[21:48:14] <jhourcle> okay … so there's this concept in databases ...
+[21:48:20] <jhourcle> where sometimes, you want to keep track of changes
+[21:48:36] <jhourcle> so when you replace a record, you go and write the old record to another table ...
+[21:48:44] <jhourcle> often with the time it was replaced, who did it, etc.
+[21:49:05] <Cadair> ok, makes sense
+[21:49:06] <jhourcle> which allows you to go back and audit when something's gone wrong.
+[21:49:16] <jhourcle> who deleted or replaced something ...
+[21:49:23] <jhourcle> well, DRMS doesn't do that.
+[21:49:30] <jhourcle> then NEVER DELETE ANYTHING
+[21:49:39] <jhourcle> well, I say 'never' but that's not true.
+[21:49:45] <jhourcle> they'll drop whole tables, then recreate.
+[21:50:25] <jhourcle> but they rarely ever delete records … only corrupted records which should've never been written the first place.
+[21:50:26] <Cadair> o.o
+[21:50:50] <jhourcle> things like when the date is decades before the launch of the spacecraft
+[21:50:54] <Cadair> ok, that's not that surprising after what you have already told me about DRMS
+[21:51:15] <jhourcle> so, anyway …
+[21:51:31] <jhourcle> do you know what a 'primary key' is, 
+[21:51:33] <jhourcle> ?
+[21:51:57] <jhourcle> … I'll take that as a no
+[21:52:14] <Cadair> yes, I know primary key
+[21:52:20] <jhourcle> okay.
+[21:52:23] <Cadair> the unique field in a table
+[21:52:27] <Cadair> row
+[21:52:31] <jhourcle> not quite.
+[21:52:48] <jhourcle> it's something that uniquely identifies a record in a given table
+[21:52:54] <Cadair> yeah
+[21:52:57] *** Quits: rajul (~rajul@182.68.220.99) (Ping timeout: 250 seconds)
+[21:52:57] <jhourcle> but it doesn't have to be a single field
+[21:52:59] <Cadair> that's kinda what I meant :p
+[21:53:02] <jhourcle> it can be a 'composite key'
+[21:53:10] <Cadair> oh right, interesting not done that before
+[21:53:10] <jhourcle> where it's composed of more than one field.
+[21:53:42] <jhourcle> if you've ever done a join table, the PK in the join table is typically the FKs to the tables is joining
+[21:53:52] <jhourcle> um … PK = primary key, FK = foreign key
+[21:53:55] <Cadair> yeah
+[21:53:57] <Cadair> makes sense
+[21:54:28] <jhourcle> anyway, as they never delete anything, you run into a problem ...
+[21:55:00] <jhourcle> you can't do 'SELECT … FROM TABLE WHERE (time)'
+[21:55:19] <jhourcle> as you'll get back not only the record you want, but also all of the ones they've deleted.
+[21:55:27] <jhourcle> erm … haven't deleted
+[21:55:31] <Cadair> haha
+[21:55:35] <jhourcle> have replaced by something fresher.
+[21:56:08] <Cadair> right
+[21:56:10] <jhourcle> so the 'prime key' are the fields that DRMS uses to determine that two records are different versions of the same observation
+[21:56:47] <Cadair> okay :s
+[21:56:56] <jhourcle> … now the thing is ...
+[21:57:03] <jhourcle> what they built COULD have been really cool
+[21:57:27] <jhourcle> you could've done queries like 'show me what this query would've generated if I ran it last week'
+[21:58:03] <Cadair> don't tell me you can't do that :p
+[21:58:10] <jhourcle> technically, you could've done that less efficiently with a journal table and UNION
+[21:58:39] <jhourcle> and then you don't need to take the hit of having a massive table for all of your normal work
+[21:59:15] <jhourcle> … but to the best of my knowledge, they've never tried adding support for queries from the past
+[21:59:53] <Cadair> it sounds like you know far to much about DRMS for your own health
+[22:00:45] <jhourcle> 4 years of babysitting it.
+[22:01:09] <jhourcle> I actually went and wrote a script so that you could install it without it taking 2 days of configuration
+[22:01:23] <jhourcle> the folks at Stanford thought I was crazy … 
+[22:01:39] <Cadair> haha why?!
+[22:01:43] <jhourcle> … I spent 2 weeks on the script ...
+[22:01:47] <Cadair> why would that be crazy!
+[22:01:54] <jhourcle> I have no idea...
+[22:01:59] <Cadair> sounds like a very good idea to me!
+[22:02:09] <jhourcle> but they accepted it, and put it into their distribution
+[22:02:14] <Cadair> nice
+[22:02:21] <jhourcle> of course, on their next release, they changed their config file, so my script broke
+[22:02:36] <Cadair> jhourcle, do you have any magic information on wtf Segments are?
+[22:02:43] <Cadair> jhourcle, oh dear!
+[22:02:57] <jhourcle> okay … segments...
+[22:03:04] <jhourcle> do you know about SUMS ?
+[22:03:17] <Cadair> a little from what you have told me but probably not enough
+[22:03:37] <jhourcle> okay, SUMS is the 'Storage Unit Management System'
+[22:03:59] <jhourcle> basically, DRMS doesn't actually have any data in it — it's what would be in the FITS headers, and that's it.
+[22:04:14] <jhourcle> (and sometimes not even that … but we won't get into those issues)
+[22:04:26] <jhourcle> SUMS keeps track of the files that hold the data
+[22:04:41] <Cadair> right
+[22:04:42] <jhourcle> BUT they decided that it was inefficient to track each file individually
+[22:04:45] *** Joins: rajul (~rajul@182.68.129.133)
+[22:05:01] <jhourcle> so there's the 'storage unit number' (SUNUM) in DRMS
+[22:05:28] <jhourcle> but you then ALSO need um … I forget what it's called ...
+[22:05:40] *** Joins: travis-ci (~travis-ci@ec2-54-82-195-244.compute-1.amazonaws.com)
+[22:05:40] <travis-ci> [travis-ci] Cadair/sunpy#444 (0.5_testing/temp_fitsfile - 27f62a9 : Stuart Mumford): The build failed.
+[22:05:40] <travis-ci> [travis-ci] Change view : https://github.com/Cadair/sunpy/compare/19f1695cdebd^...27f62a9fcb23
+[22:05:40] <travis-ci> [travis-ci] Build details : http://travis-ci.org/Cadair/sunpy/builds/30014750
+[22:05:40] *** Parts: travis-ci (~travis-ci@ec2-54-82-195-244.compute-1.amazonaws.com) ()
+[22:05:42] <jhourcle> I want to say 'slot number', but I don't thnk that's right
+[22:06:04] <jhourcle> anyway, each storage unit on disk is a directory
+[22:06:18] <jhourcle> and in each directory is  set of numbered directories
+[22:06:39] <jhourcle> and in each of those subdirectories MAY be more than one file
+[22:06:46] <jhourcle> the files are the 'segments'
+[22:08:01] <Cadair> ahhhhhh what
+[22:08:01] <jhourcle> so, for instance … in aia.lev1
+[22:08:06] <Cadair> that horrible!
+[22:08:18] <jhourcle> there are actually two files for every record in DRMS
+[22:08:20] <jhourcle> oh … right ...
+[22:08:41] <jhourcle> so the difference between 'segments' and um … let me go make sure they're called slots
+[22:10:38] <jhourcle> I was right 'slotnum'
+[22:10:55] <jhourcle> anyway … so you have a directory structure that's basically :
+[22:11:21] <jhourcle> D{recnum}/{slotnum}/{segment}.{fileextension}
+[22:11:58] <Cadair> right
+[22:12:07] <Cadair> so for AIA you have image and spike segments
+[22:12:12] <Cadair> I have no idea what spike is
+[22:12:13] <jhourcle> exactly.
+[22:12:17] <Cadair> but there we go
+[22:12:21] <jhourcle> it's the bad pixel mask
+[22:12:30] <Cadair> for IRIS it seems that you have image_lvl1
+[22:12:40] <Cadair> nothing like consistency
+[22:12:54] <jhourcle> DRMS wasn't built to serve data
+[22:13:09] <jhourcle> it's basically their scratch space for their pipeline processing
+[22:13:32] <jhourcle> and someone had this great idea that 'hey, we'll use it to serve data'
+[22:13:55] <jhourcle> and then I ask questions like 'how do I get the best calibrated AIA image at (time)?'
+[22:14:27] <jhourcle> and 'how is (table) related to (otherTable)'?
+[22:14:45] <jhourcle> and then they decided that they'd make ONE HUGE TABLE
+[22:14:59] <Cadair> the ONE table to rule them all?
+[22:15:07] <jhourcle> for AIA, yes.
+[22:15:17] <jhourcle> of course, they wanted to make it have one entry every 10 seconds
+[22:15:23] <jhourcle> with segments for each of the wavelengths
+[22:15:42] <jhourcle> the problem was, they didn't want me only downloading a single file
+[22:15:53] <jhourcle> I got this whole long bitch about how 'storage units are atomic'
+[22:16:33] <jhourcle> but I pushed back and said that I wasn't going to download 1TB of data because someone wanted to make a daily movie for a single wavelength
+[22:16:42] <jhourcle> … and then trash 7/8 of it.
+[22:17:12] <jhourcle> (original AIA cadence was 10sec … but they found they needed longer exposures, so it's now 12sec)
+[22:17:58] <Cadair> can you not download only one segment?
+[22:18:14] <jhourcle> normal people can
+[22:18:26] <Cadair> also is that why wavelength is bolted onto the series in a little odd way? or is that just DRMS?
+[22:18:32] <jhourcle> but they're making us run DRMS and SUMS at each of the sites
+[22:18:39] <jhourcle> erm … by 'sites'
+[22:18:55] <jhourcle> the locations that are caching AIA & HMI data for distribution
+[22:19:01] <Cadair> yeah
+[22:19:49] <jhourcle> and they didn't want us forking SUMS
+[22:20:02] <jhourcle> so it might have less than a full 'storage unit' at a time
+[22:20:31] <jhourcle> of course, they didn't want to make any changes AT ALL on their side
+[22:20:41] <jhourcle> so we got this whole 'our data system is done, we're not making any changes'
+[22:20:49] <jhourcle> and then we had to code around all of the restrictions ...
+[22:20:57] <jhourcle> and then they hired some outside DB consultant
+[22:21:05] <jhourcle> who had never heard what our limitations were ...
+[22:21:19] <jhourcle> and decided to re-write the whole damned replication stuff 
+[22:21:30] <jhourcle> which of course violated my security rules many times over.
+[22:21:53] <jhourcle> and when I tried pushing back changes, they refused to accept them
+[22:22:31] <jhourcle> but hey, nothing's wrong with running shell scripts that have no clue what input they're getting, and don't bother quoting anything, right?
+[22:22:55] <jhourcle> or blindly taking SQL scripts, and throwing 'em at your database.
+[22:23:16] <Cadair> this is from a DB consultant?
+[22:23:19] <jhourcle> and they want to be able to push delete, drop table, etc. on you
+[22:23:20] <jhourcle> yes
+[22:23:35] <Cadair> o.o
+[22:23:43] <jhourcle> oh … and the scripts delete all of the files, so you have no audit trail
+[22:24:08] <Cadair> wtf and this is the system you are using?
+[22:24:09] <jhourcle> it sends a command to a server (FTP) … polls until it sees a file get created … 
+[22:24:14] <Cadair> or you broke them?
+[22:24:27] <jhourcle> FTPs the file it gets … throws it at the database … then deletes it
+[22:24:41] <jhourcle> this is the joys of 'NetDRMS'
+[22:25:02] <jhourcle> I have my database locked down so it can only do 'INSERT'
+[22:25:10] <jhourcle> but it's still pretty shit.
+[22:25:22] <jhourcle> and I replaced their shell script … but the general logic is still there.
+[22:25:24] <Cadair> haha don't give em the permissions!!
+[22:25:34] <Cadair> dear god it sounds so very bad
+[22:26:09] <jhourcle> people on here get offended when I got into my diatribe about why scientists shouldn't write production code.
+[22:26:29] <Cadair> jhourcle, most scientists should not!
+[22:26:47] <jhourcle> http://xkcd.com/793/
+[22:27:02] <Cadair> jhourcle, I wanna update the documentation for the "segment" attr
+[22:27:09] <Cadair> I have no idea how to describe it
+[22:27:29] <jhourcle> yes, yes .. I know, you have a PhD in physics … and I only have a master's degree … but that doesn't mean that you automatically know more than me.
+[22:27:47] <Cadair> jhourcle, haha!
+[22:27:50] <jhourcle> especially when we're having dicussions in fields that are my expertise
+[22:27:57] <jhourcle> it's like going to the doctor ...
+[22:28:25] <jhourcle> if I'm having eye surgery … I do *not* want the ear nose & throat guy operating on me
+[22:28:35] <jhourcle> I dont' care that he has the same degree.
+[22:29:27] <Cadair> bahaha
+[22:30:20] <jhourcle> anyway … how to explain segments ...
+[22:30:31] <jhourcle> segments are when there's more than one file associated with a given record
+[22:31:04] <jhourcle> and you only want to select a single file … the problem is hmi.s_720s
+[22:31:40] <jhourcle> each 'record' is actually 24 files
+[22:32:56] <jhourcle> {I,Q,U,V}{0,1,2,3,4,5}
+[22:33:44] <Cadair> 0,1,2,3,4,5?!
+[22:33:53] <jhourcle> they had proposed at one time putting JPEG browse images in w/ the FITS files for some of them.
+[22:34:04] <jhourcle> yeah, 6 of 'em, 0-indexed
+[22:34:13] <jhourcle> what, does python use 1-indexed arrays
+[22:34:14] <jhourcle> ?
+[22:35:45] <Cadair> no, what are the 6?
+[22:35:58] <Cadair> why are there 6?
+[22:36:00] <jhourcle> I have no idea
+[22:36:27] <jhourcle> you'd have to ask someone who understood stokes parameters
+[22:36:51] <Cadair> lol
+[22:36:52] <Cadair> ok
+[22:38:14] <jhourcle> so, what I have learned from reading http://en.wikipedia.org/wiki/Stokes_parameters :
+[22:38:20] <jhourcle> I am not a physicist
+[22:39:31] *** Joins: rajul_ (~rajul@180.151.18.31)
+[22:39:33] <Cadair> right
+[22:39:51] *** Quits: rajul (~rajul@182.68.129.133) (Ping timeout: 272 seconds)
+[22:39:59] <Cadair> so "Segments choose which files to download when there are more than one present for each record"
+[22:40:10] <jhourcle> … oh, and it has something to do with polarized light
+[22:40:17] <Cadair> e.g. "image"
+[22:40:19] <jhourcle> I know 'I' is intensity
+[22:40:30] <jhourcle> you should probably assume 'image' for AIA
+[22:40:41] <jhourcle> unless otherwise specified
+[22:40:48] <Cadair> yeah I is intensity, Q is linear polarisation, U and V are left and right handed polarisation iirc
+[22:40:58] <jhourcle> and just assume that for all others, get it all
+[22:40:59] <Cadair> jhourcle, I was thinking that
+[22:41:13] *** Quits: rajul_ (~rajul@180.151.18.31) (Read error: Connection reset by peer)
+[22:41:15] <Cadair> that's gonna be a little hacky tho
+[22:41:24] <Cadair> I like uniform defaults
+[22:41:34] <Cadair> sttupid JSOC
+[22:42:24] <jhourcle> but the problem is that their system was never intended for this
+[22:46:57] <Cadair> jhourcle, what are the segment names for the stokes parameters?
+[22:48:44] <Cadair> don't worry, I will exportdata to check
+[22:54:56] *** Joins: rajul (~rajul@180.151.18.31)
+[23:09:12] <Cadair> thanks a lot jhourcle 
+[23:09:14] <Cadair> night
+[23:10:20] <jhourcle> sorry … was in another window.
+[23:10:36] <jhourcle> that was the {I,Q,U,V}{0,1,2,3,4,5} bit ...
+[23:10:53] <jhourcle> I0 through I5, Q0 through Q5, etc.
+```
