@@ -20,3 +20,7 @@ Query the HEK both manually and automatically from ginga and overlay the results
 ## Downloader integration with Database and Ginga
 
 Replace the VSO integration in the database module with the Unified Downloader and then integrate full querying in a Ginga plugin.
+
+## Refactor and Factory Spectrogram
+
+Build a Spectra() factory and refactor the whole `sunpy.spectra` module to pull it inline with Map and LightCurve.
