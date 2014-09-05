@@ -94,3 +94,8 @@ Replace the VSO integration in the database module with the Unified Downloader a
 ## Refactor and Factory Spectrogram
 
 Build a Spectra() factory and refactor the whole `sunpy.spectra` module to pull it inline with Map and LightCurve.
+
+## Interface to get heliospheric data from CDAweb
+
+CDAWEB provides as [SOAP interface](http://cdaweb.gsfc.nasa.gov/WebServices/SOAP/) which could be used
+within SunPy to download insitu data.  
