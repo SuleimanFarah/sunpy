@@ -14,7 +14,6 @@ The list of projects below will be changing as they are being taken by someone o
 
 
 ***
-This page is a ideas board for summer of code projects, these ideas should be expanded into full blown proposals / SEPs for ideas pages for GSOC / SOCIS etc.
 
 ## Feature Tracking / Detection
 
