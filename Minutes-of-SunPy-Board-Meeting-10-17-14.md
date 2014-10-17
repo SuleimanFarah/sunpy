@@ -2,10 +2,10 @@
 17th October 2014
 
 ### Agenda:
-1] Appointment of interim SunPy lead developer.
-2] Vote on Coordinates SEP (https://github.com/PritishC/sunpy-SEP/blob/MySEP/SEP-0005.md). 
-2] Vote on Affiliated Packages SEP (https://github.com/sunpy/sunpy-SEP/pull/14)
-3] Vote on Unified Downloader and Lightcurve factory SEP (https://github.com/sunpy/sunpy-SEP/pull/6)
+  - Appointment of interim SunPy lead developer.
+  - Vote on Coordinates SEP (https://github.com/PritishC/sunpy-SEP/blob/MySEP/SEP-0005.md). 
+  - Vote on Affiliated Packages SEP (https://github.com/sunpy/sunpy-SEP/pull/14)
+  - Vote on Unified Downloader and Lightcurve factory SEP (https://github.com/sunpy/sunpy-SEP/pull/6)
 
 ### Attendance:
 **Present:** Steven Christe (Chair), David Perez-Suarez (Vice-chair), Andrew Inglis (Secretary), Albert Shih, Stuart Mumford, Russel Hewett,  Juan Carlos Martinez Oliveros, Jack Ireland
@@ -20,7 +20,7 @@
 
  - Discussion on the **Affiliated packages SEP**.
 	- Affiliation is a formal mechanism of including projects managed by others in the SunPy Community, for example instrument software pipelines. Agreed that this SEP should only outline the fundamental concept of Affiliated Packages, not all the details.
-	- V**ote proceeds. 8-0 in favour.**
+	- **Vote proceeds. 8-0 in favour.**
 
  - **Albert** and **Juan **left the meeting. 
 
