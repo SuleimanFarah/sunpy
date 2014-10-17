@@ -22,9 +22,9 @@
 	- Affiliation is a formal mechanism of including projects managed by others in the SunPy Community, for example instrument software pipelines. Agreed that this SEP should only outline the fundamental concept of Affiliated Packages, not all the details.
 	- **Vote proceeds. 8-0 in favour.**
 
- - **Albert** and **Juan **left the meeting. 
+ - **Albert** and **Juan** left the meeting. 
 
- - V**ote on the Coordinates SEP.** 6-0 in favour.
+ - **Vote on the Coordinates SEP.** 6-0 in favour.
 
  - Discussion on the Unified Downloader SEP.
 	- Decided to hold a vote by email at a later date on this SEP (decided by 5-0 vote)
