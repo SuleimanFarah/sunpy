@@ -8,8 +8,8 @@ In order to maintain a high-quality code, all code should be submitted as a pull
 ###  Language Standard
 English is the default language for all doc strings and inline commands. Variables names should also be based on English words. In addition, the standard for spelling is American English.
 
-* Packages must be compatible with Python 2.6, 2.7, and 3.x (for 3.x compatibility, the 2to3 tool will be used).
-* The code _should_ be importable with no dependencies other than the Python Standard Library (v2.6), NumPy, SciPy, matplotlib, and components already in the core library. Adding dependencies to SunPy will be considered by are highly discouraged.
+* Packages must be compatible with Python 2.7, and 3.x (for 3.x compatibility, the six package should be used for new code).
+* The code _should_ be importable with no dependencies other than the Python Standard Library (v2.7), NumPy, SciPy, matplotlib, and components already in the core library. Adding dependencies to SunPy will be considered but are highly discouraged.
 * Docstrings must be present for all public classes/methods/functions, and must follow the form outlined in the “Documentation Guidelines” document [tbc]. Additionally, examples or tutorials in the package documentation are strongly recommended.
 * Unit tests are required for all public methods and functions, and should adhere to the standards set in the “Testing Guidelines” document [tbc].
 * C extensions will be allowed only when they provide a significant performance enhancement over pure python. When C extensions are used, the python interface must meet interface guidelines, and the use of Cython is strongly recommended.
