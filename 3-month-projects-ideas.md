@@ -12,6 +12,19 @@ The list of projects below will be changing as they are being taken by someone o
 **Possible mentors/help by**
 
 
+***
+
+## Integrating ChiantiPy and SunPy
+* **Description**: The CHIANTI atomic physics database is a valuable resource for solar physics.  It allows the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) to be calculated from their abundances, ionisation states, etc.  This is essential to understand instrument response functions, spectral observations, and so on.
+Currently, ChiantiPy and SunPy are incompatible due to issues such as licenses.  This project would involve development an interface between these two packages so that CHIANTI can be used by solar physicists through SunPy.
+
+* **Requirements**:
+
+* **Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) in producing and maintaining files required by the sunpy.instr.goes module for determining the thermodynamic properties of the emitting plasma observed by GOES.  It would also allow SunPy users to calculate spectra and exclusively through python without relying on SSW.
+
+**Idea from:** Daniel Ryan
+
+**Possible mentors/help by**
 
 ***
 
