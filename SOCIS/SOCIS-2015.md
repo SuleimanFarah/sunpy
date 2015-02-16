@@ -1,4 +1,4 @@
-# SOCIS 2014 Application
+# SOCIS 2015 Application
 
 [SOCIS website](http://sophia.estec.esa.int/socis2014/)
 Application deadline: April 15th
@@ -179,5 +179,5 @@ Mailing list.
 
 ## Additional notes:
 
-ESA Summer of Code 2013 will be recognized as the sponsor within the documentation 
+ESA Summer of Code 2015 will be recognized as the sponsor within the documentation 
 of the packages developed under this programme.
