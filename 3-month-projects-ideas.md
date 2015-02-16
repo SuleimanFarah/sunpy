@@ -50,25 +50,6 @@ services (REST) and JSON is a plus.
 
 * **Mentor**: Laszlo I. Etesi (HESPE data archive developer), Steven Christe (SunPy)
 
-## Now module
-* **Description**: [SolarMonitor.org](http://solarmonitor.org) provides a quick view
-service to know how the sun looks now. 
-Additionally it provides some other information useful for space weather as the 
-current solar activity and flare forecasting.
-The data it uses it comes from multitude of real-time data archive that differs from
-the archived data.
-By creating a `now` module in SunPy we will provide to the SunPy user to download, 
-visualise and analise near real-time data.  
-This module then could be used by SolarMonitor directly which it will help to advertise
-worldwide SunPy capabilities.
-
-`now` module will have to handle properly different datatypes (map, lightcurves) and
-images.
-
-* **Requirements**: N/A
-
-* **Mentor**: David PS (SunPy), Paul Higgins?, Eoin Carley? (SolarMonitor)
-
 ## HELIO - capabilities improvement
 
 ### Description:
