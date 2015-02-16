@@ -111,4 +111,16 @@ Build a Spectra() factory and refactor the whole `sunpy.spectra` module to pull 
 ## Interface to get heliospheric data from CDAweb
 
 CDAWEB provides as [SOAP interface](http://cdaweb.gsfc.nasa.gov/WebServices/SOAP/) which could be used
-within SunPy to download insitu data.  
+within SunPy to download insitu data.
+
+## Support for analysis of Solar Energetic Particles
+* **Description** SunPy is able to read lightcurve from different sources (GOES x-ray, Lyra, Norh,...), however these are not all.
+SoHO/ERNE (Energetic and Relativistic Nuclei and Electron experiment on board SoHO) measures
+one of the important effects in Space Weather, [Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles) (SEP).
+The data of such instrument (as for GOES particle measurements) comes as plaintext csv files with header information.
+This project should be able to read these in as a lightcurve object and allow to perform the basic operations used
+when such data is analysed: eg. energy ranges binning, visualisation, ...
+
+* **Requirements** N/A, but familiarise with the lightcurves object will be needed.
+
+* **Possible mentors/help by** David PS (or other SunPy member), Timo Laitinen and/or Silvia Dalla (University of Central Lancashire)
