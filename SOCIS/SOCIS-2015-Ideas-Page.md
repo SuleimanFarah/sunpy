@@ -20,9 +20,9 @@ of the Sun with high spatial and time resolution. The primary goal of the Interf
 a slit-jaw imager which can take images of the Sun at various wavelengths as well as a line spectrograph which
 rasters over an image to build up an image. This project aims to integrate IRIS data into SunPy. This includes the following tasks.
 
-(1) Integration of IRIS data search and querying
-(2) Adding the ability to read IRIS data files into their proper data objects
-(3) Developing a GUI data browser for fast inspection of data
+1. Integration of IRIS data search and querying
+2. Adding the ability to read IRIS data files into their proper data objects
+3. Developing a GUI data browser for fast inspection of data
 
 * **Requirements**: Python and basic knowledge of GUI design. 
 
