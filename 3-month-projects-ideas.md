@@ -56,6 +56,32 @@ Stuart Mumford
 
 Stuart Mumford, Dan Ryan, Andrew Inglis
 
+
+## Improvements to the SunPy Database
+
+The `database` module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name.
+The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft. It also allows more complex queries by enabling searches of the raw meta data associated with the files.
+
+The improvements to the database functionality that would be implemented by this project include:
+
+1. Integration of the new `UnifiedDownloader` code into the database search, to replace the direct VSO integration current present. (The [VSO](http://vso1.nascom.nasa.gov/) is a repository of solar physics data, SunPy's VSO API has been wrapped by `UnifiedDownloader`.)
+1. Support for relative paths in the database module [#783](https://github.com/sunpy/sunpy/issues/783) to allow a centralised database with multiple users, all referencing a central file store mounted with different absolute paths on each client.
+1. Supporting all data supported by the `sunpy.lightcurve` module in the database. The major hurdle here is the lack of standardisation in the file used by this data.
+
+There are various other maintenance tasks which need undertaking (https://github.com/sunpy/sunpy/labels/Database) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
+
+**Requirements**
+
+Familiarity with Python, knowledge of database design would be advantageous.
+
+**Idea from:**
+
+Stuart Mumford
+
+**Possible mentors/help by**
+
+Stuart Mumford, Steven Christe.
+
 ## Integrating ChiantiPy and SunPy
 * **Description**: The CHIANTI atomic physics database is a valuable resource for solar physics.  It allows the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) to be calculated from their abundances, ionisation states, etc.  This is essential to understand instrument response functions, spectral observations, and so on.
 Currently, ChiantiPy and SunPy are incompatible due to issues such as licenses.  This project would involve development an interface between these two packages so that CHIANTI can be used by solar physicists through SunPy.
