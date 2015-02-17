@@ -8,6 +8,7 @@ Currently, such a GUI program does not exist for Python. However, with the curre
 
 Ginga is designed to use a plugin system. This enables SunPy specific plugins to be written that can be installed by any user. We would want to create several plugins that would allow Ginga to be widely spread throughout the solar community.
 
+# 
 We would want a plugin that uses SunPy's database explorer module and supporting Solar coordinates using AstroPy's WCS module.  
 Further, we want to expand other Ginga plugins like the slit plugin to work on 3D data to produce x-y plots.
 
@@ -91,3 +92,8 @@ Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or ti
 * Difficulty: Hard
 
 * Mentors: David Perez-Suarez, Albert Shih
+
+## Graphic Spectral Explorer
+
+### Description
+
