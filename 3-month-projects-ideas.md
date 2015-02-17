@@ -14,6 +14,48 @@ The list of projects below will be changing as they are being taken by someone o
 
 ***
 
+
+## Lightcurve Refactor
+**Description**:
+The `Lightcurve` class is one of the three core datatypes in SunPy, along with Map and Spectra.
+`Lightcurve` is designed to read in, process and store meta data related to solar physics time series data.
+Currently, `Lightcurve` uses the pandas library as its underlying data structure, however, this is subject to change in the future.
+
+Much like the `map` submodule, `lightcurve` needs to be able to read in various supported data formats (such as FITS, ascii and others in the future), store their meta data and give users easy and unified access to this metadata independently of the original source of the data.
+
+As currently implemented (as of 0.5) the `lightcurve` module performs three core tasks:
+
+1. Download the raw data
+1. Read this data into a pandas dataframe
+1. store the meta data obtained with the data.
+
+As of the SunPy 0.6 release the first stage will be moved out of `lightcurve` and into the `net` subpackage as part of the [`UnifiedDownloader`](https://github.com/sunpy/sunpy/pull/1088) (name subject to change) Pull Request.
+This leaves `lightcurve` in a similar position to `map` where the data acquisition is not part of the core data type and is managed separately.
+
+This project will complete the following tasks:
+
+1. Become familiar with the `UnifiedDownloader` code, if it has not been accepted into the SunPy codebase, complete the remaining tasks for this to be achieved.
+1. Re-write any new lightcurve sources that were not included in the `UnifiedDownloader` code as sources for `UnifiedDownloader`.
+1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`.
+1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
+
+**Requirements**
+
+Familiarity with Python. 
+
+**Expected Outcomes**
+
+1. New `Lightcurve` factory class.
+1. Correct handling of meta data in join and split operations.
+
+**Idea from:**
+
+Stuart Mumford
+
+**Possible mentors/help by**
+
+Stuart Mumford, Dan Ryan, Andrew Inglis
+
 ## Integrating ChiantiPy and SunPy
 * **Description**: The CHIANTI atomic physics database is a valuable resource for solar physics.  It allows the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) to be calculated from their abundances, ionisation states, etc.  This is essential to understand instrument response functions, spectral observations, and so on.
 Currently, ChiantiPy and SunPy are incompatible due to issues such as licenses.  This project would involve development an interface between these two packages so that CHIANTI can be used by solar physicists through SunPy.
