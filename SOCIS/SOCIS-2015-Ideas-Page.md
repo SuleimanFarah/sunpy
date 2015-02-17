@@ -14,6 +14,20 @@ talk with the SunPy community and do not hesitate to introduce yourself in any o
 mailing list ([users](https://groups.google.com/forum/?fromgroups#!forum/sunpy), 
 [developer](https://groups.google.com/forum/?fromgroups#!forum/sunpy-dev)).
 
+## IRIS Integration
+* **Description**: The [IRIS](http://iris.lmsal.com) observes the chromosphere and transition region
+of the Sun with high spatial and time resolution. The primary goal of the Interface Region Imaging Spectrograph (IRIS) explorer is to understand how the solar atmosphere is energized. The IRIS mission produces data through
+a slit-jaw imager which can take images of the Sun at various wavelengths as well as a line spectrograph which
+rasters over an image to build up an image. This project aims to integrate IRIS data into SunPy. This includes the following tasks.
+
+(1) Integration of IRIS data search and querying
+(2) Adding the ability to read IRIS data files into their proper data objects
+(3) Developing a GUI data browser for fast inspection of data
+
+* **Requirements**: Python and basic knowledge of GUI design. 
+
+* **Mentor**: Steven Christe (SunPy), Joel Allred (GSFC)
+
 ## Integration of the HESPE Data Archive
 * **Description**: The [HESPE Data Archive](http://hespe.eu/browser) gives access
 to pre-processed science products from the RHESSI satellite. 
