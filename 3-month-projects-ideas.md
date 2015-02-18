@@ -173,3 +173,26 @@ when such data is analysed: eg. energy ranges binning, visualisation, ...
 * **Requirements** N/A, but familiarise with the lightcurves object will be needed.
 
 * **Possible mentors/help by** David PS (or other SunPy member), Timo Laitinen and/or Silvia Dalla (University of Central Lancashire)
+
+## GUI Spectral Explorer
+
+### Description
+
+The goal of this project is to provide a graphical user interface to enable a user to explore observed spectra and compare it with theoretical spectr\
+a.  The basis for the theoretical spectra is the CHIANTI atomic database for astrophysical spectroscopy that was first released in 1997.  Programmati\
+c access to the database, which is freely available, is provided by the ChiantiPy package -- a pure python package.  It is highly object oriented wit\
+h each ion, such as Fe XVII, being the basic object.  Higher level objects are often assembled from a collection of ions, such as when calculating a \
+spectrum.  ChiantiPy uses the CHIANTI database to calculate line and continuum intensities as a function of temperature, electron density. This can b\
+e done for a set of elemetal abundances in CHIANTI or for a user provided set of elemental abundances.  At present, if a user wants to compare CHIANT\
+I theoretical spectra it must be done on a case-by-case basis.  A GUI exporer, written in Python and preferably PyQt or Wx based, will provide an int\
+egrated tool to import observed spectra and plot them alongside theoretical spectra.  It will further allow the user to understand what spectra lines\
+ contribute to various spectral line profile, how the predicted spectra vary as a function of temperature and density.
+
+It will be necessary to develop techniques to import observed spectra from a variety sources.  Typical sources are in FITS files, HDF5 files, or csv \
+files.  It will also be important to allow users import their data through modules of their own.
+
+* Requirements:  Python, a basic understand of astrophysical spectroscopy
+
+* Difficulty:  Hard
+
+* Mentors:  Ken Dere
