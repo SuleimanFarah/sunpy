@@ -68,7 +68,7 @@ Familiarity with Python.
 
 **Possible mentors**
 
-Stuart Mumford, Dan Ryan, Andrew Inglis
+Stuart Mumford, Dan Ryan, Andrew Inglis, Jack Ireland
 
 
 ## Improvements to the SunPy Database
@@ -118,7 +118,6 @@ Currently, no SunPy code uses the Python interface to the CHIANTI database [Chia
 Other potential application of ChiantiPy in SunPy include:
 
 1. Conversion of ChiantiPy spectra objects to SunPy Spectra objects.
-1. 
 
 **Requirements**:
 
