@@ -7,6 +7,10 @@
 ## Guidelines to apply
  [[GSoC Student Application Guidelines]]
 ## Editions
+### [GSoC 2015](http://www.google-melange.com/gsoc/homepage/google/gsoc2015)
+* [[GSoC 2015 Ideas Page]]
+* [[GSoC 2015 Students applications]]
+
 ### [GSoC 2014](http://www.google-melange.com/gsoc/homepage/google/gsoc2014)
 * [[GSoC 2014 Ideas]]
 * [[GSoC 2014 Students applications]]
