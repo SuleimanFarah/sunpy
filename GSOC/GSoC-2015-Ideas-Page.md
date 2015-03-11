@@ -75,7 +75,7 @@ eg. energy ranges binning, visualisation, ...
 
 ### Lightcurve Refactor
 
-*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Dan Ryan](https://github.com/DanRyanIrish), [Andrew Inglis](https://github.com/aringlis)
+*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Dan Ryan](https://github.com/DanRyanIrish), [Andrew Inglis](https://github.com/aringlis), [Jack Ireland](https://github.com/wafels)
 
 *Difficulty:* Intermediate
 
