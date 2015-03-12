@@ -20,9 +20,9 @@ More information about [installation](http://docs.sunpy.org/en/stable/guide/inst
 # Summer of Code
 SunPy has participated successfully in both the ESA Summer of Code (ESOC) and the Google Summer of Code (GSOC) Programs.
 
-##GSOC 2014
-* [[GSOC 2014 Ideas]]
-* [[GSoC 2014 Students applications]]
+##GSOC 2015
+* [[GSOC 2015 Ideas Page]]
+* [[GSoC 2015 Students applications]]
 
 ##ESA's SOCIS 2015
 * [[SOCIS 2015 Ideas Page]]
@@ -30,8 +30,10 @@ SunPy has participated successfully in both the ESA Summer of Code (ESOC) and th
 
 Past Programs
 
-* [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  Sunpy is applying for support in 2013, following participation in 2011 and 2012. 
-* [[Google Summer of Code]] is the Google Summer Of Code program.  SunPy participated in 2013 for the first time in 2013, and was successful.
+* [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  
+Sunpy has gotten support in 2011, 2012, 2013 and 2014.
+* [[Google Summer of Code]] is the Google Summer Of Code program.  
+SunPy participated in 2013 for the first time and 2014. Being both very successful years.
 
 # The SunPy Project Organisation
 [[All the info|SunPy Organisation Information]] regarding to SunPy formation as an organisation, including minutes of meetings
