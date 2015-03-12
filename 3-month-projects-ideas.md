@@ -99,10 +99,9 @@ Stuart Mumford, Steven Christe.
 
 SEPs are observed with several instruments onboard several spacecraft, such as GOES, SOHO, ACE, and the two STEREO spacecraft. The timing and evolution of the SEP observations are compared to observations of solar X-ray and radio bursts, changes in solar magnetic field and EUV observations, and coronagraphs, and to the solar wind and magnetic field properties at the observing spacecraft. However, while many of these other observations can already be accessed with SunPy, there is as of now no tool to analyse the SEP observations.
 
-The SEP data is typically available as plaintext files with header information, with columns representing energies and particle elements, while the rows represent time. Also CDF files are used in some occasions. This project should be able to read these in as a lightcurve object and allow to perform the basic operations used
-when the data is analysed. These basic operations include
+The SEP data is typically available as plaintext files with header information, with columns representing energies and particle elements, while the rows represent time. Also CDF files are used in some occasions. This project should be able to read these in as a lightcurve object and allow to perform the basic operations used when the data is analysed. These basic operations include
 
-- Visualisation as time series, including changing the time or energy resolution. The SEP observations often suffer from low count-rates, and averaging over energy or time is needed
+- Visualisation as time series, including changing the time or energy resolution. The SEP observations often suffer from low count-rates, and averaging over energy or time is needed.
 - Visualisation as energy spectrum. Combination of energies and integration over time is important also in this case.
 - Visualisation of intensity ratios of different particle species. These ratios and their energy- and time-dependence is important for understanding the mechanisms behind the SEP acceleration for different SEP events.
 
@@ -110,7 +109,7 @@ Ability of comparing the SEP observations with other light-curve type data, such
 
 **Requirements** Famialirity with Python. 
 
-**Possible mentors** David PS (or other SunPy member), Timo Laitinen and (University of Central Lancashire)
+**Possible mentors** David PS (or other SunPy member), Timo Laitinen (University of Central Lancashire)
 
 
 ## Integrating ChiantiPy and SunPy
