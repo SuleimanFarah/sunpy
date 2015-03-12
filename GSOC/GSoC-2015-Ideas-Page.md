@@ -52,7 +52,7 @@ Other potential application of ChiantiPy in SunPy include:
 
 ### Support for analysis of Solar Energetic Particles
 
-*Suggested Mentor(s):* [David Pérez-Suárez](http://github.com/dpshelio)
+*Suggested Mentor(s):* [David Pérez-Suárez](http://github.com/dpshelio), Timo Laitinen (University of Central Lancashire)
 
 *Difficulty:* Beginner
 
@@ -63,14 +63,39 @@ Other potential application of ChiantiPy in SunPy include:
 ####Description
 
 SunPy is able to read a lightcurve from different sources (GOES x-ray, Lyra, Norh,...), however these are not all.
-SoHO/ERNE (Energetic and Relativistic Nuclei and Electron experiment on board SoHO) measures
-one of the important effects in Space Weather, [Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles) (SEP).
-The data of such instrument (as for GOES particle measurements) comes as plaintext csv files with header information.
-This project should add ERNE to the SunPy supported instruments by being
-able to read these files in as a lightcurve object and allow to perform
-the basic operations used when such data is analysed:
-eg. energy ranges binning, visualisation, ...
+[Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles) (SEPs)
+are accelerated during solar eruptions up to relativistic energies.
+They propagate from the Sun to the heliosphere, and arriving near Earth they pose a danger to
+astronauts and spacecraft.
+Thus, it is important to understand their acceleration and propagation mechanisms, so that we
+can mitigate the Space Weather risk they pose.
 
+SEPs are observed with several instruments onboard several spacecraft, such as GOES, SOHO, ACE,
+and the two STEREO spacecraft.
+The timing and evolution of the SEP observations are compared to observations of solar X-ray and
+radio bursts, changes in solar magnetic field and EUV observations, and coronagraphs, and to the
+solar wind and magnetic field properties at the observing spacecraft.
+However, while many of these other observations can already be accessed with SunPy, there is as
+of now no tool to analyse the SEP observations.
+
+The SEP data is typically available as plaintext files with header information, with columns
+representing energies and particle elements, while the rows represent time.
+Also CDF files are used in some occasions. This project should be able to read these in as a
+lightcurve object and allow to perform the basic operations used when the data is analysed.
+These basic operations include:
+
+- Visualisation as time series, including changing the time or energy resolution.
+The SEP observations often suffer from low count-rates, and averaging over
+energy or time is needed.
+- Visualisation as energy spectrum. Combination of energies and integration over
+time is important also in this case.
+- Visualisation of intensity ratios of different particle species.
+These ratios and their energy- and time-dependence is important for understanding
+the mechanisms behind the SEP acceleration for different SEP events.
+
+Ability of comparing the SEP observations with other light-curve type data,
+such as X-ray and in-situ observations (magnetic field and solar wind propecties
+near the spacecraft) would also be very useful.
 
 
 ### Lightcurve Refactor
