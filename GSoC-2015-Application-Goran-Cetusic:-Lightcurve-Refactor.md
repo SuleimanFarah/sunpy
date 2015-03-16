@@ -80,4 +80,4 @@ for the lightcurve module.
 ##### Endterm Evaluation (17th August - 23rd August)  
 
 ## Schedule information
-During the first 4-5 weeks I would have to work on my masters thesis parallel to GSOC (the network simulator mentioned in the NetworkX GUI proposal). It's my last year as a student and the deadline for turning it in is the end of June. Even though I would be able to devote at least 4 hrs a day during the period between the start of GSOC and the end of June I would start coding by the beginning of May (during the community bonding period) to get a head start.
+During the first 4-5 weeks I would have to work on my masters thesis parallel to GSOC. It's my last year as a student and the deadline for turning it in is the end of June. Even though I would be able to devote at least 4 hrs a day during the period between the start of GSOC and the end of June I would start coding by the beginning of May (during the community bonding period) to get a head start.
