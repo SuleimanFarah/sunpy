@@ -23,7 +23,7 @@
 ### **Abstract:**
 The satellite 'IRIS' and other telescopes use a 4D cube data structure to save their data. Currently, SunPy does not have support for this structure which this project aims to remedy.
 
-This will be done in two steps -
+This will be done in two phases -
 
 **1)** A previous ESA summer project already implemented such a structure in SunPy. Though finished, it was not merged into the code base. This project will tweak the package so that it works with the latest version of SunPy, with some minor changes in the call API and some changes in the SunPy Map class to integrate the new module.
 
@@ -65,7 +65,7 @@ The primary goal will be to tweak and merge the cube class which will bring the 
 ## Code Samples
 **1.** Wrote a test for stereo sources [#1267] (https://github.com/sunpy/sunpy/pull/1267)
 
-**2.** Although not for SunPy, fixed an small issue for SciPy which was merged [#4407] (https://github.com/scipy/scipy/pull/4407)
+**2.** Although not for SunPy, fixed a small issue for SciPy which was merged [#4407] (https://github.com/scipy/scipy/pull/4407)
 
 ## Commitment
 Since I have no plans for the summer, I will dedicate the 3 months to completing this project. But I must inform that the classes for my next semester might start during the last week of July or the first week of August(the schedule has not been decided, though it generally starts in the first week of August) which falls within the period of GSoC. Therefore, though I will have less time to devote to the project, I will try my best to make up the lost time if the project demands it(due to less workload during the opening weeks). And if the project's goals are extended in any way and it isn't complete within the GsoC period, I will continue contributing until the everything is implemented.
