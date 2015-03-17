@@ -229,7 +229,7 @@ import their data through modules of their own.
 
 *Difficulty:* Intermediate
 
-*Astronomy knowledge needed:* A basic understand of astrophysical spectroscopy
+*Astronomy knowledge needed:* None
 
 *Programming skills:* Python, basic knowledge of qt4, pyqt4, qt designer
 
