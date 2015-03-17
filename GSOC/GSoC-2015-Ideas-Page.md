@@ -224,3 +224,16 @@ spectra from a variety sources.  Typical sources are in FITS files,
 HDF5 files, or csv files.  It will also be important to allow users
 import their data through modules of their own.
 
+## GUI to use LCT tools
+*Suggested Mentor(s):* [Jose Iván Campos Rozo](https://github.com/Hypnus1803) (National Astronomical Observatory, National University of Colombia), Santiago Vargas Domínguez (National Astronomical Observatory, National University of Colombia), David Pérez Suárez.
+*Difficulty:* Intermediate
+
+*Astronomy knowledge needed:* A basic understand of astrophysical spectroscopy
+
+*Programming skills:* Python, basic knowledge of qt4, pyqt4, qt designer
+
+### Description:
+The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is https://github.com/Hypnus1803/flow_maps
+
+*Expected Outcomes:* To integate efficiently the code in SunPy libraries. 
+
