@@ -226,6 +226,7 @@ import their data through modules of their own.
 
 ## GUI to use LCT tools
 *Suggested Mentor(s):* [Jose Iván Campos Rozo](https://github.com/Hypnus1803) (National Astronomical Observatory, National University of Colombia), Santiago Vargas Domínguez (National Astronomical Observatory, National University of Colombia), [David Pérez Suárez](https://github.com/dpshelio).
+
 *Difficulty:* Intermediate
 
 *Astronomy knowledge needed:* A basic understand of astrophysical spectroscopy
