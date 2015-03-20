@@ -59,7 +59,7 @@ Ace data seems to be available as HDF files, at:
  observations to compare fluxes and timings.
 
  - [Reames (1999)](http://dx.doi.org/10.1023/A:1005105831781) shows
- [[a visualisation for the spectra|/GSoC/GSoC-2015-SEPproject_Reames1999.png]].
+ [[a visualisation for the spectra|GSoC-2015-SEPproject_Reames1999.png]].
  Also a spectrum of the elemental intensity ratios would be
  very interesting.
 
