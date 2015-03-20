@@ -92,8 +92,21 @@ database2 will be filled with entries that did not match the query while databas
 |August 18 - August 24|
 
 ## Code Samples
-Fixed issue #1171 (VSO download filenames have incorrect extension)
+
+Code samples of contributions to opensource projects including SunPy.
+
+**SunPy**
+
+Fixed issue #1171 (VSO download filenames have incorrect extension).
 * Pull request- https://github.com/sunpy/sunpy/pull/1341
 
-Test cases added for noaa clients in UnifiedDownloader
+Test cases added for noaa clients in UnifiedDownloader.
 * Pull request- https://github.com/sunpy/sunpy/pull/1334
+
+**Tor Project**
+
+A script to create report of the status of Tor default bridges which are shipped with Tor Browser.
+* Code- https://github.com/dumindux/TorBridgeChecker/blob/master/tor_bridgecheck.py
+
+A small bug-fix for Stem library.
+* Ticket- https://trac.torproject.org/projects/tor/ticket/14628
