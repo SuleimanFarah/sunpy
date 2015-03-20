@@ -30,7 +30,7 @@ The database module provides functionality to users to manage collections of fil
 
 The current implementation of database module has direct integration of VSO to download solar physics data. UnifiedDownloader integration will remove the direct integration of VSO from database module and will use UnifiedDownloader for downloading purposes. This adds a unified system for downloading. Following are the initially identified places where UnifiedDownloader should be integrated to database module.
 
-Modify method `_download_and_collect_entries` database class. This method is currently responsible for downloading data given a VSO QueryResponse object. UnifiedDownloader integration changes this method.
+Modify method `_download_and_collect_entries`in Database class. This method is currently responsible for downloading data given a VSO QueryResponse object. UnifiedDownloader integration changes this method.
 
 Modify method `download` in database class. Currently  download method queries from a VSOClient and dowlaods data using the QueryResponse object received. With the integraton of UnifiedDownloader this method will be modified to query from UnifiedDownloader and download data using UnifiedResponse object.
 
