@@ -51,7 +51,7 @@ Ace data seems to be available as HDF files, at:
  (from GOES spacecraft).
 
  - The top panel in this
- [other figure](/GSoC/GSoC-2015-SEPproject_GomezHerrero2015.png)
+ [[other figure|GSoC-2015-SEPproject_GomezHerrero2015.png]],
  [Gomez-Herrero et al. (2015)](http://dx.doi.org/10.1088/0004-637X/799/1/55)
  shows in the top panel, lots of energies, and in the bottom,
  isotope intensity ratios.
@@ -59,7 +59,7 @@ Ace data seems to be available as HDF files, at:
  observations to compare fluxes and timings.
 
  - [Reames (1999)](http://dx.doi.org/10.1023/A:1005105831781) shows
- [a visualisation for the spectra](/GSoC/GSoC-2015-SEPproject_Reames1999.png).
+ [[a visualisation for the spectra|/GSoC/GSoC-2015-SEPproject_Reames1999.png]].
  Also a spectrum of the elemental intensity ratios would be
  very interesting.
 
