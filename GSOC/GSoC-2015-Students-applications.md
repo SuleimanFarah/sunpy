@@ -3,3 +3,5 @@ to the full description of the project you propose and the timeline you plan to 
 * [[Student_A |GSoC-2015  Student A]] - Finding octocat on the Sun.
 
 * [[Rupak Kumar Das |GSOC-2015-Rupak-Kumar-Das]] - Full support for IRIS, 4D Cubes implemented using Ginga as the GUI
+
+* [[Dumindu Buddhika |GSOC-2015-Dumindu-Buddhika]] - Improvements to the SunPy Database.
