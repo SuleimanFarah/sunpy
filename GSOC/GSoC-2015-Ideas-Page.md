@@ -97,6 +97,7 @@ Ability of comparing the SEP observations with other light-curve type data,
 such as X-ray and in-situ observations (magnetic field and solar wind propecties
 near the spacecraft) would also be very useful.
 
+Read more about the data format, archive and visualisation examples in [[the project's page|GSoC-2015-SEPproject]]
 
 ### Lightcurve Refactor
 
