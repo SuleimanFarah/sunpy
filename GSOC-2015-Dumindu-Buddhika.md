@@ -7,6 +7,9 @@
 * **IRC Handle:** dumindux@irc.freenode.net
 * **Github:** dumindux
 * **Blog:**
+* **Blog RSS feed:**
+
+## University Information
 * **University:** University of Moratuwa
 * **Major:** Computer Science and Engineering
 * **Current year:** Third year
@@ -17,11 +20,12 @@
 **Proposal Title:** Improvements to the SunPy Database
 
 ### **Abstract:**
-The database module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name. The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft. It also allows more complex queries by enabling searches of the raw meta data associated with the files. database module also stops multiple downloads of the same file thus saving bandwidth. This proposed project aims to improve the functionality provided by the current database module implementation by focusing on three major areas.
+The database module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name. The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft. It also allows more complex queries by enabling searches of the raw meta data associated with the files. database module also stops multiple downloads of the same file thus saving bandwidth. This proposed project aims to improve the functionality provided by the current database module implementation by focusing on following major areas.
 
   1. Integration of UnifiedDownloader code to database search.
   2. Support for relative paths in the database module.
   3. Support all data supported by `sunpy.lightcurve` module in the database.
+  4. Split database by query into two databases.
 
 
 ###**Detailed Description**
@@ -52,7 +56,9 @@ Following are the points identified for the changes to be made.
 
 `Database.fetch` - This also operates as the download method mentioned above.
 
-base path will be stored in sunpyrc file. If there was no base path specified download method will throw an exception.
+base path can be stored in sunpyrc file. It can also be optionally overridden at the time of the database creation.
+
+`db = Database('sqlite:///', basepath='/path')'`
 
 **3. Support all data supported by the `sunpy.lightcurve` module in the database.**
 
@@ -76,20 +82,16 @@ database2 will be filled with entries that did not match the query while databas
 ##Timeline
 |Period|Description|
 |------|-----------|
-|Community Bonding Period (April 27 – May 25)|
-|May 26 – June 2|
-|June 2 – June 9|
-|June 9 – June 16|
-|June 16 – June 23|
-|June 23 – June 30|
-|June 30 – July 7|
-|July 7 – July 14|
-|July 14 – July 21|
-|July 21 - July 28|
-|July 28 – August 4|
-|August 4 - August 11|
-|August 11 - August 18|
-|August 18 - August 24|
+|Community Bonding Period (April 27 – May 25)| I would like to utilize this period to go through the SunPy code base(Specially database module, lightcurve module and new UnifiedDownloader code) and solve any misunderstandings/problems by talking with mentors| 
+|May 25 – June 7 (14 days)|Working on implementing and modifying methods required to integrate UnifiedDownloader to database module.|
+|June 8 – June 12(4 days)|Writing tests for the code written earlier and re-factoring the code|
+|June 13 – June 26(14 days)|Working on implementing the support for relative paths in database search. Writing test cases to test code for supporting relative paths.|
+|June 27 – July 03(Buffer Period 7 days)|Buffer Period for completing any incomplete work. Midterm evaluation.|
+|July 04 – July 10(7 days)|Identifying and understanding metadata related to lightcurve.|
+|July 11 - July 24(14 days)|Adding support to download lightcurve data and saving metadata in the database.
+|July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week.
+|July 31 - August 6(7 days)|Working on to implement a method to a split database by query into two databases and writing tests related to that.|
+|August 7 - August 17(Buffer Period 11 days)|Finished any remaining work. Improve test coverage. Fix any bugs with the code and finalizing work.|
 
 ## Code Samples
 
