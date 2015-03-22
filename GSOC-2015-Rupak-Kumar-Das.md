@@ -6,9 +6,8 @@
 * **Time-zone:** +0530 GMT
 * **IRC Handle:** tars7297@irc.freenode.net
 * **Github:** rupak0577
-* **IM information:**
-* **Blog:**
-* **Blog RSS feed:**
+* **Blog:** https://rupakgsoc2015.wordpress.com/
+* **Blog RSS feed:** https://rupakgsoc2015.wordpress.com/feed/?tag=GSOC%2CPython
 
 ## University Information
 * **University:** Institute of Technical Education and Research
@@ -47,20 +46,16 @@ The primary goal will be to tweak and merge the cube class which will bring the 
 
 |Period|Description|
 |------|-----------|
-|Community Bonding Period (April 27 – May 25)|
-|May 26 – June 2|
-|June 2 – June 9|
-|June 9 – June 16|
-|June 16 – June 23|
-|June 23 – June 30|
-|June 30 – July 7|
-|July 7 – July 14|
-|July 14 – July 21|
-|July 21 - July 28|
-|July 28 – August 4|
-|August 4 - August 11|
-|August 11 - August 18|
-|August 18 - August 24|
+|Community Bonding Period (April 27 – May 25)|First priority is to integrate the Cube module so read documentation and source code relating to the Map,Cube and Spectra modules. Consult with mentors and have a complete idea of how the modules work and the required changes to be done before the integration. Then, read the documentation for Ginga and its plugin structure. Discuss with mentors for potential ideas about the GUI and its implementation.
+|May 26 – June 9 (2 weeks)|Begin work on the Cube module, tweaking and adding required code for its integration.
+|June 9 – June 16 (1 week)|Document changes and write required tests.
+|June 17 – June 26 (1.3 weeks)|Update Map module along with Spectra module.
+|June 27 – July 3 (1 week)|Finish incomplete work.Mid-term evaluation.
+|July 4 – July 18 (2 weeks)|Begin work on the GUI plugin. Implement the basic functionality that is required from the plugin.
+|July 19 – August 2 (2 weeks)|As per discussion with mentors, implement extra features from CRISPEX
+|August 3 - August 9 (1 week)|Document code and write tests.
+|August 10 - August 17 (1 week)|Integrate everything into SunPy and fix issues.
+|August 17 - August 24 (1 week)|'Pencils-down' date. Finalize everything,fix bugs,improve documentation and make sure everything works.
 
 ## Code Samples
 **1.** Wrote a test for stereo sources [#1267] (https://github.com/sunpy/sunpy/pull/1267)
