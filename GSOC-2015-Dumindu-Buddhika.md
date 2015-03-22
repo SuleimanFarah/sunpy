@@ -84,12 +84,12 @@ database2 will be filled with entries that did not match the query while databas
 |------|-----------|
 |Community Bonding Period (April 27 – May 25)| I would like to utilize this period to go through the SunPy code base(Specially database module, lightcurve module and new UnifiedDownloader code) and solve any misunderstandings/problems by talking with mentors| 
 |May 25 – June 7 (14 days)|Working on implementing and modifying methods required to integrate UnifiedDownloader to database module.|
-|June 8 – June 12(4 days)|Writing tests for the code written earlier and re-factoring the code|
+|June 8 – June 12(4 days)|Writing tests for the code written earlier. Updating documentation. Re-factoring the code|
 |June 13 – June 26(14 days)|Working on implementing the support for relative paths in database search. Writing test cases to test code for supporting relative paths.|
 |June 27 – July 03(Buffer Period 7 days)|Buffer Period for completing any incomplete work. Midterm evaluation.|
 |July 04 – July 10(7 days)|Identifying and understanding metadata related to lightcurve.|
 |July 11 - July 24(14 days)|Adding support to download lightcurve data and saving metadata in the database.
-|July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week.
+|July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week. Completing documentation.|
 |July 31 - August 6(7 days)|Working on to implement a method to a split database by query into two databases and writing tests related to that.|
 |August 7 - August 17(Buffer Period 11 days)|Finished any remaining work. Improve test coverage. Fix any bugs with the code and finalizing work.|
 
@@ -112,3 +112,8 @@ A script to create report of the status of Tor default bridges which are shipped
 
 A small bug-fix for Stem library.
 * Ticket- https://trac.torproject.org/projects/tor/ticket/14628
+
+##About me
+I am a third year undergraduate student from Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka. I am pursuing a BSc(eng) in Computer Science and Engineering. My first programming language is C. Then I learned Java and then I found Python and fell in love with it. I have been freelancing on Fiverr.com in my free times for over a year with Python(also with Java but mostly with Python) which gave me a good experience in writing different kinds of python programs. I have sometimes helped out my friends who are following other engineering fields(Civil engineering, Mechanical engineering etc) with simple scripts for some of their calculations. I have a strong interest in mathematics and algorithms. I am also interested in information security and anonymity(thus Tor Project). I use Ubuntu as the operating system in my computer. I am currently in the last few weeks of my six month internship with Leapset incorporated(www.leapset.com). I am mostly working with Java, JavaScript and databases there. We are building a card swipe based authentication system for their main product. 
+
+As most people, I have always fascinated about the sky and astronomy  since I was a kid. I read quite often about astronomy when I was in high school. I find its really wonderful that this project gives me an opportunity to work with something related to an area I fancy about using my skills. I hope this is a great opportunity for me to learn something about solar physics too. Though I always supported FOSS(and use open source software mostly) I haven't contributed in development before. I think this is a good opportunity to begin contributing to open source. 
