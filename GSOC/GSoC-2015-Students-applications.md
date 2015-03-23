@@ -5,3 +5,7 @@ to the full description of the project you propose and the timeline you plan to 
 * [[Rupak Kumar Das |GSOC-2015-Rupak-Kumar-Das]] - Full support for IRIS, 4D Cubes implemented using Ginga as the GUI
 
 * [[Dumindu Buddhika |GSOC-2015-Dumindu-Buddhika]] - Improvements to the SunPy Database.
+
+* [[Sunil Kumar | GSoC-2015_Sunil]] - Support for analysis of Solar Energetic Particles.
+
+* [[Goran Cetušić | GSoC-2015-Application-Goran-Cetusic :-Ligthcurve-Refactor]] - Ligthcurve refactor
