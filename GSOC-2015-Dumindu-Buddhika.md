@@ -84,13 +84,13 @@ database2 will be filled with entries that did not match the query while databas
 |------|-----------|
 |Community Bonding Period (April 27 – May 25)| I would like to utilize this period to go through the SunPy code base(Specially database module, lightcurve module and new UnifiedDownloader code) and solve any misunderstandings/problems by talking with mentors| 
 |May 25 – June 7 (14 days)|Working on implementing and modifying methods required to integrate UnifiedDownloader to database module.|
-|June 8 – June 12(4 days)|Writing tests for the code written earlier. Updating documentation. Re-factoring the code|
-|June 13 – June 26(14 days)|Working on implementing the support for relative paths in database search. Writing test cases to test code for supporting relative paths.|
+|June 8 – June 12(4 days)|Writing tests for the code written earlier. Updating documentation. Re-factoring the code. At this point I will have completed section 1.|
+|June 13 – June 26(14 days)|Working on implementing the support for relative paths in database search. Writing test cases to test code for supporting relative paths. At this point I will have completed section 2.|
 |June 27 – July 03(Buffer Period 7 days)|Buffer Period for completing any incomplete work. Midterm evaluation.|
 |July 04 – July 10(7 days)|Identifying and understanding metadata related to lightcurve.|
 |July 11 - July 24(14 days)|Adding support to download lightcurve data and saving metadata in the database.
-|July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week. Completing documentation.|
-|July 31 - August 6(7 days)|Working on to implement a method to a split database by query into two databases and writing tests related to that.|
+|July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week. Completing documentation. At this point I will have completed section 3.|
+|July 31 - August 6(7 days)|Working on to implement a method to a split database by query into two databases and writing tests related to that. At this point I will have completed section 4.|
 |August 7 - August 17(Buffer Period 11 days)|Finished any remaining work. Improve test coverage. Fix any bugs with the code and finalizing work.|
 
 ## Code Samples
@@ -99,11 +99,14 @@ Code samples of contributions to opensource projects including SunPy.
 
 **SunPy**
 
-Fixed issue #1171 (VSO download filenames have incorrect extension).
+Fix for issue #1171 (VSO download filenames have incorrect extension).
 * Pull request- https://github.com/sunpy/sunpy/pull/1341
 
 Test cases added for noaa clients in UnifiedDownloader.
 * Pull request- https://github.com/sunpy/sunpy/pull/1334
+
+Fix for issue #1342(database complains of EIT non-existent wavelengths units)
+* Pull request- https://github.com/sunpy/sunpy/pull/1346
 
 **Tor Project**
 
