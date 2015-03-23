@@ -8,4 +8,4 @@ to the full description of the project you propose and the timeline you plan to 
 
 * [[Sunil Kumar | GSoC-2015_Sunil]] - Support for analysis of Solar Energetic Particles.
 
-* [[Goran Cetušić | GSoC-2015-Application-Goran-Cetusic:-Ligthcurve-Refactor]] - Ligthcurve refactor
+* [[Goran Cetušić | GSoC-2015-Application-Goran-Cetusic:-Lightcurve-Refactor]] - Ligthcurve refactor
