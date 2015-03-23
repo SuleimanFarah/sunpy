@@ -10,32 +10,98 @@
 | Github | sunilk747, Sunil Kumar |
 
 ##Abstract
-
-Observing solar data for solar atmosphere is important for being able to learn more about solar material.The solar system is composed of solar materials.The study of solar atmospheric events gives us some in depth knowledge of solar system and we can learn a lot about its origin.One of such event is acceleration of solar Energetic particles(SEPs) during solar eruptions up to relativistic energies.As they pose serious threats to astronaut and spacecrafts ,so the study of acceleration and propagation of SEPs is important to minimize the risk factor.
-
-SEPs can be observed with different instruments such as GOES,SOHO,ACE etc.The observations made are compared to other solar atmosphere observations such as solar X-Ray and radio bursts,changes in solar magnetic field and EUV and coronagraphs.The functionality to observe the other solar atmospheric event is already present in sunpy ,as of now there is no tool to analyze the SEP observations.
-
-The main goal of this project is to add module for different instruments which are responsible for the observation of SEPs.
+Currently SunPy doesn't have the functionality to process and analyze the SEPs data. There are some instruments(ERNE,ACE,STEREO) for the observation of SEPs. This project aims to add support to SEP instruments 
+and methods for each instrument for the visualization operation.
 
 ## Project Background and Idea
-
-In sunpy there are many instruments (GOES,SOHO etc) for the observation of  solar data.The data for SEPs can be observed by various instruments .One of such instrument is ERNE(Energetic and Relativistic Nuclei and Electron).
-Currently the sunpy doesn't contains the support of ERNE which is responsible for the SEPs observations. 
-
-We would want to add a module for the ERNE in sunpy,enabling sunpy capable of SEPs observations.The core part of this project is to make sunpy able to fetch data for SEPs from various instrument's one of which is ERNE and use them for basic operations like visualization as time series,Visualization as energy spectrum etc.
+The support of some instruments which are responsible for the observation of solar data are already present 
+in SunPy. Currently it lacks the support of instruments required for the observation SEPs data. In this 
+project we would add module for each instrument, so that more accurate data could be fetched and then we 
+would convert this data into lightcurve object. At the end we would add methods for each instrument module for 
+the visualization operation.
 
 ## Project Deliverable
-
-1. Adding a module for the new instrument's responsible for SEPs observation.
-1. Adding functionality for the observation of SEPs.
-1. Adding methods for fetching data from the new Instruments.
-1. Adding methods in `lightcurve.py` to convert the fetched data(CSV or CDF file) into lightcurve object.
-1. Adding methods for other basic operations.  
+1. A fully implemented class for each instrument.
+1. Integration of Unified Downloader with the newly added instrument class.
+1. Methods for the visualization of fetched data.
+1. Successful tests for their implementation.
+1. Corresponding documentation.
 
 ##  Implementation
-1. The first approach will be adding a module for the new instrument and then a little tweaking in the `lightcurve.py` will add the capability of converting the fetched data file into lightcurve obejct.
-1. Then addition of some methods for the comparision of the calculated data for SEP with other light curve data.
-    
-### Reference
-1. https://en.wikipedia.org/wiki/Solar_energetic_particles
-1. http://docs.sunpy.org/en/stable/code_ref/lightcurve.html
+The first approach will be adding class for each instrument. This classes will include all the methods for 
+visualisaton operation which include visulaisation as time series, visualization as energy spectrum and 
+methods for the calculation of intensity ratios of different particles and their dependency on time and 
+energy. This classes will be inherited from superclass `lightcurve.py`. A module for each instrument in 
+`sunpy.instr` which will use the Unified Downloader for downloading and parsing SEPs data.
+
+##  Timeline
+**APRIL 27 -MAY 25(Community bonding period)**
+
+Read documentation, practice code and get familiar with lightcurve module. Get the final idea about approach 
+
+and project implementation after thoroughly discussing it with mentor.
+
+**MAY 26 - JUNE 8(2 weeks)**
+
+Define the class `ERNELightcurve`. Which will be one of the three instrument classes need to be added. This 
+
+class will include methods for the conversion of downloaded data into lightcurve object.
+
+**JUNE 9 - JUNE 21(2 weeks)**
+
+Write classes for the remaining two instruments which would be similar to the first one.
+
+**JUNE 22 - JULY 5(2 weeks)**
+
+Add module for each instrument in `sunpy.instr` which will include  methods for performing the basic 
+
+operations like calculatiion of intensity ratios of different particles,their dependency on time and energy 
+
+and comparison with other lightcurves data.**JUNE 26 - JULY 3 (Midterm Evaluation).**
+
+**JULY 6 - JULY 12(1 week)**
+
+During this period of time I will add tests and make documentation.
+
+**JULY 13 - JULY 19(1 week)**
+
+I will use this time to get more familiar with the operation of Unified Downloader.
+
+**JULY 20 - JULY 26(1 week)**
+
+Integrate Unified Downloader with the new class making the new class able to download data using Unified 
+
+Downloader.
+
+**JULY 27- AUGUST 10(2 week)**
+
+Add tests, make documentations and make sure everything is working as planned.
+
+**AUGUST 11- AUGUST 18 (1 weeks)**
+
+Finalise everything,solve any bug that might arise,document all my work and make sure that all tests passes.
+
+**AUGUST 18 - AUGUST 24(1 week)**
+
+Buffer Time.
+
+##Code Samples
+Though not for SunPy, but I have added a error message for Astropy. Very soon I will submit my first PR for SunPy.
+*  [Error message](https://github.com/astropy/astropy/pull/3426)  
+
+## Additional Information
+I am a second year undergraduate student at the International Institute of Information 
+Technology,Bhubaneswar. I am majoring in Computer Science and I am very much interested in Machine learning. 
+For over one year I have been coding in python and I love this language as it is simple and easy to read. I 
+have some knowledge of Scrapy a python based web crawling framework. I am an intermediate level programmer in 
+C and C++. I am well acquainted with working on linux workstation. Since,I am new to opensource and haven't 
+contributed to any opensource community in past, I don't have much experience of it. Through this GSoC 
+program I would like to do some opensource contribution and hoping to learn some new things. 
+
+### Other Schedule Information
+I suppose that I shall be able to devote major part of my time for the Implementation of this project.As of now I have no plans or vacations for this summer. I might have my exam in the month of July ,but it will be over in two days,I will not be able to work for these two days.But I will make up things by putting extra time.
+
+## Reference
+1. [Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles)
+1. [Lightcurve](http://docs.sunpy.org/en/stable/code_ref/lightcurve.html)
+1. [Visualization](https://github.com/sunpy/sunpy/wiki/GSoC-2015-SEPproject)
