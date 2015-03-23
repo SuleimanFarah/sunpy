@@ -4,13 +4,13 @@
 
 ###ERNE
 
-ERNE data can be download as a 2-hour resolution Carrington rotation sets.  They are available at the srl server:
+ERNE data can be download as a 2-hour resolution Carrington rotation sets.  They are available at the srl server, and have file names of type
 
 - http://srl.utu.fi/erne_data/carrot/1906/cr1906p.txt
 - http://srl.utu.fi/erne_data/carrot/1906/cr1906a.txt
 
 Where:
- - 1906 is the Carrington rotation number,
+ - 1906 is the Carrington rotation number (a running number of full solar rotations starting from November 9, 1853, using a rotation period of 27.2753 days)
  - p is for protons, and
  - a is for Helium (alpha particles).
 
