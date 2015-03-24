@@ -31,9 +31,9 @@ Currently, I am a third year undergraduate studying Materials Science and Engine
 
 ###3. Some of my bragging rights:
 
-* Secured All India Rank 5112 among more than 5,20,000 students in IIT-JEE 2012
-* Was among top 1% in All India Engineering Entrance Examination 2012
-*Awarded the prestigious Kishore Vaigyanik Protsahan Yojna(KVPY) fellowship by the Department of Science and Technology,Government of India in the year 2012
+* Secured **All India Rank 5112** among more than 5,20,000 students in IIT-JEE 2012
+* Was among **top 1%** in All India Engineering Entrance Examination 2012
+* Awarded the prestigious **Kishore Vaigyanik Protsahan Yojna(KVPY)** fellowship by the Department of Science and Technology,Government of India in the year 2012
 
 
 ###4. Work and Open Source Experience:
