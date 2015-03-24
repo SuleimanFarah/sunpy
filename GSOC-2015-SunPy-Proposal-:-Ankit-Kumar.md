@@ -53,6 +53,8 @@ A short description of your proposed project
 
 ###8. Deliverables
 
+###9. Benefits to Community
+Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
 ###9. Proposal Detailed Description/Timeline:
 
