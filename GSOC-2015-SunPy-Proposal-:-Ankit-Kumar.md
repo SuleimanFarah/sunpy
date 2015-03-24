@@ -1,17 +1,17 @@
 ### Sub-organization with whom you hope to work: SunPy
 
 ###1. Student Information
-**Name:** Ankit Kumar
-**Email:** ankitkmr.iitk@gmail.com, technocrat.ankit@gmail.com
-**Telephone:** +091-9621304455, +091-9911176810
-**Address:** House No. 1537, Sector 10 A, Gurgaon, Haryana-122001, India
-**Time Zone:** +0530 GMT
-**IRC Handle:** 
-**Github ID:** ankitkmr
-**Instant Messaging information:** Google Hangout (ankitkmr.iitk@gmail.com)
-**HomePage:** http://home.iitk.ac.in/~ankitkmr/
-**Blog:** http://home.iitk.ac.in/~ankitkmr/blog/
-**Blog RSS:**  http://feed43.com/sunpygsoc2015.xml
+* **Name:** Ankit Kumar
+* **Email:** ankitkmr.iitk@gmail.com, technocrat.ankit@gmail.com
+* **Telephone:** +091-9621304455, +091-9911176810
+* **Address:** House No. 1537, Sector 10 A, Gurgaon, Haryana-122001, India
+* **Time Zone:** +0530 GMT
+* **IRC Handle:** 
+* **Github ID:** ankitkmr
+* **Instant Messaging information:** Google Hangout (ankitkmr.iitk@gmail.com)
+* **HomePage:** http://home.iitk.ac.in/~ankitkmr/
+* **Blog:** http://home.iitk.ac.in/~ankitkmr/blog/
+* **Blog RSS:**  http://feed43.com/sunpygsoc2015.xml
 
 ***
 ### Education:
