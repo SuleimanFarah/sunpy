@@ -48,12 +48,18 @@ Although I haven't really had much experience contributing to Open source Projec
 ###6. Proposal Abstract:
 A short description of your proposed project
 
-###7. Proposal Detailed Description/Timeline:
+###7. Software packages to be used
+* **Language:** Python
+
+###8. Deliverables
+
+
+###9. Proposal Detailed Description/Timeline:
 
 Please include timeline with milestones, preferably weekly ones. You may wish to read the GSoC student guide which includes several examples of good proposals with timelines, or our own information at SummerOfCode/Application
 Note that any pre-work such as setup and reading documentation should take place during the community bonding period (April 27-May 24). Students will be expected to start producing code starting on May 25th.
 
-###8. Link to a patch/code sample, preferably one you have submitted to your sub-org:
+###10. Link to a patch/code sample, preferably one you have submitted to your sub-org:
 
 
 ***
