@@ -23,11 +23,11 @@ Currently, I am a third year undergraduate studying Materials Science and Engine
 ***
 
 ###2. University Information
-**University:** Indian Institute of Technology Kanpur
-**Major:** Material Science and Engineering
-**Current Year:** Third Year
-**Expected Graduation Date:** 2016
-**Degree:** Bachelor of Technology (B.Tech)
+* **University:** Indian Institute of Technology Kanpur
+* **Major:** Material Science and Engineering
+* **Current Year:** Third Year
+* **Expected Graduation Date:** 2016
+* **Degree:** Bachelor of Technology (B.Tech)
 
 ###3. Some of my bragging rights:
 
