@@ -63,6 +63,11 @@ Note that any pre-work such as setup and reading documentation should take place
 
 
 ***
+
+###Motivation:
+
+I have always been interested in astronomy, solar systems, planets. To add to interests, Physics and Programming have always been my favorite subjects. Physics because it helps me to understand the world around me through an objective system. I was introduced to programming in my first year of college and software development in my third semester. I took an online course that semester which taught Algorithmic Trading and it involved writing scripts which interacted with data in different files, manipulated it and presented it in different forms. I had already learnt Python the previous summer and applying it in this completely non-convention way ( and the ease with which I could do it) blew my mind. That is where I can point and say that I loved Python and Development. It helped me to build tools for all the amazing scientific theories that I had read and actually use them. That was amazing. I also ended up making a few python games using simplegui as a part of online course offered by Rice University. And It was cool to have my friends/blockmates to play the pingpong game that I coded. Oh I can't tell how awesome I felt back then !! 
+
 ###Schedule:
 
 I do not have any other internship or involvements(and I am not planning to have any) for the Summer 2015. I may go on vacation (for 3-4 days) but that will be either before the coding period begins or after the coding period ends.
