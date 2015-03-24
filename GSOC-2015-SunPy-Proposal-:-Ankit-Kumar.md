@@ -1,4 +1,4 @@
-### Sub-organization with whom you hope to work: SunPy
+### Sub-organization: SunPy
 
 ###1. Student Information
 * **Name:** Ankit Kumar
