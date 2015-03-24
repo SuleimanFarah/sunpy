@@ -20,7 +20,6 @@ I completed my primary and secondary education from Delhi Public School, Maruti 
 
 Currently, I am a third year undergraduate studying Materials Science and Engineering at Indian Institute of Technology, Kanpur. I will graduate from here in April, 2016.
 
-***
 
 ###2. University Information
 * **University:** Indian Institute of Technology Kanpur
@@ -40,12 +39,14 @@ Currently, I am a third year undergraduate studying Materials Science and Engine
 
 Although I haven't really had much experience contributing to Open source Projects, I have extensive experience in developing projects implementing scientific and mathematical ideas. I built a set of scripts using panda, numpy, scipy, matplotlib, QSTK to perform algorithmic trading. I also  implemented a grain strain measurement software based on Electron BackScattering Diffraction (EBSD) maps last semester using Python, numpy, scipy and matplotlibs for my Mechanical Properties Lab. In Current semester as well I am heading the development of SaaS project, a cloud based extractive metallurgy simulation by using Python for module development, Bootstrap for frontend and Python web micro-framework flask for backend. You may find my software source code here: https://github.com/ankitkmr
 
-    * **Operating System Experience:** Currently, I use Mac OSx. Also I have used Ubuntu and Windows for a few years back.
+**Operating System Experience:** Currently, I use Mac OSx. Also I have used Ubuntu and Windows for a few years back.
+
+***
 
 ###5. Proposal Title: Sunpy-Support for analysis of Solar Energetic Particles
 
 ###6. Proposal Abstract:
-     A short description of your proposed project
+A short description of your proposed project
 
 ###7. Proposal Detailed Description/Timeline:
 
