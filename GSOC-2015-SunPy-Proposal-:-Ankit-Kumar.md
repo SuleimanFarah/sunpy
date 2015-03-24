@@ -43,7 +43,7 @@ Although I haven't really had much experience contributing to Open source Projec
 
 ***
 
-###5. Proposal Title: Sunpy-Support for analysis of Solar Energetic Particles
+###5. Title: Sunpy - Support for analysis of Solar Energetic Particles
 
 ###6. Proposal Abstract:
 A short description of your proposed project
