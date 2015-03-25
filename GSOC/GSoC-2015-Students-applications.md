@@ -10,4 +10,4 @@ to the full description of the project you propose and the timeline you plan to 
 
 * [[Goran Cetušić | GSoC-2015-Application-Goran-Cetusic:-Lightcurve-Refactor]] - Lightcurve refactor
 
-* [Ankit Kumar GSOC 2015 Support for Analysis of Solar Energetic Particles](https://github.com/sunpy/sunpy/wiki/GSOC-2015-SunPy-Proposal-:-Ankit-Kumar)
+* [Ankit Kumar](https://github.com/sunpy/sunpy/wiki/GSOC-2015-SunPy-Proposal-:-Ankit-Kumar) : Support for Analysis of Solar Energetic Particles
