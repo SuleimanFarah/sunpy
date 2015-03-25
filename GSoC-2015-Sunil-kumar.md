@@ -10,8 +10,7 @@
 | Github | sunilk747, Sunil Kumar |
 
 ##Abstract
-Currently SunPy doesn't have the functionality to process and analyze the SEPs data. There are some instruments(ERNE,ACE,STEREO) for the observation of SEPs. This project aims to add support to SEP instruments 
-and methods for each instrument for the visualization operation.
+Currently sunpy does not have the functionality to process and analyze the SEPs data. There are some instruments ( ERNE, ACE, STEREO) available for the observation of SEPs. This project aims to add support of these instruments to sunpy. Doing so makes sunpy able to access more solar data, as well as adding more functionality to the existing SunPy.
 
 ## Project Background and Idea
 The support of some instruments which are responsible for the observation of solar data are already present 
@@ -28,11 +27,9 @@ the visualization operation.
 1. Corresponding documentation.
 
 ##  Implementation
-The first approach will be adding class for each instrument. This classes will include all the methods for 
-visualisaton operation which include visulaisation as time series, visualization as energy spectrum and 
-methods for the calculation of intensity ratios of different particles and their dependency on time and 
-energy. This classes will be inherited from superclass `lightcurve.py`. A module for each instrument in 
-`sunpy.instr` which will use the Unified Downloader for downloading and parsing SEPs data.
+The first approach will be adding class for each instrument. These classes will be inherited from superclass lightcurve.py. These classes will include methods for parsing of downloaded files which are generally present in txt, csv or cdf format and then convert the fetched data into a light curve object. These classes will use Unified Downloader for downloading files. Then a module for each instrument will be added in sunpy.instr which will include the following methods:
+* Methods for visualization operation such as visualization as time series, visualization as energy spectrum.
+* Methods for numerical calculations such as calculation of intensity ratios of different particles and their      dependency on time and energy, simple average and energy channel binning by average.
 
 ##  Timeline
 **APRIL 27 -MAY 25(Community bonding period)**
