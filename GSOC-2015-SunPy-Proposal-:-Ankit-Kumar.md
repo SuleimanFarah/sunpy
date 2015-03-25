@@ -53,7 +53,7 @@ Apart from the above projects, I am also proficient in C/C++ and have done quite
 
 ***
 
-###5. Title: Sunpy - Support for analysis of Solar Energetic Particles
+###5. Sunpy - Support for analysis of Solar Energetic Particles
 
 ###6. Proposal Abstract:
 A short description of your proposed project
@@ -74,7 +74,7 @@ Note that any pre-work such as setup and reading documentation should take place
 
 ###10. Link to a patch/code sample:
 
-I tried solving issue **[#798](https://github.com/sunpy/sunpy/issues/798)** : Pandas dataframe values return as numpy.datetime64 objects in local time zone. parse_time does not understand these objects.
+I patched SunPy issue **[#798](https://github.com/sunpy/sunpy/issues/798)** : Pandas dataframe values return as numpy.datetime64 objects in local time zone. parse_time does not understand these objects.
 
 My PR is here **[PR #1344](https://github.com/sunpy/sunpy/pull/1344)** : Adds support for numpy.datetime64 and strings with timezone info. Some details about my PR :-
 
