@@ -49,7 +49,7 @@ Write classes for the remaining two instruments which would be similar to the fi
 
 **JUNE 22 - JULY 5(2 weeks)**
 
-Add module for each instrument in `sunpy.instr` which will include  methods for performing the basic operations like calculation of intensity ratios of different particles,their dependency on time and energy and comparison with other lightcurves data.**JUNE 26 - JULY 3 (Midterm Evaluation).**
+Add module for each instrument in `sunpy.instr` which will include  methods for performing the basic operations like calculation of intensity ratios of different particles, their dependency on time and energy and comparison with other lightcurves data.**JUNE 26 - JULY 3 (Midterm Evaluation).**
 
 **JULY 6 - JULY 12(1 week)**
 
@@ -70,7 +70,7 @@ Add tests, make documentations and make sure everything is working as planned.
 
 **AUGUST 11- AUGUST 18 (1 weeks)**
 
-Finalise everything,solve any bug that might arise,document all my work and make sure that all tests passes.
+Finalise everything, solve any bug that might arise, document all my work and make sure that all tests passes.
 
 **AUGUST 18 - AUGUST 24(1 week)**
 
@@ -82,10 +82,10 @@ Though not for SunPy, but I have added a error message for Astropy. Very soon I 
 
 ## Additional Information
 I am a second year undergraduate student at the International Institute of Information 
-Technology,Bhubaneswar. I am majoring in Computer Science and I am very much interested in Machine learning. For over one year I have been coding in python and I love this language as it is simple and easy to read. I have some knowledge of Scrapy a python based web crawling framework. I am an intermediate level programmer in C and C++. I am well acquainted with working on linux workstation. Since,I am new to opensource and haven't contributed to any opensource community in past, I don't have much experience of it. Through this GSoC program I would like to do some opensource contribution and hoping to learn some new things. 
+Technology,Bhubaneswar. I am majoring in Computer Science and I am very much interested in Machine learning. For over one year I have been coding in python and I love this language as it is simple and easy to read. I have some knowledge of Scrapy a python based web crawling framework. I am an intermediate level programmer in C and C++. I am well acquainted with working on linux workstation. Since, I am new to opensource and haven't contributed to any opensource community in past, I don't have much experience of it. Through this GSoC program I would like to do some opensource contribution and hoping to learn some new things. 
 
 ### Other Schedule Information
-I suppose that I shall be able to devote major part of my time for the Implementation of this project.As of now I have no plans or vacations for this summer. I might have my exam in the month of July ,but it will be over in two days,I will not be able to work for these two days.But I will make up things by putting extra time.
+I suppose that I shall be able to devote major part of my time for the Implementation of this project. As of now I have no plans or vacations for this summer. I might have my exam in the month of July, but it will be over in two days, I will not be able to work for these two days. But I will make up things by putting extra time.
 
 ## Reference
 1. [Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles)
