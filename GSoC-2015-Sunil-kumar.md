@@ -8,6 +8,7 @@
 | Time zone | UTC +5:30 |
 | IRC handle | sun_sam@irc.freenode.net |
 | Github | sunilk747, Sunil Kumar |
+| Blog | | 
 
 ##Abstract
 Currently sunpy does not have the functionality to process and analyze the SEPs data. There are some instruments ( ERNE, ACE, STEREO) available for the observation of SEPs. This project aims to add support of these instruments to sunpy. Doing so makes sunpy able to access more solar data, as well as adding more functionality to the existing SunPy.
