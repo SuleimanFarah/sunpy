@@ -28,7 +28,7 @@ the visualization operation.
 1. Corresponding documentation.
 
 ##  Implementation
-The first approach will be adding class for each instrument. These classes will be inherited from superclass lightcurve.py. These classes will include methods for parsing of downloaded files which are generally present in txt, csv or cdf format and then convert the fetched data into a light curve object. These classes will use Unified Downloader for downloading files. Then a module for each instrument will be added in sunpy.instr which will include the following methods:
+The first approach will be adding class for each instrument. These classes will be inherited from superclass `lightcurve.py`. These classes will include methods for parsing of downloaded files which are generally present in txt, csv or cdf format and then convert the fetched data into a light curve object. These classes will use `UnifiedDownloader` for downloading files. Then a module for each instrument will be added in `sunpy.instr` which will include the following methods:
 * Methods for visualization operation such as visualization as time series, visualization as energy spectrum.
 * Methods for numerical calculations such as calculation of intensity ratios of different particles and their      dependency on time and energy, simple average and energy channel binning by average.
 
