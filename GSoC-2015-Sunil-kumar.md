@@ -37,15 +37,11 @@ energy. This classes will be inherited from superclass `lightcurve.py`. A module
 ##  Timeline
 **APRIL 27 -MAY 25(Community bonding period)**
 
-Read documentation, practice code and get familiar with lightcurve module. Get the final idea about approach 
-
-and project implementation after thoroughly discussing it with mentor.
+Read documentation, practice code and get familiar with lightcurve module. Get the final idea about approach and project implementation after thoroughly discussing it with mentor.
 
 **MAY 26 - JUNE 8(2 weeks)**
 
-Define the class `ERNELightcurve`. Which will be one of the three instrument classes need to be added. This 
-
-class will include methods for the conversion of downloaded data into lightcurve object.
+Define the class `ERNELightcurve`. Which will be one of the three instrument classes need to be added. This class will include methods for the conversion of downloaded data into lightcurve object.
 
 **JUNE 9 - JUNE 21(2 weeks)**
 
@@ -53,11 +49,7 @@ Write classes for the remaining two instruments which would be similar to the fi
 
 **JUNE 22 - JULY 5(2 weeks)**
 
-Add module for each instrument in `sunpy.instr` which will include  methods for performing the basic 
-
-operations like calculatiion of intensity ratios of different particles,their dependency on time and energy 
-
-and comparison with other lightcurves data.**JUNE 26 - JULY 3 (Midterm Evaluation).**
+Add module for each instrument in `sunpy.instr` which will include  methods for performing the basic operations like calculation of intensity ratios of different particles,their dependency on time and energy and comparison with other lightcurves data.**JUNE 26 - JULY 3 (Midterm Evaluation).**
 
 **JULY 6 - JULY 12(1 week)**
 
@@ -70,7 +62,6 @@ I will use this time to get more familiar with the operation of Unified Download
 **JULY 20 - JULY 26(1 week)**
 
 Integrate Unified Downloader with the new class making the new class able to download data using Unified 
-
 Downloader.
 
 **JULY 27- AUGUST 10(2 week)**
@@ -91,12 +82,7 @@ Though not for SunPy, but I have added a error message for Astropy. Very soon I 
 
 ## Additional Information
 I am a second year undergraduate student at the International Institute of Information 
-Technology,Bhubaneswar. I am majoring in Computer Science and I am very much interested in Machine learning. 
-For over one year I have been coding in python and I love this language as it is simple and easy to read. I 
-have some knowledge of Scrapy a python based web crawling framework. I am an intermediate level programmer in 
-C and C++. I am well acquainted with working on linux workstation. Since,I am new to opensource and haven't 
-contributed to any opensource community in past, I don't have much experience of it. Through this GSoC 
-program I would like to do some opensource contribution and hoping to learn some new things. 
+Technology,Bhubaneswar. I am majoring in Computer Science and I am very much interested in Machine learning. For over one year I have been coding in python and I love this language as it is simple and easy to read. I have some knowledge of Scrapy a python based web crawling framework. I am an intermediate level programmer in C and C++. I am well acquainted with working on linux workstation. Since,I am new to opensource and haven't contributed to any opensource community in past, I don't have much experience of it. Through this GSoC program I would like to do some opensource contribution and hoping to learn some new things. 
 
 ### Other Schedule Information
 I suppose that I shall be able to devote major part of my time for the Implementation of this project.As of now I have no plans or vacations for this summer. I might have my exam in the month of July ,but it will be over in two days,I will not be able to work for these two days.But I will make up things by putting extra time.
