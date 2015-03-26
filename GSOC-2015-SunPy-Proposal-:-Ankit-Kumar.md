@@ -56,7 +56,17 @@ Apart from the above projects, I am also proficient in C/C++ and have done quite
 ###5. Sunpy - Support for analysis of Solar Energetic Particles
 
 ###6. Proposal Abstract:
-A short description of your proposed project
+The SEP data is typically available as plaintext files with header information, with columns representing energies and particle elements, while the rows represent time. Also CDF files are used in some occasions. This projects implements a common class SEPLightCurve and implements three subclass (ERNELightCurve, ACELightCurve, STEREOLightCurve) of this class for the three type of instruments that provide SEP data.This project then reads in SEP data as a lightcurve object and allows to perform the basic operations specified in sunpy.instr for given new instruments, when the data is analysed. It also allows various visualization and comparison methods using python libraries such as scipy, numpy, matplotlib, datetime and also pandas dataframe. These basic operations include:
+
+* Visualisation as time series, including changing the time or energy resolution. The SEP observations often suffer from low count-rates, and averaging over energy or time is needed.
+
+* Visualisation as energy spectrum. Combination of energies and integration over time is important also in this case.
+
+* Visualisation of intensity ratios of different particle species. These ratios and their energy- and time-dependence is important for understanding the mechanisms behind the SEP acceleration for different SEP events.
+
+* Ability of comparing the SEP observations with other light-curve type data, such as X-ray and in-situ observations (magnetic field and solar wind propecties near the spacecraft).
+
+Towards the end it also adds capability for solar event recognition and response for few popularly monitored solar events.
 
 ###7. Software packages to be used
 * **Language:** Python
@@ -73,8 +83,18 @@ I will spend some time on the project before the coding period begins so that I 
 
 ###9. Deliverables
 
+* SEPLightCurve class in lightcurve module
+* ERNELightCurve, ACELightCurve and STEREOLightCurve as a subclass of SEPLightCurve
+* Analytical Tools to analyze the data downloaded from the above three instruments.
+* A Suite of interactive and Intuitive Visualization methods to visualize and compare SEP data with various other solar weather parameters
+* Solar Event Recognition and Response Capability
+
 ###10. Benefits to Community
-Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
+In this age, everything we do and everywhere we go we remain connected. Connected to world, to our data, to public data and to the community at large. This connectedness is a result of the hundreds of satellites orbiting the Earth, constantly being exposed to solar weather, its phenomenon and components.
+
+Solar Energetic Particles (SEPs) are accelerated during solar eruptions up to relativistic energies. They propagate from the Sun to the heliosphere, and arriving near Earth they pose a danger to astronauts and spacecraft and satellites. Thus, it is important to understand their acceleration and propagation mechanisms, so that we can mitigate the Space Weather risk they pose.
+
+SEPs are observed with several instruments onboard several spacecraft, such as GOES, SOHO, ACE, and the two STEREO spacecraft. The timing and evolution of the SEP observations are compared to observations of solar X-ray and radio bursts, changes in solar magnetic field and EUV observations, and coronagraphs, and to the solar wind and magnetic field properties at the observing spacecraft. However, while many of these other observations can already be accessed with SunPy, **there is as of now no tool to analyze the SEP observations.**
 
 ###11. Proposal Detailed Description/Timeline:
 
@@ -111,7 +131,7 @@ Correspondingly add the analytical functions to sunpy.instr module for each of t
 
 * add analytical functions to sunpy.instr module for analyzing data from above three instruments
 
-* First set of visualizations: Implement Visualization of data as Time Series e.g. Number of Particles belonging to a particular energy channel vs Time. Implementing event-handling/interactivity features in matplotlib plots. Implement averaging option of data for plots and also curve fitting (optional) of plot to assist data plot coherence during plot resolution change.
+* First set of visualizations: Implement Visualization of data as Time Series e.g. Number of Particles belonging to a particular energy channel vs Time. Implementing event-handling/interactivity features in matplotlib plots. Implement averaging option of data for plots and also curve fitting (optional) of plot to assist data plot coherence during plot resolution change. 
 
 Add more possible simultaneous plots of data available from different sources.
 
