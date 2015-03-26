@@ -78,7 +78,7 @@ Don't forget to make your case for a benefit to the organization, not just to yo
 
 ###11. Proposal Detailed Description/Timeline:
 
-The approximate timeline I planned : (To estimate the amount of work that can be done in summers though it may change during the project [based on advice from mentors])
+**The approximate timeline I planned :** (To estimate the amount of work that can be done in summers though it may change during the project [based on advice from mentors])
 
 **NOTE:** Official Documentation writing, Testing and test additions for all the code written will be done along with code development to ensure consistency, semantic and functional correctness.
 
