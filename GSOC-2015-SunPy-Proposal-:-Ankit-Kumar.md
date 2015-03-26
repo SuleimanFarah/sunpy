@@ -82,7 +82,7 @@ The approximate timeline I planned : (To estimate the amount of work that can be
 
 **NOTE:** Official Documentation writing, Testing and test additions for all the code written will be done along with code development to ensure consistency, semantic and functional correctness.
 
-**{27 April - 25} May Community Bonding Period **
+**{27 April - 25} May Community Bonding Period**
 
 **Pre-Work:**
 
