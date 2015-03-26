@@ -78,8 +78,91 @@ Don't forget to make your case for a benefit to the organization, not just to yo
 
 ###11. Proposal Detailed Description/Timeline:
 
-Please include timeline with milestones, preferably weekly ones. You may wish to read the GSoC student guide which includes several examples of good proposals with timelines, or our own information at SummerOfCode/Application
-Note that any pre-work such as setup and reading documentation should take place during the community bonding period (April 27-May 24). Students will be expected to start producing code starting on May 25th.
+The approximate timeline I planned : (To estimate the amount of work that can be done in summers though it may change during the project [based on advice from mentors])
+
+**NOTE:** Official Documentation writing, Testing and test additions for all the code written will be done along with code development to ensure consistency, semantic and functional correctness.
+
+**27 April - 25 May Community Bonding Period **
+
+**Pre-Work:**
+
+Read documentation and development guide, practice examples and get familiar with lightcurve module, sunpy.instr.goes, sunpy.lightcurve.sources.goes file, Unified Downloader PR, Maps class. Get the final idea about approach.
+Discuss and create a list of each ‘X’ vs ‘Y’ visualization to be implemented during the project and sort out project implementation and additional feature that should be added after thoroughly discussing it with mentor.
+
+
+**I  [25 May - 21 June] ( 4 weeks) (This I believe will be the bulk of the initial task and might take unto a month or so)**
+
+Read in SEP data as light curve object from the remote plaintext file or CDF file for the given time range from the given of the possible instruments - SOHO/ERNE, ACE, STEREO, GOES . 
+
+This would mean implementing instrument-wise (ACE, STEREO, SOHO/ERNE) subclass of SEPLightCurve subclass of LightCurve class and implementing import methods for import of Data from the respective remote-files/URLs for all the different instruments in their respective sunpy.lightcurve.sources module  eg SOHO/ERNE, Stereo, ACE. 
+
+As of now the lightcurve class reads in data and stores it as pandas.DataFrame type so we can assume to read in data and convert it to pandas.DataFrame.
+
+* Implement ERNELightCurve in sunpy.lightcurve.SEPlightcurve.sources.ERNE  **( 2 weeks)**
+* Implement ACELightCurve in sunpy.lightcurve.SEPlightcurve.sources.ACE    **( 1 week )**
+* Implement STEREOLightCurve in sunpy.lightcurve.SEPlightcurve.sources.STEREO **( 1 week )**
+
+
+[26 June - 3 July ]  Mid Term Evaluation 
+
+**II  [22 June -  9 July] (2.5 weeks)**
+
+Correspondingly add the analytical functions to sunpy.instr module for each of the three new instruments that’ll help analyze the data retrieved from the instrument. Also goes.py might need some new analyzing functions (thats up for discussion with mentor later)
+
+* add analytical functions to sunpy.instr module for analyzing data from above three instruments
+
+* First set of visualizations: Implement Visualization of data as Time Series e.g. Number of Particles belonging to a particular energy channel vs Time. Implementing event-handling/interactivity features in matplotlib plots. Implement averaging option of data for plots and also curve fitting (optional) of plot to assist data plot coherence during plot resolution change.
+
+Add more possible simultaneous plots of data available from different sources.
+
+matplotlib, scipy, DataFrame.plot(), datetime, matplotlib.axes.Axes for interactive resolution changing and zooming and panning of plots 
+
+
+**III [9 July -  15 July] ( 1 weeks)**
+
+Second Set of Visualization: Implement Visualization as Energy Spectrum i.e number of particles vs energy. Implement feature to plot number of particles corresponding to particular energy bin (user defined widths ) vs energy bins. This I suggest to implement using two approaches: i) Simple plot and ii) Histograms (useful in case of non-uniform energy bin width)
+The channels are usually more or less logarithmically spaced. This could be improved by taking into account the spectrum in the weighing and calculating also the weighted energy point. So implement channel energy-bin-width weight calculations.
+
+Again curve fitting for plot coherence and curve integration feature for calculating total energy flux etc using scipy can be added.
+
+scipy, matplotlib
+
+**IV [16 July - 29 July ](2 weeks)**
+
+Implement Compatibility in data download with Unified Downloader. Also make SEPLightCurve data querying and fetch conform to UnifiedDownloaderFactory class methods. But I plan to do this after mid term evaluation date and till then wait for more changes that may come to it.
+ 
+
+**V  [29 July - 4 August] (1 weeks)**
+
+
+Third Set of Visualization: Implement Visualization of elemental intensity ratios (with respect to user selected intensity) i.e Intensity ratio plot of particles of particular energy vs time. Implement more features revealing energy- and time-dependence of data.
+
+
+**VI  [5 August - 11 August ](1 weeks)**
+
+Time Series visualization of SEP data vs other data. e.g. Xray, Solar Wind Properties, Magnetic Properties. In case of more types of data visual comparisons in addition to the list decide in the beginning, will be decided after discussion with mentor during this time.
+
+
+
+**VII  [12 August - 17 August] (In case I end up completing before the deadlines and time permits)**
+
+I’d like to suggest/add a new feature. (This will be optional and added with further discussion with mentor):
+
+Event Recognition and Response Mechanism : I plan to at least start the development of events recognition and corresponding response for a few sample popularly monitored events in the solar weather.
+
+The approach here is to not just build tools but build features for a larger system sunpy.  A long shot might be developing a registeration mechanism where we can register for events. But a more realistic would be direct implementation for recognition of and response to a few popularly monitored events so that they can be recognized and responded to appropriately.
+
+
+**17 August:  Suggested 'pencils down' date. Take a week to scrub code, write tests, improve documentation, etc.**
+
+
+**[17 August - 21 August ]( 1 week ):**
+
+Make sure that the tests are holistic, documentation complete and code well structured and organized.
+
+**21 August: Firm 'pencils down' date. Mentors, students and organization administrators can begin submitting final evaluations to Google.**
+
+**28 August: Final evaluation deadline**
 
 ###12. Link to a patch/code sample:
 
