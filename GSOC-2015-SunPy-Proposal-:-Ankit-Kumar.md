@@ -62,17 +62,26 @@ A short description of your proposed project
 * **Language:** Python
 * **Libraries and modules:** pandas, datetime, scipy, numpy, matplotlib
 
-###8. Deliverables
+###8. How I will successfully complete the project:
 
-###9. Benefits to Community
+I consider myself a quick learner who finds ways out of difficulties. I have been an active user of Stack Overflow in the past and know where to go for various programming related questions. Having selected a project that both fits my skill set and excites me very much, I am confident to complete it on time. Also the fact that I have had done various projects in the past requiring similar nature of working with pandas timeseries and visualizations, I have a good grasp on the implementation intricacies of this project.
+
+I will work on the project regularly and update mentors with my status as well as discuss further plan of action regularly. I will also push code on github on a regular basis. Also I will ensure that my commit messages and comments are insightful to any future reader of my code.
+
+I will spend some time on the project before the coding period begins so that I can start being productive as soon as coding period begins. I have started understanding the structure of LightCurve, UnifiedDownloader. I'll spend more time on it once it has been updated more in future. I will fully understand it and experiment with it before the coding period begins. I'll also remain available for any queries regarding my code well after successful completion of project. 
+
+
+###9. Deliverables
+
+###10. Benefits to Community
 Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
-###9. Proposal Detailed Description/Timeline:
+###11. Proposal Detailed Description/Timeline:
 
 Please include timeline with milestones, preferably weekly ones. You may wish to read the GSoC student guide which includes several examples of good proposals with timelines, or our own information at SummerOfCode/Application
 Note that any pre-work such as setup and reading documentation should take place during the community bonding period (April 27-May 24). Students will be expected to start producing code starting on May 25th.
 
-###10. Link to a patch/code sample:
+###12. Link to a patch/code sample:
 
 I patched SunPy issue **[#798](https://github.com/sunpy/sunpy/issues/798)** : Pandas dataframe values return as numpy.datetime64 objects in local time zone. parse_time does not understand these objects.
 
@@ -87,11 +96,11 @@ It is yet to be merged.
 
 ***
 
-###Motivation:
+###13. Motivation:
 
 I have always been interested in astronomy, solar systems, planets. To add to interests, Physics and Programming have always been my favorite subjects. Physics because it helps me to understand the world around me through an objective thought system and Programming because it is empowering. I was introduced to programming in my first year of college and software development in my third semester. I took an online course that semester which taught Algorithmic Trading and it involved writing scripts which interacted with data in different files, manipulated it and presented it in different forms. I had already learnt Python the previous summer and applying it in this completely non-convention way ( and the ease with which I could do it) blew my mind. That is where I can point and say that I loved Python and Development. It helped me to build tools for all the amazing scientific theories that I had read and actually use them. That was amazing. I also ended up making a few python games using simplegui as a part of online course offered by Rice University. And It was cool to have my friends/blockmates to play the pingpong game that I coded. Oh I can't tell how awesome I felt back then !! And as it was I ended up doing all my major development projects afterwards in Python only.
 
-###Schedule:
+###14. Schedule:
 
 I do not have any other internship or involvements(and I am not planning to have any) for the Summer 2015. I may go on vacation (for 3-4 days) but that will be either before the coding period begins or after the coding period ends. In case it clashes with the coding period, I'll ensure that I complete that weeks work in advance before going away (which won't be for more than a week in any case)
  
@@ -99,6 +108,6 @@ I have classes during last two weeks of coding period but since the academic loa
 
 Also I haven't applied to any other organization except SunPy.
 
-###Eligibility:
+###15. Eligibility:
 Yes, I am eligible to receive payments from Google.
 For any queries, clarifications or further explanation of any approach/feature feel free to contact me at **ankitkmr.iitk@gmail.com** and I shall be happy to reply.
