@@ -91,7 +91,7 @@ database2 will be filled with entries that did not match the query while databas
 |July 11 - July 24(14 days)|Adding support to download lightcurve data and saving metadata in the database.
 |July 24 - July 30(7 days)|Writing tests for the code and completing any remaining work from previous week. Completing documentation. At this point I will have completed section 3.|
 |July 31 - August 6(7 days)|Working on to implement a method to a split database by query into two databases and writing tests related to that. At this point I will have completed section 4.|
-|August 7 - August 17(Buffer Period 11 days)|Finished any remaining work. Improve test coverage. Fix any bugs with the code and finalizing work.|
+|August 7 - August 17(Buffer Period 11 days)|Finish any remaining work. Improve test coverage. Fix any bugs with the code and finalizing work.|
 
 ## Code Samples
 
