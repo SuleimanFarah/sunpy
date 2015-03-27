@@ -47,16 +47,18 @@ for the lightcurve module.
 * Researching the physics behind sunpy and lightcurve  
 
 ##### Week 1 (25th May - 31st May):  
-* FIXME  
+* Basic LightCurve class refactor and code cleanup  
+* Designing factory class for LightCurve  
 
-##### Week 2 (1st June - 7th June):  
-* FIXME  
+##### Weeks 2 and 3 (1st June - 14th June):  
+* Refactor of all sources related files   
 
-##### Week 3 (8th June - 14th June):
-* FIXME  
+##### Week 4 (15th June - 21st June):
+* Syncing sources refactor with UnifiedDownloader branch  
 
-##### Week 4 and 5 (15th June - 28th June):  
-* FIXME  
+##### Week 5 (22nd June - 28th June):  
+* Resolving LightCurve related issues on Github  
+* Evaluating, fixing and closing  
  
 ##### Week 6 (29th June - 5th July):  
 * Midterm evaluation  
