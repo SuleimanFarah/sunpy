@@ -2,9 +2,6 @@
 
 ###1. Student Information
 * **Name:** Ankit Kumar
-* **Email:** ankitkmr.iitk@gmail.com, technocrat.ankit@gmail.com
-* **Telephone:** +091-9621304455, +091-9911176810
-* **Address:** House No. 1537, Sector 10 A, Gurgaon, Haryana-122001, India
 * **Time Zone:** +0530 GMT
 * **IRC Handle:** 
 * **Github ID:** ankitkmr
