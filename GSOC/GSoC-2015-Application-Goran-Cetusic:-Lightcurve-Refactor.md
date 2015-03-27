@@ -65,11 +65,13 @@ for the lightcurve module.
 * Resolving any design problems  
 * Maintenance and codebase improvements  
 
-##### Week 7-8 (6th July - 19th July): 
-* FIXME  
+##### Weeks 7 and 8 (6th July - 19th July): 
+* Dealing with merging of LightCurve metadata  
+* Fixing any showstoppers not caused by Lightcurve refactor    
 
-##### Week 9-10 (20th July - 2nd August):  
-* FIXME  
+##### Weeks 9 and 10 (20th July - 2nd August):  
+* Removing pandas library from SunPy  
+* Implementing custom data storage structures 
 
 ##### Week 11 (3rd August - 9th August):  
 * Buffer Period for completing any incomplete work  
