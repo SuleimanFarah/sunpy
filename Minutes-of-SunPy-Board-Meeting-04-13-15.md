@@ -2,7 +2,7 @@
 13th April 2015
 
 ### Attendance: 
-**Present**: Steven Christe (Chair), David Perez-Suarez (Vice-Chair), Andrew Inglis (Secretary), Albert Shih, Juan Carlos Martinos Oliveros
+**Present**: Steven Christe (Chair), David Perez-Suarez (Vice-Chair), Andrew Inglis (Secretary), Albert Shih, Juan Carlos Martinez Oliveros
 
 **Absent**: Jack Ireland, Stuart Mumford, Thomas Robitaille, Russell Hewett
 
