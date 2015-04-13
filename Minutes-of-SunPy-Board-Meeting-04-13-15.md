@@ -6,7 +6,7 @@
 
 **Absent**: Jack Ireland, Stuart Mumford, Thomas Robitaille, Russell Hewett
 
-### Minutes of Meeting
+### Meeting Notes
 
   - Discussion on community contributions to SunPy. **Steven** suggested we may be outpacing the rest of the solar community with our code standard requirements. A consequence of this is that it may be frustrating/difficult for people new to SunPy or Python to contribute. Contributions tend to attract a high level of code comments - members of the community are not used to this, and it can be a turn off.
     - Agreement that there is no desire to lower the coding standards required to contribute to SunPy. However, the board agreed that it is very important for SunPy to be an approachable and friendly project. 
