@@ -8,7 +8,7 @@
 
 ### Meeting Notes
 
-  - Discussion on community contributions to SunPy. **Steven** suggested we may be outpacing the rest of the solar community with our code standard requirements. A consequence of this is that it may be frustrating/difficult for people new to SunPy or Python to contribute. Contributions tend to attract a high level of code comments - members of the community are not used to this, and it can be a turn off.
+  - Discussion on community contributions to SunPy. **Steven** suggested we may be outpacing the rest of the solar community with our code standard requirements. A consequence of this is that it may be **frustrating/difficult for people new to SunPy or Python to contribute**. Contributions tend to attract a high level of code comments - members of the community are not used to this, and it can be a turn off.
     - Agreement that there is no desire to lower the coding standards required to contribute to SunPy. However, the board agreed that it is very important for SunPy to be an approachable and friendly project. 
     - One suggestion was to more formally introduce a **mentoring** system into the project. New contributors would be assigned a mentor (an experienced SunPy developer) to help them deal with peer-review code comments, and to provide a friendly face and point of contact. General support for this idea.
 
