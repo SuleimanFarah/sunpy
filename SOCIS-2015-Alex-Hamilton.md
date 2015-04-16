@@ -17,7 +17,7 @@ My general interests include climbing, photography, computer gaming and anything
  
 Project
 ========
-he solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate using the Non-Linear Force-Free Field (NLFFF) equations.
+The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate using the Non-Linear Force-Free Field (NLFFF) equations.
 This area of research involves several major families of routine, implemented on different (coding) platforms by different scientists making generally incremental changes.
 
 The goal of this project is to implement an API for easy creation, updating and distribution of NLFFF extrapolation models within SunPy using a new object class that would contain the extrapolator code and take a magnetogram map as one of its constructor arguments.
