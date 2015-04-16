@@ -17,13 +17,26 @@ My general interests include climbing, photography, computer gaming and anything
  
 Project
 ========
-The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate using the Non-Linear Force-Free Field (NLFFF) equations.
-This area of research involves several major families of routine, implemented on different (coding) platforms by different scientists making generally incremental changes.
+The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate the magnetic field above.
+Basic potential field extrapolations use the Greens Function method, modelling the magnetic field at each point as the integral sum of contributions from each point in the photosphere. An example can be seen here:
 
-The goal of this project is to implement an API for easy creation, updating and distribution of NLFFF extrapolation models within SunPy using a new object class that would contain the extrapolator code and take a magnetogram map as one of its constructor arguments.
+IMAGE - Potential
+
+More advanced routines use the assumption that the low density plasma in the corona is force-free, where the Lorentz force is equal to zero. The field is the described by:
+
+(&nabla; &times; **B**) = &alpha;**B**       and       **B** &sdot; &nabla; &alpha; = 0
+
+Where alpha is a function of position, leading to a non-linear problem. Simplifications can include using a constant &alpha; to make a linear problem, or setting &alpha; = 0 which leads to the current free potential field.
+
+The Non-Linear Force-Free Field (NLFFF) produce the best results (Wiegelmann et al. [2004]) and can be solved using a number of different numerical methods, for example using optimization method of Wheatland et al. [2000]. The field involves several major families of routine that stem from the different solution methods, these are often implemented on different (coding) platforms by different scientists making generally incremental changes.
+
+
+The goal of this project is to implement an API for easy creation, updating, distribution and analysis of NLFFF extrapolation models within SunPy using a new object class that would contain the extrapolator code and take a magnetogram map as one of its constructor arguments.
 This would ideally be implemented in a way similar to astropy.modeling, and would enable users to either implement in Python, or hook into custom non-python code.
 
-Extrapolations could then be evaluated to one of the semi-analytical solution fields, such as the Titov-Demoulin Equilibrium model and visualised using MayaVi.
+Extrapolations could then be evaluated to one of the semi-analytical solution fields, such as the Titov-Demoulin Equilibrium model (see image below) and visualised using MayaVi.
+
+IMAGE - TD
 
 
 ##Proposed timeline
