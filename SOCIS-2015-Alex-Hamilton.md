@@ -1,9 +1,8 @@
 About Me
 ========
 - Name: Alex Hamilton
-- Email: a (dot) i (dot) hamilton (at) se11 (dot) qmul (dot) ac (dot) uk
 - Studies: 4th Year Astrophysics Masters at Queen Mary University of London, Ongoing Mathematics and Computer Science Student at the Open University
-GitHub: Alex-Ian-Hamilton
+- GitHub: [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
 - Languages: English (native)
 
 Background
