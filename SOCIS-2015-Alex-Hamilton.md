@@ -48,7 +48,7 @@ Implement generic extrapolation framework for potential field extrapolation. Inc
 Additionally, communicate with code authors to see if any would be willing to licence code for use
 
 ###Week 3 / 4
-Write TD testing framework
+Write TD model based testing framework
 - generating TD field from initial parameters
 - calculating "figures of merit" to compare the two vector fields
 
