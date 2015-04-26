@@ -64,7 +64,7 @@ Write examples of verifying the potential field extrapolation with the testing f
 Write field MayaVi visualisation framework.
 - ability to overlay extrapolated and original vector fields with streamlines and boundary data
 - ensure user configurability
-- consider possible functions mlab might which to implement
+- consider possible functions mlab might which to implement to at functionality to MayaVi
 
 ###Week 11 / 12
 Test and document use of using external extrapolation using dev API, i.e. 3rd party Fortran and C++.
