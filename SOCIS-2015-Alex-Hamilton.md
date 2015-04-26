@@ -34,7 +34,9 @@ The Non-Linear Force-Free Field (NLFFF) produce the best results (Wiegelmann et 
 The goal of this project is to implement an API for easy creation, updating, distribution and analysis of NLFFF extrapolation models within SunPy using a new object class that would contain the extrapolator code and take a magnetogram map as one of its constructor arguments.
 This would ideally be implemented in a way similar to astropy.modeling, and would enable users to either implement in Python, or hook into custom non-python code.
 
-Extrapolations could then be evaluated to one of the semi-analytical solution fields, such as the Titov-Demoulin Equilibrium model and visualised using MayaVi (see fig 2 below).
+Extrapolations could then be evaluated in two ways:
+- Qualitatively: by visualising the field over an active region using MayaVi (see fig 2 below).
+- Quantitatively: using semi-analytical solution fields, such as the Titov-Demoulin Equilibrium model and comparing the extrapolated and model fields using various metrics, such as the figures of merit from Wiegelmann et al (2006).
 
 Fig 2: Potential Field Extrapolation, overlaid on the (a) AIA and (b) (c) HMI boundary data.
 ![potential field extrapolation over genuine data](http://i.imgur.com/hGKvwdL.jpg)
