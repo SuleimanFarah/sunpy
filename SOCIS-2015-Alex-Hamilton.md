@@ -44,6 +44,7 @@ Fig 2: Potential Field Extrapolation, overlaid on the (a) AIA and (b) (c) HMI bo
 Implement generic extrapolation framework for potential field extrapolation. Including:
 - User API: allows running any of the pre-defined algorithms using user-defined data/parameters
 - Dev API: for developing custom extrapolation routines
+
 Additionally, communicate with code authors to see if any would be willing to licence code for use
 
 ###Week 3 / 4
