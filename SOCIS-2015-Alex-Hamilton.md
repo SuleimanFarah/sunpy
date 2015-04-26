@@ -41,9 +41,10 @@ Fig 2: Potential Field Extrapolation, overlaid on the (a) AIA and (b) (c) HMI bo
 
 ##Proposed timeline
 ###Week 1 / 2
-Implement generic extrapolation frame work for potential field extrapolation. Including:
+Implement generic extrapolation framework for potential field extrapolation. Including:
 - User API: allows running any of the pre-defined algorithms using user-defined data/parameters
 - Dev API: for developing custom extrapolation routines
+Additionally, communicate with code authors to see if any would be willing to licence code for use
 
 ###Week 3 / 4
 Write TD testing framework
@@ -69,7 +70,7 @@ Write field MayaVi visualisation framework.
 ###Week 11 / 12
 Test and document use of using external extrapolation using dev API, i.e. 3rd party Fortran and C++.
 - getting some real world code to demonstrate, like T. Wiegelmann's C++
-- communicate with code authors to see if any would be willing to licence code for use
+- further communication with code authors RE code licences
 
 ###Week 13 / 14
 Complete documentation and 3rd party user testing.
