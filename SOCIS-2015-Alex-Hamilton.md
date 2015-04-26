@@ -10,10 +10,18 @@ Background
 An Astrophysics Masters student at Queen Mary, I am passionate about astronomy, science and technology with a specific focus in solar physics where I plan to do a PhD.
 I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching Object Oriented Programming in Java with the Open University.
 
-My project this year is based on coronal magnetic field, it involved reading key scientific literature on the subject and implementing a simple version in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualisation and quantitatively using the Titov-Demoulin Equilibrium model. I have never contributed to an Open Source project and consider this to be the perfect opportunity for me to take what I have learnt and use it to implement tools that everyone can use.
+My university project this year is based on coronal magnetic field, it involved reading key scientific literature on the subject and implementing a simple version in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualisation and quantitatively using the Titov-Demoulin Equilibrium model. I have never contributed to an Open Source project and consider this to be the perfect opportunity for me to take what I have learnt and use it to implement tools that everyone can use.
 
 My general interests include climbing, photography, computer gaming and anything sci-fi.
- 
+
+Previous Projects
+========
+Over the last 2 years I have had the opportunity to do two summer internships:
+ -  RAL was investigating the LHC ATLAS detector metadata usage,
+ -  NPL (the National Physical Laboratory) was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
+
+Both of these projects required that I plan and undertake independent work while collaborating with members of the departments and experts in the fields. Along with valuable coding, troubleshooting and documentation experience I was able to contribute useful insights into the fields for my supervisors.
+
 Project
 ========
 The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate the magnetic field above.
@@ -68,7 +76,7 @@ Write examples of verifying the potential field extrapolation with the testing f
 Write field MayaVi visualisation framework.
 - ability to overlay extrapolated and original vector fields with streamlines and boundary data
 - ensure user configurability
-- consider possible functions mlab might which to implement to at functionality to MayaVi
+- consider possible functions mlab might which to implement to at functionality to the MayaVi API
 
 ###Week 11 / 12
 Test and document use of using external extrapolation using dev API, i.e. 3rd party Fortran and C++.
