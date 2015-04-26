@@ -52,8 +52,8 @@ Write TD testing framework
 
 ###Week 5 / 6
 Update all code to Cython for improved performance. Specifically:
-- pre-implemented extrapolation code
-- TD generating code
+- pre-implemented extrapolation algorithm/s
+- TD model: code for generating the TD field
 
 ###Week 7 / 8
 Write examples of verifying the potential field extrapolation with the testing framework.
