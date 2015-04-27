@@ -22,6 +22,9 @@ Over the last 2 years I have had the opportunity to do two summer internships:
 
 Both of these projects required that I plan and undertake independent work while collaborating with members of the departments and experts in the fields. Along with valuable coding, troubleshooting and documentation experience I was able to contribute useful insights into the fields for my supervisors.
 
+I also helped on creation of the OpenAstronomy website, designed to promote the work done by 4 major open source astronomy projects.
+https://github.com/OpenAstronomy/openastronomy.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aalex-ian-hamilton
+
 Project
 ========
 The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate the magnetic field above.
