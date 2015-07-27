@@ -8,6 +8,7 @@ This page contains the major features desired in every release, general feature 
 
 ## Release 0.7
 
+Top priority features:
 * FIDO - Unified downloader.
  - Unifies acquisition of data. A requirement for the Lightcurve factory.
 * Lightcurve factory.
@@ -15,6 +16,8 @@ This page contains the major features desired in every release, general feature 
 * Full support for Python 3.x
  - Python 3.x has many new features useful for scientific computing.
  - All major packages in the SciPy stack are Python 3.2>= compliant.
+
+Other high priority features:
 * Include high quality solar ephemeris library.
 * Integrate Astropy coordinates.
 * Transformation of images under solar differential rotation.
