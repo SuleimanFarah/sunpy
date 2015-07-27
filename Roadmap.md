@@ -9,13 +9,13 @@ This page contains the major features desired in every release, general feature 
 ## Release 0.7
 * 85%+ Test coverage
 * Full support for Python 3.x
-* Integrate Astropy time object into parse_time() and the Time Range object
 * Include high quality solar ephemeris library
 * Integrate Astropy coordinates
 
 ## Release 0.8
 * 90%+ test coverage
 * Refactor plotting functions outside of core datatypes
+* Integrate Astropy time object into parse_time() and the Time Range object
 
 ## Release 0.9
 
