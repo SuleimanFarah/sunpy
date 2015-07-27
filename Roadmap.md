@@ -7,10 +7,13 @@ This page contains the major features desired in every release, general feature 
 * Enable storing of lightcurve data in the database.
 
 ## Release 0.7
-* 85%+ Test coverage
+* 85%+ Test coverage.
 * Full support for Python 3.x
-* Include high quality solar ephemeris library
-* Integrate Astropy coordinates
+* Include high quality solar ephemeris library.
+* Integrate Astropy coordinates.
+* Unified downloader.
+* Lightcurve factory.
+* Transformation of images under solar differential rotation.
 
 ## Release 0.8
 * 90%+ test coverage
