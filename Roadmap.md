@@ -8,11 +8,13 @@ This page contains the major features desired in every release, general feature 
 
 ## Release 0.7
 * 85%+ Test coverage.
+* FIDO - Unified downloader.
+* Lightcurve factory.
+** Improved support for existing and well-used SunPy datatype.
 * Full support for Python 3.x
 * Include high quality solar ephemeris library.
 * Integrate Astropy coordinates.
-* Unified downloader.
-* Lightcurve factory.
+
 * Transformation of images under solar differential rotation.
 
 ## Release 0.8
