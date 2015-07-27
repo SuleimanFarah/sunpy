@@ -1,4 +1,4 @@
-This page contains the major features desired in every release, general feature requests should like in the issue tracker. This is for milestones that link together to achieve milestones later on.
+This page contains the major features desired in every release, general feature requests should like in the issue tracker. This is for milestones that link together to achieve milestones later on. SunPy makes use of the following schema for versioning http://semver.org/.
 
 ## Release 0.6
 * 80%+ Test coverage
