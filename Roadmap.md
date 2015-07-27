@@ -2,9 +2,7 @@ This page contains the major features desired in every release, general feature 
 
 ## Release 0.6
 * 80%+ Test coverage
-* Integrate Astropy coordinates
 * Functions should accept astropy quantities
-* Include high quality solar ephemeris library
 * Replace our pixel to world transformation functions with Astropy.wcs
 * Enable storing of lightcurve data in the database.
 
@@ -12,6 +10,8 @@ This page contains the major features desired in every release, general feature 
 * 85%+ Test coverage
 * Full support for Python 3.x
 * Integrate Astropy time object into parse_time() and the Time Range object
+* Include high quality solar ephemeris library
+* Integrate Astropy coordinates
 
 ## Release 0.8
 * 90%+ test coverage
