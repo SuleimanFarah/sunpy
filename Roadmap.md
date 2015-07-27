@@ -7,15 +7,15 @@ This page contains the major features desired in every release, general feature 
 * Enable storing of lightcurve data in the database.
 
 ## Release 0.7
-* 85%+ Test coverage.
+
 * FIDO - Unified downloader.
 * Lightcurve factory.
-** Improved support for existing and well-used SunPy datatype.
+* * Improved support for existing and well-used SunPy datatype.
 * Full support for Python 3.x
 * Include high quality solar ephemeris library.
 * Integrate Astropy coordinates.
-
 * Transformation of images under solar differential rotation.
+* 85%+ Test coverage.
 
 ## Release 0.8
 * 90%+ test coverage
