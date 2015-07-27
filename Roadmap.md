@@ -9,7 +9,7 @@ This page contains the major features desired in every release, general feature 
 ## Release 0.7
 
 * FIDO - Unified downloader.
- - Unifies acquisition of data.
+ - Unifies acquisition of data. A requirement for the Lightcurve factory.
 * Lightcurve factory.
  - Improved support for existing and well-used SunPy datatype.
 * Full support for Python 3.x
