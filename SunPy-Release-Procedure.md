@@ -1,1 +1,0 @@
-There is a release checklist here: https://gist.github.com/Cadair/9004780
