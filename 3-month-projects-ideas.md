@@ -252,7 +252,8 @@ Jose Iván Campos Rozo (National Astronomical Observatory, National University o
 
 ## Coronal Loop Tracing software
 **Abstract**
-Coronal loops are of fundamental interest in understanding the Sun's atmosphere.  Much effort has gone into automatically tracing coronal loops in images so that it is easy for researchers to determine coronal structures.  The OCCULT-2 algorithm (http://arxiv.org/abs/1307.5046) implements this capability, and has been used in publications.  An IDL version of the code is available at (http://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/looptracing_auto3.pro)
+Coronal loops are of fundamental interest in understanding the Sun's atmosphere.  Much effort has gone into automatically tracing coronal loops in images so that it is easy for researchers to determine coronal structures.  The OCCULT-2 algorithm (http://arxiv.org/abs/1307.5046) implements this capability, and has been used in publications.  An IDL version of the code is available at (http://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/looptracing_auto4.pro).  A tutorial on its
+use is available at http://www.lmsal.com/~aschwand/software/tracing/tracing_tutorial1.html .
 
 **Requirements**
 Some knowledge of basic image processing.  Basic Python skills, including basic OOP.  This would be a good project for someone wishing to learn some Python by translating IDL code.  
