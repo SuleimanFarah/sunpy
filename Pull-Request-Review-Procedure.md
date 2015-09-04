@@ -32,12 +32,16 @@ This is the group of people who have push access to the main SunPy repos. The me
 ## SunPy Developers
 The members of this group have 'read' access to the SunPy orgs repos. As all these repos are open anyway, what this effectively means is that these people can be assigned to issues. The members of this group are people who are involved in the development of SunPy at a good frequency, they are people who's opinions have been demonstrated to be constructive and informative.
 
-# Pull Request Tags
-Like we use issue labels for sorting issues the following tags will be used for sorting Pull Requests. These tags will be both issue labels and also be placed in the title of PRs. To differentiate them from issue labels and to make the title of the PR clear the labels will be in square brackets.
+# Pull Request Labelling
+Like we use labels for sorting issues and pull requests the following tags will be used for sorting Pull Requests. These tags will be applied as issue labels.
 
 * `[Review]` - This PR is 'complete' and in need of a 'final' review.
-* `[Branch]` - This PR is to pull a feature branch of the SunPy repo into master.
 * `[BugFix]` - This is a lightweight bug-fix PR, generally no more than a few lines, and should be handled rapidly.
 * `[DocFix]` - This is a lightweight documentation patch that should also be fast-tracked.
 
-As an exception to the normal review requirements, only one developer approval (as opposed to two) is required for "BugFix" and "DocFix" PRs.
+*As an exception to the normal review requirements, only one developer approval (as opposed to two) is required for "BugFix" and "DocFix" PRs.*
+
+# Pull Requests to Feature Branches
+
+From time to time, large feature development work may occur in branches other than `master`, and all maintained releases currently have a branch i.e. `0.6`. When making a PR to one of these branches, please put the name of the branch in square brackets at the beginning of the PR, i.e. `[0.6] My bug fix`. This makes it easier to filter and review these PRs.
+
