@@ -1,5 +1,5 @@
 ### Minutes of SunPy board meetings
-[[Board Meeting 2015-09-21|Minutes-of-SunPy-Board-Meeting-09-21-15]]
+[[Board Meeting 2015-09-21|Minutes-of-SunPy-Board-Meeting-20150921]]
 
 [[Board Meeting 2015-04-13|Minutes-of-SunPy-Board-Meeting-04-13-15]]
 
