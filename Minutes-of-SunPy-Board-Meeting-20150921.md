@@ -1,3 +1,6 @@
+### Date of Meeting
+21st September 2015
+
 ### Agenda
 
   - Vote on new member (Kevin Reardon)
