@@ -3,10 +3,9 @@
 
 ### Attendance
 
-**Present**: Jack Ireland, Stuard Mumford, Russell Hewett, Thomas Robitaille,
-Andrew Inglis, Steven Christe
+**Present**: Steven Christe (Chair), Andrew Inglis (Secretary), Jack Ireland, Stuard Mumford, Russell Hewett, Thomas Robitaille
 
-**Absent**: DVS PS, JCMO, Albert Shih, Kevin Reardon
+**Absent**: David Perez-Suarez (Vice-Chair), Juan Carlos Martinez Oliveros, Albert Shih, Kevin Reardon
 
 ### Agenda:
 1) Funding Opportunities
