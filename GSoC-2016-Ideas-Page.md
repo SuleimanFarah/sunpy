@@ -92,10 +92,6 @@ Someone under taking this project will complete the following tasks:
 1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
 
 
-
-## For ChiantiPy
-
-
 ## GUI to use LCT tools
 *Suggested Mentor(s):* [Jose Iván Campos Rozo](https://github.com/Hypnus1803) (National Astronomical Observatory, National University of Colombia), Santiago Vargas Domínguez (National Astronomical Observatory, National University of Colombia), [David Pérez Suárez](https://github.com/dpshelio).
 
