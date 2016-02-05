@@ -16,15 +16,20 @@ ideas_team: SunPy core package
 *Programming skills:* Python, some database knowledge would be helpful, but not required.
 
 #### Description
+
 The `database` module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name.
 The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft.
 It also allows more complex queries by enabling searches of the raw meta data associated with the files.
 
-The improvements to the database functionality that would be implemented by this project include:
+SunPy contains clients to various web services, the first and primary web service SunPy supported was the Virtual Solar Observatory (VSO), this is the web service the database was originally designed to support. Since the original development of the database module, the database has also been extended to support the HEK client.
 
-1. Integration of the new `UnifiedDownloader` code into the database search, to replace the direct VSO integration current present. (The [VSO](http://vso1.nascom.nasa.gov/) is a repository of solar physics data, SunPy's VSO API has been wrapped by `UnifiedDownloader`.)
-1. Support for relative paths in the database module [#783](https://github.com/sunpy/sunpy/issues/783) to allow a centralised database with multiple users, all referencing a central file store mounted with different absolute paths on each client.
-1. Supporting all data supported by the `sunpy.lightcurve` module in the database. The major hurdle here is the lack of standardisation in the file used by this data.
+The SunPy web clients, use a system named `attrs` (an abbreviation for attributes) to compose queries, this attrs system is also used by the database to perform queries on the database, with some of the attrs shared between the VSO client and the database.
+Recently, a new downloader front end (originally named `UnifiedDownloader`, now affectionately known as `Fido`) has been developed, this provides a Factory Class, with which various download clients (such as the VSO) can register with, providing information about which attrs and attr values that client supports. Using this approach, the `Fido` downloader provides a single interface to the many different services SunPy supports.
+
+This project aims to achieve the following things:
+
+1. Replace the current implementation of the database using the VSO attributes to use the slightly refactored `Fido` attributes.
+1. Implement a new caching mechanism bases of the results of Queries with `Fido` rather than the current caching which is based upon the VSO query.
 
 There are various other maintenance tasks which need undertaking (https://github.com/sunpy/sunpy/labels/Database) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
 
