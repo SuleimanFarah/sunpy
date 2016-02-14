@@ -33,6 +33,47 @@ This project aims to achieve the following things:
 
 There are various other maintenance tasks which need undertaking (https://github.com/sunpy/sunpy/labels/Database) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
 
+### Real time data access and visualisation tools
+
+*Suggested Mentor(s):* [David Perez-Suarez](http://github.com/dpshelio), [Jack Ireland](https://github.com/wafels)
+
+*Difficulty:* Beginner-Intermediate
+
+*Astronomy knowledge needed:* none
+
+*Programming skills:* Python
+
+#### Description
+
+Real time data is very useful for
+[spaceweather operations](https://en.wikipedia.org/wiki/Space_weather), SunPy
+provides access to data by different virtual observatories or services (like
+`sunpy.net.vso` or `sunpy.net.hek`) or by accessing to direct data archives.
+`Fido` (formerly called `UnifiedDownloader`) provides a single point of access
+to them all. However, this needs to be extended to
+[other data archives](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw),
+and a logic implemented so depending on the time range asked it downloads the
+data from the realtime archives or from the full-archive.
+
+Additionally, this project should produce some visualisation tools to combine
+data from different sources. Some examples are overlay of active regions on top
+of solar images (like in [SolarMonitor](http://www.solarmonitor.org)), GOES
+X-ray flux with active regions number on the flares detected (like in
+[Latest Events](http://www.lmsal.com/solarsoft/last_events/)), latest features
+observed available from HEK on top of a map (e.g.
+[isolsearh](http://www.lmsal.com/hek/hek_isolsearch.html)).
+
+In summary, this project has two objectives:
+
+1. Implementation of real time archives and logic on `Fido`.
+2. Creation of visualisation tools to represent real-time data.
+
+Familiarisation with the
+[`unidown` branch](https://github.com/sunpy/sunpy/tree/unidown) and
+[`matplotlib`](http://matplotlib.org/) library will help you to create a proper
+timeline on how much time will take to implement, test and document each part of
+the project.
+
 ### Integrating ChiantiPy and SunPy
 
 *Suggested Mentor(s):* [Dan Ryan](https://github.com/DanRyanIrish), [Ken Dere](http://sourceforge.net/u/kdere/profile/)
