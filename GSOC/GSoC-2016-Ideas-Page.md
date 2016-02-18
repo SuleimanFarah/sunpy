@@ -5,11 +5,51 @@ show_main: false
 ideas_team: SunPy
 ---
 
-### Improvements to the SunPy Database
+### Lightcurve Refactor
 
-*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Steven Christe](http://github.com/ehsteve)
+*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Dan Ryan](https://github.com/DanRyanIrish), [Andrew Inglis](https://github.com/aringlis), [Jack Ireland](https://github.com/wafels)
 
 *Difficulty:* Beginner
+
+*Astronomy knowledge needed:* None
+
+*Programming skills:* Python
+
+#### Description
+The `Lightcurve` class is one of the three core datatypes in SunPy, along with Map and Spectra.
+`Lightcurve` is designed to read in, process and store meta data related to solar physics time series data.
+Currently, `Lightcurve` uses the pandas library as its underlying data structure, however, this is subject to change in the future.
+
+Much like the `map` submodule, `lightcurve` needs to be able to read in various supported data formats (such as FITS, ascii and others in the future), store their meta data and give users unified access to this metadata independently of the original source of the data.
+
+As currently implemented (as of 0.6) the `lightcurve` module performs three core tasks:
+
+1. Download the raw data
+1. Read this data into a pandas dataframe
+1. store the meta data obtained with the data.
+
+As of the SunPy 0.7 release the first stage will be moved out of `lightcurve` and into the `net` subpackage as part of the [`UnifiedDownloader`](https://github.com/sunpy/sunpy/pull/1300) Pull Request.
+This leaves `lightcurve` in a similar position to `map` where the data acquisition is not part of the core data type and is managed separately.
+
+The objective of this project is to re-implement the core of the lightcurve submodule, such that it no longer contains the code to download data from the internet. The lightcurve module should be able to open file from disk that have been downloaded using the new UnifiedDownloader submodule. The lightcurve factory must be able to read files from multiple sources some of which will be able to be auto-detcted and some which will not. The lightcurve module must also be able to combine multiple files into a single timeseries.
+
+**Expected Outcomes**
+
+Someone under taking this project will complete the following tasks:
+
+1. Become familiar with the `UnifiedDownloader` code, if it has not been accepted into the SunPy codebase, complete the remaining tasks for this to be achieved.
+1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`. The API design for the factory class is in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
+1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
+
+
+A successful proposal for this project will demonstrate that the applicant has understood the mechanism behind the `Map` factory as already implemented in SunPy and presents a timeline of what things need to change in Lightcurve to mirror the design of `Map` and follow the design for Lightcurve in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
+
+
+### Improvements to the SunPy Database
+
+*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Simon Liedtke](http://github.com/derdon), [Steven Christe](http://github.com/ehsteve)
+
+*Difficulty:* Intermediate
 
 *Astronomy knowledge needed:* None
 
@@ -25,6 +65,7 @@ The SunPy database will also act as a proxy for some web services supported by S
 
 The SunPy web clients, use a system named `attrs` (an abbreviation for attributes) to compose queries, this attrs system is also used by the database to perform queries on the database, with some of the attrs shared between the VSO client and the database.
 Recently, a new downloader front end (originally named `UnifiedDownloader`, now affectionately known as `Fido`) has been developed, this provides a Factory Class, with which various download clients (such as the VSO) can register with, providing information about which attrs and attr values that client supports. Using this approach, the `Fido` downloader provides a single interface to the many different services SunPy supports.
+The first part of this project will be to update the database module to support the new `Fido` interface, specifically by using `Fido` inside the database to retrieve data.
 
 The second part of the project will be to update the caching mechanism implemented in the database module. The current caching system serialises the users VSO query and stores it as JSON, upon the user requesting another query, the query will be compared to the cache of serialised queries and if a match is found, the results from the cached query returned.
 This mechanism is limiting in that if the user requests 100 records in query A and 100 records in query B, but 50 of the records requested in both queries are the same (i.e. two overlapping time windows) then the 50 records will be re-downloaded as the cache of query A will not match query B.
@@ -33,7 +74,7 @@ This will allow the caching of partial queries rather than whole queries as is c
 
 This project aims to achieve the following things:
 
-1. Update the current implementation of the database using the VSO attributes to use the slightly refactored `Fido` attributes.
+1. Update the current implementation of the database using the VSO attributes to use the slightly refactored `Fido` attributes and use `Fido` inside the database to download data from the VSO.
 1. Implement a new caching mechanism bases of the results of Queries with `Fido` rather than the current caching which is based upon the VSO query.
 
 A successful proposal will schedule updates to the database package in small sections, rather than in one large pull request. The work should be understood and broken down into individual sections.
@@ -107,44 +148,6 @@ Other potential application of ChiantiPy in SunPy include:
 **Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) in producing and maintaining files required by the sunpy.instr.goes module for determining the thermodynamic properties of the emitting plasma observed by GOES.  It would also allow SunPy users to calculate spectra and exclusively through Python without relying on SSW.
 
 
-### Lightcurve Refactor
-
-*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Dan Ryan](https://github.com/DanRyanIrish), [Andrew Inglis](https://github.com/aringlis), [Jack Ireland](https://github.com/wafels)
-
-*Difficulty:* Intermediate
-
-*Astronomy knowledge needed:* None
-
-*Programming skills:* Python
-
-#### Description
-The `Lightcurve` class is one of the three core datatypes in SunPy, along with Map and Spectra.
-`Lightcurve` is designed to read in, process and store meta data related to solar physics time series data.
-Currently, `Lightcurve` uses the pandas library as its underlying data structure, however, this is subject to change in the future.
-
-Much like the `map` submodule, `lightcurve` needs to be able to read in various supported data formats (such as FITS, ascii and others in the future), store their meta data and give users unified access to this metadata independently of the original source of the data.
-
-As currently implemented (as of 0.6) the `lightcurve` module performs three core tasks:
-
-1. Download the raw data
-1. Read this data into a pandas dataframe
-1. store the meta data obtained with the data.
-
-As of the SunPy 0.7 release the first stage will be moved out of `lightcurve` and into the `net` subpackage as part of the [`UnifiedDownloader`](https://github.com/sunpy/sunpy/pull/1300) Pull Request.
-This leaves `lightcurve` in a similar position to `map` where the data acquisition is not part of the core data type and is managed separately.
-
-The objective of this project is to re-implement the core of the lightcurve submodule, such that it no longer contains the code to download data from the internet. The lightcurve module should be able to open file from disk that have been downloaded using the new UnifiedDownloader submodule. The lightcurve factory must be able to read files from multiple sources some of which will be able to be auto-detcted and some which will not. The lightcurve module must also be able to combine multiple files into a single timeseries.
-
-**Expected Outcomes**
-
-Someone under taking this project will complete the following tasks:
-
-1. Become familiar with the `UnifiedDownloader` code, if it has not been accepted into the SunPy codebase, complete the remaining tasks for this to be achieved.
-1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`. The API design for the factory class is in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
-1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
-
-
-A successful proposal for this project will demonstrate that the applicant has understood the mechanism behind the `Map` factory as already implemented in SunPy and presents a timeline of what things need to change in Lightcurve to mirror the design of `Map` and follow the design for Lightcurve in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
 
 
 ### GUI to use LCT tools
@@ -160,37 +163,3 @@ A successful proposal for this project will demonstrate that the applicant has u
 The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is https://github.com/Hypnus1803/flow_maps
 
 *Expected Outcomes:* To integate efficiently the code in SunPy libraries. 
-
-
-
-
-### Implement x support for y
-
-*Suggested Mentor(s):* [Name Surname](http://github.com/my_username)
-
-*Difficulty:* Beginner, Intermediate or Expert
-
-*Astronomy knowledge needed:* none (or some background)
-
-*Programming skills:* Python, C, Julia, Java, super powers
-
-#### Description
-
-The [_y_](http://docs.xproject.org/en/stable/y/index.html) class is
-powerful but ...
-
-### Implement m support for n
-
-*Suggested Mentor(s):* [Nombre Apellido](http://github.com/mi_usuario)
-
-*Difficulty:* Beginner, Intermediate or Expert
-
-*Astronomy knowledge needed:* none (or some background)
-
-*Programming skills:* Python, C, Julia, Java, super powers
-
-#### Description
-
-The [_n_](http://docs.xproject.org/en/stable/y/index.html) class is
-super powerful but ...
-
