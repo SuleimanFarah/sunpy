@@ -128,7 +128,7 @@ the project.
 
 *Difficulty:* Beginner
 
-*Astronomy knowledge needed:* Some knowledge of coronal emission processes
+*Astronomy knowledge needed:* Some knowledge of coronal emission processes would be beneficial
 
 *Programming skills:* Python.
 
