@@ -145,7 +145,7 @@ These response functions play a vital role in correctly interpreting observation
 Currently, SunPy has no implementation of instrument response functions.
 This project would develop the routines necessary to calculate response functions using the Python interface to the CHIANTI database, [ChiantiPy](http://chiantipy.sourceforge.net/).
 The primary implementation of this would be to produce default wavelength and temperature response functions for the [Atmospheric Imaging Assembly](http://aia.lmsal.com/) instrument.
-A detailed discussion of the AIA response functions can be found in [Boerner et al 2012](http://adslabs.org/adsabs/abs/2012SoPh..275...41B/).
+A detailed discussion of the AIA response functions can be found in [Boerner et al 2012](http://adslabs.org/adsabs/abs/2012SoPh..275...41B/) and [Boerner et al 2013](http://adsabs.harvard.edu/abs/2014SoPh..289.2377B).
 
 Other potential applications of ChiantiPy in SunPy include:
 
