@@ -81,30 +81,41 @@ Familiarisation with the
 timeline on how much time will take to implement, test and document each part of
 the project.
 
-### Integrating ChiantiPy and SunPy
+### Implementing AIA response functions in SunPy
 
-*Suggested Mentor(s):* [Dan Ryan](https://github.com/DanRyanIrish), [Ken Dere](http://sourceforge.net/u/kdere/profile/)
+*Suggested Mentor(s):* [Drew Leonard](https://github.com/drewleonard42), [Will Barnes](https://github.com/wtbarnes)
 
 *Difficulty:* Beginner
 
-*Astronomy knowledge needed:* Some knowledge of spectra.
+*Astronomy knowledge needed:* Some knowledge of coronal emission processes
 
 *Programming skills:* Python.
 
 ####Description
 
-The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics. The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enabled the calculation of various parameters from this information. Using CHIANTI it is possible to calculate the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) from the observed elemental abundances and ionisation states.
-These synthetic spectra are essential for comparing to the data observed by various instruments to calculate the response functions of the instruments and to compare to the properties of observed plasma to allow the calculation of physical parameters such as temperature.
+The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics.
+The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enables the calculation of various parameters from this information.
+Using CHIANTI it is possible to calculate the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) from the observed elemental abundances and ionisation states.
+These synthetic spectra are essential for calculating reponse functions of various instruments.
+An instrument's wavelength response function describes how much light emitted at a given wavelength is measured by the instrument.
+Similarly, the temperature response function describes the instrument's sensitivity to light emitted by plasma at a particular temperature.
+These response functions play a vital role in correctly interpreting observations, as does proper calculation of these functions.
 
-Currently, no SunPy code uses the Python interface to the CHIANTI database [ChiantiPy](http://chiantipy.sourceforge.net/). This project would develop the routines to be included in SunPy to use ChiantiPy for various physical calculations desired. The first potential use of ChiantiPy in SunPy is in the `sunpy.instr.goes` module, where currently data tables calculated using CHIANTI are downloaded from the Solar Software (SSW) distribution, these data tables should be created using SunPy.
+Currently, SunPy has no implementation of instrument response functions.
+This project would develop the routines necessary to calculate response functions using the Python interface to the CHIANTI database, [ChiantiPy](http://chiantipy.sourceforge.net/).
+The primary implementation of this would be to produce default wavelength and temperature response functions for the [Atmospheric Imaging Assembly](http://aia.lmsal.com/) instrument.
+A detailed discussion of the AIA response functions can be found in [Boerner et al 2012](http://adslabs.org/adsabs/abs/2012SoPh..275...41B/).
 
-Other potential application of ChiantiPy in SunPy include:
+Other potential applications of ChiantiPy in SunPy include:
 
+1. Generalisation of the code to produce response functions using arbitrary values of physical parameters (elemental abundances, etc.).
+1. Calculation of reponse functions for other instruments.
 1. Conversion of ChiantiPy spectra objects to SunPy Spectra objects.
-1. Calculation of AIA temperature response functions from ChiantiPy
-   contribution functions.
 
-**Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) in producing and maintaining files required by the sunpy.instr.goes module for determining the thermodynamic properties of the emitting plasma observed by GOES.  It would also allow SunPy users to calculate spectra and exclusively through Python without relying on SSW.
+**Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) for analysing AIA data, particularly with respect to inferring plasma properties such as temperature and density.
+
+A successful proposal will outline a schedule for implementing at least a single set of temperature and wavelength response functions for AIA, and the response functions for arbitrary plasma conditions would be a bonus.
+Familiarity with CHIANTI, ChiantiPy and SSW's implementation of the response functions will help to properly assess how long will be required to recreate them in SunPy.
 
 
 ### Lightcurve Refactor
