@@ -17,14 +17,14 @@ I would graduate in July 2017.
 
 ### 3. University Information
 	
-* University:   BITS Pilani, Hyderabad
+* University: [BITS Pilani, Hyderabad](http://www.bits-pilani.ac.in/hyderabad/)
 * Major: Computer Science & Engineering
 * Current year: 3rd
 * Graduation date: July 2017
 * Degree: B.E(Hons.)
 
 ### Work and Open Source Experience.
-The following are the Pull requests, Issues (both open and closed).
+The following are the Pull requests, Issues (both open and closed) I contributed to.
 
 * Added test and fits file for HIMap ([#1598](https://github.com/sunpy/sunpy/pull/1598)). The title explains the contribution aptly.
 * Preliminary version of ``Unified Downloader``/``Fido`` Docs ([#1623](https://github.com/sunpy/sunpy/pull/1623)). This PR dealt with compiling the documentation for Unidown, now affectionately called Fido.
@@ -32,17 +32,17 @@ The following are the Pull requests, Issues (both open and closed).
 * Implemented XRT Client. ([#1652](https://github.com/sunpy/sunpy/pull/1652)). A preliminary XRT Client which can download XRT data. Some design issues have still not been discussed. It is in development.
 * SWAPClient Implementation. ([#1680](https://github.com/sunpy/sunpy/pull/1680)). This is the implementation of SWAPClient along with tests. It is almost complete.
 * Possible error in GOESClient. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the GOESClient implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
-* Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in Fido, I reported an issue related to the scraper.
+* Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in ``Fido``, I reported an issue related to the scraper.
 
 ### Proposal abstract.
-I intend to work on the project - Real time data access and visualisation tools. This project would involve building an in-house SunPy module to get real time data from different sources , using ``Fido`` and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data.
+I intend to work on the project - Real time data access and visualisation tools. This would involve building an in-house SunPy module to get real time data from different sources , using ``Fido`` and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data.
  Few of the features that this project aims to add to SunPy are,
 
 * Overlay of Active Regions on top of Solar Images ([Solar Monitor](solarmonitor.org)).
 * GOES X-ray flux with Active Regions on the flares detected ([SolarSoft Latest Events](http://www.lmsal.com/solarsoft/last_events/)).
 * Latest features observed available from HEK on top of a map ([isolsearch](http://www.lmsal.com/hek/hek_isolsearch.html)).
 
-Specifically, Taking an example, We would first download latest, real-time SWAP data using a SWAPClient in Fido and download latest real-time data from [NOAA.gov](http://www.swpc.noaa.gov/products/solar-region-summary) and other sources for the text data about Regions with sunspots and H-alpha plages without spots. General purpose clients on the lines of ``Fido`` would be designed to obtain data for both. In this way, user can specify a time or a timerange and download  the required data. Then, once we have both the data, we would use a custom-made plot (make requisite changes to way Maps, LCs are plotted) to overlay the text/tabular data over the image and get plots similar to [this](http://imgur.com/oCDr4eD). Similar process would be implemented for LightCurves as well.
+Specifically, Taking an example, We would first download latest, real-time SWAP data using a ``SWAPClient`` in ``Fido`` and download latest real-time data from [NOAA.gov](http://www.swpc.noaa.gov/products/solar-region-summary) and other sources for the text data about Regions with sunspots and H-alpha plages without spots. General purpose clients on the lines of ``Fido`` would be designed to obtain data for both. In this way, user can specify a time or a timerange and download  the required data. Then, once we have both the data, we would use a custom-made plot (make requisite changes to way Maps, LCs are plotted) to overlay the text/tabular data over the image and get plots similar to [this](http://imgur.com/oCDr4eD). Similar process would be implemented for LightCurves as well.
 
 I would divide this project nicely, in 2-3 modular parts. 
 
@@ -60,10 +60,10 @@ I have been contributing to SunPy since December. I spent the month of November 
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
 ### Deliverables
-A visualisation module which would mimic the functionality of [ACE Real Time Solar Wind](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [Solar Monitor](solarmonitor.org) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And ``Fido`` clients which haven’t yet been implemented.
+A visualisation module which would mimic the functionality of [``ACE Real Time Solar Wind``](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [``Solar Monitor``](solarmonitor.org) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And ``Fido`` clients which haven’t yet been implemented.
 
 ### Benefits to The Community.
-Currently, If users want to get information about Solar events such as flare information, active regions and Real time Solar Wind data, they would have to go to [Solar Monitor](solarmonitor.org), [Solarsoft latest events](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular timerange, a user would have to manually enter the timerange and navigate through the entire site (through pop-up style windoes) to see the interactive plots.
+Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](solarmonitor.org), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular timerange, a user would have to manually enter the timerange and navigate through the entire site (through pop-up style windoes) to see the interactive plots.
 
-With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as SolarMonitor and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
+With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as ``SolarMonitor`` and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
 
