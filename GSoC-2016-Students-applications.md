@@ -1,4 +1,4 @@
-###  Organization: OpenAstronomy
+### Organization: OpenAstronomy
 
 ### Sub-Organization: SunPy
 
@@ -11,49 +11,50 @@
 * Instant Messaging: Google Hangout (sudk1896@gmail.com)	
 * Blog: [My Blog.](https://sudonymousblog.wordpress.com/)
 
-## 2. Education
+### 2. Education
 Currently, I'm a third year undergraduate enrolled in Computer Science & Engineering at Birla Institute of Technology & Science, Pilani, Hyderabad Campus.
 I would graduate in July 2017.
 
-3. University Information
+### 3. University Information
 	
-University:   BITS Pilani, Hyderabad
-Major: Computer Science & Engineering
-Current year: 3rd
-Graduation date: July 2017
-Degree: B.E(Hons.)
-Work and Open Source Experience.
-The following are the Pull requests, Issues (both open and closed) .
+* University:   BITS Pilani, Hyderabad
+* Major: Computer Science & Engineering
+* Current year: 3rd
+* Graduation date: July 2017
+* Degree: B.E(Hons.)
 
-Added test and fits file for HIMap (#1598). The title explains the contribution aptly.
-Preliminary version of Unified Downloader Docs (#1623). This PR dealt with compiling the documentation for Unidown, now affectionately called Fido.
-Fixed tests for EVE,GOES and LET (#1667). This PR dealt with fixing tests in /dataretriever/sources for EVE, LET and GOES clients.
-Implemented XRT Client. (#1652). A preliminary XRT Client which can download XRT data. Some design issues have still not been discussed. It is in development.
-SWAPClient Implementation. (#1680). This is the implementation of SWAPClient along with tests. It is almost complete.
-Possible error in GOESClient. (#1692). I raised an issue with the GOESClient implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
+### Work and Open Source Experience.
+The following are the Pull requests, Issues (both open and closed).
 
-Proposal abstract.
+* Added test and fits file for HIMap ([#1598](https://github.com/sunpy/sunpy/pull/1598)). The title explains the contribution aptly.
+* Preliminary version of Unified Downloader Docs ([#1623](https://github.com/sunpy/sunpy/pull/1623)). This PR dealt with compiling the documentation for Unidown, now affectionately called Fido.
+* Fixed tests for EVE,GOES and LET ([#1667](https://github.com/sunpy/sunpy/pull/1667)). This PR dealt with fixing tests in /dataretriever/sources for EVE, LET and GOES clients.
+* Implemented XRT Client. ([#1652](https://github.com/sunpy/sunpy/pull/1652)). A preliminary XRT Client which can download XRT data. Some design issues have still not been discussed. It is in development.
+* SWAPClient Implementation. ([#1680](https://github.com/sunpy/sunpy/pull/1680)). This is the implementation of SWAPClient along with tests. It is almost complete.
+* Possible error in GOESClient. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the GOESClient implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
+
+### Proposal abstract.
 I intend to work on the project - Real time data access and visualisation tools. This project would involve building an in-house SunPy module to get real time data from different sources , using unidown and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data.
  Few of the features that this project aims to add to SunPy are,
 
-Overlay of Active Regions on top of Solar Images (Solar Monitor).
-GOES X-ray flux with Active Regions on the flares detected (SolarSoft Latest Events).
-Latest features observed available from HEK on top of a map (isolsearch).
+* Overlay of Active Regions on top of Solar Images ([Solar Monitor](solarmonitor.org)).
+* GOES X-ray flux with Active Regions on the flares detected ([SolarSoft Latest Events](http://www.lmsal.com/solarsoft/last_events/)).
+* Latest features observed available from HEK on top of a map ([isolsearch](http://www.lmsal.com/hek/hek_isolsearch.html)).
 
 Specifically, Taking an example, We would first download latest, real-time SWAP data using a SWAPClient in Fido and download latest real-time data from NOAA.gov and other sources for the text data about Regions with sunspots and H-alpha plages without spots. General purpose clients on the lines of Fido would be designed to obtain data for both. In this way, user can specify a time or a timerange and download  the required data. Then, once we have both the data, we would use a custom-made plot (make requisite changes to way Maps, LCs are plotted) to overlay the text data over the image and get plots similar to  this. Similar process would be implemented for LightCurves as well.
 
 I would divide this project nicely, in 2-3 modular parts. 
 
-Fetching and Downloading data. This would involve writing custom clients using Fido interface to download the fits data and write a similar client to download text/html data (from different sources).
-Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don’t require. I would create a custom-made parser for each source which would extract the tables we want and we could then conveniently manipulate the tables using astropy.ascii . The parser would most probably be a part of sunpy.util .
-Plotting. We would use matplotlib to overlay the data obtained from the table along with the fits data to create the plots.
+* Fetching and Downloading data. This would involve writing custom clients using Fido interface to download the fits data and write a similar client to download text/html data (from different sources).
+* Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don’t require. I would create a custom-made parser for each source which would extract the tables we want and we could then conveniently manipulate the tables using astropy.ascii . The parser would most probably be a part of sunpy.util.
+* Plotting. We would use matplotlib to overlay the data obtained from the table along with the fits data to create the plots.
 Fetching and downloading data should be simple (due to Fido). The main challenges that we would face is most probably in the second step of pre-processing data. Since every source would have its own way in which data is structured we would have to implement a parser with a custom logic for each source. We would use the Table provided in astropy.ascii to store the tabular data in the text/html files. Also, the different sources from which we would obtain textual/html data haven’t been decided so far. More might be scrapped/added in the future.
 
 
-Software packages to be used:
+### Software packages to be used:
 Python, matplotlib, astropy, beautifulsoup(maybe), sunpy, scipy
 
-How I propose to complete this project:
+### How I propose to complete this project:
 I have been contributing to SunPy since December. I spent the month of November lurking around the IRC and mostly getting to know about SunPy, by talking to Cadair. Upon my interactions, I came to infer, that among the major and current to-dos in SunPy, would be to integrate the unidown branch into master. It is time for Fido to come into limelight. I spent a lot of time studying the unidown code-base and getting to understand its functionalities. Most of my pull requests deal with Fido/unidown. I am extremely comfortable/familiar with Fido now.
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
