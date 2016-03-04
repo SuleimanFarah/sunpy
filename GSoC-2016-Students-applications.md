@@ -28,7 +28,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 
 * Added test and fits file for ``HIMap`` ([#1598](https://github.com/sunpy/sunpy/pull/1598)). The title explains the contribution aptly.
 * Preliminary version of ``Unified Downloader``/``Fido`` Docs ([#1623](https://github.com/sunpy/sunpy/pull/1623)). This PR dealt with compiling the documentation for Unidown, now affectionately called Fido.
-* Fixed tests for ``EVE``,``GOES`` and ``LET`` ([#1667](https://github.com/sunpy/sunpy/pull/1667)). This PR dealt with fixing tests in /dataretriever/sources for ``EVE``, ``LET`` and ``GOES`` clients.
+* Fixed tests for ``EVE``,``GOES`` and ``LET`` ([#1667](https://github.com/sunpy/sunpy/pull/1667)). This PR dealt with fixing tests in ``/dataretriever/sources`` for ``EVE``, ``LET`` and ``GOES`` clients.
 * Implemented ``XRT`` Client. ([#1652](https://github.com/sunpy/sunpy/pull/1652)). A preliminary ``XRT`` Client which can download ``XRT`` data. Some design issues have still not been discussed. It is in development.
 * ``SWAPClient`` Implementation. ([#1680](https://github.com/sunpy/sunpy/pull/1680)). This is the implementation of SWAPClient along with tests. It is almost complete.
 * Possible error in ``GOESClient``. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the ``GOESClient`` implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
