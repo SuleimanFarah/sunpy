@@ -38,7 +38,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 I intend to work on the project - Real time data access and visualisation tools. This would involve building an in-house SunPy module to get real time data from different sources , using ``Fido`` and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data.
  Few of the features that this project aims to add to SunPy are,
 
-* Overlay of Active Regions on top of Solar Images ([Solar Monitor](solarmonitor.org)).
+* Overlay of Active Regions on top of Solar Images ([``Solar Monitor``](http://solarmonitor.org/)).
 * GOES X-ray flux with Active Regions on the flares detected ([SolarSoft Latest Events](http://www.lmsal.com/solarsoft/last_events/)).
 * Latest features observed available from HEK on top of a map ([isolsearch](http://www.lmsal.com/hek/hek_isolsearch.html)).
 
@@ -60,10 +60,9 @@ I have been contributing to SunPy since December. I spent the month of November 
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
 ### Deliverables
-A visualisation module which would mimic the functionality of [``ACE Real Time Solar Wind``](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [``Solar Monitor``](solarmonitor.org) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And ``Fido`` clients which haven’t yet been implemented.
+A visualisation module which would mimic the functionality of [``ACE Real Time Solar Wind``](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [``Solar Monitor``](http://solarmonitor.org/) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And ``Fido`` clients which haven’t yet been implemented.
 
 ### Benefits to The Community.
-Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](solarmonitor.org), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular timerange, a user would have to manually enter the timerange and navigate through the entire site (through pop-up style windoes) to see the interactive plots.
+Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](http://solarmonitor.org/), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular timerange, a user would have to manually enter the timerange and navigate through the entire site (through pop-up style windows) to see the interactive plots.
 
 With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as ``SolarMonitor`` and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
-
