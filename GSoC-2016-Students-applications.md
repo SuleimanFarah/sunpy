@@ -7,7 +7,7 @@
 * Name: Sudarshan Konge	
 * Time 	Zone: +0530 GMT
 * IRC Handle: Hieronymous	
-* Github ID: sudk1896	
+* Github ID: [sudk1896](https://github.com/sudk1896)	
 * Instant Messaging: Google Hangout (sudk1896@gmail.com)	
 * Blog: [My Blog.](https://sudonymousblog.wordpress.com/)
 
@@ -60,10 +60,10 @@ I have been contributing to SunPy since December. I spent the month of November 
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
 ### Deliverables
-A visualisation module which would mimic the functionality of [ACE Real Time Solar Wind](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [Solar Monitor](solarmonitor.org) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And Fido clients which haven’t yet been implemented.
+A visualisation module which would mimic the functionality of [ACE Real Time Solar Wind](http://www.swpc.noaa.gov/products/ace-real-time-solar-wind) and [Solar Monitor](solarmonitor.org) and other sources. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. And ``Fido`` clients which haven’t yet been implemented.
 
 ### Benefits to The Community.
 Currently, If users want to get information about Solar events such as flare information, active regions and Real time Solar Wind data, they would have to go to [Solar Monitor](solarmonitor.org), [Solarsoft latest events](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular timerange, a user would have to manually enter the timerange and navigate through the entire site (through pop-up style windoes) to see the interactive plots.
 
-With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as SolarMonitor and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute too.
+With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as SolarMonitor and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
 
