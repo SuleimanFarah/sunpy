@@ -33,6 +33,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 * ``SWAPClient`` Implementation. ([#1680](https://github.com/sunpy/sunpy/pull/1680)). This is the implementation of SWAPClient along with tests. It is almost complete.
 * Possible error in ``GOESClient``. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the ``GOESClient`` implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
 * Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in ``Fido``, I reported an issue related to the scraper.
+
 I use a Linux Mint machine for development.
 
 ### Proposal abstract.
