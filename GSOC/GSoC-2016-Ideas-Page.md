@@ -193,7 +193,8 @@ The SunPy documentation need some love. The purpose of the
 Someone under taking this project will complete the following tasks:
 
 1. Research and implement a gallery of SunPy examples which support jupyter notebooks.
-2. Update the docs (insert tasks).
+2. Update the docs (insert tasks). 
+   1. Net documentation need to be refactored.
 3. Update the website (insert tasks).
 
 A successful proposal for this project will demonstrate that the applicant has understood the task and presents a timeline of what things need to change to be implemented.
