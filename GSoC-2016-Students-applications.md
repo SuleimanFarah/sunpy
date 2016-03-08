@@ -32,7 +32,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 * Implemented ``XRT`` Client. ([#1652](https://github.com/sunpy/sunpy/pull/1652)). A preliminary ``XRT`` Client which can download ``XRT`` data. Some design issues have still not been discussed. It is in development.
 * ``SWAPClient`` Implementation. ([#1680](https://github.com/sunpy/sunpy/pull/1680)). This is the implementation of SWAPClient along with tests. It is almost complete.
 * Possible error in ``GOESClient``. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the ``GOESClient`` implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
-* Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in ``Fido``, I reported an issue related to the scraper.
+* Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in ``Fido``, I reported an issue with the scraper.
 
 I use a Linux Mint machine for development.
 
@@ -44,7 +44,7 @@ I intend to work on the project - Real time data access and visualisation tools.
 * GOES X-ray flux with Active Regions on the flares detected ([SolarSoft Latest Events](http://www.lmsal.com/solarsoft/last_events/)).
 * Latest features observed available from HEK on top of a map ([isolsearch](http://www.lmsal.com/hek/hek_isolsearch.html)).
 
-Specifically, Taking an example, We would first download latest, real-time SWAP data using a ``SWAPClient`` in ``Fido`` and download latest real-time data from [NOAA.gov](http://www.swpc.noaa.gov/products/solar-region-summary) and other sources for the text data about Regions with sunspots and H-alpha plages without spots. General purpose clients on the lines of ``Fido`` would be designed to obtain data for both. In this way, user can specify a time or a timerange and download  the required data. Then, once we have both the data, we would use a custom-made plot (make requisite changes to way Maps, LCs are plotted) to overlay the text/tabular data over the image and get plots similar to [this](http://imgur.com/oCDr4eD). Similar process would be implemented for LightCurves as well.
+Specifically, Taking an example, We would first download latest, real-time SWAP data using a ``SWAPClient`` in ``Fido`` and download latest real-time data from [NOAA.gov](http://www.swpc.noaa.gov/products/solar-region-summary) and other sources for the text data about Regions with sunspots and H-alpha plages without spots. General purpose clients on the lines of ``Fido`` would be designed to obtain data for both. In this way, user can specify a time or a timerange and download  the required data. Then, once we have both the data, we would use a custom-made plot (make requisite changes to way Maps, LCs are plotted) to overlay the text/tabular data over the image and get plots similar to [``this``](http://imgur.com/oCDr4eD). Similar process would be implemented for LightCurves as well.
 
 I would divide this project nicely, in 2-3 modular parts. 
 
