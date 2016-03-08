@@ -53,6 +53,7 @@ I would divide this project nicely, in 2-3 modular parts.
 * Plotting. We would use ``matplotlib`` to overlay the data obtained from the table along with the fits data to create the plots.
 Fetching and downloading data should be simple (due to ``Fido``). The main challenges that we would face is most probably in the second step of pre-processing data. Since every source would have its own way in which data is structured we would have to implement a parser with a custom logic for each source. We would use the ``Table`` provided in ``astropy.ascii`` to store the tabular data in the text/html files. Also, the different sources from which we would obtain textual/html data haven’t been decided so far. More might be scrapped/added in the future.
 
+I would be adding the requisite documentation in form of doc-strings,clearly explaining the utility of the module.I am already familiar with the docs conventions, One of my PRs dealt with building docs. If time permits, I would also add doc-tests. 
 
 ### Software packages to be used:
 ``matplotlib``, ``astropy``, ``beautifulsoup``(maybe),``scipy``
