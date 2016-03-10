@@ -91,3 +91,5 @@ Mid-term evaluation.
 ### 27th June - 4th July
 Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
+### 4th July - 18th July (2 weeks, 3 at max)
+Write a generic parser, to get text/tabular data for the following instruments AIA, HMI, EVE and SWPC. This parser would enable users to mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple Python dict. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added.
