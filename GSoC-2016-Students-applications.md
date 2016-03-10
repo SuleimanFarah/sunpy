@@ -80,5 +80,11 @@ Community bonding period. I would get familiar with the plotting aspects of the 
 ### 23rd May - 20th June (4 weeks)
 This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
 This would deal with implementing instrument-wise ``Fido`` clients. The list of instruments supported would be SWAP, XRT , GONG (Magnetogram, Intensity, FarSide, H-alpha), GOESClient for soft x-ray imager and energy particles which haven't been implemented yet, ACE Client , Global H-alpha Network Kanzelhohe bbso and SOLIS VSM.
+Documentation and requisite tests would also be added.
+* Implement SWAP, XRT clients, ACE Client (1 week)
+* GONG (Magnetogram, Intensity, FarSide, H-alpha) and GOESClient (2 weeks).
+* Global H-alpha Network, SOLIS VSM (1 week).
 
+### 21st June - 27th June 
+Mid-term evaluation. 
  
