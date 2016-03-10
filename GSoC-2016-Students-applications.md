@@ -79,7 +79,7 @@ Community bonding period. Get familiar with the plotting aspects of the project.
 
 ### 23rd May - 20th June (4 weeks)
 This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
-This would deal with implementing instrument-wise ``Fido`` clients. The list of instruments supported would be SWAP, XRT , GONG (Magnetogram, Intensity, FarSide, H-alpha), GOESClient for soft x-ray imager and energy particles which haven't been implemented yet, ACE Client , Global H-alpha Network Kanzelhohe bbso and SOLIS VSM.
+This would deal with implementing instrument-wise ``Fido`` clients. The list of instruments supported would be SWAP, XRT , GONG (Magnetogram, Intensity, FarSide, H-alpha), GOESClient for soft x-ray imager and energy particles which haven't been implemented yet, ACE Client , Global H-alpha Network Kanzelhohe bbso ,SOLIS VSM and STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments. 
 Documentation and requisite tests would also be added.
 * Implement SWAP, XRT clients, ACE Client (1 week)
 * GONG (Magnetogram, Intensity, FarSide, H-alpha) and GOESClient (2 weeks).
@@ -87,4 +87,7 @@ Documentation and requisite tests would also be added.
 
 ### 20th June - 27th June 
 Mid-term evaluation. 
- 
+
+### 27th June - 4th July
+Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
+
