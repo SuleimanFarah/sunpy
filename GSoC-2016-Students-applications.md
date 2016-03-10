@@ -72,7 +72,7 @@ With this module, Users would have the option of either seeing the real-time(lat
 
 ### Timeline
 
-Note: I would be writing documentation and tests along with writing the code for the module proposed in the project. This would ensure consistency, semantic and functional correctness.
+Note: I would be writing documentation and tests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
 
 ### 22nd April - 23rd May
 Community bonding period. I would get familiar with the plotting aspects of the project and also study the different sources of data for which we would be writing our custom parsers.
