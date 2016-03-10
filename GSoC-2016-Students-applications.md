@@ -85,6 +85,6 @@ Documentation and requisite tests would also be added.
 * GONG (Magnetogram, Intensity, FarSide, H-alpha) and GOESClient (2 weeks).
 * Global H-alpha Network, SOLIS VSM (1 week).
 
-### 21st June - 27th June 
+### 20th June - 27th June 
 Mid-term evaluation. 
  
