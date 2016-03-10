@@ -113,7 +113,11 @@ Final results of Google Summer of Code 2016 announced.
 ## About Me.
 
 Hello there, I'm Sudarshan, I go by the nick Hieronymous on IRC. I'm currently in my pre-final year of under-graduate studies. I'm pursuing a Bachelors degree in Computer Science from [BITS Hyderabad](http://www.bits-pilani.ac.in/hyderabad/).
+
 My interests are programming, problem-solving, algorithms and very recently Open Source. My introduction to programming was rather late. I started programming for the first time in my life, in my first year of college. And it was in Python, no co-incidence. I remember having read ``Python for Scientists - O'Reilly`` and having totally fallen head over heels for the almost prosaic and pseudo-code like syntax of Python. 
+
 I later got introduced to other high-level languages as C/C++. This lead me to discover the world of Algorithmic Programming, I programmed for about a year, exclusively in C++. My first choice for solving algorithmic problems will always be C++. I represented my college at the regionals in ACM ICPC 2014, Amritapuri. Think of this as the pre-cursor, to the Olympics Of Algorithms, the qualifier rounds, so to speak.
+
+
  
 
