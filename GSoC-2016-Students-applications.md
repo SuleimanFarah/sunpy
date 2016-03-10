@@ -75,7 +75,7 @@ With this module, Users would have the option of either seeing the real-time(lat
 Note: I would be writing documentation and tests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
 
 ### 22nd April - 23rd May
-Community bonding period. I would get familiar with the plotting aspects of the project and also study the different sources of data for which we would be writing our custom parsers.
+Community bonding period. Get familiar with the plotting aspects of the project. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the api/interface for the module would look like. 
 
 ### 23rd May - 20th June (4 weeks)
 This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
