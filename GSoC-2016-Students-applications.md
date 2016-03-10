@@ -34,7 +34,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 * Possible error in ``GOESClient``. ([#1692](https://github.com/sunpy/sunpy/pull/1692)). I raised an issue with the ``GOESClient`` implementation, highlighting an error in its logic. This PR rectifies it along with requisite tests.
 * Raised an issue with the scraper in ``sunpy.util`` ([#1619](https://github.com/sunpy/sunpy/issues/1619). While testing a query for STEREO in ``Fido``, I reported an issue with the scraper.
 
-I use a Linux Mint machine for development.
+I use a Linux Mint machine for development now and have been using it for the past 3 years. I am also familiar with Git and SunPy workflow.
 
 ### Proposal abstract.
 I intend to work on the project - Real time data access and visualisation tools. This would involve building an in-house SunPy module to get real time data from different sources , using ``Fido`` and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data. Custom Fido clients for the following [sources](https://docs.google.com/spreadsheets/d/1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw/edit?pref=2&pli=1#gid=0) would also be implemented.
