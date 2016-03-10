@@ -72,7 +72,7 @@ With this module, Users would have the option of either seeing the real-time(lat
 
 ## Timeline
 
-Note: I would be writing documentation and tests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
+Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
 
 ### 22nd April - 23rd May
 Community bonding period. Get familiar with the plotting aspects of the project. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the api/interface for the visualization module would look like. 
@@ -92,4 +92,20 @@ Mid-term evaluation.
 Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
 ### 4th July - 18th July (2 weeks, 3 at max)
-Write a generic parser, to get text/tabular data for the following instruments AIA, HMI, EVE and SWPC. This parser would enable users to mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple Python dict. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added.
+Write a generic parser, to get text/tabular data for the following instruments AIA, HMI, EVE and SWPC. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future.
+
+### 18th July - 15th August (4 weeks)
+Implement the plotting part of the project. This would deal with delivering the final three products of the idea
+* Overlay of Active Regions on top of solar images. ( 2 weeks)
+* GOES X-ray flux with active regions number on the flares detected (1 week)
+* latest features observed available from HEK on top of a map (1 week)
+This part would deal with overlaying the tabular data that we obtained from the parser over the corresponding solar images to produce the plots proposed. Custom plotting functions would be built for getting each type of plot.
+
+### 15th August - 23rd August (1 week)
+The final week. Would clean up code (make it PEP8 compliant), docs, fix/add tests if required. This can also serve as a buffer week and work on adding support for Helio-Hfc could also be added (on discussion with mentor).
+
+### 23rd August - 29th August (1 week)
+Mentors submit final project reports to Google. 
+
+### 30th August
+Final results of Google Summer of Code 2016 announced.
