@@ -76,3 +76,9 @@ Note: I would be writing documentation and tests along with writing the code for
 
 ### 22nd April - 23rd May
 Community bonding period. I would get familiar with the plotting aspects of the project and also study the different sources of data for which we would be writing our custom parsers.
+
+### 23rd May - 20th June (4 weeks)
+This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
+This would deal with implementing instrument-wise ``Fido`` clients. The list of instruments supported would be SWAP, XRT , GONG (Magnetogram, Intensity, FarSide, H-alpha), GOESClient for soft x-ray imager and energy particles which haven't been implemented yet, ACE Client , Global H-alpha Network Kanzelhohe bbso and SOLIS VSM.
+
+ 
