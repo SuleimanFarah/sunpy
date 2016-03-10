@@ -69,3 +69,10 @@ A visualization module which would mimic the functionality of [``SolarSoft lates
 Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](http://solarmonitor.org/), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular time, a user would have to manually enter the timerange and navigate through the entire site, through pop-up style windows to see the interactive plots, something like this,![](https://github.com/sudk1896/SunPy-plot-images/blob/master/GOES-X-ray.png)
 
 With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as ``SolarMonitor`` and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
+
+### Timeline
+
+Note: I would be writing documentation and tests along with writing the code for the module proposed in the project. This would ensure consistency, semantic and functional correctness.
+
+# 22nd April - 23rd May
+Community bonding period. I would get familiar with the plotting aspects of the project and also study the different sources of data for which we would be writing our custom parsers.
