@@ -116,8 +116,8 @@ Hello there, I'm Sudarshan, I go by the nick Hieronymous on IRC. I'm currently i
 
 My interests are programming, problem-solving, algorithms and very recently Open Source. My introduction to programming was rather late. I started programming for the first time in my life, in my first year of college. And it was in Python, no co-incidence. I remember having read ``Python for Scientists - O'Reilly`` and having totally fallen head over heels for the almost prosaic and pseudo-code like syntax of Python. 
 
-I later got introduced to other high-level languages as C/C++. This lead me to discover the world of Algorithmic Programming, I programmed for about a year, exclusively in C++. My first choice for solving algorithmic problems will always be C++. I represented my college at the regionals in ACM ICPC 2014, Amritapuri. Think of this as the pre-cursor, to the Olympics Of Algorithms, the qualifier rounds, so to speak.
+I later got introduced to other high-level languages as C/C++. This lead me to discover the world of Algorithmic Programming, I programmed for about a year, exclusively in C++11. My first choice for solving algorithmic problems will always be C++. I represented my college at the regionals in ACM ICPC 2014, Amritapuri. Think of this as the pre-cursor to the Olympics Of Algorithms, the qualifier rounds, so to speak.
 
-
+My interest in Open Source is rather recent. I started contributing regularly from December'15. I liked hanging around on the IRC, trying to get to know SunPy's mission, better. I'm fascinated by how Software Engineering forms the very backbone of SunPy and how proficient and better the SunPy developers are at programming than me, when software engineering isn't even their job and I on the other hand am majoring in it, I have lots to learn! 
  
 
