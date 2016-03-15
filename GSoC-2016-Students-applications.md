@@ -10,6 +10,7 @@
 * Github ID: [sudk1896](https://github.com/sudk1896)	
 * Instant Messaging: Google Hangout (sudk1896@gmail.com)	
 * Blog: [My Blog.](https://sudonymousblog.wordpress.com/)
+* RSS Feed: [RSS feed](https://sudonymousblog.wordpress.com/feed/)
 
 ### 2. Education
 Currently, I'm a third year undergraduate enrolled in Computer Science & Engineering at Birla Institute of Technology & Science, Pilani, Hyderabad Campus.
