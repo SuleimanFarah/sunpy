@@ -24,7 +24,7 @@ I would graduate in July 2017.
 * Graduation date: July 2017
 * Degree: Bachelor of Engineering (Honors)
 
-### 4. Work and Open Source Experience.
+### 4. Pull Requests
 The following are the Pull requests, Issues (both open and closed) I contributed to.
 
 * Added test and fits file for ``HIMap`` ([#1598](https://github.com/sunpy/sunpy/pull/1598)). The title explains the contribution aptly.
