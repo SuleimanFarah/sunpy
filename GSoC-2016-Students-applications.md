@@ -21,7 +21,7 @@ I would graduate in July 2017.
 * Major: Computer Science & Engineering
 * Current year: 3rd
 * Graduation date: July 2017
-* Degree: B.E(Hons.)
+* Degree: Bachelor of Engineering (Honors)
 
 ### 4. Work and Open Source Experience.
 The following are the Pull requests, Issues (both open and closed) I contributed to.
