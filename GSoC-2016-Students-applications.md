@@ -111,19 +111,20 @@ Mentors submit final project reports to Google.
 ### 30th August
 Final results of Google Summer of Code 2016 announced.
 
-## 11. About Me.
+## 11. Commitments
+I would be interning elsewhere from 30th May - July 18th. The office timings are from UTC 4:30 A.M - UTC 11:30 A.M. The time difference shouldn't be a problem, I would get off my internship when SunPy developers would wake up, so I can communicate with my mentors without any problems. The initial part of my project (Implementing Fido clients during this period) is something I have familiarity with, having 2 PRs already related to them (#1680, #1652). My familiarity with Fido/Unidown should compensate here. Nevertheless, I would be able to devote 6-7 hours on weekdays and as many as I want on weekends. This way, I would be able to devote the required minimum of ~35-40 hours for Summer of Code. I won't be multi-tasking, I would reserve 6-7 hours of uninterrupted time, every weekday (during the initial 6 weeks of my other internship) and program during that time. Any extra time, if required would be devoted to Summer of Code. Upon discussions with the mentor, I have decided that this amount of time would be sufficient to meet the deadlines comfortably. Again, my familiarity with Fido helps me in this case.
+I'm free after 18th of July and can devote time as I see fit after that. My classes begin from first week of August, it would be my final year. Having finished all discipline courses by end of this academic year, my academic load would be extremely minimal.
+I don't have any logistical issues related to internet, I have 24/7 access to high-speed internet and won't be travelling anywhere during the internship period.
+I have **not** participated in GSoC before.
+I am **not** applying to any other organization except SunPy.
+
+## 12. About Me.
 
 Hello there, I'm Sudarshan, I go by the nick Hieronymous on IRC. I'm currently in my pre-final year of under-graduate studies. I'm pursuing a Bachelors degree in Computer Science from [BITS Hyderabad](http://www.bits-pilani.ac.in/hyderabad/).
 
 My interests are programming, problem-solving, algorithms and very recently Open Source. My introduction to programming was rather late. I started programming for the first time in my life, in my first year of college. And it was in Python, no co-incidence. I remember having read ``Python for Scientists - O'Reilly`` and having totally fallen head over heels for the almost prosaic and pseudo-code like syntax of Python. I also program and am fairly proficient in C++, although I use it only for algorithmic problem solving. My interest in Open Source is rather recent. I started contributing regularly from December'15. I liked hanging around on the IRC, trying to get to know SunPy's mission, better. I'm fascinated by how Software Engineering forms the very backbone of SunPy and how proficient and better the SunPy developers are at programming than me, when software engineering isn't even their job and I on the other hand am majoring in it, I have lots to learn! 
 The thing I like most about Python is how easily you can hack/prototype things, with such smooth ease. Interning with SunPy would allow me to strengthen my skills in Python and also make me a better developer.
 When I’m not programming, I [read](https://www.goodreads.com/user/show/38044206-sudarshan) and also lift weights in the gymnasium. I lift 3 times a week in the mornings.
-
-## 12. Schedule
-I would be interning elsewhere from 30th May - July 18th. The office timings are from UTC 4:30 A.M - UTC 11:30 A.M. The time difference shouldn't be a problem, I would get off my internship when SunPy developers would wake up, so I can communicate with my mentors without any problems. The initial part of my project (Implementing Fido clients during this period) is something I have familiarity with, having 2 PRs already related to them (#1680, #1652). My familiarity with Fido/Unidown should compensate here. Nevertheless, I would be able to devote 6-7 hours on weekdays and as many as I want on weekends. This way, I would be able to devote the required minimum of ~35-40 hours for Summer of Code. I won't be multi-tasking, I would reserve 6-7 hours of uninterrupted time, every weekday (during the initial 6 weeks of my other internship) and program during that time. Any extra time, if required would be devoted to Summer of Code. Upon discussions with the mentor, I have decided that this amount of time would be sufficient to meet the deadlines comfortably. Again, my familiarity with Fido helps me in this case.
-I'm free after 18th of July and can devote time as I see fit after that. My classes begin from first week of August, it would be my final year. Having finished all discipline courses by end of this academic year, my academic load would be extremely minimal.
-I don't have any logistical issues related to internet, I have 24/7 access to high-speed internet and won't be travelling anywhere during the internship period.
-I am not applying to any other organization except SunPy.
 
 ## 13. Eligibility
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanation of any approach/feature feel free to contact me at sudk1896@gmail.com and I shall be happy to reply.
