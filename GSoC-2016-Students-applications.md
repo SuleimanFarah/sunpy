@@ -23,7 +23,7 @@ I would graduate in July 2017.
 * Graduation date: July 2017
 * Degree: B.E(Hons.)
 
-### Work and Open Source Experience.
+### 4. Work and Open Source Experience.
 The following are the Pull requests, Issues (both open and closed) I contributed to.
 
 * Added test and fits file for ``HIMap`` ([#1598](https://github.com/sunpy/sunpy/pull/1598)). The title explains the contribution aptly.
@@ -37,7 +37,7 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 
 I use a Linux Mint machine for development now and have been using it for the past 3 years. I am also familiar with Git and SunPy workflow.
 
-### Proposal abstract.
+### 5. Proposal abstract.
 I intend to work on the project - Real time data access and visualisation tools. This would involve building an in-house SunPy module to get real time data from different sources , using ``Fido`` and build new clients for ones unavailable. Real-time archives are archives which provide current data and normal full-time archives provide historical (previous year,month etc) data. Custom Fido clients for the following [sources](https://docs.google.com/spreadsheets/d/1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw/edit?pref=2&pli=1#gid=0) would also be implemented.
  Few of the features that this project aims to add to SunPy are,
 
@@ -56,22 +56,22 @@ Fetching and downloading data should be simple (due to ``Fido``). The main chall
 
 I would be adding the requisite documentation in form of doc-strings, clearly explaining the utility of the module. I am already familiar with the SunPy docs conventions, One of my PRs dealt with building documentation. If time permits, I would also add doc-tests. 
 
-### Software packages to be used:
+### 6. Software packages to be used:
 ``matplotlib``, ``astropy``, ``beautifulsoup``(maybe),``scipy``
 
-### How I propose to complete this project:
+### 7. How I propose to complete this project:
 I have been contributing to SunPy since December. I spent the month of November lurking around the IRC and mostly getting to know about SunPy, by talking to Cadair. Upon my interactions, I came to infer, that among the major and current to-dos in SunPy, would be to integrate the ``unidown`` branch into master. It is time for ``Fido`` to come into limelight. I spent a lot of time studying the unidown code-base and getting to understand its functionalities. Most of my pull requests deal with ``Fido/unidown``. I am very comfortable/familiar with ``Fido`` now.
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
-### Deliverables
+### 8. Deliverables
 A visualization module(like net,instr etc) which would mimic the functionality of [``SolarSoft latest events``](http://www.lmsal.com/solarsoft/last_events/) , [``Solar Monitor``](http://solarmonitor.org/) and similar entitiies. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. We intend to build a seperate visualization module (like Fido, instr etc) which would provide a set of tools for drawing up the required plots. We would also implement all Fido clients listed [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw), in total of about 8-9 clients.
 
-### Benefits to The Community.
+### 9. Benefits to The Community.
 Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](http://solarmonitor.org/), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular time, a user would have to manually enter the timerange and navigate through the entire site, through pop-up style windows to see the interactive plots, something like this,![](https://github.com/sudk1896/SunPy-plot-images/blob/master/GOES-X-ray.png)
 
 With this module, Users would have the option of either seeing the real-time(latest data) or querying for a specific time/timerange to the module, which would generate the plots for them (Yes, we are doing it ``Fido`` style). This would replace the need for SunPy users to explicitly use websites such as ``SolarMonitor`` and this would provide the base for the development of a full-fledged visualization tool within SunPy in the future. Which I aim to continue to contribute to.
 
-## Timeline
+## 10. Timeline
 
 Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
 
@@ -111,18 +111,19 @@ Mentors submit final project reports to Google.
 ### 30th August
 Final results of Google Summer of Code 2016 announced.
 
-## About Me.
+## 11. About Me.
 
 Hello there, I'm Sudarshan, I go by the nick Hieronymous on IRC. I'm currently in my pre-final year of under-graduate studies. I'm pursuing a Bachelors degree in Computer Science from [BITS Hyderabad](http://www.bits-pilani.ac.in/hyderabad/).
 
 My interests are programming, problem-solving, algorithms and very recently Open Source. My introduction to programming was rather late. I started programming for the first time in my life, in my first year of college. And it was in Python, no co-incidence. I remember having read ``Python for Scientists - O'Reilly`` and having totally fallen head over heels for the almost prosaic and pseudo-code like syntax of Python. I also program and am fairly proficient in C++, although I use it only for algorithmic problem solving. My interest in Open Source is rather recent. I started contributing regularly from December'15. I liked hanging around on the IRC, trying to get to know SunPy's mission, better. I'm fascinated by how Software Engineering forms the very backbone of SunPy and how proficient and better the SunPy developers are at programming than me, when software engineering isn't even their job and I on the other hand am majoring in it, I have lots to learn! 
 The thing I like most about Python is how easily you can hack/prototype things, with such smooth ease. Interning with SunPy would allow me to strengthen my skills in Python and also make me a better developer.
 When I’m not programming, I [read](https://www.goodreads.com/user/show/38044206-sudarshan) and also lift weights in the gymnasium. I lift 3 times a week in the mornings.
-## Schedule
+
+## 12. Schedule
 I would be interning elsewhere from 30th May - July 18th. The office timings are from UTC 4:30 A.M - UTC 11:30 A.M. The time difference shouldn't be a problem, I would get off my internship when SunPy developers would wake up, so I can communicate with my mentors without any problems. The initial part of my project (Implementing Fido clients during this period) is something I have familiarity with, having 2 PRs already related to them (#1680, #1652). My familiarity with Fido/Unidown should compensate here. Nevertheless, I would be able to devote 6-7 hours on weekdays and as many as I want on weekends. This way, I would be able to devote the required minimum of ~35-40 hours for Summer of Code. I won't be multi-tasking, I would reserve 6-7 hours of uninterrupted time, every weekday (during the initial 6 weeks of my other internship) and program during that time. Any extra time, if required would be devoted to Summer of Code. Upon discussions with the mentor, I have decided that this amount of time would be sufficient to meet the deadlines comfortably. Again, my familiarity with Fido helps me in this case.
 I'm free after 18th of July and can devote time as I see fit after that. My classes begin from first week of August, it would be my final year. Having finished all discipline courses by end of this academic year, my academic load would be extremely minimal.
 I don't have any logistical issues related to internet, I have 24/7 access to high-speed internet and won't be travelling anywhere during the internship period. Also I'm not applying to any other projects.
 I am not applying to any other organization except SunPy.
 
-## Eligibility
+## 13. Eligibility
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanation of any approach/feature feel free to contact me at sudk1896@gmail.com and I shall be happy to reply.
