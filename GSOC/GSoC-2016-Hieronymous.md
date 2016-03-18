@@ -76,8 +76,8 @@ With this module, Users would have the option of either seeing the real-time(lat
 
 Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
 
-### 22nd April - 23rd May
-Community bonding period. Get familiar with the plotting aspects of the project. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the api/interface for the visualization module would look like. 
+### 22nd April - 23rd May (Community bonding period)
+Get familiar with the plotting aspects of the project. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the api/interface for the visualization module would look like. 
 
 ### 23rd May - 20th June (4 weeks)
 This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
@@ -87,10 +87,10 @@ Documentation and requisite tests would also be added.
 * GONG (Magnetogram, Intensity, FarSide, H-alpha) and GOESClient (2 weeks).
 * Global H-alpha Network, SOLIS VSM (1 week).
 
-### 20th June - 27th June 
+### 20th June - 27th June (1 week)
 Mid-term evaluation. 
 
-### 27th June - 4th July
+### 27th June - 4th July (1 week)
 Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
 ### 4th July - 18th July (2 weeks, 3 at max)
