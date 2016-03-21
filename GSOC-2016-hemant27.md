@@ -60,12 +60,15 @@ Organization: SunPy in OpenAstronomy
 
 *           For plotting I would use Matplotlib.
 
-*           I did checkout the SEP\_007 so I am pretty familiar with what
-          has been done till now on SunPy.
+*           I did checkout the [SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) so I am pretty familiar with what.
+          has been done till now on SunPy.[SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) The proposal makes an API change, which will move LightCurve to follow the API of the Map submodule.
 
-5.       **Software Packages  to be used**
+5.       **Software Packages  to be used**  
+          Numpy, Matplotlib,Scipy,Astropy
+          Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
+          Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule .
+          Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
 
-         Numpy, Matplotlib,Scipy,Astropy
 
  
 
@@ -124,19 +127,9 @@ Organization: SunPy in OpenAstronomy
 
 I have been a Ubuntu user for more than 6 months .
 
- 
+  
 
-9.       **Deliverables**
-
-Improvement in SunPy Docs(inserting new info as well).
-
-Website improvement.
-
-Adding Examples to SunPy gallery.
-
- 
-
-10.   **TIMELINE**
+9.   **TIMELINE**
 
 22 April -23 May (Community Bonding Period)
 
@@ -222,7 +215,7 @@ Final results of Google Summer of Code 2016 announced.
 Even after Google Summer of Code 2016 I will be a regular contributor of
 Open Source .  
 
-11.    **Commitments**
+10.    **Commitments**
 
 I have my end Semester exams from 15 April – 8 May so I won’t be able to
 devote most of the time to the project. Still I would try my best to take out 2-3 hours a
@@ -234,7 +227,7 @@ day making it around 35-40 hours a week. I have 24\*7 access to
 high-speed  internet. I have not participated in GSoC before and I am
 not applying to any other organization .
 
-12.   **About  Me**
+11.   **About  Me**
 
 I am a first-year Undergrad at The LNM Institute of Information
 Technology, Jaipur, India.
@@ -248,12 +241,11 @@ programming and also used it recently for my research project about
 which I had mentioned earlier in this document. On the non-technical
 side, I am a Badminton Player. 
 
-13.   **Eligibility**
+12.   **Eligibility**
 
 Yes, I am eligible to receive payments from Google. To contact do drop
 me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
-
 
 
 
