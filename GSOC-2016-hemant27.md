@@ -196,7 +196,7 @@ documentation.
 
 **15 August – 29 August**
 Writing tidy code, tests(if required) however presently I don't know much about writing tests, improve documentation and
-submit their code sample. 
+submitting code sample. 
 
  
 
