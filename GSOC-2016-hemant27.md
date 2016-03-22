@@ -204,7 +204,7 @@ evaluation.
 
 **23 August – 29 August**
 
-This is not the end,I will be continuously involved in the community .
+This is not the end,I will be continuously involved in the community contributing to its development.
 
  
 
