@@ -204,7 +204,7 @@ evaluation.
 
 **23 August – 29 August**
 
-Mentors submit final student evaluations.
+This is not the end,I will be continuously involved in the community .
 
  
 
@@ -246,7 +246,6 @@ side, I am a Badminton Player. 
 Yes, I am eligible to receive payments from Google. To contact do drop
 me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
-
 
 
 
