@@ -22,7 +22,7 @@ I haven’t had much Open Source experience before contributing to SunPy, but I 
 
 * Made a 2D cannon shooting game using OpenGL [Repo link](https://github.com/Punyaslok/OpenGL-2D-Game)
 * Made a 3D obstacle course maze game using OpenGL  [Repo link](https://github.com/Punyaslok/3D-Obstacle-Game)
-* Made a Bidding Portal using web2py for easy auctioning of items, primarily to help departing students sell off bicycles, air coolers etc.  [Repo link](https://github.com/Punyaslok/Bidding-Portal)  [Deployment Link](punyaslokpattnaik.pythonanywhere.com/Bidding_Portal)
+* Made a Bidding Portal using web2py for easy auctioning of items, primarily to help departing students sell off bicycles, air coolers etc.  [Repo link](https://github.com/Punyaslok/Bidding-Portal)  [Deployment Link](http://punyaslokpattnaik.pythonanywhere.com/Bidding_Portal)
 * Made a Donkey Kong game using pygame, and also tested it using pytest [Repo link](https://github.com/Punyaslok/Donkey-Kong-Game)
 * Handled the django backend part of a team project, which involved building a social networking site, aimed at movie lovers. The site had a django backend, and an AngularJS frontend. The code for this project is confidential.
 
