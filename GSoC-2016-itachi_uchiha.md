@@ -7,7 +7,7 @@
 * **IRC Handle:** itachi_uchiha
 * **Github Username:** [Punyaslok](https://github.com/Punyaslok)
 * **Blog :** [My Blog](https://punyaslokpattnaik.wordpress.com)
-* **Blog RSS feed :** 
+* **Blog RSS feed :** https://punyaslokpattnaik.wordpress.com/feed/
 
 ## University Information
 * **University:** International Institute of Information Technology, Hyderabad
@@ -181,10 +181,13 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 
 ### How I will successfully complete the project:
 
-I consider myself a quick learner who finds ways out of difficulties. Having selected a project that both fits my skill set and interests, I am confident to complete it on time. Also, I have worked on projects having strict deadlines and 
+I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
-I will work on the project regularly and update mentors with my status as well as discuss further plan of action regularly. I will also push code on github on a regular basis. Also I will ensure that my commit messages and comments are insightful to any future reader of my code.
-I will spend time on the project before the coding period begins so that I can start being productive as soon as coding period begins. I have started understanding the structure of UnifiedDownloader and I’m also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins. I'll also remain available for any queries regarding my code well after successful completion of project.
+I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+
+I will spend time on the project before the coding period so that I have a good final idea of my approach and I can hit the ground running as soon as the coding period starts. I have started understanding the structure of UnifiedDownloader and I’m also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins.
+
+Even after the project ends, I will be available if anyone has any questions regarding my code.
 
 ### Benefits to the Community
 
