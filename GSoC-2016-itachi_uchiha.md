@@ -80,7 +80,7 @@ In sequence, they go like this:
 
 2. **Adding with Fido**
 
-   Successfully add entries to the database from a Fido search result. Currently, client-specific functions like Database.add_from_vso_query_result() are used to add entries. Implement functionality such as Database.add_from_Fido_result() that will add the results of the QueryResponse object returned by the underneath client.
+   Successfully add entries to the database from a Fido search result. Currently, client-specific functions like `Database.add_from_vso_query_result()` are used to add entries. Implement functionality such as `Database.add_from_Fido_result()` that will add the results of the `QueryResponse` object returned by the underneath client.
 
 3. **Downloading with Fido**
 
@@ -88,7 +88,7 @@ In sequence, they go like this:
 
 4. **Miscellaneous**
 
-  1. Test the database module again to ensure that all functionalities such as tag, star, undo etc. work fine after integrating Fido.
+  1. Test the database module again to ensure that all functionalities such as `tag`, `star`, `undo` etc. work fine after integrating Fido.
   2. Make the database module pass quantified code checks (optional)
 
 **Note :** Documentation and writing tests will be done simultaneously along with each subpart. So, completion of each subpart will involve writing code for implementation, writing tests for that feature, and documenting that feature.
@@ -111,7 +111,7 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 | ------------- | ------------- |
 | April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
 | | **Part 1 starts** |
-| May 23, 2016 - May 29, 2016 ( 1 week ) | <ul><li>**Implement adding the Fido records to the database.**</li><li>Ensure that functionalities like display_entries etc. are working. Cross check by adding entries using specific client methods (the old way).</li><li>Document and write tests for adding while using Fido.</li><li>**Update 1 : Push code which will enable the database to accept Fido records/entries.**</li></ul> |
+| May 23, 2016 - May 29, 2016 ( 1 week ) | <ul><li>**Implement adding the Fido records to the database.**</li><li>Ensure that functionalities like `display_entries` etc. are working. Cross check by adding entries using specific client methods (the old way).</li><li>Document and write tests for adding while using Fido.</li><li>**Update 1 : Push code which will enable the database to accept Fido records/entries.**</li></ul> |
 | May 30, 2016 -  June 12, 2016 ( 2 weeks ) | <ul><li>**Implement querying with Fido.** Ensure that the different clients are recognized correctly and correct results are returned. Cross check by using custom queries for each client.</li><li>Write tests for querying with Fido.</li><li>Document querying with Fido.</li><li>**Update 2 : Push code so that querying inside the database is successfully done using Fido attributes.**</li></ul> |
 | June 13, 2016 - June 20, 2016 ( 1 week ) | <ul><li>**Implement downloading files for VSO and HEK queries after querying database.**</li><li>Ensure that the correct files from the correct clients are being downloaded by checking using the old separate download functions.</li></ul> |
 | **June 21, 2016 - June 28, 2016 (Midterm Evaluations / Buffer period)** | **Mid term deliverables :**<ul><li>Querying with Fido</li><li>Adding Fido records to the database</li><li>Downloading files from VSO and HEK queries using Fido. Downloading using other clients, tests and documentation will be done after mid-term evaluations.</li></ul> |
