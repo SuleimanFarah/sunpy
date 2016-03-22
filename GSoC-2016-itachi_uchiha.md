@@ -1,5 +1,5 @@
-# Organization: OpenAstronomy
-# Sub-Organization: SunPy
+## Organization: OpenAstronomy
+## Sub-Organization: SunPy
 ## Student Information
 * **Name:** Punyaslok Pattnaik
 * **E mail:** punyaslok.pattnaik@gmail.com
@@ -10,7 +10,7 @@
 * **Blog RSS feed :** https://punyaslokpattnaik.wordpress.com/feed/
 
 ## University Information
-* **University:** International Institute of Information Technology, Hyderabad
+* **University:** [International Institute of Information Technology, Hyderabad](https://www.iiit.ac.in)
 * **Major:** Computer Science
 * **Current Year:** Second Year
 * **Expected Graduation Date:** 2019
@@ -75,7 +75,8 @@ In sequence, they go like this:
 
 1. **Querying with Fido**
 
-   Currently the database uses client-specific queries like VSOClient().query to make a query for a specific client, in this case, VSO. Implement querying with Fido inside the database module. This means that a command like Database.query(attributes) will 
+   Currently the `Database.query()` function supports querying inside the database only by using VSO attributes (although other “Database module” specific attributes such as `tag`, `star` etc. are supported). So, now in the first step of implementing Fido, `Database.query()` should support querying using Fido attributes. This will remove the constraint of being able to use only VSO attributes for searching data.
+
 
 2. **Adding with Fido**
 
@@ -102,75 +103,28 @@ This part would mainly involve changing what items are stored in the cache. Now,
 
 Now, for the cache to work, it has to be ensured that whenever a query is made through Fido, pre-existing same query results in the cache are matching correctly with the query results obtained from the Fido search. So, while downloading files, those files will be skipped whose query result entries are already in the database.
 
-**Note :** Updates will be scheduled to the database package in small sections, rather than in one large pull request. The updates schedule is included in the timeline. Do this.
+**Note :** Updates will be scheduled to the database package in small sections, rather than in one large pull request. **The updates schedule is included in the timeline.**
 
 ## Timeline
 
-* April 22, 2016 - May 22, 2016 **(Community Bonding Period)**
-  * Read documentation and get more familiar with how Fido works.
-  * Discuss with mentors and get a final idea of how to approach the project.
-  * **Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.
-  * Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.
-
-**Part 1 starts**
-
-* May 23, 2016 - June 5, 2016 ( 2 weeks )
-  * **Implement querying with Fido.** Ensure that the different clients are recognized correctly and correct results are returned. Cross check by using custom queries for each client.
-  * Write tests for querying with Fido.
-  * Document querying with Fido.
-
-* June 6, 2016 - June 12, 2016 ( 1 week )
-  * **Implement adding the Fido records to the database.**
-  * Ensure that functionalities like display_entries etc. are working. Cross check by adding entries using specific client methods (the old way).
-  * Document and write tests for adding while using Fido.
-
-* June 13, 2016 - June 20, 2016 ( 1 week )
-  * **Implement downloading files for VSO and HEK queries after querying database.**
-  * Ensure that the correct files from the correct clients are being downloaded by checking using the old separate download functions.
-
-* **June 21, 2016 - June 28, 2016 (Midterm Evaluations / Buffer period)**
-  * **Mid term deliverables :**
-    * Querying with Fido
-    * Adding Fido records to the database
-    * Downloading files from VSO and HEK queries using Fido. Downloading using other clients, tests and documentation will be done after mid-term evaluations.
-
-* June 28, 2016 - July 4, 2016 ( 1 week )
-  * **Implement downloading files for all other remaining clients.**
-  * Cross check for every client by using the old separate download methods for downloading files.
-  * Document and write tests for downloading files using Fido.
-
-* July 5, 2016 - July 11, 2016 ( 1 week )
-  * **Test and ensure that all other pre-existing functionalities of the database module like tag, star, undo etc. are still working.**
-  * Clean up code to make it PEP8 compliant.
-  * Finalize Part 1 of the project after reviewing it with mentors.
-
-**Part 1 completed**
-
-**Part 2 starts**
-
-* July 12, 2016 - July 25, 2016 ( 2 weeks )
-  * **Implement functionality that serializes each query result by converting them to JSON.** Make sure that the serialization and deserialization processes work correctly.
-
-* July 26, 2016 - August 8, 2016 ( 2 weeks )
-  * **Implement adding the new type of entries to the cache table in the database.**
-  * **Implement searching through this database and check if all query results from all different clients are matching correctly.** This includes ensuring that pre-existing query results are detected correctly for every client, like VSO, HEK etc.
-  * **Implement skipping downloading of files** in case there is a query result match in the cache.
-  * Ensure that this “skipping” is working for all clients.
-
-* August 9, 2016 - August 15, 2016 ( 1 week )
-  * **Buffer period**
-  * Write documentation and tests for the new caching mechanism.
-
-**Part 2 completed**
-
-* August 16, 2016 - August 24, 2016 **(Students Submit Code and Evaluations)**
-  * Clean up code
-  * Improve documentation
-  * Resolve merge conflicts
-
-* August 24, 2016 - August 30, 2016  **(Mentors Submit Final Evaluations)**
-
-* August 30, 2016  **(Results Announced)**
+| Time Period        | Plan           |
+| ------------- | ------------- |
+| April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
+| | **Part 1 starts** |
+| May 23, 2016 - June 5, 2016 ( 2 weeks ) | <ul><li>**Implement querying with Fido.** Ensure that the different clients are recognized correctly and correct results are returned. Cross check by using custom queries for each client.</li><li>Write tests for querying with Fido.</li><li>Document querying with Fido.</li></ul> |
+| June 6, 2016 - June 12, 2016 ( 1 week ) | <ul><li>**Implement adding the Fido records to the database.**</li><li>Ensure that functionalities like display_entries etc. are working. Cross check by adding entries using specific client methods (the old way).</li><li>Document and write tests for adding while using Fido.</li></ul> |
+| June 13, 2016 - June 20, 2016 ( 1 week ) | <ul><li>**Implement downloading files for VSO and HEK queries after querying database.**</li><li>Ensure that the correct files from the correct clients are being downloaded by checking using the old separate download functions.</li></ul> |
+| **June 21, 2016 - June 28, 2016 (Midterm Evaluations / Buffer period)** | **Mid term deliverables :**<ul><li>Querying with Fido</li><li>Adding Fido records to the database</li><li>Downloading files from VSO and HEK queries using Fido. Downloading using other clients, tests and documentation will be done after mid-term evaluations.</li></ul> |
+| June 28, 2016 - July 4, 2016 ( 1 week ) | <ul><li>**Implement downloading files for all other remaining clients.**</li><li>Cross check for every client by using the old separate download methods for downloading files.</li><li>Document and write tests for downloading files using Fido.</li></ul> |
+| July 5, 2016 - July 11, 2016 ( 1 week ) | <ul><li>**Test and ensure that all other pre-existing functionalities of the database module like tag, star, undo etc. are still working.**</li><li>Clean up code to make it PEP8 compliant.</li><li>Finalize Part 1 of the project after reviewing it with mentors.</li></ul> |
+| | **Part 1 completed**<br />**Part 2 starts** |
+| July 12, 2016 - July 25, 2016 ( 2 weeks ) | <ul><li>**Implement functionality that serializes each query result by converting them to JSON.** Make sure that the serialization and deserialization processes work correctly.</li></ul> |
+| July 26, 2016 - August 8, 2016 ( 2 weeks ) | <ul><li>**Implement adding the new type of entries to the cache table in the database.**</li><li>**Implement searching through this database and check if all query results from all different clients are matching correctly.** This includes ensuring that pre-existing query results are detected correctly for every client, like VSO, HEK etc.</li><li>**Implement skipping downloading of files** in case there is a query result match in the cache.</li><li>Ensure that this “skipping” is working for all clients.</li></ul> |
+| August 9, 2016 - August 15, 2016 ( 1 week ) | <ul><li>**Buffer period**</li><li>Write documentation and tests for the new caching mechanism.</li> |
+| | **Part 2 completed** |
+| August 16, 2016 - August 24, 2016 **(Students Submit Code and Evaluations)** | <ul><li>Clean up code</li><li>Improve documentation</li><li>Resolve merge conflicts</li></ul> |
+| August 24, 2016 - August 30, 2016 | **Mentors Submit Final Evaluations** |
+| August 30, 2016 | **Results Announced** |
 
 ### Software packages to be used
 **Language:** Python
