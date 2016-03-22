@@ -165,7 +165,7 @@ customizing these curves . – 1 week
 
 **20 June – 27 June**
 
-Mid term evaluation
+Mid term evaluation. This week will act like a buffer . If something has been left upon incomplete , I aim to do it during this week or if nothing's incomplete I plan to begin my work on SunPy gallery.
 
  
 
