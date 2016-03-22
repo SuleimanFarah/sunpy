@@ -1,6 +1,6 @@
-Organization: SunPy in OpenAstronomy
+## Organization: SunPy in OpenAstronomy
 
-**SunPy Gallery, Docs, Website Upgrades**
+### **SunPy Gallery, Docs, Website Upgrades**
 
 1.       **Student Information**
 
@@ -165,7 +165,7 @@ customizing these curves . – 1 week (15 June - 20 June)
 
 **20 June – 27 June**
 
-Mid term evaluation.I plan to begin my work on SunPy gallery.
+This week will act like a buffer , things that have been left incomplete will be done else if nothing's incomplete I plan to begin my work on SunPy gallery.
 
  
 
@@ -194,26 +194,13 @@ documentation.
 
  
 
-**15 August – 23 August**
-
-Final week: Students tidy code, write tests(if required) however presently I don't know much abbout writing tests, improve documentation and
-submit their code sample. Students also submit their final mentor
-evaluation.
+**15 August – 29 August**
+Writing tidy code, tests(if required) however presently I don't know much about writing tests, improve documentation and
+submit their code sample. 
 
  
 
-**23 August – 29 August**
-
-This is not the end,I will be continuously involved in the community contributing to its development.
-
- 
-
-**30 August**
-
-Final results of Google Summer of Code 2016 announced.
-
-Even after Google Summer of Code 2016 I will be a regular contributor of
-Open Source .  
+This is not the end,I will be continuously involved in the community contributing to it's development.  
 
 10.    **Commitments**
 
@@ -246,7 +233,6 @@ side, I am a Badminton Player. 
 Yes, I am eligible to receive payments from Google. To contact do drop
 me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
-
 
 
 
