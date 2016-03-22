@@ -67,7 +67,7 @@ Organization: SunPy in OpenAstronomy
           Numpy, Matplotlib,Scipy,Astropy
           Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
           Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule .
-          Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
+          Since Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
 
 
  
@@ -133,7 +133,7 @@ I have been a Ubuntu user for more than 6 months .
 
 22 April -23 May (Community Bonding Period)
 
-This period would be dedicated to knowing about the project more and
+This period will be dedicated to knowing about the project more and
 more. I would seek answers as in what format(bug fixes, tutorials,
 SEP’s)  do my mentors want me to improve the website and the
 documentation(Region Of Interest ,Customizing SunPy etc), which
@@ -148,18 +148,18 @@ in SunPy, Region of Interest, Customizing SunPy) would be my main
 target. Some  Possible options would be:
 
 1.       Adding histogram, customization using Matplotlib basic tutorial
-to this (Plotting in SunPy). – 1 week
+to [Plotting in SunPy](http://docs.sunpy.org/en/stable/guide/plotting.html). – 1 week(23 May - 30 May)
 
-2.       Since ROI module is still under development I will make it more
+2.       Since [ROI](http://docs.sunpy.org/en/stable/guide/roi.html) module is still under development I will make it more
 developed so that it contains more information about a particular time
-range. 1-2 weeks
+range. 1-2 weeks (30 May- 10 June)
 
-3.       Customizing SunPy contains docs related to only specifying
-location of files being used. – 1 week
+3.       [Customizing SunPy](http://docs.sunpy.org/en/stable/guide/customization.html) contains docs related to only specifying
+location of files being used. Probably I plan to add more ways to customize it. Though presently I have no such idea in mind. – 1 week (10 June - 15 June)
 
-4.       SunPy lightcurve under API reference is probably too short. 
+4.       [SunPy lightcurve](http://docs.sunpy.org/en/stable/code_ref/lightcurve.html) under API reference is probably too short. 
 Adding more options to lightcurves such as merging two graphs or
-customizing these curves . – 1 week
+customizing these curves . – 1 week (15 June - 20 June) 
 
  
 
@@ -172,7 +172,7 @@ Mid term evaluation. This week will act like a buffer . If something has been le
 **27 June – 25 July**
 
 This period will be dedicated to improving and adding examples to SunPy
-gallery. Probably a SunPy map tutorial or I could also add some video
+gallery. Probably a SunPy map tutorial,also I plan add some video
 tutorials on basics of Lightcurves and Maps. Also, the main task would
 be to make full use of Jupyter notebooks (which I would have learned by
 then).  Adding tutorials for various options available with Matplotlib
@@ -182,7 +182,7 @@ could be one option as well.
 
 **25 July- 15 August**
 
-Insert Tasks for the Website would be done in this period. Also, I could
+Insert Tasks for the Website would be done in this period. Also, I plan
 make the website layout a bit better as I know a bit of HTML/CSS as
 well. 
 
@@ -196,7 +196,7 @@ documentation.
 
 **15 August – 23 August**
 
-Final week: Students tidy code, write tests, improve documentation and
+Final week: Students tidy code, write tests(if required) however presently I don't know much abbout writing tests, improve documentation and
 submit their code sample. Students also submit their final mentor
 evaluation.
 
@@ -246,7 +246,6 @@ side, I am a Badminton Player. 
 Yes, I am eligible to receive payments from Google. To contact do drop
 me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
-
 
 
 
