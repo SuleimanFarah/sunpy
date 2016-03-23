@@ -3,7 +3,7 @@ This page is designed to describe the data products for various types of imaging
 When adding an instrumet please focus on the data produced, information such as resolution in all axes, imager type i.e. scanning or Fabry-Perot type etc.
 
 ## Hinode/EIS
-EIS has 2 modes of working, known as slit and slot, and each of them has two widths 1 and 2 arcsecs for Slit, and ?? and ?? for slot.
+EIS has 2 modes of working, known as slit and slot, and each of them has two widths 1 and 2 arcsecs for Slit, and 40 and 266 arcsecs for slot.
 ### Slit
 Both slit widths are used in the same way, which can be as raster or time series.  The difference on the data is that raster has a movement on the Solar-X axis while taking images, and the time series are normally static and take different exposures of the same location at different times - notice that time always changes with each exposure.
 
