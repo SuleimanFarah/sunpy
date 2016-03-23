@@ -232,8 +232,7 @@ side, I am a Badminton Player. 
 
 12.   **Eligibility**
 
-Yes, I am eligible to receive payments from Google. To contact do drop
-me a mail
+Yes, I am eligible to receive payments from Google. To contact feel free to drop me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
 
 
