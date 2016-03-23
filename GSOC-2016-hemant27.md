@@ -32,7 +32,7 @@
              worked with GNU plots and also involved a lot of C programming as well.
 
 *           Intermediate knowledge of Python and Python for Data Science.
-            I started learning Python about 2 months ago.
+            I started learning Python about 2 months ago.However I haven't worked on projects involving Python.
 
 *           I am comfortable in writing programs in Python. Also, I am pretty comfortable working with Matplotlib.
 
@@ -67,7 +67,9 @@
           Numpy, Matplotlib,Scipy,Astropy
           Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
           Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule .
+          Sphinx : For creating beautiful documentation .  However I don't have much prior knowledge of Sphinx and reST syntax.I do plan to learn about them in a few weeks time or so .
           Since Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
+          
 
 
  
