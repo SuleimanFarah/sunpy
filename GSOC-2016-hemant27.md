@@ -12,7 +12,7 @@
 
 *            Github ID: [hemantkhatri27](https://github.com/hemantkhatri27)
 
-*           Messaging: Google Hangout ([hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com))
+*           Messaging: Google Hangout ([hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) or  15ucs050@lnmiit.ac.in)
 
 2.        **University and Education**
 
@@ -235,6 +235,5 @@ side, I am a Badminton Player. 
 Yes, I am eligible to receive payments from Google. To contact do drop
 me a mail
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
-
 
 
