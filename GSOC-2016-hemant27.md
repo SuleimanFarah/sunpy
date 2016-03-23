@@ -67,7 +67,7 @@
           Numpy, Matplotlib,Scipy,Astropy
           Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
           Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule.      
-          Sphinx : For creating beautiful documentation .  However I don't have much prior knowledge of Sphinx and reST syntax.I do plan to learn about them in a few weeks time or so .  
+          Sphinx : Sphinx is a tool that makes it easy to create intelligent and beautiful documentation.It uses HTML, LaTeX as its output format. I do have a good knowledge of HTML,LaTeX and have started using Sphinx as well. 
           Since Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
           
 
