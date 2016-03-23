@@ -66,8 +66,8 @@
 5.       **Software Packages  to be used**  
           Numpy, Matplotlib,Scipy,Astropy
           Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
-          Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule .
-          Sphinx : For creating beautiful documentation .  However I don't have much prior knowledge of Sphinx and reST syntax.I do plan to learn about them in a few weeks time or so .
+          Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule.      
+          Sphinx : For creating beautiful documentation .  However I don't have much prior knowledge of Sphinx and reST syntax.I do plan to learn about them in a few weeks time or so .  
           Since Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
           
 
