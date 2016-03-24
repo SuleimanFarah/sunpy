@@ -157,7 +157,7 @@ Even after the project ends, I will be available if anyone has any questions reg
 
 ### Benefits to the Community
 
-**Part 1 :** The integration of Fido inside the database will enable researchers to easily use SunPy’s database to query and store various types of data locally. There will be no need to use separate queries for separate clients. Support for querying, adding and downloading for any new client in the future can be added easily by just defining a new class from which Fido can use its functionalities.
+**Part 1 :** The integration of Fido inside the database will enable researchers to easily use SunPy’s database to query and store various types of data locally. There will be no need to use separate queries for separate clients. **Support for querying, adding and downloading for any new client in the future can be added easily by just defining a new class from which Fido can use its functionalities.**
 
 **Part 2 :** The improved caching mechanism will also help to save bandwidth, disk space and load on the VSO, HEK etc servers as only new results will be downloaded. It will also eliminate unnecessary wastage of time brought about by downloading the same files again.
 
