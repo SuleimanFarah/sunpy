@@ -38,6 +38,7 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
 * **SunPy**
  * [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
  * [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
+ * [Download and fetch both accept kwargs now.](https://github.com/sunpy/sunpy/pull/1719)
  * [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
 
 ## Project Proposal Information
