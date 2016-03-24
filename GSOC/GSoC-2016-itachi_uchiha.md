@@ -75,14 +75,14 @@ The second part involves improving the caching mechanism. Currently, the caching
 I would divide this part of the project into 4 broad subparts.
 In sequence, they go like this:
 
-1. **Querying with Fido**
 
-   Currently the `Database.query()` function supports querying inside the database only by using VSO attributes (although other “Database module” specific attributes such as `tag`, `star` etc. are supported). So, now in the first step of implementing Fido, `Database.query()` should support querying using Fido attributes. This will remove the constraint of being able to use only VSO attributes for searching data.
-
-
-2. **Adding with Fido**
+1. **Adding with Fido**
 
    Successfully add entries to the database from a Fido search result. Currently, client-specific functions like `Database.add_from_vso_query_result()` are used to add entries. Implement functionality such as `Database.add_from_Fido_result()` that will add the results of the `QueryResponse` object returned by the underneath client.
+
+2. **Querying with Fido**
+
+   Currently the `Database.query()` function supports querying inside the database only by using VSO attributes (although other “Database module” specific attributes such as `tag`, `star` etc. are supported). So, now in the first step of implementing Fido, `Database.query()` should support querying using Fido attributes. This will remove the constraint of being able to use only VSO attributes for searching data.
 
 3. **Downloading with Fido**
 
