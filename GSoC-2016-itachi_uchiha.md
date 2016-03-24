@@ -37,7 +37,8 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
  * [Removed discussion of Keyword class in Getting Started section.](https://github.com/astropy/ccdproc/pull/296)
 * **SunPy**
  * [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
- * [Database(default_waveunit) should take a Unit.](https://github.com/sunpy/sunpy/pull/1701)
+ * [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
+ * [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
 
 ## Project Proposal Information
 
