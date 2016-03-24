@@ -59,7 +59,7 @@ The second part involves improving the caching mechanism. Currently, the caching
 
 ### Project Goals :
 
-**Part 1 :** Use Fido to replace VSO for doing internal database operations, primarily to achieve the goal of being able to store different formats of data in the database. This will create the ability to quickly support more and more data types in the future as support for each type can be added by creating relevant sub-classes.
+**Part 1 :** Use Fido to replace VSO for doing internal database operations, primarily to achieve the goal of being able to store different formats of data in the database. **This will create the ability to quickly support more and more data types in the future as support for each type can be added by creating relevant sub-classes.**
 
 **Part 2 :** Improve caching mechanism to eliminate downloading files that are already downloaded as part of a different query.
 
