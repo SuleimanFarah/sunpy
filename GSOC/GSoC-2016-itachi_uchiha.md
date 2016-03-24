@@ -149,7 +149,7 @@ DavidPS: When saying "push" in the updates, do you mean to GH or to do a
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
-I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I'll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 
 I will spend time on the project before the coding period so that I have a good final idea of my approach and I can hit the ground running as soon as the coding period starts. I have started understanding the structure of UnifiedDownloader and I’m also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins.
 
