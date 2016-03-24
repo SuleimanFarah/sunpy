@@ -127,6 +127,16 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 | August 24, 2016 - August 30, 2016 | **Mentors Submit Final Evaluations** |
 | August 30, 2016 | **Results Announced** |
 
+
+```
+DavidPS: When saying "push" in the updates, do you mean to GH or to do a 
+         Pull Request? 
+         I cannot talk for the mentors in this project, but I would prefer
+         to see frequently updates and pushes to your fork (almost daily).
+         
+         An important point that hasn't been mentioned is how you plan to 
+         handle data stored in files that are not FITS.
+```
 ### Software packages to be used
 **Language:** Python
 
@@ -172,3 +182,9 @@ Also SunPy is the only organization and this project is the only project that I 
 ### Eligibility
 
 **Yes**, I am eligible to receive payments from Google. For any queries, clarifications or further explanations, feel free to contact me at punyaslok.pattnaik@gmail.com .
+
+```
+DavidPS: it looks a pretty good application, I cannot comment much more :)
+
+         Good luck!!
+```

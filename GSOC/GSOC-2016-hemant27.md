@@ -14,6 +14,10 @@
 
 *           Messaging: Google Hangout ([hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) or  15ucs050@lnmiit.ac.in)
 
+```
+DavidPS: Don't forget the link to the blog
+```
+
 2.        **University and Education**
 
 *            University: The LNM Institute of Information Technology
@@ -42,6 +46,10 @@
 
 *           I am comfortable working with Git/Github.
 
+```
+DavidPS: Could you add links to examples of the projects you've been involved?
+```
+
 4.       **Proposal Abstract**
 
 *           I intend to take up the SunPy Gallery, Docs, Website upgrades
@@ -62,6 +70,11 @@
 
 *           I did checkout the [SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) so I am pretty familiar with what.
           has been done till now on SunPy.[SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) The proposal makes an API change, which will move LightCurve to follow the API of the Map submodule.
+
+```
+DavidPS: It would be better if the links are to the sunpy repository 
+         (unless you are changing something that you want to show)
+```
 
 5.       **Software Packages  to be used**  
           Numpy, Matplotlib,Scipy,Astropy
@@ -116,6 +129,11 @@
           which I learned using Git, IRC, IRC etiquettes. Also, I did work on a
           Hello World example task of RTEMS organization due to which I got to
           know how to build things
+          
+```
+DavidPS: add links to these, that way mentors can get a better picture of 
+         such projects.
+```          
 
           Recently I made 2 pull requests:
 
@@ -180,6 +198,11 @@ be to make full use of Jupyter notebooks (which I would have learned by
 then).  Adding tutorials for various options available with Matplotlib
 could be one option as well.
 
+```
+DavidPS: a break down as the block above would be helpful.
+         Complement these with details like which kind of video 
+         tutorials you have in mind (shorts, long, video only, etc.)
+```
  
 
 **25 July- 15 August**
@@ -194,6 +217,9 @@ permits I would add some tutorials for Astropy as well.
 Would look forward to some bug fixing or further changes in
 documentation.
 
+```
+DavidPS: Same thing as above, more detail the better.
+```
  
 
 **15 August – 29 August**
@@ -203,6 +229,12 @@ submitting code sample.
  
 
 This is not the end,I will be continuously involved in the community contributing to it's development.  
+
+```
+DavidPS: There's an orthographic mistake here!
+         Also, how/why would you keep involved with the community?
+```
+
 
 10.    **Commitments**
 
@@ -236,3 +268,8 @@ Yes, I am eligible to receive payments from Google. To contact feel free to drop
 on [hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) .
 
 
+```
+DavidPS: in general looks good, but it could be improved with the
+         points I've mentioned above.
+         Good luck!
+```

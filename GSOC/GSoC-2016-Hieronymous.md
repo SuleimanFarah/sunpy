@@ -88,13 +88,21 @@ Documentation and requisite tests would also be added.
 * Global H-alpha Network, SOLIS VSM (1 week).
 
 ### 20th June - 27th June (1 week)
-Mid-term evaluation. 
+Mid-term evaluation.
+
+```
+davidps: Are you not doing anything this week?
+```
 
 ### 27th June - 4th July (1 week)
 Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
 ### 4th July - 18th July (2 weeks, 3 at max)
 Write a generic parser, to get text/tabular data for the following instruments AIA, HMI, EVE and SWPC. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future.
+```
+davidps: AIA or HMI won't provide data in ascii format.
+You could just say other sources.
+```
 
 ### 18th July - 15th August (4 weeks)
 Implement the plotting part of the project. This would deal with delivering the final three products of the idea
@@ -102,6 +110,14 @@ Implement the plotting part of the project. This would deal with delivering the 
 * GOES X-ray flux with active regions number on the flares detected (1 week)
 * latest features observed available from HEK on top of a map (1 week)
 This part would deal with overlaying the tabular data that we obtained from the parser over the corresponding solar images to produce the plots proposed. Custom plotting functions would be built for getting each type of plot.
+
+```
+DavidPS: Do you foresee any difficulty that you will have to overcome 
+         in these 4 weeks? Viusalisation is normally easy to do, but
+         hard to make it look perfect. Think on things that makes you
+         dedicate 4 weeks for this task and not just 4 days and tell 
+         us about it.
+```
 
 ### 15th August - 23rd August (1 week)
 The final week. Would clean up code (make it PEP8 compliant), docs, fix/add tests if required. This can also serve as a buffer week and work on adding support for Helio-Hfc could also be added (on discussion with mentor).
@@ -136,3 +152,10 @@ When I’m not programming, I [read](https://www.goodreads.com/user/show/3804420
 
 ## 13. Eligibility
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanation of any approach/feature feel free to contact me at sudk1896@gmail.com and I shall be happy to reply.
+
+```
+DavidPS: Pay attention in some capitalisation of some words and 
+         check the PDF looks good before uploading.
+         For the rest the application looks very good.
+         Good luck!
+```
