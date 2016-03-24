@@ -123,7 +123,7 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 | July 26, 2016 - August 8, 2016 ( 2 weeks ) | <ul><li>**Implement adding the new type of entries to the cache table in the database.**</li><li>**Implement searching through this database and check if all query results from all different clients are matching correctly.** This includes ensuring that pre-existing query results are detected correctly for every client, like VSO, HEK etc.</li><li>**Implement skipping downloading of files** in case there is a query result match in the cache.</li><li>Ensure that this “skipping” is working for all clients.</li></ul> |
 | August 9, 2016 - August 15, 2016 ( 1 week ) | <ul><li>**Buffer period**</li><li>Write documentation and tests for the new caching mechanism.</li><li>**Update 4 : Push code so that the database successfully uses the new caching mechanism.**</li></ul> |
 | | **Part 2 completed** |
-| August 16, 2016 - August 24, 2016 **(Students Submit Code and Evaluations)** | <ul><li>Clean up code</li><li>Improve documentation</li><li>Resolve merge conflicts</li></ul> |
+| August 16, 2016 - August 24, 2016 **(Students Submit Code and Evaluations)** | <ul><li>Clean up code</li><li>Improve documentation</li><li>Resolve merge conflicts (if any)</li></ul> |
 | August 24, 2016 - August 30, 2016 | **Mentors Submit Final Evaluations** |
 | August 30, 2016 | **Results Announced** |
 
