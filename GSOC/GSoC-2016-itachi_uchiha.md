@@ -103,9 +103,9 @@ For example, currently we have to use specific queries like `vso.VSOClient().que
 
 This part would mainly involve changing what items are stored in the cache. Now, instead of queries, the all the results that a query returns will be stored in the cache. This will involve changing the JSON format in order to store a query result. Also, along with that, encoding and decoding that new JSON will have to be done.
 
-Now, for the cache to work, it has to be ensured that whenever a query is made through Fido, pre-existing same query results in the cache are matching correctly with the query results obtained from the Fido search. So, while downloading files, those files will be skipped whose query result entries are already in the database.
+Now, for the cache to work, it has to be ensured that whenever a query is made through Fido, pre-existing same query results in the cache are matching correctly with the query results obtained from the Fido search. So, while downloading files, those files will be skipped whose query result entries are already in the database. All query results from all supported clients must be matching correctly.
 
-**Note :** Updates will be scheduled to the database package in small sections, rather than in one large pull request. **The updates schedule is included in the timeline.**
+**Note : Updates will be scheduled to the database package in small sections, rather than in one large pull request. The updates schedule is included in the timeline.**
 
 ## Timeline
 
