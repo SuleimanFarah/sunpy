@@ -98,7 +98,7 @@ Hieronymous: I thought mid-term review week was supposed to be empty, my mistake
 ### 27th June - 18th July (3 weeks)
 Write a generic parser, to get text/tabular data for SWPC and other sources. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future. This parser would be a part of ``sunpy.util``.
 
-The undecided (ones to be added later on) sources would present a challenge, since we might end up parsing html pages instead of normal text files, the process of extracting data from an html page is different from that of a normal text file (I would have to use ``beautifulsoup`` for an html page). Other challenges/problems include the possibility of data not being properly encoded (utf-8).
+The undecided (ones to be added later on) sources would present a challenge, since we might end up parsing html pages instead of normal text files, the process of extracting data from an html page is different from that of a normal text file (I would have to use ``beautifulsoup`` for an html page).
 
 ```
 davidps: AIA or HMI won't provide data in ascii format.
