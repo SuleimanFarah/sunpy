@@ -74,10 +74,10 @@ With this module, Users would have the option of either seeing the real-time(lat
 
 ## 10. Timeline
 
-Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability.
+Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability. **I would be opening PRs regularly so that SunPy developers can review my code and provide valuable feedback.**
 
 ### 22nd April - 23rd May (Community bonding period)
-Get familiar with the plotting aspects of the project. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the api/interface for the visualization module would look like. 
+Get familiar with the plotting aspects of the project. More specifically look through and understand [David P.S's](https://github.com/dpshelio/smpy) implementation of overlaying data over Maps to get Active Regions' numbers. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parsers would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the API/Interface for the visualization module would look like. 
 
 ### 23rd May - 20th June (4 weeks)
 This part would deal with implementing all the Fido clients [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw).
@@ -88,17 +88,17 @@ Documentation and requisite tests would also be added.
 * Global H-alpha Network, SOLIS VSM (1 week).
 
 ### 20th June - 27th June (1 week)
-Mid-term evaluation.
+Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
 ```
 davidps: Are you not doing anything this week?
+
+Hieronymous: I thought mid-term review week was supposed to be empty, my mistake, I have shifted the timeline a bit now.
 ```
+### 27th June - 18th July (3 weeks)
+Write a generic parser, to get text/tabular data for SWPC and other sources. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future. 
 
-### 27th June - 4th July (1 week)
-Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
-
-### 4th July - 18th July (2 weeks, 3 at max)
-Write a generic parser, to get text/tabular data for the following instruments AIA, HMI, EVE and SWPC. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future.
+Parsing data from various sources and creating a separate logic for each, presents a unique and interesting challenge. The undecided (ones to be added later on) sources 
 ```
 davidps: AIA or HMI won't provide data in ascii format.
 You could just say other sources.
@@ -110,6 +110,7 @@ Implement the plotting part of the project. This would deal with delivering the 
 * GOES X-ray flux with active regions number on the flares detected (1 week)
 * latest features observed available from HEK on top of a map (1 week)
 This part would deal with overlaying the tabular data that we obtained from the parser over the corresponding solar images to produce the plots proposed. Custom plotting functions would be built for getting each type of plot.
+The main objective of the visualization module is to mimic the functionality of [solarmonitor](http://www.solarmonitor.org/) and similar websites. I have been improving on my matplotlib skills. I'm already looking into [David P.S. 's](https://github.com/dpshelio) implementation of [Solar monitor batch](https://github.com/dpshelio/smpy) , this module overlays Active Region numbers on SunPy Maps. I wouldn't base my work on this module, but it would help me understand how to overlay the text/tabular data over Maps,LCs to get the plots we want. It is very rudimentary ,I would have to understand how plotting works and how to integrate our meta-data (from the tables) and add requisite features (AR numbers etc) to the plot. This would also involve the use of ``Fido`` and the parser we built, I would ensure both of them work correctly for this to function in the intended way. The tests for this module would involve making sure ``Fido``, the parser and the plot functions, all of them work in the intended way to get our result. 
 
 ```
 DavidPS: Do you foresee any difficulty that you will have to overcome 
