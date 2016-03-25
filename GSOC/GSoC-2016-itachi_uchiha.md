@@ -88,7 +88,7 @@ In sequence, they go like this:
 
    Given a Fido search query, download the relevant files from the client which Fido decides can best serve the query. This will involve downloading files from different clients for different types of queries. All files from all clients must be downloaded successfully.
    
-   There will be many file types which will be returned by different clients. Currently the database module handles FITS file types pretty well. So, in order to store metadata of other file types such as ana, jp2 etc. a new feature can be implemented which will allow newer file types in the future to specify their metadata format and hence they can be easily stored in the database.
+   There will be many file types which will be returned by different clients. Currently the database module handles FITS file types pretty well. So, in order to store metadata of other file types such as `ana`, `jp2` etc. a new feature can be implemented which will allow newer file types in the future to specify their metadata format and hence they can be easily stored in the database.
 
    Also, it would be better if a mapping is created which relates each client to its possible file types, which could allow the caching mechanism to become even faster while searching for data of a particular client in the future.
 
