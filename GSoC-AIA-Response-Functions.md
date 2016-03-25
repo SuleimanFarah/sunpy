@@ -2,7 +2,7 @@
 ## Organization: Open Astronomy
 ## Suborganization: Sunpy
 ### Student Information
-* Name: Tessa Wilkinson
+* Name: Tessa D. Wilkinson
 * Email: [tessadwilkinson@gmail.com](mailto:tessadwilkinson@gmail.com)
 * Time-zone: PST
 * IRC Handle: tessa /  tdw
@@ -86,7 +86,7 @@ I will:
 * Assess instrument wavelength response and develop a wavelength response function using effective area vs wavelength of the strongest emission lines present in the solar feature. 
 * Develop an emissivity spectral structure based on plasma properties without utilizing SSW.  Essentially, I will be rewriting the idl  function aia_get_response() and all it encompases. 
 * Use the spectral contribution function developed with CHIANTI to develop a temperature response function 
-* Close the SunPy pull request: SDO/AIA response function #1663 (directly related to this project. 
+* Close the SunPy pull request: [SDO/AIA response function #1663](https://github.com/sunpy/sunpy/issues/1663) (directly related to this project. 
 
 ### Deliverables:
 
