@@ -225,7 +225,7 @@ DavidPS: Same thing as above, more detail the better.
  
 
 **15 August – 29 August**
-Writing tidy code, tests(if required) however presently I don't know much about writing tests, improve documentation and
+Writing tidy code, tests about which I plan to learn in near future, improve documentation and
 submitting code sample. 
 
  
@@ -259,7 +259,7 @@ My interests are Data science, Problem solving. I also took a course in
 Discrete Mathematical Structures, Shell Programming . My open Source
 journey began from November 2015 when I participated in Google Code-In.
 Though I didn’t contribute much but I learned the basics of open source
-i.e. Github, IRC etc. Other than Python I am pretty good at C
+i.e. Git, IRC etc. Other than Python I am pretty good at C
 programming and also used it recently for my research project about
 which I had mentioned earlier in this document. On the non-technical
 side, I am a Badminton Player. 
