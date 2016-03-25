@@ -43,7 +43,7 @@ DavidPS: Don't forget the link to the blog
 
 *           I did workout all the sample examples given in the
             documentation analyzed on changing a particular attribute what changes
-            come to the LightCurve/Maps.
+            come to the [LightCurve](http://docs.sunpy.org/en/stable/guide/data_types/lightcurve.html)/[Maps](http://docs.sunpy.org/en/stable/guide/data_types/maps.html).
 
 *           I am comfortable working with Git/Github.
 
