@@ -87,6 +87,10 @@ In sequence, they go like this:
 3. **Downloading with Fido**
 
    Given a Fido search query, download the relevant files from the client which Fido decides can best serve the query. This will involve downloading files from different clients for different types of queries. All files from all clients must be downloaded successfully.
+   
+   There will be many file types which will be returned by different clients. Currently the database module handles FITS file types pretty well. So, in order to store metadata of other file types such as ana, jp2 etc. a new feature can be implemented which will allow newer file types in the future to specify their metadata format and hence they can be easily stored in the database.
+
+   Also, it would be better if a mapping is created which relates each client to its possible file types, which could allow the caching mechanism to become even faster while searching for data of a particular client in the future.
 
 4. **Miscellaneous**
 
@@ -113,13 +117,13 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 
 | Time Period        | Plan           |
 | ------------- | ------------- |
-| April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
+| April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>**Discuss with mentors and get a final idea of which client will serve which kinds of files and decide how the metadata of each file type will be stored in the database. Also finalize how to store metadata of any file types which are not currently supported ( maybe create an additional feature that will allow easy additions of new file types’ metadata to the database in the future ).**</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
 | | **Part 1 starts** |
 | May 23, 2016 - May 29, 2016 ( 1 week ) | <ul><li>**Implement adding the Fido records to the database.**</li><li>Ensure that functionalities like `display_entries` etc. are working. Cross check by adding entries using specific client methods (the old way).</li><li>Document and write tests for adding while using Fido.</li><li>**Update 1 : Push code which will enable the database to accept Fido records/entries.**</li></ul> |
 | May 30, 2016 -  June 12, 2016 ( 2 weeks ) | <ul><li>**Implement querying with Fido.** Ensure that the different clients are recognized correctly and correct results are returned. Cross check by using custom queries for each client.</li><li>Write tests for querying with Fido.</li><li>Document querying with Fido.</li><li>**Update 2 : Push code so that querying inside the database is successfully done using Fido attributes.**</li></ul> |
 | June 13, 2016 - June 20, 2016 ( 1 week ) | <ul><li>**Implement downloading files for VSO and HEK queries after querying database.**</li><li>Ensure that the correct files from the correct clients are being downloaded by checking using the old separate download functions.</li></ul> |
 | **June 21, 2016 - June 28, 2016 (Midterm Evaluations / Buffer period)** | **Mid term deliverables :**<ul><li>Querying with Fido</li><li>Adding Fido records to the database</li><li>Downloading files from VSO and HEK queries using Fido. Downloading using other clients, tests and documentation will be done after mid-term evaluations.</li></ul> |
-| June 28, 2016 - July 4, 2016 ( 1 week ) | <ul><li>**Implement downloading files for all other remaining clients.**</li><li>Cross check for every client by using the old separate download methods for downloading files.</li><li>Document and write tests for downloading files using Fido.</li><li>**Update 3 : Push code so that files from all clients can be downloaded from a Fido search result.**</li></ul> |
+| June 28, 2016 - July 4, 2016 ( 1 week ) | <ul><li>**Implement downloading files for all other remaining clients.**</li><li>**For all supported file types, implement storing their metadata in the database. The database module already handles FITS files pretty well.**</li><li>**If needed, create a new feature/wrapper which will allow new file types’ metadata to be added easily to the database in the future.**</li><li>Cross check for every client by using the old separate download methods for downloading files.</li><li>Document and write tests for downloading files using Fido.</li><li>**Update 3 : Push code so that files from all clients can be downloaded from a Fido search result.**</li></ul> |
 | July 5, 2016 - July 11, 2016 ( 1 week ) | <ul><li>**Test and ensure that all other pre-existing functionalities of the database module like `tag`, `star`, `undo` etc. are still working.**</li><li>Clean up code to make it PEP8 compliant.</li><li>Finalize Part 1 of the project after reviewing it with mentors.</li></ul> |
 | | **Part 1 completed**<br />**Part 2 starts** |
 | July 12, 2016 - July 25, 2016 ( 2 weeks ) | <ul><li>**Implement functionality that serializes each query result by converting them to JSON.** Make sure that the serialization and deserialization processes work correctly.</li></ul> |
@@ -148,6 +152,8 @@ itachi_uchiha: By "push" in each update, I meant a Pull Request for each
                github fork regularly so that the mentors can keep track of
                my progress. I've mentioned it explicitly now just before the
                timeline.
+
+               Added the file handling part.
                
 ```
 ### Software packages to be used
