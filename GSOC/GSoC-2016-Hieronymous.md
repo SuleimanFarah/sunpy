@@ -74,7 +74,7 @@ With this module, Users would have the option of either seeing the real-time(lat
 
 ## 10. Timeline
 
-Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability. **I would be opening PRs regularly so that SunPy developers can review my code and provide valuable feedback. I would also be pushing regularly to my own fork, so that mentors can keep track of my progress.**
+Note: I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness  and ease of maintainability. **I would be opening PRs regularly so that SunPy developers can review my code and provide valuable feedback. I would also be pushing regularly to my own fork so that mentors can keep track of my progress.**
 
 ### 22nd April - 23rd May (Community bonding period)
 Get familiar with the plotting aspects of the project. More specifically look through and understand [David P.S's](https://github.com/dpshelio/smpy) implementation of overlaying data over Maps to get Active Regions' numbers. If Unidown still hasn't been merged into master, work on it to do so. Study different sources of data for which custom parser logic would be written. Decide different approaches to store the tabular data (from the parsers), like ``astropy.ascii`` vs python dict. Investigate alternatives and choose the most efficient. Discuss with mentor about how the API/Interface for the visualization module would look like. 
