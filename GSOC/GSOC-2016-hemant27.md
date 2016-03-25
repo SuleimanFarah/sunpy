@@ -68,8 +68,8 @@ DavidPS: Could you add links to examples of the projects you've been involved?
 
 *           For plotting I would use Matplotlib.
 
-*           I did checkout the [SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) so I am pretty familiar with what.
-          has been done till now on SunPy.[SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP/blob/master/SEP-0007.md) The proposal makes an API change, which will move LightCurve to follow the API of the Map submodule.
+*           I did checkout the [SEP\_007](https://github.com/hemantkhatri27/sunpy-SEP) so I am pretty familiar with what.
+          has been done till now on SunPy.[SEP\_007](https://github.com/sunpy/sunpy-SEP) The proposal makes an API change, which will move LightCurve to follow the API of the Map submodule.
 
 ```
 DavidPS: It would be better if the links are to the sunpy repository 
