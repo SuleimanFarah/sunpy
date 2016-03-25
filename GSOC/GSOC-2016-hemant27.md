@@ -79,7 +79,7 @@ DavidPS: It would be better if the links are to the sunpy repository
 
 5.       **Software Packages  to be used**  
           Numpy, Matplotlib,Scipy,Astropy
-          Numpy : Since, the project involves working with scientific data. This require the use of Numpy .
+          Numpy : Since, the project involves working with scientific data. This requires the use of Numpy .
           Matplotlib : It will be used for plotting lightcurves as well as is essential when changing a bit of data of maps submodule.      
           Sphinx : Sphinx is a tool that allows us to create as many restructured documents as we want and then it merges them together into a single website or a book.It uses HTML, LaTeX as its output format. I do have a good knowledge of HTML,LaTeX and have started using Sphinx as well.    
             Since Scipy,Astropy are dependencies of SunPy, I might need them while working on the project.
@@ -94,7 +94,7 @@ DavidPS: It would be better if the links are to the sunpy repository
           pretty active on IRC asking out mentors about SunPy. I am pretty
           familiar with the software now. My main task is to look into all the
           things I could do with Jupyter Notebooks(as I don’t know much about it).
-          On the programming part, i keep looking into Python Docs, Edx courses.
+          On the programming part, I keep looking into Python Docs, Edx courses.
 
           I will go through the documentation again and again so that I
           can make it better and better. Since the topic in spotlight is
@@ -125,7 +125,7 @@ DavidPS: It would be better if the links are to the sunpy repository
 
 8.       **Open Source experience**
 
-          Google Code-In 2015: I participated in Google Code-In 2015 and
+          **Google Code-In 2015**: I participated in Google Code-In 2015 and
           was successful in completing a task under the community FOSSAsia in
           which I learned using Git, IRC, IRC etiquettes. Also, I did work on a
           Hello World example task of RTEMS organization due to which I got to
@@ -229,8 +229,8 @@ Writing tidy code, tests about which I plan to learn in near future, improve doc
 submitting code sample. 
 
  
-
-This is not the end,I will be continuously involved in the community contributing to it's development.  
+I have an interest in Cosmology and Astronomy . I will use the knowledge I acquired in my SunPy project in the research project I have been involved and also in other tasks related to computer science and astronomy.
+This is not the end,I will be continuously involved in the community contributing to it's development by fixing bugs solving issues etc.   
 
 ```
 DavidPS: There's an orthographic mistake here!
