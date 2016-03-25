@@ -105,7 +105,9 @@ This part would mainly involve changing what items are stored in the cache. Now,
 
 Now, for the cache to work, it has to be ensured that whenever a query is made through Fido, pre-existing same query results in the cache are matching correctly with the query results obtained from the Fido search. So, while downloading files, those files will be skipped whose query result entries are already in the database. All query results from all supported clients must be matching correctly.
 
-**Note : Updates will be scheduled to the database package in small sections, rather than in one large pull request. The updates schedule is included in the timeline.**
+**Note : Updates will be scheduled to the database package in small sections, rather than in one large pull request. These updates will be separate PRs for each independent feature. The updates schedule is included in the timeline.**
+
+**Note : Apart from the PRs/updates, I will push code regularly to my github fork regularly so that my mentors can keep track of my progress.**
 
 ## Timeline
 
@@ -137,6 +139,16 @@ DavidPS: When saying "push" in the updates, do you mean to GH or to do a
          
          An important point that hasn't been mentioned is how you plan to 
          handle data stored in files that are not FITS.
+
+itachi_uchiha: By "push" in each update, I meant a Pull Request for each 
+               independent feature. It has been mentioned in the project 
+               idea that a large PR at the end isn't recommended.
+               
+               Apart from the updates/PRs, I plan on pushing code to my
+               github fork regularly so that the mentors can keep track of
+               my progress. I've mentioned it explicitly now just before the
+               timeline.
+               
 ```
 ### Software packages to be used
 **Language:** Python
