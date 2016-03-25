@@ -110,6 +110,7 @@ Implement the plotting part of the project. This would deal with delivering the 
 * GOES X-ray flux with active regions number on the flares detected (1 week)
 * latest features observed available from HEK on top of a map (1 week)
 This part would deal with overlaying the tabular data that we obtained from the parser over the corresponding solar images to produce the plots proposed. Custom plotting functions would be built for getting each type of plot.
+
 The main objective of the visualization module is to mimic the functionality of [solarmonitor](http://www.solarmonitor.org/) and similar websites. I have been improving on my matplotlib skills. I'm already looking into [David P.S. 's](https://github.com/dpshelio) implementation of [Solar monitor batch](https://github.com/dpshelio/smpy) , this module overlays Active Region numbers on SunPy Maps. I wouldn't base my work on this module, but it would help me understand how to overlay the text/tabular data over Maps,LCs to get the plots we want. It is very rudimentary ,I would have to understand how plotting works and how to integrate our meta-data (from the tables) and add requisite features (AR numbers etc) to the plot. This would also involve the use of ``Fido`` and the parser we built, I would ensure both of them work correctly for this to function in the intended way. The tests for this module would involve making sure ``Fido``, the parser and the plot functions, all of them work in the intended way to get our result. 
 
 ```
