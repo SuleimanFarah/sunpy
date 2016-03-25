@@ -13,6 +13,7 @@
 *            Github ID: [hemantkhatri27](https://github.com/hemantkhatri27)
 
 *           Messaging: Google Hangout ([hemant.skhatri@gmail.com](mailto:hemant.skhatri@gmail.com) or  15ucs050@lnmiit.ac.in)
+*            Blog:[My Blog](http://hemantskhatri.blog.com/)
 
 ```
 DavidPS: Don't forget the link to the blog
