@@ -51,7 +51,7 @@ Specifically, Taking an example, We would first download latest, real-time SWAP 
 I would divide this project nicely, in 2-3 modular parts. 
 
 * Fetching and Downloading data. This would involve writing custom clients using ``Fido`` interface to download the fits data and write a similar client to download text/html data (from different sources).
-* Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don’t require. I would create a custom-made parser for each source which would extract the tables we want and we could then conveniently manipulate the tables using ``astropy.ascii`` . The parser would most probably be a part of ``sunpy.util``.
+* Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don’t require. I would create a custom-made parser for each source which would extract the tables we want and we could then conveniently manipulate the tables using ``astropy.ascii``.
 * Plotting. We would use ``matplotlib`` to overlay the data obtained from the table along with the fits data to create the plots.
 Fetching and downloading data should be simple (due to ``Fido``). The main challenges that we would face is most probably in the second step of pre-processing data. Since every source would have its own way in which data is structured we would have to implement a parser with a custom logic for each source. We would use the ``Table`` provided in ``astropy.ascii`` to store the tabular data in the text/html files. Also, the different sources from which we would obtain textual/html data haven’t been decided so far. More might be scrapped/added in the future.
 
@@ -65,7 +65,7 @@ I have been contributing to SunPy since December. I spent the month of November 
 I would consult stackoverflow and the regular sources Google, Python docs etc for solving the pre-processing step. I would require the help of my mentor for plotting, since it is a bit subtle and does require a rudimentary understanding of a some minor Solar Physics details (Which parameters are required for overlaying data over maps and specific questions such as these).
 
 ### 8. Deliverables
-A visualization module(like net,instr etc) which would mimic the functionality of [``SolarSoft latest events``](http://www.lmsal.com/solarsoft/last_events/) , [``Solar Monitor``](http://solarmonitor.org/) and similar entitiies. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. We intend to build a seperate visualization module (like Fido, instr etc) which would provide a set of tools for drawing up the required plots. We would also implement all Fido clients listed [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw), in total of about 8-9 clients.
+A visualization module(like net,instr etc) which would mimic the functionality of [``SolarSoft latest events``](http://www.lmsal.com/solarsoft/last_events/) , [``Solar Monitor``](http://solarmonitor.org/) and similar entities. This would include a parser to parse html/text data, custom plotting functions to overlay the html/text data over Maps,LCs. We intend to build a separate visualization module (like Fido, instr etc) which would provide a set of tools for drawing up the required plots. We would also implement all Fido clients listed [``here``](https://drive.google.com/open?id=1JizSdVKzKu_yFHXg4Bad5xcFREedcw7MhWwVto7L9kw), in total of about 8-9 clients.
 
 ### 9. Benefits to The Community.
 Currently, If users want to get information about Solar events such as flare information, active regions and ``ACE Real time Solar Wind data``, they would have to go to [``Solar Monitor``](http://solarmonitor.org/), [``Solarsoft latest events``](http://www.lmsal.com/solarsoft/last_events/) and other similar websites to get the requisite information. On top of it, to get plots between a particular time, a user would have to manually enter the timerange and navigate through the entire site, through pop-up style windows to see the interactive plots, something like this,![](https://github.com/sudk1896/SunPy-plot-images/blob/master/GOES-X-ray.png)
@@ -87,7 +87,7 @@ Documentation and requisite tests would also be added.
 * GONG (Magnetogram, Intensity, FarSide, H-alpha) and GOESClient (2 weeks).
 * Global H-alpha Network, SOLIS VSM (1 week).
 
-### 20th June - 27th June (1 week)
+### 20th June - 27th June (1 week, Mid-Term evaluation)
 Implement STEREO clients for SECCHI, euvi, cor2, hi_1 and hi_2 instruments.
 
 ```
@@ -96,9 +96,10 @@ davidps: Are you not doing anything this week?
 Hieronymous: I thought mid-term review week was supposed to be empty, my mistake, I have shifted the timeline a bit now.
 ```
 ### 27th June - 18th July (3 weeks)
-Write a generic parser, to get text/tabular data for SWPC and other sources. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future. 
+Write a generic parser, to get text/tabular data for SWPC and other sources. This parser would enable users to parse/mine the requisite data regarding Active Regions, electron flux etc in the form of some suitable data structure ,``astropy.ascii Table`` or a simple ``Python dict``. To be discussed and investigated over the course of the project. The more efficient one would be selected. Currently only one source has been decided - [Solar Region Summary](http://www.swpc.noaa.gov/products/solar-region-summary), more will be added in the future. This parser would be a part of ``sunpy.util``.
 
-Parsing data from various sources and creating a separate logic for each, presents a unique and interesting challenge. The undecided (ones to be added later on) sources 
+The undecided (ones to be added later on) sources would present a challenge, since we might end up parsing html pages instead of normal text files, the process of extracting data from an html page is different from that of a normal text file (I would have to use ``beautifulsoup`` for an html page). Other challenges/problems include the possibility of data not being properly encoded (utf-8).
+
 ```
 davidps: AIA or HMI won't provide data in ascii format.
 You could just say other sources.
@@ -111,7 +112,7 @@ Implement the plotting part of the project. This would deal with delivering the 
 * latest features observed available from HEK on top of a map (1 week)
 This part would deal with overlaying the tabular data that we obtained from the parser over the corresponding solar images to produce the plots proposed. Custom plotting functions would be built for getting each type of plot.
 
-The main objective of the visualization module is to mimic the functionality of [solarmonitor](http://www.solarmonitor.org/) and similar websites. I'm already looking into [David P.S. 's](https://github.com/dpshelio) implementation of [Solar monitor batch](https://github.com/dpshelio/smpy), this module overlays Active Region numbers on SunPy Maps. I wouldn't base my work on this module, but it would help me understand how to overlay the text/tabular data over Maps, LCs to get the plots we want. It is very rudimentary, I would have to understand how plotting works and how to integrate our meta-data (from the tables) and add requisite features (AR numbers etc) to the plot. This would also involve the use of ``Fido`` and the parser we built, I would ensure both of them work correctly for this to function in the intended way. The tests for this module would involve making sure ``Fido``, the parser and the plot functions, all of them work in the intended way to get our required plots. 
+I'm already looking into [David P.S. 's](https://github.com/dpshelio) implementation of [Solar monitor batch](https://github.com/dpshelio/smpy), this module overlays Active Region numbers on SunPy Maps. I wouldn't base my work on this module, but it would help me understand how to overlay the text/tabular data over Maps, LCs to get the plots we want. It is very rudimentary, I would have to understand how plotting works and how to integrate our meta-data (from the tables) and add requisite features (AR numbers etc) to the plot. This would also involve the use of ``Fido`` and the parser we built, I would ensure both of them work correctly for this to function in the intended way. The tests for this module would involve making sure ``Fido``, the parser and the plot functions, all of them work in the intended way to get our required plots. 
 
 ```
 DavidPS: Do you foresee any difficulty that you will have to overcome 
