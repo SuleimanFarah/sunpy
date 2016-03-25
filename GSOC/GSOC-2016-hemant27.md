@@ -194,11 +194,13 @@ This week will act like a buffer , things that have been left incomplete will be
 **27 June – 25 July**
 
 This period will be dedicated to improving and adding examples to SunPy
-gallery. Probably a SunPy map tutorial,also I plan add some video
-tutorials on basics of Lightcurves and Maps. Also, the main task would
+gallery. Probably a SunPy map tutorial,also I plan to add some video
+tutorials on basics of Lightcurves and Maps.These videos will be of 5-10 minutes that would teach basic concepts as well as how to plot maps and lightcurves, modifying them etc.(10 days)
+
+ Also, the main task would
 be to make full use of Jupyter notebooks (which I would have learned by
-then).  Adding tutorials for various options available with Matplotlib
-could be one option as well.
+then).I would mentors' guidance regarding Jupyter notebooks and how well I can make use of it. Adding tutorials for various options available with Matplotlib
+could be one option as well.(15-20 days)
 
 ```
 DavidPS: a break down as the block above would be helpful.
@@ -209,15 +211,14 @@ DavidPS: a break down as the block above would be helpful.
 
 **25 July- 15 August**
 
-Insert Tasks for the Website would be done in this period. Also, I plan
-make the website layout a bit better as I know a bit of HTML/CSS as
-well. 
+Insert Tasks for the Website would be done in this period.Website has a pretty old-fashioned layout. I plan
+make the website layout a bit better by adding background images in the [About](http://sunpy.org/about/) and [Blog](http://sunpy.org/blog/index.html) webpage. Also here I would review my work on the website continuously in my college. (7-10 days)
 
  A much need FAQ section could be added to the website. Also, if time
-permits I would add some tutorials for Astropy as well.
+permits I would add some tutorials for Astropy as well. FAQ section would contain questions related to Google Summer of Code, how to start contributing , fixing issues, using Git/Github etc. (5 days)
 
 Would look forward to some bug fixing or further changes in
-documentation.
+documentation.(5 days)
 
 ```
 DavidPS: Same thing as above, more detail the better.
@@ -229,7 +230,7 @@ Writing tidy code, tests about which I plan to learn in near future, improve doc
 submitting code sample. 
 
  
-I have an interest in Cosmology and Astronomy . I will use the knowledge I acquired in my SunPy project in the research project I have been involved and also in other tasks related to computer science and astronomy.
+I have a keen interest in Cosmology and Astronomy . I will use the knowledge I acquired in my SunPy project in the research project I have been involved and also in other tasks related to computer science and astronomy.
 This is not the end,I will be continuously involved in the community contributing to it's development by fixing bugs solving issues etc.   
 
 ```
