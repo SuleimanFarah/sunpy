@@ -11,7 +11,7 @@
 * Blog RSS feed: http://tdwilkinson.blogspot.com/feeds/posts/default?alt=rss
 * PR link(s):
 
-1. [Create Citation File #1712](https://github.com/sunpy/sunpy/issues/1712) I’m waiting on feedback (hoping to make the file have basic print code for clarification of what to cite, not just text), then I will push my local SunPy to add the Citation file to SunPy.
+1. [Create Citation File #1712](https://github.com/sunpy/sunpy/issues/1712) Resolved in pull requst #1723 
 
 2. [Spectrogram log y axis #291](https://github.com/sunpy/sunpy/issues/291) This involved looking into my local Sunpy/sunpy/spectra/spectrogram.py. I feel confident in how to add a log y axis to a plot. The frequency (y axis) is ‘stretched’ in the spectrogram class to rebin the frequency to be linear. I am working on testing a simple keyword and if statement  combination to make this axis log, otherwise, I think this will also need to be rebinned to become log scale.
 
