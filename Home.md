@@ -28,9 +28,12 @@ SunPy has participated successfully in both the ESA Summer of Code (ESOC) and th
 Past Programs
 
 * [[ESA Summer of Code in Space]] is the ESA Summer of Code program.  
-Sunpy has gotten support in 2011, 2012, 2013 and 2014.
+Sunpy has gotten support in 2011, 2012, 2013, 2014 and 2015.
 * [[Google Summer of Code]] is the Google Summer Of Code program.  
-SunPy participated in 2013 for the first time and 2014. Being both very successful years.
+SunPy participated in 2013 for the first time and 2014 and 2015 under the
+[Python Software Foundation](https://wiki.python.org/moin/SummerOfCode/). Being
+all very successful years. This year it's running under the 
+[OpenAstronomy](http://openastronomy.org/) umbrella.
 
 # The SunPy Project Organisation
 [[All the info|SunPy Organisation Information]] regarding to SunPy formation as an organisation, including minutes of meetings

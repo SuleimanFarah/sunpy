@@ -7,6 +7,12 @@ SunPy has participated in the last four editions (2011 - 2014).  During these ed
 Good luck!
 
 # Editions
+### SOCIS 2016
+***
+* [[SOCIS 2016]]
+* [[SOCIS 2016 Ideas Page]]
+* [[SOCIS 2016 Student Applications]]
+
 ### SOCIS 2015
 ***
 * [[SOCIS 2015]]
