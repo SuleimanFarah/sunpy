@@ -17,7 +17,7 @@ My interests lie in the field of data engineering / data mining, and my ongoing 
 * **Atlassian:** Software Developer (Backend/Frontend development)
 
 #### Thesis Project (Clusterix)
-Clusterix is a web-based visual analytics tool that aspires to support clustering tasks by users, while having analysts at the center of the workflow. Clusterix provides the facilities to:
+[Clusterix](https://github.com/Lilykos/clusterix) is a web-based visual analytics tool that aspires to support clustering tasks by users, while having analysts at the center of the workflow. Clusterix provides the facilities to:
 * Load and preview JSON, CSV, or XML data;
 * select columns to be considered by the clustering algorithm and modify weights;
 * select and run one or more clustering algorithms (k­means, hierarchical clustering) with varying parameters;
