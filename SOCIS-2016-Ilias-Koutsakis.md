@@ -1,6 +1,6 @@
 ## Student Information
 * **Name:** Ilias Koutsakis
-* **E mail:** lilykosk@gmail.com
+* **E-mail:** lilykosk@gmail.com
 * **Github Username:** [Lilykos](https://github.com/Lilykos)
 * **LinkedIn:** [here](https://gr.linkedin.com/in/lilykos)
 * **Articles/Technical writing:** [Java Code Geeks](http://www.javacodegeeks.com/author/ilias-koutsakis/), [JCG Examples](http://examples.javacodegeeks.com/author/ilias-koutsakis/), [Web Code Geeks](http://www.webcodegeeks.com/author/ilias-koutsakis/)
