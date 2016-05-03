@@ -30,32 +30,33 @@ I am also a regular contributor to the SunPy library.
 
 Project
 ========
-SunPy has 3 major data formats
+Much of the data collected by solar instruments is analysed as a time series, often of simple one-dimensional value such as the intensity of light observed though a given filter over time. When related too electromagnetic radiation the plot of intensity vs time is called a lightcurve.
+In SunPy the lightcurve is one of the three major datatypes, used to store time series data but not necessarily light intensity as it have variants that store logical/Boolean values and SWO sunspot numbers.
+As SunPy has moved to become unit-aware with the implementation of astropy quantities in SunPy 0.6, the lightcurve has become the only primary dataset that is not in-line with this support.
+Likewise, with the development of the Universal Downloader (UniDown), the code that enables the download of lightcurve data files which is currently within the lightcurve class definition has become redundant.
+Furthermore, due to the diverse nature of the file-formats used to store the data, the methods used to construct instrument specific lightcurves vary wildly in implementation and necessary parameters, making their use and documentation totally specific per instrument. This is unlike the SunPy Map class, which has a map factory that will create the instrument-specific maps from the source files transparently to the user, leading to a very streamlined interface for all map objects, independent of the data source.
+Finally, a major missing piece of functionality is the ability to open multiple lightcurve files and combine these into one lightcurve covering the full given timeframe.
+This project aims to refactor the code from the sunpy.lightcurve object to make it fall in line with the map class implementation and to fix those shortcomings.
 
-The solar Corona is an area of very active research and yet the 3D magnetic field can’t be directly mapped except for rare exceptional cases, it can only be inferred by using photospheric magnetograms to extrapolate the magnetic field above.
-Basic potential field extrapolations use the Greens Function method, modelling the magnetic field at each point as the integral sum of contributions from each point in the photosphere. An example can be seen in figure 1.
+Implementation Decisions
+There are some major decisions that need to be considered when implementing this project.
+Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method, however these are not designed to store scientific data and which have limited time precisions and no ability to implement astropy quantities.
+Ideally the basic SunPy time series would be implemented using an astropy time series class, such as proposed here:
+https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst
+However as this is yet to be implemented it can be implemented using an astropy table with a column for date/time data.
+Note: as far as I’m aware you can’t organise a table using an astropy time column.
 
-Fig 1: Potential Field Extrapolation from dummy Gaussian boundary data.
-![potential field extrapolation over example data](http://i.imgur.com/i0bk2g9.jpg)
-
-More advanced routines use the assumption that the low density plasma in the corona is force-free, where the Lorentz force is equal to zero. The field is the described by:
-
-(&nabla; &times; **B**) = &alpha;**B**       and       **B** &sdot; &nabla; &alpha; = 0
-
-Where alpha is a function of position, leading to a non-linear problem. Simplifications can include using a constant &alpha; to make a linear problem, or setting &alpha; = 0 which leads to the current free potential field.
-
-The Non-Linear Force-Free Field (NLFFF) produce the best results (Wiegelmann et al. [2004]) and can be solved using a number of different numerical methods, for example using optimization method of Wheatland et al. [2000]. The field involves several major families of routine that stem from the different solution methods, these are often implemented on different (coding) platforms by different scientists making generally incremental changes.
-
-
-The goal of this project is to implement an API for easy creation, updating, distribution and analysis of NLFFF extrapolation models within SunPy using a new object class that would contain the extrapolator code and take a magnetogram map as one of its constructor arguments.
-This would ideally be implemented in a way similar to astropy.modeling, and would enable users to either implement in Python, or hook into custom non-python code.
-
-Extrapolations could then be evaluated in two ways:
-- Qualitatively: by visualising the field over an active region using MayaVi (see fig 2 below).
-- Quantitatively: using semi-analytical solution fields, such as the Titov-Demoulin Equilibrium model and comparing the extrapolated and model fields using various metrics, such as the figures of merit from Wiegelmann et al (2006).
-
-Fig 2: Potential Field Extrapolation, overlaid on the (a) AIA and (b) (c) HMI boundary data.
-![potential field extrapolation over genuine data](http://i.imgur.com/hGKvwdL.jpg)
+The project will be split into 3 stages:
+1
+Defining a time-series class API that includes methods for combining, cropping/truncating and resampling??? The time series data.
+This object will be the parent to all future time series classes, which in present will generally be lighcurves, but in future could include time series of map or spectra objects.
+The syntax for manipulating the time series is potentially to be taken from the current Pandas-based implementation.
+2
+Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
+3
+Implementation of the individual instrument constructors, this will primarily involve taking the code already present in the lightcurve subclasses and simply refactoring it to fit with the new time series API.
+4
+Testing and documentation each of the subclasses behaves correctly and that the documentation is created to both show the implementation and general usage cases for each of the implemented lightcurves.
 
 ##Proposed timeline
 ###Week 1 / 2
