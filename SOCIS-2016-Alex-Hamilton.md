@@ -16,7 +16,7 @@ My general interests include climbing, photography, computer gaming and anything
 
 Previous Projects
 ========
-Over the last 2 years I have had the opportunity to do two summer internships:
+Over the last 3 years I have had the opportunity to do two summer internships and the ESA SoCiS:
  -  RAL was investigating the LHC ATLAS detector metadata usage,
  -  NPL (the National Physical Laboratory) was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
  -  ESA SoCiS 2015, I coded the Solar B Extrapolation SunPy Affiliated Package which will be featured in the 2016 AAS SPD meeting
