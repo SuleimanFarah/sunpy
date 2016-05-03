@@ -14,7 +14,7 @@ My interests lie in the field of data engineering / data mining, and my ongoing 
 * **CERN:** Software Developer (Technical Student)
 * **Offerial:** Data Integration intern (data extraction and manipulation for ontology creation)
 * **Java Code Geeks:** Technical Author
-* **Atlassian:** Software Developer (Backend/Frontend development)
+* **Atlassian:** Software Developer (Backend/Frontend development in Jira)
 
 #### Thesis Project (Clusterix)
 [Clusterix](https://github.com/Lilykos/clusterix) is a web-based visual analytics tool that aspires to support clustering tasks by users, while having analysts at the center of the workflow. Clusterix provides the facilities to:
