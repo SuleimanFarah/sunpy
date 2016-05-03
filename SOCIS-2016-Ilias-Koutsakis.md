@@ -10,13 +10,13 @@ I am a sophomore student of Computer Science in University of Athens, Greece, an
 
 My interests lie in the field of data engineering / data mining, and my ongoing thesis, [Clusterix](https://github.com/Lilykos/clusterix) is an ETL project commissioned by the CERN GS group on the field of clustering and visual analytics.
 
-### Work Experience
+#### Work Experience
 * Technical student
 * 
 * 
 * 
 * 
 
-## Thesis Project (Clusterix)
+#### Thesis Project (Clusterix)
 
  
