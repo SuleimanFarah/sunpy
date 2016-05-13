@@ -40,7 +40,7 @@ Project
 ========
 Much of the data collected by solar instruments is analysed as a time series, often of simple one-dimensional value such as the intensity of light observed though a given filter over time. When related too electromagnetic radiation the plot of intensity vs time is called a lightcurve.
 In SunPy the lightcurve is one of the three major datatypes, used to store time series data but not necessarily light intensity as it have variants that store logical/Boolean values and SWO sunspot numbers.
-As SunPy has moved to become unit-aware with the implementation of astropy quantities in SunPy 0.6, the lightcurve has become the only primary dataset that is not in-line with this support.
+As SunPy has moved to become unit-aware with the implementation of AstroPy quantities in SunPy 0.6, the lightcurve has become the only primary dataset that is not in-line with this support.
 Likewise, with the development of the Universal Downloader (UniDown), the code that enables the download of lightcurve data files which is currently within the lightcurve class definition has become redundant.
 Furthermore, due to the diverse nature of the file-formats used to store the data, the methods used to construct instrument specific lightcurves vary wildly in implementation and necessary parameters, making their use and documentation totally specific per instrument. This is unlike the SunPy Map class, which has a map factory that will create the instrument-specific maps from the source files transparently to the user, leading to a very streamlined interface for all map objects, independent of the data source.
 Finally, a major missing piece of functionality is the ability to open multiple lightcurve files and combine these into one lightcurve covering the full given timeframe.
@@ -68,9 +68,10 @@ This object will be the parent to all future time series classes, which in prese
 
 ##Proposed timeline
 ###Week 1 / 2
-Review the current lightcurve instrument classes and make a comprehensive list of all necessary features and methods.
+Review the current lightcurve instrument classes and make a comprehensive list of all necessary features and methods. Primarily done here:
+https://github.com/sunpy/sunpy/issues/1520
 Consult with users about the API for Time Series class.
-Implement the time series class (potential named Timeseries) class using Pandas.
+Implement the time series class (potential named Timeseries) class using Pandas ensuring Unit support.
 
 ###Week 3 / 4
 Implement lightcurve and other Timeseries children classes to support all the current instrument classes.
@@ -81,16 +82,16 @@ Implement a Timeseries factory class (similar to the MapFactory) that is able to
 https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 
 ###Week 7 / 8
-Implementing and testing any data manipulation functionality (such as interpolation/re-sampling).
+Implementing and testing any data manipulation functionality: merging Timeseries, time truncation, sub-sampling/re-sampling, summing (1D Superpixels), chronologically sorting and unit manipulation.
 
 ###Week 9 / 10
-Refining visualization code
+Refining visualization code, there should be a general peek() method for Timeseries, however each subclass and even each of the instrument specific subclasses will need unique properties to make them easily legible. Much of this code is in the instrument subclasses, but some, like [EVE](http://docs.sunpy.org/en/stable/api/sunpy.lightcurve.EVELightCurve.html#sunpy.lightcurve.EVELightCurve) are not very legible by default.
 
 ###Week 11 / 12
-Building unit tests
+Building unit tests that will check successful production of each Timeseries child class from sample data files (see [issue 211](https://github.com/sunpy/sunpy/issues/211)) and manual values where applicable.
 
 ###Week 13 / 14
-Building documentation and creating example galleries
+Building documentation within the code for Sphinx generated docs and creating example galleries to show the creation each type of Timeseries object and examples of the generic use, merging Timeseries, time truncation, sub-sampling/re-sampling, summing (1D Superpixels), chronologically sorting and unit manipulation.
 
 Other Info
 ==========
