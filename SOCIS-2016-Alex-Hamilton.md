@@ -14,7 +14,7 @@ I'm passionate about astronomy, science and technology with a specific focus in 
 I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching Object Oriented Programming in Java with the Open University.
 
 My dissertation was based on extrapolation of coronal magnetic fields, it involved reading key scientific literature on the subject and implementing a simple mathematical model in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualization and quantitatively using the Titov-Demoulin Equilibrium model.
-In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation SunPi affiliated package, this is an API for the development and evaluation of magnetic field extrapolation routines.
+In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation SunPy affiliated package, this is an API for the development and evaluation of magnetic field extrapolation routines.
 My code can be found on GitHub:
 https://github.com/sunpy/solarbextrapolation
 
@@ -58,8 +58,7 @@ https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 
 ## Stages
 The project will be split into 4 stages:
-1. Defining a time series class based on the current use of pandas, this should have a specific API that follows the following specification:
-https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
+1. Defining a time series class based on the current use of pandas.
 This object will be the parent to all future time series classes, which in present will generally be lighcurves, but in future could include time series of map or spectra objects.
 2. Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
 3. Implementation of the individual instrument constructors, this will primarily involve taking the code already present in the lightcurve subclasses and simply refactoring it to fit with the new time series API.
@@ -70,15 +69,16 @@ This object will be the parent to all future time series classes, which in prese
 ##Proposed timeline
 ###Week 1 / 2
 Review the current lightcurve instrument classes and make a comprehensive list of all necessary features and methods.
-Consult with users about the API for Time Series class. Generally following:
-https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
+Consult with users about the API for Time Series class.
 Implement the time series class (potential named Timeseries) class using Pandas.
 
 ###Week 3 / 4
 Implement lightcurve and other Timeseries children classes to support all the current instrument classes.
+This should include any methods unique to each instrument.
 
 ###Week 5 / 6
-Implement a Timeseries factory class (similar to the MapFactory) that is able to take a variety of input parameters and call the relevant instrument constructor.
+Implement a Timeseries factory class (similar to the MapFactory) that is able to take a variety of input parameters and call the relevant instrument constructor. Generally following:
+https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 
 ###Week 7 / 8
 Implementing and testing any data manipulation functionality (such as interpolation/re-sampling).
