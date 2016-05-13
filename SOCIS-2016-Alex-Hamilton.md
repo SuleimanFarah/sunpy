@@ -44,12 +44,17 @@ Furthermore, due to the diverse nature of the file-formats used to store the dat
 Finally, a major missing piece of functionality is the ability to open multiple lightcurve files and combine these into one lightcurve covering the full given timeframe.
 This project aims to refactor the code from the sunpy.lightcurve object to make it fall in line with the map class implementation and to fix those shortcomings.
 
-Implementation Decisions
-There are some major decisions that need to be considered when implementing this project.
+## Implementation Decisions
+### Time Series Implantation
 Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method.
 It has been suggested re-implementing using an AstroPy QTable based time-series, this would give native support for AstroPy Quantities and AstroPy Time objects, however AstroPy doesn’t currently have such a class and consultation with SunPy members has suggested continuing to use Pandas is ideal for this project. Note, there is a proposal for a suitable AstroPy time series class here:
 https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst
 
+### Defining Instrument Source
+Lightcurve data is stored in a variety of data formats, some with header information (such as fits files) that defines the instrument details, others simply don’t have this information, such as data stored in csv files. There needs to be a user-defined way to tell the constructor what source the data is from if it’s not available in the file, a source keyword argument would be a neat and consistent way to do this. This is defines in:
+https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
+
+## Stages
 The project will be split into 4 stages:
 1. Defining a time series class based on the current use of pandas, this should have a specific API that follows the following specification:
 https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
@@ -74,21 +79,21 @@ Implement lightcurve and other Timeseries children classes to support all the cu
 Implement a Timeseries factory class (similar to the MapFactory) that is able to take a variety of input parameters and call the relevant instrument constructor.
 
 ###Week 7 / 8
-
+Implementing and testing any data manipulation functionality (such as interpolation/re-sampling).
 
 ###Week 9 / 10
-
+Refining visualization code
 
 ###Week 11 / 12
-
+Building unit tests
 
 ###Week 13 / 14
-Documentation and creating example galleries
+Building documentation and creating example galleries
 
 Other Info
 ==========
 ##Available Platforms
-I run Windows 10 Preview x64, Windows 8.1 x64/x86, Windows 7, Mac OS X Yosemite and Ubuntu. 
+I run Windows 10 x64, Windows 7, Mac OS X Yosemite and Ubuntu.
 
 ##Availability
 I'm usually available from about 9 am to around 11 pm. My time zone is UTC +1 (British Summer Time - so 0800 to 2200 UTC).
