@@ -1,9 +1,9 @@
 About Me
 ========
-- Name:      Alex Hamilton
-- Studies:   4th Year Astrophysics Masters at Queen Mary University of London, Ongoing Mathematics and Computer Science Student at the Open University
-- GitHub:    [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
-- Languages: English (native)
+- **Name:**      Alex Hamilton
+- **Studies**:   Astrophysics Masters from Queen Mary University of London, Mathematics and Computer Science Student at the Open University, Accepted into PhD in Solar Physics at Hull University
+- **GitHub**:    [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
+- **Languages**: English (native)
 
 Background
 ========
@@ -16,6 +16,8 @@ In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation
 My code can be found on GitHub:
 https://github.com/sunpy/solarbextrapolation
 
+In April 2016 I was accepted into a PhD position at Hull University to study the statistical likelihood of superflares (as seen on on other stars) happening on the Sun.
+
 My general interests include climbing, photography, computer gaming and anything sci-fi.
 
 Previous Projects
@@ -23,14 +25,14 @@ Previous Projects
 Over the last 3 years I have had the opportunity to do two summer internships and the ESA SoCiS:
  -  RAL was investigating the LHC ATLAS detector conditions metadata usage,
  -  NPL (the National Physical Laboratory) was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
- -  ESA SoCiS 2015, I coded the Solar B Extrapolation SunPy Affiliated Package which will be featured in the 2016 AAS SPD meeting
+ -  ESA SoCiS 2015, I coded the Solar B Extrapolation SunPy Affiliated Package which will be featured in the 2016 AAS SPD meeting.
 
 All of these projects required that I plan and undertake independent work while collaborating with members of the departments and experts in the fields. Along with valuable coding, troubleshooting and documentation experience I was able to contribute useful insights into the fields for my supervisors.
 
 I also helped on creation of the OpenAstronomy website, designed to promote the work done by 4 major open source astronomy projects.
 https://github.com/OpenAstronomy/openastronomy.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aalex-ian-hamilton
 
-I am also a regular contributor to the SunPy library.
+I am also a contributor to the SunPy library.
 
 Project
 ========
@@ -44,38 +46,44 @@ This project aims to refactor the code from the sunpy.lightcurve object to make 
 
 Implementation Decisions
 There are some major decisions that need to be considered when implementing this project.
-Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method, however these are not designed to store scientific data and which have limited time precisions and no ability to implement astropy quantities.
-Ideally the basic SunPy time series would be implemented using an astropy time series class, such as proposed here:
+Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method.
+It has been suggested re-implementing using an AstroPy QTable based time-series, this would give native support for AstroPy Quantities and AstroPy Time objects, however AstroPy doesn’t currently have such a class and consultation with SunPy members has suggested continuing to use Pandas is ideal for this project. Note, there is a proposal for a suitable AstroPy time series class here:
 https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst
-However as this is yet to be implemented it can be implemented using an astropy table with a column for date/time data.
-Note: as far as I’m aware you can’t organise a table using an astropy time column.
 
-The project will be split into 3 stages:
-1
-Defining a time-series class API that includes methods for combining, cropping/truncating and resampling??? The time series data.
+The project will be split into 4 stages:
+1. Defining a time series class based on the current use of pandas, this should have a specific API that follows the following specification:
+https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 This object will be the parent to all future time series classes, which in present will generally be lighcurves, but in future could include time series of map or spectra objects.
-The syntax for manipulating the time series is potentially to be taken from the current Pandas-based implementation.
-2
-Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
-3
-Implementation of the individual instrument constructors, this will primarily involve taking the code already present in the lightcurve subclasses and simply refactoring it to fit with the new time series API.
-4
-Testing and documentation each of the subclasses behaves correctly and that the documentation is created to both show the implementation and general usage cases for each of the implemented lightcurves.
+2. Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
+3. Implementation of the individual instrument constructors, this will primarily involve taking the code already present in the lightcurve subclasses and simply refactoring it to fit with the new time series API.
+4. Testing and documentation each of the subclasses behaves correctly and that the documentation is created to both show the implementation and general usage cases for each of the implemented lightcurves.
+
+
 
 ##Proposed timeline
 ###Week 1 / 2
+Review the current lightcurve instrument classes and make a comprehensive list of all necessary features and methods.
+Consult with users about the API for Time Series class. Generally following:
+https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
+Implement the time series class (potential named Timeseries) class using Pandas.
 
 ###Week 3 / 4
+Implement lightcurve and other Timeseries children classes to support all the current instrument classes.
 
 ###Week 5 / 6
+Implement a Timeseries factory class (similar to the MapFactory) that is able to take a variety of input parameters and call the relevant instrument constructor.
 
 ###Week 7 / 8
 
+
 ###Week 9 / 10
+
 
 ###Week 11 / 12
 
+
 ###Week 13 / 14
+Documentation and creating example galleries
 
 Other Info
 ==========
