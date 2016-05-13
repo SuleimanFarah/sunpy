@@ -1,7 +1,9 @@
 About Me
 ========
 - **Name:**      Alex Hamilton
-- **Studies**:   Astrophysics Masters from Queen Mary University of London, Mathematics and Computer Science Student at the Open University, Accepted into PhD in Solar Physics at Hull University
+- **Studies**:   Astrophysics Masters from Queen Mary University of London,
+Mathematics and Computer Science Student at the Open University,
+Accepted into PhD in Solar Physics at Hull University
 - **GitHub**:    [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
 - **Languages**: English (native)
 
