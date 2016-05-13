@@ -1,23 +1,27 @@
 About Me
 ========
-- Name: Alex Hamilton
-- Studies: 4th Year Astrophysics Masters at Queen Mary University of London, Ongoing Mathematics and Computer Science Student at the Open University
-- GitHub: [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
+- Name:      Alex Hamilton
+- Studies:   4th Year Astrophysics Masters at Queen Mary University of London, Ongoing Mathematics and Computer Science Student at the Open University
+- GitHub:    [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
 - Languages: English (native)
 
 Background
 ========
-An Astrophysics Masters student at Queen Mary, and starting a PhD at Hull University in September I am passionate about astronomy, science and technology with a specific focus in solar physics.
+I graduated from Queen Mary with a Masters in Astrophysics and am starting a PhD at Hull University in September.
+I'm passionate about astronomy, science and technology with a specific focus in solar physics which is what has lead me to work with SunPy.
 I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching Object Oriented Programming in Java with the Open University.
 
-My university project this year is based on coronal magnetic field, it involved reading key scientific literature on the subject and implementing a simple version in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualisation and quantitatively using the Titov-Demoulin Equilibrium model. I have never contributed to an Open Source project and consider this to be the perfect opportunity for me to take what I have learnt and use it to implement tools that everyone can use.
+My dissertation was based on extrapolation of coronal magnetic fields, it involved reading key scientific literature on the subject and implementing a simple mathematical model in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualization and quantitatively using the Titov-Demoulin Equilibrium model.
+In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation SunPi affiliated package, this is an API for the development and evaluation of magnetic field extrapolation routines.
+My code can be found on GitHub:
+https://github.com/sunpy/solarbextrapolation
 
 My general interests include climbing, photography, computer gaming and anything sci-fi.
 
 Previous Projects
 ========
 Over the last 3 years I have had the opportunity to do two summer internships and the ESA SoCiS:
- -  RAL was investigating the LHC ATLAS detector metadata usage,
+ -  RAL was investigating the LHC ATLAS detector conditions metadata usage,
  -  NPL (the National Physical Laboratory) was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
  -  ESA SoCiS 2015, I coded the Solar B Extrapolation SunPy Affiliated Package which will be featured in the 2016 AAS SPD meeting
 
