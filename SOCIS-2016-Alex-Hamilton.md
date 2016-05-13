@@ -23,9 +23,9 @@ My general interests include climbing, photography, computer gaming and anything
 Previous Projects
 ========
 Over the last 3 years I have had the opportunity to do two summer internships and the ESA SoCiS:
- -  RAL was investigating the LHC ATLAS detector conditions metadata usage,
- -  NPL (the National Physical Laboratory) was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
- -  ESA SoCiS 2015, I coded the Solar B Extrapolation SunPy Affiliated Package which will be featured in the 2016 AAS SPD meeting.
+ -  **RAL (Rutherford Appleton Laboratory)**: investigating the LHC ATLAS detector conditions metadata usage,
+ -  **NPL (the National Physical Laboratory)**: was mostly lab work, testing the qualitative performance of thermal (IR) imagers,
+ -  **ESA SoCiS 2015**: developing the Solar B Extrapolation SunPy affiliated package which will be featured in the 2016 AAS SPD meeting.
 
 All of these projects required that I plan and undertake independent work while collaborating with members of the departments and experts in the fields. Along with valuable coding, troubleshooting and documentation experience I was able to contribute useful insights into the fields for my supervisors.
 
