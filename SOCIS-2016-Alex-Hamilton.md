@@ -9,9 +9,9 @@ Accepted into PhD in Solar Physics at Hull University
 
 Background
 ========
-I graduated from Queen Mary with a Masters in Astrophysics and am starting a PhD at Hull University in September.
+I graduated from Queen Mary with a Masters in Astrophysics and I am starting a PhD at Hull University in September.
 I'm passionate about astronomy, science and technology with a specific focus in solar physics which is what has lead me to work with SunPy.
-I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching Object Oriented Programming in Java with the Open University.
+I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching in Object Oriented Programming in Java with the Open University.
 
 My dissertation was based on extrapolation of coronal magnetic fields, it involved reading key scientific literature on the subject and implementing a simple mathematical model in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualization and quantitatively using the Titov-Demoulin Equilibrium model.
 In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation SunPy affiliated package, this is an API for the development and evaluation of magnetic field extrapolation routines.
@@ -47,7 +47,7 @@ Finally, a major missing piece of functionality is the ability to open multiple 
 This project aims to refactor the code from the sunpy.lightcurve object to make it fall in line with the map class implementation and to fix those shortcomings.
 
 ## Implementation Decisions
-### Time Series Implantation
+### Time Series Implementation
 Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method.
 It has been suggested re-implementing using an AstroPy QTable based time-series, this would give native support for AstroPy Quantities and AstroPy Time objects, however AstroPy doesn’t currently have such a class and consultation with SunPy members has suggested continuing to use Pandas is ideal for this project. Note, there is a proposal for a suitable AstroPy time series class here:
 https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst
@@ -60,7 +60,7 @@ https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 The project will be split into 4 stages:
 1. Defining a time series class based on the current use of pandas.
 This object will be the parent to all future time series classes, which in present will generally be lighcurves, but in future could include time series of map or spectra objects.
-2. Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
+2. Implementation of the lightcurve subclasses, this will include “non-light” time series data forms and will provide all the core functionality, including a Timeseries factory class that will be used to call individual instrument constructors when creating a lightcurve object.
 3. Implementation of the individual instrument constructors, this will primarily involve taking the code already present in the lightcurve subclasses and simply refactoring it to fit with the new time series API.
 4. Testing and documentation each of the subclasses behaves correctly and that the documentation is created to both show the implementation and general usage cases for each of the implemented lightcurves.
 
@@ -89,6 +89,7 @@ Refining visualization code, there should be a general peek() method for Timeser
 
 ###Week 11 / 12
 Building unit tests that will check successful production of each Timeseries child class from sample data files (see [issue 211](https://github.com/sunpy/sunpy/issues/211)) and manual values where applicable.
+Likewise units tests for merging Timeseries, time truncation, sub-sampling/re-sampling, summing (1D Superpixels), chronologically sorting and unit manipulation.
 
 ###Week 13 / 14
 Building documentation within the code for Sphinx generated docs and creating example galleries to show the creation each type of Timeseries object and examples of the generic use, merging Timeseries, time truncation, sub-sampling/re-sampling, summing (1D Superpixels), chronologically sorting and unit manipulation.
