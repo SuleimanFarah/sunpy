@@ -34,17 +34,22 @@ All of these projects required that I plan and undertake independent work while 
 I also helped on creation of the OpenAstronomy website, designed to promote the work done by 4 major open source astronomy projects.
 https://github.com/OpenAstronomy/openastronomy.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aalex-ian-hamilton
 
-I am also a contributor to the SunPy library.
+I am also a contributor to the SunPy library and would like the opportunity to have an active role in it's future development, which is why I have choose the Lightcurve Refactor project.
 
 Project
 =======
 Much of the data collected by solar instruments is analysed as a time series, often of simple one-dimensional value such as the intensity of light observed though a given filter over time. When related too electromagnetic radiation the plot of intensity vs time is called a lightcurve.
 
 In SunPy the lightcurve is one of the three major datatypes, used to store time series data but not necessarily light intensity as it have variants that store logical/Boolean values and SWO sunspot numbers.
+
 As SunPy has moved to become unit-aware with the implementation of AstroPy quantities in SunPy 0.6, the lightcurve has become the only primary dataset that is not in-line with this support.
+
 Likewise, with the development of the Universal Downloader (UniDown), the code that enables the download of lightcurve data files which is currently within the lightcurve class definition has become redundant.
+
 Furthermore, due to the diverse nature of the file-formats used to store the data, the methods used to construct instrument specific lightcurves vary wildly in implementation and necessary parameters, making their use and documentation totally specific per instrument. This is unlike the SunPy Map class, which has a map factory that will create the instrument-specific maps from the source files transparently to the user, leading to a very streamlined interface for all map objects, independent of the data source.
+
 Finally, a major missing piece of functionality is the ability to open multiple lightcurve files and combine these into one lightcurve covering the full given timeframe.
+
 This project aims to refactor the code from the sunpy.lightcurve object to make it fall in line with the map class implementation and to fix those shortcomings.
 
 ## Implementation Decisions
