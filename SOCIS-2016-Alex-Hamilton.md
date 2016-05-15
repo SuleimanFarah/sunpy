@@ -37,8 +37,9 @@ https://github.com/OpenAstronomy/openastronomy.github.io/pulls?utf8=%E2%9C%93&q=
 I am also a contributor to the SunPy library.
 
 Project
-========
+=======
 Much of the data collected by solar instruments is analysed as a time series, often of simple one-dimensional value such as the intensity of light observed though a given filter over time. When related too electromagnetic radiation the plot of intensity vs time is called a lightcurve.
+
 In SunPy the lightcurve is one of the three major datatypes, used to store time series data but not necessarily light intensity as it have variants that store logical/Boolean values and SWO sunspot numbers.
 As SunPy has moved to become unit-aware with the implementation of AstroPy quantities in SunPy 0.6, the lightcurve has become the only primary dataset that is not in-line with this support.
 Likewise, with the development of the Universal Downloader (UniDown), the code that enables the download of lightcurve data files which is currently within the lightcurve class definition has become redundant.
