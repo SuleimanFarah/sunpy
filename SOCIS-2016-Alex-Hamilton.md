@@ -60,6 +60,7 @@ https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst
 
 ### Defining Instrument Source
 Lightcurve data is stored in a variety of data formats, some with header information (such as fits files) that defines the instrument details, others simply don’t have this information, such as data stored in csv files. There needs to be a user-defined way to tell the constructor what source the data is from if it’s not available in the file, a source keyword argument would be a neat and consistent way to do this. This is defines in:
+
 https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 
 ## Stages
@@ -75,7 +76,9 @@ This object will be the parent to all future time series classes, which in prese
 ##Proposed timeline
 ###Week 1 / 2
 Review the current lightcurve instrument classes and make a comprehensive list of all necessary features and methods. Primarily done here:
+
 https://github.com/sunpy/sunpy/issues/1520
+
 Consult with users about the API for Time Series class.
 Implement the time series class (potential named Timeseries) class using Pandas ensuring Unit support.
 
@@ -85,6 +88,7 @@ This should include any methods unique to each instrument.
 
 ###Week 5 / 6
 Implement a Timeseries factory class (similar to the MapFactory) that is able to take a variety of input parameters and call the relevant instrument constructor. Generally following:
+
 https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md
 
 ###Week 7 / 8
