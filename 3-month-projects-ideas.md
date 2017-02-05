@@ -63,24 +63,6 @@ It will be necessary to develop techniques to import observed spectra from a var
 
 * Mentors:  Ken Dere
 
-## IRIS Integration
-**Abstract**: The [IRIS](http://iris.lmsal.com) observes the chromosphere and transition region
-of the Sun with high spatial and time resolution. The primary goal of the Interface Region Imaging Spectrograph (IRIS) explorer is to understand how the solar atmosphere is energized. The IRIS mission produces data through
-a slit-jaw imager which can take images of the Sun at various wavelengths as well as a line spectrograph which
-rasters over an image to build up an image. This project aims to integrate IRIS data into SunPy. This includes the following tasks.
-
-1. Integration of IRIS data search and querying
-2. Adding the ability to read IRIS data files into their proper data objects
-3. Developing a data browser module in the existing SUnPy GUI for fast inspection of IRIS data 
-
-**Requirements**: Python and basic knowledge of GUI design. 
-
-**Expected Outcomes**: IRIS Mapcube class, IRIS Spectrum class, GUI data browser module
-
-**Idea from:**: Steven Christe (NASA GSFC, SunPy)
-
-* **Mentor**: Steven Christe (NASA GSFC, SunPy), Joel Allred (NASA GSFC)
-
 ## Integration of the HESPE Data Archive
 * **Description**: The [HESPE Data Archive](http://hespe.eu/browser) gives access
 to pre-processed science products from the RHESSI satellite. 
@@ -102,6 +84,39 @@ The outcome should be two clients, command-line and GUI.
 services (REST) and JSON is a plus.
 
 * **Mentor**: Laszlo I. Etesi (HESPE data archive developer), Steven Christe (SunPy)
+
+## Region of Interest object
+**Abstract**: Each datatype has a different way to label events or regions. With
+a bit of thinking we could get a general object that can accept different
+feature detections results and analyse them together with data from different
+sources.
+
+We can have regions of interest based on a single image label with their time,
+center position, bounding-box and contour. These regions of interest may go over
+a range of time, so the position of the single snapshot may move. Some of them
+may not be on the sun surface but on the outside (*eg* CMEs) and also we may
+have in different data types, such us timeseries or spectra.
+
+We should be able to load these from data like HEK, HELIO or manually. Be able
+to overplot them on a map, timeseries or spectra and extract properties of the
+data where we laid that out.
+
+The tasks this project includes are:
+
+1. Design the object.
+2. Implement HEK/HELIO client with it.
+3. Interaction with other data types (overlplot on maps, time ranges on timeseries,...)
+4. Extract information from the interaction (overlay a sunspot detection on a
+   corona image and extract the total intensity in that region).
+
+**Requirements**: Python and API design
+
+**Difficulty**: High
+
+**Expected Outcomes**: a object able to do all the above.
+
+* **Mentor**: David Perez-Suarez (UCL, SunPy)
+
 
 ## HELIO - capabilities improvement
 
