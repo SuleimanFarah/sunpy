@@ -207,3 +207,11 @@ Jack Ireland
 Jack Ireland
 
 ***
+
+
+other ideas:
+
+- Diff rot
+- meta data
+- re-theme docs + website
+- solarmonitor like site
