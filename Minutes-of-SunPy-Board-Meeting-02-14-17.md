@@ -24,13 +24,11 @@
 	
   - Board votes on whether decision on the NumFocus agreement has to be unanimous, and that vote shall take place by email. **Result is 9-0 in favour**.
 
-  
-  - **Kevin** departs.
-
 
   - **Board membership:**
     - Some current Board members have expired terms.
     - **Board votes in favour** to hold an email vote for renewal of current Board members with expired terms.
+    - **Kevin** departs.
     - Russ says he is willing to step down from the Board, although it is pointed out that he has the most computational background of the current membership.
     - Potential new board members are Sabrina Savage (NASA/MSFC) and Monica Bobra (Stanford).
     - **Albert** suggests that at a future meeting the performance of the Board is discussed, e.g. whether the Board is doing an adequate job of moving SunPy forward.
