@@ -22,7 +22,7 @@
     - The board is also not very active between official meetings. This could be improved through more discussion of current issues on the board mailing list or via IRC/Slack.
 
   - **Board membership:**
-    - The composition of the board is due to change, so it was decided to hold of on re-allocating Board roles (e.g. Chair, Secretary) until the new members take their posts. **Voted that current role occupants will continue until the next meeting (7-0) in favour.**
+    - The composition of the board is due to change, so it was decided to hold of on re-allocating Board roles (e.g. Chair, Secretary) until the new members take their posts. **Voted that current role occupants will continue until the next meeting (7-0 in favour).**
     - **Tom Robitaille** is rotating off the board, and will be replaced.
     - Two potential new board members are **Sabrina Savage** (MSFC) and **Monica Bobra** (Stanford).
     - **Andy** volunteers to step down from the role of Secretary and from the Board. It is agreed that he will stay on until the next meeting, when a new member will take on the Secretary role.
