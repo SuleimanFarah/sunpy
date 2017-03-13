@@ -11,7 +11,7 @@
   - Board membership
 
 ### Minutes of Meeting
-  - **Lead developer:**:
+  - **Lead developer:**
     - Board votes to renew **Stuart** as the Lead Developer of SunPy. **Vote is 7-0 in favour**.
     - As a side note, Stuart suggests that some developer tasks could be split up into different roles.
 
