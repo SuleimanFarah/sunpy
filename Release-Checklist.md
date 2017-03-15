@@ -21,8 +21,10 @@ cd sunpy-0.7/
 pip install .
 cd ..
 ```
+
 - [ ] Check that the `sunpy.__version__` number is correct.
 - [ ] Run `sunpy.self_test()` to check that installed tests work
+
 ```
 pip uninstall sunpy
 deactivate
