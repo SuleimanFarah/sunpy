@@ -23,12 +23,16 @@ Other high priority features (non-blocking):
 * Transformation of images under solar differential rotation.
 * 85%+ Test coverage.
 
-## Release 0.8
-* 90%+ test coverage
-* Refactor plotting functions outside of core datatypes
-* Integrate Astropy time object into parse_time() and the Time Range object
+## Release 0.8 (Updated 03/2017)
+* 80%+ test coverage
+* Fido Downloader interface
+* deprecation of sunpy.wcs
+* timeseries
+
 
 ## Release 0.9
+
+* Integrate Astropy time object into parse_time() and the Time Range object
 
 ## Release 1.0
 * Have a generalised coordinate system representation shared by *all* data types, i.e. Astropy Generalised WCS or HyperMap coordinate system.
