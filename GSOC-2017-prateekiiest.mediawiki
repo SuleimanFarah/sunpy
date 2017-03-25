@@ -18,7 +18,7 @@
 == Project Proposal ==
 
 '''Project''': ''Improvements to the Sunpy Website and Documentation with a new look and new features''.
-'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David-Perez Suarez]
+'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David Perez-Suarez]
 
 
 === Abstract ===
