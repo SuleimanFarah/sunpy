@@ -143,80 +143,102 @@ Lastly,
 
     
 {|
-|  '''Time Period'''    ||             '''                My Work  Plan'''    
+|  '''Time Period'''    ||   '''                My Work  Plan'''     
 |-
-|          '''Community Bonding Period'''                       ||           
+|          '''Community Bonding Period'''                       ||         '
 |-
-| 4 May - 29 May     ||* Dedicate this time to knowing more about the project, the project code base and the ''Documentation''.
-* Discuss with mentors about the  design of the website and what tools that will be required for this.
-* Discuss with my mentors  which particular features they want me to include the website and the documentation. 
-* Finalize  the design of the website. 
-* Go through the code work of the Sunpy website, and clear my doubts from mentors regarding how the website can be used by any static site generator like Jekyll, or any future technologies.
+| '''4 May - 29 May'''     || ;First Week  
+:* Dedicate this time to knowing more about the project, the project code base and the ''Documentation''.
+
+:* Discuss with mentors about the  design of the website and what tools that will be required for this. 
+
+;Second Week
+
+:* Discuss with my mentors  which particular features they want me to include the website and the documentation.    
+
+;Third Week
+:* Finalize  the design of the website.   
+:* Go through the code work of the Sunpy website, and clear my doubts from mentors regarding how the website can be used by any static site generator like Jekyll, or any future technologies.  
 |-
-|        '''First Part of the Project starts'''                         ||         
+|        '''First Part of the Project starts'''       ||  '''Work Period'''
 |-
-|30 May - 25 June(Work Period)   || 
-* Build the website with the finalized design.
-** Implement the design for the ''Home Page'' using CSS, HTML and build the page locally.
-** Update Pull Request for the new home page designed.
-** Implement the design for the ''About'' and the ''Blog'' section of the page and see the page build it locally.
-**  Discuss with mentors in which order the blog writings are to be placed under the ''Blog'' section and also what should   be the corresponding style of writing under each blog writing.
-** Submit patches for issues or new features proposed under the the website code_base.
-** Include the new features like FAQ under a separate page.  
+|'''30 May - 25 June''' || 
+;First Week
+
+:* Build the website with the finalized design. 
+:* Implement the design for the ''Home Page'' using CSS, HTML and build the page locally. 
+:* Update Pull Request for the new home page designed. 
+;Second Week
+:* Implement the design for the ''About'' and the ''Blog'' section of the page and see the page build it locally.
+:*  Discuss with mentors in which order the blog writings are to be placed under the ''Blog'' section and also what should   be the corresponding style of writing under each blog writing. 
+;Third Week
+:* Submit patches for issues or new features proposed under the the website code_base. 
+;Fourth Week
+:* Include the new features like FAQ under a separate page.   
 |-
-|               26 June                                         ||       '''Phase 1 Evaluation Submission starts'''
+|               '''26 June'''                                         ||       '''Phase 1 Evaluation Submission starts'''
 |-
-|       26 June - 30 June                   ||* Test and ensure that the website design is completely done. Any remaining work is addressed to in this period. Prevailing issues related to are addressed to in this period  
+|       '''26 June - 30 June'''                   ||* Test and ensure that the website design is completely done. Any remaining work is addressed to in this period. Prevailing issues related to are addressed to in this period  
 * Finalize Part 1 of the project after reviewing it with mentors.
 |-
-|        30 June   ||                      '''Phase 1 Evaluation Submission Ends'''
+|        '''30 June'''   ||                      '''Phase 1 Evaluation Submission Ends'''
 |-
 |                      '''First part of the Project ends.'''
 '''Second part of the Project starts'''                 ||   
 |-
-|      31 June - 12 July (Work Period)                      || 
-* The Sphinx theme is developed having the same design as the website. 
-* Discuss with mentors about the customization of Sphinx theme. 
-* Implement this theme for the Sunpy Documentation and other Sunpy packages.
+|      '''31 June - 12 July'''                      ||      '''Work Period'''
+;First Week
+:* The Sphinx theme is developed having the same design as the website.  
+;Second Week
+:* Discuss with mentors about the customization of Sphinx theme.  
+:* Implement this theme for the Sunpy Documentation and other Sunpy packages. 
 |-
-|    13 July - 23 July                              ||    ''Work on the extensions to the project.''
-* Improvement of the Sunpy Website content
-** Discuss with mentors in what way I can improve the content and under which section more content needs to be added.
-** Add more gallery examples related to maps, ROI and submaps along with some short code snippets using Jupyter Notebook.
-** Add presentations and Sunpy conference talks under Blog Section.
-** Work on the FAQ section to include more questions.
-** Add corresponding issues related to each of the tutorials so that beginners can understand the problem much better.
+|    '''13 July - 23 July'''                              ||    '''Work on the extensions to the project.'''
+;First Week
+:* Improvement of the Sunpy Website content
+:* Discuss with mentors in what way I can improve the content and under which section more content needs to be added.
+:* Add more gallery examples related to maps, ROI and submaps along with some short code snippets using Jupyter Notebook.
 
-* Implement a registry of Sunpy affiliated packages.
-* Create a separate section where a registry of the packages will be shown.
-* Discuss with mentors regarding the format of the registry.
-* Give a detailed description of each of the affiliated packages along with their current versions and some of their important features.
+;Second Week
+:* Add presentations and Sunpy conference talks under Blog Section.
+:* Work on the FAQ section to include more questions.
+
+;Third Week
+:* Add corresponding issues related to each of the tutorials so that beginners can understand the problem much better.
+:* Implement a registry of Sunpy affiliated packages.
+:* Create a separate section where a registry of the packages will be shown.
+
+;Fourth Week
+:* Discuss with mentors regarding the format of the registry.
+:* Give a detailed description of each of the affiliated packages along with their current versions and some of their important features.
 |-
-|  24 July                                ||   '''Phase 2 Evaluation starts'''
+|  '''24 July'''                                ||   '''Phase 2 Evaluation starts'''
 |-
-| 25 July - 27 July                    ||* Give Pull Requests corresponding to documentation issues under the documentation. 
+| '''25 July - 27 July'''                    ||* Update Pull Requests corresponding to documentation issues under the documentation section. 
 * This period will act more like a buffer. Any remaining amount of work is to be completed during this time period.
 * Cross-check for any shortcomings.
 |-
-|  28 July                            ||  '''Phase 2 Evaluation deadline'''
+|  '''28 July'''                            ||  '''Phase 2 Evaluation deadline'''
 |-
-| 29 July - August 8                  ||* '''Buffer Period'''
+| '''29 July - August 21'''                  ||* '''Buffer Period'''
 Any remaining amount of work is finished during this period.
 * Any issues remaining is addressed to during this time.
 |-
 |       '''Second phase of project completed.'''                     ||   
 |-
-|   Final week: Students submit their final work product and their final mentor evaluation.           || 
+|   '''Final week'''        ||  '''Students submit their final work product and their final mentor evaluation.'''
 |-
-|August 9 - August 28  ||* Improve documentation.
-* Fix some typing errors under documentation.
-* Give documentation to some attributes under API Reference which were not addressed to.
-* Give a more detailed description to Installation Procedures specially for installing Sunpy on top of Anaconda related to issues - [https://github.com/sunpy/sunpy/issues/1704 #1704] and [https://github.com/sunpy/sunpy/issues/1618 #1618]
-* Resolve merge conflicts (if any).
+|  '''August 21 - August 28'''  ||
+;Final Week
+:* Improve documentation.
+:* Fix some typing errors under documentation.
+:* Give documentation to some attributes under API Reference which were not addressed to.
+:* Give a more detailed description to Installation Procedures specially for installing Sunpy on top of Anaconda related to issues - [https://github.com/sunpy/sunpy/issues/1704 #1704] and [https://github.com/sunpy/sunpy/issues/1618 #1618]
+:* Resolve merge conflicts (if any).
 |-
-|August 29 - September 5             || Mentors submit final student evaluations
+|  '''August 29 - September 5'''             || Mentors submit final student evaluations
 |-
-|September 6                           ||   Final results of Google Summer of Code 2017 announced
+|'''September 6'''                           ||   Final results of Google Summer of Code 2017 announced
 |-
 |}
 ------------
