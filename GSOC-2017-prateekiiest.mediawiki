@@ -225,7 +225,7 @@ Any remaining amount of work is finished during this period.
 
 
 === Benefits to the Community ===
-I have always a fascination for Astronomy and I am excited to be able to do my utmost to contribute to such a project. 
+I had always a fascination for Astronomy and I am excited to be able to do my utmost to contribute to such a project. 
 The website of SunPy is still in development state. I believe that by the time I complete this project I would be able to give a new look to the website along with improved content and features which will be beneficial for all users who want to use Sunpy for knowing about the software and also using it for their project work. 
 -------------
      
