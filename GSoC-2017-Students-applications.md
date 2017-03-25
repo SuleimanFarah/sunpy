@@ -2,3 +2,4 @@ Please add to the list your name and a short description of your project with a 
 
 * [[Punyaslok Pattnaik|GSOC-2017-itachi_uchiha]] - Test
 * [[Ankit Baruah|GSOC-2017-abit2]] - IRIS Data class
+* [[Prateek Chanda|GSOC-2017-prateekiiest]] -Sunpy Website Improvements
