@@ -5,7 +5,6 @@
 == SunPy Website Improvements ==
 
 
-
 ----------------------
 
 ----
@@ -362,10 +361,30 @@ My work for the site so far:
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
 
+----
+
+'''Home Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
+
+-----
+'''About Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
+
+-----
 Implementation of the registry. 
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
+
+-----
+
+'''Featured Packages'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg]]
+
+----
+
+''''Registry'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
 
 The design is not final and is bound to change upon mentor's decision.
 -----------
@@ -427,4 +446,3 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanations, feel free to contact me at prateekkol21@gmail.com .
 
 -------------------
-
