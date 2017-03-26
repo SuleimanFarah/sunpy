@@ -12,13 +12,84 @@
 
 
 
+== Student Information ==
+
+* Name: Prateek Chanda
+
+* Time Zone : +05:30 GMT
+
+* IRC Handle: prateekiiest
+
+* Github ID: [https://github.com/prateekiiest prateekiiest]
+
+* Blog - [http://aboutmeprateek.blogspot.in/ My Blog]
+*     LinkedIn: [https://www.linkedin.com/in/prateek-chanda-iiest/ My LinkedIn Profile]
+*     Mail:  Google Hangout prateekkol21@gmail.com or  prateek.dd2015@cs.iiests.ac.in
+
+ 
+----
+
+== University Information ==
+
+
+*     University: Indian Institute of Engineering Science and Technology, Shibpur
+
+*        Major: Computer Science and Engineering
+
+*        Current Academic Year : Second Year
+
+*       Graduate Year: 2019
+
+----
+
+== Experience In Programming ==
+
+
+*  I am currently working on a Project to create a high altitude experimental probe which would gather data about    the atmosphere at a height of 50 km and also send live feed data about the horizon and the earth from that   height.The Project is currently being funded by University of Boston.   [https://iiestastrophel.wordpress.com/project-horizon/  Project Horizon]
+
+*  Intermediate knowledge of Python for Data Science and Statistical Analysis.
+
+*   I have contributed to some projects on Algorithms. Hence I am comfortable in working with Git and using Github.
+*   An active coder on [https://www.hackerrank.com/prateekkol2103 Hackerrank] and [https://www.hackerearth.com/@prateekkol21/ HackerEarth].
+
+*   I am comfortable in doing programs in Python. I did two major projects on Machine Learning in Python which majorly  uses statistical analysis (pandas, numpy) and the use of Jupyter Notebook. These were  project works for Udacity Machine Learning Nanodegree:
+**  [https://github.com/prateekiiest/titanic_survival_exploration Titanic Survival Exploration]
+**  [https://github.com/prateekiiest/boston_housing Boston Housing]
+
+'''Experience in Website Development'''
+
+*   Intermediate knowledge about CSS, PHP.
+*   I took a course on Front-End Web Development from Udacity and I learnt about the basics of CSS, JavaScript, HTML. I did some projects corresponding to Web Development:
+
+
+** [https://github.com/prateekiiest/popular-movies-stage-1 popular-movies-stage-1]
+** [https://github.com/prateekiiest/Animal-Trading-Cards Animal-Trading-Cards]
+** [https://github.com/prateekiiest/Project-Mockup-to-Article Project-Mockup-to-Article]
+
+----
+
+
+== Hackathons and Open Source experience ==
+
+* '''Go-Hack Idea 2016''': I participated in Go-Hack Idea in 2016 where I proposed an idea on smart home security systems along with some small implementations using Adruino, Raspberry Pi. 
+
+* '''Contributing to Organisations like The Algorithms''': I had been contributing to some open source organisations and repositories for the past two years. 
+Some of them include:
+** [https://github.com/codeIIEST/Algorithms CODEIIEST]  - [https://github.com/codeIIEST/Algorithms/graphs/contributors My Contribution to this repository]
+** [https://github.com/TheAlgorithms/Python The Algorithms] - [https://github.com/TheAlgorithms/Python/graphs/contributors My Contribution to this repository]
+** [https://github.com/MrBlaise/learnpython Python Algorithms] - [https://github.com/MrBlaise/learnpython/graphs/contributors My Contribution to this repository]
+** [https://github.com/geekcomputers/Python GeekComputers] - [https://github.com/geekcomputers/Python/commits?author=prateekiiest My Contribution to this repository] 
+--------------
+
+
+---------------
 
 
 
 == Project Proposal ==
 
 '''Project''': ''Improvements to the Sunpy Website and Documentation with a new look and new features''.
-'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David Perez-Suarez]
+'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David-Perez Suarez]
 
 
 === Abstract ===
@@ -226,7 +297,7 @@ Any remaining amount of work is finished during this period.
 |-
 |       '''Second phase of project completed.'''                     ||   
 |-
-|   '''Final week'''        ||  '''Students submit their final work product and their final mentor evaluation.'''
+|   Final week: Students submit their final work product and their final mentor evaluation.           || 
 |-
 |  '''August 21 - August 28'''  ||
 ;Final Week
@@ -247,7 +318,7 @@ Any remaining amount of work is finished during this period.
 
 
 === Benefits to the Community ===
-I had always a fascination for Astronomy and I am excited to be able to do my utmost to contribute to such a project. 
+I have always a fascination for Astronomy and I am excited to be able to do my utmost to contribute to such a project. 
 The website of SunPy is still in development state. I believe that by the time I complete this project I would be able to give a new look to the website along with improved content and features which will be beneficial for all users who want to use Sunpy for knowing about the software and also using it for their project work. 
 -------------
      
@@ -310,6 +381,19 @@ The design is not final and is bound to change upon mentor's decision.
 --------------
 
    
+=== References ===
+
+'''Webpages'''
+* [http://www.lostdecadegames.com/blog-author-attribution-using-jekyll/ Blog Author attribution using Jekyll]
+* [https://css-tricks.com/building-a-jekyll-site-part-1-of-3/ Building a Jekyll Site - Converting a Static Website To Jekyll]
+* [https://jekyllrb.com/docs/migrations/ Blog migrations]
+* [http://davidlynch.org/blog/2016/01/migrating-from-jekyll-to-wordpress/ Migrating from Jekyll to WordPress]
+* [http://stackoverflow.com/questions/14622698/customize-sphinxdoc-theme Customize Sphinxdoc Theme]
+
+'''Videos'''
+* [https://www.youtube.com/watch?v=iWowJBRMtpc Getting Started with Jekyll]
+* [https://www.youtube.com/watch?v=oJsUvBQyHBs Sphinx & Read the Docs]
+
 
 
 == GSoC ==
