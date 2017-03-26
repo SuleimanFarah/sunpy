@@ -204,7 +204,47 @@ Lastly,
 * Completed extensions to the project
 ** Improved of the website content.
 ** Created a registry of Sunpy affiliated packages.
+
 -------------- 
+
+
+=== My Design for the Website ===
+
+I have already started with the design by preparing a slide.
+My work for the site so far:
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/home.jpg Sunpy Home 1]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2] 
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
+
+----
+
+'''Home Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
+
+-----
+'''About Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
+
+-----
+Implementation of the registry. 
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
+
+-----
+
+'''Featured Packages'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg]]
+
+----
+
+''''Registry'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
+
+The design is not final and is bound to change upon mentor's decision.
+-----------
 
 
 
@@ -351,43 +391,6 @@ The website of SunPy is still in development state. I believe that by the time I
 ------------
 
 
-=== My Design for the Website ===
-
-I have already started with the design by preparing a slide.
-My work for the site so far:
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/home.jpg Sunpy Home 1]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2] 
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
-
-----
-
-'''Home Page'''
-[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
-
------
-'''About Page'''
-[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
-
------
-Implementation of the registry. 
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
-
------
-
-'''Featured Packages'''
-[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg]]
-
-----
-
-''''Registry'''
-[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
-
-The design is not final and is bound to change upon mentor's decision.
------------
 
 === Software Packages to be used ===   
 * '''Sphinx''' : Sphinx is a tool that allows us to create as many restructured documents as we want and then it merges them together into a single website or a book. It uses HTML, LaTeX as its output format. 
