@@ -82,11 +82,12 @@ The OCCULT-2 algorithm has a few distinct parameters/functionalities:
 4. Loop structure tracing: An initialized structure starting at its flux maximum position, (x0, y0), is then traced in the forward direction to the first end point of the loop and, then, in the opposite direction from the original starting point to the second endpoint. The two bi-directional segments are then combined into a single uni-directional 1D path, si = s(xi , yi), i = 1, ..., ns.
 		
 
-                 A solar EUV image of an active region, recorded with the TRACE
+                      A solar EUV image of an active region, recorded with the TRACE
 ![](https://github.com/agneet42/sunpy_images/blob/master/1111.png)
 
 
-                       A bandpass-filtered (nsm1 = 5, nsm2 = 7) version of the original image rendered in the above figure is shown.  
+
+ A bandpass-filtered (nsm1 = 5, nsm2 = 7) version of the original image rendered in the above figure is shown.    
 ![](https://github.com/agneet42/sunpy_images/blob/master/2222.png)
 
 
@@ -105,11 +106,11 @@ The difference schemes are also mentioned along with the image/s.
 
 ### Post GSoC goals: 
 
-a) _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf) ) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we’ll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ( [link](https://docs.python.org/2/c-api/) ).
+* _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf) ) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we’ll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ( [link](https://docs.python.org/2/c-api/) ).
 
-b) _Implement image alignment using feature detection and tracking_ : To be implemented off this paper( [link](https://www.robots.ox.ac.uk/~vgg/rg/papers/CalonderLSF10.pdf) ) .  The BRIEF binary descriptor uses the fact that  that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons. It simply  creates a bit vector out of the test responses, which are computed after having smoothed the image patch.
+* _Implement image alignment using feature detection and tracking_ : To be implemented off this paper( [link](https://www.robots.ox.ac.uk/~vgg/rg/papers/CalonderLSF10.pdf) ) .  The BRIEF binary descriptor uses the fact that  that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons. It simply  creates a bit vector out of the test responses, which are computed after having smoothed the image patch.
 
-c) _Implementing NAFE_( as mentioned above ) .
+* _Implementing NAFE_( as mentioned above ) .
 
 ### Software packages to be used:
  Matplotlib, SunPy, Scikit-Image, Scipy.
