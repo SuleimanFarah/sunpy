@@ -82,13 +82,16 @@ The OCCULT-2 algorithm has a few distinct parameters/functionalities:
 4. Loop structure tracing: An initialized structure starting at its flux maximum position, (x0, y0), is then traced in the forward direction to the first end point of the loop and, then, in the opposite direction from the original starting point to the second endpoint. The two bi-directional segments are then combined into a single uni-directional 1D path, si = s(xi , yi), i = 1, ..., ns.
 		
 
-                      A solar EUV image of an active region, recorded with the TRACE
-![](https://github.com/agneet42/sunpy_images/blob/master/1111.png)
+> ![](https://github.com/agneet42/sunpy_images/blob/master/1111.png)
+>
+> *A solar EUV image of an active region, recorded with the TRACE*
+>
 
 
-
- A bandpass-filtered (nsm1 = 5, nsm2 = 7) version of the original image rendered in the above figure is shown.    
-![](https://github.com/agneet42/sunpy_images/blob/master/2222.png)
+> ![](https://github.com/agneet42/sunpy_images/blob/master/2222.png)
+>
+> A bandpass-filtered (nsm1 = 5, nsm2 = 7) version of the original image rendered in the above figure is shown.    
+>
 
 
 5. _Implement running and base difference functionality and the persistence transform_ : This model will partially be built off this paper ( [link](http://iopscience.iop.org/article/10.1088/0004-637X/736/2/102/pdf) ) . The detailed analysis of a loop at the loop apex position +698 west and −243 south of the Sun center, which displays prominent oscillations is used for calculating the running and base difference functionalities. Five different differencing schemes are used to analyse a (10*30) pixel data stripe. The module aim is to obtain such results: 
