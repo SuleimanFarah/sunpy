@@ -50,7 +50,7 @@ Here are some of my contributions to SunPy :
 
 * `Open`[Instantiate Map with an array and a WCS object][2] : A feature-request that allows instantiation of a map object with an image data array and a wcs object. This PR is not merged yet.
 
-* `Open|Approved`[Data directory should not be created on import][3] : This was a bug present in the code, due to which the download directory was created on importing sunpy. This PR fixes the bug, to ensure that the directory is created just prior to downloading of data.
+* `Merged`[Data directory should not be created on import][3] : This was a bug present in the code, due to which the download directory was created on importing sunpy. This PR fixes the bug, to ensure that the directory is created just prior to downloading of data.
 
 * `Open`[Add source tests in map_factory test][6]: This PR increases the test coverage by adding source tests for HMI, SWAP, XRT and SXT map.
 
@@ -65,7 +65,7 @@ I will be generating a few more PRs, after submitting my proposal.
 
 ## Abstract
 
-The SunPy JSOC Client is a very rudimentary client to JSOC's [export data CJI][1]. The [drms][2] module provides a more complete implementation of the DRMS protocol. This project will involve contributions to both drms and SunPy. The drms module needs testing, and some other packaging improvements to automatically run the tests. This might involve adoption of some of the Astropy packaging code such as astropy_helpers, as agreed by the drms authors.
+The SunPy JSOC Client is a very rudimentary client to JSOC's [export data CGI][1]. The [drms][2] module provides a more complete implementation of the DRMS protocol. This project will involve contributions to both drms and SunPy. The drms module needs testing, and some other packaging improvements to automatically run the tests. This might involve adoption of some of the Astropy packaging code such as astropy_helpers, as agreed by the drms authors.
 
 Once the drms package has been well tested, CI added and a conda package created, the SunPy JSOC client could be improved and extended to enable use of the majority of the drms functionality through the unified search API of SunPy. While the SunPy implementation would not need to provide all the features of the drms library, it would strive to provide a simple API for most queries supported by drms. One high-priority feature that should be available in SunPy is the ability to query drms series for which the prime key is not T_REC, also it should be possible to download only the metadata from drms without downloading the associated image data.
 
@@ -76,7 +76,7 @@ Finally, documentation in SunPy should be improved to detail much more of the JS
 
 Here is a detailed study of the differences between the present JSOC Client and the drms module and why drms should be preferred over the present client. It also describes simultaneously the extra features that will be implemented upon integrating with the drms module.
 
-* The option of `LookData` is not available in the present JSOCClient. If one is unsure of the series name to query for, there is no way one can query for the data by providing similar or a subset of the series name.
+* There is only a very little integration of `LookData` in the present JSOCClient. If one is unsure of the series name to query for, there is no way one can query for the data by providing similar or a subset of the series name.
 
     Whereas in drms, one can easily acquire all the series names available by `Client.query()` and all the series containing `hmi` in their names by doing `Client.query(‘hmi’)`. Moreover, one can get all the primekeys and segments information interactively, while querying for information. Prior knowledge about the keys and segments is not needed.
 
@@ -86,12 +86,14 @@ Here is a detailed study of the differences between the present JSOC Client and 
 
 * The drms module deals with ‘segments’ in a much better way. While in the present JSOC Client, the segment is a VSO Simple Attr like `Wavelength` and `Instrument`, drms makes a clear distinction between keys and segments. As opposed to the present Client, drms supports more than 1 segment name in a single query. This will reduce export time drastically when querying for more than 1 segment simultaneously.
 
-    When segment is provided as an argument while querying for data, <include code>
-the drms returns a set of URLs identifying the location of the data on JSOC servers. The url can be prepended with `insert url` and the image data can be directly downloaded without making an export request, using <insert code>.
-
-* The JSOC interface requires a valid email address for making an export request, but this is true only for `export request`. While querying for data, no email address is required. But, the present client doesn’t allow even querying for data, without a valid email address.
-
-    This is one of the bugs we get rid of, after integrating with drms.
+    When segment is provided as an argument while querying for data,
+    ```
+    s = c.query('hmi.v_45s[2016.04.01_TAI/1d@6h]', seg='Dopplergram')
+    ```
+    the drms returns a set of URLs identifying the location of the data on JSOC servers. The url can be prepended with `http://jsoc.stanford.edu` and the image data can be directly downloaded without making an export request, using
+    ```
+    a = fits.getdata(url)
+    ```
 
 * The `protocol` is an attribute that comes in use only while making an export request, and has no use while querying for data. But, the present client takes protocol as an argument while querying for data, and not while making a real export.
 
@@ -273,7 +275,7 @@ Possibly, this will be my **final week** for GSoC. This week will solely be give
 
 ### Week 12 - Week 13 (Aug 15 - Aug 28)
   
-If everything goes well, I will have achieved my target till now. This 2 weeks and further, I will pick items from my wishlist to work upon. I am quite interested in developing a python wrapper for the FLCT code, and I will be glad to work upon this. If any other improvements are needed which are even remotely connected to `drms` or `sunpy.net.jsoc`, I will be discussing it with mentors and picking it up over any other project.
+If everything goes well, I will have achieved my target till now. This 2 weeks and further, I will pick items from my wishlist to work upon. If any other improvements are needed which are even remotely connected to `drms` or `sunpy.net.jsoc`, I will be discussing it with mentors and picking it up. If not, I will be picking up a project or two that I have in mind.
 
 ---------
 #### GSoC period ends
@@ -283,10 +285,6 @@ Apart from the above mentioned schedule, I will be
 * Pushing code to my fork **daily** so that my mentors can evaluate and keep track of whatever work I am doing.
 * Blogging **every week** about the progress and related experiences in the said week so that mentors and others can get an overall summary of my week's work.
 * Send a PR to the main master branch, as soon as the code is ready and cleaned-up, preferably **before each evaluation deadline**.
-
-## Wishlist
-
-* Develop a python wrapper of FLCT code.
 
 ## Software packages to be used:
 
