@@ -26,6 +26,8 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 3. **Added Checking of size of data and frequency axis**(#2028) - A function check_dimensions was added to check the length( because data and freq_axis are 1D Arrays) of the two quantities and return an error accordingly.
 4. **Removed extract_time**(#2029) - Removed the extract_time function as it dealt with things that weren’t dates, as dates. The change was made in time.py and the calling object along with the functon was removed. 
 5. **Use of loggers in place of print**(#2050) - The aim of this PR is to replace the print() function with loggers as it provides more information to the user, also giving them the opportunity to  choose what they want to see.
+6. **Spectrogram log y axis**(#2061) - This is a new feature in the plot() function of the Spectrogram Class in spectrogram.py. Changes are made to enable plotting of a log y axis using the colormesh function of matlplotlib.
+
 
 ### Work and Open Source Experience : 
  Although I haven't really had much experience contributing to Open source Projects before, I have extensive experience in developing projects implementing scientific and mathematical ideas by using Python and its Libraries. I have avid interests in Machine(Deep) Learning, Natural Language Processing.
