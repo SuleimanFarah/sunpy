@@ -24,8 +24,6 @@
 * Blog - [http://aboutmeprateek.blogspot.in/ My Blog]
 *     LinkedIn: [https://www.linkedin.com/in/prateek-chanda-iiest/ My LinkedIn Profile]
 *     Mail:  Google Hangout prateekkol21@gmail.com or  prateek.dd2015@cs.iiests.ac.in
-
- 
 ----
 
 == University Information ==
@@ -88,7 +86,7 @@ Some of them include:
 == Project Proposal ==
 
 '''Project''': ''Improvements to the Sunpy Website and Documentation with a new look and new features''.
-'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David-Perez Suarez]
+'''Mentors''': [https://github.com/Cadair Stuart Mumford] , [https://github.com/dpshelio David Perez-Suarez]
 
 
 === Abstract ===
@@ -149,6 +147,9 @@ While working on with the code and also for the installation procedures, I had t
 
 ------
 
+
+=== Milestones/Deliverable ===
+
 ;'''Dividing the project into two parts'''
 
 
@@ -176,82 +177,48 @@ While working on with the code and also for the installation procedures, I had t
 * I also saw that there were some modules which were not defined, or the documentation for that part was not added. For example [http://docs.sunpy.org/en/latest/generated/api/sunpy.net.vso.attrs.Time.html  sunpy.net.vso.attrs.Time :collides, pad]. So I would like to work on them and give appropriate documentation for better understanding of the modules.
 
 
+;'''Extensions to this project I would work on ''' 
 
-'''Extensions to this project I would work on '''
-
-{|
-| ''Improve the content of the SunPy website''  || * The Sunpy website does not contain much tutorials in the gallery section, especially on maps, roi and some more.
+: '''Improve the content of the SunPy website'''  
+* The Sunpy website does not contain much tutorials in the gallery section, especially on maps, roi and some more.
 * Also, I want to create a FAQ (Frequently Asked Questions) section in order to address some common questions from the beginners.
 * I would like to upload some video lectures and presentations previously being produced from the community on the website.
-* I would also add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
-|-
-| Implement a registry of SunPy Affiliated packages on the website || *Add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
-* Create a registry of Sunpy dependencies and the affiliated packages on the website in a prescribed format under a separate section. 
-|-
+* I would also add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.      
 
-|} 
+: '''Why this extension?''' 
+The Sunpy Website is in still in its initial stage and there is much to improve in the website and improving its content is one of the important things that needs to be done. Users will only get to know about the software package through the Sunpy Website and hence it is essential that get to know about it in detail, and if any confusion they may leave a question at the IRC channel.The website should include the details of some of the core libraries of Sunpy, the data sources used for the project , the description or some link to the instruments used for gathering data for Sunpy. Likewise it will be a much better outreach for Sunpy to the users interested in Solar Physics.
+
+
+: '''Implement a registry of SunPy Affiliated packages on the website.''' 
+* Add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
+* Create a registry of Sunpy dependencies and the affiliated packages on the website in a prescribed format under a separate section.  
+** ''A list of the affiliated packages will be kept in a publicly available location. This list shall contain links to the source code, any website associated with the package and contact details of the maintainer of the package. There will be a list of packages maintained on the www.sunpy.org website, which shall provide information to users about the affiliated packages.''
+
+* Give description as to how to register an affiliated package 
+** ''To register an affiliated package it is needed to contact the chair of the SunPy board, or another board member, who will propose the package to the board who will then make a decision on that package.''
+
+* Packaging Affiliated Packages
+** To make it easier for developers to maintain affiliated packages a package template will be provided. This will allow package maintainers to not have to worry about Python packaging and documentation / testing infrastructure, and concentrate on the development of their package. This template will provide a package which is laid out and behaves much like the core SunPy library.
+
+: '''Why this extension?''' 
+
+The Affiliated Packages are registered with the SunPy Project to benefit from the publicity and support available within the SunPy community, while maintaining their independence and control over the package. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. Not all solar physics software falls within the remit of the core SunPy library, and some software developers may wish to maintain a degree of control over their software than it being part of the core library would afford them. Both of these reasons provide motivation for software which is associated with SunPy but not contained within the core library. Having an association with SunPy will provide advantages to these packages, such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy ecosystem to grow and provide useful tools to a larger audience.
+
+
+ 
 
 Lastly,
 * The sphinx theme is developed having the same design as that of the website.
 * This theme is now used for the Sunpy Documentation and for other affiliated packages for Sunpy.
-------------
-
-=== Milestones and Deliverable ===
-
-* Discussed with project mentors which tools or software packages are required for the project.
-* Discussed with mentors about the design of the website and implemented the design.
-* Created the sphinx theme having same design as the website for the documentation.
-* Completed extensions to the project
-** Improved of the website content.
-** Created a registry of Sunpy affiliated packages.
-
--------------- 
 
 
-=== My Design for the Website ===
+---------
 
-I have already started with the design by preparing a slide.
-My work for the site so far:
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/home.jpg Sunpy Home 1]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2] 
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
-
-----
-
-'''Home Page'''
-[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
-
------
-'''About Page'''
-[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
-
------
-Implementation of the registry. 
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
-
------
-
-'''Featured Packages'''
-[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg]]
-
-----
-
-''''Registry'''
-[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
-
-The design is not final and is bound to change upon mentor's decision.
------------
 
 
 
 === Work Schedule ===
-
-
-    
+   
 {|
 |  '''Time Period'''    ||   '''                My Work  Plan'''     
 |-
@@ -363,18 +330,37 @@ The website of SunPy is still in development state. I believe that by the time I
      
 === My Contribution to Sunpy so far ===
 {|
-| '''Pull Requests Opened'''   ||  '''Corresponding Issues'''
+| '''Pull Requests'''   ||  '''Corresponding Issues'''     ||       '''Status'''
 |-
-|* [https://github.com/sunpy/sunpy/pull/2010 Update dimensions metadata when resampling a map: ''#2010'']   ||  [https://github.com/sunpy/sunpy/issues/1870 #1870 Update dimensions metadata when resampling a map]
+|* [https://github.com/sunpy/sunpy/pull/2010 Update dimensions metadata when resampling a map: ''#2010'']   ||  [https://github.com/sunpy/sunpy/issues/1870 #1870 Update dimensions metadata when resampling a map]   || Closed
 |-
-|* [https://github.com/sunpy/sunpy/pull/2011 Updated some documentation in the Sunpy/data/test: ''#2011'']   ||   [https://github.com/sunpy/sunpy/issues/732 #732 database tests depend on data/tests dir]
+|* [https://github.com/sunpy/sunpy/pull/2011 Updated some documentation in the Sunpy/data/test: ''#2011'']   ||   [https://github.com/sunpy/sunpy/issues/732 #732 database tests depend on data/tests dir]   || Open
 |-
-|* [https://github.com/sunpy/sunpy/pull/2029 Update time.py Removed extract_time: ''#2029'']   || [https://github.com/sunpy/sunpy/issues/2024 #2024 Remove extract_time function]
+|* [https://github.com/sunpy/sunpy/pull/2029 Update time.py Removed extract_time: ''#2029'']   || [https://github.com/sunpy/sunpy/issues/2024 #2024 Remove extract_time function]     ||  Merged
 |-
-|* [https://github.com/sunpy/sunpy/pull/2022 Update rescale.py #2022]   || [https://github.com/sunpy/sunpy/issues/2020  #2020 reshape_image_to_4d_superpixel array seems broken]
+|* [https://github.com/sunpy/sunpy/pull/2022 Update rescale.py #2022]   || [https://github.com/sunpy/sunpy/issues/2020  #2020 reshape_image_to_4d_superpixel array seems broken]    ||    Merged
 |-
-|* [https://github.com/sunpy/sunpy/pull/2049 Added documentation for database/tests #2049] || [https://github.com/sunpy/sunpy/issues/732 database tests depend on data/tests dir #732]
+|* [https://github.com/sunpy/sunpy/pull/2049 Added documentation for database/tests #2049] || [https://github.com/sunpy/sunpy/issues/732 database tests depend on data/tests dir #732]  || Open
+|-
+|* [https://github.com/sunpy/sunpy/pull/2059 Update README.md Matrix Org linked #2059]    ||  Issue opened up in Matrix Channel     || Merged
+|-
+|* [https://github.com/sunpy/sunpy/pull/2034 Update spectrogram.py #2034]     ||   Small codework alongwith documentation   || Open
+|-
+|* [https://github.com/sunpy/sunpy/pull/2042 Update vso.py #2042]      ||  Some documentation added   || Merged
+|-
+|* [https://github.com/sunpy/sunpy/pull/2011 Updated tests for resampling Generic Map and some documentation in the Sunpy/data/test. #2011]   || [https://github.com/sunpy/sunpy/issues/732 database tests depend on data/tests dir #732] || Closed
+|-
+|* [https://github.com/sunpy/sunpy/pull/1980 show_colormaps() should check how much display is available Update cm.py #1980]      ||   [https://github.com/sunpy/sunpy/issues/1781 show_colormaps() should check how much display room is available #1781]|| Closed
+|-
+|* [https://github.com/sunpy/sunpy/pull/2052 suds-py3 does not work with VSO added documentation #2052]  || [https://github.com/sunpy/sunpy/issues/1912 VSOClient.query returns no result in Python 3.5 #1912] || Closed
+|-
+|* [https://github.com/sunpy/sunpy/pull/2054 Update README.md #2054]     ||  [https://github.com/sunpy/sunpy/issues/2053 README badges broken #2053]  || Merged
+|-
+|* [https://github.com/sunpy/sunpy.github.io/pull/65 Update help.html Link updated to matrix #65]   || Issue opened up in matrix channel   || Merged
 |}
+
+
+** More to be added
 
 
 
@@ -386,17 +372,59 @@ The website of SunPy is still in development state. I believe that by the time I
 |* [https://github.com/sunpy/sunpy/issues/2031 AttributeError for BufferedIOBase while running python setup.py build_docs -o : #2031]
 |-
 |* [https://github.com/sunpy/sunpy/issues/2033 Spectrogram Attributes not Documented Well #2033]
+|-
+|* [https://github.com/sunpy/sunpy/issues/2053 README badges broken #2053]
+|-
+|* [https://github.com/sunpy/sunpy/issues/2046 Code not showing up in maps.rst for plotting keywords and colormap section #2046]
+|-
 |}
 
 ------------
 
 
+=== My Design for the Website ===
+
+I have already started with the design by preparing a slide.
+My work for the site so far:
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/home.jpg Sunpy Home 1]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2] 
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
+
+----
+
+'''Home Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
+
+-----
+'''About Page'''
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
+
+-----
+Implementation of the registry. 
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
+
+-----
+
+'''Featured Packages'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg]]
+
+----
+
+'''Registry'''
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
+
+The design is not final and is bound to change upon mentor's decision.
+-----------
 
 === Software Packages to be used ===   
+
 * '''Sphinx''' : Sphinx is a tool that allows us to create as many restructured documents as we want and then it merges them together into a single website or a book. It uses HTML, LaTeX as its output format. 
-* '''Numpy''' : Since, the project involves working with scientific data. This requires the use of Numpy.
+
 * '''Jekyll''' : Jekyll is a tool to transform any plain text into static websites and blogs. The current Sunpy website uses Jekyll. 
-* '''Graphviz''' : Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. We need it mainly for designing any structural information as diagrams like here ([http://docs.sunpy.org/en/latest/code_ref/roi.html Class Inheritance Diagram]).
 
 
 
