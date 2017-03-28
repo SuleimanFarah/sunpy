@@ -154,7 +154,7 @@ Final results of Google Summer of Code 2016 announced.
 I will be interning elsewhere from 10th May - July 10th. The office timings are from UTC 4:30 A.M - UTC 11:30 A.M. The time difference shouldn't be a problem, I will get off my internship when SunPy and IRISPy developers will wake up, so I can communicate with my mentors without any problems.
 In the initial part of my project (Implementing the IRISSJI class) my familiarity with the Sunpy Maps and IRIS data helps me here. I have made two PR's to Map in Sunpy **(#1929, #1940)**. In the second part (Implementing the IRISRaster class) I am familiar with the present code and have added tests and corrected a few bugs in IRISPy PR's **(#4, #7)** and have started adding functionalities to the IRISRaster class in PR **#8**. My familiarity with the two classes should compensate here.
 
-I will devote 5-6 hours during weekdays and during weekends 7-8 hours to the project. If required more time can be devoted to the project in the weekends. I will not be taking any vacations in summer. This way, I will be able to devote the required minimum of ~35-40 hours for Summer of Code. 
+I will devote 5-6 hours during weekdays and during weekends 7-8 hours to the project. If required more time will be devoted to the project in the weekends. I will not be taking any vacations in summer. This way, I will be able to devote the required minimum of ~35-40 hours for Summer of Code. 
 
 I'm free after 10th of July and can devote time as I see fit after that.Having finished all discipline courses by end of this academic year, my academic stress will be extremely minimal.
 
