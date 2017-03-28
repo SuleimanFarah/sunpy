@@ -260,10 +260,10 @@ This week will act as a **buffer period** for **Part-2** of the project.
 ----------
 ### Week 9 - Week 10 (Jul 25 - Aug 7)
 
-After Phase 2 Evaluation, the major work remaining will be that of documentation and a few tests for covering the code developed during the past weeks. This 2 week period will compromise of:
+After Phase 2 Evaluation, the major work remaining will be that of documentation and a few tests for covering the code developed during the past weeks. This 2 week period will comprise of:
 
 - Covering the jsoc module with **tests**
-- Finalize the code for `sunpy.netjsoc`, i.e. rigorous **final testing**, and **code-cleanup**
+- Finalize the code for `sunpy.net.jsoc`, i.e. rigorous **final testing**, and **code cleanup**
 - **Documenting** the drms package
 
 ### Week 11 (Aug 8 - Aug 14)
