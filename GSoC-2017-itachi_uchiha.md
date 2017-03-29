@@ -172,30 +172,45 @@ Also I took into account Cadair’s suggestion for this year’s projects : fini
 | July 29 - August 5, 2017 ( 1 week ) | **Buffer Period** |
 | August 6 - 19, 2017 ( 2 weeks ) | <ul><li>Write scheduled jobs for each client which will run once everyday to update the existing data with new plots.</li></ul> |
 | August 20 - 26 ( 1 week ) | <ul><li>Final polishing</li><li>Re-check daily scheduled jobs. Make sure they work correctly for each client.</li></ul> |
-| | **Second Evaluation ( July 24 - 28, 2017 )** |
-| | **Second Evaluation ( July 24 - 28, 2017 )** |
+| August 21 - 29, 2017 | **Submit Code and Final Evaluations** |
+| August 29, 2017 - September 5, 2017 | **Mentors Submit Final Evaluations** |
+| September 6, 2017 | **Results Announced** |
+
+NOTE : Exact database schema for each client will be decided as when the time comes for each client to be added.
+
+**NOTE : Some clients will not use up the entire time allotted to them. This will free up more time to get DSCOVR implemented in SunPy properly, and then added to the webapp.**
+
+**Side goal :** The ability to serve the images as interactive js plots, if time permits
+
+
+
 
 ### How I will successfully complete the project:
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
-I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I'll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 
-I will spend time on the project before the coding period so that I have a good final idea of my approach and I can hit the ground running as soon as the coding period starts. I have started understanding the structure of UnifiedDownloader and I’m also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins.
+I am already very familiar with Fido’s working and I should be able to get things done quickly.
 
 Even after the project ends, I will be available if anyone has any questions regarding my code.
 
+
 ### Benefits to the Community
 
-**Part 1 :** The integration of Fido inside the database will enable researchers to easily use SunPy’s database to query and store various types of data locally. There will be no need to use separate queries for separate clients. **Support for querying, adding and downloading for any new client in the future can be added easily by just defining a new class from which Fido can use its functionalities.**
+* **Webapp** - Ready availability of solar activity data along with AR information will aid in flare prediction. Also the attached python scripts will give users an idea of how to use SunPy’s various clients.
+* **DSCOVR client** - Users can now get DSCOVR data using SunPy
+* Users can get proton/electron flux data using SunPy
 
-**Part 2 :** The improved caching mechanism will also help to save bandwidth, disk space and load on the VSO, HEK etc servers as only new results will be downloaded. It will also eliminate unnecessary wastage of time brought about by downloading the same files again.
 
 ## GSoC
 
 ### Have you participated previously in GSoC? When? With which project?
 
-I have **not** participated in GSoC before. This is the first time that I would be participating in GSoC.
+I have successfully completed a project in GSoC 2016 with SunPy.
+* [Improvements to the SunPy Database](https://summerofcode.withgoogle.com/archive/2016/projects/5092662445080576/)
+* [GSoC 2016 Product Submission](https://github.com/Punyaslok/sunpy/pull/1)
+
 
 ### Are you also applying to other projects?
 
@@ -204,9 +219,9 @@ I have **not** participated in GSoC before. This is the first time that I would 
 ### Commitment
 I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
 
-My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester.  I will be able to spare 35-40 hours for the project per week easily.
+My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
 
-Also, because my summer vacation starts on May 7, I will start working on the project early so that I can try to complete the project well before the deadline ( around 2-3 weeks before the deadline ). This will also ensure that any extra unforeseen and time consuming challenges will be taken care of ( there are also buffer periods to handle this ).
+Also, because my summer vacation starts on May 1, I will start working on the project early so that I can try to complete the project well before the deadline ( around 2-3 weeks before the deadline ). This will also ensure that any extra unforeseen and time consuming challenges will be taken care of (there are also buffer periods to handle this).
 
 Also SunPy is the only organization and this project is the only project that I have applied for.
 
