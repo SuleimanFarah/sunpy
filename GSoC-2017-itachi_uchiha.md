@@ -51,7 +51,7 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
 
 The Sun releases large amounts of magnetic energy in the form of X-rays, EUV (Extreme ultraviolet), radio waves and high energy particles regularly. This kind of radiation bursts can threaten space and ground based technological infrastructure. Hence it is important to monitor solar activity to be prepared for potential threats.
 
-The surface of the Sun is not uniform but is in fact dotted with Active Regions (ARs), which are regions with very strong magnetic fields. These fields can prevent the normal convective processes on the solar surface leading to regions with lower than average temperatures. These features are called Sunspots. These sunspot systems can be very complex and sometimes the AR associated with them can give rise to Solar Flares, which are sudden releases of magnetic energy (1025 J).
+The surface of the Sun is not uniform but is in fact dotted with Active Regions (ARs), which are regions with very strong magnetic fields. These fields can prevent the normal convective processes on the solar surface leading to regions with lower than average temperatures. These features are called Sunspots. These sunspot systems can be very complex and sometimes the AR associated with them can give rise to Solar Flares, which are sudden releases of magnetic energy (10<sup>25</sup> J).
 
 The main purpose of this project is to provide near real-time information on solar activity and active regions. It will be completely powered by SunPy, and will be accessible to a wide variety of users. It will serve, among other things, active region information, full solar disk images etc.
 
