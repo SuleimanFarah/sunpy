@@ -76,6 +76,10 @@ Some of them include:
 ** [https://github.com/TheAlgorithms/Python The Algorithms] - [https://github.com/TheAlgorithms/Python/graphs/contributors My Contribution to this repository]
 ** [https://github.com/MrBlaise/learnpython Python Algorithms] - [https://github.com/MrBlaise/learnpython/graphs/contributors My Contribution to this repository]
 ** [https://github.com/geekcomputers/Python GeekComputers] - [https://github.com/geekcomputers/Python/commits?author=prateekiiest My Contribution to this repository] 
+** [https://github.com/udacity/ud120-projects Udacity Projects] - [https://github.com/udacity/ud120-projects/pulls?q=is%3Apr+author%3Aprateekiiest+is%3Aclosed My Contribution to this repository]
+** [https://github.com/TheAlgorithms/C Algorithms] - [https://github.com/TheAlgorithms/C/graphs/contributors My Contribution to this repository]
+** [https://github.com/karan/Projects-Solutions Simple Projects] - [https://github.com/karan/Projects-Solutions/pulls/prateekiiest My Contribution to this repository]
+
 --------------
 
 
@@ -111,10 +115,9 @@ The website and the documentation needs much improvement in terms of design and 
 * Develop a sphinx theme that has the same design as the Sunpy website.
 * The new sphinx theme will then be used by the Sunpy documentation and any Sunpy affiliated packages.
 
-'''Extensions to the project'''
+'''Extensions to the project I plan to work on'''
 
-* To improve the content of the website. It should contain more tutorials, details about the software.
-
+* To improve the content of the website. 
 * To implement a registry of Sunpy affiliated packages on the website. 
 
 ------------
@@ -122,7 +125,7 @@ The website and the documentation needs much improvement in terms of design and 
 === Detailed Description of the Project ===
 
 
-The Sunpy Website is in its naive stage. The website is like a gateway to new users and developers who would like to learn about the software, its core features and also use it for their project_works. So I believe the website is a core part of the organisation which plays a vital role in conveying about the software, the organisation's work to the users outside.
+The Sunpy Website is in its naive stage. The website is like a window to new users and developers who would like to learn about the software, its core features and also use it for their project_works. So I believe the website is a core part of the organisation which plays a vital role in conveying about the software, the organisation's work to the users outside.
 
 It is therefore required to have a new design for the website, create a completely new look for the website with some additional features. 
 
@@ -131,7 +134,7 @@ It is also a necessity to have the same design for the documentation as in the w
 
 '''Improvement in the current website and the documentation'''
 
-While working on with the code and also for the installation procedures, I had to consult the documentation and in some cases the website since the documentation has more details. So I came up with some shortcomings which I want to improve.
+While working on with the code and also for the installation procedures, I had to consult the documentation and in some cases the website. So I came up with some of the shortcomings which I want to improve.
 
 
 {|
@@ -139,7 +142,7 @@ While working on with the code and also for the installation procedures, I had t
 |-
 |* First of all, the website needs a much improvement in the design.  ||* The Sunpy Docs has many areas lacking proper documentation like for ROI, some parts of the Lightcurve Section. 
 |-
-|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to explain such questions frequently. ||* The documentation should have more details for the installation procedure. It currently contains a good installation procedure, but it is also necessary to have a good installation procedure for Sphinx, Jekyll  and Graphviz.
+|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to answer such frequent questions. ||* The documentation should have more details for the installation procedure. It currently contains a good installation procedure, but it is also necessary to have a good installation procedure for Sphinx, Jekyll  and Graphviz.
 |-
 |* The gallery of the website only contains tutorial on Lightcurve using IPython Notebook. It should also contain some tutorials on map resampling, submaps and solar cycle using IPython Notebook.  ||* The documentation currently does not contain the corresponding issues related to the details under the [http://docs.sunpy.org/en/stable/code_ref/index.html API reference]. So new developers can get more acquainted with the issues faced corresponding to the given module.
 |-
@@ -149,6 +152,11 @@ While working on with the code and also for the installation procedures, I had t
 
 
 === Milestones/Deliverable ===
+
+* Have created a new design for the Sunpy Website.
+* Have included more content in the website.
+* Have developed the sphinx theme for the Sunpy Documentation having same design as that of the website.
+* Have implemented a registry of Sunpy affiliated packages.
 
 ;'''Dividing the project into two parts'''
 
@@ -186,7 +194,8 @@ While working on with the code and also for the installation procedures, I had t
 * I would also add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.      
 
 : '''Why this extension?''' 
-The Sunpy Website is in still in its initial stage and there is much to improve in the website and improving its content is one of the important things that needs to be done. Users will only get to know about the software package through the Sunpy Website and hence it is essential that get to know about it in detail, and if any confusion they may leave a question at the IRC channel.The website should include the details of some of the core libraries of Sunpy, the data sources used for the project , the description or some link to the instruments used for gathering data for Sunpy. Likewise it will be a much better outreach for Sunpy to the users interested in Solar Physics.
+The Sunpy Website is in still in its initial stage and there is much to improve in the website and improving its content is one of the important things that needs to be done. Users will only get to know about the software package through the Sunpy Website and hence it is essential that get to know about it in detail, and if any confusion they may leave a question at the matrix channel.The website should include the details of some of the core libraries of Sunpy, the data sources used for the project , the description or some link to the instruments used for gathering data for Sunpy. Likewise it will be a much better outreach for Sunpy to the users interested in Solar Physics.
+
 
 
 : '''Implement a registry of SunPy Affiliated packages on the website.''' 
