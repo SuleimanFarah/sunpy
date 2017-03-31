@@ -86,6 +86,20 @@ Some of them include:
 ---------------
 
 
+== Interest In OpenAstronomy ==
+
+OpenAstronomy consisting of 8 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by researchers around the world to study our universe. The analysis of data obtained from observatories like SDO , Hubble Space Telescope helps multiple types of research from being able to forecast a solar storm to detect planets in other stars.  
+
+'''Astronomy is at the frontier of science.''' There are new discoveries made all the time. 
+
+I had always a love for the sky and a kind of childhood fascination in the field astronomy and to me its feels amazing to see real time data of the Sun , captured just a few hours back, in my computer screen and I am able to analyse those data obtained. 
+The organisation is inspiring new developers like me to join the open source community and build the project code base together with lead developers and that is where I find the joy of Open Source.
+It has been really a great experience contributing to Sunpy since I joined the Sunpy community.
+
+OpenAstronomy along with Google Summer of Code has given me this opportunity to be a part of these huge project work on Solar Data Analysis and I feel it as a privilege to contribute to such an open-source software in the field of astronomy.   
+
+
+
 
 == Project Proposal ==
 
@@ -215,7 +229,7 @@ The Sunpy Website is in still in its initial stage and there is much to improve 
 
 : '''Why this extension?''' 
 
-The Affiliated Packages are registered with the SunPy Project to benefit from the publicity and support available within the SunPy community, while maintaining their independence and control over the package. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. Not all solar physics software falls within the remit of the core SunPy library, and some software developers may wish to maintain a degree of control over their software than it being part of the core library would afford them. Both of these reasons provide motivation for software which is associated with SunPy but not contained within the core library. Having an association with SunPy will provide advantages to these packages, such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy ecosystem to grow and provide useful tools to a larger audience.
+The Affiliated Packages are registered with the SunPy Project to benefit from the publicity and support available within the SunPy community, while maintaining their independence and control over the package. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. Not all solar physics software falls within the remit of the core SunPy library, and some software developers may wish to maintain a degree of control over their software than it being part of the core library would afford them. Both of these reasons provide motivation for software which is associated with SunPy but not contained within the core library. Having an association with SunPy will provide advantages to these packages, such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to grow and provide useful tools to a larger audience.
 
 
  
@@ -337,8 +351,8 @@ Any remaining amount of work is finished during this period.
 
 
 === Benefits to the Community ===
-I have always a fascination for Astronomy and I am excited to be able to do my utmost to contribute to such a project. 
-The website of SunPy is still in development state. I believe that by the time I complete this project I would be able to give a new look to the website along with improved content and features which will be beneficial for all users who want to use Sunpy for knowing about the software and also using it for their project work. 
+The website of SunPy is still in its initial state. I believe that by the time I complete this project I would be able to give a complete new look to the website along with improved content and features which will be beneficial for all users who want to use Sunpy for knowing about the software and also using it for their research work. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. By implementing a registry of the affiliated packages, Sunpy  will provide advantages to these packages,such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to evolve and provide useful tools to a larger audience.
+
 -------------
      
 === My Contribution to Sunpy so far ===
@@ -373,7 +387,7 @@ The website of SunPy is still in development state. I believe that by the time I
 |}
 
 
-** More to be added
+
 
 
 
@@ -408,10 +422,12 @@ My work for the site so far:
 ----
 
 '''Home Page'''
+Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
 
 -----
 '''About Page'''
+Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
 
 -----
@@ -428,6 +444,8 @@ Implementation of the registry.
 ----
 
 '''Registry'''
+
+Implements the design of the registry of Affiliated Packages.
 [[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
 
 The design is not final and is bound to change upon mentor's decision.
