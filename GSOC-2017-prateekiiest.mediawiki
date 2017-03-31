@@ -480,8 +480,7 @@ The design is not final and is bound to change upon mentor's decision.
 == How I wish to complete the project ==
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. 
-I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time.
-I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software and also clear any doubts regarding future use of my code work.
 
 
