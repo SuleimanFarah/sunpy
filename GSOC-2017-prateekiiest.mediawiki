@@ -457,6 +457,10 @@ Implementation of the registry.
 Implements the design of the registry of Affiliated Packages.
 [[https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg]]
 
+'''The Website design PDF'''
+
+[https://github.com/prateekiiest/sunpy_myrepo/blob/master/Recipe%20book.pdf Design Slide PDF]
+
 The design is not final and is bound to change upon mentor's decision.
 -----------
 
