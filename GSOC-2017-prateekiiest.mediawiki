@@ -318,6 +318,7 @@ Lastly,
 |  '''24 July'''                                ||   '''Phase 2 Evaluation starts'''
 |-
 | '''25 July - 27 July'''                    ||* Update Pull Requests corresponding to documentation issues under the documentation section. 
+* Add documentation to the modules under the Sunpy API Reference that has not yet been documented.
 * This period will act more like a buffer. Any remaining amount of work is to be completed during this time period.
 * Cross-check for any shortcomings.
 |-
