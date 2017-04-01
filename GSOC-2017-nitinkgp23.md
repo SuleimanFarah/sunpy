@@ -17,7 +17,7 @@
 
 * **Blog**: [medium.com/@nitinkgp23](https://medium.com/@nitinkgp23) 
 
-* **RSS Feed**:    
+* **RSS Feed**: [Feed](https://medium.com/feed/@nitinkgp23)    
 
 * **Website**: [nitinchoudhary.in](http://www.nitinchoudhary.in)   
 
@@ -40,7 +40,7 @@ I am hooked to open-source software development, an ambitious outgrowth of my pe
 * I love to code.  
 * I enjoy sharing my experiences.  
 
-Further information and details of my general interests can be found on my website.
+I am the Executive Head at [Kharagpur Open Source Society][8], which is a student club to foster and develop open source culture in and around the university. I have been involved in several open-source projects, in a variety of fields, including web and app development. My personal projects can be found at my [website](http://www.nitinchoudhary.in).
 
 ### Links to Pull Requests
 
@@ -54,7 +54,7 @@ Here are some of my contributions to SunPy :
 
 * `Open`[Add source tests in map_factory test][6]: This PR increases the test coverage by adding source tests for HMI, SWAP, XRT and SXT map.
 
-* `WIP`[Differential Rotation to use sunpy.coordinates][4] : One of the parts of the project Sunkit-image, this PR attempts to convert sunpy.physics module to use sunpy.coordinates instead of the deprecated sunpy.wcs module. This is still in progress and I am planning to finish this the week after proposals are finalized.
+* `WIP`[Differential Rotation to use sunpy.coordinates][4] : One of the parts of the project Sunkit-image, this PR attempts to convert sunpy.physics module to use sunpy.coordinates instead of the deprecated sunpy.wcs module. This is still in progress and I am planning to finish this if it is not taken up as a GSoC project.
 
 * `WIP`[Added module that fetches data using drms][5] : This was the very initial PR that attempted to modify JSOC client to use drms. This later turned to be the 3 month project idea for GSoC,on which I am currently working.
 
@@ -65,9 +65,9 @@ I will be generating a few more PRs, after submitting my proposal.
 
 ## Abstract
 
-The SunPy JSOC Client is a very rudimentary client to JSOC's [export data CGI][1]. The [drms][2] module provides a more complete implementation of the DRMS protocol. This project will involve contributions to both drms and SunPy. The drms module needs testing, and some other packaging improvements to automatically run the tests. This might involve adoption of some of the Astropy packaging code such as astropy_helpers, as agreed by the drms authors.
+The SunPy JSOC Client is a very rudimentary client to JSOC's [export data CGI][9]. The [drms][10] module provides a more complete implementation of the DRMS protocol. The drms module needs testing, and some other packaging improvements to automatically run the tests. This might involve adoption of some of the Astropy packaging code such as astropy_helpers, if necessary.
 
-Once the drms package has been well tested, CI added and a conda package created, the SunPy JSOC client could be improved and extended to enable use of the majority of the drms functionality through the unified search API of SunPy. While the SunPy implementation would not need to provide all the features of the drms library, it would strive to provide a simple API for most queries supported by drms. One high-priority feature that should be available in SunPy is the ability to query drms series for which the prime key is not T_REC, also it should be possible to download only the metadata from drms without downloading the associated image data.
+Once the drms package has been well tested, CI added and a conda package created, the SunPy JSOC client could be improved and extended to enable use of the majority of the drms functionality through the unified search API of SunPy. While the SunPy implementation would not need to provide all the features of the drms library, it would strive to provide a simple API for most queries supported by drms.
 
 Finally, documentation in SunPy should be improved to detail much more of the JSOC functionality. This should include API documentation, narrative documentation in the guide and examples in the gallery.
 
@@ -76,24 +76,23 @@ Finally, documentation in SunPy should be improved to detail much more of the JS
 
 Here is a detailed study of the differences between the present JSOC Client and the drms module and why drms should be preferred over the present client. It also describes simultaneously the extra features that will be implemented upon integrating with the drms module.
 
-* There is only a very little integration of `LookData` in the present JSOCClient. If one is unsure of the series name to query for, there is no way one can query for the data by providing similar or a subset of the series name.
+* There is only a very little integration of the web API in the present JSOCClient. If one is unsure of the series name to query for, there is no way one can query for the data by providing similar or a subset of the series name.
 
-    Whereas in drms, one can easily acquire all the series names available by `Client.query()` and all the series containing `hmi` in their names by doing `Client.query(‘hmi’)`. Moreover, one can get all the primekeys and segments information interactively, while querying for information. Prior knowledge about the keys and segments is not needed.
+    Whereas in drms, one can easily acquire all the series names available by `Client.series()` and all the series containing `hmi` in their names by doing `Client.series(‘hmi’)`. Moreover, one can get all the primekeys and segments information interactively, while querying for information. Prior knowledge about the keys and segments is not needed.
 
 * The present JSOC Client supports very limited attributes, as segments, while querying for data and filtering out information based on them. The keys that are supported presently are `Instrument`, `Wavelength` and `Level`, which are simple VSO attributes predefined.
 
-    The drms module will allow us to filter out data on the basis of all the keys that are available for certain series such as`QUALITY` and `T_OBS`.
+    The drms module will allow us to filter out data on the basis of all the keys that are available for a certain series.
 
-* The drms module deals with ‘segments’ in a much better way. While in the present JSOC Client, the segment is a VSO Simple Attr like `Wavelength` and `Instrument`, drms makes a clear distinction between keys and segments. As opposed to the present Client, drms supports more than 1 segment name in a single query. This will reduce export time drastically when querying for more than 1 segment simultaneously.
+* The drms module deals with ‘segments’ in a much better way. While in the present JSOC Client, the segment is a VSO Simple Attr like `Wavelength` and `Instrument`, drms makes a clear distinction between keys and segments. As opposed to the present Client, drms supports more than 1 segment name in a single query. This will reduce export time drastically when querying for more than 1 segment simultaneously.    
+    For e.g., the query for 2 data segments continuum and magnetogram of hmi.sharp_720s data series at a certain given time will generate two different queries, denoted by the query strings :    
+    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{magnetogram}`    
+    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{continuum}`
+    
+    This will  result in generation of two different Export requests, hence taking a longer time to process the query. Using drms, the query can be made using a single query string.    
 
-    When segment is provided as an argument while querying for data,
-    ```
-    s = c.query('hmi.v_45s[2016.04.01_TAI/1d@6h]', seg='Dopplergram')
-    ```
-    the drms returns a set of URLs identifying the location of the data on JSOC servers. The url can be prepended with `http://jsoc.stanford.edu` and the image data can be directly downloaded without making an export request, using
-    ```
-    a = fits.getdata(url)
-    ```
+    The drms query will have the query string as :    
+    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{continuum, magnetogram}`
 
 * The `protocol` is an attribute that comes in use only while making an export request, and has no use while querying for data. But, the present client takes protocol as an argument while querying for data, and not while making a real export.
 
@@ -105,9 +104,12 @@ Here is a detailed study of the differences between the present JSOC Client and 
 
 * Upon doing `Client.query()`, drms returns a `Pandas` data frame while the present client returns a `JSOCResonse` object. This contains an `astropy.table.Table` and also has attributes that stores the query parameters and the length of the table. Hence, `JSOCResponse` object will be preferred over a `Pandas` data frame.
 
-* The downloading process in the present client is much smoother than that of drms. The drms download takes almost double the time to download a set of files than the Sunpy’s downloader.
+* The drms module provides only a very basic download routine that sequentially downloads the requested files.
+SunPy's downloader, instead, is a threaded-download manager which parallely downloads the requested files, hence greatly reducing the download time. 
 
-* Sunpy’s downloader gives the user custom options to modify the downloading as required, for e.g. by passing the path as parameter, or an option to whether overwrite or ignore the files in case the names of files match. Path, if not passed, can be taken up from sunpy’s config file and be downloaded in the default download directory.
+    Sunpy’s downloader also gives the user custom options to modify the downloading as required, for e.g. by passing the path as parameter, or an option to whether overwrite or ignore the files in case the names of files match. Path, if not passed, can be taken up from sunpy’s config file and be downloaded in the default download directory.
+
+    Therefore, we will stick to using SunPy's downloader to get the files downloaded, after fetching the download URLs from the drms client.
 
 ## The Problem and Approach
 
@@ -115,11 +117,11 @@ The project can be divided into 3 main parts:
 
 1. ### Improving the drms module
 
-    The drms module needs a lot of improvements in its codebase. The basic preliminary task that is to be done is to make drms use [astropy-helpers][3], which includes many build, installation and documentation related tools, used by the astropy project. This won't have any user-end impact, but will provide very nice helpers such as `python setup.py develop` to install the current version, `python setup.py test` to run all the tests automatically, and `python setup.py build_docs` for building the docs locally. Moreover, it will also work nicely with astropy's CI-helpers for running tests on Travis etc.
-
-    The current codebase has almost no test coverage. Another important part of improving the drms package is to add tests for all the functions present in the drms module. The code coverage is expected to reach 100% after the midterms of the coding period.
+    The drms module needs a few improvements in its codebase. The current codebase has almost no test coverage. An important part in improving the drms package is to add tests for all the functions present in the drms module. The code coverage is expected to reach 100% after the midterms of the coding period.
 
     After adding all the tests, and maybe simulataneously, we will be adding the Travis CI testing to check the build of the module whenever an event is triggered. Adding Coveralls will allow to keep a check on the percentage of codebase covered by tests.
+
+    If needed, we can make drms use astropy-helpers which includes many build, installation and documentation related tools, used by the astropy project. This won't have any user-end impact, but will provide very nice helpers such as python setup.py develop to install the current version, python setup.py test to run all the tests automatically, and python setup.py build_docs for building the docs locally. Moreover, it will also work nicely with astropy's CI-helpers for running tests on Travis etc.
 
     After achieving a 100% coverage, and the build passing, we can create a conda package for the drms library.
 
@@ -127,25 +129,14 @@ The project can be divided into 3 main parts:
 
    SunPy is currently rather restricted in when it comes to accessing HMI and AIA data from JSOC, and the drms module provides a more general interface to access the data series from JSOC servers. Drms module can be used as a backend for the present JSOC Client, to improve communication with JSOC servers.
 
-    The current JSOC Client has limited attributes for generating the query string, and can’t filter out the contents of data based on other keywords such as `QUALITY` and `DATAMEAN`. There is no option of downloading the metadata of the data-series exclusively.
+    The current JSOC Client has limited attributes for generating the query string, and can’t filter out the contents of data based on other keywords such as `QUALITY`. There is no option of downloading the metadata of the data-series exclusively.
 
     The drms module will allow one to:
 
     * Generally query any set of keyword from any data series, as well as any set of segments from any data series.
     * Use the export data interface directly to export not only FITS files but also images and movies.
 
-    SunPy’s JSOC Client will have the following improvements upon integrating with drms:
-
-    Using drms as the backend of JSOC Client, will also result in reduction of the number of queries to fetch the same data. For e.g.,
-    The query for 2 data segments continuum and magnetogram of hmi.sharp_720s data series at a certain given time will generate two different queries, denoted by the query strings :    
-    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{magnetogram}`    
-    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{continuum}`
-    
-    This will  result in generation of two different Export requests, hence taking a longer time to process the query. Using drms, the query can be made using a single query string.    
-
-    The drms query will have the query string as :    
-    ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{continuum, magnetogram}`
-
+    Though, SunPy will only need to use `as-is` and `fits` protocol. Moreover, the JSOC export system has a few issues with exporting images and movies, hence it is not a very good idea to integrate it into SunPy in the current state. 
 
 3. ### Thorough documentation
    #### Drms:
@@ -154,24 +145,24 @@ The project can be divided into 3 main parts:
 
     For e.g., the documentation of the function `Client.export_from_id()` is missing from the main tutorial. A usage that is present in the example script can be well documented and explained on the tutorial page. A lot of theoretical concepts on how JSOC interface works can be added, explaining well about the three-stage process of exporting data from JSOC, and the significance of the parameters that are being passed to the function, for e.g., `segments` and `keys`.
 
+    The overview in the documentation can be enhanced a bit, by adding some more in-depth information about the DRMS and the JSOC export system. The tutorial can be expanded well to include all the other features of drms, that are not shown in the main tutorial page, and which lies in the main repository. Also, examples can be added to the main tutorial from [jupyter notebooks][11] of drms-workshop. 
+
     #### Sunpy:
     
     At present, SunPy has a good documentation about the API reference of the JSOC Client, but no documentation exists for the different use cases for querying data from JSOC. Since the project involves a complete overhaul of the JSOC Client, the API reference will have some changes as well. Apart from that, a lot of examples from drms, which are specific and relevant to SunPy, will be adopted to give an overall structure of how JSOC system works.
 
-    Examples will be added in the gallery, about all the different ways of querying data, either by inputting sunpy attributes, or directly entering the query string. All the variations of querying data will be well explained.
+    Examples will be added in the gallery, about all the different ways of querying data, either by inputting sunpy attributes, or directly entering the query string. All the variations of querying data will be well explained. A set of python notebooks will also be added, which will explain the use of the Client in fetching data from JSOC. The first two python notebooks will explain in detail the exporting of data in both `as-is` and `fits` protocol. The third notebook will explain how to fetch metadata and image data separately, and combine it client side,(if this functionality has been achieved). 
+  
+    Since, SunPy's client won't strive to have all the functionality provided by drms, it will be made clear in the documentation about which functionalities will be supported by SunPy. Advanced functionalities will be mentioned in SunPy's documentation too, but it will be properly linked to drms' documentation, and made clear to the users to directly use drms for such advanced queries.
 
 ## Implementation
 ### Improving drms module
 
-There are a few extra features that can be implemented in the drms module, apart from adding tests.
+The code needs to be covered by tests. The module consists of 3 main classes `SeriesInfo`, `ExportRequest` and `Client`. The tests will, first be written for the main API, and then consecutively, internal functions will be covered. `query` and `export` will require use of `unittest.mock`. A `MagicMock()` object will be used, which will create all related objects and methods, so that we don't need to interact with JSOC Servers, everytime the test is run.
 
-* Record count limit of the data : This feature is available in the JSOC interface, but is missing from drms. Adding this feature will allow the user to limit the number of files to be downloaded as per choice.
+`@patch` decorator available in `unittest.mock` allows us to monkey-patch an object, within the scope of the decorator. This will allow us to replace the JSOC database with a custom object, and fetch data from the custom object itself, thus avoiding interaction with JSOC servers.
 
-* File name format can be taken as a user input, which will default to the present file-format, that is commonly used.
-
-* Processing of the data : <write>
-
-Write about tests.
+Since, I haven't used `unittest.mock` before, I will be working on it in next 2 months, and get familiar with it before the coding period starts.
 
 ### Integrating drms into SunPy
 
@@ -190,11 +181,17 @@ Write about tests.
 * **Add other primekeys as attributes for query**    
     Common prime keys like `HARPNUM` and `CAMERA` should be added as attributes. This will allow downloading of data based on these primekeys too. Currently, only `T_REC` is supported. A detailed study and discussion is yet to be made regarding which are the most common primekeys across all the data series. The other uncommon primekeys can be interactively passed after doing a `LookData` and the `query_string` be generated thereafter.
 
+    A dynamic attribute creation can be implemented in this case, depending upon the keys and primekeys of the queried series. This will also allow auto-complete of the primekeys.
+
 * The query function should have another attribute `query_str` which, if provided, won’t require any other attribute as input. This `query_str` will then directly be passed to `drms.query()` to fetch data. Adding this functionality is necessary because a query string can be modified in a number of ways to filter out data, and a function to generate query string is viable only if the number of arguments are small. In case of large number of arguments or keys, a manually generated query string is more suitable.
 
 * **Allow downloading of metadata and image data separately**    
-    <Write>
+    Solar data, are stored in the form of metadata and image data at two different systems. Data are merged together, upon export, in the form of FITS files at JSOC. This merging of data on the server side takes up some time. If instead, the metadata and image data can be downloaded separately, and be merged together on the client side, it will greatly reduce the server load and the export time.
 
+    There are still discussions going on about how to fetch both the data separately. The problem with the metadata is that the metadata obtained by using `client.query()` is not same as the metadata found in the FITS files. Some kind of a mapping exists, between the keywords. There exists very little documentation on mapping keywords from metadata to FITS files. Hence, it will be better if JSOC directly provides with the modified metadata, that is found in the FITS files.
+    
+    Discussion about this is in progress, and I will work upon it once a clear solution is found, after discussing it with mentors.
+   
 ## Timeline and Deliverables
 
 ### Community Bonding period (May 4 - May 29)
@@ -212,7 +209,13 @@ Since I have had little prior experience in writing tests, I will devote a large
 ----------
 
 ### Week 1 - Week 3 (May 30 - Jun 19)
-The first 3 weeks of the coding period will solely be given for writing tests.
+The first 3 weeks of the coding period will solely be given for writing tests. I will go about doing this in 3 steps : 
+
+**Step 1** : Write tests for the **main API**. This will include tests for the three main classes `SeriesInfo`, `ExportRequest`, and `Client`. The main functions such as `query()`, `export()` and `series()` will be covered in this week. Mock objects will be created to do the test with. The code coverage is expected to reach upto **40-50%** at the end of this week.
+
+**Step 2** : This week will require writing tests for the **lesser used functions** such as `info()` and `keys()`. The code will be well covered after this week, and the coverage is expected to reach to about **80%**. Still, there will be a lot of internal functions which will have been already covered, but need to have separate tests. Thus, separate tests will be written for the **internal functions** and will be covered independently.
+
+**Step 3** : This week's target will be to achieve the coverage to **100%**. All the internal functions will have been independently tested, and the missing out code (if any), that are not covered will be dealt with. Finally, the **tests will be well documented**, so that they can be well understood by developers trying to improve the tests.
  
 ### Week 4  (Jun 20 - Jun 26)
 This week will act as a **buffer period** for **Part-1** of the project.
@@ -308,10 +311,10 @@ Documentation and gallery examples will help the scientific community understand
 ## GSoC
 
 ### Have you participated previously in GSoC? When? Under which project?
-No, I have not participated in GSoC before. This is the first time I am participating in GSoC.
+No, I have **not** participated in GSoC before. This is the first time I am participating in GSoC.
 
 ### Are you also applying to other projects?
-No, this is the only project and SunPy is the only organisation that I am applying for.
+I am also applying for the project **Sunkit-image**, in the same organisation SunPy. Though, this project is my **first priority**. I am **not** applying to any other organisation. 
 
 ### Commitments
 I may be involved in a short internship of 20 days from 10th May till 31st May. The work hours will be from 5:30 UTC - 11:30 UTC. Since, the internship will be over before the coding period starts, I won’t face any problem in managing my tasks. Even in the community bonding period (during my internship), I will be able to give 5-6 hours easily on understanding the codebase and discussing with the mentors, since I will be free for most of the day according to UTC time.
@@ -330,3 +333,7 @@ Yes, I am eligible to receive payments from Google. For any queries, clarificati
 [5]: https://github.com/sunpy/sunpy/pull/2008
 [6]: https://github.com/sunpy/sunpy/pull/2056
 [7]: http://www.iitkgp.ac.in/
+[8]: http://kossiitkgp.in/
+[9]: http://jsoc.stanford.edu/ajax/exportdata.html
+[10]: https://github.com/kbg/drms
+[11]: https://github.com/kbg/drms-workshop
