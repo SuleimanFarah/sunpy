@@ -4,4 +4,5 @@ Please add to the list your name and a short description of your project with a 
 * [[Ankit Baruah|GSOC-2017-abit2]] - IRIS Data class
 * [[Prateek Chanda|GSOC-2017-prateekiiest]] -Sunpy Website Improvements
 * [[Nitin Choudhary|GSOC-2017-nitinkgp23]] - Drms module for JSOC Downloads
+* [[Nitin Choudhary|GSOC-2017-nitinkgp23-sunkit]] - Sunkit-image
 * [[Agneet Chatterjee|GSOC-2017-agneet42]] - Sunkit-image
