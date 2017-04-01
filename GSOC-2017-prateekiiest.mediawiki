@@ -475,11 +475,11 @@ The design is not final and is bound to change upon mentor's decision.
 * '''Jekyll''' : Jekyll is a tool to transform any plain text into static websites and blogs. The current Sunpy website uses Jekyll. 
 
 * '''Graphviz''' : Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
-
-
 --------------
 
-   
+=== Extra plans  ===
+  
+Recently, I plan to include Jupyter Notebooks using mybinder for displaying the gallery tutorials.  
 
 == How I wish to complete the project ==
 
@@ -487,7 +487,6 @@ I am confident of completing this project because this project interests me a lo
 I have read much about the Sphinx documentation since the last few weeks. 
 I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software. 
-
 
 -------------
 
@@ -506,11 +505,7 @@ At the end of the project, I would still like to be inside the Sunpy channel as 
 * [https://www.youtube.com/watch?v=iWowJBRMtpc Getting Started with Jekyll]
 * [https://www.youtube.com/watch?v=oJsUvBQyHBs Sphinx & Read the Docs]
 
-
-
 ----------------
-
-
 
 == GSoC ==
 
