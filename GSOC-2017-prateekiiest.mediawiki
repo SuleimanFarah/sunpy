@@ -418,10 +418,14 @@ My work for the site so far:
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
-
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyprojects.png Projects using Sunpy]
 ----
 
-'''Home Page'''
+'''Home Page1'''
+
+[[https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif]]
+
+'''Home Page2'''
 
 Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
