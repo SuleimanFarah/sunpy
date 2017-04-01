@@ -154,9 +154,9 @@ While working on with the code and also for the installation procedures, I had t
 {|
 | ''Flaws in the Website''             ||   ''Flaws in the Documentation''
 |-
-|* First of all, the website needs a much improvement in the design. It needs improvement in terms of good style. ||* The Sunpy Docs has many areas lacking proper documentation like for ROI, some parts of the Lightcurve Section. Some of the functions have not been documented. So it is really important to update them.
+|* First of all, the website needs a much improvement in the design. It needs improvement in terms of style. ||* The Sunpy Docs has many areas lacking proper documentation like for ROI, some parts of the Lightcurve Section. Some of the functions have not been documented. So it is really important to update them.
 |-
-|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to answer such frequent questions. ||* The documentation should have more details for the installation procedure. It currently contains a good installation procedure, but it is also necessary to have a good installation procedure for Sphinx, Jekyll  and Graphviz.
+|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to answer such frequent questions. ||* The documentation should have more details for the installation procedure. 
 |-
 |* The gallery of the website only contains tutorial on Lightcurve using IPython Notebook. It should also contain some tutorials on map resampling, submaps and solar cycle using IPython Notebook. The website gallery have a possibility to get removed as said by my mentors.
 * Also, the website doesn't contain presentations and video tutorials and research paper links. ||* The documentation currently does not contain the corresponding issues related to the details under the [http://docs.sunpy.org/en/stable/code_ref/index.html API reference]. So new developers can get more acquainted with the issues faced corresponding to the given module.
@@ -235,7 +235,7 @@ The Affiliated Packages are registered with the SunPy Project to benefit from th
  
 
 Lastly,
-* The sphinx theme is developed having the same design as that of the website.
+* The sphinx theme is developed having the same design as that of the website. I have already read about the Sphinx documentation, particularly on how to create a customized sphinx theme.
 * This theme is now used for the Sunpy Documentation and for other affiliated packages for Sunpy.
 
 
@@ -245,7 +245,6 @@ Lastly,
 
 
 === Work Schedule ===
-   
 {|
 |  '''Time Period'''    ||   '''                My Work  Plan'''     
 |-
@@ -258,7 +257,7 @@ Lastly,
 
 ;Second Week
 
-:* Discuss with my mentors  which particular features they want me to include the website and the documentation.    
+:* Discuss with mentors  which particular features they want me to include the website and the documentation.    
 
 ;Third Week
 :* Finalize  the design of the website.   
@@ -269,7 +268,7 @@ Lastly,
 |'''30 May - 25 June''' || 
 ;First Week
 
-:* Build the website with the finalized design. 
+:* Start building the website with the finalized design. 
 :* Implement the design for the ''Home Page'' using CSS, HTML and build the page locally. 
 :* Update Pull Request for the new home page designed. 
 ;Second Week
@@ -282,7 +281,7 @@ Lastly,
 |-
 |               '''26 June'''                                         ||       '''Phase 1 Evaluation Submission starts'''
 |-
-|       '''26 June - 30 June'''                   ||* Test and ensure that the website design is completely done. Any remaining work is addressed to in this period. Prevailing issues related to are addressed to in this period  
+|       '''26 June - 30 June'''                   ||* Test and ensure that the website design is completely done. Any remaining work is addressed to in this period. Prevailing issues related to are addressed to in this period. Also I plan to solve some of the issues still open in the Sunpy website repository.  
 * Finalize Part 1 of the project after reviewing it with mentors.
 |-
 |        '''30 June'''   ||                      '''Phase 1 Evaluation Submission Ends'''
@@ -351,7 +350,7 @@ Any remaining amount of work is finished during this period.
 
 
 === Benefits to the Community ===
-The website of SunPy is still in its initial state. I believe that by the time I complete this project I would be able to give a complete new look to the website along with improved content and features which will be beneficial for all users who want to use Sunpy for knowing about the software and also using it for their research work. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. By implementing a registry of the affiliated packages, Sunpy  will provide advantages to these packages,such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to evolve and provide useful tools to a larger audience.
+The website of SunPy is still in its initial state. I believe that by the time I complete this project I would be able to give a complete new look to the website along with improved content and features which will be beneficial to all users who want to use Sunpy for knowing about the software and also using it for their research work. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. By implementing a registry of the affiliated packages, Sunpy  will provide advantages to these packages,such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to evolve and provide useful tools to a larger audience.
 
 -------------
      
@@ -474,11 +473,23 @@ The design is not final and is bound to change upon mentor's decision.
 
 * '''Jekyll''' : Jekyll is a tool to transform any plain text into static websites and blogs. The current Sunpy website uses Jekyll. 
 
+* '''Graphviz''' : Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
 
 
 --------------
 
    
+
+== How I wish to complete the project ==
+
+I am confident of completing this project because this project interests me a lot and also fits my current skill sets. 
+I have read much about the Sphinx documentation since the last few weeks. 
+I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software. 
+
+
+-------------
+
 === References ===
 
 '''Webpages'''
@@ -494,11 +505,10 @@ The design is not final and is bound to change upon mentor's decision.
 * [https://www.youtube.com/watch?v=iWowJBRMtpc Getting Started with Jekyll]
 * [https://www.youtube.com/watch?v=oJsUvBQyHBs Sphinx & Read the Docs]
 
-== How I wish to complete the project ==
 
-I am confident of completing this project because this project interests me a lot and also fits my current skill sets. 
-I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
-At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software and also clear any doubts regarding future use of my code work.
+
+----------------
+
 
 
 == GSoC ==
