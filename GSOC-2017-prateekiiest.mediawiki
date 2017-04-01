@@ -422,13 +422,22 @@ My work for the site so far:
 ----
 
 '''Home Page'''
+
 Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/home.jpg]]
 
 -----
 '''About Page'''
+
 Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/About%20Page.jpg]]
+
+------
+'''Blog Section'''
+
+Its Design
+
+[[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/blogsun.jpg]]
 
 -----
 Implementation of the registry. 
