@@ -212,10 +212,6 @@ While working on with the code and also for the installation procedures, I had t
 : '''Why this extension?''' 
 
 The Sunpy Website is in still in its initial stage and there is much to improve in the website and improving its content is one of the important things that needs to be done. Users will only get to know about the software package through the Sunpy Website and hence it is essential that get to know about it in detail, and if any confusion they may leave a question at the matrix channel. The website should include the details of some of the core libraries of Sunpy, the data sources used for the project , the description or some link to the instruments used for gathering data for Sunpy. Likewise it will be a much better outreach for Sunpy to the users interested in working on Solar Project.
- 
-
-
-
 : '''Implement a registry of SunPy Affiliated packages on the website.''' 
 * Add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
 * Create a registry of Sunpy dependencies and the affiliated packages on the website in a prescribed format under a separate section.  
@@ -240,9 +236,6 @@ Lastly,
 
 
 ---------
-
-
-
 
 === Work Schedule ===
 {|
@@ -478,8 +471,8 @@ The design is not final and is bound to change upon mentor's decision.
 --------------
 
 === Extra plans  ===
-  
-Recently, I plan to include Jupyter Notebooks using mybinder for displaying the gallery tutorials.  
+Recently, I proposed this idea to Cadair (Stuart Mumford) on the #sunpy matrix channel.
+What I proposed is that I want to include Jupyter Notebook tutorials under Sunpy Documentation using mybinder for displaying the gallery tutorials, so that users can get a hand-on experience with some of the tutorials and it will be really be beneficial for them. If I get time by finishing the project early, I am eager to implement this plan.
 
 == How I wish to complete the project ==
 
