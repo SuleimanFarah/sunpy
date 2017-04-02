@@ -9,6 +9,13 @@
  [[GSoC - TODO]]
 ## Editions
 
+### [GSoC 2017](http://summerofcode.withgoogle.com/)
+* [[GSoC 2017 Ideas Page]]
+* [[GSoC 2017 Students applications]]
+* [[GSoC 2017 Use cases]]
+* [[GSoC 2017 Project - xxx]]
+* [[GSoC 2017 Project - yyy]]
+
 ### [GSoC 2016](http://www.google-melange.com/gsoc/homepage/google/gsoc2016)
 * [[GSoC 2016 Ideas Page]]
 * [[GSoC 2016 Students applications]]
