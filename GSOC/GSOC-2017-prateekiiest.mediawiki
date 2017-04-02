@@ -194,9 +194,6 @@ While working on with the code and also for the installation procedures, I had t
 * I remember some of topics where I faced issues. I will thus try to clear those issues by giving more examples and also links to some extra resources which are not present in the current documentation, so that beginners don't have to face those issues again.
 
 
-* I would also add some links to some of the presentations and video talks done by Sunpy on the website and also in the documentation in appropriate places.
-
-
 * I also saw that there were some modules which were not defined, or the documentation for that part was not added. For example [http://docs.sunpy.org/en/latest/generated/api/sunpy.net.vso.attrs.Time.html  sunpy.net.vso.attrs.Time :collides, pad]. So I would like to work on them and give appropriate documentation for better understanding of the modules.
 
 
@@ -205,9 +202,15 @@ While working on with the code and also for the installation procedures, I had t
 : '''Improve the content of the SunPy website'''  
 * The website does not contain much description on some of the core functionality of Sunpy. I plan to add some feature section where there will be bulleted list on some of the main modules of Sunpy along with their functionality (their description, what is their function in the Sunpy code base) and their corresponding links to the Sunpy Documentation.  
 * I also want to create a FAQ (Frequently Asked Questions) section in order to address some common questions from the beginners.
-* I plan to upload some video lectures and presentations previously being produced from the community on the website.
+
+* I plan to add some links to some of the presentations [https://www.youtube.com/watch?v=bXPPTCkaVu8 SunPy - Python for Solar Physicists; SciPy 2013 Presentation]  and video talks done by Sunpy like [https://www.youtube.com/watch?v=1KdeO-lZ2dQ PyAstro16 - Steven Christe - SunPy, the solar data analysis package] and [https://www.youtube.com/watch?v=3HYEr4NdziQ&t=231s Stuart Mumford - SunPy: Python for Solar Physics] on the website.
+
 * I would also want to add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.      
 * Lastly, I want to give links to some of the latest research papers associated with the Sunpy Organisation and also some of the research papers that beginners may need in order to implement some algorithm for usage in a module.
+Research papers example I would like to add include:
+* [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/V9GADNPC SunPy—Python for solar physics]
+* [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/553I2IUE Dynamic Precursors of Flares in Active Region NOAA 10486]
+* [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/8KXJBBTI SunPy: Python for Solar Physics. An implementation for local correlation tracking] and others under the [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/8KXJBBTI Zotero|Groups > Sunpy]
 
 : '''Why this extension?''' 
 
@@ -266,18 +269,15 @@ Lastly,
 :* Update Pull Request for the new home page designed. 
 ;Second Week
 :* Implement the design for the ''About'' and the ''Blog'' section of the page and see the page build it locally.
-:*  Discuss with mentors in which order the blog writings are to be placed under the ''Blog'' section and also what should   be the corresponding style of writing under each blog writing. 
+:*  Discuss with mentors about the format of the ''Blog'' section and also what should be the corresponding style of writing under each blog writing. 
 ;Third Week
 :* Submit patches for issues or new features proposed under the the website code_base. 
 ;Fourth Week
 :* Include the new features like FAQ under a separate page.   
+:* Test and ensure that the website design is completely done by using local installation through WAMP or creating a new test domain using cPanel . Any remaining work is addressed to in this period. Prevailing issues are addressed to in this period. 
+:* Finalize Part 1 of the project after reviewing it with mentors. 
 |-
-|               '''26 June'''                                         ||       '''Phase 1 Evaluation Submission starts'''
-|-
-|       '''26 June - 30 June'''                   ||* Test and ensure that the website design is completely done. Any remaining work is addressed to in this period. Prevailing issues related to are addressed to in this period. Also I plan to solve some of the issues still open in the Sunpy website repository.  
-* Finalize Part 1 of the project after reviewing it with mentors.
-|-
-|        '''30 June'''   ||                      '''Phase 1 Evaluation Submission Ends'''
+|               '''26 June -30 June'''                                         ||       '''Phase 1 Evaluation '''
 |-
 |                      '''First part of the Project ends.'''
 '''Second part of the Project starts'''                 ||   
@@ -291,7 +291,7 @@ Lastly,
 |-
 |    '''13 July - 23 July'''                              ||    '''Work on the extensions to the project.'''
 ;First Week
-:* Improvement of the Sunpy Website content
+
 :* Discuss with mentors in what way I can improve the content and under which section more content needs to be added.
 :* Add more gallery examples related to maps, ROI and submaps along with some short code snippets using Jupyter Notebook.
 
@@ -303,19 +303,14 @@ Lastly,
 :* Add corresponding issues related to each of the tutorials so that beginners can understand the problem much better.
 :* Implement a registry of Sunpy affiliated packages.
 :* Create a separate section where a registry of the packages will be shown.
+:* Discuss with mentors regarding the format of the registry.
 
 ;Fourth Week
-:* Discuss with mentors regarding the format of the registry.
 :* Give a detailed description of each of the affiliated packages along with their current versions and some of their important features.
+:* Update Pull Requests corresponding to documentation issues under the documentation section.  
+:* Add documentation to the modules under the Sunpy API Reference that has not yet been documented. 
 |-
-|  '''24 July'''                                ||   '''Phase 2 Evaluation starts'''
-|-
-| '''25 July - 27 July'''                    ||* Update Pull Requests corresponding to documentation issues under the documentation section. 
-* Add documentation to the modules under the Sunpy API Reference that has not yet been documented.
-* This period will act more like a buffer. Any remaining amount of work is to be completed during this time period.
-* Cross-check for any shortcomings.
-|-
-|  '''28 July'''                            ||  '''Phase 2 Evaluation deadline'''
+|  '''25 July - 28 July'''                                ||   '''Phase 2 Evaluation'''
 |-
 | '''29 July - August 21'''                  ||* '''Buffer Period'''
 Any remaining amount of work is finished during this period.
