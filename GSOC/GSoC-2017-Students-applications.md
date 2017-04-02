@@ -6,3 +6,4 @@ Please add to the list your name and a short description of your project with a 
 * [[Nitin Choudhary|GSOC-2017-nitinkgp23]] - Drms module for JSOC Downloads
 * [[Nitin Choudhary|GSOC-2017-nitinkgp23-(Sunkit-image)]] - Sunkit-image
 * [[Agneet Chatterjee|GSOC-2017-agneet42]] - Sunkit-image
+* [[Sourav Kumar|GSOC-2017-Sourav]] - Sunpy Website Improvements
