@@ -257,23 +257,23 @@ We get a number of such array of tuples, each depicting a unique coronal loop.
 ### Community Bonding period (May 4 - May 29)
 My exams will already have been over by the time community bonding period starts, hence I can start coding right away. Though, I will have a lot of things to look into before I really start to code. Hence, this period will compromise of both getting to know better about the codebase and about successfully implementing MGN and NAFE. I specifically focus on achieving the first task in this period itself, so that I can get a head-start and meet all my other tasks well before deadline.
 My aims during this period are:
-+ Have the package repository setup, get CI and documentation running
-+ Get more familiar with the codebase, especially sunpy.coordinates module
-+ Start learning about writing tests, having a good hands-on experience before coding period starts
-+ Have successfully implemented MGN and NAFE
++ Have the package repository setup, get **CI** and **documentation running**
++ Get more familiar with the codebase, especially **sunpy.coordinates** module
++ Start learning about **writing tests*, having a good hands-on experience before coding period starts
++ Have successfully  **implemented MGN** and **NAFE**
 
-Though, it may look a little ambitious, I am confident of achieving this, since MGN and NAFE have already been implemented upto a great extent, and only a few tasks are remaining to be covered, which consits of a good documentation and few test cases to cover the code well.
+Though, it may look a little ambitious, I am confident of achieving this, since MGN and NAFE have already been implemented upto a great extent, and only a few tasks are remaining to be covered, which consists of a good documentation and few test cases to cover the code well.
 
 ---------
 #### Coding period begins
 ----------
 
 ### Week 1 (May 30 - Jun 5)
-This week will be given to convert sunpy.physics module to use sunpy.coordinates instead of sunpy.wcs. I have already attempted to do this in one of my PRs, and I am pretty familiar with coordinates, which will allow me to achieve this task easily within a week. I will further go about making minor changes in tests, so that it may pass, considering the changed codebase. 
+This week will be given to **convert sunpy.physics module to use sunpy.coordinates** instead of sunpy.wcs. I have already attempted to do this in one of my PRs, and I am pretty familiar with coordinates, which will allow me to achieve this task easily within a week. I will further go about making minor changes in tests, so that it may pass, considering the changed codebase. 
 ### Week 2 - Week 3 (Jun 6 - Jun 19)
 During this 2 week period, my aims will be to:
-+ Implement image warping for differential rotation
-+ Add suitable test cases
++ Implement **image warping** for differential rotation
++ Add suitable **test cases**
 
 Since I am not very clear about how I will go forward with this, I have given a good 2 week window to implement this functionality.
 ### Week 4  (Jun 20 - Jun 26)
@@ -283,22 +283,22 @@ This week will act as a **buffer period** for the work done so far.
 - It is not necessary that everything goes as planned out and there might be unavoidable
 delays due to a nasty bug hidden from eyesight. My target in this week will be to put a
 firm pencils down on work done so far - **updating documentation** and **code cleanup**.
-- Adding any missing test cases and bug fixing
+- Adding any missing test cases and **bug fixing**
 ----------
 #### Phase 1 Evaluation
 ----------
 ### Week 5 (Jun 27 - Jul 3)
 My aims for this week are to:
-- Successfully implement OCCULT-2 algorithm
-- Ability to easily extract coronal loops and store them in the object
+- Successfully implement **OCCULT-2 algorithm**
+- Ability to easily **extract coronal loops** and **store** them in the object
 - Plot the coronal loops back on a map (If time permits)
 
 I have a well though out plan for implementing this algorithm, and it can be well achieved in a week. If time permits, we can also have the loops successfully plotted back on a map. Otherwise, this will get carry forwarded to next week.
 ### Week 6 - Week 7 (Jul 4 - Jul 17)
 This 2 week period will consist of finalizing the OCCULT-2 algorithm, with running and base difference also implemented. My aims for this period are:
-- Functionality to plot the loops back on the map
-- Implementing running and base difference
-- Writing suitable test cases
+- Functionality to **plot the loops** back on the map
+- Implementing **running and base difference**
+- Writing suitable **test** cases
 
 I have given a good 2 week time for this, since I still have to research on running and base difference and persistence transform.
 ### Week 8  (Jul 18 - Jul 24)
@@ -310,15 +310,15 @@ This week will act as a **buffer period** for the work done so far.
 #### Phase 2 Evaluation
 ----------
 ### Week 9 - Week 10 (Jul 25 - Aug 7)
-This 2 week period will consist of wrapping up FLCT code. The C code of FLCT is over 2500 lines, and since I haven't done wrapping before, I cant foresee how much time I will require to wrap up the full code. Still, I expect it to be completed in the 2 week period. If it is not achieved successfully, the task will be carry forwarded to next week. 
+This 2 week period will consist of **wrapping up FLCT code**. The C code of FLCT is over 2500 lines, and since I haven't done wrapping before, I cant foresee how much time I will require to wrap up the full code. Still, I expect it to be completed in the 2 week period. If it is not achieved successfully, the task will be carry forwarded to next week. 
 ### Week 11 (Aug 8 - Aug 14)
 My aims for this week are to:
-- Wrap up complete FLCT code
-- Add suitable documentation
+- **Wrap** up complete FLCT code
+- Add suitable **documentation**
 
 ### Week 12 - Week 13 (Aug 15 - Aug 28)
   
-If everything goes well, I will have achieved my target till now. This 2 weeks and further, I will pick items from my wishlist to work upon. If any other improvements are needed which are even remotely connected to `sunkit-image`, I will be discussing it with mentors and picking it up. If not, I will be picking up a project or two that I have in mind.
+If everything goes well, I will have **achieved my target** till now. This 2 weeks and further, I will pick items from my wishlist to work upon. If any other improvements are needed which are even remotely connected to `sunkit-image`, I will be discussing it with mentors and picking it up. If not, I will be picking up a project or two that I have in mind.
 
 ---------
 #### GSoC period ends
@@ -332,24 +332,24 @@ Apart from the above mentioned schedule, I will be
 ## Software packages to be used:
 
 **Languages**: Python, Cython    
-**Modules** : skimage, pytest, 
+**Modules** : skimage, pytest
 
 ## How I propose to complete the project:
 
-I am pretty confident of completing this project because I have fairly good experience in python. I have worked on image-processing before, and am aware of the basic techniques used. I have done a good prior research on the tasks to be implemeneted over the summer.
+I am pretty confident of completing this project because I have fairly good experience in python. I have worked on image-processing before, and am aware of the basic techniques used. I have done a good prior research on the tasks to be implemented over the summer.
 I have a good prior experience with open source, and have a good command over git and github. I will be pushing my changes to my remote fork daily, so that mentors can evaluate my work whenever they have time. I will also keep updating my mentors over my progress both through chat and blog.
 
 Even after the GSoC coding period ends, I will be actively contributing to SunPy and be available if anybody has questions regarding my work.
 
 ## Benefits to the community:
-`Sunkit-image` is an external python package under SunPy, that will contain implementation of less used image processing algorithms. It may, at a later stage, be merged in the main SunPy repository. Algorithms, like OCCULT-2, will allow scientists to easily extract the coronal loops out of a map, and study it. Using sunpy.coordinates for differential rotation will allow users to input the coordinates in any system, and get back the output in the same system. More image-processing methods will be implemented in the future, and all will reside in this newly-built package.
+Sunkit-image is an external python package under SunPy, that will contain implementation of less used image processing algorithms. It may, at a later stage, be merged in the main SunPy repository. Algorithms, like OCCULT-2, will allow scientists to easily extract the coronal loops out of a map, and study it. Using `sunpy.coordinates` for differential rotation will allow users to input the coordinates in any system, and get back the output in the same system. More image-processing methods will be implemented in the future, and all will reside in this newly-built package.
 ## GSoC
 
 ### Have you participated previously in GSoC? When? Under which project?
 No, I have **not** participated in GSoC before. This is the first time I am participating in GSoC.
 
 ### Are you also applying to other projects?
-I am also applying for the project **Drms module for JSOC Downloads**, in the same organisation SunPy. I am **not** applying to any other organisation. 
+I am also applying for the project **Drms module for JSOC Downloads**, in the same organisation **SunPy**. I am **not** applying to any other organisation. 
 
 ### Commitments
 I may be involved in a short internship of 20 days from 10th May till 31st May. The work hours will be from 5:30 UTC - 11:30 UTC. Since, the internship will be over before the coding period starts, I won’t face any problem in managing my tasks. Even in the community bonding period (during my internship), I will be able to give 5-6 hours easily on understanding the codebase and discussing with the mentors, since I will be free for most of the day according to UTC time.
