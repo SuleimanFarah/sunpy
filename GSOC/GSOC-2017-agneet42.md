@@ -21,12 +21,12 @@
 
 The following are the Pull requests, Issues (both open and closed) I contributed to:
 
-1. **Updated Index.rst**(#2017) - DocFix to explicitly mention that Sunpy supports 2.7. and  3.4x.
-2. **Added Units Parameter**(#2027)- This PR dealt with adding a Units Parameter to the NDData being used in mapbase.py. As the Unit is instrument dependent it is to parsed from the FITS header in the factory for that particular instrument.
-3. **Added Checking of size of data and frequency axis**(#2028) - A function check_dimensions was added to check the length( because data and freq_axis are 1D Arrays) of the two quantities and return an error accordingly.
-4. **Removed extract_time**(#2029) - Removed the extract_time function as it dealt with things that weren’t dates, as dates. The change was made in time.py and the calling object along with the functon was removed. 
-5. **Use of loggers in place of print**(#2050) - The aim of this PR is to replace the print() function with loggers as it provides more information to the user, also giving them the opportunity to  choose what they want to see.
-6. **Spectrogram log y axis**(#2061) - This is a new feature in the plot() function of the Spectrogram Class in spectrogram.py. Changes are made to enable plotting of a log y axis using the colormesh function of matlplotlib.
+1. **Updated Index.rst**([#2017](https://github.com/sunpy/sunpy/pull/2017)) - DocFix to explicitly mention that Sunpy supports 2.7. and  3.4x.
+2. **Added Units Parameter**([#2027](https://github.com/sunpy/sunpy/pull/2027))- This PR dealt with adding a Units Parameter to the NDData being used in mapbase.py. As the Unit is instrument dependent it is to parsed from the FITS header in the factory for that particular instrument.
+3. **Added Checking of size of data and frequency axis**([#2028](https://github.com/sunpy/sunpy/pull/2028)) - A function check_dimensions was added to check the length( because data and freq_axis are 1D Arrays) of the two quantities and return an error accordingly.
+4. **Removed extract_time**([#2026](https://github.com/sunpy/sunpy/pull/2026)) - Removed the extract_time function as it dealt with things that weren’t dates, as dates. The change was made in time.py and the calling object along with the functon was removed. 
+5. **Use of loggers in place of print**([#2050](https://github.com/sunpy/sunpy/pull/2050)) - The aim of this PR is to replace the print() function with loggers as it provides more information to the user, also giving them the opportunity to  choose what they want to see.
+6. **Spectrogram log y axis**([#2061](https://github.com/sunpy/sunpy/pull/2061)) - This is a new feature in the plot() function of the Spectrogram Class in spectrogram.py. Changes are made to enable plotting of a log y axis using the colormesh function of matlplotlib.
 
 
 ### Work and Open Source Experience : 
@@ -111,7 +111,7 @@ The difference schemes are also mentioned along with the image/s.
 
 ### Post GSoC goals: 
 
-* _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf) ) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we’ll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ( [link](https://docs.python.org/2/c-api/) ).
+* _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf) ) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we’ll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ( [link](https://docs.python.org/2/c-api/) ) and Cython.
 
 * _Implement image alignment using feature detection and tracking_ : To be implemented off this paper( [link](https://www.robots.ox.ac.uk/~vgg/rg/papers/CalonderLSF10.pdf) ) .  The BRIEF binary descriptor uses the fact that  that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons. It simply  creates a bit vector out of the test responses, which are computed after having smoothed the image patch.
 
