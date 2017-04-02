@@ -9,7 +9,7 @@
 * IRC Handle: abit2 
 * Github ID: [abit2](https://github.com/abit2)  
 * Instant Messaging: Google Hangout (ankit.baruah1@gmail.com)  
-
+* Blog: [https://medium.com/@ankit_b](https://medium.com/@ankit_b)
 ### 2. Education
 Currently, I'm a third year undergraduate enrolled in Computer Science & Engineering at Indian Institute of Technology, Kharagpur, West Bengal.
 
@@ -115,12 +115,18 @@ Presently it will be implemented on sunpycube package, it may change depending o
 
 The problem we are trying to solve is that there is a series of maps in a SJI file which requires a class that can store the wcs, meta and data, and also has necessary tools for analysis and visualisation. The IRISSJI class will solve this problem and enable users to do different operations like analysis and visualisation.
 
-Making changes to the sunpycube and Implementing IRISSJI class (2 week)
-Implement Visualisation and other tools for analysis (2 weeks)
+Making changes in the sunpycube (atmost 1 week). I think I will save 2-3 days here.
+
+Making the class of IRISSJI with init and preprocessing the data and a few basic functions (1 week).
+
+Implementing the tools for analysis like changing to physical units, calibration and truncting the data. The list of desired tools will be discussed with the mentors. (1 weeks).
+
+Visualisation, animation and calibration tools. These will require some assistance from my mentors as visualisation seems to be a bit tricky to calibrate. (1 week)
 
 ### 26th June - 30th June (5 days, Phase 1 evaluation)
 
 I will specifically concentrate on writing tests, documentation and fixing bugs.
+I shall write documentation, examples and write tests for the functions and class that I have still to write for (I will mostly be writing tests, documentation and fixing bugs as I write them).
 
 
 ### 30th June - 24th July (3 weeks, 2 days)
@@ -128,7 +134,13 @@ I will specifically concentrate on writing tests, documentation and fixing bugs.
 Improving on the present code of IRISRaster class. This will involve implementing different tools for visualisation and analysis. This will involve implementing different functionalities like truncating data, plotting, making movies and having different calibration tools like residual wavelength calibration, converting DN to some physical units. The class is presently being implemented using Xarray, may change depending on the needs of the project to be discussed in the course of the project.
 This will enable user to create the raster objects with raster files and make analysis on the data using the tools provided.
 
-There is a list of desired functionalities ([link](https://github.com/sunpy/irispy/wiki/Requirements%5CWishlist-for-an-IRIS-Raster-Object)) this desired requirements will be met.
+The wishlist of the functionalities for IRIS-Raster Object will include function that will enable users to truncate data and calibrate. The requirements of different tools will be given by the IRIS team in the ([link](https://github.com/sunpy/irispy/wiki/Requirements%5CWishlist-for-an-IRIS-Raster-Object)).
+
+Improving on the present code like supporting the sit and stare observation (atmost 3-4 days, If we use the present code to develop).
+
+Writing tools for calibration, tools to convert to physical unit, rotation. (8-10 days).
+
+Visualisation and animation tools for analysis. This will require help of mentors to know if there is need for calibration.(9-10 days).
 
 
 ### 24th July - 28th July (4 days, Phase 2 evaluation)
@@ -139,6 +151,12 @@ Writing tests, documentation and fixing bugs. Discussing with mentors about the 
 
 Developing the IRISObservation class. This will require to store both SJI and raster in this class.
 It will be able to open 3 level fits files and enable users to view the data of his/her choice. This makes it possible to analyse slit-jaw images and spectra and explore there association. The approach of implementing this class has not yet been decided, the implementation details will be discussed in the future meetings and chats with the mentors. 
+
+Implementing a class to store the IRISSJI and IRISRaster object. Also able to open 3 level IRIS fits file. (10 days).
+
+Developing tools and abstracting the already present functions of the IRISRaster and IRISSJI class.(3-4 days).
+
+Developing the tools for associating and analysing the level 3 data. (1 week) 
 
 ### 21st August - 29th August (1 week Students submit their final work product and their final mentor evaluation)
 Clean up code, Improve documentation and resolve merge conflicts (if any)
