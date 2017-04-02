@@ -11,19 +11,19 @@
 * Academic Year: 2nd
 ### Brief Bio:-
 
-I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, I have practice in _HTML_/_CSS_, _Bootstrap_, _JavaScript_, _PHP_ and _MySQL_. My favorites are _JavaScript_ and front-end development with _Bootstrap_.
+I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, I have practice in `HTML`/`CSS`, `Bootstrap`, `JavaScript`, `PHP` and `MySQL`. My favorites are `JavaScript` and front-end development with `Bootstrap`.
 
 I have put up some of my work on Github as **live** websites:-
 You can have a look at them [here](https://souravc4.github.io/my_demo/), [here](https://souravc4.github.io/hh_demo/) and [here](https://souravc4.github.io/ray_demo/).
 ***
 ## My contributions
-I have been working on the Sunpy's website Github repository over the past few weeks, during this time i have figured out the overall structure of the website, built using the static site generator _Jekyll_, and how it facilitates code(html/css/javascript) sharing with the use of specialized folders like _layouts and _includes to turn content into static pages with predefined templates. I have worked on issues and improvements to the website with the understanding of the model and design of Jekyll and its way to implement them. Having this knowledge,i've already suggested several changes to the website with most of them being _structural_ in nature. They are from the _merged_ pull [#70](https://github.com/sunpy/sunpy.github.io/pull/70)
+I have been working on the Sunpy's website Github repository over the past few weeks, during this time i have figured out the overall structure of the website, built using the static site generator _Jekyll_, and how it facilitates code(html/css/javascript) sharing with the use of specialized folders like `_layouts` and `_includes` to turn content into static pages with predefined templates. I have worked on issues and improvements to the website with the understanding of the model and design of Jekyll and its way to implement them. Having this knowledge,i've already suggested several changes to the website with most of them being _structural_ in nature. They are from the _merged_ pull [#70](https://github.com/sunpy/sunpy.github.io/pull/70)
 * commit [84a0a0f](https://github.com/sunpy/sunpy.github.io/pull/70/commits/84a0a0f969a7ce2c955e7e752cffcb050053ceb9) : This pertains to the issue [Too big headings on Mobile #13](https://github.com/sunpy/sunpy.github.io/issues/13)
-* commit [aabb509](https://github.com/sunpy/sunpy.github.io/pull/70/commits/aabb5091b1250459e2461d64932db85c18ac111b) : This removes extra padding around **h1[id]** tags in _Contribute_ and _About_ sections of the website and makes the posts look neater/concise.
-* commit [e5c0dbe](https://github.com/sunpy/sunpy.github.io/pull/70/commits/e5c0dbe0c4611c91ac57127f8867cfd61dba67d9) : This commit is about the lists on the **navbar** of _Contribute_ and _About_ not syncing with their corresponding posts.
-* commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) : Credit for this idea goes to @Cadair, who suggested that instead to hard-coding the version number of the current stable in the home page of the site, find a way to fetch it automatically from **PyPI**. So i used a made a _jQuery_ that uses a _JSON_ request to the Python Package Index to get the version number automatically. Thus there's no need to update it manually.
+* commit [aabb509](https://github.com/sunpy/sunpy.github.io/pull/70/commits/aabb5091b1250459e2461d64932db85c18ac111b) : This removes extra padding around `h1[id]` tags in _Contribute_ and _About_ sections of the website and makes the posts look neater/concise.
+* commit [e5c0dbe](https://github.com/sunpy/sunpy.github.io/pull/70/commits/e5c0dbe0c4611c91ac57127f8867cfd61dba67d9) : This commit is about the lists on the `navbar` of _Contribute_ and _About_ not syncing with their corresponding posts.
+* commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) : Credit for this idea goes to @Cadair, who suggested that instead to hard-coding the version number of the current stable in the home page of the site, find a way to fetch it automatically from **PyPI**. So i used a made a `jQuery` that uses a `JSON` request to the Python Package Index to get the version number automatically. Thus there's no need to update it manually.
 
-With the grasp of the current code base(the above structural changes may depict it), i believe it'll be convenient for me to get started with revamp of the website as soon as coding starts.
+With the grasp of the current code base(_the above structural changes may depict it_), i believe it'll be convenient for me to get started with revamp of the website as soon as coding starts.
 
 ***
 # Project Proposal
