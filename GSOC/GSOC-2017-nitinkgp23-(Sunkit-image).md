@@ -76,10 +76,12 @@ This project deals with creating an entirely new package named Sunkit-image, whi
 
     + The code breaks when a cut-out image of the sun is given as input.
     + The code breaks when a single value of sigma is given as input instead of a list.
+    + NANs are not handled properly
+    + Multiprocessing is not supported
     + No good documentation exists for the code, and nor a proper use case.
     + There is no meaningful test case to cover the code.
 
-    
+    NAFE has already been implemented [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/nafe.py) by Eric. This code needs to be rigorously tested and ported to sunkit-image.    
 2. **Solar Differential Rotation to use sunpy.coordinates**
 
     Differential Rotation is an important, yet poorly understood concept in solar physics. A lot of its research is based on observational data, hence it is extremely important which coordinate system we are using to express the data. The Howard, Allen and Snodgrass rotation types calculate values based on heliographic coordinates.The most common coordinate system used in solar analysis is Helioprojective coordinates, hence, we have a direct function `rot_hpc()` that takes `latitude` and `longitude` as parameters and returns the new `latitude` and `longitude`. The problems with the current code are:
@@ -90,7 +92,15 @@ This project deals with creating an entirely new package named Sunkit-image, whi
     The modification of the above module to use `sunpy.coordinates` is highly recommended because it will make it easier to reproject coordinates from different points of view. Storing the coordinate values in a SkyCoord object will make it very easy to interchange between different coordinate systems without effort.
 
 3. **Implement image warping in Solar differential rotation**
+    Some work has already been done by wafels in his [branch](https://github.com/wafels/sunpy/tree/ji_diffrot_fixes/sunpy) regarding implementation of image warping. This part of the project will take the work ahead. A few points that are specifically to be added are:
+    + Add unit test for the function `_warp_sun()`
+    + Add the rotation time to the new map 
+This may require addition of a new keyword in Map or `peek()` method has to be updated to show the rotation time.
+    + Work out how to update the coordinates mostly in the case of diff-rotating a not full-disk image
+    + Handling of NaNs and infs in the map
+    + Allow to use the B0 and P angles from the maps if available
 
+    This part of the project requires further research and careful look into previous work done by gbear, dpshelio and wafels. 
 4. **Implement Occult-2 algorithm to perform coronal loop tracing**
 
     Coronal loops are bright, curving structures that appear as arcs above the sun's surface. Study of the coronal loops are important, because it is one of the keys to solve and understand the sun's atmosphere in a greater detail. The Oriented Coronal CUrved Loop Tracing (OCCULT) code is a pattern recognition code, that extracts magnetised loops from the images of solar corona, with the aim of optimum completeness. We propose to implement the OCCULT-2 algorithm (a modified version of OCCULT), that will extract the coronal loops from the solar images and trace it on a Map object.
@@ -110,8 +120,14 @@ We get a number of such array of tuples, each depicting a unique coronal loop.
 
     A two-dimensional search algorithm will have a computation time that will grow with the square of the image-size, hence our strategy will be to extract the loops in a one-dimensional search algorithm. Apart from the one-dimensional parameter S<sub>k</sub> , we use two other parameters A<sub>l</sub> (Local direction angle) and R<sub>m</sub> (Curvature radius). After selecting the brightest point from the image (X<sub>0</sub>,Y<sub>0</sub>) and using these 3 parameters, we continue tracing the loop following the principle of **Orientation-guided tracing**.    
 
-5. **Implement running and base difference functionality and the persistence transform**   
+5. **Implement running and base difference functionality and the persistence transform**    
+    Coronal loops oscillation event was observed for the first time on October 16, 2010. The oscillating loop is discernible as a faint semi- circular structure in the logarithmically scaled intensity image. Since the background is time variable, it poses a serious challenge for the exact measurements of oscillation parameters. To enhance the best contrast, a number of time difference schemes can be applied. This part of the project aims at implementing four different running schemes :
+    - Baseline difference
+    - One-sided running difference
+    - Symmetric running difference
+    - Minimum runnnig difference
 
+    All these enhancement methods have their own pros and cons, hence it is important to implement all of them. This part requires a detailed study of the paper, and related online journals, and a thorough discussion with the mentors.
 6. **Wrapping FLCT code**
 
     FLCT (Fourier Local Correlation Tracking) is a technique to find a 2-D velocity field, from which an initial image is evolved into a second image after a time delta t. This helps in giving a proper mathematical expression to the change or the shift in different pixels all over the image. In other words, it is useful for tracking certain features on a map, over a timeseries. This technique described [here][9], has already been implemented in SSL, in both IDL and C. This proposal will implement a python wrapper around the already built C code, so that the already implemented C code can be used from SunPy, which is built in python.
@@ -119,6 +135,8 @@ We get a number of such array of tuples, each depicting a unique coronal loop.
     The [C code][10] for **FLCT** is over 2500 lines, and is much faster than its IDL counterpart, and will be performing much faster than its Python version (if the code is plainly translated). A better solution to this problem is developing a Python wrapper around the already built C code, using `Cython`. This will offer several advantages, other than maintaining the running speed of the algorithm. `Cython` can act as a perfect bridge between C and Python, and allow modifying the C code accordingly, to extract the best of both the languages.
 
 ## Implementation
+
+The two  main parts of the project Differential Rotation and Occult-2 algorithm's implementation has been described below. Other parts of the project like MGN have already been implemented to a great extent, hence I am not describing them here.
 
 1. **Differential Rotation**    
 
@@ -259,7 +277,7 @@ My exams will already have been over by the time community bonding period starts
 My aims during this period are:
 + Have the package repository setup, get **CI** and **documentation running**
 + Get more familiar with the codebase, especially **sunpy.coordinates** module
-+ Start learning about **writing tests*, having a good hands-on experience before coding period starts
++ Start learning about **writing tests**, having a good hands-on experience before coding period starts
 + Have successfully  **implemented MGN** and **NAFE**
 
 Though, it may look a little ambitious, I am confident of achieving this, since MGN and NAFE have already been implemented upto a great extent, and only a few tasks are remaining to be covered, which consists of a good documentation and few test cases to cover the code well.
