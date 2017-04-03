@@ -91,7 +91,8 @@ This project deals with creating an entirely new package named Sunkit-image, whi
 
     The modification of the above module to use `sunpy.coordinates` is highly recommended because it will make it easier to reproject coordinates from different points of view. Storing the coordinate values in a SkyCoord object will make it very easy to interchange between different coordinate systems without effort.
 
-3. **Implement image warping in Solar differential rotation**
+3. **Implement image warping in Solar differential rotation**    
+
     Some work has already been done by wafels in his [branch](https://github.com/wafels/sunpy/tree/ji_diffrot_fixes/sunpy) regarding implementation of image warping. This part of the project will take the work ahead. A few points that are specifically to be added are:
     + Add unit test for the function `_warp_sun()`
     + Add the rotation time to the new map 
