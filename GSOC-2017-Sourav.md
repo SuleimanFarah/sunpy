@@ -46,14 +46,16 @@ The Blog section provides a place for posting relevant updates related to SunPy 
 * So I would implement a *comments mechanism* for blog posts. My initial suggestion is to use *Disqus*- it's a popular comment hosting service which is easily implemented and can also be customised.
 * Next on my agenda will be to feature in Blog *author attributes* alongside posts which is currently lacking. This helps in providing a quick referral to the author- providing a Github link can be one good way. It can also be easily implemented by either storing author's information in `.yml` file and linking details to post.html or having the same information in a `JSON` file and parsing it in compile time. I would rather go with the previous method since the use of *liquid* plugin might create issues if we use Github hosting.
 * Other structural changes to Blog section will be implementing *categorization of posts*-it'll help in easy browsing of posts if we create *custom* post types, and finally division of blog directory into *sub-directories* will help in maintenance.
-* _A sample demo of the Blog page which I made is [Blog Demo](https://souravc4.github.io/blog_demo/)_.
+* _A sample live demo of the Blog page which I made is [Blog Demo](https://souravc4.github.io/blog_demo/)_.
+* screenshots of above demo are![blog screenshot](https://github.com/souravc4/sunpy_screenshots/blob/master/blog1.png?raw=true)![screenshot 2](https://github.com/souravc4/sunpy_screenshots/blob/master/blog2.png?raw=true)
 
 ### About Section
 
 Besides detailing information about the SunPy project, the organization and various channels to interact with the community, I want to:-
 * Set-up a *registry of SunPy affiliated packages* and put it up on the _About_ section of the website. This section will list procedures for requesting affiliated package status and steps to install them. The fresh feature that i will bring to this section is that after a package has been granted affiliate status, the administrator will just need to mention them in a file and all the package related information(package-name, latest stable, repo. address, maintainer etc.) will be fetched from _Python Package Index_ with use of *javascript/jQuery by a JSON request*. Thus, it eliminates manual updating of information and consequently needs negligible maintenance. I have already implemented a similar feature in my commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) which updates SunPy version number automatically on the home page, and I hope to take it to the next level in About section.
 * _About_ section will also contain information about the SunPy organization, channels to interact with the community and acknowledgements or citations for work. 
-* _A sample demo website which I have made for _About_ section using `AngularJS` and `jQuery` to update and fetch package data in real time is_:-> [About Demo](https://souravc4.github.io/about_demo/).
+*  _A live implementation of dynamic package information fetching using `AngularJS` and `jQuery`_ :-> [About Demo](https://souravc4.github.io/about_demo/).
+* screenshot of above is ![about demo](https://github.com/souravc4/sunpy_screenshots/blob/master/about1.png?raw=true) 
 
 ### Back-end
 
@@ -71,6 +73,7 @@ I'll build the documentation theme corresponding to the main website, the focus 
 * Also there is no mention of installation procedure(s) on the home page itself which I think is a big downside as currently users are directed to [docs.sunpy.org](http://docs.sunpy.org/) which is not convenient at all.
 * A _search bar_ will be implemented which will be available across all the pages is the navigation bar section. But its functionality will be limited to searching within the _documentation_.
 * _A live demo of the home page which I have designed is_:-> [Home Demo](https://souravc4.github.io/home_demo/).
+* screenshot of above is ![home demo](https://github.com/souravc4/sunpy_screenshots/blob/master/home1.png?raw=true)
 
 ### Documentation
 The current _Read the Docs_ theme is dull to say the least, moreover, it does not match the theme of the main website.
