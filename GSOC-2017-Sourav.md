@@ -11,13 +11,13 @@
 * Academic Year: 2nd
 ### Brief Bio:-
 
-I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, I have practice in `HTML`/`CSS`, `Bootstrap`, `JavaScript`, `PHP` and `MySQL`. My favorites are `JavaScript` and front-end development with `Bootstrap`.
+I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, i am proficient in `HTML`/`CSS`, `Bootstrap`, `JavaScript`, `PHP` and `MySQL`. My favorites are `JavaScript` and front-end development with `Bootstrap`.
 
 I have put up some of my work on Github as **live** websites:-
 You can have a look at them [here](https://souravc4.github.io/my_demo/), [here](https://souravc4.github.io/hh_demo/) and [here](https://souravc4.github.io/ray_demo/).
 ***
 ## My contributions
-I have been working on the Sunpy's website Github repository over the past few weeks, during this time i have figured out the overall structure of the website, built using the static site generator _Jekyll_, and how it facilitates code(html/css/javascript) sharing with the use of specialized folders like `_layouts` and `_includes` to turn content into static pages with predefined templates. I have worked on issues and improvements to the website with the understanding of the model and design of Jekyll and its way to implement them. Having this knowledge,i've already suggested several changes to the website with most of them being _structural_ in nature. They are from the _merged_ pull [#70](https://github.com/sunpy/sunpy.github.io/pull/70)
+I have been working on the Sunpy's website Github repository over the past few weeks, during this time i have figured out the overall structure of the website, built using the static site generator _Jekyll_, and how it facilitates code(html/css/javascript) sharing with the use of specialized folders like `_layouts` and `_includes` to turn content into static pages with predefined templates. I have worked on issues and improvements to the website with the understanding of the model and design of Jekyll and its way to implement them. Having this knowledge,i've already suggested several changes to the website with most of them being _structural_ in nature. They are from the _merged_ pull [#70](https://github.com/sunpy/sunpy.github.io/pull/70).
 * commit [84a0a0f](https://github.com/sunpy/sunpy.github.io/pull/70/commits/84a0a0f969a7ce2c955e7e752cffcb050053ceb9) : This pertains to the issue [Too big headings on Mobile #13](https://github.com/sunpy/sunpy.github.io/issues/13)
 * commit [aabb509](https://github.com/sunpy/sunpy.github.io/pull/70/commits/aabb5091b1250459e2461d64932db85c18ac111b) : This removes extra padding around `h1[id]` tags in _Contribute_ and _About_ sections of the website and makes the posts look neater/concise.
 * commit [e5c0dbe](https://github.com/sunpy/sunpy.github.io/pull/70/commits/e5c0dbe0c4611c91ac57127f8867cfd61dba67d9) : This commit is about the lists on the `navbar` of _Contribute_ and _About_ not syncing with their corresponding posts.
@@ -34,7 +34,7 @@ So why does Sunpy need a quality website? The answer is twofold:
 
 But the current website is ineffective on both parameters. The overall look of the website is very unappealing, it appears outdated and uninteresting. The need has come to give it a modern look viz. crisp design, larger font sizes, bright colors and overall catchy/attractive outlook. I'll combine it with distinctive javascript effects/animations to make a consistent professional theme.
 
-The home page is lacking in essential components like a _Installation_ section, proper weight is not given to _Documentation_ and _Blog_ sections which is a necessity for community sourced products.
+The home page is lacking in essential components like a _Installation_ section on the home page itself, proper weight is not given to _Documentation_ and _Blog_ sections which is a necessity for community sourced products.
 
 Through my proposal , I want to layout a comprehensive plan to revamp the website to not only make the UI user-friendly and attractive but also professional looking and scalable across devices. Therefore i propose to not only revamp the original components but also add some features which i think will make the website fruitful.
 ## Featured Components and their Implementation
@@ -51,7 +51,7 @@ The Blog section provides place for posting relevant updates related to SunPy an
 Besides detailing information about the SunPy project, the organization and various channels to interact with the community, I want to:-
 * Set-up a **registry of SunPy affiliated packages** and put it up on the _About_ section of the website. This section will list procedures for requesting affiliated package status and steps to install them. The fresh feature that i will bring to this section is that after a package has been granted affiliate status, the administrator will just need to mention them in a file and all the package related information(package-name, latest stable, repo. address, maintainer etc.) will be fetched from _Python Package Index_ with use of **javascript/jQuery by a JSON request**. Thus, it eliminates manual updating of information and consequently needs negligible maintenance. I have already implemented a similar feature in my commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) which updates SunPy version number automatically on the home page, and i hope to take it to the next level in About section.
 * _About_ section will also contain information about the SunPy organization, channels to interact with the community and acknowledgments or citations for work. 
-* A sample live website which i have created for _About_ section is [here](https://souravc4.github.io/about_demo/).
+* _A sample demo website which i have made for _About_ section using `AngularJS` to update and fetch package data in real time is_:-> [About Demo](https://souravc4.github.io/about_demo/).
 
 ### Back-end
 
@@ -68,8 +68,7 @@ I'll build the documentation theme corresponding to the main website, focus will
 * A flaw in the home page of the site is the absence of weight given to components based on their priority. Therefore i have selected three sections which require maximum attention on the home page – “_Installation_”, “_Documentation_”, and “_Contribute*_”. These are based on my discretion and i am open to changes in consultation with mentors. 
 * Also there is no mention of installation procedure(s) on the home page itself which i think is a big downside as currently users are directed to [docs.sunpy.org](http://docs.sunpy.org/) which is not convenient at all.
 * A _search bar_ will be implemented which will be a available across all the pages is the navigation bar section. But its functionality will be limited to searching within the _documentation_.
-
-Live demo of the home page which I have designed is [here](https://souravc4.github.io/home_demo/).
+* _A live demo of the home page which I have designed is_:-> [Home Demo](https://souravc4.github.io/home_demo/).
 
 ### Documentation
 The current _Read the Docs_ theme is dull to say the least, moreover it does not match with the theme of the main website.
