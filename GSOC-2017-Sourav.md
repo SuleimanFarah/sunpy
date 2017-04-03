@@ -11,7 +11,7 @@
 * Academic Year: 2nd
 ### Brief Bio:-
 
-I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, i am proficient in `HTML`/`CSS`, `Bootstrap`, `JavaScript`, `PHP` and `MySQL`. My favorites are `JavaScript` and front-end development with `Bootstrap`.
+My name is Sourav Kumar, a sophomore at BITS Pilani Goa. I love Web Development, i have been practicing it for over a year now and am proficient in both front-end and back-end. To list the languages, i am proficient in `HTML`/`CSS`, `Bootstrap`, `JavaScript`, `PHP` and `MySQL`. My favorites are `JavaScript` and front-end development with `Bootstrap`.
 
 I have put up some of my work on Github as **live** websites. To demonstrate a few :-
 * [_project](https://souravc4.github.io/my_demo/)
@@ -23,7 +23,7 @@ I have been working on the Sunpy's website Github repository over the past few w
 * commit [84a0a0f](https://github.com/sunpy/sunpy.github.io/pull/70/commits/84a0a0f969a7ce2c955e7e752cffcb050053ceb9) : This pertains to the issue [Too big headings on Mobile #13](https://github.com/sunpy/sunpy.github.io/issues/13)
 * commit [aabb509](https://github.com/sunpy/sunpy.github.io/pull/70/commits/aabb5091b1250459e2461d64932db85c18ac111b) : This removes extra padding around `h1[id]` tags in _Contribute_ and _About_ sections of the website and makes the posts look neater/concise.
 * commit [e5c0dbe](https://github.com/sunpy/sunpy.github.io/pull/70/commits/e5c0dbe0c4611c91ac57127f8867cfd61dba67d9) : This commit is about the lists on the `navbar` of _Contribute_ and _About_ not syncing with their corresponding posts.
-* commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) : Credit for this idea goes to @Cadair, who suggested that instead to hard-coding the version number of the current stable in the home page of the site, find a way to fetch it automatically from **PyPI**. So i used a made a `jQuery` that uses a `JSON` request to the Python Package Index to get the version number automatically. Thus there's no need to update it manually.
+* commit [bf0ff96](https://github.com/sunpy/sunpy.github.io/pull/70/commits/bf0ff96d49607969f817d002a54eb02175efc040) : Credit for this idea goes to @Cadair, who suggested that instead to hard-coding the version number of the current stable in the home page of the site, find a way to fetch it automatically from *PyPI*. So i used a made a `jQuery` that uses a `JSON` request to the Python Package Index to get the version number automatically. Thus there's no need to update it manually.
 
 With the grasp of the current code base(_the above structural changes may depict it_), i believe it'll be convenient for me to get started with revamp of the website as soon as coding starts.
 
@@ -44,7 +44,7 @@ Through my proposal , I want to layout a comprehensive plan to revamp the websit
 ### Blog Section
 The Blog section provides place for posting relevant updates related to SunPy and its research, this can also be the place to post and discuss scientific work or anything that the scientific community finds intriguing and worth sharing with the community. 
 * So i would implement a *comments mechanism* for blog posts. My initial suggestion is to use *Disqus*- it's a popular comment hosting service which is easily implemented and can also be customized.
-* Next on my agenda will be to feature in Blog *author attributes* alongside posts which is currently lacking. This helps in providing quick referral to the author- providing a Github link can be one good way. It can also be easily implemented by either storing authors information in .yml file and linking details to post.html or having the same information in a JSON file and parsing it in compile time. I would rather go with the previous method since the use of *liquid* plugin might create issues if we use Github hosting.
+* Next on my agenda will be to feature in Blog *author attributes* alongside posts which is currently lacking. This helps in providing quick referral to the author- providing a Github link can be one good way. It can also be easily implemented by either storing authors information in `.yml` file and linking details to post.html or having the same information in a `JSON` file and parsing it in compile time. I would rather go with the previous method since the use of *liquid* plugin might create issues if we use Github hosting.
 * Other structural changes to Blog section will be implementing *categorization of posts*-it'll help in easy browsing of posts if we create *custom* post types, and finally division of blog directory into *sub-directories* will help in maintenance.
 * _A sample demo of the Blog page which i made is [Blog Demo](https://souravc4.github.io/blog_demo/)_.
 
@@ -59,7 +59,7 @@ Besides detailing information about the SunPy project, the organization and vari
 
 Since i believe that the intent of the website should be to require *minimal maintenance*, i don't think use of server-side languages/frameworks like PHP/MySQL would be a good idea. Jekyll requires very less maintenance since there's no database to maintain and the framework takes it upon itself to do the heavy-lifting of rendering blogs/posts in desired way, you just need to follow the proper conventions and even things like custom organization of posts can be done with ease. Moreover since Github provides _static_ site hosting, server-side scripting languages like PHP won't work. 
 * That said i am still open to using dedicated server side frameworks in making the backend of website. I have decent understanding and practice in both _PHP_ and _MySQL_. Another option will be to use _Django_ -(Python based backend framework). It has a very strong community to support it and its library support and update policies makes it an excellent choice. Although i haven't made a web-app with Django before, i'll love to learn it and make the best use of it.
-* Similar is the case with the backend regarding _comments_ functionality that i propose to have in _Blog_ section of the website, although _Disqus_ provides proper comment hosting feature, using login/register _OAuth 2.0_ will certainly provide **robust** administration of comment system like deleting comments, banning users etc. It must be noted that all these features will come with a tad bit of maintenance ,so before making any decision about it, i will take advice from mentors/community.
+* Similar is the case with the backend regarding _comments_ functionality that i propose to have in _Blog_ section of the website, although _Disqus_ provides proper comment hosting feature, using login/register _OAuth 2.0_ will certainly provide *robust* administration of comment system like deleting comments, banning users etc. It must be noted that all these features will come with a tad bit of maintenance ,so before making any decision about it, i will take advice from mentors/community.
 * Once these things are setup, i'll work towards making the _Documentation_ with _Sphinx_ which is a documentation generator built on python. It provides convenient way to create good-looking documentation by converting `RST` files into _HTML_ pages.
 I'll build the documentation theme corresponding to the main website, focus will be on giving it a professional effect with proper color-scheming to look attractive as well. This theme can be reused by SunPy's affiliated packages in future.
 
@@ -88,7 +88,7 @@ The motivation behind having a python based static-site generator is to use the 
 3. **Creating Question and Answer Forum:** _(Optional)_
 If time permits i propose to make a Q&A section. I believe it will be a welcome addition to website as it will help to address common queries. I have thought of the following two systems to implement it:-
 (a) Creating a set of predefined questions and answers and implementing _Disqus_ as comment mechanism to have further discussion on any particular topic. As you can see it will be a very minimal version of a Q&A section but on the other hand will require least intervention/maintenance.
-(b) Although i prefer the previous method, if the mentors are of the view to go for full-fledged system, _AskBot_ (a Django) package can be implemented. [https://askbot.com/](https://askbot.com/) || [Github repo](https://github.com/ASKBOT/askbot-devel)
+(b) Although i prefer the previous method, if the mentors are of the view to go for full-fledged system, _AskBot_ (a Django) package can be implemented. [https://askbot.com/](https://askbot.com/) | [Github repo](https://github.com/ASKBOT/askbot-devel)
 
 ## Timeline
 
@@ -105,7 +105,7 @@ regarding following points:- **1.** Whether the backend be designed with current
 * **27th June - 13th July**:  **1.** Create the new documentation theme using _Sphinx_ **2.** Make PRs for changes to the website(_not documentation_). **3.** Begin work on porting the _Jekyll_ website to _Nikola_.
 
 ***
-* **14th July - 24th July**: _Till second phase evaluation_ :  **1.** Complete new website based on _Nikola_ and PRs for the same **2.** Take another feedback on the latest website based on _Nikola_ with the newer theme from mentors and community. **3.** Begin work on creating the Q&A forum section. 
+* **14th July - 24th July**: _Till second phase evaluation_ :  **1.** Complete new website based on _Nikola_ and PRs for the same **2.** Take another feedback on the latest website based on _Nikola_,with the newer theme, from mentors and community. **3.** Begin work on making the Q&A forum section. 
 
 ***
 * **25th July - 29th August**: _Final Submission_ : **1.** Complete the Q&A forum section **2.** Check for bugs/issues in new website through proper testing. **3.** Provide completed website for submission .
