@@ -18,15 +18,12 @@ More information about [installation](http://docs.sunpy.org/en/stable/guide/inst
 SunPy has participated successfully in both the ESA Summer of Code (ESOC) and the Google Summer of Code (GSOC) Programs.
 
 ## GSOC 2017
+* [GSoC Ideas](http://openastronomy.org/gsoc/gsoc2017/)
 * [[GSoC 2017 Students applications]]
 
-## GSOC 2016
-* [[GSOC 2016 Ideas Page]]
-* [[GSoC 2016 Students applications]]
-
-## ESA's SOCIS 2016
-* [[SOCIS 2016 Ideas Page]]
-* [[SOCIS 2016 Student Applications]]
+## ESA's SOCIS 2017
+* [[SOCIS 2017 Ideas Page]]
+* [[SOCIS 2017 Student Applications]]
 
 Past Programs
 
