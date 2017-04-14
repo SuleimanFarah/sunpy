@@ -454,6 +454,11 @@ Implements the design of the registry of Affiliated Packages.
 [https://github.com/prateekiiest/sunpy_myrepo/blob/master/Recipe%20book.pdf Design Slide PDF]
 
 The design is not final and is bound to change upon mentor's decision.
+
+
+Recently I tried implementing the website design here
+[https://prateekiiest.github.io/ Sunpy Website at prateekiiest.github.io]
+
 -----------
 
 === Software Packages to be used ===   
