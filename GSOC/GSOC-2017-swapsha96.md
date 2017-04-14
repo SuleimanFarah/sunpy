@@ -119,3 +119,5 @@ Currently I am working on Space Telescope Science Institute, Maryland (STScI) pr
 [Unable to run sunpy.net.helio.HECClient().get_table_names(...) in Py3.x #2043](https://github.com/sunpy/sunpy/issues/2043)
 
 [Map units parameter is None #1753](https://github.com/sunpy/sunpy/issues/1753)
+
+[Error handling in break_time](https://github.com/sunpy/sunpy/pull/2074)
