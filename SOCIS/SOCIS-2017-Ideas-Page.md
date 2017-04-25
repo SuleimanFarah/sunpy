@@ -1,3 +1,33 @@
+### X-ray Synthesis Imaging
+
+*Suggested Mentor(s):* [Shane Maloney](),
+
+*Difficulty:* Intermediate/Advanced
+
+*Astronomy knowledge needed:* Fourier Transform
+
+*Programming skills:* Python, 
+
+#### Description
+X-ray synthesis imaging is dependent upon deconvolution algorithms to counteract the sparse sampling in the Fourier plane. Synthesis imaging is often associated with large radio interferometric arrays but has also been used in X-rays. Specifically in the solar context in the past with Yohkoh/HXT, currently with RHESSI and in the future with  Solar Orbiter/STIX. Numerous algorithms with different methodologies have been developed to solve this deconvolution problem. The objective of this project would be to provide high-level access to generalised algorithms such as:
+* CLEAN
+* Multiscale CLEAN
+* MEM
+* PIXON. 
+This could be accomplished by creating pure python implementations (preferred), creating wrappers around existing implementations or a combination of both. This would facilitate the comparison of the existing methods as well as any new methods, it would also allow for ensemble reconstructions in the future.
+
+**Expected Outcomes**
+
+At the conclusion of this project the community will have access to the image reconstruction algorithms through FOSS in python.
+
+Someone undertaking this project will specifically complete the following:
+1. Create suitable representation for generalised visibilities 
+1. Implement CLEAN
+1. Integrate the resulting images with the existing SunPy `sunpy.map.Map` object
+1. Investigate implementation of advanced method(s).
+
+A successful proposal will demonstrate that the applicant has understood the project and present tasks and timeline for the its completion .
+
 ### Lightcurve Refactor
 
 *Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Dan Ryan](https://github.com/DanRyanIrish), [Andrew Inglis](https://github.com/aringlis), [Jack Ireland](https://github.com/wafels)
@@ -75,4 +105,3 @@ Someone under taking this project will complete the following tasks:
 3. Update the website (insert tasks).
 
 A successful proposal for this project will demonstrate that the applicant has understood the task and presents a timeline of what things need to change to be implemented.
-
