@@ -8,6 +8,7 @@ Attendees:
 * Albert Shih
 
 (Times central US)
+
 11:12: Introductions for new board members
 
 11:15: Monica brings up issues with installing sunpy and how to distribute and encourage use. 
