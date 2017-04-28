@@ -23,7 +23,9 @@ Need to sign up for riot to be invited to the sunpy board channel.
 11:40: Discussion of PRs to SEP repo
 
 PR #28 vote: All present in favor.
+
 PR #27 vote: Affirmed, as the board members have already changed.
+
 PR #26 vote: All present in favor.
 
 11:53: Albert leaves.
@@ -37,4 +39,5 @@ All present vote to allow filling the positions by e-mail vote.
 12:04: Steven proposes that as part of the email discussion that we discuss adding a treasurer.  A vote to add a new role should be pushed off to the next board meeting. Stuart also suggests that a role for outreach should also be discussed at this time.  
 
 12:08: Stuart brings up last last last point on discussion of the user survey.
+
 12:13 Meeting adjourns.
