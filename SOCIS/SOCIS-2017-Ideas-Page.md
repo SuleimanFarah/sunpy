@@ -39,7 +39,6 @@ Someone undertaking this project will specifically complete the following:
 1. Implement CLEAN with sufficient documentation and tests
 1. Integrate the resulting images with the existing SunPy `sunpy.map.Map` object
 1. Investigate implementation of the advanced method(s).
-1. Implement at least one additional 
 
 A successful proposal will demonstrate that the applicant has understood the
 project and present tasks and timeline for completion.
