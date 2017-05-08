@@ -1,28 +1,28 @@
-### X-ray Synthesis Imaging
+### X-ray VIsibility Synthesis ImagiNg or Xray-VISION
 
 *Suggested Mentor(s):* [Shane Maloney](),
 
 *Difficulty:* Intermediate/Advanced
 
-*Astronomy knowledge needed:* Fourier Transform
+*Astronomy knowledge needed:* Fourier Transform knowledge nice to have but not essential
 
 *Programming skills:* Python
 
 #### Description
 
 X-ray synthesis imaging is dependent upon deconvolution algorithms to counteract
-the sparse sampling in the Fourier plane. Synthesis imaging is often associated
+the sparse sampling in Fourier space. Synthesis imaging is often associated
 with large radio interferometric arrays but has also been used in X-rays.
 Specifically in the solar context in the past with Yohkoh/HXT, currently with
 RHESSI and in the future with Solar Orbiter/STIX. Numerous algorithms with
-different methodologies have been developed to solve this deconvolution problem.
-The objective of this project would be to provide high-level access to
-generalised algorithms such as:
+different methodologies have been developed to solve this problem.
+The objective of this project is to create an afiliated package which will
+provide high-level access to generalised algorithms such as but not limited to:
 
-* CLEAN
-* Multiscale CLEAN
-* MEM
-* PIXON. 
+* [CLEAN](http://adsabs.harvard.edu/abs/1974A%26AS...15..417H)
+* [Multiscale CLEAN](https://ieeexplore.ieee.org/document/4703304/) 
+* [MEM](http://iopscience.iop.org/article/10.1086/498225)
+* PIXON [1](iopscience.iop.org/article/10.1086/133207), [2](adsabs.harvard.edu/abs/2001MNRAS.324..108E).
 
 This could be accomplished by creating pure python implementations (preferred),
 creating wrappers around existing implementations or a combination of both. This
@@ -31,17 +31,18 @@ methods, it would also allow for ensemble reconstructions in the future.
 
 **Expected Outcomes**
 
-At the conclusion of this project the community will have access to the image
-reconstruction algorithms through FOSS in python.
+At the conclusion of this project the community will have access to well documented
+image reconstruction algorithms in python.
 
 Someone undertaking this project will specifically complete the following:
 1. Create suitable representation for generalised visibilities 
-1. Implement CLEAN
+1. Implement CLEAN with sufficient documentation and tests
 1. Integrate the resulting images with the existing SunPy `sunpy.map.Map` object
-1. Investigate implementation of advanced method(s).
+1. Investigate implementation of the advanced method(s).
+1. Implement at least one additional 
 
 A successful proposal will demonstrate that the applicant has understood the
-project and present tasks and timeline for the its completion .
+project and present tasks and timeline for completion.
 
 
 ### sunkit-image
@@ -89,5 +90,4 @@ optional extras:
 * Have implemented the Map warping code.
 * Have got the SunPy PR for coordinates in `sunpy.physics` merged.
 * Have implemented OCCULT-2.
-
 
