@@ -66,9 +66,12 @@ Currently, I have enrolled in course "IC 260 - Signals and Systems" (3 credits) 
 
 ## Benefits to the community
 
-* This will enable `anyone` to analyse solar and heliospheric data with minimum knowledge in programming.
+* This will enable _anyone_ to analyse solar and heliospheric data with minimum knowledge in programming.
 * It helps to solve problems in synthesis imaging by providing algorithms like CLEAN in Python which is emerging as popular and powerful language.
 * I can be found helpful for future missions like STIX (Solar Orbiter) which enables them to achieve mail science goals by providing free software with well documented reconstruction algorithms in Python.
+
+![STIX Instrument](http://stix.i4ds.ch/uploads/RTEmagicC_stix_mechanical_drawing.gif.gif)
+
 * This is an outstanding contributing for SunPy community by developing open source package extending features available.
 
 ## Deliverables
