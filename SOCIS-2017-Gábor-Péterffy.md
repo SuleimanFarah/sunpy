@@ -51,7 +51,7 @@ The 6-8. points are optional and can be repeated as many times as the coding per
 ### Dependencies
 For the above outlined package at least one numerical scientific library would be needed (eg. scipy), but because it is already part of the dependencies of SunPy it does not cause any overhead.
 
-## Timeing
+## Timing
 Because I am new to the code base of SunPy I would like to spend the first week with playing around with it, making little experiments, etc.
 
 * **Week 2:** Start to work on the misc part of the task
