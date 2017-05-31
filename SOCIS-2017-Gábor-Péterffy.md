@@ -1,4 +1,6 @@
 # SoCiS 2017 - Proposal
+## Idea
+X-ray VIsibility Synthesis ImagiNg or Xray-VISION
 ## Self introduction
 ### Basic informations
 **Name:** Gábor Péterffy
