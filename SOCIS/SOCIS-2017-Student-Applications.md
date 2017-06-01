@@ -6,3 +6,4 @@ timeline you plan to follow.
 * [[Antonio Payá|SOCIS 2017 Antonio Payá]] - I want to try develop "sunkit-image".
 * [[Gábor Péterffy|SOCIS 2017 Gábor Péterffy]] - I would like to work on the "X-ray VIsibility Synthesis ImagiNg or Xray-VISION" idea
 * [[Antonio Hidalgo|SOCIS 2017 Antonio Hidalgo]] - X-ray VIsibility Synthesis ImagiNg or Xray-VISION.
+* [[Ian Harper|SOCIS 2017 Ian Harper]] - Sunkit-Image
