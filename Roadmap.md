@@ -1,5 +1,29 @@
 This page contains the major features desired in every release, general feature requests should like in the issue tracker. This is for milestones that link together to achieve milestones later on. SunPy makes use of the following schema for versioning http://semver.org/.
 
+# Future Releases
+
+## Release 0.8 (Updated 03/2017)
+* 80%+ test coverage
+* Fido Downloader interface
+* deprecation of sunpy.wcs
+* timeseries
+
+## Release 0.9
+
+* Integrate Astropy time object into parse_time() and the Time Range object
+* Final version to support Python 2.7
+
+## Long Term Goals (1.0 or 2.0)
+* Have a generalised coordinate system representation shared by *all* data types, i.e. Astropy Generalised WCS or HyperMap coordinate system.
+* Complete integration of all core data types, i.e. slice a Map to get a Lightcurve
+* Complete integration with Astropy, i.e. All code supports units, and a generalised coordinate system.
+* Make the Fido interface a unified API for all downloaders and the database. For transparent cacheing of searches and data.
+
+
+
+# Previous Releases
+
+
 ## Release 0.6
 * 80%+ Test coverage
 * Functions should accept astropy quantities
@@ -22,19 +46,3 @@ Other high priority features (non-blocking):
 * Integrate Astropy coordinates.
 * Transformation of images under solar differential rotation.
 * 85%+ Test coverage.
-
-## Release 0.8 (Updated 03/2017)
-* 80%+ test coverage
-* Fido Downloader interface
-* deprecation of sunpy.wcs
-* timeseries
-
-
-## Release 0.9
-
-* Integrate Astropy time object into parse_time() and the Time Range object
-
-## Release 1.0
-* Have a generalised coordinate system representation shared by *all* data types, i.e. Astropy Generalised WCS or HyperMap coordinate system.
-* Complete integration of all core data types, i.e. slice a Map to get a Lightcurve
-* Complete integration with Astropy, i.e. All code supports units, and a generalised coordinate system.
