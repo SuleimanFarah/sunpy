@@ -17,12 +17,10 @@ This page contains the major features desired in every release, general feature 
 * Have a generalised coordinate system representation shared by *all* data types, i.e. Astropy Generalised WCS or HyperMap coordinate system.
 * Complete integration of all core data types, i.e. slice a Map to get a Lightcurve
 * Complete integration with Astropy, i.e. All code supports units, and a generalised coordinate system.
-* Make the Fido interface a unified API for all downloaders and the database. For transparent cacheing of searches and data.
-
-
+* Make the Fido interface a unified API for all downloaders and the database. For transparent caching of searches and data.
+* Codebase is PEP8 as much as possible and cleaned up where possible.
 
 # Previous Releases
-
 
 ## Release 0.6
 * 80%+ Test coverage
