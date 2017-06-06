@@ -10,7 +10,7 @@ This page contains the major features desired in every release, general feature 
 
 ## Release 0.9
 
-* Integrate Astropy time into the code base, through parse_time() and the Time Range object
+* Integrate Astropy time into the code base, through parse_time() and the `TimeRange` object.
 * Final version to support Python 2.7
 
 ## Long Term Goals (1.0 or 2.0)
