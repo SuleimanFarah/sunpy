@@ -1,6 +1,6 @@
 This document describes the procedure that the people in the sunpy-maintainters group must follow when merging a pull request. If in any doubt about merging a pull request, the correct course of action is to contact the Lead Developer / Executive Director and ask.
 
-#Fundamental Components of a Pull Request
+# Fundamental Components of a Pull Request
 
 Each pull request *must* meet the following criteria before it is considered for merge:
 
@@ -9,7 +9,7 @@ Each pull request *must* meet the following criteria before it is considered for
 * The test coverage **ABSOLUTELY** must not decrease, and for new features should be at or very close to 100%.
 * All code must be properly documented. Each function and each class must have an associated doc string in the correct format.
 
-#Review Process
+# Review Process
 
 Before the 'merge' button is clicked the following criteria must be met:
 
@@ -19,7 +19,7 @@ Before the 'merge' button is clicked the following criteria must be met:
 
 It is important that approval for merging the PR is done on the comment thread, as this becomes part of the 'permanent record', this includes in during developer and IRC meetings.
 
-#SunPy GitHub Groups
+# SunPy GitHub Groups
 
 This document has already referred to two SunPy groups, namely 'developers' and 'maintainers' there is also a third primary SunPy group 'owners'.
 
