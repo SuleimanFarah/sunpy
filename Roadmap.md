@@ -10,7 +10,6 @@ This page contains the major features desired in every release, general feature 
 
 ## Release 0.9
 
-* Integrate Astropy time into the code base, through parse_time() and the `TimeRange` object.
 * Final version to support Python 2.7
 
 ## Post-0.9 Tentatively called 1.0
@@ -19,6 +18,7 @@ Core:
 * Remove: lightcurve, wcs and all functions deprecated in either 0.9 or 0.8.
 * The spectra affiliated package has had a couple of releases.
 * First version to support 3.x+ only. (we might be able to have min 3.6 here).
+* Integrate Astropy time into the code base, through parse_time() and the `TimeRange` object.1
 
 Extras:
 * Finish Fido, i.e database integration and automatic caching of results.
