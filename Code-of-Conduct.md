@@ -62,7 +62,7 @@ treated with the strictest confidence) or talking privately with the person.
 
 Parts of this code of conduct have been adapted from
 the [astropy](http://www.astropy.org/about.html) and
-the [Python Software Fundation](https://www.python.org/psf/codeofconduct/):
+the [Python Software Foundation](https://www.python.org/psf/codeofconduct/):
 codes of conduct.
 
 ![CC-by](https://i.creativecommons.org/l/by/4.0/88x31.png) 
