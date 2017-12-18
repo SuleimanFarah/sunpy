@@ -13,25 +13,6 @@ The list of projects below will be changing as they are being taken by someone o
 
 ***
 
-## IRIS Integration
-**Abstract**: The [IRIS](http://iris.lmsal.com) observes the chromosphere and transition region
-of the Sun with high spatial and time resolution. The primary goal of the Interface Region Imaging Spectrograph (IRIS) explorer is to understand how the solar atmosphere is energized. The IRIS mission produces data through
-a slit-jaw imager which can take images of the Sun at various wavelengths as well as a line spectrograph which
-rasters over an image to build up an image. This project aims to integrate IRIS data into SunPy. This includes the following tasks.
-
-1. Integration of IRIS data search and querying
-2. Adding the ability to read IRIS data files into their proper data objects
-3. Developing a data browser module in the existing SUnPy GUI for fast inspection of IRIS data 
-
-**Requirements**: Python and basic knowledge of GUI design. 
-
-**Expected Outcomes**: IRIS Mapcube class, IRIS Spectrum class, GUI data browser module
-
-**Idea from:**: Steven Christe (NASA GSFC, SunPy)
-
-* **Mentor**: Steven Christe (NASA GSFC, SunPy), Joel Allred (NASA GSFC)
-
-
 ## Integrating ChiantiPy and SunPy
 
 **Description**:
@@ -213,5 +194,5 @@ other ideas:
 
 - Diff rot
 - meta data
-- re-theme docs + website
-- solarmonitor like site
+- Astropy time
+- 
