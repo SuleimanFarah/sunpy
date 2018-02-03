@@ -7,6 +7,11 @@ XX February 2018
 
 ### Agenda
 
+- Releases update
+- GSOC update
+- SPD committee update
+- NumFOCUS survey about shared infrastructure
+- IRISPy - news regarding relations with IRIS team?
 
 ### Meeting Notes
 
