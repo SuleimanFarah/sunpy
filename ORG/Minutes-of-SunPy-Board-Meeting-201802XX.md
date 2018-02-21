@@ -10,6 +10,7 @@ XX February 2018
 - Releases update
 - GSOC update
 - SPD committee update
+- Definition and process for affiliated packages (including provisional status)
 - NumFOCUS survey about shared infrastructure
 - IRISPy - news regarding relations with IRIS team?
 
