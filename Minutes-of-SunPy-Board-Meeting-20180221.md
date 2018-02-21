@@ -18,11 +18,11 @@
 
 **Topic 1:**
 
-2 new releases: 0.8.4 & 0.8.3
+* 2 new releases: 0.8.4 & 0.8.3
      - 0.8.4 required for AstroPy compatibility
      - 0.8.3 does not currently work with AstroPy due to an issue with a bug fix
 
-In progress: 0.9 & 1.0
+* In progress: 0.9 & 1.0
      - 0.9 includes change from current library concerning VSO interaction & will include a revised JSOC client
      - 1.0 deletes Python 3 and uses AstroPy time object instead of date time object
           - http://docs.astropy.org/en/stable/time/
@@ -31,7 +31,7 @@ New VSO/SunPy liaison
 
 **Topic 2:**
 
-GSOC progressing well
+* GSOC progressing well
      - Currently 5 SunPy projects; open to more
           - http://openastronomy.org/gsoc/gsoc2018/#/projects
      - Looking for more mentors
@@ -42,23 +42,23 @@ GSOC progressing well
 
 **Topic 3:**
 
-SPD committee agenda item:
+* SPD committee agenda item:
      - Jack will present request to SPD committee at upcoming TESS meeting
 
-TESS presentations:
+* TESS presentations:
      - SunPy poster submitted to TESS meeting via Andrew Inglis and Jack
      - Python NDCubed poster submitted by Danny Ryan
 
 **Topic 4:**
 
-NumFOCUS survey
+* NumFOCUS survey
      - Questions about what support is needed from NumFOCUS (e.g., web hosting)
      - Discussion about possibly requesting support for FIDO upgrades
      - https://www.surveymonkey.com/r/shared_infrastructure
 
 **Topic 5:**
 
-IRISPy talks ongoing
+* IRISPy talks ongoing
      - merging of parallel IRIS and SunPy efforts led to development of splinter NDCubed effort led by Danny Ryan and Stuart
      - GUI QuickLook tool guidance being managed by Stuart 
      - NDCubed is a generic tool that will be merged into core package
@@ -66,7 +66,7 @@ IRISPy talks ongoing
 
 **Topic 6:**
 
-Affiliated package (AP) management discussion
+* Affiliated package (AP) management discussion
      - discussion over instrument specific packages
           - core packages built to work on already calibrated with minimal processing
           - affiliated instrument packages handle data nuances
