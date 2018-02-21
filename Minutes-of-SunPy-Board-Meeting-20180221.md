@@ -37,6 +37,8 @@ GSOC progressing well
      - Looking for more mentors
           - https://google.github.io/gsocguides/mentor
           - https://github.com/OpenAstronomy/GSoC/blob/master/application_students.md
+     - Tutorials:
+          - http://openastronomy.org/gsoc/gsoc2018/#/projects?project=astropy_learn_website
 
 **Topic 3:**
 
@@ -52,6 +54,7 @@ TESS presentations:
 NumFOCUS survey
      - Questions about what support is needed from NumFOCUS (e.g., web hosting)
      - Discussion about possibly requesting support for FIDO upgrades
+     - https://www.surveymonkey.com/r/shared_infrastructure
 
 **Topic 5:**
 
@@ -67,6 +70,7 @@ Affiliated package (AP) management discussion
      - discussion over instrument specific packages
           - core packages built to work on already calibrated with minimal processing
           - affiliated instrument packages handle data nuances
+          - https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0004.md
      - qualifications to be listed as an AP need to be delineated
           - tests/documentation/use of available functions
           - set of enforceable standards needed
@@ -74,6 +78,8 @@ Affiliated package (AP) management discussion
                - official registry
                - tiers: provisional, accepted[, sponsored/branded]
                - light code review process
+               - http://www.astropy.org/affiliated/
+               - https://github.com/ejeschke/ginga/issues/555
      - purpose of APs to not duplicate code, to get widespread use, and to work together for the positive evolution of the tools
           - build with core library
      - implementation more difficult than expected based on IRISPy experience (e.g. GitHub use, ownership issues)
