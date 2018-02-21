@@ -24,7 +24,7 @@
 
 * In progress: 0.9 & 1.0
      - 0.9 includes change from current library concerning VSO interaction & will include a revised JSOC client
-     - 1.0 deletes Python 3 and uses AstroPy time object instead of date time object
+     - 1.0 deletes Python 2 support and uses AstroPy time object instead of date time object
           - http://docs.astropy.org/en/stable/time/
 
 New VSO/SunPy liaison
