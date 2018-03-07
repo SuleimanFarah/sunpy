@@ -77,48 +77,56 @@ There are many shortcomings in `parse_time` function as discussed above which we
    - `parse_time` does not support any provision for different time formats like `iso`, `isot` and `fits` to name a few.
       The following code throws an error while parsing time string of `utc` format in `parse_time`.
 
-      `from sunpy.time import parse_time
-       parse_time('2011-01-01T00:10:00.000(UTC)')`
+      ```
+       from sunpy.time import parse_time
+       parse_time('2011-01-01T00:10:00.000(UTC)')
+
+      ```
 
        while we can easily do so in case of `astropy.time.Time`
-       > import astropy.time as r
+       ```
+       import astropy.time as tm
 
-       > x = r.Time('2011-01-01T00:10:00.000(UTC)')
+       x = tm.Time('2011-01-01T00:10:00.000(UTC)')
+       ```
 
        So one possible solution is to check if the given time string is of the above type. If the time string is of the
        above format '2011-01-01T00:10:00.000(UTC)' then we can define a new function , say `diff_format()`to take such
        string as input and return `astropy.time.Time` instance. Later we can make a check if the input string is of the
        above format, then we can just call the `diff_format()` function within the `parse_time`.
+      ```
+        def parse_time(time_string):
 
-      >  def parse_time(time_string):
+          if(time_string_format is not valid):
+             call diff_format
 
-      >  if(time_string_format is not valid):
-      >    call diff_format
-
-      >  def diff_format(time_string) :
-      >  return r.Time(time_string)
+        def diff_format(time_string) :
+            return r.Time(time_string)
+        ```
 
   -  **Setting format**
 
         `astropy.time.Time` has provision for setting the format from the user side. Like if the given time string is in `fits`, the user can also set the time string to own's format choice like `iso`
+        ```
+         import astropy.time as tm
 
-        > import astropy.time as r
+         x = tm.Time('2011-01-01T00:10:00.000(UTC)')
+         //  Its in `fits` format
 
-        > x = r.Time('2011-01-01T00:10:00.000(UTC)')
-        >  //  Its in `fits` format
-
-        > x.format = 'iso' // Converting to time format `iso`
+        x.format = 'iso' // Converting to time format `iso`
+        ```
 
         One solution can be done as follows.
         Within the `parse_time` function we can make provision for allowing the user to set the format by calling the corresponding `Time.format` function on the input string and setting it to the user input format.
 
 - **Setting the Scale**
 If the input time string is in `utc` format,    `astropy.time.Time` can set it to other formats like `tai`,    `tdb` and other.
-
-  > x = r.Time('2011-01-01T00:10:00.000(UTC)')
+```
+   x = tm.Time('2011-01-01T00:10:00.000(UTC)')
    // its in `utc` format.
 
-  >  x.set_scale('tai')  // setting it to TAI formats
+   x.set_scale('tai')  // setting it to TAI formats
+```
 
   For providing such functionality in `parse_time` we can take user input for the scale and accordingly call the `set_scale` under `astropy.time` from within the `parse_time` to set the scale.
 
