@@ -8,4 +8,4 @@ to the full description of the project you propose and the timeline you plan to 
 
 * [[Punyaslok Pattnaik|GSOC-2016-itachi_uchiha]] - Improvements to the SunPy Database
 
-* [Tessa Wilkinson](https://github.com/sunpy/sunpy/wiki/GSoC-AIA-Response-Functions) - AIA Response Functions
+* [[Tessa Wilkinson | GSoC-2016-tessa-wilkinson]] - AIA Response Functions
