@@ -18,6 +18,8 @@ SunPy participated in 2013 for the first time and 2014 and 2015 under the [Pytho
 
 ## Editions
 
+[[GSoC 2018]]
+
 [[GSoC 2017]]
 
 [[GSoC 2016]]
