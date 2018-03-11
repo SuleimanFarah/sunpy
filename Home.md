@@ -41,3 +41,7 @@ all very successful years. This year it's running under the
 
 # The SunPy Project Organisation
 [[All the info|SunPy Organisation Information]] regarding to SunPy formation as an organisation, including minutes of meetings
+
+# Wall of fame
+
+Check the [[Wall of Fame]] to see everyone that has participated in some program for the improvement of SunPy.
