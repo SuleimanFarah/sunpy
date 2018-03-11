@@ -24,7 +24,7 @@ This page lists the names of these who have work for SunPy via summer of code or
 ##### 2015
 
 * [[Full support for IRIS, 4D Cubes implemented using Ginga as the GUI |GSOC-2015-Rupak-Kumar-Das]] by [Rupak Kumar Das](https://github.com/rupak0577)
-* [[Support for Analysis of Solar Energetic Particles | GSOC-2015-SunPy-Proposal-:-Ankit-Kumar]] by [Ankit Kumar](https://github.com/ankitkmr)
+* [[Support for Analysis of Solar Energetic Particles | GSoC-2015-Ankit-Kumar]] by [Ankit Kumar](https://github.com/ankitkmr)
 
 ##### 2014
 
