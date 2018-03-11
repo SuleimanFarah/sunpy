@@ -28,9 +28,9 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 ##### 2014
 
-* [[Re-implementation of `sunpy.wcs` using `astropy.coordinates` |GSoC-2014 Pritish Chakraborty]] by [Pritish Chakraborty](https://github.com/VaticanCameos).
-* [[Re-implementation of `sunpy.wcs` as `sunpy.coordinates` |GSoC-2014 Asish Panda]] by [Asish Panda](https://github.com/kaichogami).
-* [[A ginga based data explorer / database browser |GSoC-2014 Rajul]] by [Rajul](https://github.com/rajul) ***.
+* [[WCS and coordinates | GSoC-2014 Pritish Chakraborty]] by [Pritish Chakraborty](https://github.com/VaticanCameos).
+* [[Units on SunPy | GSoC-2014 Asish Panda]] by [Asish Panda](https://github.com/kaichogami).
+* [[A ginga based data explorer / database browser |GSoC-2014 Rajul]] by [Rajul](https://github.com/rajul).
 * [[Lightcurve | GSOC-2014 RISHABH SHARMA]] by [Rishabh Sharma](https://github.com/gunner272).
 
 
