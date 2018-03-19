@@ -17,9 +17,31 @@
 
 ###### Open Source background and Programming experience
 
-- Programming Languages: Python, C++, C, JavaScript
+- Programming Languages: Python, C++, C, JavaScript, Java(Basic knowledge)
+- Contributions to other repos:
+  - mps-youtube:
+    - [Refactor player.py](https://github.com/mps-youtube/mps-youtube/pull/753) (Large scale refractor to make player object-oriented)
+    - [Show metadata..](https://github.com/mps-youtube/mps-youtube/pull/739)
+    - [Add tab completion...](https://github.com/mps-youtube/mps-youtube/pull/789)
+    - [Fix json error...](https://github.com/mps-youtube/mps-youtube/pull/785)
+    - [Change setup.py...](https://github.com/mps-youtube/mps-youtube/pull/782)
+    - [Fix cyclic import](https://github.com/mps-youtube/mps-youtube/pull/807)
+  - pafy:
+    - [Add support for youtube channels](https://github.com/mps-youtube/pafy/pull/196)
+    - [Add indexing for playlist](https://github.com/mps-youtube/pafy/pull/195)
+    - [Fix throttling...](https://github.com/mps-youtube/pafy/pull/203)
+  - spotify-downloader:
+    - [Switch to youtube API](https://github.com/ritiek/spotify-downloader/pull/191)
+    - [Beautify videotime...](https://github.com/ritiek/spotify-downloader/pull/217)
+    - [Filter items other ...](https://github.com/ritiek/spotify-downloader/pull/249)
+  - [unified-social-api[WIP]](https://github.com/kanishkarj/unified-social-api)
 
-I have contributed towards [mps-youtube](https://github.com/mps-youtube/mps-youtube), [pafy](https://github.com/mps-youtube/pafy) and a few more. I have worked on some independent projects too, mainly in python ([anime-downloader](https://github.com/vn-ki/anime-downloader), [YoutubePlayer](https://github.com/vn-ki/YoutubePlayer), ...).
+
+I have worked on some independent projects too, mainly in python.  
+- [anime-downloader](https://github.com/vn-ki/anime-downloader) (Python)
+- [YoutubePlayer](https://github.com/vn-ki/YoutubePlayer) (Python)
+- [Debtman](https://github.com/vn-ki/debt-man-pwa) (Progressive Web App using ionic3)
+- [Continue on PC](https://github.com/vn-ki/ContinueOnPC) (Android app)
 
 I belive this project suites my current knowledge of python and I am sure that I will be able to complete it in *time*.
 
@@ -39,7 +61,6 @@ Of course, I did not follow this advice (because of immense interest in computer
 
 - `sunpy.net`: This module would require the most change.
 - `sunpy.timeseries`
-- `sunpy.lightcurve`
 - `sunpy.instr`:  Uses a lot of `datetime`.
 - Some other modules (`coordinates`, `database`, ...) which use `parse_time` to a small extent.
 
@@ -47,22 +68,41 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
 ## Tasks
 
-- String parsing: Right now my plan is to use `astropy.Time` primarily and fallback to the current regex when `astropy.Time` can't parse the `time_string`. But however this is open for discussion and may change once the coding starts based on the comments from mentors. Parsing strings is a very powerful feature of `parse_time` now. It supports a large variety of strings. So it makes sense that this feature stays.
+- Equivalents to `datetime` functions
 
-| Format         | Possible solution with `astropy.Time` |
+  - `datetime.strftime` could be replaced with a [custom format](http://docs.astropy.org/en/stable/time/#writing-a-custom-format) of `Time` ([Link](https://github.com/astropy/astropy/issues/7309) to tracking issue of adding this feature directly to `Time`) or `time.strftime(format_string, time.gmtime(Time.unix))`.
+
+  - Creating `Time` from timestamps can accomplished using either a custom format or converting to datetime first.
+
+  - `datetime.strptime` will be changed to `Time(datetime.strptime())`.
+
+  NOTE: The above mentioned is open for discussion and will be decided during community bonding period.
+
+- Equivalent of `datetime.timedelta`
+
+  I would make a function `get_timedelta(**kwargs)` to return `astropy.TimeDelta`. This is because `astropy.TimeDelta` does not accept seconds, minutes etc.
+
+- **Changes to `parse_time`**
+  - String parsing: Right now my plan is to use   `astropy.Time` primarily and fallback to the current  regex when `astropy.Time` can't parse the   `time_string`. But however this is open for   discussion and may change once the coding starts  based on the comments from mentors. Parsing strings   is a very powerful feature of `parse_time` now. It  supports a large variety of strings. So it makes  sense that this feature stays.
+
+| Format         | Possible solution with  `astropy.Time` |
 | :------------- | :------------------- |
 | ts = (1966, 2, 3)        | `Time('{}-{}-{}'.format(*t))` |  
-| ts = 765548612.0, 'utime' | `Time(ts, format='utime')` Using custom format in `sunpy.time.utime` |  
-| ts = pandas.Timestamp() | `Time(pandas.Timestamp)` |  
-| ts = pandas.Series() | `np.array([Time(v) for v in ts])` |  
-| pandas.DatetimeIndex() | `np.array([Time(v) for v in ts])` |  
-| np.datetime64('2005-02-01T00') | See Note below |  
+| ts = 765548612.0, 'utime' | `Time(ts,  format='utime')` Using custom format in  `sunpy.time.utime` |  
+| ts = pandas.Timestamp() |`Time(pandas.Timestamp)`  |  
+| ts = pandas.Series() | `np.array([Time(v) for vin  ts])` |  
+| pandas.DatetimeIndex() | `np.array([Time(v) forv   in ts])` |  
+| np.datetime64('2005-02-01T00') | See Note below|  
 | np.arange('2005-02') | See Note below |  
 | np.arange('2005-02-01T00') | See Note below |  
 | ts = astropy.time.Time | `ts` |  
 | 'now' | `Time.now()` |  
 
-NOTE: Conversion of `np.datetime64` to `astropy.Time` can be accomplished by [this comment](https://github.com/astropy/astropy/issues/6428#issuecomment-362224248) in astropy/#6428.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  comment](https://github.com/astropy/astropy/issues/642  8#issuecomment-362224248) in astropy/#6428.
+
+- Changes to other modules
+
+    Modules are mentioned in summary above. The   change mostly include changing them to use   `astropy.Time` instead of `datetime`. This is  summed up above in the first point of this  section.
 
 # Project Plan
 
@@ -74,7 +114,9 @@ NOTE: Conversion of `np.datetime64` to `astropy.Time` can be accomplished by [th
 
   I have exams from april 20th to 28th. I will be inactive during that week. Excluding that week most of my time will go into learning more about `parse_time` and usage of `datetime` in sunpy.
 
-  I would also try to port some parts of the code to use `astropy.Time` using `sunpy.time._astropy_time` so as to get an idea of what are the consequences of changing to `astropy.Time`. This function will be removed once the project is complete.
+  I would also try to port some parts (maybe `time.timerange`) of the code to use `astropy.Time` using `sunpy.time._astropy_time` so as to get an idea of what are the consequences of changing to `astropy.Time`. This function will be removed once the project is complete.  
+
+  During the last week I will finish of the work on [#2408](https://github.com/sunpy/sunpy/pull/2408) (Refactor parse_time) and get it merged.
 
 - Phase 1 (May 15 - June 17)
 
@@ -98,7 +140,7 @@ NOTE: Conversion of `np.datetime64` to `astropy.Time` can be accomplished by [th
 
 - Phase 2 (June 18 - July 15)
 
-  - Change `sunpy.net`, `sunpy.instr`, `sunpy.timeseries` and `sunpy.lightcurve` to use `astropy.time`. Tests will be rewritten simultaneously.
+  - Change `sunpy.net`, `sunpy.instr`, and `sunpy.timeseries` to use `astropy.time`. Tests will be rewritten simultaneously.
 
   - `net` contains the most extensive use of `parse_time`, so this will take the most time.
 
