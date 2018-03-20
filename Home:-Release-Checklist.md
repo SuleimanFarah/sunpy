@@ -15,7 +15,7 @@ python setup.py sdist
 - [ ] Commit the changes: 
 ```
 git add .
-git commit -m "Release X.Y.Z"
+git commit -m "Release vX.Y.Z"
 ```
 - [ ] Push to the directly release branch on SunPy (the version number branch)
 ```
