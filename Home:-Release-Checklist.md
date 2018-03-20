@@ -1,6 +1,5 @@
 For Major releases only:
 - [ ] Update RELEASE.md
-- [ ] Update the version for build numbers on Appveyor (Not sure this really matters)
 
 Pre-release:
 - [ ] Check that the Continious Integration is passing for the correct version
