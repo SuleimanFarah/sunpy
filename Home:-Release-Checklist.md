@@ -22,7 +22,7 @@ git commit -m "Release X.Y.Z"
 git push upstream vX.Y
 ```
 - [ ] Check that Travis passes on release commit
-- [ ] Check that appveyor passes on release commit
+- [ ] Check that AppVeyor passes on release commit
 - [ ] Test that RTD is building the documentation correctly on release branch (and the version is correct)
 - [ ] Release on GitHub (tag should be full version number preceded by a `v`)
 ```
