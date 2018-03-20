@@ -2,7 +2,7 @@
 
   * [Home](./Home)
     * [Organization Information](./Home%3A-Organization-Information)
-    * [SunPy Release](./Home%3A-SunPy-Release)
+    * [SunPy Release Checklist](./Home%3A-SunPy-Release-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
   * [GSoC](./GSoC)
     * [General Points](./GSoC%3A-General-Points)
