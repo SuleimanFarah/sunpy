@@ -2,14 +2,13 @@ For Major releases only:
 - [ ] Update RELEASE.md
 
 Pre-release:
-- [ ] Check that the Continious Integration is passing for the correct version
 - [ ] Update version number in `setup.py` (the version number branch and don't commit yet)
 - [ ] Modify the changelog title (remove `(unreleased)`)
 - [ ] Build the source distribution:
 ```
 python setup.py sdist
 ```
-- [ ] Test that the sdist installs (in env of your choice)
+- [ ] Test that the sdist installs (in an enviroment of your choice)
 - [ ] Check that the `sunpy.__version__` number is correct
 - [ ] Run `sunpy.self_test()` to check that installed tests work
 - [ ] Commit the changes: 
@@ -19,7 +18,7 @@ git commit -m "Release vX.Y.Z"
 ```
 - [ ] Push to the directly release branch on SunPy (the version number branch)
 ```
-git push upstream vX.Y
+git push upstream X.Y
 ```
 - [ ] Check that Travis passes on release commit
 - [ ] Check that AppVeyor passes on release commit
