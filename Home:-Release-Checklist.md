@@ -21,14 +21,14 @@ git commit -m "Release X.Y.Z"
 ```
 git push upstream vX.Y
 ```
-- [ ] Release on GitHub (tag should be full version number preceeded by a `v`)
+- [ ] Check that Travis passes on release commit
+- [ ] Check that appveyor passes on release commit
+- [ ] Release on GitHub (tag should be full version number preceded by a `v`)
 ```
 git checkout X.Y
 git tag -s vX.Y.Z
 git push --follow-tags upstream vX.Y.Z
 ```
-- [ ] Check that Travis passes on tag version
-- [ ] Check that appveyor passes on tag version
 - [ ] Update sunpy-wheels repo to test build wheels for the release version
 - [ ] Test that RTD is building the documentation correctly on release branch (and the version is correct)
 - [ ] Release on PyPI:
