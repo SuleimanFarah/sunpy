@@ -34,7 +34,7 @@
 * I have been involved in open source for the past 2 years and been contributing to different open source projects including Algorithms based and Python based Desktop Applications.
 *  Intermediate knowledge of Python for Data Science and Statistical Analysis.
 *   I have contributed to some projects on Algorithms. Hence I am comfortable in working with Git and using GitHub.
-*   An active coder on [HackerRank](https://www.hackerrank.com/prateekkol2103) and [HackerEarth](https://www.hackerearth.com/@prateekkol21/ HackerEarth).
+*   An active coder on [HackerRank](https://www.hackerrank.com/prateekkol2103) and [HackerEarth](https://www.hackerearth.com/@prateekkol21/).
 *   I am comfortable in doing programs in Python. I did two major projects on Machine Learning in Python which majorly  uses statistical analysis (pandas, numpy) and the use of Jupyter Notebook. These were  project works for Udacity Machine Learning Nanodegree:
  -  [Titanic Survival Exploration](https://github.com/prateekiiest/titanic_survival_exploration)
  -  [Boston Housing](https://github.com/prateekiiest/boston_housing)
