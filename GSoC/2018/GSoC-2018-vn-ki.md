@@ -178,3 +178,17 @@ As I mentioned before, I will have exams from april 20th to april 28th (Fortunat
 During the coding period I don't have any other commitment than GSoC. Thus I can easily give more than 40 hours per week for the project.
 
 My summer vacations end on July 20th (3 weeks before the deadline). Even after the vacations I am sure I can dedicate ~40 hours for the project (My classes account for ~24 hour a week).
+
+## GSoC
+
+### Have you participated previously in GSoC? When? Under which project?
+No, I have **not** participated in GSoC before. This is the first time I am participating in GSoC.
+
+### Are you also applying to other projects?
+**No** ,This is the **only project** and **SunPy is the only organization** that I am applying for.
+
+### Commitments
+I don't have any other internship or work during this summer. I have no plans for any vacations either.
+
+### Eligibility
+Yes, I am eligible to receive payments from Google.
