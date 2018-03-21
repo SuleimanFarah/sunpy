@@ -12,7 +12,7 @@
 * **IRC Handle** : prateekiiest
 * **Github ID**: [prateekiiest](https://github.com/prateekiiest)
 * **Blog**  - [Prateek Chanda @Medium](medium.com/@prateekkol21)
-* ** LinkedIn** : [My LinkedIn Profile](https://www.linkedin.com/in/prateek-chanda-iiest/)
+* **LinkedIn** : [My LinkedIn Profile](https://www.linkedin.com/in/prateek-chanda-iiest/)
 * **Website** : [CodeFolio](https://prateekiiest.github.io)
 *  **Mail** :  prateekkol21@gmail.com or  prateek.dd2015@cs.iiests.ac.in
 --------------
