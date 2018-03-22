@@ -94,7 +94,7 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 | ts = astropy.time.Time | `ts` |  
 | 'now' | `Time.now()` |  
 
-  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  comment](https://github.com/astropy/astropy/issues/642  8#issuecomment-362224248) in astropy/#6428.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  comment](https://github.com/astropy/astropy/issues/6428#issuecomment-362224248) in astropy/#6428.
 
 - Changes to other modules
 
