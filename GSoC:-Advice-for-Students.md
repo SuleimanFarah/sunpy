@@ -57,7 +57,7 @@ Then try to follow these steps for applying to GSoC with SunPy.
 
 7. **Submit your application.**
 
-    Please remember that you **MUST SUBMIT YOUR APPLICATION ON GOOGLE'S WEBSITE**.
+    Please remember that you **MUST SUBMIT YOUR APPLICATION ON THE GSoC WEBSITE**.
     It is not possible to accept you if you do not do this.
     Google will not accept late applications for any reason, so get them in there.
     There have been issues in the past with submissions right up at the deadline, so submit your application early.
