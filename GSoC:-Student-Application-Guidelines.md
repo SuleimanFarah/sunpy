@@ -1,6 +1,7 @@
 We expect to receive, as we did last year, lots of high quality applications.
 So please do give your application some thought!
 
+
 Follow Google’s outline exactly: https://google.github.io/gsocguides/student/writing-a-proposal
 The “deliverables” section is most important!
 A clear understanding of the problem we need solved.
@@ -53,150 +54,36 @@ Be sure to read through all the advice on the wiki and the links we suggested fi
 You should include the following information in your proposal:
 
 
-GSoC Application Template
-=========================
+# Pull Request requirement
 
-Title
------
+In addition to the written proposal, we require every GSoC applicant to have opened a pull request to SunPy.
+Note it does not need to be merged to be considered.
 
-Please use a succinct title that describes your proposal.
-**Do not include the words "GSoC", "2018", or your name in the proposal title.**
-
-You the person
---------------
-
-**Please put this information at the top of your proposal.**
-
-* Your full name
-
-* University / current enrollment
-
-* Short bio / overview of your background
-
-* How can we contact you (email, GitHub username, etc.)?
-  This information will help us associate all of your various usernames with you.
-  - Email
-  - GitHub username
-  - Any other user name you want us to know about
-
-Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
-
-You the programmer
-------------------
-
-In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or git.
-Many of our students start fresh.
-We will teach you what you need to know.
-
-* What platform do you use to code?
-
-* What is your experience programming?
-
-* What is your experience with Python?
-
-* What is your experience with Open Source?
-
-* Have you ever used git or another version control system?
-
-* What are your contributions to SunPy so far?
-  It should be a brief summary (with links) of work including unmerged work.
-
-You and your project
---------------------
-
-Answer the following questions in your proposal:
-
-* What do you want to achieve?
-
-* What excites you about this project?
-  Why did you choose it?
-
-* What qualifications do you have to implement your idea?
-  For example, if you are implementing solvers for partial differential equations, what courses have you taken or books have you read on PDEs?  Why are you suited to work on this project?
-
-* What have other people done on this idea?
-  Has it been implemented before?
-  (hint: it probably has)
-  Are there any papers or blog posts about it?
-
-* How much time do you plan to invest in the project before, during, and after
-  the Summer of Code? (we expect full time 40h/week during GSoC, but better
-  make this explicit) If you plan to take any vacations over the summer, let
-  us know about it here.
-
-* Please provide a schedule of how this time will be spent on sub-tasks
-  of the project over the period of the summer. While this is only
-  preliminary, we will use it to help monitor your progress throughout
-  the program.  Also understand that during the project you will issue
-  weekly progress reports against that plan on your blog.
-
-* In planning your project, it is good to note where along the way you could
-  formulate a pull request. These would be points where you can have a self
-  contained and well documented and tested piece of functionality. Doing this
-  at several points during the summer helps to keep branch merges reasonable
-  and code reviews manageable. A big code dump at the end of the summer will
-  likely be hard to review and merge before the project deadline.
-
-* Please do not verbatim copy text from the ideas page, or from other people's
-  discussions about your project, but rewrite it in your own words.  If you
-  include any significant text or code from another source in your
-  application, it must be accompanied with a proper citation.  All papers or
-  references that you use or plan to use must also be cited.  Put all this in
-  a "References" section at the bottom of your application.
-
-You do not need to format your application as a question/answer format
-for the above questions, but we expect to see all of the above questions
-answered in your application somewhere.
-
-Patch requirement
-=================
-
-In addition to the written proposal, we require every GSoC applicant to write a patch and get it pushed into our current master.
-
-Please note that we take your patches to SymPy into strong consideration when reviewing your proposal.
+Please note that we take your pull requests to SunPy into strong consideration when reviewing your proposal.
 This is your best opportunity to prove to us that you are capable of doing what is in your proposal.
 
 To do this:
 
-* Set up your platform to develop with SymPy (install git, clone
-  https://github.com/sympy/sympy.git, execute tests). The page on our
-  [[Development workflow]] will walk you through setting up git and lays out
-  our preferred way of development.
+* Set up your platform to develop with SunPy (install git, clone https://github.com/sunpy/sunpy.git, execute tests).
+  The page on our [Developer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
 
-* Create an account at GitHub and fork SymPy (https://github.com/sympy/sympy).
+* Create an account at GitHub and fork SunPy (https://github.com/sunpy/sunpy).
 
-* Find something in SymPy that doesn't work or needs improvement and send us a
-  git patch fixing it. If you need inspiration, feel free to fix any issue
-  from our `easy to fix issues list
-  <http://code.google.com/p/sympy/issues/list?q=label:EasyToFix>`_. Aside from
-  the issues, search for ``FIXME`` or ``TODO`` in the code. You can grep from
-  the command line with ``git grep "TODO"`` . You could also search for
-  NotImplementedErrors and XFAILs).  You could also play with SymPy and find
-  something that needs fixing or that could be implemented, and do it.
+* Find something in SunPy that doesn't work or needs improvement.
+  If you need inspiration, feel free to fix any issue from our [Package Novice fix issues list](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package+Novice%22).
+  Aside from the issues, search for `FIXME` or `TODO` in the code.
+  You can grep from the command line with `git grep "TODO"`.
+  You could also search for NotImplementedErrors, maybe).
+  You could also play with SunPy and find something that needs fixing or that could be implemented, and do it.
 
-* Your patch must be code-related, not documentation. If your project will use
-  a language other than Python (e.g., JavaScript), you should submit patches
-  that use that language as well, so that we know that you know you are
-  proficient in that language. **However, for the patch requirement to be
-  fulfilled, you must have at least one patch in SymPy itself.**
-
-* Publish your patch for peer review by creating a pull request on GitHub.
-  You must submit a patch that is successfully reviewed and pushed in to be
-  accepted. We do not consider applications without patches. This shows us that
-  you know Python and that you are able to interact with the community.
-  Furthermore, your patch must go through a GitHub pull request (as opposed to
-  a patch file on an issue, for example), as this is not only the easiest way
-  for us to review your code, but is also what we expect from a student working
-  on a GSoC project.
+* Your pull request must be code-related, not documentation.
+  While we do not want to discourage documentation pull requests as they are very useful.
+  This shows us that you know Python and that you are able to interact with the community.
+  If your project will use a language other than Python (e.g., C), you should submit patches that use that language as well, so that we know that you know you are proficient in that language.
+  **However, for the pull request requirement to be fulfilled, you must have at least one pull request open or in SunPy itself.**
 
 * Note that because we may be slow to review the pull requests, you do not
-  have to have your request merged by the application deadline (though you
-  should try to do it if you can!).  But you do need to at least have one
-  submitted by then.  We will give priority to reviewing requests that are
-  needed to satisfy patch requirements.  It is up to you to respond to our
-  feedback in a timely enough manner so that your patch gets merged before the
-  acceptance deadline.
-
->This page is a combination of several other pages from around the world.
->We want to thank all those FOSS packages that we took heavy inspiration from.
->SymPy being the main one.
+  have to have your request merged by the application deadline.
+  But you do need to at least have one submitted by then.
+  We will give priority to reviewing requests that are needed to satisfy GSoC requirements.
+  It is up to you to respond to our feedback in a timely enough manner so that your patch gets merged before the acceptance deadline.

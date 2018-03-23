@@ -10,9 +10,13 @@ SunPy participated in 2013 for the first time and 2014 and 2015 under the [Pytho
 
 ### SunPy focused
 
-We recommend these for people who want to apply for GSoC: [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]]
+We recommend for people who want to apply for GSoC to read [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]].
+Our [[GSoC Application template | GSoC: Student Application Template]].
 
-This is for mentors and accepted students, [[GSoC: General Points]]
+[[GSoC: General Points]] is for mentors and accepted students.
+
+>These pages are a combination of several other pages from around the world.
+>We want to thank all those FOSS packages that we took heavy inspiration from, SymPy being the main one.
 
 ### From other places
 [OpenAstronomy GSoC](http://openastronomy.org/gsoc/background.html)
