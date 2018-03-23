@@ -248,7 +248,7 @@ Especially useful for looking up what files are stored in
 your cache when you don't have internet access.
 Parameters
 ----------
-file_name : str , optional5
+file_name : str , optional
     If provided, function will return cached urls
     for the provided file name.
 time_range : TimeRange , optional
@@ -334,7 +334,7 @@ Coding Begins
     
     
 + **Week 10 (July 14 -July 21)** 
-    + + Address the requested changes( if any ) in the previously opened PR.
+    +  Address the requested changes( if any ) in the previously opened PR.
     +  Implement utility functions
     +  Add Tests and Documentation for Utility Functions
 + **Week 11 and Week 12 (July 22 - August 5)**
