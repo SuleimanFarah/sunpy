@@ -307,6 +307,9 @@ If things went fine till now, then I would be done with my target till now. This
 - If there is time left then I would like to work on improving the module by adding features like a progress bar. (Can use the progress bar made in ```sunpy.utils.progressbar```)
 - I would be in touch with the mentors and if there are any further issues or bugs that are left unresolved then I would work on them.
 - Hopefully get the work merged with the master branch of Sunpy
+___
+### Final Evaluation
+___
 
 ### How I will successfully complete the project
 I am confident of completing this project as the project suits my interests and I have a fairly good experience with python. I have previously worked on projects that have strict deadlines and have a good prior experience with open source.
