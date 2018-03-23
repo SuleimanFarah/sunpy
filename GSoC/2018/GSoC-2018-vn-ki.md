@@ -88,14 +88,16 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 | ts = pandas.Timestamp() |`Time(pandas.Timestamp)`  |  
 | ts = pandas.Series() | `np.array([Time(v) for vin  ts])` |  
 | pandas.DatetimeIndex() | `np.array([Time(v) forv   in ts])` |  
-| np.datetime64('2005-02-01T00') | See Note below|  
-| np.arange('2005-02') | See Note below |  
-| np.arange('2005-02-01T00') | See Note below |  
+| np.datetime64('2005-02-01T00') | See gist below|  
+| np.arange('2005-02', '2005-03', dtype='datetime64[D]') | See gist below |  
+| np.arange('2005-02-01T00', '2005-02-01T10', dtype='datetime64') | See gist below |  
 | ts = astropy.time.Time | `ts` |  
 | 'now' | `Time.now()` |  
 
-  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  comment](https://github.com/astropy/astropy/issues/6428#issuecomment-362224248) in astropy/#6428.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428.
 
+  Before returning `Time`, `.replicate` function could be called on it so that we get a uniform format for all the returned `Time` objects.
+  Ex: `return Time(..., format='unix').replicate('iso')`
 - Changes to other modules
 
     Modules are mentioned in summary above. The   change mostly include changing them to use   `astropy.Time` instead of `datetime`. This is  summed up above in the first point of this  section.
@@ -114,7 +116,7 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
 - Equivalent of `datetime.timedelta`
 
-  I would make a function `get_timedelta(**kwargs)` to return `astropy.TimeDelta`. This is because `astropy.TimeDelta` does not accept seconds, minutes etc.
+  I would make a function `get_timedelta(days, seconds, microseconds, milliseconds, minutes, hours, weeks)` to return `astropy.TimeDelta`. This is because `astropy.TimeDelta` does not accept milliseconds, minutes etc. This function would simplify the creation of `TimeDelta` objects and thus would be used internally and could be used by users too.
 
 # Project Plan
 
@@ -148,7 +150,7 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
     Write the necessary tests and documentation for the new `parse_time`.
 
-    Work on providing a formatting interface for `astropy.Time`
+    Work on providing a formatting interface for `astropy.Time`.
 
   - **June 11 - June 17**
 
