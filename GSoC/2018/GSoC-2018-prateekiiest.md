@@ -271,6 +271,14 @@ There are many instances of datetime throughout the whole of the sunpy modules. 
 
 This is a proposed solution to replace the common datetime operations with corresponding astropy.Time operations.
 
+| Datetime operations| Under  which modules in sunpy | Astropy.Time operations|
+|:---------------:|:-----------------:|:-------------:|
+|`datetime.timedelta`| `sunpy.net`, `sunpy.time`, `sunpy.util`, `sunpy.lightcurve` , `sunpy.timeseries`|`datetime.timedelta` supports additional formats like hours, milliseconds, weeks as opposed to `Timedelta` which only supports `jd` and `sec`. |
+|For ` datetime(year, month, day)` `tx = (year, month, day)` |`sunpy.time.tests`|`t.Time('{}-{}-{}'.format(*tx))`|
+|`datetime.isoformat`|`sunpy.roi`, `sunpy.lightcurve`, `sunpy.timeseries`,`sunpy.instr`|`t.Time(time_string).isot`|
+
+
+
 ####  Redesign of sunpy.time.parse_time function
 
 **Making Parse_time return astropy.Time instead of datetime.**
