@@ -24,7 +24,7 @@
 - **Major:** Computer Science
 - **Current Year:** Second Year
 - **Expected Graduation Date:** 2021
-- **Programme:** Bachelor of Technology (B.Tech) in Computer Science and MS by Research in Computer Science 
+- **Programme:** Bachelor of Technology (B.Tech) in Computer Science and MS by Research in Computer Science
 
 
 
@@ -38,7 +38,7 @@ Before contributing to **Sunpy** i have not had much Open Source experience but 
 -  Made a **Proxy server and a client - server model in Python** using HTTP libraries . [Link1](https://github.com/gulshan-mittal/Proxy-Server) [Link2](https://github.com/gulshan-mittal/Socket-Programming)
 - Made a **Bomberman** game using **Python** with **OOP Principles** . [Link to Project](https://github.com/gulshan-mittal/bomberman-game)
 - Made a 2-D Pacman Killer game using **OpenGl**. [Link to Project](https://github.com/gulshan-mittal/Packman-Killer)
-- Made a 3-D Legend of Zelda game Wind Walker using **OpenGl**. [Link to Repo](https://github.com/gulshan-mittal/Wind-Walker-3D-Zelda-Game) 
+- Made a 3-D Legend of Zelda game Wind Walker using **OpenGl**. [Link to Repo](https://github.com/gulshan-mittal/Wind-Walker-3D-Zelda-Game)
 - Made a Extreme Tic Toe Bot using **Python** . [Link to Bot](https://github.com/gulshan-mittal/Extreme-Tic-Tac-Toe)
 - Build a State Restoring Quiz Game in **Ruby on Rails**. Modify the Project and conduct **Cache-in IIIT-H Felicity Buzz Event** where number of people registered on it. [Link to Project](https://github.com/gulshan-mittal/State-Restoring-Quiz-game/tree/master/Quiz-game)
 
@@ -77,7 +77,7 @@ Some functionality in SunPy or in affiliated packages is going to need access to
 
 This project needs to be designed and implemented under the assumptions that SunPy **has no control over the data** on these servers, and that files on the servers may be replaced with different files with the same name. This functionality will therefore have to validate the retrieved files have the expected hashes, while providing ways for users to override this hash if they are aware of changes on the remote server.
 
-There are many requirements for this project. Data is **download and cached** to `$HOME/sunpy/data/...` when first needed. There is some validation that the data has been **transferred correctly** (sha hashes etc). There should be a mechanism by which we can allow users to **re-download data.** The download code supports **multiple mirrors**.  
+There are many requirements for this project. Data is **download and cached** to `$HOME/sunpy/data/...` when first needed. There is some validation that the data has been **transferred correctly** (sha hashes etc). There should be a mechanism by which we can allow users to **re-download data.** The download code supports **multiple mirrors**.
 
 
 
@@ -86,7 +86,7 @@ There are many requirements for this project. Data is **download and cached** to
 Functions in sunpy are going to need datafiles present on remote server to work and as of now there is no proper system to control remote data so there is a need to design system which could meet with the requirements of remote data in sunpy. There are some issue in sunpy which push me to design and build the remote data manager.
 
 1. In **`download_file`** function which is currently used to download data for tutorials taken from [astropy](http://docs.astropy.org/en/stable/api/astropy.utils.data.download_file.html?highlight=download) doesn't support the override mechanism to download data.Also it **doesn't **meet with multiple mirror requirement if data is not present on one server. Motivation from  [Issue 1809](https://github.com/sunpy/sunpy/pull/1809).
-2. There is some part of **`AIA`** response function which is varying with time. Right now the instrument info (e.g. reflection coefficients of mirrors, gain of CCD, quantum efficiency of CCD) are read straight from the .genx files in SSW. When user create an instance of the response class, he/she can choose a path to his/her  SSW install and the version of the instrument file he/she want (the default is 6). As of now, the problem how to either pull down this info from somewhere or store it (and version it somehow) 
+2. There is some part of **`AIA`** response function which is varying with time. Right now the instrument info (e.g. reflection coefficients of mirrors, gain of CCD, quantum efficiency of CCD) are read straight from the .genx files in SSW. When user create an instance of the response class, he/she can choose a path to his/her  SSW install and the version of the instrument file he/she want (the default is 6). As of now, the problem how to either pull down this info from somewhere or store it (and version it somehow)
    has not been solved. The calculated response function is up to date depends on the instrument teams keeping the files in SSW up to date, the users local SSW install being up to dateand the user selecting the newest version (since older versions are kept in SSW) . This is **not a good** idea to purposed.Motivation from [Issue 1897](https://github.com/sunpy/sunpy/pull/1897).
 3. **Time out** error if data from the remote server exceeds time limit.
 
@@ -97,12 +97,12 @@ Functions in sunpy are going to need datafiles present on remote server to work 
 
 **Part1** : Evaluation of the methods proposed and ensuring the **best approach** for storing a local cache of data. There should be implementation of a basic cache and download system , including test and documentation.
 
-**Part2** : Design of a simple and functional API and have worked with my mentors and community for better understanding and implementing the design efficiently.The working **prototype** of this API also have to be done including its **tests**. 
+**Part2** : Design of a simple and functional API and have worked with my mentors and community for better understanding and implementing the design efficiently.The working **prototype** of this API also have to be done including its **tests**.
 
 
 ### Deliverables
 
-1. **Cache and download system** along with its test and documentation. 
+1. **Cache and download system** along with its test and documentation.
 2. **Simple and functional API** and its working prototype. Written examples for the gallery of how to use the functionality.
 3. **Developer documentation** for the understanding of functionality. All the work should be done in a manner that Pull request should be merged after **review and feedback**.
 
@@ -113,8 +113,8 @@ Functions in sunpy are going to need datafiles present on remote server to work 
 
 1. The first requirement is data is downloaded and cached to **`$HOME/sunpy/data...`**  when first needed. It is the folder that made automatically when you build the sunpy poroject. (Inside the data folder currently there are fts and fits  files and `sample_data` folder which also contain fits , txt , pha files.)
 2. The second requirement is a quite interesting and i put it as a  **high priority** requirement.In this there is need do some **validation** that the data has been transferred correctly.It can be done using **cryptographic hash function**. But here one question arises that if the data on the remote server has changed (consciously due to calibration change) and we have stored a sha hash in the code , then our downloads will start to gave errors and the only way to fix for this approach is to do a new Sunpy release with a bug fix. The alternative is to not store hashes and just assume the data is what we anticipated and roll with it. It would be better to pin the version of data to the code, it means that in theory as long as the **remote data is available one version of SunPy will always give the same answers**. (Same code same data).  A mechanism to skip download verification if the user knows what they are doing can also be used here. Also here in this project we are dealing with random data on the internet so there is no way to persuade the provider to version their data properly. Need of **efficient mechanism** to tackle this problem is needed.
-3. Mechanism by which users can be allowed to **re-download data** . 
-4. The download code supports **multiple mirrors**. 
+3. Mechanism by which users can be allowed to **re-download data** .
+4. The download code supports **multiple mirrors**.
 
 
 
@@ -126,7 +126,7 @@ We need to cache  the downloaded data in a effective manner. We will use `remote
 
 ```python
 @remote_data_manager.require(name='file1',
-                             urls=('https://server1/file1.fits', 'http://server2/file1.fits'), 
+                             urls=('https://server1/file1.fits', 'http://server2/file1.fits'),
                              shasum='1245645343545334')
 def myfetch():
     filename = remote_data_manager.get_file('file1')
@@ -134,12 +134,12 @@ def myfetch():
 
 This adds the function name to the cache, and the files, when the code is run the downloader goes out and gets the file, verifies that it matches the provided hash using `compare_hash()`function of `remote_data_manager`and it puts it in a folder which probably has the function name in it, and then gives it to the function on request. **If a file already present in cache then it simply gave the path to the file without downloading**.
 
-**Note:** `comapre_hash()` function will be implemented in `remote_data_manager` class . Along with it we have to use 
+**Note:** `comapre_hash()` function will be implemented in `remote_data_manager` class . Along with it we have to use
 
 Cache will be maintained on a disk in the form of **json** (javascript object notation). The given ***json below*** describe how the cache database will look like , how it allows to override the hash check and replace the file.
 
 ```json
-{ 
+{
     "function_name": "myfetch",
     "fileaname": "file1",
     "default_hash": "1245645343545343",
@@ -158,15 +158,15 @@ Cache will be maintained on a disk in the form of **json** (javascript object no
     ]
  }
 ```
-Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached with the file in remote_data_manager class, **default_hash** i assume it is the hash which i know for comparing or it is the hard coded hash.**List_cash** maintains the list of  cache of files having same **shared key** which is file name. 
+Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached with the file in remote_data_manager class, **default_hash** i assume it is the hash which i know for comparing or it is the hard coded hash.**List_cash** maintains the list of  cache of files having same **shared key** which is file name.
 
-**Note**: We are also caching the older version of data. 
+**Note**: We are also caching the older version of data.
 
 
 ### Storage and Download
 
 - ***Storage :*** The file will be saved in the folder  `$HOME/sunpy/data/…` and the **name of the file determined by hash or time stamp ( `created at` field in the cache  json)** .
-- ***Download :***  For downloading data  we are using `remote_data_manager` which uses downloading function for example  **`download_file`**  or implementation of new function can be made . In  **`require`** function as stated above will have a **time out** parameter , **show_progress bar** (default value `true` in astropy download dunction) as well. 
+- ***Download :***  For downloading data  we are using `remote_data_manager` which uses downloading function for example  **`download_file`**  or implementation of new function can be made . In  **`require`** function as stated above will have a **time out** parameter , **show_progress bar** (default value `true` in astropy download dunction) as well.
 - **The downloaded data is cached and stored safely and efficiently.**
 
 
@@ -233,7 +233,7 @@ def compare_hash(file1,file2):
 
 ```python
 def get_cached_urls():
-    return the cached urls 
+    return the cached urls
 ```
 
 
@@ -245,14 +245,14 @@ def get_cached_urls():
 ```python
 def delete_cache(file):
     '''delete the cache'''
-    return 
+    return
 ```
 
 
 
 ##### `get_file(file)`
 
-It provides the file name along with the path of file. **A association used will make a efficient function like objects which give the  file  by hash or time stamp**. 
+It provides the file name along with the path of file. **A association used will make a efficient function like objects which give the  file  by hash or time stamp**.
 
 ```python
 def get_file(file):
@@ -267,17 +267,17 @@ def get_file(file):
 
 #### Hashing for validation
 
-**Library used :** hashlib 
+**Library used :** hashlib
 
-In python hash object of different bits are available for e.g sha1(), sha224(), sha256(), sha384(),sha512(), MD5 . We will use sha1() if we need security because it will sufficient for comparing the validation of file and also not too big. if security value is not so high then **MD5sum will be used because it is more memory efficient and faster to compute.** 
+In python hash object of different bits are available for e.g sha1(), sha224(), sha256(), sha384(),sha512(), MD5 . We will use sha1() if we need security because it will sufficient for comparing the validation of file and also not too big. if security value is not so high then **MD5sum will be used because it is more memory efficient and faster to compute.**
 
 ```python
 import hashlib
-m = hashlib.sha1()  				'''Secured SHA-160 object''' 
-    	#or 
+m = hashlib.sha1()  				'''Secured SHA-160 object'''
+    	#or
 m = hashlib.md5()  					'''Not secured but fast'''
 def calculate_hash_func(file):
-    return hash value of file		'''reading file data upto some buffer'''	
+    return hash value of file		'''reading file data upto some buffer'''
 ```
 
 - **Important :** **Every function which uses remote data will have a hash attached to it to access the remote data.**
@@ -291,7 +291,7 @@ def calculate_hash_func(file):
 
 1. Firstly File is downloaded from the remote server by getting url of data source.
 2. Then file is cached along with a cached json where we update the url field.
-3. **Also exception raises will be used for error handling.** 
+3. **Also exception raises will be used for error handling.**
 
 
 
@@ -328,7 +328,7 @@ Documentation and writing tests will be done simultaneously along with each func
 
 
 
-- **Important** : I will still  work on issues of sunpy till **18th April** before community bonding period starts and i will also be active on **RIOT** and for updating the mentors during coding period i will also write **weekly blog**.  
+- **Important** : I will still  work on issues of sunpy till **18th April** before community bonding period starts and i will also be active on **RIOT** and for updating the mentors during coding period i will also write **weekly blog**.
 
 
 
@@ -336,7 +336,7 @@ Documentation and writing tests will be done simultaneously along with each func
 ## Software packages to be used
 
 1. **Language:**  `Python`
-2. Libraries and modules: ***HTTP client libraries, Checksumming and Caches, sunpy.util.progressbar, json, urllib, contextlib.*** 
+2. Libraries and modules: ***HTTP client libraries, Checksumming and Caches, sunpy.util.progressbar, json, urllib, contextlib.***
 
 
 
