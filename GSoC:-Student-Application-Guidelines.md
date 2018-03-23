@@ -1,7 +1,5 @@
-**WIP** **INCOMPLETE**
-
-Proposal Guidelines
-We expect to receive, as we did last year, lots of high quality applications. So please do give your application some thought!
+We expect to receive, as we did last year, lots of high quality applications.
+So please do give your application some thought!
 
 Follow Google’s outline exactly: https://google.github.io/gsocguides/student/writing-a-proposal
 The “deliverables” section is most important!
@@ -11,7 +9,6 @@ Milestones should be achievable and realistic.
 Things happen! We can’t foresee every problem! We are happy to see proposals that say “I will do A and B. If there is time, I will do C.”
 Read about our grading criteria for proposals.
 We are happy to read your proposal and give you feedback. Please allow for a few days for us to get back to you – don’t wait until the last minute!
-
 
 
 Student proposal grading criteria
@@ -52,44 +49,18 @@ Has the student demonstrated that they can work independently and solve problems
 Does the student understand the design and technical details of what will be required to implement their proposal?
 Is the proposed timeline realistic considering any other obligations the student may have during GSOC?
 
+Be sure to read through all the advice on the wiki and the links we suggested first!
+You should include the following information in your proposal:
+
+
 GSoC Application Template
 =========================
-
-Be sure to read through all the advice on the wiki and the links we suggested first!
-
-Writing your proposal
----------------------
-
-To be considered, a GSoC application must have a written proposal submitted to
-https://summerofcode.withgoogle.com.
-
-If you want, you can start a wiki page to work on your proposal at
-https://github.com/sympy/sympy/wiki/.  If you add your proposal there, we will
-help you edit it and provide feedback (though understand that we will not help
-you write it).  You can add your application to our list of
-[[GSoC 2018 Current Applications]].  To maintain a consistent naming
-scheme, title your application: "GSoC 2018 Application <Your Name>: <Project
-Name>".  Old applications can be found either through the links on the main
-page of the wiki or by browsing through [[_pages]].
-
-Note that your final application must be submitted at
-https://summerofcode.withgoogle.com, so do not worry about the formatting of your
-application on the wiki, as you will have to reformat it there.  You should
-not be too concerned with the formatting on Google's website either, as we understand
-that the text editor there is not the best for making things look nice
-formatting-wise.  We are more concerned with the content of your application,
-and that it is readable.
-
-You may be able to get equivalent formatting in the GSoC portal from the wiki by
-copying the webpage contents or messing with the HTML source, but you
-shouldn't worry about it too much.
-
-You should include the following information in your proposal:
 
 Title
 -----
 
-Please use a succinct title that describes your proposal. **Do not include the words "GSoC", "2018", or your name in the proposal title.**
+Please use a succinct title that describes your proposal.
+**Do not include the words "GSoC", "2018", or your name in the proposal title.**
 
 You the person
 --------------
@@ -102,37 +73,33 @@ You the person
 
 * Short bio / overview of your background
 
-* How can we contact you (email, GitHub username, etc.)?  This information
-  will help us associate all of your various usernames with you.
-
+* How can we contact you (email, GitHub username, etc.)?
+  This information will help us associate all of your various usernames with you.
   - Email
   - GitHub username
   - Any other user name you want us to know about
 
-Also, please use your full real name in your GSoC portal profile, so that it
-appears in the proposal list.
+Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
 You the programmer
 ------------------
 
-In your project proposal let us know about your programming experience.  Don't
-worry if you don't know SymPy or git.  Many of our students start fresh.
+In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or git.
+Many of our students start fresh.
 We will teach you what you need to know.
 
-* What platform do you use to code?  What editor do you prefer and why?
+* What platform do you use to code?
 
-* What is your experience programming?  Tell us about something you have
-  created.
+* What is your experience programming?
 
-* What is your experience with Python?  What are your favorite features of
-  Python that are lacking in most other common programming languages?  What,
-  in your opinion, is the most advanced Python language feature or standard
-  library functionality that you have used?
+* What is your experience with Python?
 
-* What is your favorite feature of SymPy?  Demonstrate it here with a cool example.
+* What is your experience with Open Source?
 
 * Have you ever used git or another version control system?
 
+* What are your contributions to SunPy so far?
+  It should be a brief summary (with links) of work including unmerged work.
 
 You and your project
 --------------------
@@ -141,15 +108,16 @@ Answer the following questions in your proposal:
 
 * What do you want to achieve?
 
-* What excites you about this project?  Why did you choose it?
+* What excites you about this project?
+  Why did you choose it?
 
-* What qualifications do you have to implement your idea?  For example, if you
-  are implementing solvers for partial differential equations, what courses
-  have you taken or books have you read on PDEs?  Why are you suited to work on
-  this project?
+* What qualifications do you have to implement your idea?
+  For example, if you are implementing solvers for partial differential equations, what courses have you taken or books have you read on PDEs?  Why are you suited to work on this project?
 
-* What have other people done on this idea?  Has it been implemented before?
-  (hint: it probably has)  Are there any papers or blog posts about it?
+* What have other people done on this idea?
+  Has it been implemented before?
+  (hint: it probably has)
+  Are there any papers or blog posts about it?
 
 * How much time do you plan to invest in the project before, during, and after
   the Summer of Code? (we expect full time 40h/week during GSoC, but better
@@ -181,14 +149,12 @@ for the above questions, but we expect to see all of the above questions
 answered in your application somewhere.
 
 Patch requirement
------------------
+=================
 
-In addition to the written proposal, we require every GSoC applicant to write a
-patch and get it pushed into our current master.
+In addition to the written proposal, we require every GSoC applicant to write a patch and get it pushed into our current master.
 
-Please note that we take your patches to SymPy into strong consideration when
-reviewing your proposal. This is your best opportunity to prove to us that you
-are capable of doing what is in your proposal.
+Please note that we take your patches to SymPy into strong consideration when reviewing your proposal.
+This is your best opportunity to prove to us that you are capable of doing what is in your proposal.
 
 To do this:
 
@@ -214,8 +180,6 @@ To do this:
   proficient in that language. **However, for the patch requirement to be
   fulfilled, you must have at least one patch in SymPy itself.**
 
-* Report success on the SymPy list
-
 * Publish your patch for peer review by creating a pull request on GitHub.
   You must submit a patch that is successfully reviewed and pushed in to be
   accepted. We do not consider applications without patches. This shows us that
@@ -224,10 +188,6 @@ To do this:
   a patch file on an issue, for example), as this is not only the easiest way
   for us to review your code, but is also what we expect from a student working
   on a GSoC project.
-
-* **In your application, please provide a brief summary of your contributions to
-  SymPy so far, including unmerged work. At least one link to a merged pull
-  request proving that you satisfied the patch requirement.**
 
 * Note that because we may be slow to review the pull requests, you do not
   have to have your request merged by the application deadline (though you
