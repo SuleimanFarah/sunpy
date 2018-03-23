@@ -2,7 +2,7 @@
 
 ### **Project: Transition to Astropy Time**
 
-##### **Mentors: **@Cadair, @Nabobalis, **@Punyaslok**
+##### Mentors: @Cadair, @Nabobalis, @Punyaslok
 
 #### **Student Information**
 
@@ -408,7 +408,7 @@ Third Week Provide a more detailed documentation for the modules using parse_tim
 </table>
 
 
-## **G****SoC**
+## GSoC
 
 ### **Have you participated previously in GSoC? When? With which project?**
 
