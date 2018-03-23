@@ -439,7 +439,7 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 
 * I have my semester exams from around 22nd of April to 1 May. So I will not be able to contribute much time to the project work during this time. Still I will try to devote 2-3 hours during the weekdays to do my work.
 
-* SunPy is the only organization and this project is the only project that I have applied for.
+* SunPy is the only organization and I am applying for another project in SunPy.
 
 * * *
 
