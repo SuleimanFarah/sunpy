@@ -8,13 +8,22 @@ SunPy participated in 2013 for the first time and 2014 and 2015 under the [Pytho
 
 ## Guidelines and helpful advice
 
-[[GSoC: Student Application Guidelines]]
+### SunPy focused
 
-[Background](http://openastronomy.org/gsoc/background.html)
+We recommend these for people who want to apply for GSoC: [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]]
 
-[Advice](https://wiki.python.org/moin/SummerOfCode/)
+This is for mentors and accepted students, [[GSoC: General Points]]
 
-[More Advice](https://google.github.io/gsocguides/student/)
+### From other places
+[OpenAstronomy GSoC](http://openastronomy.org/gsoc/background.html)
+
+[Python Software Foundation's Advice](https://wiki.python.org/moin/SummerOfCode/FrequentlyAskedQuestions)
+
+[GSoC FAQ](https://developers.google.com/open-source/gsoc/faq).
+
+[Google's Advice](https://google.github.io/gsocguides/student/)
+
+[Mixxx's Advice](https://www.mixxx.org/wiki/doku.php/gsocadvice#application_evaluation_criteria)
 
 ## Editions
 
