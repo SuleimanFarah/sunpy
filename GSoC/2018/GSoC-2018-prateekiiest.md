@@ -27,13 +27,13 @@
 
 #### **University Information**
 
-*     University: Indian Institute of Engineering Science and Technology, Shibpur
+* University: Indian Institute of Engineering Science and Technology, Shibpur
 
-*     Major: Computer Science and Engineering
+* Major: Computer Science and Engineering
 
-*     Current Academic Year : Third Year
+* Current Academic Year : Third Year
 
-*     Graduate Year: 2019
+* Graduate Year: 2019
 
 * * *
 
@@ -381,37 +381,36 @@ I plan to import some functions for setting the scale and formats of the Time ob
   </tr>
   <tr>
     <td>May 14 - Jun 11</td>
-    <td>First Week Dedicate this time to knowing more about the project, work with mentors and discuss with them the desired changes to parse_time. I would share my proposed design for returning astropy.Time object and upon consent will start implementing the basic functionality. This period would also be dedicated to knowing about the API changes required in parse_time and the design for adding extra functionalities of astropy.Time like setting scale and format under the function.
-Second Week Start working on refactoring the parse_time function to return astropy.Time object. Also dedicate this time to work on adding features like Time formats for TAI, TDB and others.
-Third Week and Fourth Week Work on precision implementation in the current function with guidance to astropy.time.Time.precision. Write a function under the parse_timeclass that can set the precision of time by calling astropy.Time._set_precision.</td>
+    <td><li> <b>First Week</b> Dedicate this time to knowing more about the project, work with mentors and discuss with them the desired changes to parse_time. I would share my proposed design for returning astropy.Time object and upon consent will start implementing the basic functionality. This period would also be dedicated to knowing about the API changes required in parse_time and the design for adding extra functionalities of astropy.Time as proposed above.</li>
+<li ><b>Second Week</b> Start working on refactoring the parse_time function to return astropy.Time object. Start breaking the whole functionality of `parse_time` into separate functions for time conversion as has been proposed above.</li>
+<li> <b>Third Week and Fourth Week</b> These two weeks will be divided according to the workload. Implement each of the time conversion for different time_string instances and return corresponding `astropy.Time` objects. Next work on the additional features as suggested by mentors. This may include writing separate functions for conversion of time to different scales or formats as offered by `astropy.Time`.</li></td>
   </tr>
   <tr>
     <td>Jun 11 -Jun15</td>
-    <td>  Phase 1 Evaluation
-Have the modified version of parse_time ready. Should address to any prevalent bugs that may occur due to involvement of new functions. Once it’s set up , I plan to start working on the tests for the newly designed function. Apart from this, I will try to complete as much as documentation possible. </td>
+    <td>  <b>Phase 1 Evaluation</b>
+Have the modified version of parse_time ready. Should address to any prevalent bugs that may occur due to involvement of new functions. Once it’s set up , I plan to start working on the tests for the newly designed function. Tests will include writing tests for each of the separate time conversion functions for parse_time. Apart from this, I will try to complete as much as documentation possible. These will include documentation for the type we are using for input and output along with links to astropy Time docs corresponding to particular conversion operations, if required.</td>
   </tr>
   <tr>
     <td>Jun 15 - Jul 9</td>
-    <td>First Week Start working on updating the modules under sunpy.net for transition to use astropy.Time. This will involve modifying the functions currently taking input as datetime to updating them to use astropy.Time object. Also the inside body of such function needs to be changed in order to support astropy.Time objects.
-
-Second Week During this time I plan to work on implementing the tests for all such modules where the transition is required.
-Third Week Dedicate this time to working on documentation for the modules where transition is required.
-Fourth Week Update the examples. Since the current examples work on datetime objects, they need to be updated to use astropy.Time.</td>
+    <td><li> <b>First Week</b> Start working on updating the modules under sunpy for transition to use astropy.Time. This will involve modifying the functions currently taking input as datetime to updating them to use astropy.Time object. Also the inside body of such function needs to be changed in order to support astropy.Time objects.</li>
+<li><b>Second Week</b> During this time I plan to work on implementing the tests for all such modules where the transition is required.</li>
+<li><b>Third Week</b> Dedicate this time to working on documentation for the modules where transition is required.</li>
+<li> <b>Fourth Week</b> Update the examples. Since the current examples work on datetime objects, they need to be updated to use astropy.Time.</li></td>
   </tr>
   <tr>
     <td>Jul 9 - Jul 13</td>
-    <td>Phase 2 Evaluation 
+    <td><b>Phase 2 Evaluation</b> 
 Remaining time will be dedicated to check for any bugs or breaks in the code where the transitions are made. Cover up any remaining related issues during this time.</td>
   </tr>
   <tr>
     <td>Jul 13 - August 6</td>
-    <td>First Week I plan to replace all usage of previous parse_timefunction with the newly designed one. This will require changes to most of the sunpy.net modules like helio, vso. Much of the code in each of these modules will need to be modified a bit in order to tune in to the newly designed function.
-Second Week Work on increasing test coverage wherever its required.
-Third Week Provide a more detailed documentation for the modules using parse_time along with support examples for the user to correlate to.</td>
+    <td><li> <b>First Week</b> I plan to replace all usage of previous parse_time function with the newly designed one. This will require changes to most of the sunpy.net modules like helio, vso. Much of the code in each of these modules will need to be modified a bit in order to tune in to the newly designed function.</li>
+<li> <b>Second Week</b> Work on increasing test coverage wherever its required.</li>
+<li><b>Third Week</b> Provide a more detailed documentation for the modules using parse_time along with support examples for the user to correlate to.<li></td>
   </tr>
   <tr>
     <td>August 6 - 14</td>
-    <td>Final Week - See to if there exist any bugs that was not addressable before. Any pending work or issues will be addressed to during this time</td>
+    <td><b>Final Week</b> - See to if there exist any bugs that was not addressable before. Any pending work or issues will be addressed to during this time</td>
   </tr>
 </table>
 
