@@ -63,4 +63,6 @@ Then try to follow these steps for applying to GSoC with SunPy.
     There have been issues in the past with submissions right up at the deadline, so submit your application early.
 
 Following these points will assure you to be high rated and don't hesitate to ask us anything.
+Please make sure to check the other GSoC wiki pages!
+
 Best of luck to everyone!

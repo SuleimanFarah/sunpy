@@ -1,60 +1,8 @@
+Be sure to read through all the advice on the wiki and the links we suggested first!
 We expect to receive, as we did last year, lots of high quality applications.
 So please do give your application some thought!
 
-
-Follow Google’s outline exactly: https://google.github.io/gsocguides/student/writing-a-proposal
-The “deliverables” section is most important!
-A clear understanding of the problem we need solved.
-A clear plan of action. What are you going to actually do?
-Milestones should be achievable and realistic.
-Things happen! We can’t foresee every problem! We are happy to see proposals that say “I will do A and B. If there is time, I will do C.”
-Read about our grading criteria for proposals.
-We are happy to read your proposal and give you feedback. Please allow for a few days for us to get back to you – don’t wait until the last minute!
-
-
-Student proposal grading criteria
-Criteria
-Once proposals have been finalised, student proposals will be graded based on the following criteria:
-
-Understanding
-Does the proposal accurately address the project area?
-Nice bonus features in addition to the main project = good, ONLY unrelated ‘bonus’ features = bad.
-Clear evidence of communication skills
-Plan
-Does the proposal have a realistic timeline?
-Bonus for “what if things go wrong planning”, e.g. bonus features towards the end of the plan that can be removed if/when the bugs strike.
-Resourcefulness
-Can the student carry out tasks on their own over a three month period?
-Lower points for gross overcommunication (“what should I name this variable?”), better if they quietly and competently get the job done but interact at appropriate times, e.g. InterMine bugs, sensible progress reports.
-Is the student capable of following existing guidelines and instructions where appropriate?
-Experience
-Does the student have reasonable evidence they’ve competently done something relevant to this before? e.g. one or more of
-a GitHub profile,
-pull requests on InterMine’s repos
-published applications
-code from a uni assignment?
-Note: we don’t require a PR to an intermine project. It’s handy as a source of evidence, but any of the others should do just fine.
-Absolutely no work available - not even a published app, some work experience, or code from a class assignment, is a red flag.
-How the ranking process works
-All students with a finalised proposal will have their proposals reviewed by one or more mentors in the organisation, and ranked out of 10 based on the criteria above. This score will also be averaged to provide a mean result. These scores are not the final acceptance criteria - so a 9.1 won’t automatically win over an 8.6 - but they do help provide general guidelines for the mentors who are choosing from a large body of qualified students.
-
-Accepted students
-Students will be notified of their acceptance by Google when all accepted students are announced, and will not be notified of their internal grades. Please note that we usually have more highly qualified applicants than slots available for the organisation, so sometimes proposals that are genuinely very good have to be rejected. We genuinely wish we could take you all!
-
-Here are some criteria that we consider when reviewing applications. We suggest that you think about these when writing your application.
-
-Has the student interacted with the Mixxx community before submitting their application?
-Does the student understand the purpose of their project? Do they understand what impact their project will have on users?
-Has the student demonstrated that they have the ability to work with Mixxx's code? The best way to do this is by submitting pull requests and getting them merged. It can also be okay if a student works on a bug but is unable to solve it before the application deadline if they demonstrate competence working with the Mixxx code. Students must have submitted a pull request to Mixxx or provide links to code they have written before in their application (ideally both).
-Has the student demonstrated that they can work independently and solve problems on their own without asking for help every step of the way?
-Does the student understand the design and technical details of what will be required to implement their proposal?
-Is the proposed timeline realistic considering any other obligations the student may have during GSOC?
-
-Be sure to read through all the advice on the wiki and the links we suggested first!
-You should include the following information in your proposal:
-
-
-# Pull Request requirement
+## Pull Request requirement
 
 In addition to the written proposal, we require every GSoC applicant to have opened a pull request to SunPy.
 Note it does not need to be merged to be considered.
@@ -87,3 +35,69 @@ To do this:
   But you do need to at least have one submitted by then.
   We will give priority to reviewing requests that are needed to satisfy GSoC requirements.
   It is up to you to respond to our feedback in a timely enough manner so that your patch gets merged before the acceptance deadline.
+
+## Student Grading Criteria
+
+Once proposals have been finalized, student proposals will be graded.
+Here are some criteria that we consider when reviewing applications.
+We suggest that you think about these when writing your application.
+
+0. **Has the student interacted with the SunPy community before submitting their application?**
+
+    We do not accept or even look at any hit-or-run applications.
+
+1. **Does the proposal accurately address the project?**
+
+    Is the student capable of following existing guidelines and instructions where appropriate?
+    Nice bonus features in addition to the main project are good, **only** unrelated features are bad.
+    Clear evidence of communication skills.
+    Does the student understand the design and technical details of what will be required to implement their proposal?
+    Do they understand what impact their project will have on users?
+
+2. **Plan**
+
+    Is the proposed timeline realistic considering any other obligations the student may have during GSOC?
+    Bonus for "what if things go wrong planning", e.g. features towards the end of the plan that can be removed if/when the bugs strike.
+
+3. **Resourcefulness**
+
+    Can the student carry out tasks on their own over a three month period i.e., has the student demonstrated that they can work independently and solve problems on their own without asking for help every step of the way?
+    Lower points for gross over-communication ("what should I name this variable?"), better if they quietly and competently get the job done but interact at appropriate times, e.g., sensible progress reports.
+
+4. **Experience**
+
+    Has the student demonstrated that they have the ability to work with SunPy's code?
+
+    Does the student have reasonable evidence they’ve competently done something relevant to this before?
+
+    For example:
+
+        A GitHub profile,
+        Pull requests on SunPy's repository
+        Published applications
+        Code from a uni assignment
+
+    Absolutely no work available - not even a published app, some work experience, or code from a class assignment, is a red flag.
+    Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.
+    Try to select your most proud work, we do not want a link to everything you have ever done.
+
+
+## Interview
+
+One of the parts of GSoC that isn't very common to other packages is that we try to "interview" the students.
+This is generally very informal, much closer to a chat than anything else.
+We use this to try and get everyone (all the mentors) who will be involved with the project to have spoken beforehand.
+**Please note, if you don't get an interview, it does not mean you have been rejected.**
+**Sometimes it is impossible to interview everyone due to time constraints.**
+
+## How the ranking process works
+
+All students with a finalized proposal will have their proposals reviewed by all of the project mentors in the organization, and ranked out of 5 based on the criteria above.
+This score will also be averaged to provide a mean result.
+These scores are not the final acceptance criteria - so a 4.1 won’t automatically win over an 3.6 - but they do help provide general guidelines for the mentors who are choosing from a large body of qualified students.
+
+## Accepted students
+
+Students will be notified of their acceptance by Google when all accepted students are announced, and will not be notified of their internal grades.
+Please note that we usually have more highly qualified applicants than slots available for the organization, so sometimes proposals that are genuinely very good have to be rejected.
+We genuinely wish we could take you all!

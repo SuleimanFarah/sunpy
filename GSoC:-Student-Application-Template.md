@@ -1,3 +1,5 @@
+You should include the following information in your application:
+
 ## Title
 
 Please use a succinct title that describes your proposal.
@@ -14,10 +16,11 @@ Please use a succinct title that describes your proposal.
 * Short bio / overview of your background
 
 * How can we contact you (email, GitHub username, etc.)?
-  This information will help us associate all of your various usernames with you.
-  - Email
-  - GitHub username
-  - Any other user name you want us to know about
+
+    This information will help us associate all of your various usernames with you.
+    - Email
+    - GitHub username
+    - Any other user name you want us to know about
 
 Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
@@ -38,7 +41,8 @@ We will teach you what you need to know.
 * Have you ever used git or another version control system?
 
 * What are your contributions to SunPy so far?
-  It should be a brief summary (with links) of work including unmerged work.
+
+    It should be a brief summary (with links) of work including unmerged work.
 
 ## You and your project
 
