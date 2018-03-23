@@ -2,7 +2,7 @@
 
 ### Project: Transition to Astropy Time
 ##### Mentors: @Cadair,  @Nabobalis, @Punyaslok
-
+## CURRENTLY UPDATED VERSION IS IN DOCS. WILL UPDATE THIS
 
 #### Student Information
 
