@@ -68,10 +68,8 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
 ## Tasks
 
-- Planned contributions to astropy
+- **Planned contributions to astropy**
   - Format class for `numpy.datetime64`: This would add support for `numpy.datetime64` as input and output.
-
-  - Improvement of `astropy.TimeDelta`: `TimeDelta` as of now, does not accept milliseconds and years are attributes for initialization (like `datetime.timedelta`). It would be nice to have this.
 
   - Fix `to_datetime` in `astropy.TimeDelta`: Right now, `to_datetime` in `TimeDelta` doesnot work as expected. [Link](https://github.com/astropy/astropy/issues/4982) to the issue on astropy.
 
@@ -98,13 +96,19 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
   Before returning `Time`, `.replicate` function could be called on it so that we get a uniform format for all the returned `Time` objects.
   Ex: `return Time(..., format='unix').replicate('iso')`
+
+- **Handling of timedelta**
+
+  See [this gist](https://gist.github.com/vn-ki/a0bd705673cc17d86c344c60840fa31d) for the complete implementation.
+  I would make a new function `get_timedelta` to return `TimeDelta`. This would simplify the initialization of `TimeDelta` and could be used by users too.
+
 - Changes to other modules
 
     Modules are mentioned in summary above. The   change mostly include changing them to use   `astropy.Time` instead of `datetime`. This is  summed up above in the first point of this  section.
 
 ###### The following are fallback tasks if contributions to astropy don't make it for some reason
 
-- Equivalents to `datetime` functions
+- **Equivalents to `datetime` functions**
 
   - `datetime.strftime` could be replaced with a [custom format](http://docs.astropy.org/en/stable/time/#writing-a-custom-format) of `Time` ([Link](https://github.com/astropy/astropy/issues/7309) to tracking issue of adding this feature directly to `Time`) or `time.strftime(format_string, time.gmtime(Time.unix))`.
 
@@ -114,17 +118,8 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
   NOTE: The above mentioned is open for discussion and will be decided during community bonding period.
 
-- Equivalent of `datetime.timedelta`
-
-  I would make a function `get_timedelta(days, seconds, microseconds, milliseconds, minutes, hours, weeks)` to return `astropy.TimeDelta`. This is because `astropy.TimeDelta` does not accept milliseconds, minutes etc. This function would simplify the creation of `TimeDelta` objects and thus would be used internally and could be used by users too.
 
 # Project Plan
-
-- **Pre community bonding Period ( - April 23)**
-
-  I would familiarize myself with the code base. I would use this time to the fullest so that I can make up for the lost week during community bonding period and I can concentrate on `time` related stuff during community bonding period.
-
-  I will research on the implementation on AstroPy tasks during this period too.
 
 - **Community Bonding Period (April 23 - May 14)**
 
@@ -132,9 +127,10 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
   I would also try to port some parts (maybe `time.timerange`) of the code to use `astropy.Time` using `sunpy.time._astropy_time` so as to get an idea of what are the consequences of changing to `astropy.Time`. This function will be removed once the project is complete.  
 
+  During this time I would also work on some contributions towards astropy( Possibly *Improvement to `TimeDelta`* and *Format class for numpy.datetime64* because these would affect the way we go about changing `parse_time`). I won't get them merged, but most of the work would be done during this period.
+
   During the last week I will finish of the work on [#2408](https://github.com/sunpy/sunpy/pull/2408) (Refactor parse_time) and get it merged.
 
-  During this time I would also work on some contributions towards astropy( Possibly *Improvement to `TimeDelta`* and *Format class for numpy.datetime64* because these would affect the way we go about changing `parse_time`). I won't get them merged, but most of the work would be done during this period.
 
 - **Phase 1 (May 15 - June 17)**
 
@@ -150,13 +146,11 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
     Write the necessary tests and documentation for the new `parse_time`.
 
-    Work on providing a formatting interface for `astropy.Time`.
-
   - **June 11 - June 17**
 
     Change `sunpy.coordinates` and `sunpy.database` to use `astropy.time`.
 
-    Work on fixing `to_datetime` in `astropy.TimeDelta`.
+    Research on how to fix `to_datetime` in `astropy.TimeDelta` and open a WIP PR in astropy repo.
 
 - ***Evaluation 1 (June 11 - June 15)***
 
@@ -166,11 +160,16 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
   - `net` contains the most extensive use of `parse_time`, so this will take the most time.
 
+  - Work on providing a formatting interface for `astropy.Time`. I have already opened a PR ([link](https://github.com/astropy/astropy/pull/7323)) in AstroPy GitHub repo. This would be the most important addition to astropy Time in connection with this project as all calls to `datetime.strftime` can be replaced with this.
+
 
 - ***Evaluation 2 (July 9 - July 13)***
 
 - **Phase 3 (July 16 - August 14)**
+  - Work on getting `numpy.datetime64` to work with `astropy.Time`. (The implementation would be similar to the gist mentioned in parse_time section)
 
+  - Finish up work on formatting interface of `astropy.Time`.  
+  - Finish up `to_datetime` fix of `astropy.TimeDelta`.
   - Finish up the transition.
   - Write necessary documentation. Rewrite examples to reflect the changes. Write a migratory guide for existing users.
   - A week is buffer time in case some problems crop up.
