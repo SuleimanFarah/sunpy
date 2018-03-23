@@ -40,7 +40,7 @@ Then try to follow these steps for applying to GSoC with SunPy.
 
     Prepare a plan on how you will tackle that project and the time it will take you to solve it.
     Do not worry much in providing exact dates, but plan it as best as you can.
-    Please read our [[Application Guidelines | GSoC Student Application Guidelines]] and make sure your application follows the [[template | GSoC Student Application Guidelines]].
+    Please read our [[Application Guidelines | GSoC: Student Application Guidelines]] and make sure your application follows the [[template | GSoC: Student Application Template]].
 
     Take the initiative!
     We can send you information on the projects and feedback on the applications, but it is your responsibility to ask the questions and start preparing your application.
