@@ -117,14 +117,6 @@ Contribution to SunPy Website
 |[Update help.html Link updated to matrix ](https://github.com/sunpy/sunpy.github.io/pull/65)|Enhancement|Merged|
 
 
-| Issues Opened
-|:--------------:|
-| [reshape_image_to_4d_superpixel array seems broken : #2020](https://github.com/sunpy/sunpy/issues/2020)
-| [AttributeError for BufferedIOBase while running python setup.py build_docs -o : #2031](https://github.com/sunpy/sunpy/issues/2031)
-|[Spectrogram Attributes not Documented Well #2033](https://github.com/sunpy/sunpy/issues/2033)
-| [README badges broken #2053](https://github.com/sunpy/sunpy/issues/2053)
-|[ Code not showing up in maps.rst for plotting keywords and colormap section #2046](https://github.com/sunpy/sunpy/issues/2046)
-|[Possible Bug in MapcubeAnimator updatefig method](https://github.com/sunpy/sunpy/issues/2444)
 
 ------------
 
@@ -201,75 +193,80 @@ Secondly, the `sunpy.time.parse_time` needs to have a more robust API along with
 
 
 ### Proposed Solution
+This will involve updating the current functions which involves working on datetime objects and switch them to use astropy.Time objects. For example there are many instances of the function datetime.strftime. Hence modification needs to be done to use the corresponding sub-function under astropy.Time.
+Secondly, tests involving functions operating on datetime objects needs to be changed and new tests need to be written down for modules working with astropy.Time object.
+Also documentation for all such modules under the sunpy codebase needs to be updated to support astropy.Time.
+Redesign of sunpy.time.parse_time function
+WHICH MODULES USE PARSE_TIME? - SOME STATISTICS
+Currently most of the time related operations under SunPy is based on sunpy.time.parse_time function.There are currently 342 files that use parse_time, 231 from net, 10 from physics. Most modules under sunpy.net like vso , jsoc and helio use sunpy.time.parse_time.
 
-There are many shortcomings in `parse_time` function as discussed above which we shall overcome as part of this GSOC project. The following shows a point wise demerit of `parse_time` and its possible solution using `astropy.time.Time`
-
-*  **Working on time strings and setting the format**
-   - `parse_time` does not support any provision for different time formats like `iso`, `isot` and `fits` to name a few.
-      The following code throws an error while parsing time string of `utc` format in `parse_time`.
-
-      ```
-       from sunpy.time import parse_time
-       parse_time('2011-01-01T00:10:00.000(UTC)')
-
-      ```
-
-       while we can easily do so in case of `astropy.time.Time`
-       ```
-       import astropy.time as tm
-
-       x = tm.Time('2011-01-01T00:10:00.000(UTC)')
-       ```
-
-       So one possible solution is to check if the given time string is of the above type. If the time string is of the
-       above format '2011-01-01T00:10:00.000(UTC)' then we can define a new function , say `diff_format()`to take such
-       string as input and return `astropy.time.Time` instance. Later we can make a check if the input string is of the
-       above format, then we can just call the `diff_format()` function within the `parse_time`.
-      ```
-        def parse_time(time_string):
-
-          if(time_string_format is not valid):
-             call diff_format
-
-        def diff_format(time_string) :
-            return r.Time(time_string)
-        ```
-
-  -  **Setting format**
-
-        `astropy.time.Time` has provision for setting the format from the user side. Like if the given time string is in `fits`, the user can also set the time string to own's format choice like `iso`
-        ```
-         import astropy.time as tm
-
-         x = tm.Time('2011-01-01T00:10:00.000(UTC)')
-         //  Its in `fits` format
-
-        x.format = 'iso' // Converting to time format `iso`
-        ```
-
-        One solution can be done as follows.
-        Within the `parse_time` function we can make provision for allowing the user to set the format by calling the corresponding `Time.format` function on the input string and setting it to the user input format.
-
-- **Setting the Scale**
-If the input time string is in `utc` format,    `astropy.time.Time` can set it to other formats like `tai`,    `tdb` and other.
-```
-   x = tm.Time('2011-01-01T00:10:00.000(UTC)')
-   // its in `utc` format.
-
-   x.set_scale('tai')  // setting it to TAI formats
-```
-
-  For providing such functionality in `parse_time` we can take user input for the scale and accordingly call the `set_scale` under `astropy.time` from within the `parse_time` to set the scale.
+WHAT CHANGES ARE REQUIRED IN PARSE_TIME?
+The main change that will involve is to make the sunpy.time.parse_time return astropy.Time object instead of returning datetime objects as of now. 
+Secondly, the sunpy.time.parse_time needs to have a more robust API.
+Some additional features like sub-functions under parse_time which I have proposed in the next section.
+ 
+ 
+##### Proposed Solution
 
 
-In the end the new tests need to be written down for the newly designed `sunpy.time.parse_time` function since the function will now support `astropy.Time` functionalities
-and will return `astropy.Time` object as input.
+##### Transition from Datetime to Astropy.Time
 
-Since most of the modules under `sunpy.net` uses `parse_time`, the function call and the methods of operating on the object return by the `parse_time` function needs to be
-modified. Lastly suitable tests for each such module will have to be written down and replace the existing tests.
+There are many instances of datetime throughout the whole of the sunpy modules. Locating those datetime instances and replacing them with corresponding astropy.Time instances will involve a major part of this project.
 
-Documentation for the parse_time function needs to be written along with suitable examples depicting the `parse_time` returning `astropy.Time` objects.
-Similarly documentation for the modules under `sunpy.net` using `parse_time` needs to be updated.
+This is a proposed solution to replace the common datetime operations with corresponding astropy.Time operations.
+
+
+| Datetime operations| Under  which modules in sunpy | Astropy.Time operations|
+|:---------------:|:-----------------:|:-------------:|
+|`datetime.timedelta`| `sunpy.net`, `sunpy.time`, `sunpy.util`, `sunpy.lightcurve` , `sunpy.timeseries`|`datetime.timedelta` supports additional formats like hours, milliseconds, weeks as opposed to `Timedelta` which only supports `jd` and `sec`. |
+|For ` datetime(year, month, day)` `tx = (year, month, day)` |`sunpy.time.tests`|`t.Time('{}-{}-{}'.format(*tx))`|
+|`datetime.isoformat`|`sunpy.roi`, `sunpy.lightcurve`, `sunpy.timeseries`,`sunpy.instr`|`t.Time(time_string).isot`|
+
+
+###### Redesign of sunpy.time.parse_time function
+
+**Making Parse_time return astropy.Time instead of datetime.**
+
+The parse_time function currently takes some of the input instances listed below as an input and checks accordingly the input instance.
+
+The following table will show the input time instances that parse_time support currently,what it does and how I propose to modify that by returning corresponding astropy.Time object.
+
+First importing `import astropy.time as t`
+
+|Input instances for `time_string`|Current working of parse_time| Proposed changes to return astropy.Time|
+|:--------:|:--------------:|:------------:|
+|`astropy.Time`|```return time_string.datetime ```|``return time_string``|
+|`now`|`return datetime.utcnow()`|`return t.Time.now()`|
+|`pandas.Timeseries`|`return time_string.to_pydatetime()`|`return t.Time(time_string)`|
+|`isinstance(time_string, pandas.Series) and 'datetime64' in str(time_string.dtype)`|`return np.array([dt.to_pydatetime() for dt in time_string])`|`return np.array([t.Time(dt) for dt in time_string])`|
+|`datetime`|`return time_string`|`return t.Time(time_string)`|
+|`tuple`|`return datetime(*time_string)`|`return t.Time(*time_string)`|
+|`date`|`return datetime.combine(time_string, time())`|`return t.Time(datetime.combine(time_string, time()))`|
+
+
+**Making parse_time more modular**
+
+One of the fundamental functionalities that `parse_time` doesn't implement separate sub-functions for converting a given time string to different time formats.
+It currently does all of that using the `if-else` statements for checking on the input instance and working accordingly. So from a good API perspective we can write functions for
+converting such time_strings which can be called by the user whenever required.
+Much of this changes has been proposed in this [PR](https://github.com/sunpy/sunpy/pull/2408#issuecomment-358716509)
+
+Separate functions that we can implement will include some of the following
+
+|Functions|Input|Output|
+|:---------:|:--------:|:-------------:|
+|`convert_time_pandasTimestamp`|`pandas.Timestamp`|`astropy.Time`|
+|`convert_time_pandasSeries`|`pandas.Series`|`astropy.Time`|
+|`convert_time_date`|`datetime.date`|`astropy.Time`|
+|`convert_time_datetime`|`datetime.datetime`|`astropy.Time`|
+
+**Extra features in parse_time**
+
+I plan to import some functions for setting the scale and formats of the `Time` objects which will let the user some freedom to set the scales and formats of the time_strings accordingly.
+Although this is subject to change as per reviews from mentors.
+
+
+
 
 
 
