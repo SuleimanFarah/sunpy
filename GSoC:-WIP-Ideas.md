@@ -17,7 +17,6 @@ The list of projects below will be changing as they are being taken by someone o
 ***
 
 ## Integrating ChiantiPy and SunPy
-
 **Description**:
 
 The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics. The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enabled the calculation of various parameters from this information. Using CHIANTI it is possible to calculate the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) from the observed elemental abundances and ionisation states.
@@ -36,9 +35,7 @@ Other potential application of ChiantiPy in SunPy include:
 **Possible mentors** Daniel Ryan
 
 ## ChiantiPy GUI Spectral Explorer
-
 ### Description
-
 The goal of this project is to provide a graphical user interface to enable a user to explore observed spectra and compare it with theoretical spectra.  The basis for the theoretical spectra is the CHIANTI atomic database for astrophysical spectroscopy that was first released in 1997.  Programmatic access to the database, which is freely available, is provided by the ChiantiPy package -- a pure python package.  It is highly object oriented with each ion, such as Fe XVII, being the basic object.  Higher level objects are often assembled from a collection of ions, such as when calculating a spectrum.  ChiantiPy uses the CHIANTI database to calculate line and continuum intensities as a function of temperature, electron density. This can be done for a set of elemental abundances in CHIANTI or for a user provided set of elemental abundances.  At present, if a user wants to compare CHIANTI theoretical spectra it must be done on a case-by-case basis.  A GUI explorer, written in Python and preferably PyQt or Wx based, will provide an integrated tool to import observed spectra and plot them alongside theoretical spectra.  It will further allow the user to understand what spectra lines contribute to various spectral line profile, how the predicted spectra vary as a function of temperature and density.
 
 It will be necessary to develop techniques to import observed spectra from a variety sources.  Typical sources are in FITS files, HDF5 files, or csv files.  It will also be important to allow users import their data through modules of their own.
@@ -69,43 +66,9 @@ services (REST) and JSON is a plus.
 
 * **Mentor**: Laszlo I. Etesi (HESPE data archive developer), Steven Christe (SunPy)
 
-## Region of Interest object
-**Abstract**: Each datatype has a different way to label events or regions. With
-a bit of thinking we could get a general object that can accept different
-feature detections results and analyse them together with data from different
-sources.
-
-We can have regions of interest based on a single image label with their time,
-center position, bounding-box and contour. These regions of interest may go over
-a range of time, so the position of the single snapshot may move. Some of them
-may not be on the sun surface but on the outside (*eg* CMEs) and also we may
-have in different data types, such us timeseries or spectra.
-
-We should be able to load these from data like HEK, HELIO or manually. Be able
-to overplot them on a map, timeseries or spectra and extract properties of the
-data where we laid that out.
-
-The tasks this project includes are:
-
-1. Design the object.
-2. Implement HEK/HELIO client with it.
-3. Interaction with other data types (overlplot on maps, time ranges on timeseries,...)
-4. Extract information from the interaction (overlay a sunspot detection on a
-   corona image and extract the total intensity in that region).
-
-**Requirements**: Python and API design
-
-**Difficulty**: High
-
-**Expected Outcomes**: a object able to do all the above.
-
-* **Mentor**: David Perez-Suarez (UCL, SunPy)
-
-
 ## HELIO - capabilities improvement
 
 ### Description:
-
 SunPy has already the capability to access to the Heliophysics Events Catalogue provided by the HELiophysics Integrated Observatory.  This catalogue provides access to different lists of events observed anywhere in the heliosphere.  However, HELIO offers a lot more web services of interest for the solar community.  Some of the services can provide information of when and where a planet or instrument where located, properties on features detected on the sun, or properties of some heliospheric observations; moreover it also allow the discovery of new data by a propagation model which simulates three different scenarios - Coronal Mass Ejections, High speed solar wind and Solar Energetic Particles events.
 
 This project would consist in the creation of an interface to access to HELIO services in a similar way that other services like HEK or VSO are accessible at the moment. HELIO uses VOTables as the standard to transfer the data, astropy provides support for reading such file format, therefore some understanding of astropy may be needed.
@@ -130,19 +93,12 @@ Detection algorithms:
 Tracking and property extraction using labelling and similar.
 
 ## HEK searching and overlays in Ginga
-
 Query the HEK both manually and automatically from ginga and overlay the results on the images
 
-## Downloader integration with Database and Ginga
-
-Replace the VSO integration in the database module with the Unified Downloader and then integrate full querying in a Ginga plugin.
-
 ## Refactor and Factory Spectrogram
-
 Build a Spectra() factory and refactor the whole `sunpy.spectra` module to pull it inline with Map and LightCurve.
 
 ## Interface to get heliospheric data from CDAweb
-
 CDAWEB provides as [SOAP interface](http://cdaweb.gsfc.nasa.gov/WebServices/SOAP/) which could be used
 within SunPy to download insitu data.
 
@@ -166,36 +122,3 @@ Jose Iván Campos Rozo (National Astronomical Observatory, National University o
 * Jose Iván Campos Rozo (National Astronomical Observatory, National University of Colombia)
 * Santiago Vargas Domínguez(National Astronomical Observatory, National University of Colombia)
 * David Pérez Suárez.
-
-
-
-## Coronal Loop Tracing software
-**Abstract**
-Coronal loops are of fundamental interest in understanding the Sun's atmosphere.  Much effort has gone into automatically tracing coronal loops in images so that it is easy for researchers to determine coronal structures.  The OCCULT-2 algorithm (http://arxiv.org/abs/1307.5046) implements this capability, and has been used in publications.  An IDL version of the code is available at (http://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/looptracing_auto4.pro).  A tutorial on its
-use is available at http://www.lmsal.com/~aschwand/software/tracing/tracing_tutorial1.html .
-
-**Requirements**
-Some knowledge of basic image processing.  Basic Python skills, including basic OOP.  This would be a good project for someone wishing to learn some Python by translating IDL code.
-
-
-**Expected Outcomes**
-Minimum: A SunPy affiliated package that implements the OCCULT-2 algorithm.  Returns loop detections that can be easily overplotted on SunPy maps.
-
-More: a version of OCCULT-2 that allows for different choices to be made in the five component steps of the published version of the algorithm.
-
-
-**Idea from:**
-Jack Ireland
-
-**Possible mentors/help by**
-Jack Ireland
-
-***
-
-
-other ideas:
-
-- Diff rot
-- meta data
-- Astropy time
-- data downloader
