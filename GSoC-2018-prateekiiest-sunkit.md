@@ -3,6 +3,7 @@
 ### Project: Developing SunKit Image
 ##### Mentors: @Cadair, @wafels, @Nabobalis
 
+## CURRENTLY UPDATED VERSION IS IN DOCS. WILL UPDATE THIS
 
 #### Student Information
 
