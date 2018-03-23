@@ -1,5 +1,5 @@
 
-# Develop sunkit-image  
+# Develop sunkit-image
 ## Organisation: OpenAstronomy
 ## Sub-organisation: SunPy
 
@@ -8,15 +8,15 @@
 
 * **Name**: Himanshu
 
-* **Time Zone**: IST (UTC+5:30)  
+* **Time Zone**: IST (UTC+5:30)
 
 * **Chat handle**: himanshukgp
 
-* **Github id**: [himanshukgp](https://github.com/himanshukgp)  
+* **Github id**: [himanshukgp](https://github.com/himanshukgp)
 
-* **Email**: [hs80941@gmail.com](mailto:hs80941@gmail.com)   
+* **Email**: [hs80941@gmail.com](mailto:hs80941@gmail.com)
 
-* **Blog**: [wordpress/himanshukgp](https://himanshukgp.wordpress.com/) 
+* **Blog**: [wordpress/himanshukgp](https://himanshukgp.wordpress.com/)
 
 
 ### Personal Background
@@ -26,9 +26,9 @@ Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, Indi
 ### Education
 
 * **University**: [Indian Institute of Technology, Kharagpur](http://www.iitkgp.ac.in/)
-* **Major**: Integrated MS Course in Mathematics and Computing   
+* **Major**: Integrated MS Course in Mathematics and Computing
 * **Current Year**: 2nd year (4th semester ongoing)
-* **Expected Graduation cum Post-graduation**: 2021  
+* **Expected Graduation cum Post-graduation**: 2021
 
 
 ### Links to Pull Requests
@@ -41,7 +41,7 @@ Here are some of my contributions to SunPy :
 * `Merged`[Decorator to append and/or prepend doc strings][4]: Sometimes we have to add same documentation at multiple points, we can use a decorator which will add a common docstring to all the functions which are decorated. This PR is merged now.
 * `Merged` [Adding  python setup.py test --figure-only][5]: This PR adds support to the flag --figure-only. This flag along with **`python setup.py test`** triggers only those tests that create figures.
 
-## About 
+## About
 Project: **Develop sunkit-image**
 
 Mentors: [Stuart Mumford](http://github.com/Cadair),  [Jack Ireland](https://github.com/wafels), [Nabil Freij](https://github.com/nabobalis), [Monica Bobra](https://github.com/mbobra)
@@ -70,7 +70,7 @@ coronal structure. This problem is solved by Normalizing Radial Graded Filter(NR
 
    In MGN (Multiscale Gaussian Normalization) we first `locally normalize` image to standard deviation of one and mean zero. Then an `arctan` transformation is applied. We then take weighted mean of these images with various kernel sizes. Final image is a `weighted average` of this and a gamma transformed image.
 
-   This has been implemented by [Cadair](http://github.com/Cadair) in [this PR](https://github.com/sunpy/sunpy/pull/1899), we want to port it to main branch and add tests and documentations.  There is also another implementation [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py) by [Ebuchlin](https://github.com/ebuchlin). We have to compare both methods and maybe both can exist within this package. We have to carefully spot the algorithmic differences among paper, its IDL version and the two python implementations. 
+   This has been implemented by [Cadair](http://github.com/Cadair) in [this PR](https://github.com/sunpy/sunpy/pull/1899), we want to port it to main branch and add tests and documentations.  There is also another implementation [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py) by [Ebuchlin](https://github.com/ebuchlin). We have to compare both methods and maybe both can exist within this package. We have to carefully spot the algorithmic differences among paper, its IDL version and the two python implementations.
 <br/>
 
 
@@ -80,11 +80,11 @@ coronal structure. This problem is solved by Normalizing Radial Graded Filter(NR
    We have this method for `automated detection of coronal loops`. Oriental Coronal CUrved Loop Tracing(OCCULT) was developed in 2010 which would extract coronal loops as curved lines. This algorithm was applied to spacecraft images of magnetic loops, recorded with NASA spacecraft Transition Region And Coronal Explore (TRACE) in extreme ultra-violet wavelengths.
 
    OCCULT-2 is an advanced version of this. OCCULT employed five control parameters while OCCULT-2 uses only `two free parameters` the low-pass filter and the minimum curvature radius to control the output. `Noise` is also handled by using a control factor which ignores faint structures below the base level. Thus, the new version of the code offers a `simpler choice` of control parameters for automated detection of curves. Following are the steps involved in implementing OCCULT-2.
-	
+
    **Background Suppression**: The median of the intensity values of all the pixels is taken and low intensity values which are less than this median value is set to a base value z<sub>min</sub> = z<sub>med</sub> × q<sub>med</sub>, with q<sub>med</sub> being a selectable control parameter. The median value is a good estimate if content in the given image is limited to less than 50%. This new method is more efficient and flexible in suppressing faint background structures.
-	 
+
    **High-pass and Low-pass filtering**: A low-pass filter smoothes the data while a high pass filter enhances the fine structures within the image. It has been recommended in the paper to use a filter combination of n<sub>sm2</sub> = n<sub>sm1</sub> + 2 which yields the best result, where n<sub>sm1</sub> and n<sub>sm2</sub> represent boxcar smoothing constant for low pass and high pass respectively. So, we can calculate band pass filter using only one of n<sub>sm1</sub> or n<sub>sm2</sub>.
-	 
+
    **Initialization and formation of Loop structure**: The loop is initialised from the `brightest point` in the image, from there we move to first end point and then again from the starting point to other end point. Then we put these two paths as 1 curved path. After the curve is traced area of the loop is erased to zero. Then we repeat the entire process with the residual image until entire image is zeroed out or maximum number of curve traced is reached or when there is no more increase in detected structures with time. The purpose of taking brightest point first is that most dominant curves are traced first.
 
    **Erasing of traced curve**: Once a full loop has been traced, the loop area is set to zero within a half width of w = (n<sub>sm2</sub>/2 − 1), so that the area of a former detected loop is not used in the detection of subsequent loops. However, crossing loops can still be connected over a gap.
@@ -92,9 +92,9 @@ coronal structure. This problem is solved by Normalizing Radial Graded Filter(NR
 
 4. **IMAGE RESAMPLING (DEFOREST)**
 
-   Many steps of image data analysis, including image co-alignment, perspective reprojection of the solar surface, and compensation for solar rotation, require re-sampling original telescope image data under a distorting `coordinate transformation`. Image resampling is the process to convert an image from one coordinate system to other. As the coordinates are different so input and output will have different grid. An inverse mapping function is applied to the output grid, projecting it onto the input. The result is a `resampling grid`, specifying the locations at which the input is to be resampled. The input image is sampled at these points and the values are assigned to their respective output pixels. 
+   Many steps of image data analysis, including image co-alignment, perspective reprojection of the solar surface, and compensation for solar rotation, require re-sampling original telescope image data under a distorting `coordinate transformation`. Image resampling is the process to convert an image from one coordinate system to other. As the coordinates are different so input and output will have different grid. An inverse mapping function is applied to the output grid, projecting it onto the input. The result is a `resampling grid`, specifying the locations at which the input is to be resampled. The input image is sampled at these points and the values are assigned to their respective output pixels.
 
-   Re-sampling can be done using `direct interpolation` but this method is not very efficient. In [this paper](https://link.springer.com/content/pdf/10.1023/B:SOLA.0000021743.24248.b0.pdf) an optimised method using the padded ellipse of transformation to approximate the input sampling area for each output pixel, has been proposed. We have to update 
+   Re-sampling can be done using `direct interpolation` but this method is not very efficient. In [this paper](https://link.springer.com/content/pdf/10.1023/B:SOLA.0000021743.24248.b0.pdf) an optimised method using the padded ellipse of transformation to approximate the input sampling area for each output pixel, has been proposed. We have to update
  [this PR](https://github.com/astrofrog/reproject/pull/52) by [rubendv](https://github.com/rubendv) to the Astropy [image resampling](https://reproject.readthedocs.io/en/stable/) library. <br/><br/>
 ## Implementation Details
 
@@ -103,12 +103,12 @@ The main function which takes in image and gives out a list containing list of t
 
 ```
 def detect_loops():
- 
+
    Parameters
    ----------
-   image: `numpy.ndarray` 
+   image: `numpy.ndarray`
            The data array of the input image.
-            
+
    nsm_1: `int`
               Boxcar smoothing constant for low pass filter.
 
@@ -118,7 +118,7 @@ def detect_loops():
    rmin: `astrophys.pix` / units of `pix`
           The minimum curvature radius for loop detection.
 
-   q_base: `float` 
+   q_base: `float`
           The control factor that suppresses the data noise in the background. Ranges from 0 to 1.
           qmed=0 makes no change to the image, while qmed=1 makes image flat in the fainter half.
 
@@ -126,7 +126,7 @@ def detect_loops():
    -------
    A list containing `list of tuples(pixel coordinate)`.
 ```
-Function to remove unwanted secondary structures in the background. 
+Function to remove unwanted secondary structures in the background.
 ```
 def image_base_level(q_base):
 
@@ -134,15 +134,15 @@ def image_base_level(q_base):
 	----------
 	image: `numpy.ndarray`
 	q_base: `float`
-	
+
 	returns
 	-------
 	noise_free_image: 'numpy.ndarray'
-	
+
 	find z_med
 	z_base = z_med * q_base
 	for each pixel in image:
-		if z_pixel < z_base: 
+		if z_pixel < z_base:
 			z_pixel = z_base
 ```
 Apply band pass filter to enhance loops structures in given image.
@@ -209,7 +209,7 @@ and also some other functions on formation of bidirectional loop.
 
 
 ## How I propose to complete the project:
-I previously had some exposure to Image processing tasks during a winter workshop organised in my college. I have grown a lot of interest in this field thereafter. There are lots of materials available online and I will approach to my mentor if I am stuck for long on a given problem. I also plan to discuss new implementation details with my mentors beforehand. 
+I previously had some exposure to Image processing tasks during a winter workshop organised in my college. I have grown a lot of interest in this field thereafter. There are lots of materials available online and I will approach to my mentor if I am stuck for long on a given problem. I also plan to discuss new implementation details with my mentors beforehand.
 
 I will push to my pull requests regularly to keep my mentors updated on my work and blog every week as well. I will be available all the time for reviews and answer questions regarding my implementation.  I will also clearly explain everything in documentation so that it is easy to understand in future. We know that sunkit-image is in its very nascent stage so I am very excited about how much we can do in future and interesting things I'll get to learn in the process.
 
@@ -217,7 +217,7 @@ I will also be available in future for any questioning related to my work.
 
 ## Benefits to the community:
  This project will add MGN, NRGF, OCCULT-2 and Image resampling in Sunkit-Image. We will also have CI and documentation up and running. We will also get some **testing routine** as we have in **Sunpy.** We will have tools to extract coronal loops and extract hidden features in white image through MGN.
- We have few libraries for image processing in sunpy itself. Their is a huge scope on this topic. There are numerous more algorithms which we can implement and fine tune to be available for users. This project will provide a base for sunkit-image for all future works. 
+ We have few libraries for image processing in sunpy itself. Their is a huge scope on this topic. There are numerous more algorithms which we can implement and fine tune to be available for users. This project will provide a base for sunkit-image for all future works.
 
 ## GSoC
 
@@ -230,12 +230,12 @@ No, I have **not** participated in GSoC before. This is the first time I am part
 ### Commitments
 I don't have any other internship or work during this summer. I have no plans for any vacations either.
 
-My classes start from 16th of July, even after my classes start I can give about 35 hours a week on this project, as I have around 21 hours of class time every week in my college and there is very less academic pressure during beginning of the course. Also I have  proposed this time mostly for  extras upon which I can keep working even after the program ends. 
+My classes start from 16th of July, even after my classes start I can give about 35 hours a week on this project, as I have around 21 hours of class time every week in my college and there is very less academic pressure during beginning of the course. Also I have  proposed this time mostly for  extras upon which I can keep working even after the program ends.
 
 I have my exams for this semester from 19th April to 27th April so I will be unavailable during this period. I'll start work on preparing detailed layout of OCCULT-2 during first half of April itself to make up for this lost time and then I can discuss more of details with mentors in May during community bonding period. I will have my vacations from **28th of April to 15th of July**. Apart from above mentioned involvements I am free to work on my project but if I get any emergency situation I'll communicate to my mentors and improvise.
 
 ### Eligibility
-Yes, I am eligible to receive payments from Google. 
+Yes, I am eligible to receive payments from Google.
 
 
 [2]: https://github.com/sunpy/sunpy/pull/2365
