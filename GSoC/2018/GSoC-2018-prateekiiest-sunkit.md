@@ -291,35 +291,35 @@ Finally we can implement the main image re-sampling algorithm by using (svd for 
   </tr>
   <tr>
     <td>May 14 - Jun 11</td>
-    <td>First Week -- Dedicate this time to knowing more about the project and the algorithms(particularly MGN and NRGF) that needs to be implemented as part of the project. Discuss with mentors the modules that need to be imported from the main sunpy repository.
-Second Week -- Start working on porting the MGN algorithm in the sunkit repository. Having discussed with mentors the potential inconsistencies in the current IDL implementation with the paper, I will work on merging the two python codes, available to me and finally remove any inconsistency in the final code if any. Will dedicate this entire week to work on the two python implementations of MGN, checking for any remaining inconsistencies and validating the output of the two codes against the IDL output.
-Third Week After having updated the two python implementations, I plan to make a quick comparison of the memory and CPU utilization of the two codes and based on the results will port the optimized code into the sunkit repository. Document the updated MGN code in terms of all the parameters being used like the data, constants like a0 and a1 and detail about the kernel and signal depths. I also plan to give some links to specific portions of the paper corresponding to a particular operation being performed inside the MGN code.
-Fourth Week - Dedicate the first 2-3 days of the week to adding tests for the updated MGN code. Remaining part of the week will be dedicated to working on the NRGF algorithm. Since @wafels has already implemented a part of the NRGF, it would not take much time to implement the rest of it. Once the function is set up, the output needs to be validated with the corresponding IDL output. Last day of the week will be dedicated to update the documentation of the algorithm with specific links to the paper describing each operation.</td>
+    <td> <li><b>First Week</b> -- Dedicate this time to knowing more about the project and the algorithms(particularly MGN and NRGF) that needs to be implemented as part of the project. Discuss with mentors the modules that need to be imported from the main sunpy repository.</li>
+<li> <b>Second Week</b> -- Start working on porting the MGN algorithm in the sunkit repository. Having discussed with mentors the potential inconsistencies in the current IDL implementation with the paper, I will work on merging the two python codes, available to me and finally remove any inconsistency in the final code if any. Will dedicate this entire week to work on the two python implementations of MGN, checking for any remaining inconsistencies and validating the output of the two codes against the IDL output.</li>
+<li> <b>Third Week</b> After having updated the two python implementations, I plan to make a quick comparison of the memory and CPU utilization of the two codes and based on the results will port the optimized code into the sunkit repository. Document the updated MGN code in terms of all the parameters being used like the data, constants like a0 and a1 and detail about the kernel and signal depths. I also plan to give some links to specific portions of the paper corresponding to a particular operation being performed inside the MGN code.</li>
+<li> <b>Fourth Week</b> - Dedicate the first 2-3 days of the week to adding tests for the updated MGN code. Remaining part of the week will be dedicated to working on the NRGF algorithm. Since @wafels has already implemented a part of the NRGF, it would not take much time to implement the rest of it. Once the function is set up, the output needs to be validated with the corresponding IDL output. Last day of the week will be dedicated to update the documentation of the algorithm with specific links to the paper describing each operation.</li></td>
   </tr>
   <tr>
     <td>Jun 11 -Jun15</td>
-    <td>Phase 1 Evaluation - Any documentation that remains for NRGF will be completed. Add tests for NRGF and will try to complete this within Jun 14th.</td>
+    <td><b>Phase 1 Evaluation</b> - Any documentation that remains for NRGF will be completed. Add tests for NRGF and will try to complete this within Jun 14th.</td>
   </tr>
   <tr>
     <td>Jun 15 - Jul 9</td>
-    <td>First Week Work on removing any potential bugs or issues if any in the implementations of MGN and NRGF. Solve PEP8 issues if any and ensure good code readability. Once the two implementations are all set up and having get them reviewed by mentors, I will get them merged within the first half of the week. Remaining part of the week will be dedicated to studying the OCCULT-2 algorithm from the paper and studying the IDL code side by side.
-Second Week Discuss with mentors for any potential inconsistencies in the IDL code that contradicts with the paper and try to reach to a solution about removing those inconsistencies. Dedicate rest of the week to write the code for OCCULT-2. This would involve working on all the 4 stages of the algorithm as discussed above
-Third Week Work on the implementation of OCCULT-2 and discuss with mentors on potential ways to improve CPU utilization and memory utilization. If approved by mentor I will work on a cython implementation of the code. By the end of the week , I would cross-check with the corresponding IDL output for any inconsistencies, if any.
-Fourth Week First half of the week will be dedicated to check for any bugs or breaks in the code. Remaining part of the week will be dedicated to updating documentation for the implemented algorithm.</td>
+    <td><li> <b>First Week</b> Work on removing any potential bugs or issues if any in the implementations of MGN and NRGF. Solve PEP8 issues if any and ensure good code readability. Once the two implementations are all set up and having get them reviewed by mentors, I will get them merged within the first half of the week. Remaining part of the week will be dedicated to studying the OCCULT-2 algorithm from the paper and studying the IDL code side by side.</li>
+<li> <b>Second Week</b> Discuss with mentors for any potential inconsistencies in the IDL code that contradicts with the paper and try to reach to a solution about removing those inconsistencies. Dedicate rest of the week to write the code for OCCULT-2. This would involve working on all the 4 stages of the algorithm as discussed above.
+<li> <b>Third Week</b> Work on the implementation of OCCULT-2 and discuss with mentors on potential ways to improve CPU utilization and memory utilization. If approved by mentor I will work on a cython implementation of the code. By the end of the week , I would cross-check with the corresponding IDL output for any inconsistencies, if any.</li>
+<li> <b>Fourth Week</b> First half of the week will be dedicated to check for any bugs or breaks in the code. Remaining part of the week will be dedicated to updating documentation for the implemented algorithm.</li></td>
   </tr>
   <tr>
     <td>Jul 9 - Jul 13</td>
-    <td>Phase 2 Evaluation Plan to work on adding test coverages for the implemented OCCULT-2 algorithm. Any remaining documentation left if any will be completed by this time.</td>
+    <td><b>Phase 2 Evaluation</b> Plan to work on adding test coverages for the implemented OCCULT-2 algorithm. Any remaining documentation left if any will be completed by this time.</td>
   </tr>
   <tr>
     <td>Jul 13 - August 6</td>
-    <td>First Week Start working on the image resampling algorithm. This will start by working on the part being left by rubendv in the pull request. See to it how the implementation matches with the main paper.
-Second Week Create a different function under the python implementation which will call appropriate function under the cython implementation and will perform the image resampling method. Test the called functions like svd, hanning filter and others and check if any error.
-Third Week Once the function is set up, I plan to write tests for the implemented algorithm by updating in the same Pull Request along with detailed documentation. Keep 3-4 days for writing the tests and the remaining days will be devoted to writing the documentation and any remaining work if any.</td>
+    <td><li> <b>First Week</b> Start working on the image resampling algorithm. This will start by working on the part being left by rubendv in the pull request. See to it how the implementation matches with the main paper.</li>
+<li> <b>Second Week</b> Create a different function under the python implementation which will call appropriate function under the cython implementation and will perform the image resampling method. Test the called functions like svd, hanning filter and others and check if any error.</li>
+<li> <b>Third Week</b> Once the function is set up, I plan to write tests for the implemented algorithm by updating in the same Pull Request along with detailed documentation. Keep 3-4 days for writing the tests and the remaining days will be devoted to writing the documentation and any remaining work if any.</li></td>
   </tr>
   <tr>
     <td>August 6 - 14</td>
-    <td>Final Week - Once the main project has been tidied up, this time will be devoted to working on the optional extra for the soft morphological filter. This will involve comparing the IDL code with the paper implementation for any discrepancies. I will devote much of this week to working on the basic structure for the algorithm.</td>
+    <td><b>Final Week</b> - Once the main project has been tidied up, this time will be devoted to working on the optional extra for the soft morphological filter. This will involve comparing the IDL code with the paper implementation for any discrepancies. I will devote much of this week to working on the basic structure for the algorithm.</td>
   </tr>
 </table>
 
