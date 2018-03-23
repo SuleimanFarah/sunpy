@@ -1,6 +1,6 @@
-# Remote Data In Sunpy
+# Remote Data In SunPy
 ## Organisation: OpenAstronomy
-## Sub-organisation: Sunpy
+## Sub-organisation: SunPy
 
 ## About Me
 ### Contact Information
@@ -36,13 +36,13 @@ I am S. Shashank, a second year computer science major at IIIT Hyderabad, India.
 **Mentors:** Stuart Mumford, David Pérez-Suárez, Will Barnes
 
 ### Abstract
-Sunpy is a package for solar physics that is also used for solar data analysis. The library has several functionality that requires access to data on remote HTTP servers.  The data such as those provided by instrument teams is highly likely to change with time. Thus, there is a requirement for a module which ensures that the **remote data is downloaded and cached before it is used in a function.**
+SunPy is a package for solar physics that is also used for solar data analysis. The library has several functionality that requires access to data on remote HTTP servers.  The data such as those provided by instrument teams is highly likely to change with time. Thus, there is a requirement for a module which ensures that the **remote data is downloaded and cached before it is used in a function.**
 
-Since Sunpy has no control over the remote data on the servers, it should have a way to **validate** that the retrieved file has the same **expected hash.** The module should allow the user to **redownload the data**, i.e.  allow a user to override the hash if the user is aware of the changes made in the server. There should also be support for **download of data through multiple mirrors.** The main aim of this module is to **provide a version control system** for data in Sunpy such that if the given remote data is available then **one version of Sunpy will always give the same result.** Such a versioning system also needs to ensure that the **previous versions of a file are not removed** in case the user would like to use them also.
+Since SunPy has no control over the remote data on the servers, it should have a way to **validate** that the retrieved file has the same **expected hash.** The module should allow the user to **redownload the data**, i.e.  allow a user to override the hash if the user is aware of the changes made in the server. There should also be support for **download of data through multiple mirrors.** The main aim of this module is to **provide a version control system** for data in SunPy such that if the given remote data is available then **one version of SunPy will always give the same result.** Such a versioning system also needs to ensure that the **previous versions of a file are not removed** in case the user would like to use them also.
 
 ### Motivation
 
-Several functions in Sunpy require data files to work like instrument calibration data or timeseries data. A prominent example of this is the AIA response function.  The AIA response  changes significantly over time and there needs to be a way to take a remote file and ensure that it is downloaded before it is used in a function. In the current scenario, a user needs to have the given file locally in order to use a given function. One of the main aims of this module is to solve this issue. There should also be a versioning of the data files so that a given version of Sunpy always returns the same result. Thus, a caching system based on a data manager would help to solve these problems.
+Several functions in SunPy require data files to work like instrument calibration data or timeseries data. A prominent example of this is the AIA response function.  The AIA response  changes significantly over time and there needs to be a way to take a remote file and ensure that it is downloaded before it is used in a function. In the current scenario, a user needs to have the given file locally in order to use a given function. One of the main aims of this module is to solve this issue. There should also be a versioning of the data files so that a given version of SunPy always returns the same result. Thus, a caching system based on a data manager would help to solve these problems.
 
 ### Deliverables
 
@@ -306,7 +306,7 @@ If things went fine till now, then I would be done with my target till now. This
 - Complete any left-over tasks
 - If there is time left then I would like to work on improving the module by adding features like a progress bar. (Can use the progress bar made in ```sunpy.utils.progressbar```)
 - I would be in touch with the mentors and if there are any further issues or bugs that are left unresolved then I would work on them.
-- Hopefully get the work merged with the master branch of Sunpy
+- Hopefully get the work merged with the master branch of SunPy
 ___
 ### Final Evaluation
 ___
@@ -316,11 +316,11 @@ I am confident of completing this project as the project suits my interests and 
 
 I would push my work to the remote fork frequently so that the mentors can review my progress whenever required. I would always be in constant communication with my mentors to update them on my current progress and seek their guidance whenever I am stuck in any issue.
 
-Even after GSoC ends, I will actively contribute to Sunpy and be available if anyone has any questions regarding my code.
+Even after GSoC ends, I will actively contribute to SunPy and be available if anyone has any questions regarding my code.
 
 ### Benefits to the Community:
 The project offers several benefits to the community.
-- It would provide a version control system of remote data so that one version of Sunpy always gives the same answer
+- It would provide a version control system of remote data so that one version of SunPy always gives the same answer
 - It would allow the user to work with an earlier version of data file even if it has modified in the remote server
 - It provides a caching mechanism so that the user need not download a file that is already present with them
 
@@ -328,7 +328,7 @@ The project offers several benefits to the community.
 ### Have you participated previously in GSoC? When? With which project?
 No, I have not participated in GSoC before.  This is the first time I am participating in GSoC.
 ### Are you also applying to other projects?
-No, I am not applying to any other projects. This is the only project and Sunpy is the only org that I am applying for.
+No, I am not applying to any other projects. This is the only project and SunPy is the only org that I am applying for.
 ### Commitment
 I would not be involved in any other internship or work during the summers. Since, my vacations starts on May 1, I would be able to start early and try to complete the project well before the deadline.
 
