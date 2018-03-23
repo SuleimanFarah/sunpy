@@ -146,6 +146,8 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
     Write the necessary tests and documentation for the new `parse_time`.
 
+    Research on implementaion of astropy tasks.
+
   - **June 11 - June 17**
 
     Change `sunpy.coordinates` and `sunpy.database` to use `astropy.time`.
@@ -173,6 +175,8 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
   - Finish up the transition.
   - Write necessary documentation. Rewrite examples to reflect the changes. Write a migratory guide for existing users.
   - A week is buffer time in case some problems crop up.
+
+  NOTE: SunPy 3.1 will be releasing in October, so there is enough time to get all PRs merged. Though I will try my best to get them merged before the final evaluation.
 
 ### Schedule Availability
 
