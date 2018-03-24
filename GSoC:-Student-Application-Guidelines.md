@@ -13,14 +13,14 @@ This is your best opportunity to prove to us that you are capable of doing what 
 To do this:
 
 * Set up your platform to develop with SunPy (install git, clone https://github.com/sunpy/sunpy.git, execute tests).
-  The page on our [Developer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
+  Our [Developer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
 
 * Create an account at GitHub and fork SunPy (https://github.com/sunpy/sunpy).
 
 * Find something in SunPy that doesn't work or needs improvement.
   If you need inspiration, feel free to fix any issue from our [Package Novice fix issues list](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package+Novice%22).
   Aside from the issues, search for `FIXME` or `TODO` in the code.
-  You can grep from the command line with `git grep "TODO"`.
+  You can grep from the command line with `git grep -i "TODO"`.
   You could also search for NotImplementedErrors, maybe).
   You could also play with SunPy and find something that needs fixing or that could be implemented, and do it.
 
@@ -28,7 +28,7 @@ To do this:
   While we do not want to discourage documentation pull requests as they are very useful.
   This shows us that you know Python and that you are able to interact with the community.
   If your project will use a language other than Python (e.g., C), you should submit patches that use that language as well, so that we know that you know you are proficient in that language.
-  **However, for the pull request requirement to be fulfilled, you must have at least one pull request open or in SunPy itself.**
+  **However, for the pull request requirement to be fulfilled, you must have created at least one pull request in SunPy.**
 
 * Note that because we may be slow to review the pull requests, you do not
   have to have your request merged by the application deadline.
@@ -72,10 +72,10 @@ We suggest that you think about these when writing your application.
 
     For example:
 
-        A GitHub profile,
-        Pull requests on SunPy's repository
-        Published applications
-        Code from a uni assignment
+    - A GitHub profile,
+    - Pull requests on SunPy's repository
+    - Published applications
+    - Code from a uni assignment
 
     Absolutely no work available - not even a published app, some work experience, or code from a class assignment, is a red flag.
     Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.

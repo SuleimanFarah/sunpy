@@ -22,7 +22,7 @@ Then try to follow these steps for applying to GSoC with SunPy.
     If you don't know how to use [git](http://www.git-scm.com/),
     don't worry, it's easy and there are lots of [tutorials](https://try.github.io/levels/1/challenges/1) [online](http://gitimmersion.com/) that will help you to get quite confident with git in a short amount of time.
     The next step is to install SunPy and for this we recommend using [Anaconda](https://www.anaconda.com/download/).
-    You can find more information [here](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html).
+    You can find more information [on our developers guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html).
     Please try to use SunPy, you will gain a much better understanding of how SunPy works by actually using it and follow some of the examples in the documentation, to get a better idea of what it can do.
 
 4. **Start to be a developer.**
