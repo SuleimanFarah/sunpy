@@ -36,7 +36,7 @@ Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, Indi
 Here are some of my contributions to SunPy :
 * `Merged`[Map Save Test][2]: In this PR I wrote a missing **test** for save method of map.This PR has been merged to the main branch.
 
-* `Merged`[Update Import][3]: I updated to an import to its new version. This PR is merged now.
+* `Merged`[Migrate to hypothesis.strategies.datetimes][3]:
 
 * `Merged`[Decorator to append and/or prepend doc strings][4]: Sometimes we have to add same documentation at multiple points, we can use a decorator which will add a common docstring to all the functions which are decorated. This PR is merged now.
 * `Merged` [Adding  python setup.py test --figure-only][5]: This PR adds support to the flag --figure-only. This flag along with **`python setup.py test`** triggers only those tests that create figures.
