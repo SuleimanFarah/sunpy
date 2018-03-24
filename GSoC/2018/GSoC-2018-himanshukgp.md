@@ -46,9 +46,10 @@ Project: **Develop sunkit-image**
 Mentors: [Stuart Mumford](http://github.com/Cadair),  [Jack Ireland](https://github.com/wafels), [Nabil Freij](https://github.com/nabobalis), [Monica Bobra](https://github.com/mbobra)
 ## Abstract
 This project is to create foundations of the **sunkit-image** a **Sunpy** affiliated package, to contain **image processing** routines and functionality specific to the analysis of solar physics data. The plan of this project is to complete implementations of **MGN, NRGF, OCCULT-2** and **deforest**. Three of these have already been implemented, which have to be fine tuned, **tested**, **documented** and merged into main sunkit-image repository. We have optional extras upon which we can work if time permits and everything goes as planned. It includes implementation of [Soft Morphological Filtering](https://www.aanda.org/articles/aa/pdf/2006/38/aa4852-06.pdf), Refactor and write a Python wrapper for [FLCT](https://arxiv.org/pdf/0712.4289.pdf) code and Implement image alignment using feature detection and tracking.
+<br/>
 
 ##  Problems and Motivation
-<br/>
+
 
 1. **NRGF**
 
