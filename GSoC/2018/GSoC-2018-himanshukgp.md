@@ -193,7 +193,7 @@ and also some other functions on formation of bidirectional loop.
 |Jun 4,2018 - June 17, 2018 <br/>( 2 weeks )| <ul><li>Complete writing `tests for MGN and NRGF`, resolve errors if any which cause test errors.</li><li>Write detailed documentation and implementing examples.</li><li>This period can act as buffer.</li><li>Write functions and utilities for OCCULT-2 algorithm if time permits.</li></ul>|
 ||**Part 2 starts**|
 |Jun 18,2018 - July 1, 2018 <br/>( 2 weeks )|<ul><li>MGN and NRGF should be merged.</li><li>Implement all the utility functions for OCCULT-2.</li><li>Write tests if time permits.</li></ul>|
-|July 2,2018 - July 8, 2018 <br/>( 1 week )|<ul><li>Complete OCCULT-2 tests and docs and well explained examples for users.</li><li>This week can as buffer buffer if OCCULT-2 is not completed in previous 2 weeks.</li><li>Start working on deforest algorithm.</li></ul>|
+|July 2,2018 - July 8, 2018 <br/>( 1 week )|<ul><li>Complete OCCULT-2 tests and docs and well explained examples for users.</li><li>This week can as buffer if OCCULT-2 is not completed in previous 2 weeks.</li><li>Start working on deforest algorithm.</li></ul>|
 |July 9,2018 - July 22, 2018 <br/>( 2 weeks )|<ul><li>Port the implementation of `image resampling`.</li><li>Discuss finer details of updating the implementation.</li></ul>|
 |July 23, 2018 - Aug 5,2018 <br/>( 2 weeks )|<ul><li>Write tests and documentation for deforest implementation.</li><li>This period can be buffer for deforest implementation and testing.</li><li>Work on optional extras (soft morphological filtering).</li></ul>|
 |Aug 6, 2018 - Aug 14, 2018 <br/>(1 week )|<ul><li>Work on any leftover tasks which were stuck before.</li><li>Write tests and docs for soft morphological filtering if implemented.</li></ul>|
