@@ -70,21 +70,38 @@
 
 * Scilab:
 
-    * (Merged) [Arguments in wrong order](https://codereview.scilab.org/#/c/19689/)
+    * Arguments passed to the function in wrong order
 
-    * (Merged) [Sizeof not portable](https://codereview.scilab.org/#/c/19660/)
+      * (Merged) [Arguments in wrong order](https://codereview.scilab.org/#/c/19689/)
 
-    * (WIP) [Data Race condition](https://codereview.scilab.org/#/c/19691/)
+    * Typecasting wrong data type
 
-    * (WIP) [Bad bit shift operation](https://codereview.scilab.org/#/c/19690/)
+      * (Merged) [Sizeof not portable](https://codereview.scilab.org/#/c/19660/)
 
-    * (WIP) [Division or modulo by zero](https://codereview.scilab.org/#/c/19693/)
+    * Data Race condition
 
-    * (WIP) [Resource Leak](https://codereview.scilab.org/#/c/19662/)
+      * (WIP) [Data Race condition](https://codereview.scilab.org/#/c/19691/)
 
-    * (WIP) [Explicit null dereferenced](https://codereview.scilab.org/#/c/19686/) 
+    * Storing a long number in int
 
-    * (WIP) [Useless call](https://codereview.scilab.org/#/c/19658/)
+      * (WIP) [Bad bit shift operation](https://codereview.scilab.org/#/c/19690/)
+
+    * Division or modulo by zero
+
+      * (WIP) [Division or modulo by zero](https://codereview.scilab.org/#/c/19693/)
+
+    * Pointer value was not freed before returning
+
+      * (WIP) [Resource Leak](https://codereview.scilab.org/#/c/19662/)
+
+    * Null value being accessed
+
+      * (WIP) [Explicit null dereferenced](https://codereview.scilab.org/#/c/19686/) 
+
+    * Useless call being made/ Dead code
+
+      * (WIP) [Useless call](https://codereview.scilab.org/#/c/19658/)
+
 
 ## **Project Proposal Information**
 
@@ -491,7 +508,10 @@ region.date() # tells me when that was observed
 
 <td>June 15 - July 6, 2018 (Week 5 - Week 7)</td>
 
-<td><ul><li><b>Overplotting ROI</b> on the map. </li><li>Accepting <b>multiple overlays</b> which will be plotted layerwise. Eg `aia.show(overlays = rois) rois = [ roi1, roi2, ....]`</li></ul></td>
+<td><ul><li><b>Overplotting ROI</b> on the map. </li><li>Accepting <b>multiple overlays</b> which will be plotted layerwise. Eg.
+
+`aia.show(overlays = rois) rois = [ roi1, roi2, ....]`
+</li></ul></td>
 
 </tr>
 
