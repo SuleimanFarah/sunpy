@@ -1,4 +1,4 @@
-# **Proposal**
+# Region of Interest
 
 # **Organisation: OpenAstronomy**
 
