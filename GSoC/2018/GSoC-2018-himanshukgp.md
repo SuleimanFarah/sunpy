@@ -21,7 +21,7 @@
 
 ### Personal Background
 
-Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I love python as the way it very intuitive and easy. I work on Ubuntu 16.04 LTS with sublime as editor.
+Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I love python as it is very intuitive and easy. I work on Ubuntu 16.04 LTS with sublime as editor. 
 
 ### Education
 
@@ -52,7 +52,7 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
 
 1. **NRGF**
 
-   We want to visualise the large scale structure of the corona which are studied through white light and polarized brightness (pB) observations. In these images, there is a sharp decrease in brightness of coronal loop with increasing coronal height (radial gradient). Normalizing Radial Graded Filter (NRGF) solves this problem. This algorithm can be directly applied on pB images. White light which contain contributions from F corona, stray light and instruments which need to be removed. This removal of background is done by creating a background image which is subtracted from the desired image.
+   We want to visualise the large scale structure of the corona which are studied through white light and polarized brightness (pB) observations. In these images, there is a sharp decrease in brightness of coronal loop with increasing coronal height (radial gradient). Normalizing Radial Graded Filter (NRGF) solves this problem. This algorithm can be directly applied on `pB` images. White light which contain contributions from F corona, stray light and instruments which need to be removed. This removal of background is done by creating a background image which is subtracted from the desired image.
 
    While applying NRGF first segment the corona into narrow and `concentric circular regions` called `bins`. Then we calculate mean and deviation of intensity for each segment. Finally at every point on a segment, its mean intensity value is subtracted (thus removing the sharp radial gradient in brightness) from its value and then the result is divided by deviation (to remove radially decreasing brightness contrast). In this way intensity at each point is calculated and we get our final image. This has been implemented by [Wafels](https://github.com/wafels) in [this PR](https://github.com/sunpy/sunkit-image/pull/8). This is now a part of main repository. There is no exact IDL version of this implementation. We will have to decide how to confirm about the results we get from this implementation. We have to add tests, documentation and examples as well. We can also look into its optimization if time permits.
 <br/>
@@ -60,7 +60,7 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
 
 2. **MGN**
 
-   Multiscale Gaussian Normalization which we will have in Sunkit-image is based on [this paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf)  by Druckmuller et al. In paper an AIA image pre-processed using aia-prep has been used as example. The EUV image is mostly dark and only the active region of Sun is visible. We want to process the image to show more details in quiet sun and off-limb regions. A quick and easy way is to take square root or log of each pixel in the image. Here we will process the image with MGN algorithm. Now I will briefly explain the algorithm.
+   Multiscale Gaussian Normalization which we will have in Sunkit-image is based on [this paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf). In paper an AIA image pre-processed using aia-prep has been used as example. The EUV image is mostly dark and only the active region of Sun is visible. We want to process the image to show more details in quiet sun and off-limb regions. A quick and easy way is to take square root or log of each pixel in the image. Here we will process the image with MGN algorithm. Now I will briefly explain the algorithm.
 
    For each pixel in the image we calculate local mean and deviation of intensity values using kernels (weighted by the Gaussian function centred on the pixel).  Then we subtract mean from its intensity value and divide that from its deviation. Then an arctan transformation is applied over all the pixels. These two processes are separately done for n-different values of 2D Gaussian kernel width. A global gamma-transformed image C_g is also created. Then we calculate final processed image by taking a weighted mean among all these images. Gamma transformed image has been given a larger weight in the paper. One last thing is that all these have been shown on an EUV image in the paper but this can be applied as well on other images that we have, like in the result section MGN applied on a LASCO image has been shown in the paper. 
  
