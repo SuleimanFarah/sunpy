@@ -266,6 +266,7 @@ The OCCULT Algorithm works in 4 steps
 
 **What my work will include**
 
+I have prepared a rough pseudo-code implementation of OCCULT-W algorithm and have uploaded them in a [gist](https://gist.github.com/prateekiiest/993d1a1cd0a8a25ce8675c56bc534689)
 I plan to implement the algorithm in a modular fashion by writing separate functions for background suppression, filtering , loop tracing and the loop subtraction part to provide more clarity to the user. Finally once done, the output needs to be cross-checked with that of the IDL implementation. After this, I will work on documenting the relevant portions of the algorithm along with working on some examples demonstrating the working of the algorithm. In the end the code needs to be thoroughly tested before final porting to the main package.
 
 #### **Implementation of Image Resampling**
