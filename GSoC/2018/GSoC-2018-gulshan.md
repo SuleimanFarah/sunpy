@@ -71,13 +71,9 @@ Apart from the above projects, I am also proficient in **C, C++, javascript**.
 
 ### Abstract
 
-Some functionality in SunPy or in affiliated packages is going to need access to **data files on the remote (HTTP) servers**. Examples of this include data provided by instrument teams relating to the calibrations or performance of the instruments, this kind of data are highly likely to change with time.
+Some functionality in SunPy or in affiliated packages needs access to **data files on the remote (HTTP) servers**. Examples of this include data provided by instrument teams relating to the calibrations or performance of the instruments, this kind of data are highly likely to change with time.Since SunPy **has no control over the data** on the servers, and the files on the servers may be replaced with different files with the same name. So there is a way to **validate that the retrieved file has the expected hash** and provide ways to **users to override** this hash means **redownload the data** if they are aware of changes on the remote server.
 
-Since SunPy **has no control over the data** on the servers, and the files on the servers may be replaced with different files with the same name. This functionality will, therefore, have to validate the retrieved files have the expected hashes while providing ways for users to override this hash if they are aware of changes on the remote server.
-
-There are many requirements for this project. Data is **download and cached** to `$HOME/sunpy/data/...` when first needed. There is some validation that the data has been **transferred correctly** (SHA hashes etc). There should be a mechanism by which we can allow users to **re-download data.** The download code supports **multiple mirrors**.  
-
-
+The project will contain the **`remote_data_manager`** class, which will provide users a mechanism to download data from remote servers, versioning of data, caching and multiple mirror functionality of download function. An API would be used for accessing the **`remote_data_manager`.** 
 
 ### Motivation
 
@@ -110,16 +106,21 @@ Functions in sunpy are going to need data files present on a remote server to wo
 
 1. The first requirement is data is downloaded and cached to **`$HOME/sunpy/data...`**  when first needed. It is the folder that made automatically when you build the sunpy project. (Inside the data folder currently there are fts and fits  files and `sample_data` folder which also contains fits, txt, pha files.)
 2. The second requirement is a quite interesting and I put it as a  **high priority** requirement.In this, there is need do some **validation** that the data has been transferred correctly.It can be done using **cryptographic hash function**. But here one question arises that if the data on the remote server has changed (consciously due to calibration change) and we have stored a sha hash in the code, then our downloads will start to give errors and the only way to fix for this approach is to do a new Sunpy release with a bug fix. The alternative is to not store hashes and just assume the data is what we anticipated and roll with it. It would be better to pin the version of data to the code, it means that in theory as long as the **remote data is available one version of SunPy will always give the same answers**. (Same code same data).  A mechanism to skip download verification if the user knows what they are doing can also be used here. Also here in this project, we are dealing with random data on the internet so there is no way to persuade the provider to version their data properly. A Need for  **efficient mechanism** to tackle this problem is required.
-3. Th Mechanism by which users can be allowed to **re-download data**. 
+3. The Mechanism by which users can be allowed to **re-download data**. 
 4. The download code supports **multiple mirrors**. 
-
 
 
 ### Design and Implementation
 
+#### Remote Data Manager
+
+In this project **`remote_data_manager`** is the core class which would handle the caching operations, download features, file handling, checksumming, validations etc. The `require`, `skip_hash_check`, `replace_file` and other helper function of this class will perform the above operations. The **`require`** function will **work as a decorator** and will be used to build an efficient caching mechanism. The skip_hash_check and replace_file function will be **implemented as a context manager**. The helper functions that I propose for API includes **`compare_hash`**, **`get_cached_urls`**,  **`delete_cache`**, **`get_file`**  which will be **used to access** `remote_data_manager`.
+
+
+
 #### Caching
 
-We need to cache  the downloaded data in a effective manner. We will use `remote_data_manager` which maintains a record of the cache and can provide many feature like getting the hash value, getting the  file etc. The code inside sunpy would ask for a given file name at a given url with given hash. Define a function named `myfetch()` that need some data :
+We need to cache  the downloaded data in a effective manner. We will use require function of  `remote_data_manager` which maintains a record of the cache. The code inside sunpy would ask for a given file name at a given url with given hash. Define a function named `myfetch()` that need some data :
 
 ```python
 @remote_data_manager.require(name='file1',
@@ -164,16 +165,23 @@ Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached w
 
 ### Storage and Download
 
-- ***Storage:*** The file will be saved in the folder  `$HOME/sunpy/data/…` and the **name of the file determined by hash or time stamp ( `created at` field in the cache json)**.
+- ***Storage:*** The file will be saved in the folder  `$HOME/sunpy/data/…` and the **name of the file determined by hash or time stamp ( `created at` field in the JSON)**.
 - ***Download:***  For downloading data we are using `remote_data_manager` which uses the downloading function, for example, **`download_file`**  or implementation of new function can be made. In  **`require`** function as stated above will have a **timeout** parameter , **show_progress bar** (default value `true` in astropy download function) parameter as well. 
 - **The downloaded data is cached and stored safely and efficiently.**
 
 
+
+
 ### Function in Remote data manager
+
+
 
 ##### `skip_hash_check`
 
-A function which is used during downloading data.It is a user overriding thing if the data has changed on the remote server or something else would happen.
+- A function which is used during downloading data.It is a user overriding thing if the data has changed on the remote server or something else would happen.
+- **Implemented as a context manager**.
+
+
 
 Skip hash sum check:
 
@@ -186,7 +194,10 @@ with remote_data_manager.skip_hash_check():
 
 ##### `replace_file`
 
-User overriding function to download a different file if he knows there is a newer version available.
+- User overriding function to download a different file if he knows there is a newer version available.
+- **Implemented as a context manager**.
+
+
 
 Replace file:
 
@@ -199,8 +210,6 @@ with remote_data_manager.replace_file(name='file1',
 
 
 - **Minute:** Any override would effectively create new entries, so we can link it to the original version by a **shared key**.  `Filename` can act as a shared key between the original version and the overridden version.
-
-
 
 
 
@@ -239,7 +248,7 @@ def get_cached_urls():
 
 ##### `delete_cache(file)`
 
-- It deletes the cache by deleting files.
+- It deletes the cached files along with URLs.
 
 ```python
 def delete_cache(file):
@@ -251,7 +260,8 @@ def delete_cache(file):
 
 ##### `get_file(file)`
 
-It provides the file name along with the path of the file. **A association used will make an efficient function like objects which give the file by hash or time stamp**. 
+- It provides the file name along with the path of the file. **A association used will make an efficient function like objects which give the file by hash or time stamp**. 
+
 
 ```python
 def get_file(file):
