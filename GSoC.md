@@ -10,8 +10,10 @@ SunPy participated in 2013 for the first time and 2014 and 2015 under the [Pytho
 
 ### SunPy focused
 
-We recommend for people who want to apply for GSoC to read [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]].
-Our [[GSoC Application template | GSoC: Student Application Template]].
+We recommend for people who want to apply for GSoC to read several wiki pages, [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]].
+
+We have a [[GSoC Application template | GSoC: Student Application Template]], it should form the base for your application.
+But it does not have to be taken as the the definite version. 
 
 [[GSoC: General Points]] is for mentors and accepted students.
 
