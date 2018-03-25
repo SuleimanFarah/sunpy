@@ -3,7 +3,7 @@ You should include the following information in your application:
 ## Title
 
 Please use a succinct title that describes your proposal.
-**Do not include the words "GSoC", "<Year>", or your name in the proposal title.**
+**Do not include the words "GSoC", "\<Year\>", or your name in the proposal title.**
 
 ## You the person
 
