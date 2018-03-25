@@ -287,51 +287,24 @@ The parse_time function currently takes some of the input instances listed below
 
 The following table will show the input time instances that parse_time support currently,what it does and how I propose to modify that by returning corresponding astropy.Time object.
 
-First importing import astropy.time as t
+First importing `import astropy.time as t`
 
-<table>
-  <tr>
-    <td>Input instances for time_string</td>
-    <td>Current working of parse_time</td>
-    <td>Proposed changes to return astropy.Time</td>
-  </tr>
-  <tr>
-    <td>astropy.Time</td>
-    <td>return time_string.datetime</td>
-    <td>return time_string</td>
-  </tr>
-  <tr>
-    <td>now</td>
-    <td>return datetime.utcnow()</td>
-    <td>return t.Time.now()</td>
-  </tr>
-  <tr>
-    <td>pandas.Timeseries</td>
-    <td>return time_string.to_pydatetime()</td>
-    <td>return t.Time(time_string)</td>
-  </tr>
-  <tr>
-    <td>isinstance(time_string, pandas.Series) and 'datetime64' in str(time_string.dtype)</td>
-    <td>return np.array([dt.to_pydatetime() for dt in time_string])</td>
-    <td>return np.array([t.Time(dt) for dt in time_string])</td>
-  </tr>
-  <tr>
-    <td>datetime</td>
-    <td>return time_string</td>
-    <td>return t.Time(time_string)</td>
-  </tr>
-  <tr>
-    <td>tuple</td>
-    <td>return datetime(*time_string)</td>
-    <td>return t.Time(*time_string)</td>
-  </tr>
-  <tr>
-    <td>date</td>
-    <td>return datetime.combine(time_string, time())</td>
-    <td>return t.Time(datetime.combine(time_string, time()))</td>
-  </tr>
-</table>
+|Input instances for `time_string` in parse_time |Current working of parse_time| Proposed changes to return astropy.Time|
+|:--------:|:--------------:|:------------:|
+|`astropy.Time`|```return time_string.datetime ```|``return time_string``|
+|`now`|`return datetime.utcnow()`|`return t.Time.now()`|
+|`pandas.Timeseries`|`return time_string.to_pydatetime()`|`return t.Time(time_string)`|
+|`isinstance(time_string, pandas.Series) and 'datetime64' in str(time_string.dtype)`|`return np.array([dt.to_pydatetime() for dt in time_string])`|`return np.array([t.Time(dt) for dt in time_string])`|
+|`datetime`|`return time_string`|`return t.Time(time_string)`|
+|`tuple`|`return datetime(*time_string)`| if `time = (2018,10,3,10,43,5,6)` see [code here](https://gist.github.com/prateekiiest/59fe05f0614ff37ccc374b7f31d6ad9e)|
+|`date`|`return datetime.combine(time_string, time())`|`return t.Time(datetime.combine(time_string, time()))`|
+|`pandas.DatetimeIndex`|`return time_string._mpl_repr()`|if ```time_string = DatetimeIndex(np.array([1,2,34])) return [t.Time(t[tim]) for tim in range(len(time_string))]```|
+|`np.datetime64`|`return _parse_dt64(time_string)`|`return _parse_dt64_Time(time_string)` with modified version of `_parse_dt64` [discussed here](https://gist.github.com/prateekiiest/be2932a25b311153d72fc39401c745f9)|
+|`date`|`return datetime.combine(time_string, time())`| [See Enhancement](https://gist.github.com/prateekiiest/6ec311d7969fc5329af24ff7752305e6)|
+|`time_format = utime` and `time_string = <int, float>`|`return datetime(1979, 1, 1) + timedelta(0, time_string)`| [See Enhancement](https://gist.github.com/prateekiiest/25281428071374b5ba91baa465bffaa2)|
 
+
+**What extra time strings will parse_time support if it returns `astropy.Time`**
 
 **Making parse_time more modular**
 
