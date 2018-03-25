@@ -85,6 +85,7 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
 
   - Formatting of time: `Time` does not provide a good way to format it now (like `strftime` for `datetime`). I would add a similar function based on the comments from community. ([Link](https://github.com/astropy/astropy/pull/7323) to the PR on astropy)
 
+
 - **Changes to `parse_time`**
   - String parsing: Right now my plan is to use   `astropy.Time` primarily and fallback to the current  regex when `astropy.Time` can't parse the   `time_string`. But however this is open for   discussion and may change once the coding starts  based on the comments from mentors. Parsing strings   is a very powerful feature of `parse_time` now. It  supports a large variety of strings. So it makes  sense that this feature stays.
 
@@ -120,11 +121,9 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
 
     Modules are mentioned in summary above. The   change mostly include changing them to use   `astropy.Time` instead of `datetime`. This is  summed up above in the first point of this  section.
 
-###### The following are fallback tasks if contributions to astropy don't make it for some reason
-
 - **Equivalents to `datetime` functions**
 
-  - `datetime.strftime` could be replaced with a [custom format](http://docs.astropy.org/en/stable/time/#writing-a-custom-format) of `Time` or the following code can be used
+  - `datetime.strftime` could be replaced with a [custom format](http://docs.astropy.org/en/stable/time/#writing-a-custom-format) of `Time` or the following code can be used (if contributions to astropy don't make it for some reason)
   ```python
   def strftime(time, format_string):
       time.strftime(format_string, time.gmtime(time.unix))
