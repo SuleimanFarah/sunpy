@@ -1,5 +1,5 @@
 Be sure to read through all the advice on the wiki and the links we suggested first!
-We expect to receive, as we did last year, lots of high quality applications.
+We expect to receive, as we do most years, lots of high quality applications.
 So please do give your application some thought!
 
 ## Pull Request requirement
