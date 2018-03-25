@@ -81,21 +81,24 @@ Changes to the examples would be confined to modifying them for `astropy.Time` i
 
 | Format         | Possible solution with  `astropy.Time` |
 | :------------- | :------------------- |
-| ts = (1966, 2, 3)        | `Time('{}-{}-{}'.format(*t))` |  
+| ts = (1966, 2, 3)        | `Time('{}-{}-{}'.format(*ts))` |  
 | ts = 765548612.0, 'utime' | `Time(ts,  format='utime')` Using custom format in  `sunpy.time.utime` |  
 | ts = pandas.Timestamp() |`Time(pandas.Timestamp)`  |  
-| ts = pandas.Series() | `np.array([Time(v) for vin  ts])` |  
-| pandas.DatetimeIndex() | `np.array([Time(v) forv   in ts])` |  
+| ts = pandas.Series() | `np.array([Time(v) for v in ts])` or `Time([v for v in ts])` |  
+| pandas.DatetimeIndex() | `np.array([Time(v) for v in ts]) Time([v for v in ts])` |  
 | np.datetime64('2005-02-01T00') | See gist below|  
 | np.arange('2005-02', '2005-03', dtype='datetime64[D]') | See gist below |  
 | np.arange('2005-02-01T00', '2005-02-01T10', dtype='datetime64') | See gist below |  
 | ts = astropy.time.Time | `ts` |  
 | 'now' | `Time.now()` |  
+| ts = datetime() | `Time(ts)` |
+| `ts = datetime.date` | `Time(ts.isoformat())` |
 
-  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428. The current implementation of `parse_time` can only convert `datetime64`s which contain only date. This gist gives `parse_time` the power to parse `datetime64`s which contain time too.
 
   Before returning `Time`, `.replicate` function could be called on it so that we get a uniform format for all the returned `Time` objects.
-  Ex: `return Time(..., format='unix').replicate('iso')`
+  We could also set the scale as we need (utc, tai etc.).
+  Ex: `return Time(..., format='unix', scale='utc').replicate('iso')`
 
 - **Handling of timedelta**
 
