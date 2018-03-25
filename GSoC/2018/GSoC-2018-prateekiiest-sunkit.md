@@ -186,7 +186,7 @@ I have been involved with the SunPy project for the past 1 year contributing sin
 * * *
 
 
-### **Abstract**
+## **Abstract**
 
 Analysis of solar data collected from different solar observatories is one of the fundamental research area in the heliophysics community. Hence a good processing of such images needs to be done in order to get accurate features and hidden data which can be used for further analysis.
 
@@ -204,11 +204,11 @@ As part of the project there are major 4 milestones that need to be completed. I
 
 * Implement image re-sampling algorithm and update it to Astropy project.
 
-### **Detailed Description**
+## **Detailed Description**
 
 A detailed analysis of each part of the project is described as follows
 
-#### Implementation of the Normal-Radial-Graded Filter (NRGF)
+### Implementation of the Normal-Radial-Graded Filter (NRGF)
 
 **Motivation**
 
@@ -224,7 +224,7 @@ The IDL version of the algorithm in the [paper](http://adsabs.harvard.edu/abs/20
 
 Much of this has already been implemented by @wafels [here](https://github.com/wafels/sunkit-image/blob/master/sunkit_image/offlimb_enhance.py). The current code implements both calculating the radial intensity (a summary statistic of the intensity in a solar map as a function of radius) and the intensity distribution in each of the radial bins. Lastly it uses both these functions and calculates the corresponding processed intensity. The implementation is quite modular, but it still needs to be checked first whether the output is correct by validating against the corresponding IDL output (preferrably a LASCO image). The python implementation needs to be optimized as much as possible in terms of memory and CPU usage. This can be achieved by avoiding loops  as much as possible and replacing them with corresponding numpy functions (like using in a list comprehension). Finally before merging into the sunkit repository, the above code needs to be rigorously tested and well documented in terms of what each function does and about the parameters used.
 
-#### **Porting the Multi-Gaussian Algorithm**
+### **Porting the Multi-Gaussian Algorithm**
 
 **Motivation**
 
@@ -244,7 +244,7 @@ The output of the two codes proposed by @Cadair and @ebuchlin is shown in this [
 
 Also in addition the main MGN function in the code may be broken down to sub-functions to make it more modular. Depending on how the two python codes get modified at the end, we can have a merge of them or keep both in the repository. Finally I plan to work on 1-2 examples on AIA images demonstrating the working of the implemented algorithm.
 
-#### **Occult-2 Algorithm Implementation**
+### **Occult-2 Algorithm Implementation**
 
 **Motivation**
 
@@ -269,7 +269,7 @@ The OCCULT Algorithm works in 4 steps
 I have prepared a rough pseudo-code implementation of OCCULT-W algorithm and have uploaded them in a [gist](https://gist.github.com/prateekiiest/993d1a1cd0a8a25ce8675c56bc534689)
 I plan to implement the algorithm in a modular fashion by writing separate functions for background suppression, filtering , loop tracing and the loop subtraction part to provide more clarity to the user. Finally once done, the output needs to be cross-checked with that of the IDL implementation. After this, I will work on documenting the relevant portions of the algorithm along with working on some examples demonstrating the working of the algorithm. In the end the code needs to be thoroughly tested before final porting to the main package.
 
-#### **Implementation of Image Resampling**
+### **Implementation of Image Resampling**
 
 **Motivation**
 
