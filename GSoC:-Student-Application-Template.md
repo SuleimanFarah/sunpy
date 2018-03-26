@@ -1,7 +1,7 @@
 **WIP** **INCOMPLETE** **NOT FOR 2018**
 
-Ideally an application should be concise and to the point.
-We would suggest nothing more than 10 pages in a google docs format should the ideal aim.
+Ideally an application should be concise and to the point and with that in mind, we would suggest trying to not go past 10 pages in a google docs format. 
+Any code you want to include could be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
 
 You should include the following information in your application:
 
