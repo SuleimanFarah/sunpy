@@ -113,13 +113,13 @@
 
 ## **Abstract**
 
-This project will need to redesign **roi.py** and **chaincode.py** to work well with coordinates used in the **ROI** and will cover not only images but other dimensions (**timeseries** or **multidimensional data**). This project aims to design and implement an object so that we can find **ROI in any physical dimension** ( such as spatial area or temporal range and interact with the rest of data types used in sunpy. 
+This project will need to redesign **roi.py** and **chaincode.py** to work well with coordinates used in the **ROI** and will cover not only images but other dimensions (**timeseries** or **multidimensional data**). This project aims to design and implement an object so that we can find **ROI in any physical dimension** ( such as spatial area or temporal range and interact with the rest of data types used in sunpy). 
 
 The **TimeRange object** could be used to store the **time extent** of the "region". The region of interest object should also be derivable from the main object classes - **HEK, HELIO.**
 
 So user uses HEK module to get a **list of events** of some time range and also those instances can then be **drawn as overlays on a Map instance**, like **`map.show(overlays=hekEvent)`**.
 
-We will start it by using ROI on images and then timeseries and later spectra.
+We will start it by using ROI on images and then extend it to use timeseries as a parameter and later to spectra.
 
 ### **Project Goals :**
 
@@ -149,7 +149,7 @@ We will start it by using ROI on images and then timeseries and later spectra.
 
 **Detailed Description:**
 
-Currently, If users want to get information about Solar events such as flare information, active regions, they would have to first find HEK / HELIO results and after then specifies the timerange (which is the window he is interested in) and then club those two as an overlay. Finally, after that while reproducing images user will have to specify the bounding box to focus on a certain region.
+Currently, if users want to get information about Solar events such as flare information, active regions, they would have to first find HEK / HELIO results and after then specify the timerange (which is the window he is interested in) and then club those two as an overlay. Finally, after that while reproducing images user will have to specify the bounding box to focus on a certain region.
 
   
 
@@ -157,7 +157,7 @@ Eg. If a user is interested in the finding the biggest coronal hole within 80 de
 
 ```python
 Class roi(object):
-	def __init__ (self, object = None , timeseries =None, responses=None, *argv, **kwargs):
+	def __init__ (self, object = None , timeseries = None, responses = None, *argv, **kwargs):
 		if object is  'hek':
 			self.hek_roi(responses, *argv, **kwargs)
 	def hek_roi(self, responses = None, *argv, **kwargs):
@@ -173,21 +173,25 @@ Class roi(object):
 		....
 		return TimeRange(self.start_time, self.end_time)
   	def plot():
-		...
+        ...
+        return plot
+    # various other functions
+
 	
 ```
 
+**<u>Class ROI</u>**
 
 **Parameters:**
 
 - **Object** – type of object.
-- **timeseries** – will contain sample data and source .
+- **timeseries** – will contain sample data and source.
 - **Response** - (ndarray) - array of responses.
 - **Methods** : args that will define ROI attributes and properties.
 
 **Returns:**
 
-- **out**  – A final ROI response which can be overlayed on an image.
+- **Returns**  – A final ROI response which can be overlayed on an image.
 
 
 
@@ -273,7 +277,7 @@ plt.show()
 
 ![RESULT WITH MARKED ROI](https://drive.google.com/uc?id=1DH5RLLP6ijn6RzvrSSHyqjoPtRYJ_mEC)
 
-It will be more convenient to use ROI module as it will **save a lot of code** and time and will **automate certain lines of codes**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically mark our ROI with a certain **zoom** which is intended and will have space for **panning** as well. 
+It will be more convenient to use ROI module as it will **save a user from writing a lot of code** and time and will **automate certain lines of codes**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically **mark our ROI** with a certain **zoom** which is intended and will have space for **panning** as well. 
 
 The final reproduced image will look like: 
 
@@ -371,7 +375,7 @@ aia_map.plot(axes=ax)
 
 **Various Geometric Shapes which will help to plot ROI**
 
-For geometric shapes like square and circle the arguments for ROI can be passed like:
+For geometric shapes like square and circle, the arguments for ROI can be passed like:
 	
 
 ​	
@@ -384,7 +388,7 @@ Circle[center_x, center_y, radius]
   
 ```
 
-These geometric shapes can be used to represent ROI on a specific need and for the rest of the responses chaincode([convex](http://mathworld.wolfram.com/ConvexPolygon.html) and [concave](http://mathworld.wolfram.com/ConcavePolygon.html) polygon)
+These geometric shapes can be used to represent ROI on a specific need and for the rest of the responses we can use chaincode([convex](http://mathworld.wolfram.com/ConvexPolygon.html) and [concave](http://mathworld.wolfram.com/ConcavePolygon.html) polygon).
 
 
 
@@ -409,7 +413,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 2. ROI module will use various objects and data types as inputs (HEK/HELIO) to be used as overlays which could be plotted on the same image.
 3. Extract information from the interaction (overlay a sunspot detection on a corona image and extract the total area of that region or the date at which it was observed).
 4. Later the ROI can be extended to objects like timeseries and spectra.
-5. Extending ROI features to timeseries and later to spectra etc.
+5. Extensive testing of different possibilities for the plot of ROI.
 
 
 
@@ -466,7 +470,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 <td>May 14 - 22, 2018 (Week 1)</td>
 
-<td><ul><li>Implementing <b>basic geometric shapes</b> along with chaincode (eg: rectangle, circle, polygon etc).</li><li>Module for <b>more complex structures</b> (like chaincode where the shape is not consistent).</li></ul></td>
+<td><ul><li>Implementing <b>basic geometric shapes</b> along with chaincode (eg: rectangle, circle, polygon etc).</li><li>Implement module for <b>more complex structures</b> (like chaincode where the shape is not consistent).</li></ul></td>
 
 </tr>
 
@@ -492,7 +496,7 @@ region.date() # tells me when that was observed
 
 <td>June 6 - 14, 2018 (Week 4)</td>
 
-<td><ul><li>Cross-check the work done for the submission of the first phase of evaluation.</li></ul></td>
+<td><ul><li>Write <b>tests</b> and <b>documentation</b>.</li><li>Cross-check the work done for the submission of the first phase of evaluation.</li></ul></td>
 
 </tr>
 
@@ -519,7 +523,7 @@ region.date() # tells me when that was observed
 
 <td>July 7 - July 13, 2018 (Week 8)</td>
 
-<td><ul><li><b>Timeseries</b> as an attribute in ROI (as a number of instruments are supported through subclasses).</li> <li>Cross-check the work done for the submission of the second phase of evaluation.</li></ul> </td>
+<td><ul><li>Write <b>tests</b> and <b>documentation</b>.</li> <li><b>Add 'timeseries'</b> as an attribute in ROI (as a number of instruments are supported through subclasses).</li> <li>Cross-check the work done for the submission of the second phase of evaluation.</li></ul> </td>
 
 </tr>
 
@@ -553,7 +557,7 @@ region.date() # tells me when that was observed
 
 </td>
 
-<td><ul><li>Work on any leftover tasks which were stuck before.</li><li> Write <b>tests</b> and <b>documentation</b>.</li> <li><b>Resolve merge conflicts</b> (if any).</li> <li><b>Refactoring of code</b></li></ul></td>
+<td><ul><li>Work on any leftover tasks which were stuck before.</li><li>Write <b>tests</b> and <b>documentation</b>.</li> <li><b>Resolve merge conflicts</b> (if any).</li> <li><b>Refactoring of code</b></li></ul></td>
 
 </tr>
 
@@ -601,9 +605,9 @@ region.date() # tells me when that was observed
 
 ### **How I propose to complete the project:**
 
-I have been contributing to SunPy from the beginning of the February. I will continue to discuss design specific problems and implementation details with my mentors before starting a new topic. Also, if I feel any problem needs to addressed or designed carefully I would rather go through several documentations and try finding solutions online and won’t hesitate approaching mentors for my doubts.
+I have been contributing to SunPy from the beginning of the February. I will discuss design specific problems and implementation details with my mentors before starting a new topic. Also, if I feel any problem that needs to addressed or designed carefully, I would rather go through several documentations and try finding solutions online and won’t hesitate approaching mentors for my doubts.
 
-I spent a lot of time going through SunPy documentations and also through several references provided to me other than that. I also worked on some pseudo codes and getting to understand its functionalities and figured out the way to design a solution.
+I spent a lot of time going through SunPy documentations and also through several references provided to me other than that. I also worked on some pseudo codes and got to know about its functionalities and figured out the way to design a solution.
 
 * I will push to my pull requests regularly to keep my mentors updated on my work.
 * I will be updating the documentation parallelly with functionalities and methods I implement.
@@ -638,4 +642,4 @@ My next semester will start from the 1st week of August still I would be able to
 
 ### **Eligibility**
 
-Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanation of any approach/feature feel free to contact me at yudhik100@gmail.com and I shall be happy to reply.
+Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanation of any approach/feature, feel free to contact me at yudhik100@gmail.com and I shall be happy to reply.
