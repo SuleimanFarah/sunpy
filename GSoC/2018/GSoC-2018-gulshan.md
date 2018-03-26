@@ -71,9 +71,11 @@ Apart from the above projects, I am also proficient in **C, C++, javascript**.
 
 ### Abstract
 
-Some functionality in SunPy or in affiliated packages needs access to **data files on the remote (HTTP) servers**. Examples of this include data provided by instrument teams relating to the calibrations or performance of the instruments, this kind of data are highly likely to change with time.Since SunPy **has no control over the data** on the servers, and the files on the servers may be replaced with different files with the same name. So there is a way to **validate that the retrieved file has the expected hash** and provide ways to **users to override** this hash means **redownload the data** if they are aware of changes on the remote server.
+The aim of the **Sunpy** is to provide **data analysis** and helps in the field of **solar physics** by providing tools and functions which minimize the efforts of users in performing their tasks related to solar physics.The sunpy package needs access to data files on the **remote (HTTP) server** for the data analysis used in former.Since SunPy has **no control** over the data on the servers, and the files on the servers may be replaced with different files with the same name. Thus, there is a requirement for a module which ensures that the remote data is **downloaded** and **cached** before it is used and that system would need to be **efficient**.The project provides a way to **validate that the retrieved file has the expected hash** and also provide ways for users to override this hash means **redownload** the data if they are aware of changes on the remote server.
 
-The project will contain the **`remote_data_manager`** class, which will provide users a mechanism to download data from remote servers, versioning of data, caching and multiple mirror functionality of download function. An API would be used for accessing the **`remote_data_manager`.** 
+The project will contain the **`remote_data_manager`** class, which will provide users a mechanism to download data from remote servers, versioning of data, caching and multiple mirror functionality of download function. The user will use the **API** to access the `remote_data_manager`. Apart from the few functions mentioned above, the API will provide the user with several options such as getting the latest version of a file means file on the basis of the **timestamp** in the cache, getting a file on the **basis of its hash** **value** etc.
+
+
 
 ### Motivation
 
