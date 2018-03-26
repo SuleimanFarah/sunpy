@@ -92,100 +92,12 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
 
    Re-sampling can be done using `direct interpolation` but this method is not very efficient. In [this paper](https://link.springer.com/content/pdf/10.1023/B:SOLA.0000021743.24248.b0.pdf) an optimised method using the padded ellipse of transformation to approximate the input sampling area for each output pixel, has been proposed. We have to update
  [this PR](https://github.com/astrofrog/reproject/pull/52) by [rubendv](https://github.com/rubendv) to the Astropy [image resampling](https://reproject.readthedocs.io/en/stable/) library. <br/><br/>
-## Implementation Details
-
-1. OCCULT-2
-The main function which takes in image and gives out a list containing list of tuples.
-
-```
-def detect_loops():
-
-   Parameters
-   ----------
-   image: `numpy.ndarray`
-           The data array of the input image.
-
-   nsm_1: `int`
-              Boxcar smoothing constant for low pass filter.
-
-   n_sm2: `int` (Optional)
-              Boxcar smoothing constant for high pass filter. If not given, nsm_2 = nsm_1 + 2
-
-   rmin: `astrophys.pix` / units of `pix`
-          The minimum curvature radius for loop detection.
-
-   q_base: `float`
-          The control factor that suppresses the data noise in the background. Ranges from 0 to 1.
-          qmed=0 makes no change to the image, while qmed=1 makes image flat in the fainter half.
-
-   Returns
-   -------
-   A list containing `list of tuples(pixel coordinate)`.
-```
-Function to remove unwanted secondary structures in the background.
-```
-def image_base_level(q_base):
-
-	Parameters
-	----------
-	image: `numpy.ndarray`
-	q_base: `float`
-
-	returns
-	-------
-	noise_free_image: 'numpy.ndarray'
-
-	find z_med
-	z_base = z_med * q_base
-	for each pixel in image:
-		if z_pixel < z_base:
-			z_pixel = z_base
-```
-Apply band pass filter to enhance loops structures in given image.
-```
-def bp_filter(n_sm1,nsm_2):
-
-	Parameters
-	----------
-	image: `numpy.ndarray`
-	n_sm1: `int`
-	n_sm2: `int' (optional)
-
-	returns
-	-------
-	filtered_image: `numpy.ndarray`
-```
-To start from the pixel with maximum brightness.
-```
-def start_curve():
-
-	Parameters
-	----------
-	image: `nump.ndarray
-
-	returns
-	-------
-	location of pixel: `tuple`
-```
-To erase the traced curved.
-```
-def erase_curve():
-	Parameters
-	----------
-	image: `numpy.ndarray`
-	array: `list of tuples`
-
-	returns
-	-------
-	residual_image: `numpy.ndarray`
-```
-and also some other functions on formation of bidirectional loop.
 <br/><br/>
 ## Timeline
 
 | Time Period        | Plan           |
 | ----------- | ------------- |
-| April 23, 2018 - May 14, 2018 **(Community Bonding Period)**      |   <ul><li>Read and understand previous works on image in sunpy repository including rescale and transform.</li><li> Come up with ideas as to what can be moved to sunkit-image from sunpy core.</li><li>**Talk to mentors about details of image testing methods to be used.**</li><li>Read about setting and running CI and documentation.</li><li>Work on pseudo code for OCCULT-2 which has not been implemented as of yet.</li><li>Work upon the details of implementation, decide where various utilities can live.</li><li>Discuss on how we update deforest algorithm.</li></ul>|
+| April 23, 2018 - May 14, 2018 **(Community Bonding Period)**      |   <ul><li>Read and understand previous works on image in sunpy repository including rescale and transform.</li><li>**Talk to mentors about details of image testing methods to be used.**</li><li>Work on pseudo code for OCCULT-2 which has not been implemented as of yet.</li><li>Work upon the details of implementation, decide where various utilities can live.</li><li>Discuss on how we update deforest algorithm.</li></ul>|
 | | **Part 1 starts** |
 | May 15, 2018 - May 21, 2018 <br/> ( 1 week ) | <ul><li>Work to setup `CI` and `documentation` running.</li><li>Port the already implemented codes of MGN to main repository.</li><li>Check if it is in line with the `original algorithm` as suggested in the paper.</li><li>Figure out how [IDL](http://eagle.imaps.aber.ac.uk/mgn.pro) version is different from the [paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf).</li></ul> |
 | May 21, 2018 -  June 3, 2018 <br/>( 2 weeks ) | <ul><li>Work on already implemented and merged NRGF in main repository.</li><li>Decide how it should be rewritten if needed.</li><li>Work upon time `optimization` using Cython if time permits.</li><li>Decide upon the testing routine to be used and start writing image tests using the same.</li></ul> |
