@@ -2,7 +2,7 @@
 
 ### **Project: Developing SunKit Image**
 
-##### **Mentors: ****[@Cadai**r](https://github.com/Cadair)**, ****[@wafel**s](https://github.com/wafels)**, ****[@Nabobali**s](https://github.com/nabobalis)** ****[@mbobr**a](https://github.com/mbobra)
+##### **Mentors: [@Cadair](https://github.com/Cadair), [@wafels](https://github.com/wafels), [@Nabobalis](https://github.com/nabobalis)[@mbobra](https://github.com/mbobra)
 
 #### **Student Information**
 
