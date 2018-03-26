@@ -31,7 +31,7 @@ Then try to follow these steps for applying to GSoC with SunPy.
 
     Check our [issues list](https://github.com/sunpy/sunpy/labels/Package%20Novice) to see if there is something that you could do.
     **You need to submit at least one pull request to SunPy if you want to be considered for GSoC.**
-    **We use the pull requests as a basis to judge your ability in programming Python.**
+    **We use the pull requests as a basis to judge your ability to program Python or other relevant languages.**
     Familiarize yourself with the [development guidelines](http://docs.sunpy.org/en/latest/dev_guide/index.html) for SunPy and the [Contributing Guide](https://github.com/sunpy/sunpy/blob/master/CONTRIBUTING.rst).
     The developer documentation contains a lot of information on using git (including rebasing), how to write tests, documentation, etc.
     The more understanding of the workflow you can demonstrate, the better your chances.
