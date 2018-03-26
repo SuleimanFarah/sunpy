@@ -102,7 +102,8 @@ Functions in sunpy are going to need data files present on a remote server to wo
 3. **Developer documentation** for the understanding of functionality. All the work should be done in a manner that Pull request should be merged after **review and feedback**.
 
 
-### Detailed Description
+
+## Detailed Description
 
 #### Requirements elicitation
 
