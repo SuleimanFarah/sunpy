@@ -71,7 +71,7 @@ Apart from the above projects, I am also proficient in **C, C++, javascript**.
 
 ### Abstract
 
-The aim of the **Sunpy** is to provide **data analysis** and helps in the field of **solar physics** by providing tools and functions which minimize the efforts of users in performing their tasks related to solar physics.The sunpy package needs access to data files on the **remote (HTTP) server** for the data analysis used in former.Since SunPy has **no control** over the data on the servers, and the files on the servers may be replaced with different files with the same name. Thus, there is a requirement for a module which ensures that the remote data is **downloaded** and **cached** before it is used and that system would need to be **efficient**.The project provides a way to **validate that the retrieved file has the expected hash** and also provide ways for users to override this hash means **redownload** the data if they are aware of changes on the remote server.
+The aim of the **Sunpy** is to provide **data analysis** and helps in the field of **solar physics** by providing tools and functions which minimize the efforts of users in performing their tasks related to solar physics.The sunpy package needs access to the data files on the **remote (HTTP) server** for the data analysis used in former.Since SunPy has **no control** over the data on the servers, and the files on the servers may be replaced with different files with the same name, so there is a need for a module which ensures that the remote data is **downloaded** and **cached** before it is used on the client system. The project provides a way to **validate that the retrieved file has the expected hash** and also provide ways for users to override this hash i.e.,  **redownload** the data if they are aware of changes on the remote server.
 
 The project will contain the **`remote_data_manager`** class, which will provide users a mechanism to download data from remote servers, versioning of data, caching and multiple mirror functionality of download function. The user will use the **API** to access the `remote_data_manager`. Apart from the few functions mentioned above, the API will provide the user with several options such as getting the latest version of a file means file on the basis of the **timestamp** in the cache, getting a file on the **basis of its hash** **value** etc.
 
@@ -95,6 +95,8 @@ Functions in sunpy are going to need data files present on a remote server to wo
 **Part2**: Design of a simple and functional API and have worked with my mentors and community for better understanding and implementing the design efficiently.The working **prototype** of this API also have to be done including its **tests**. 
 
 
+
+
 ### Deliverables
 
 1. **Cache and download system** along with its test and documentation. 
@@ -103,14 +105,17 @@ Functions in sunpy are going to need data files present on a remote server to wo
 
 
 
-## Detailed Description
+
+### Detailed Description
 
 #### Requirements elicitation
 
 1. The first requirement is data is downloaded and cached to **`$HOME/sunpy/data...`**  when first needed. It is the folder that made automatically when you build the sunpy project. (Inside the data folder currently there are fts and fits  files and `sample_data` folder which also contains fits, txt, pha files.)
-2. The second requirement is a quite interesting and I put it as a  **high priority** requirement.In this, there is need do some **validation** that the data has been transferred correctly.It can be done using **cryptographic hash function**. But here one question arises that if the data on the remote server has changed (consciously due to calibration change) and we have stored a sha hash in the code, then our downloads will start to give errors and the only way to fix for this approach is to do a new Sunpy release with a bug fix. The alternative is to not store hashes and just assume the data is what we anticipated and roll with it. It would be better to pin the version of data to the code, it means that in theory as long as the **remote data is available one version of SunPy will always give the same answers**. (Same code same data).  A mechanism to skip download verification if the user knows what they are doing can also be used here. Also here in this project, we are dealing with random data on the internet so there is no way to persuade the provider to version their data properly. A Need for  **efficient mechanism** to tackle this problem is required.
+2. The  second requirement is do some kind of **validation** that will ensure that the data is transferred correctly. It can be done using the cryptographic hash function. As the project is dealing with **random data** on remote (HTTP) servers, there is a need to have a vigorous version-control data management system like git. The priority of this interesting requirement will be considered **high** in this project.
 3. The Mechanism by which users can be allowed to **re-download data**. 
 4. The download code supports **multiple mirrors**. 
+
+
 
 
 ### Design and Implementation
@@ -150,6 +155,7 @@ The Cache will be maintained on a disk in the form of **JSON** (javascript objec
             "hash": "1245645343545343",
             "size": "10",
             "created_at": "2018-3-15 06:00:00",
+            "modified_at": "2018-3-15 06:15:00",
             "urls": [
                 "https://server1/file1.fits",
                 "https://server2/file1.fits"
@@ -159,7 +165,7 @@ The Cache will be maintained on a disk in the form of **JSON** (javascript objec
     ]
  }
 ```
-Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached with the file in remote_data_manager class, **default_hash** I assume it is the hash which I know for comparing or it is the hardcoded hash.**List_cash** maintains the list of a cache of files having same **shared key**. 
+Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached with the file in remote_data_manager class, **default_hash** I assume it is the hash which I know for comparing or it is the hardcoded hash. **List_cash** maintains the list of a cache of files having same **shared key**. 
 
 - **Note**: We are also caching the older version of data. 
 
@@ -168,9 +174,30 @@ Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached w
 
 ### Storage and Download
 
-- ***Storage:*** The file will be saved in the folder  `$HOME/sunpy/data/…` and the **name of the file determined by hash or time stamp ( `created at` field in the JSON)**.
-- ***Download:***  For downloading data we are using `remote_data_manager` which uses the downloading function, for example, **`download_file`**  or implementation of new function can be made. In  **`require`** function as stated above will have a **timeout** parameter , **show_progress bar** (default value `true` in astropy download function) parameter as well. 
-- **The downloaded data is cached and stored safely and efficiently.**
+- ***Storage:*** The file will be saved in the folder  `$HOME/sunpy/data/…` and the **name of the file determined by hash or time stamp ( `created at` field in the JSON of cache)**. The `modified_at` field in JSON of cache will maintain the individuality of the cached filename.
+
+  - **Filename by hashing**: The name of the file will be the hash of filename plus modified time. Here modified time is taken into consideration to avoid the situation when the file is changed on the remote server and user redownload it.
+
+    ```python
+    import hashlib as hash
+    Cached filename = hash.md5('orignal_filename' + modified_at).hexdigest()
+    ```
+
+    ​
+
+  - **Filename by timestamp:** The `modified_at` field in JSON of the cache will be added to the original name of the file after the downloading.
+
+    ```python
+    Cached filename = original_filename + '_' + modified_at
+    ```
+
+    ​
+
+- ***Download:***  For downloading data we are using `remote_data_manager` which uses the downloading function, for example, **`download_file`**  or implementation of new function can be made. In  **`require`** function as stated above will have a **timeout** parameter, **show_progress bar** (default value `true` in astropy download function) parameter as well. 
+
+  ​
+
+- **For storing the cache efficiently**  `compare_hash` is made proficient and  hash value of two comparing files will be stored (**memoize**) so that there is no need to calculate the hash value repeatedly.
 
 
 
