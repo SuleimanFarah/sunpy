@@ -32,7 +32,7 @@ Please use a succinct title that describes your proposal.
 
 Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
-## GSoC Infomation
+## You and GSoC
 
 * Have you participated previously in GSoC? When? With which project?
 
@@ -43,7 +43,7 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
     We expect full time \~35h/week during GSoC, but better make this explicit
-    If you plan to take any vacations over the summer or if you have exams, let us know about it here.
+    If you plan to take any vacations over the summer or if you have exams or any other commitments, let us know about it here.
 
 ## You the programmer
 
@@ -72,9 +72,9 @@ Answer the following questions in your proposal:
 
 * Why are you suited to work on this project?
 
-* What have other people done on this idea? Has it been implemented before?
+* What have other people done on this idea?
 
-    Hint: it probably has.
+    It is most likely that someone has implemented (in some form) before.
     Are there any papers or blog posts about it?
     What about open issues or non-merged (open or closed) pull requests?
 
