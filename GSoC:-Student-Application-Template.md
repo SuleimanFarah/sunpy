@@ -1,7 +1,8 @@
 **WIP** **INCOMPLETE** **NOT FOR 2018**
 
-Ideally an application should be concise and to the point and with that in mind, we would suggest trying to not go past 10 pages in a google docs format. 
+Ideally an application should be concise and with that in mind, we would suggest not exceeding 10 pages in a google docs format. 
 Any code you want to include could be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
+Also, we suggest you write the application in markdown first and then convert it to the Google Docs format after. 
 
 You should include the following information in your application:
 
@@ -31,13 +32,12 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 
 ## You the programmer
 
-In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or git.
-Many of our students start fresh.
-We will teach you what you need to know.
+In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or version control.
+Many of our students start fresh and we will teach you what you need to know.
 
 * What platform do you use to code?
 
-* What is your experience programming?
+* What is your experience with programming?
 
 * What is your experience with Python?
 
@@ -47,7 +47,7 @@ We will teach you what you need to know.
 
 * What are your contributions to SunPy so far?
 
-    It should be a brief summary (with links) of work including unmerged work.
+    It should be a brief summary (with links) of pull requests including unmerged work.
 
 ## You and your project
 
@@ -77,11 +77,14 @@ Answer the following questions in your proposal:
     If the answer is no, you can skip this.
     Please do not add redundant information into the application.
 
+    If the answer is yes, what ones and why?
+    We need to be given a good reason to add extra requirements to SunPy? 
+
 * Please provide a schedule of how this time will be spent on sub-tasks of the project over the period of the summer.
 
     While this is only preliminary, we will use it to help monitor your progress throughout the program.
     Also understand that during the project you will issue weekly progress reports against that plan on your blog.
-    Try to avoid using a table, it can cause issues when/if you move between Google Docs and the wiki.
+    Try to avoid using a table, it can cause issues when/if you move between Google Docs and the wiki (if you use markdown).
 
 * In planning your project, it is good to note where along the way you could formulate a pull request.
 
