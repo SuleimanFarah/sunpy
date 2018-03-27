@@ -10,9 +10,12 @@
 
 - **Name** : Gulshan Kumar
 - **E-Mail** : gulshankumar1210iiit@gmail.com
+- **Phone**: +91-9490415562
 - **Time Zone** : **UTC**+05:30
 - **IRC Handle** : gulshan_mittal
 - **Github handle** : [blackeye](https://github.com/gulshan-mittal)
+- **Blog**: [MyBlog](https://blackeye1210.wordpress.com)
+- **Blog RSS feed :** [RSS Feed](https://blackeye1210.wordpress.com/feed/)
 
 
 
@@ -128,7 +131,7 @@ In this project **`remote_data_manager`** is the core class which would handle t
 
 #### Caching
 
-We need to cache  the downloaded data in a effective manner. We will use require function of  `remote_data_manager` which maintains a record of the cache. The code inside sunpy would ask for a given file name at a given url with given hash. Define a function named `myfetch()` that need some data :
+We need to cache  the downloaded data in a effective manner. We will use `require` function of  `remote_data_manager` which maintains a record of the cache. Here the `require` function work as a decorator. The code inside sunpy would ask for a given file name at a given url with given hash. Define a function named `myfetch()` that need some data :
 
 ```python
 @remote_data_manager.require(name='file1',
@@ -202,7 +205,7 @@ Here, **fetch_hash** will be fetched  by `get_hash`  function or hash attached w
 
 
 
-### Function in Remote data manager
+### Functions in Remote data manager
 
 
 
@@ -244,8 +247,9 @@ with remote_data_manager.replace_file(name='file1',
 
 
 
+#### The functions which help in working prototype of  API:
 
-#### The function which help in working prototype of  API:
+
 
 ##### `compare_hash(file1, file2) `
 
@@ -267,7 +271,7 @@ def compare_hash(file1,file2):
 
 ##### `get_cached_urls()`
 
-- It provides the list of URLs in the cache used for looking the files which are present in the cache.
+- It provides the list of URLs in the cache database used for looking the files which are present in the cache.
 
 ```python
 def get_cached_urls():
@@ -276,15 +280,19 @@ def get_cached_urls():
 
 
 
+
+
 ##### `delete_cache(file)`
 
-- It deletes the cached files along with URLs.
+- It deletes the cached files along with URLs in cached databse.
 
 ```python
 def delete_cache(file):
     '''delete the cache'''
     return 
 ```
+
+
 
 
 
@@ -299,6 +307,8 @@ def get_file(file):
 ```
 
 - **Note** : remote data manager is a complex function and may require some more supporting function for e.g `valid_url`(implemented in sunpy) , `get_file_size`, `get_hash` etc.
+
+
 
 
 
@@ -324,13 +334,14 @@ def calculate_hash_func(file):
 
 
 
-
-
 **Note:** The **efficient implementation** of above-proposed design will be in the following way:
 
-1. Firstly File is downloaded from the remote server by getting URL of the data source.
-2. The file is cached along with a cached JSON where we update the URL field.
-3. **Also exception raises will be used for error handling.** 
+1. Firstly, the file is downloaded from the remote server by getting **URL** of the data source.
+2. Secondly, the file is cached and **database** of cache will be maintained in JSON format.
+3. **Use of exception raises for error handling** will be done in the following manner:
+   1. If the **`download_file`** function is taking a long time and timeout occurs, an exception will be thrown using try and except statement.
+   2. The URLs given in the URL’s argument in `require` function are invalid, a URLError will be raised using urllib2 i.e. **urllib2.URLError**.
+   3. The client system doesn’t have enough space for the downloaded file to cache, an **OSError exception** derived from **EnvironmentError** will be raised.
 
 
 
