@@ -74,7 +74,7 @@ Of course, I did not follow this advice (because of immense interest in computer
 
 Changes to the examples would be mostly confined to modifying them for `astropy.Time` instead of `datetime` and `astropy.TimeDelta` instead of `datetime.timedelta`.
 
-The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange.end` is initialized by `parse_time`.
+The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange.end` are initialized by `parse_time`. This would mean that the switch to `astropy.Time` would affect how `TimeRange` will be used.
 
 ## Tasks
 
@@ -106,7 +106,7 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
 | ts = datetime() | `Time(ts)` |
 | `ts = datetime.date` | `Time(ts.isoformat())` |
 
-  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428. The current implementation of `parse_time` can only convert `datetime64`s which contain only date. This gist gives `parse_time` the power to parse `datetime64`s which contain time too.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428. The current implementation of parse_time cannot convert np.datetime64(‘2012-06-18T02:00:05.453000000-0400’). This gist gives `parse_time` the ability to convert the mentioned `np.datetime64`s.
 
   Before returning `Time`, `.replicate` function could be called on it so that we get a uniform format for all the returned `Time` objects.
   We could also set the scale as we need (utc, tai etc.).
@@ -131,6 +131,16 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
   strftime(Time.now(), <some format string>)
   ```
   - `datetime.utcfromtimestamp(ts)` can be replaced by `Time(ts, format='unix')`.
+
+  - `datetime.fromtimestamp` returns the local datetime. To do this with `astropy.Time`.
+  ```python
+  def localtime_from_timestamp(ts):
+      tz_str = time.strftime('%z', time.localtime())
+      tz = u.hour*int(tz_str[1:3])+u.minute*int(tz_str[3:])
+      return Time(ts, format='unix') + TimeDelta(+tz if tz_str[0]=='+' else -tz)
+
+  localtime_from_timestamp(1371479761)
+  ```
 
   - `datetime.strptime` will be changed to the following function.
   ```python
@@ -201,7 +211,7 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
   - Write necessary documentation. Rewrite examples to reflect the changes. Write a migratory guide for existing users.
   - A week is buffer time in case some problems crop up.
 
-  NOTE: SunPy 3.1 will be releasing in November, so there is enough time to get all PRs merged. Though I will try my best to get them merged before the final evaluation.
+  NOTE: AstroPy 3.1 will be releasing in November, so there is enough time to get all PRs merged. Though I will try my best to get them merged before the final evaluation.
 
 ### Schedule Availability
 
