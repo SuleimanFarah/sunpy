@@ -70,10 +70,19 @@ Answer the following questions in your proposal:
     Are there any papers or blog posts about it?
     What about open issues or non-merged (open or closed) pull requests?
 
+* If it involves any API changes, how does it affect the user?
+
+    Does it improve on the current API? If so, how? 
+
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-    We expect full time \~40h/week during GSoC, but better make this explicit
+    We expect full time \~35h/week during GSoC, but better make this explicit
     If you plan to take any vacations over the summer, let us know about it here.
+
+* Will you require any software packages that are not already a requirement of SunPy? 
+
+    If the answer is no, you can skip this.
+    Please do not add redundant information into the application.
 
 * Please provide a schedule of how this time will be spent on sub-tasks of the project over the period of the summer.
 
