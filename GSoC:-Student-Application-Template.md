@@ -4,6 +4,8 @@ Ideally an application should be concise and with that in mind, we would suggest
 Any code you want to include could be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
 Also, we suggest you write the application in markdown first and then convert it to the Google Docs format after. 
 
+We also expect the application to be hosted on our wiki. 
+
 You should include the following information in your application:
 
 ## Title
