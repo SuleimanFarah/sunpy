@@ -78,6 +78,15 @@ Answer the following questions in your proposal:
     Are there any papers or blog posts about it?
     What about open issues or non-merged (open or closed) pull requests?
 
+* How do you plan to implement the project?
+
+    What parts of SunPy need changing and in what way?
+    What will you add? 
+    What could be stumbling blocks of the project?
+    Will you need to make changes to upstream packages? 
+    Please try not to include documentation strings for functions or pseudo code unless it is detailed.
+    You can put these into gists and link to them in the application.
+
 * If it involves any API changes, how does it affect the user?
 
     Does it improve on the current API? If so, how? 
