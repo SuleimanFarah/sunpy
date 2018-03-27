@@ -321,17 +321,6 @@ Third Week -- Once the function is set up, I plan to write tests for the impleme
 
 I would still contribute to this project after GSOC ends. If I can finish the project 1-2 weeks prior to deadline, I would like to implement two optional extras as part of the project. - **Implementation of NAFE **and** Soft Morphological Filter. **If by any chance I don’t get time for working on the additional features in NRGF, I will do that during this time.
 
-## **Software Packages to be used**
-
-* **Sunpy** - modules to be used mainly include sunpy.coordinates and sunpy.map
-
-* **Astropy** - modules like astropy.units , astropy.wcs
-
-* **Scipy** - Some simple image processing modules like gamma transformation
-
-* **Numpy** - Numpy will be used majorly throughout the whole sunkit project
-
-* **Matplotlib** -  will be used for plotting the maps, the original ones and the processed ones.
 
 ## **How I will successfully complete the project**
 
@@ -341,9 +330,6 @@ I will abide by the time-table as proposed above and will update patch-works reg
 
 I will still be contributing to SunPy after the project ends in August.
 
-## **Benefits to the Community**
-
-By the end of the project, the sunkit image repository will contain the necessary image processing tools, that can be used for processing of solar images collected from different observatories. Since all the current image processing algorithms (MGN. NAFE, Occult-2 and Image Resampling ) are implemented in IDL, conversion to corresponding python code will provide any end-user more convenience. Hence as a separate affiliated package it will give the end-user the freedom to use these modules without having to bother about the underlying algorithm complexities or having to know about IDL. As a future work, we can have examples under the current repository which will depict the usage of the current image processing modules on various types of solar data.
 
 ## **GSoC**
 
