@@ -32,6 +32,19 @@ Please use a succinct title that describes your proposal.
 
 Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
+## GSoC Infomation
+
+* Have you participated previously in GSoC? When? With which project?
+
+* Are you also applying to other projects?
+
+* Are you eligible to receive payments from Google?
+
+* How much time do you plan to invest in the project before, during, and after the Summer of Code?
+
+    We expect full time \~35h/week during GSoC, but better make this explicit
+    If you plan to take any vacations over the summer or if you have exams, let us know about it here.
+
 ## You the programmer
 
 In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or version control.
@@ -69,18 +82,13 @@ Answer the following questions in your proposal:
 
     Does it improve on the current API? If so, how? 
 
-* How much time do you plan to invest in the project before, during, and after the Summer of Code?
-
-    We expect full time \~35h/week during GSoC, but better make this explicit
-    If you plan to take any vacations over the summer, let us know about it here.
-
 * Will you require any software packages that are not already a requirement of SunPy? 
 
     If the answer is no, you can skip this.
     Please do not add redundant information into the application.
 
     If the answer is yes, what ones and why?
-    We need to be given a good reason to add extra requirements to SunPy? 
+    We need to be given a good reason to add extra requirements to SunPy.
 
 * Please provide a schedule of how this time will be spent on sub-tasks of the project over the period of the summer.
 
