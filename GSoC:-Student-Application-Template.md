@@ -53,16 +53,9 @@ We will teach you what you need to know.
 
 Answer the following questions in your proposal:
 
-* What do you want to achieve?
+* What do you want to achieve? What excites you about this project? Why did you choose it?
 
-* What excites you about this project?
-
-    Why did you choose it?
-
-* What qualifications do you have to implement your idea?
-
-    For example, if you are implementing solvers for partial differential equations, what courses have you taken or books have you read on PDEs?
-    Why are you suited to work on this project?
+* Why are you suited to work on this project?
 
 * What have other people done on this idea? Has it been implemented before?
 
