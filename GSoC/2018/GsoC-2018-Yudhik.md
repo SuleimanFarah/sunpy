@@ -119,18 +119,15 @@ The **TimeRange object** could be used to store the **time extent** of the "regi
 
 So user uses HEK module to get a **list of events** of some time range and also those instances can then be **drawn as overlays on a Map instance**, like **`map.show(overlays=hekEvent)`**.
 
-We will start it by using ROI on images and then extend it to use timeseries as a parameter and later to spectra.
+We will start it by using ROI on images and then extend it to use timeseries as a parameter.
 
 ### **Project Goals :**
 
 * Design the object to accommodate basic geometric shapes ( square, rectangle, circle, polygon, ..etc) as ROI.
-
-* Interaction with other data types (overplot on maps, time ranges on timeseries,...)
-
+* Interaction with other data types (overplot on maps, time ranges on timeseries,...).
+* Overlaying Multiple ROI.
 * Extract information from the interaction (overlay a sunspot detection on a corona image and extract the information related to ROI .e.g total area of that region or the date at which it was observed).
-
-* Extending ROI features to timeseries and later to spectra etc.
-
+* Handling invalid user inputs.
   ​
 
 ### **Deliverables:**
@@ -187,7 +184,7 @@ Class roi(object):
 - **Object** – type of object.
 - **timeseries** – will contain sample data and source.
 - **Response** - (ndarray) - array of responses.
-- **Methods** : args that will define ROI attributes and properties.
+- **Methods** - args that will define ROI attributes and properties.
 
 **Returns:**
 
@@ -277,7 +274,7 @@ plt.show()
 
 ![RESULT WITH MARKED ROI](https://drive.google.com/uc?id=1DH5RLLP6ijn6RzvrSSHyqjoPtRYJ_mEC)
 
-It will be more convenient to use ROI module as it will **save a user from writing a lot of code** and time and will **automate certain lines of codes**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically **mark our ROI** with a certain **zoom** which is intended and will have space for **panning** as well. 
+It will be more convenient to use ROI module as it will **save a user from writing a lot of code**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically **mark our ROI** with a certain **zoom** which is intended and will have space for **panning** as well. 
 
 The final reproduced image will look like: 
 
@@ -412,7 +409,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 1. Make the object that could be used to define the region of interest (ROI).
 2. ROI module will use various objects and data types as inputs (HEK/HELIO) to be used as overlays which could be plotted on the same image.
 3. Extract information from the interaction (overlay a sunspot detection on a corona image and extract the total area of that region or the date at which it was observed).
-4. Later the ROI can be extended to objects like timeseries and spectra.
+4. Later the ROI can be extended to objects like timeseries.
 5. Extensive testing of different possibilities for the plot of ROI.
 
 
@@ -450,9 +447,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 <td> <b>Community Bonding</b> (April 24 - May 22, 2018) </td>
 
-<td><ul>
-        <li>Get <b>familiar with ROI</b> and responses from <b>various data-types</b> which can be used to plot ROI.</li><li>Laying the <b>base to start building ROI</b>.</li> <li>Learn more about the <b>various attributes of HEK/HELIO</b>.</li>
-        </ul>  
+<td><ul> <li>Get <b>familiar with ROI</b> and responses from <b>various data-types</b> which can be used to plot ROI.</li><li>Laying the <b>base to start building ROI</b>.</li> <li>Learn more about the <b>various attributes of HEK/HELIO</b>.</li></ul>  
 
 </td>
 
@@ -547,7 +542,7 @@ region.date() # tells me when that was observed
 
 <td>July 29 - August 5, 2018 (Week 11)</td>
 
-<td><ul><li><b>Buffer period</b>.</li></ul></td>
+<td><ul><li>Handling <b>Invalid user inputs.</b>.</li><li><b>Buffer period</b>.</li></ul></td>
 
 </tr>
 
