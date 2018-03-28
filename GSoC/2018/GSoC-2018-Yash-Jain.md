@@ -38,6 +38,7 @@ Here is a list of all my merged and unmerged contributions to SunPy in a chronol
 *  `Merged`Replaces astropy-helper with sphinx-astropy [#2494][4] : This Pr splits outs the sphinx-related functionality from astropy-helpers to a dedicated sphinx-astropy package and reformats `conf.py` to make it more succinct.
 *  `Merged`Adds Test for TRACEMap [#2504][5] : This PR increases the test coverage by adding source test for trace maps. 
 *  `Open`Adds Power Spectrum example for a timeseries [#2496][6] : This adds an example that estimates Power Spectrum Density of a TimeSeries Object.
+* `Open` Adds figure test for Mapcubeanimation [#2546](https://github.com/sunpy/sunpy/pull/2564) :Updated PR [#2356](https://github.com/sunpy/sunpy/pull/2356) by adding figure test for Mapcubeanimator to it.
 
 ## Proposal abstract
 ---
@@ -65,7 +66,7 @@ With these 2 issues stated, I have only scratched the surface, there are possibl
 In a broad sense, `remote_data_manger` will have the following functionalities:-
  1. `remote_data_manger` will download and cache the data to `$HOME/sunpy/data/...` when its first needed.
 
-2. `remote_data_manger` will do some kind of validation that will ensure that the data is transferred correctly (SHA hashes etc).
+2. `remote_data_manger` will do some kind of validation that will ensure that the data is transferred correctly (SHA or MD5 hashes).
 3. `remote_data_manger`  will provide a mechanism by which users can re-download data whenever data changes on the remote server.
 4. `remote_data_manager` will support multiple mirrors.
 
@@ -88,8 +89,8 @@ show_progress : bool, optional
 timeout : float,optional
     The timeout, in seconds.If None, timeout will be read from 
     configuration settings.
-shahash : str
-    SHA hash code with which the downloaded file will
+hash : str
+    Hash code with which the downloaded file will
     be compared with.
 filename : str
     the local name of the downloaded file.
@@ -104,13 +105,13 @@ OSError
 """ 
 ```
 This function will work as a decorator and will have the following functionalities:-
-+ It will accept remote_url as an argument and download the file  from the `remote_url`
++ It will accept `remote_url` as an argument and download the file  from the `remote_url`
 + If there is a problem with the `remote_url` , it will use the `mirror_urls` to download the file.
 + It will also cache the downloaded data and add the function’s name to the cache.
 + It will verify the downloaded data with the provided hash.
 
 + If the file is already present in the cache, it will do nothing.
-+ The file will be saved in the directory  `$HOME/sunpy/data/file_name/…` and with the name of the file determined by the it’s SHA hash.
++ The file will be saved in the directory  `$HOME/sunpy/data/file_name/…` and with the name of the file determined by the it’s  hash.
 + Database of cache will be maintained in a JSON file.
 
 A glimpse of proposed cache database :
@@ -123,7 +124,7 @@ A glimpse of proposed cache database :
   “total_size” : “82”
   "versions" : [
        {
-         “shahash” : “1245645343545343”
+         “hash” : “1245645343545343”
          “size” : “40”
          “time_stamp” : “2017-11-31 23:59:59”
          “urls” : [
@@ -132,7 +133,7 @@ A glimpse of proposed cache database :
                 ] 
         }
         {
-         “shahash” : “1362155212253213”
+         “hash” : “1362155212253213”
          “size” : “42”
          “time_stamp” : “2017-12-31 23:59:59”
          “urls” : [
@@ -145,7 +146,7 @@ A glimpse of proposed cache database :
  This JSON file is made in accordance with Issue [#1939][7]
 
 where,
-
+`file_name` will act as a shared key between all the versions of a file .
 `current_version` is the version of the file that will be returned by `get` function.
 `default Version` is the version of the file that is compatible with our code (the file whose SHA hash is hard coded to the source code ).
 By default, both `current_version` and `default_version` will point to the same file
@@ -159,7 +160,7 @@ Returns
 -------
 local_path : str
     returns the local path to the current_version of the filename,
-    whose name is determined by it's SHA hash.
+    whose name is determined by it's  hash.
 """
 ```
 This function will search for the filename argument in the cache and will return the local path to the current_version of the filename .
