@@ -27,7 +27,7 @@
 ### Personal Background
 ---
 
-Hello, I am Yash Jain, a second-year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I work on Ubuntu 16.04.4 LTS with vim as my primary text editor. I love vim for its power and flexibility. I'm proficient in C, C++ and Python. I like Python because it easily lets me convert my ideas into code.
+Hello, I am Yash Jain, a second year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I code on my Ubuntu Desktop using vim as I think the availability of a large number of plugins for vim makes its customizable to suit my needs. I am comfortable with a lot of programming languages but I specifically like Python because of its intuitive interface and very broad spectrum of usage from simple scripting to web applications and scientific uses.
 ##  Pull Requests
 ---
 Here is a list of all my merged and unmerged contributions to SunPy in a chronological order:
@@ -304,9 +304,9 @@ Coding Begins
 
 * **Week 1 - Week 3 (May 14 -June 3)**
     + Discuss with the mentors and finalize the structure of cache database.
-    + Write wrapper function for `_acquire_download_cache_lock` and `_release_download_cache_lock`.
-    + Implement `require` function (a basic cache and download system) along with all the helper functions needed.
-    + Write tests and documentation for `require` function.
+    + Write wrapper function for _acquire_download_cache_lock and _release_download_cache_lock.
+    + Implement require function (a basic cache and download system) along with all the helper functions needed.
+    + Write tests and documentation for require function.
 
 * **Week 4 (June 4 - June 10)**
     + Implement `get` function.
@@ -334,19 +334,18 @@ Coding Begins
  **Phase 2 Evaluation**
     
     
-+ **Week 10 (July 14 -July 21)** 
-    +  Address the requested changes( if any ) in the previously opened PR.
-    +  Implement utility functions
-    +  Add Tests and Documentation for Utility Functions
-+ **Week 11 and Week 12 (July 22 - August 5)**
++ **Week 10 and Week 11(July 14 -July 28)** 
     +  Write Examples for the gallery on how to use this module. Examples will be written for o following 3 scenarios:
         + Download a file from a remote server.
         + Replace a file if the data changes on the remote server.
         + Replace a file with file from a totally different server.
-
-    + Write Examples for utility functions 
+ 
     + Update the previously opened PR.
-+ **Week 13 (August 6- August 14)**
+    + Implement utility functions
++ **Week 12 and Week 13 (July 29- August 14)**
+    + Add Tests and Documentation for Utility Functions
+    + Write Examples for utility functions.
+
     + See if there exist any bugs that were not addressable before. Any pending work or issues will be addressed to during this time
     +   Solve merge Conflicts
     +   Complete leftover documentation(both user and developer).
@@ -358,6 +357,21 @@ Coding Begins
 **Language** : Python
 
 **Modules** : json, urllib , pytest, contextlib.
+### Benefits to the Community 
+Once implemented, remote_data_manger will provide the following benefits :
++ A version control remote data management system, allowing users to download data from remote servers.
++ It will provide a caching mechanism so that the user doesn't have download the data again and again.
++ It will provide a override mechanism so that user can redownload the same file if the  file has changed on remote server.
++ It will also make sure that,  if remote data is available, one version of SunPy  always give the same output.
+### How I propose to complete the project:
+I am pretty confident of completing this project because I have fairly good experience in python. Few of my  projects that I am personally  fond of are :
++ Automated text summarization using nltk. 
++ Object detection using keras framework.
++ Question Answering Chatbot for  AgNext. ( The code for this project is confidential )
+My fascination towards open source is rather new. I started contributing to SunPy in January. Apart from SunPy , I have also contributed to SymPy . 
+I will strictly follow my proposed timeline .I will be pushing my changes to  remote fork daily and will  also keep updating my mentors over my progress both through chat and blog.I will spend a lot of my time to have a good hands-on experience before the coding period starts. This will help me to avoid any problems later.Even after the GSoC coding period ends, I will  be available if anybody has questions regarding my work.
+
+
 
 ### Other Schedule Information
 I have my end semester exams from 20 April -  28 April. So, I won’t be completely available during the Community Bonding Period. However, I would try my best to complete the tasks mentioned in the Community Bonding Period.
