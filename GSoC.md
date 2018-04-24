@@ -10,7 +10,6 @@ SunPy participated in 2013 for the first time and 2014 and 2015 under the [Pytho
 
 ### SunPy focused
 
-**WIP** **INCOMPLETE** **NOT FOR 2018**
 We recommend for people who want to apply for GSoC to read several wiki pages, [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]].
 
 We have a [[GSoC Application template | GSoC: Student Application Template]], it should form the base for your application.
