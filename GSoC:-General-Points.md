@@ -1,5 +1,3 @@
-**WIP** **INCOMPLETE** **NOT FOR 2018**
-
 # Advice for GSoC Mentors
 
 ## Before GSoC
