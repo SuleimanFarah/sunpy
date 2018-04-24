@@ -1,5 +1,3 @@
-**WIP** **INCOMPLETE** **NOT FOR 2018**
-
 Do you want to participate in SunPy as part of GSoC?
 Then try to follow these steps for applying to GSoC with SunPy.
 
