@@ -45,6 +45,7 @@ twine upload dist/sunpy-X.Y.Z.tar.gz dist/sunpy-X.Y.Z.tar.gz.asc
 ```
 - [ ] Make a PR to the sunpy-feedstock repo with the updated recipe and merge once CI is passed
 - [ ] Update sunpy-wheels repo to push build wheels for the release version
+- [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
 
 On Release:
 - [ ] Make sure all builds of sunpy are complete (conda-forge, wheels, etc)
@@ -82,5 +83,3 @@ The SunPy Developers
 ```
 Post Release:
 - [ ] Update CHANGELOG.rst (Add a new heading for the next release)
-- [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
-- [ ] Update sunpy-wheels repo to test build wheels for the release version
