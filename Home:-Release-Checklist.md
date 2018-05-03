@@ -82,5 +82,5 @@ The SunPy Developers
 ```
 Post Release:
 - [ ] Update CHANGELOG.rst (Add a new heading for the next release)
-- [ ] Update astropy/ci-helpers stable sunpy version number (Two places: `test_env.py` and `travis/setup_dependencies_common.sh`)
+- [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
 - [ ] Update sunpy-wheels repo to test build wheels for the release version
