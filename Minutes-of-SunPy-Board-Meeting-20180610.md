@@ -65,3 +65,4 @@ Current members whose terms have timeout as Russ and Juan Carlos (both not prese
 **Topics Misc.**
 
 Should definitely try to contribute to the AGU session on Python and organize a meeting there.
+Steven to organize a quarterly meeting instead of calling meetings ad-hoc.
