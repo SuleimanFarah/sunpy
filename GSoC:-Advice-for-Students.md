@@ -1,7 +1,7 @@
 Do you want to participate in SunPy as part of GSoC?
 Then try to follow these steps for applying to GSoC with SunPy.
 
-1. **The better we know you, the better we can judge you.**
+1. **The better we know you, the better we can evaluate you.**
 
     There are many ways to get yourself known by the community.
     You can introduce yourself through the [mailing list](https://groups.google.com/group/sunpy), chat with us in the [Matrix channel](https://riot.im/app/#/room/#sunpy:matrix.org) and even contact the mentors to know more about the project that interested you.
