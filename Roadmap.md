@@ -1,3 +1,5 @@
+Path to 2.0
+
 - NDCube
 - Metadata object and standardization layer
 - Spectral tools in collaboration with Astropy
