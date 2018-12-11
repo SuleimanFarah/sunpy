@@ -28,7 +28,7 @@ git push --follow-tags upstream vX.Y.Z
 ```
 
 **Once all the checks are clear: Release**
-- [ ] Release on PyPI:
+- [ ] Release on PyPI (using [twine](https://pypi.org/project/twine/):
 ```
 # Make sdist
 python setup.py sdist
@@ -36,7 +36,7 @@ cd dist
 # Upload Release
 twine upload dist/sunpy-X.Y.Z.tar.gz
 ```
-- [ ] Update sunpy-wheels repo to push build wheels for the release version
+- [ ] Update sunpy-wheels repo to build wheels for the release version
 - [ ] Update the sunpy-feedstock repo, ideally a bot should do it for you
 - [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
 
