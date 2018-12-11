@@ -2,7 +2,7 @@ For Major releases only:
 - [ ] Update RELEASE.md
 
 Pre-release:
-- [ ] Update version number in `setup.py` (the version number branch and don't commit yet)
+- [ ] Update version number in `setup.cfg` (the version number branch and don't commit yet)
 - [ ] Modify the changelog title (remove `(unreleased)`)
 - [ ] Build the source distribution:
 ```
