@@ -1,4 +1,4 @@
-Create and change onto a new release branch from master labeled with release number ```X.Y```.
+- [ ] Create and change onto a new release branch from master labeled with release number ```X.Y```.
 
 For Major releases only:
 - [ ] Update RELEASE.md
