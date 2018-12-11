@@ -8,7 +8,7 @@ Pre-release:
 ```
 python setup.py sdist
 ```
-- [ ] Test that the sdist installs (in an enviroment of your choice)
+- [ ] Test that the sdist installs (in an environment of your choice) by doing ```pip install .``` from the top level directory of the repo.
 - [ ] Check that the `sunpy.__version__` number is correct
 - [ ] Run `sunpy.self_test()` to check that installed tests work
 - [ ] Commit the changes: 
