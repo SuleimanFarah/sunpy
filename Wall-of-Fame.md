@@ -6,7 +6,7 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 ##### 2018
 
-* [Astropy Time Migration](https://github.com/sunpy/sunpy/pull/2691) by (Vishnunarayan K I)[https://github.com/vn-ki/]
+* [Astropy Time Migration](https://github.com/sunpy/sunpy/pull/2691) by [Vishnunarayan K I](https://github.com/vn-ki/)
 
 ##### 2017
 
