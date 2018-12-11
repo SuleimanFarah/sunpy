@@ -28,7 +28,7 @@ git push --follow-tags upstream vX.Y.Z
 ```
 
 **Once all the checks are clear: Release**
-- [ ] Release on PyPI (using [twine](https://pypi.org/project/twine/):
+- [ ] Release on PyPI (using [twine](https://pypi.org/project/twine/)):
 ```
 # Make sdist
 python setup.py sdist
