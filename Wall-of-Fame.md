@@ -6,6 +6,8 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 ##### 2018
 
+* [Astropy Time Migration](https://github.com/sunpy/sunpy/pull/2691) by (Vishnunarayan K I)[https://github.com/vn-ki/]
+
 ##### 2017
 
 * [[IRIS Data class|GSOC-2017-abit2]] by [Ankit Baruah](https://github.com/abit2) - package [ndcube](https://github.com/sunpy/ndcube) and [irispy](https://github.com/sunpy/irispy)
