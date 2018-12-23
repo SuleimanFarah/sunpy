@@ -1,5 +1,6 @@
 **For major releases only:**
 - [ ] Update RELEASE.rst
+- [ ] Remove developer's guide and link to latest version.
 
 **Branching:**
 - [ ] Create and change onto a new release branch from master labeled with the release number ```X.Y```.
