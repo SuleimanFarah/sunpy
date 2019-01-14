@@ -1,14 +1,14 @@
 Welcome to the SunPy wiki.
 
 SunPy is a community-developed, free and open-source solar data analysis environment for Python.
-More information about the project can be found at [sunpy.org](http://sunpy.org) and you can find our documentation at [docs.sunpy.org](http://docs.sunpy.org).
-Please also don't forget to check our [Code of Conduct](http://docs.sunpy.org/en/stable/coc.html).
+More information about the project can be found at [sunpy.org](https://sunpy.org) and you can find our documentation at [docs.sunpy.org](https://docs.sunpy.org).
+Please also don't forget to check our [Code of Conduct](https://docs.sunpy.org/en/stable/coc.html).
 
 ## For users
-More information about [installation](http://docs.sunpy.org/en/stable/guide/installation/index.html) can be found in our documentation.
+More information about [installation](https://docs.sunpy.org/en/stable/guide/installation/index.html) can be found in our documentation.
 
 ## For Developers
-* [Coding Standards](http://docs.sunpy.org/en/latest/dev_guide/index.html)
+* [Coding Standards](https://docs.sunpy.org/en/latest/dev_guide/index.html)
 * [Feature Wishlist](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22)
 * [Pull Request Review Procedure](http://docs.sunpy.org/en/latest/dev_guide/pr_review_procedure.html#review-process) - The procedure for PR review and SunPy GitHub organization.
 * [SunPy Release](https://github.com/sunpy/sunpy/wiki/Home%3A-Release-Checklist) - The procedure for how SunPy releases work.
