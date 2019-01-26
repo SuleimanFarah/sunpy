@@ -10,7 +10,7 @@ Then try to follow these steps for applying to GSoC with SunPy.
 2. **Be a Sunpy user!**
 
     Do you want to be a developer for SunPy?
-    Then you have to understand the solar physics community but don't Panic!
+    Then you have to understand the solar physics community but don't panic!
     Solar physics is a quite broad scientific area, but to understand most of our needs you don't need to know much about the physics but the data we want to analyze.
     For example, some of our data are images of the whole Sun at a certain wavelength, however other instruments may observe the whole Sun as a single star producing time series.
     To get an understanding of SunPy, browse through the [documentation and the user guide](http://docs.sunpy.org/en/stable/guide/index.html).
