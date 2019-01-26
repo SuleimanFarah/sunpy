@@ -28,7 +28,7 @@ But it does not have to be taken as the the definite version.
 
 [Python Software Foundation's Advice](https://wiki.python.org/moin/SummerOfCode/FrequentlyAskedQuestions)
 
-[GSoC FAQ](https://developers.google.com/open-source/gsoc/faq).
+[GSoC FAQ](https://developers.google.com/open-source/gsoc/faq)
 
 [Google's Advice](https://google.github.io/gsocguides/student/)
 
