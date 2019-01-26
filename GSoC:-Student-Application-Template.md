@@ -40,12 +40,12 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-    We expect full time \~35h/week during GSoC, but better make this explicit
+    We expect full time \~35h/week during GSoC.
     If you plan to take any vacations over the summer or if you have exams or any other commitments, let us know about it here.
 
 ## You the programmer
 
-In your project proposal let us know about your programming experience.  Don't worry if you don't know SunPy or version control.
+In your project proposal let us know about your programming experience. Don't worry if you don't know SunPy or git.
 Many of our students start fresh and we will teach you what you need to know.
 
 * What platform do you use to code?
@@ -54,7 +54,7 @@ Many of our students start fresh and we will teach you what you need to know.
 
 * What is your experience with Python?
 
-* What is your experience with Open Source?
+* What is your experience with open source software?
 
 * Have you ever used git or another version control system?
 
@@ -100,7 +100,7 @@ Answer the following questions in your proposal:
 * Please provide a schedule of how this time will be spent on sub-tasks of the project over the period of the summer.
 
     While this is only preliminary, we will use it to help monitor your progress throughout the program.
-    Also understand that during the project you will issue weekly progress reports against that plan on your blog.
+    Also understand that during the project you will issue weekly progress reports against the plan on your blog.
     Try to avoid using a table, it can cause issues when/if you move between Google Docs and the wiki (if you use markdown).
 
 * In planning your project, it is good to note where along the way you could formulate a pull request.
