@@ -1,38 +1,36 @@
-Be sure to read through all the advice on the wiki and the links we suggested first!
+**Be sure to read through all the advice on the wiki and the links we suggested first!**
+
 We expect to receive, as we do most years, lots of high quality applications.
 So please do give your application some thought!
 
 ## Pull Request requirement
 
 In addition to the written proposal, we require every GSoC applicant to have opened a pull request to SunPy.
-Note it does not need to be merged to be considered.
+**It does not need to be merged for you to be considered for GSoC.**
 
 Please note that we take your pull requests to SunPy into strong consideration when reviewing your proposal.
-This is your best opportunity to prove to us that you are capable of doing what is in your proposal.
+This is your best opportunity to prove to us that you are capable of doing what you have written in your proposal.
 
 To do this:
 
-* Set up your platform to develop with SunPy (install git, clone https://github.com/sunpy/sunpy.git, execute tests).
+* Set up your platform to develop with SunPy.
   Our [Developer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
-
-* Create an account at GitHub and fork SunPy (https://github.com/sunpy/sunpy).
 
 * Find something in SunPy that doesn't work or needs improvement.
   If you need inspiration, feel free to fix any issue from our [Package Novice fix issues list](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package+Novice%22).
   Aside from the issues, search for `FIXME` or `TODO` in the code.
   You can grep from the command line with `git grep -i "TODO"`.
-  You could also search for NotImplementedErrors, maybe).
-  You could also play with SunPy and find something that needs fixing or that could be implemented, and do it.
+  You could also search for NotImplementedErrors.
+  You could also try to use SunPy and find something that needs fixing or that could be implemented.
 
 * Your pull request must be code-related, not documentation.
   While we do not want to discourage documentation pull requests as they are very useful.
   This shows us that you know Python and that you are able to interact with the community.
   If your project will use a language other than Python (e.g., C), you should submit patches that use that language as well, so that we know that you know you are proficient in that language.
-  **However, for the pull request requirement to be fulfilled, you must have created at least one pull request in SunPy.**
 
-* Note that because we may be slow to review the pull requests, you do not
-  have to have your request merged by the application deadline.
-  But you do need to at least have one submitted by then.
+* For the pull request requirement to be fulfilled, you must have opened at least one pull request in SunPy. 
+  We may be slow to review the pull requests therefore you do not have to have your request merged by the application deadline.
+  But you do need to at least have one at least opened one pull request by then.
   We will give priority to reviewing requests that are needed to satisfy GSoC requirements.
   It is up to you to respond to our feedback in a timely enough manner so that your patch gets merged before the acceptance deadline.
 
@@ -62,7 +60,9 @@ We suggest that you think about these when writing your application.
 3. **Resourcefulness**
 
     Can the student carry out tasks on their own over a three month period i.e., has the student demonstrated that they can work independently and solve problems on their own without asking for help every step of the way?
-    Lower points for gross over-communication ("what should I name this variable?"), better if they quietly and competently get the job done but interact at appropriate times, e.g., sensible progress reports.
+    We want to minimize over-communication (e.g., "what should I name this variable?").
+    Ideally we want students who can quietly and competently get the job done but interact at appropriate times, e.g., sensible progress reports or if you hit a problem you can not solve.
+    This is what the mentors are here for, to support you when you come across problems you are unable to solve. 
 
 4. **Experience**
 
@@ -81,14 +81,13 @@ We suggest that you think about these when writing your application.
     Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.
     Try to select your most proud work, we do not want a link to everything you have ever done.
 
-
 ## Interview
 
 One of the parts of GSoC that isn't very common to other packages is that we try to "interview" the students.
 This is generally very informal, much closer to a chat than anything else.
 We use this to try and get everyone (all the mentors) who will be involved with the project to have spoken beforehand.
 **Please note, if you don't get an interview, it does not mean you have been rejected.**
-**Sometimes it is impossible to interview everyone due to time constraints.**
+**Sometimes it is impossible to interview anyone/everyone due to time constraints.**
 
 ## How the ranking process works
 
