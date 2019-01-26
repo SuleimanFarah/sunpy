@@ -3,12 +3,12 @@
 > Google Summer of Code is a global program that offers students stipends to write code for open source projects.
 > We have worked with the open source community to identify and fund exciting projects for the upcoming summer.
 
-We participate with [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
+We participate in [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
 SunPy participated in 2013 for the first time and 2014 and 2015 under the [Python Software Foundation](https://wiki.python.org/moin/SummerOfCode/).
 
 ## Guidelines and helpful advice
 
-We recommend for people who want to apply for GSoC to read the GSoc wiki pages below and the linked advice. It will help you considerably to understand what is required to be success for GSoC.
+We recommend for people who want to apply for GSoC to read the GSoc wiki pages below and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.
 
 ### SunPy focused
 
@@ -35,6 +35,8 @@ But it does not have to be taken as the the definite version.
 [Mixxx's Advice](https://www.mixxx.org/wiki/doku.php/gsocadvice#application_evaluation_criteria)
 
 ## Editions
+
+[[GSoC 2019]]
 
 [[GSoC 2018]]
 
