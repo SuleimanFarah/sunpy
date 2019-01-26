@@ -4,7 +4,7 @@
 
 If you want to mentor a project, add it the [OpenAstronomy](https://github.com/OpenAstronomy/openastronomy.github.io/) website.
 
-Read (or at least skim!) the [Google guide for mentors](https://google.github.io/gsocguides/mentor/).
+Read (at least skim) the [Google guide for mentors](https://google.github.io/gsocguides/mentor/).
 It’s actually very useful.
 
 Mentors should communicate with applicants and help them create relevant applications.
@@ -50,15 +50,15 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
 * Chat
 
-    You can come hang at https://riot.im/app/#/room/#sunpy:matrix.org, and feel free to ask for help.
+    You can come hang at our IM room [here](https://riot.im/app/#/room/#sunpy:matrix.org), and feel free to ask for help.
     If you are using riot you can start a group for the project with all the mentors.
     Remember to make tickets or send emails for any big bugs or design decisions, as chat logs are transient.
 
 * Videoconferencing
 
-    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on day light saving), we have a developer meeting at https://jitsi.riot.im/sunpy
+    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on day light saving), we have a developer meeting [here](https://jitsi.riot.im/sunpy). 
     An announcement email is sent to the mailing list.
-    We expect all students to show up for these meetings (baring any issues) to discuss what they have done since the last meeting.
+    We expect all students to show up for these meetings (barring any issues) to discuss what they have done since the last meeting.
     You might have smaller meetings with your mentors often throughout the project life cycle.
 
 * Writing code
@@ -69,7 +69,7 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
     You should follow a similar model - treat github.com/sunpy/sunpy as upstream and work on a branch your own fork, i.e. github.com/yourusername/sunpy, merging (or PRing for existing projects) periodically.
     Remember, pushed commits (to your own repository) prove you’re alive and working on the project! ;)
-    You might want to setup Travis CI on your fork to test your code.
+    You might want to setup the CI on your fork to test your code.
 
 * Project Management
 
