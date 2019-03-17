@@ -11,6 +11,8 @@ Don't doubt to find a project you would like to do and apply for it (some time s
 
 ## Editions
 
+* [[SOCIS 2019]]
+
 * [[SOCIS 2017]]
 
 * [[SOCIS 2016]]
