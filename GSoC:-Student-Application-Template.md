@@ -1,4 +1,4 @@
-Ideally an application should be concise and with that in mind, we would suggest not exceeding 5-10 pages in a Google Docs format. 
+Ideally an application should be concise and with that in mind, we would suggest not exceeding 5 pages in a Google Docs format. 
 Any code you want to include could be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
 Also, we suggest you write the application in markdown first and then convert it to the Google Docs format after. 
 
