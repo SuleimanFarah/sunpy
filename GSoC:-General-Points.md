@@ -69,7 +69,6 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
     You should follow a similar model - treat github.com/sunpy/sunpy as upstream and work on a branch your own fork, i.e. github.com/yourusername/sunpy, merging (or PRing for existing projects) periodically.
     Remember, pushed commits (to your own repository) prove you’re alive and working on the project! ;)
-    You might want to setup the CI on your fork to test your code.
 
 * Project Management
 
