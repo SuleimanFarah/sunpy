@@ -117,10 +117,14 @@ Answer the following questions in your proposal:
 
 You do not need to format your application as a question/answer format for the above questions, but we expect to see all of the above questions answered in your application somewhere.
 
-Below is a blank template of a timeline you can try to use to fill in for your GSoC application.
-You should make changes when you write your application, you do not have to use the same number of weeks as below, you should tailor as it suits you. 
+Below is a blank template (markdown) of a timeline you can try to use to fill in for your GSoC application.
+You are free to use others or a different style but we want this level of breakdown, either week by week or two weeks.
+You should tailor the timeline as as it suits you and the project you are working on. 
 
+___
 #### Community Bonding Period (DATE)
+___
+
 - Point X
 
 ___
