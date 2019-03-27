@@ -105,6 +105,7 @@ There will be two functions to re-download the data.
 
 ### Cache storage
 
+The cache metadata will be stored using sqlite. 
 This is inspired by the [implementation](https://github.com/reclosedev/requests-cache/tree/master/requests_cache/backends)
 of `requests-cache`. `requests-cache` support a number of backends for cache storage (SQLite, 
 Redis, MongoDB, dynamodb etc.). Even though remote data manager does not need multiple backends,
