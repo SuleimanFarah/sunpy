@@ -116,3 +116,50 @@ Answer the following questions in your proposal:
     Put all this in a "References" section at the bottom of your application.
 
 You do not need to format your application as a question/answer format for the above questions, but we expect to see all of the above questions answered in your application somewhere.
+
+Below is a blank template of a timeline you can try to use to fill in for your GSoC application.
+Several parts of it are blank or with placeholder dates since these change year by year. 
+You should make changes when you write your application, you do not have to use the same number of weeks as below, you should tailor as it suits you. 
+
+#### Community Bonding Period (DATE)
+- Point X
+
+___
+#### Coding Period Begins
+___
+
+#### Week 1 (DATE)
+- Point X
+
+#### Week 2 - Week 3 (DATE)
+- Point X
+
+#### Week 4 - Week 5 (DATE)
+- Point X
+
+___
+#### Phase 1 Evaluation
+___
+
+#### Week 6 - Week 7 (DATE)
+- Point X
+
+#### Week 8 (DATE)
+- Point X
+
+#### Week 9 (DATE)
+- Point X
+
+___
+#### Phase 2 Evaluation
+___
+
+#### Week 10 - Week 11 (DATE)
+- Point X
+
+#### Week 12 - Week 13 (DATE)
+- Point X
+
+___
+#### Final Evaluation
+___
