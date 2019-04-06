@@ -11,8 +11,8 @@ the [stipend is also different](https://socis.esa.int/frequently-asked-questions
 A part of these differences, the requirements from SunPy are the same than for [[GSoC]]
 (pay particular attention to the [[GSoC: Advice for Students]] and [[GSoC: Student Application Guidelines]]).
 
-Add your application below using the [[GSoC Application template | GSoC: Student
-Application Template]] as a basis for your application. However, note that for
+Add your application below using the [[GSoC Application template | GSoC: Student Application Template]] 
+as a basis for your application. However, note that for
 your application to be considered you need to apply via the [SOCIS
 platform](https://socis.esa.int/students/).
 
