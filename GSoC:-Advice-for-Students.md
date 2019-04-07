@@ -89,7 +89,7 @@ We suggest that you think about these when writing your application.
 
 0. **Has the student interacted with the SunPy community before submitting their application?**
 
-    We do not accept any applications by people who have not submitted a pull request or got in contact.
+    We do not accept any applications by people who have not submitted a pull request and not interacted with the community.
 
 1. **Does the proposal accurately address the project?**
 
