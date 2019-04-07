@@ -1,5 +1,5 @@
 Do you want to participate in SunPy as part of GSoC?
-**Then make sure you read through all the advice on the wiki and the links we suggested.**
+**Then make sure you read through all the advice on the wiki and the links we suggest.**
 
 We expect to receive, as we do every year, lots of high quality applications and have more applicants than slots available.
 So please do give your application some thought!
