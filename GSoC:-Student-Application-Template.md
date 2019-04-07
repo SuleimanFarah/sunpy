@@ -146,7 +146,7 @@ ___
 - Point X
 
 ___
-#### Phase 1 Evaluation
+#### Phase 1 Evaluation (DATE)
 ___
 
 #### Week 6 - Week 7 (DATE)
@@ -159,7 +159,7 @@ ___
 - Point X
 
 ___
-#### Phase 2 Evaluation
+#### Phase 2 Evaluation (DATE)
 ___
 
 #### Week 10 - Week 11 (DATE)
@@ -169,5 +169,5 @@ ___
 - Point X
 
 ___
-#### Final Evaluation
+#### Final Evaluation (DATE)
 ___
