@@ -1,8 +1,9 @@
-Ideally an application should be concise and with that in mind, we would suggest not exceeding 5 pages in a Google Docs format. 
-Any code you want to include could be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
-Also, we suggest you write the application in markdown first and then convert it to the Google Docs format after. 
+When you submit an application to GSoC, it will be in a Google Docs format and an application should be concise and suggest not exceeding 5(ish) pages. 
 
-We also expect the application to be hosted on our wiki. 
+We also expect the application to be hosted on our wiki.
+Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
+
+Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
 
 You should include the following information in your application:
 
@@ -40,19 +41,22 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-    We expect full time \~35h/week during GSoC.
+    We expect full time \~35h per week during GSoC.
     If you plan to take any vacations over the summer or if you have exams or any other commitments, let us know about it here.
 
 ## You the programmer
 
-In your project proposal let us know about your programming experience. Don't worry if you don't know SunPy or git.
-Many of our students start fresh and we will teach you what you need to know.
+In your project proposal let us know about your programming experience.
+Don't worry if you don't know much about SunPy or git/GitHub.
+Many of our students start fresh on these topics and we will teach you what you need to know.
 
 * What platform do you use to code?
 
 * What is your experience with programming?
 
 * What is your experience with Python?
+  If you have Python projects or good Python code example, you should link it here. 
+  It will be good for us to see the level of Python experience you have. 
 
 * What is your experience with open source software?
 
@@ -112,14 +116,15 @@ Answer the following questions in your proposal:
 * Please do not verbatim copy text from the ideas page, or from other people's discussions about your project, but rewrite it in your own words.
 
     If you include any significant text or code from another source in your application, it must be accompanied with a proper citation.
+    **However, we strongly suggest you not just copy and pasting and then add a reference, this is not ok.**
     All papers or references that you use or plan to use must also be cited.
     Put all this in a "References" section at the bottom of your application.
 
 You do not need to format your application as a question/answer format for the above questions, but we expect to see all of the above questions answered in your application somewhere.
 
-Below is a blank template (markdown) of a timeline you can try to use to fill in for your GSoC application.
-You are free to use others or a different style but we want this level of breakdown, either week by week or two weeks.
-You should tailor the timeline as as it suits you and the project you are working on. 
+Below is a blank template of a timeline you can try to use to fill in for your GSoC application.
+You are free to use another or a different style but we want this level of breakdown, either week by week or two weeks at most.
+You should tailor the timeline as as it suits you and the project you are working on.
 
 ___
 #### Community Bonding Period (DATE)
