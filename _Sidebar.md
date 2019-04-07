@@ -6,7 +6,7 @@
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
   * [GSoC](./GSoC)
     * [Advice for Students](./GSoC%3A-Advice-for-Students)
-    * [General Points](./GSoC%3A-General-Points)
+    * [Mentors and Accepted Students](./GSoC%3A-Mentors-and-Accepted-Students)
     * [Student Application Guidelines](./GSoC%3A-Student-Application-Guidelines)
     * [Student Application Template](./GSoC%3A-Student-Application-Template)
     * [WIP Ideas](./GSoC%3A-WIP-Ideas)
