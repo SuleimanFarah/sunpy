@@ -56,6 +56,7 @@ Many of our students start fresh on these topics and we will teach you what you 
 * What is your experience with programming?
 
 * What is your experience with Python?
+
   If you have Python projects or good Python code example, you should link it here. 
   It will be good for us to see the level of Python experience you have. 
 
