@@ -2,6 +2,7 @@ When you submit an application to GSoC, it will be in a Google Docs format and a
 
 We also expect the application to be hosted on our wiki.
 Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
+You can do this after you have finalised the version on the GSoC website.
 
 Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
 
