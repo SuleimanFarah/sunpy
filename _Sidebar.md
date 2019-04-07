@@ -3,7 +3,6 @@
   * [Home](./Home)
     * [Organization Information](./Home%3A-Organization-Information)
     * [Release Checklist](./Home%3A-Release-Checklist)
-    * [Roadmap](./Home%3A-Roadmap)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
   * [GSoC](./GSoC)
     * [Advice for Students](./GSoC%3A-Advice-for-Students)

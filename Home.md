@@ -12,6 +12,7 @@ More information about [installation](https://docs.sunpy.org/en/stable/guide/ins
 * [Feature Wishlist](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22)
 * [Pull Request Review Procedure](http://docs.sunpy.org/en/latest/dev_guide/pr_review_procedure.html#review-process) - The procedure for PR review and SunPy GitHub organization.
 * [SunPy Release](https://github.com/sunpy/sunpy/wiki/Home%3A-Release-Checklist) - The procedure for how SunPy releases work.
+* [SunPy Roadmap](https://github.com/sunpy/roadmap) - Where the roadmap is planned out and agreed upon.
 
 ## The SunPy Project Organization
 [[All the info | Home: Organization Information]] regarding to SunPy formation as an organization, including minutes of meetings
