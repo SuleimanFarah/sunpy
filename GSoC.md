@@ -6,7 +6,7 @@
 We participate in [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
 SunPy participated in 2013 for the first time and 2014 and 2015 under the [Python Software Foundation](https://wiki.python.org/moin/SummerOfCode/).
 
-# We recommend for people who want to apply for GSoC to read the GSoc wiki pages below and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.
+## We recommend for people who want to apply for GSoC to read the GSoC wiki pages and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.
 
 ## Guidelines and helpful advice
 
