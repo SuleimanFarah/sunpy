@@ -118,7 +118,7 @@ Answer the following questions in your proposal:
 * Please do not verbatim copy text from the ideas page, or from other people's discussions about your project, but rewrite it in your own words.
 
     If you include any significant text or code from another source in your application, it must be accompanied with a proper citation.
-    **However, we strongly suggest you not just copy and pasting and then add a reference, this is not ok.**
+    **However, we strongly suggest you not just copy and paste large pieces of text and then add a reference, this is not ok.**
     All papers or references that you use or plan to use must also be cited.
     Put all this in a "References" section at the bottom of your application.
 
