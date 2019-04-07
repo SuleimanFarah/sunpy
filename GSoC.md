@@ -17,7 +17,7 @@ We have several SunPy related wiki pages for GSOoC with [[GSoC: Advice for Stude
 We have a [[GSoC Application template | GSoC: Student Application Template]], it should form the basis for your application.
 But it does not have to be taken as the the definite version.
 
-[[GSoC: General Points]] is for mentors and accepted students.
+[[GSoC: Mentors and Accepted Students]] is for mentors and accepted students.
 
 >These pages are a combination of several other pages from around the world.
 >We want to thank all those FOSS packages that we took heavy inspiration from, SymPy being the main one.
