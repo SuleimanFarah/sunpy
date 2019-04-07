@@ -1,10 +1,10 @@
-When you submit an application to GSoC, it will be in a Google Docs format and an application should be concise and we suggest not exceeding 5(ish) pages. 
+When you submit an application to GSoC, it will be in a Google Docs format and an application should be concise and we suggest not exceeding 5(ish) pages.
 
 We also expect the application to be hosted on our wiki.
 Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
 You can do this after you have finalised the version on the GSoC website.
 
-Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings. 
+Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings.
 
 You should include the following information in your application:
 
@@ -57,8 +57,8 @@ Many of our students start fresh on these topics and we will teach you what you 
 
 * What is your experience with Python?
 
-  If you have Python projects or good Python code example, you should link it here. 
-  It will be good for us to see the level of Python experience you have. 
+  If you have Python projects or good Python code example, you should link it here.
+  It will be good for us to see the level of Python experience you have.
 
 * What is your experience with open source software?
 
@@ -85,17 +85,17 @@ Answer the following questions in your proposal:
 * How do you plan to implement the project?
 
     What parts of SunPy need changing and in what way?
-    What will you add? 
+    What will you add?
     What could be stumbling blocks of the project?
-    Will you need to make changes to upstream packages? 
+    Will you need to make changes to upstream packages?
     Please try not to include documentation strings for functions or pseudo code unless it is detailed.
     You can put these into gists and link to them in the application.
 
 * If it involves any API changes, how does it affect the user?
 
-    Does it improve on the current API? If so, how? 
+    Does it improve on the current API? If so, how?
 
-* Will you require any software packages that are not already a requirement of SunPy? 
+* Will you require any software packages that are not already a requirement of SunPy?
 
     If the answer is no, you can skip this.
     Please do not add redundant information into the application.

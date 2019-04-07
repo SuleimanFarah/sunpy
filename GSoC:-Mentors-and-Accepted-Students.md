@@ -56,7 +56,7 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
 * Videoconferencing
 
-    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on day light saving), we have a developer meeting [here](https://jitsi.riot.im/sunpy). 
+    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on day light saving), we have a developer meeting [here](https://jitsi.riot.im/sunpy).
     An announcement email is sent to the mailing list.
     We expect all students to show up for these meetings (barring any issues) to discuss what they have done since the last meeting.
     You might have smaller meetings with your mentors often throughout the project life cycle.
