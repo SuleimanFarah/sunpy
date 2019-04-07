@@ -90,7 +90,7 @@ At the end of the Community Bonding Period, I would aim to -
 
 ### Week 9 (July 13 - July 21)
 * Buffer week for leftover tasks
-* Discuss with the mentors about the `visualization mixins`, and start with a prototype.
+* Discuss with the mentors about the `visualization mixins`, and start with a prototype
 * Get the PR merged into master
 
 ## 
@@ -102,16 +102,16 @@ At the end of the Community Bonding Period, I would aim to -
 * Documentation and tests for the same
 
 ### Week 12(August 7 - August 14)
-* Continue and finish up with the implementation of the `visualization mixins`. 
+* Continue and finish up with the implementation of the `visualization mixins`
 * Finish up the plotting and send up a polished PR for review
 * Leftover tests and documentation
 
 ### Week 13(August 15 - August 25)
 * Write up documentation for leftover tasks
-* Write documentation about the usage of the project.
+* Write documentation about the usage of the project
 * Discuss with mentors about shortcomings
 * Complete leftover tasks, if any
-* Small nit-pickings about the project.
+* Small nit-pickings about the project
 
 ## 
 ### Final Evaluation
