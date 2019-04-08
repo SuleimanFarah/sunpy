@@ -54,9 +54,9 @@ python (I write neat and clear code, it’s important for an open source project
 communicate with mentors and community, find information related to the project, realise the structure of the project. I'll be honest: I won't have much time before the GSoC because of sessie.
 
 ### During GSoC: 
-2.1. Explore new areas related to the project, create a model.
-2.2. Code code sleep repeat
-2.3. Test and debug.
+Explore new areas related to the project, create a model;
+Code (code sleep repeat);
+Test and debug;
 
 ### After GSoC:
 I plan to continue contributing to the space open source projects and develop skills in space area.
