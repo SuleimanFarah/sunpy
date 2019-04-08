@@ -8,8 +8,8 @@ Organisation: sunpy
 * Age - 19
 * City - Moscow, Russia (GMT+3)
 * Contact info:
-email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)\n
-email 2 - gleb.perepuhov@mail.ru (my personal email)\n
+email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)
+email 2 - gleb.perepuhov@mail.ru (my personal email)
 phone - +79262631023 (for urgent matters)
 skype - glavbux48
 discord - kaif2100 #1968 (more convenient than Skype)
@@ -31,14 +31,14 @@ Unfortunately, that’s all except my personal projects on python(image processi
 
 
 ## 1.5 Interest in Open Astronomy:
-# * Motivation
+# Motivation
 Since childhood, I was interested in science and wanted to move it forward. In school I realized that I was interested in space. Such a vast, beautiful and brutal. Since then, I have dreamed a lot about space, read a lot of science fiction books (my favorite is “Inhabited island” by Strugatsky brothers).
 
 I understand that life, unfortunately, is not a book - it is much more severe. But I decided that I wanted to contribute to space exploration, because this is one of the most important steps in the development of mankind and one day I want to wake up and realize that man now lives not only on Earth and conquers the cosmic expanses, which beckon with their unknown. For this reason, I entered the faculty of aerophysics and space research, hoping to link my future life with space. Now I'm only a sophomore, but I know quite a lot in mathematics, physics and programming and I really want to apply this knowledge to the benefit of society. So I decided to try to participate in GSoC and specifically watched projects related to space. The presented projects (at the ideas list), in my opinion, will be useful for people working in the space sphere, and for me it will be a good start in this area.
 
 
-# * Why do I want to work with sunpy?
-	I’m very interested in astronomy and programming, so I want to work with you because I will learn a lot of new things, finally learn how to apply my skills and I will be useful to the community through the implementation of the project.
+# Why do I want to work with sunpy?
+I’m very interested in astronomy and programming, so I want to work with you because I will learn a lot of new things, finally learn how to apply my skills and I will be useful to the community through the implementation of the project.
 
 
 ### 2. Application for “Develop sunkit image”
