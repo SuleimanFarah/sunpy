@@ -8,14 +8,14 @@ Organisation: sunpy
 * Age - 19
 * City - Moscow, Russia (GMT+3)
 * Contact info:
-email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)
-email 2 - gleb.perepuhov@mail.ru (my personal email)
-phone - +79262631023 (for urgent matters)
-skype - glavbux48
-discord - kaif2100 #1968 (more convenient than Skype)
-zulip  - Denis Perepukhov
-github - [kaif2100](https://github.com/kaif2100)
-riot - kaif2100
+email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project);
+email 2 - gleb.perepuhov@mail.ru (my personal email);
+phone - +79262631023 (for urgent matters);
+skype - glavbux48;
+discord - kaif2100 #1968 (more convenient than Skype);
+zulip  - Denis Perepukhov;
+github - [kaif2100](https://github.com/kaif2100);
+riot - kaif2100;
 * Sample code - [server & client](https://github.com/kaif2100/health/tree/server) (see 1.4)
 
 
