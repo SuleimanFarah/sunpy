@@ -89,8 +89,8 @@ During the summer I have a lot free time and good internet connection, so I’ll
 # 4. Conclusion
 First of all - thank you for spending time to reading my proposal (I tried to do it well, but it’s awful anyway). I’m very motivated to get involved into one of these projects. I know I have very little chances, but I will study these projects and the entire space sphere to contribute and try to be selected in GSoC again.
 	
-	Sincerely,
-	Denis Perepukhov
+Sincerely,
+Denis Perepukhov
 
 
 
