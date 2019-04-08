@@ -8,8 +8,8 @@ Organisation: sunpy
 * Age - 19
 * City - Moscow, Russia (GMT+3)
 * Contact info:
-email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)
-email 2 - gleb.perepuhov@mail.ru (my personal email)
+email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)\n
+email 2 - gleb.perepuhov@mail.ru (my personal email)\n
 phone - +79262631023 (for urgent matters)
 skype - glavbux48
 discord - kaif2100 #1968 (more convenient than Skype)
@@ -26,8 +26,7 @@ Now I’m a sophomore at [MIPT](https://mipt.ru/english/) at at the faculty of a
 I have skills in math, physics, analytical mechanics, in programming: C, C++ (a little boost and parallel programming), python (I passed [course](https://www.coursera.org/learn/diving-in-python): [diploma](https://www.coursera.org/account/accomplishments/records/5SSSEMA5YFT6)) and SQL a little.
 
 ## 1.4. Projects:
-		I have participated [Hack.Moscow v2.0](https://medium.com/@russianhackers/hack-moscow-v2-0-fca9674c8d98) with my friends, we
-tried to [make a site](https://devpost.com/software/modern-healthcare?ref_content=existing_user_added_to_software_team&ref_feature=portfolio&ref_medium=email&utm_campaign=software&utm_content=added_to_software_team&utm_medium=email&utm_source=transactional), I was in charge of [server part](https://github.com/kaif2100/health/tree/server), client and database (we failed to connect the server to the site).
+I have participated [Hack.Moscow v2.0](https://medium.com/@russianhackers/hack-moscow-v2-0-fca9674c8d98) with my friends, we tried to [make a site](https://devpost.com/software/modern-healthcare?ref_content=existing_user_added_to_software_team&ref_feature=portfolio&ref_medium=email&utm_campaign=software&utm_content=added_to_software_team&utm_medium=email&utm_source=transactional), I was in charge of [server part](https://github.com/kaif2100/health/tree/server), client and database (we failed to connect the server to the site).
 Unfortunately, that’s all except my personal projects on python(image processing, local servers) and on C++.
 
 
