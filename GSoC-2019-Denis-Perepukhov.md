@@ -7,7 +7,7 @@ Organisation: sunpy
 * Name - Denis Perepukhov
 * Age - 19
 * City - Moscow, Russia (GMT+3)
-# * Contact info:
+* Contact info:
 email 1 - iamrealkaif2100@gmail.com (email for GSoC and other Google activity; will be used to work on the project)
 email 2 - gleb.perepuhov@mail.ru (my personal email)
 phone - +79262631023 (for urgent matters)
