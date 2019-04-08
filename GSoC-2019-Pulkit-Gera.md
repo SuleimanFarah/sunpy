@@ -36,7 +36,8 @@ The idea here is that we already have parfive, a asyncio downloader integrated i
 Once the data is downloaded, we can now cache the data on the disk and store the metadata on a sql database, which can be easily accessed through sql-alchemy.   
 We also are able to mirror download the data through parfive. Not only that we could implement downloading by parts in parfive so that we can speed up the downloading process.  
 
-___________________________________________________________________________
+***
+
 **Diagram**  
 
 ![UML Diagram](https://lh3.googleusercontent.com/MQppHDRokVs1Z7cJ82NfiNjKuh809zGovKvx_rg_vqh5CgFUs9z5dV1z1dKZ8iodOdDZweWv1494QrNUzn51TpxOEmqQlR9Ff_24z8vtAysNrbRG6_3FyPzZGEqAf1jpvOZ-5zc)
@@ -48,6 +49,8 @@ ___________________________________________________________________________
 
 
 
+
+***
 
 **Cache**  
 We would be using sqlite for storing metadata about the files upon downloading. The metadata will be interacted using sqlalchemy which is designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.  The reason we use sqlite is because its very fast to make subset queries such as on date very fast and is very reliable. It would be used along with sql alchemy which makes querying incredibly easy and safe.
@@ -85,7 +88,9 @@ Here's the basic procedure:
 * Use the file and cache it
 * Release the lock
 The locks will be implemented using the `threading` module.
-___________________________________________________________________________
+
+***
+
 
 **File Storage**      
 The files will be stored in 
@@ -96,6 +101,9 @@ The name will be hashed as a combination of function name and last modified whic
 `import hashlib`
 `cached_file_name = hashlib.md5(file_name + modified_at+version_name).hexdigest()`
   
+
+***
+
 **Remote Data Manager**    
 The remote_data_manager will be implemented as a factory with multiple functionalities. It includes checking of hashsum,caching of files, fetching of files from cache,etc. The following are the functions:  
 
@@ -122,7 +130,10 @@ Get file with some hash value.
 `def get_latest_file()`  
 File with latest data.
 
-Other functions include some helpers such as `is_valid_url`,`lock_cache`,`unlock_cache`,etc.    
+Other functions include some helpers such as `is_valid_url`,`lock_cache`,`unlock_cache`,etc.   
+
+***
+ 
 **Mirroring**  
 Currently there is no retry with different urls feature in parfive which makes it a poor choice for mirror downloading. However, this problem can be solved with by a simple hack through which we could make parfive work with multiple urls therefore making it a good candidate for downloading multiple mirrors.  
 
@@ -131,13 +142,16 @@ As specified in PR #2993 with this simple hack and extrapolating further, the re
 `dl = parfive.Downloader(overwrite=overwrite)`
 
 
+***
+
 **Error Handling**  
 The implementation of remote_data_manager would require error handling of errors and a pipeline since we are dealing with a lot of files. The function replace_file would be implemented as a context manager.  
 
 The pipe line would involve:-
 * Obtain the remote url of the data source
 * Check the file cache and if not present download the file from remote server
-* Update the File cache  
+* Update the File cache   
+    
 In cases where the remote server is  down, it would first check the cache again. If there exists an instance where old data is present it would proceed with that and inform the user. If no old version is present it would then it would throw an exception informing the user about server being down.  
 
 Exhaustive error handling will be done at each instance to ensure it doesn't break down.  
@@ -152,17 +166,18 @@ I have been contributing to SunPy since January and have been in constant touch 
 I would push my work to the remote work as and when I complete, so that mentors could review my work and give their feedback.I would be in constant touch with the mentors  
 ### Deliverables
 The following are the deliverables for the project:
-● Implement a cache system
-● A ​ Remote Data Manager​ with the following basic features:
-○ Validate the downloaded file by checking its checksum
-○ Caching a given remote data file
-○ Mechanism to allow the user to override the cache
-○ Allow download from multiple mirrors
-● Allow multiple downloads to happen in parallel
-● API to access​ the Remote Data Manager
-● Write tests and documentation
-● Add ​ examples on using the module to the ​ example gallery (​ 1 or 2 jupyter
-notebooks​ )
+* Implement a cache system
+* A ​ Remote Data Manager​ with the following basic features:
+> *   Validate the downloaded file by checking its checksum
+> *   Caching a given remote data file
+> *   Mechanism to allow the user to override the cache
+> *   Allow download from multiple mirrors
+* Allow multiple downloads to happen in parallel
+* API to access​ the Remote Data Manager
+* Write tests and documentation
+* Add ​ examples on using the module to the ​ example gallery (​ 1 or 2 jupyter
+* notebooks​ )
+
  ### Benefits to The Community.
 The project offers several benefits to the community.
 ● It would provide a ​ version control system of remote data so that one version of
