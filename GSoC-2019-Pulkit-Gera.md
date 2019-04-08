@@ -22,7 +22,7 @@ https://github.com/sunpy/sunpy/pull/2891 - Replaced os with pathlib in test file
 I will keep contributing and working on more pull requests.  
 I use Elementary Os for the past 2 years now.I am also familiar with Git and SunPy workflow.  
 ### Proposal abstract.
-The proposal is on the project “Remote Data in SunPy”. The idea is the some functionality in  in SunPy or in affiliated packages require  access to data files on remote (HTTP) servers. Some of them include AIA response functions in, where we need to include data provided by instrument teams relating to the calibrations or performance of the instruments, which are highly likely to change with time.I propose that we use parfive to download the data.The project requires building of a remote_data_manager which basically can do the following-  
+The proposal is on the project **“Remote Data in SunPy”.** The idea is the some functionality in  in SunPy or in affiliated packages require  access to data files on remote (HTTP) servers. Some of them include AIA response functions in, where we need to include data provided by instrument teams relating to the calibrations or performance of the instruments, which are highly likely to change with time.I propose that we use parfive to download the data.The project requires building of a remote_data_manager which basically can do the following-  
 * Download and cache the files from remote HTTP/FTP servers.It should also be able to 
 * Store the hash and check with the server if the current data is upto date. If its behind, then it needs to be updates 
 * It should be able to be called by the user, if they want to update/ re-download the data
