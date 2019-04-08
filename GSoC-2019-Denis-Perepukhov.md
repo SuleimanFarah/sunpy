@@ -43,7 +43,7 @@ I’m very interested in astronomy and programming, so I want to work with you b
 
 # 2. Application for “Develop sunkit image”
 ## 2.1 Summary
-This project is attractive to me because I’m very interested in astronomy and I really want to learn new things about sun and how it works and want to get skills in image processing (it will be useful for me in the future). And this project will be useful for community and I want to make useful projects.
+This project is attractive to me because I’m very interested in astronomy and I really want to learn new things about sun and how it works and want to get skills in image processing (it will be useful for me in the future). And this project will be useful for community and I want to make useful project.
 I think I can manage with this project because I have skills in math (what is required according to the ideas list),
 python (I write neat and clear code, it’s important for an open source project), a little in image processing (a short course at the university) and I can study fast, so I will learn new topics in 1 - 2 weeks.
 
