@@ -33,6 +33,9 @@ This project will use different aspects of SunPy:
 
 while using them we may find new needs that the above is not covering and
 hopefully we can improve them on the way.
+For example, the idea about designing a SunPy search events mechanism based on the images using HEK or HELIO,
+could provide information from the available catalogues about the images we are interested (how many spots 
+had that active region? when did it flare? how long did it live? ... )
 
 ## Image processing
 
