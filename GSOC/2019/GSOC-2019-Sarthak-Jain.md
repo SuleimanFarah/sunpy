@@ -8,10 +8,12 @@
 * Sub-organisation : SunPy
 * Mentors : [Stuart Mumford](https://github.com/cadair), [Jack Ireland](https://github.com/wafels), [David Pérez-Suárez](https://github.com/dpshelio)
 
-###   Personal Info  
+###   Personal Info
 * Country : India
 * Github Profile : [jain8844](http://github.com/jains8844)
 * Email : jains8844@gmail.com
+* Time Zone : Indian Standard Time(UTC+5:30)
+* Link to the Sample Pull Request : [#3026](https://github.com/sunpy/sunpy/pull/3026) [open]
 
 ###   Education  
 * University : [Indian Institute of Technology Indore](http://iiti.ac.in)
@@ -20,6 +22,7 @@
 
 ####   Open Source Background  
 * Programming Languages : Python, C++, Java(Basic Knowledge) and a knowledge of Django Framework
+* Started Programming with Competitive Programming
 * Studied Python during Intermediate Classes
 * Contributions to Other Repos
   * Imdb_Portal
