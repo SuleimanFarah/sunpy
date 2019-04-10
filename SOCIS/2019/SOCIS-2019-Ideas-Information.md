@@ -10,7 +10,7 @@ python, image processing and machine learning.
 
 ## The Data
 
-[Sunspotter](http://sunspotter.org/) collected lot of data on two campaings:
+[Sunspotter](http://sunspotter.org/) collected lot of data on two campaigns:
  - [All-clear](https://doi.org/10.5281/zenodo.1478965)
  - [14 years](https://doi.org/10.5281/zenodo.1478971)
  
