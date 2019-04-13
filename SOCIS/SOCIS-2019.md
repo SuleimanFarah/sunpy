@@ -8,12 +8,16 @@ there is [no restriction of where the student is studying](https://socis.esa.int
 As you may come here from GSoC, make sure you check the [SOCIS
 timeline](https://socis.esa.int/timeline/) as the coding period are not the same, and note that
 the [stipend is also different](https://socis.esa.int/frequently-asked-questions/).
-A part of these differences, the requirements from SunPy are the same than for [[GSoC]]
+A part of these differences, the requirements from SunPy **are the same*** than for [[GSoC]]
 (pay particular attention to [[GSoC: Advice for Students]]).
 
-Add your application below using the [[GSoC Application template | GSoC: Student Application Template]]
-as a basis for your application. However, note that for
-your application to be considered you need to apply via the [SOCIS
-platform](https://socis.esa.int/students/).
+SOCIS application is very short (300 words), however, we require a more detailed
+application posted below. Use the [[GSoC Application template | GSoC: Student
+Application Template]] as a basis for your application. Note that for your
+application to be considered you need to post your application below and to
+apply via the [SOCIS platform](https://socis.esa.int/students/). Don't forget
+that you have also to do a contribution to SunPy before the deadline.
+
+## Student applications
 
 * [[Student A | SOCIS 2019 Student A]] - Title of submission.
