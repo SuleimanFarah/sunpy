@@ -17,7 +17,7 @@ python, image processing and machine learning.
 Each dataset contains information about the date and location of each active
 region used in the project and how it was classified by the volunteers. The
 volunteers were simply asked which image from a set of two seemed more complex,
-and by a [Elo rating system](https://en.wikipedia.org/wiki/Elo_rating_system)
+and by an [Elo rating system](https://en.wikipedia.org/wiki/Elo_rating_system)
 provided a score.
  
 The All-clear dataset was also used on a [comparison on flare forecasting](https://doi.org/10.3847/0004-637X/829/2/89).
@@ -35,7 +35,8 @@ while using them we may find new needs that the above is not covering and
 hopefully we can improve them on the way.
 For example, the idea about designing a SunPy search events mechanism based on the images using HEK or HELIO,
 could provide information from the available catalogues about the images we are interested (how many spots 
-had that active region? when did it flare? how long did it live? ... )
+had that active region? when did it flare? how long did it live? ... ). This could be added as to the region 
+of interest class.
 
 ## Image processing
 
@@ -57,6 +58,12 @@ which methods to try and when.
 Essentially, it's believed that an active region has more chances to flare if
 it looks more complex. Does this data show that?
 
+## Possible ideas
+
+- Extract the dates, coordinates and file names from the database and obtain the segments directly from the fits files.
+- Graph classification scheme vs flares (data available on the database)
+- Unsupervised clustering on the images and or AR properties as detected by SMART
+- Neural Network model to produce a classification based on the database ranking.
 
 
 # Expand the scope of solarbextrapolation
