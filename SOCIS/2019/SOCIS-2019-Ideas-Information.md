@@ -41,6 +41,7 @@ of interest class.
 ## Image processing
 
 Both dataset have been obtained using [SMART](https://doi.org/10.1016/j.asr.2010.06.024)
+(check the [other SOCIS project about it](https://www.dias.ie/cp-geophysics/astro/astro-research/astro-solar-physics-and-space-weather/esa-summer-of-code-in-space-2019/))
 as a segmentation algorithm. Then each image annotated with information of the
 flaring activity a day or two days later.
 
