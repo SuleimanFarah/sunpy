@@ -9,6 +9,8 @@ SunPy has participated in the last seven editions (2011 - 2017).
 During these editions SunPy has obtained a big push in the development and gained new members that have stuck to the core of SunPy.
 Don't doubt to find a project you would like to do and apply for it (some time soon!).
 
+**The requirements for students who want to apply are the same as [[GSoC]](pay particular attention to [[GSoC: Advice for Students]]).**
+
 ## Editions
 
 * [[SOCIS 2019]]
