@@ -21,3 +21,4 @@ that you have also to do a contribution to SunPy before the deadline.
 ## Student applications
 
 * [[Student A | SOCIS 2019 Student A]] - Title of submission.
+* [[Swapnil Sharma | SOCIS 2019 Swapnil Sharma]] - Space Weather Forecasting using Machine Learning
