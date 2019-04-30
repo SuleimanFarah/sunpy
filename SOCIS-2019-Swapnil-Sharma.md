@@ -18,7 +18,7 @@
 
 **Blog:** https://medium.com/@swapsha96
 
-**RSS Feed:** RSS
+**RSS Feed:** [RSS](https://medium.com/feed/@swapsha96)
 
 # EDUCATION
 
@@ -72,13 +72,13 @@ I have finished getting familiar with Sunspotter dataset (point 1 of possible id
 
 ![Flux vs Score Scatter Plot](https://i.imgur.com/q0C21E2.png)
 
-Flux vs Score Scatter Plot
+`Flux vs Score Scatter Plot`
 
 I applied Feature Reduction algorithm called Principle Component Analysis (PCA) algorithm for 2D visualization of active regions with respect to their ranking scores using AR properties by SMART algorithm.
 
 ![2D visualization of principal components of AR properties](https://i.imgur.com/LmJkPQ7.png)
 
-2D visualization of principal components of AR properties (colour varies with respect to score)
+`2D visualization of principal components of AR properties (colour varies with respect to score)`
 
 I worked on prediction of the score of complexity using seven AR properties of images using regression models. I applied the min-max scaling transformation on input data. Following are the models that I used along with RMSE error and R2 score:
 
