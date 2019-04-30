@@ -12,7 +12,7 @@
 
 **Email:** swap.sha96@gmail.com
 
-**Github ID:** swapsha96
+**Github ID:** [swapsha96](https://github.com/swapsha96)
 
 **Riot/Slack Handle:** swapsha96
 
@@ -42,7 +42,7 @@ In 2016, I worked on STScI project, 3D-HST data extractor and API interface with
 
 # PULL REQUESTS
 
-Following is the link to my contributions to SunPy on Github: [link](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3Aswapsha96+is%3Aclosed)__
+Following is the link to my contributions to SunPy on Github: [link](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3Aswapsha96+is%3Aclosed)
 
 # The Proposal
 
