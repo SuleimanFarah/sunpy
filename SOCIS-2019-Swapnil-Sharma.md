@@ -2,7 +2,7 @@
 
 **Space Weather Forecasting using Machine Learning**
 
-# Introduction
+# INTRODUCTION
 
 ## ABOUT ME
 
@@ -30,15 +30,35 @@
 
 # PERSONAL BACKGROUND
 
-I am an undergraduate student from India who loves to contribute to Open Source projects. My newly developed interests are Machine/Deep Learning, Full Stack Development and Astronomy. I am proficient in C, C++, Python, and Javascript. I have experience with machine learning frameworks like scikit-learn, Tensorflow and Keras.
+I am an undergraduate student from India who loves to contribute to Open Source projects. My newly developed interests are **Machine/Deep Learning, Full Stack Development and Astronomy**. I am proficient in C, C++, Python, and Javascript. I have experience with machine learning frameworks like scikit-learn, Tensorflow and Keras.
 
-My interest grew in astronomy when I joined Astronomy Club in the college. I was the club coordinator of the club in the second year. As a coordinator, I organised events like night sky stargazing, meteor shower star party, quizzes and various events to increase the participation of students from different fields of science and engineering. I also like astrophotography.
+My interest grew in astronomy when I joined Astronomy Club in the college. I was the club coordinator in the second year. As a coordinator, I organised events like night sky stargazing, meteor shower star party, quizzes and various events to increase the participation of students from different fields of science and engineering. I also like astrophotography.
 
 # PREVIOUS PROJECTS
 
-I participated in Google Summer of Code 2018 in which I worked with astronomy researchers to apply Fourier techniques to time-domain X-ray data of black holes and neutron stars. My project focused on coding new algorithms for Stingray, an open-source Python package using state-of-the-art “spectral-timing” techniques. I implemented the full chain of phase-resolved spectroscopy of quasi-periodic oscillations. The project was at the intersection of signal processing, Fourier analysis, and open-source scientific software development.
+I participated in **Google Summer of Code 2018** in which I worked with astronomy researchers to apply Fourier techniques to time-domain X-ray data of black holes and neutron stars. My project focused on coding new algorithms for Stingray, an open-source Python package using state-of-the-art “spectral-timing” techniques. I implemented the full chain of phase-resolved spectroscopy of quasi-periodic oscillations. The project was at the intersection of signal processing, Fourier analysis, and open-source scientific software development.
 
-In 2016, I worked on STScI project, 3D-HST data extractor and API interface with Dr Ivelina Momcheva (Mentor) and Mr Ayush Yadav. We developed new API endpoint for object search and web interface to display information from Hubble Project data set and images from FITS files.
+In 2016, I worked on an **STScI project**, 3D-HST data extractor and API interface with Dr Ivelina Momcheva (Mentor) and Mr Ayush Yadav. We developed new API endpoint for object search and web interface to display information from Hubble Project data set and images from FITS files.
+
+## MACHINE/DEEP LEARNING PROJECTS
+
+I took '*Deep Learning and its Applications*' and '*Data Mining*' course in college that helped me to build interest and skills in Machine Learning and Data Science. I have worked on various projects and some of them are as the following:
+
+1. **Ego/Non-ego Video Classification using Neural Networks**: I, in a team of two, designed a neural network to classify egocentric and non-egocentric videos using 2D convolution. We used FlowNet 2.0 for optical flow estimation and ResNet for image classification. Our network achieved an accuracy of 74%.
+
+2. **MiraPy: Python Package for Machine Learning in Astronomy**: MiraPy is a Python package for Deep Learning in Astronomy. It is built using Keras for developing ML models to run on CPU and GPU seamlessly. The aim is to make applying machine learning techniques on astronomical data easy for astronomers, researchers and students. Following are some of the experiments that I am working on right now:
+
+	- Classification of X-Ray Binaries using neural network
+	- Astronomical Image Reconstruction using Autoencoder
+	- Classification of the first catalog of variable stars by ATLAS
+	- Classification of different states of GRS1905+105 X-Ray Binaries using Recurrent Neural Network (RNN)
+	- Feature extraction from Images using Autoencoders and its applications in Astronomy
+
+It is under development but I look forward to its release before graduation.
+
+[Github repository](https://github.com/mirapy-org/MiraPy)
+
+[Jupyter notebook tutorials](https://github.com/mirapy-org/notebooks)
 
 # PULL REQUESTS
 
@@ -120,7 +140,3 @@ I would like to work on image segmentation of active regions using Deep Learning
 ![Comparison of original image, ground truth and output image](https://i.imgur.com/vuDAf1X.png)
 
 My neural network requires improvement which I would like to work on with the help of the project mentors.
-
-# OTHER PROPOSAL SUBMISSIONS
-
-I am not applying for any other project.
