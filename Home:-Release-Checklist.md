@@ -33,7 +33,6 @@ git push --follow-tags upstream vX.Y.Z
 ```
 # Make sdist
 python setup.py sdist
-cd dist
 # Upload Release
 twine upload dist/sunpy-X.Y.Z.tar.gz
 ```
