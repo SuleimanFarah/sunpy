@@ -72,13 +72,13 @@ Space weather studies Sun-Earth interaction events. One of these, is the effect 
 
 ## DESCRIPTION
 
-The primary datasets come from Sunspotter project: All-Clear and 14 years of SoHO/MDI which contains the information of active regions on Sun and their classification. It will be used for various machine learning problems like classification, unsupervised clustering of images, and ranking of images based on their complexity. Each dataset contains information about the date and location of each active region used in the project and how it was classified by the volunteers. The volunteers were simply asked which image from a set of two seemed more complex, and by an Elo rating system provided a score. Visualization of data plays an important role in which we will use SunPy and sklearn-image. We need to make some sanity check first to see that score and solar flares are related.
+The primary datasets come from **Sunspotter project**: All-Clear and 14 years of SoHO/MDI which contains the information of active regions on Sun and their classification. It can be used for various machine learning problems like classification, unsupervised clustering of images, and ranking of images based on their complexity. Each dataset contains information about the date and location of each active region used in the project and how it was classified by the volunteers. The volunteers were simply asked which image from a set of two seemed more complex, and by an Elo rating system provided a score. Visualization of data plays an important role in which we will use SunPy and sklearn-image. Firstly, We need to make some check to see that score and solar flares are related.
 
 The project also involves acquiring MDI sun images from Solar and Heliospheric Observatory using VSO. Once we have the model with MDI then we can start to tune it to HMI (SDO). It will also include querying and downloading from solar feature archives like HEK or HELIO. Using scikit-image, we will obtain the segments from the FITS files using the position coordinated provided in the data available.
 
-The prediction of the score of complexity can be done using either the AR properties of the images or using the images themselves. This problem can be seen as a regression problem for which ML models such as Linear regression, Gradient Boosting regressor and Random Forest regressor can be used. We’ll find scikit-learn handy for this purpose. The components of the complete process will be put into SunPy for easy use.
+The **prediction of the score of complexity** can be done using either the AR properties of the images or using the images themselves. This problem can be seen as a regression problem for which ML models such as **Linear regression, Gradient Boosting regressor and Random Forest regressor** can be used. We’ll find scikit-learn handy for this purpose. The components of the complete process will be put into SunPy for easy use.
 
-The dataset also contains data of pairwise comparison of active region images which can be used to re-run the rating using different parameters or a different system altogether. Bradley-Terry model is a good example of a probability model which predicts the outcome of paired comparisons. For this purpose, choix can be used which a Python library that provides various inference algorithms.
+The dataset also contains data of **pairwise comparison of active region images** which can be used to re-run the rating using different parameters or a different system altogether. **Bradley-Terry model** is a good example of a probability model which predicts the outcome of paired comparisons. For this purpose, `choix` can be used which a Python library that provides various inference algorithms.
 
 All the classes and methods implemented will be properly documented and unit tests will be written for each piece of code. I will also work on Jupyter notebooks demonstrating the complete workflow so that anyone can use in their practice. I will write blog posts regularly to record my progress and discuss ML models on Medium.
 
@@ -94,7 +94,7 @@ I have finished getting familiar with Sunspotter dataset (point 1 of possible id
 
 `Flux vs Score Scatter Plot`
 
-I applied Feature Reduction algorithm called Principle Component Analysis (PCA) algorithm for 2D visualization of active regions with respect to their ranking scores using AR properties by SMART algorithm.
+I applied Feature Reduction algorithm called **Principle Component Analysis (PCA)** algorithm for 2D visualization of active regions with respect to their ranking scores using AR properties by SMART algorithm.
 
 ![2D visualization of principal components of AR properties](https://i.imgur.com/LmJkPQ7.png)
 
@@ -105,7 +105,7 @@ I worked on prediction of the score of complexity using seven AR properties of i
 | Regression Model                  | RMSE Error | R^2 score |
 |-----------------------------------|------------|----------:|
 | Linear Regression                 | 76.6269    |    0.5438 |
-| **Random Forest Regression**      | **41.9074**|    **0.8668** |
+| **Random Forest Regression**      | **41.9074**|	**0.8668** |
 | Multi-layer Perceptron Regression | 55.0330    |    0.7647 |
 
 The parameters of the models are in my jupyter notebook.
@@ -135,7 +135,7 @@ I will merge all the leftover implementations (if any). I will ensure that all t
 
 ### FUTURE WORK
 
-I would like to work on image segmentation of active regions using Deep Learning. There are powerful AI segmentation techniques which have various real-life applications like self-driving cars, medical MRI imaging and many more! It would be interesting to find if we can leverage ML models for the purpose of finding active regions which in return will help us to study solar flares and coronal mass ejection. I performed an experiment for the same and below is the result.
+I would like to work on **Image Segmentation of active regions using Deep Learning**. There are powerful AI segmentation techniques which have various real-life applications like self-driving cars, medical MRI imaging and many more! It would be interesting to find if we can leverage ML models for the purpose of finding active regions which in return will help us to study solar flares and coronal mass ejection. I performed an experiment for the same and below is the result.
 
 ![Comparison of original image, ground truth and output image](https://i.imgur.com/vuDAf1X.png)
 
