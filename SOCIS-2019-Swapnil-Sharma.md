@@ -32,7 +32,7 @@
 
 I am an undergraduate student from India who loves to contribute to Open Source projects. My newly developed interests are **Machine/Deep Learning, Full Stack Development and Astronomy**. I am proficient in C, C++, Python, and Javascript. I have experience with machine learning frameworks like scikit-learn, Tensorflow and Keras.
 
-My interest grew in astronomy when I joined Astronomy Club in the college. I was the club coordinator in the second year. As a coordinator, I organised events like night sky stargazing, meteor shower star party, quizzes and various events to increase the participation of students from different fields of science and engineering. I also like astrophotography.
+My interest grew in astronomy when I joined Astronomy Club in the college. I was the club coordinator in the second year. As a coordinator, I organised events like night sky stargazing, meteor shower star party, quizzes and other events to increase the participation of students from different fields of science and engineering. I also like astrophotography and trekking.
 
 # PREVIOUS PROJECTS
 
@@ -54,7 +54,7 @@ I took '*Deep Learning and its Applications*' and '*Data Mining*' course in coll
 	- Classification of different states of GRS1905+105 X-Ray Binaries using Recurrent Neural Network (RNN)
 	- Feature extraction from Images using Autoencoders and its applications in Astronomy
 
-It is under development but I look forward to its release before graduation.
+It is under development but I look forward to its official release before graduation.
 
 [Github repository](https://github.com/mirapy-org/MiraPy)
 
@@ -88,7 +88,7 @@ All the classes and methods implemented will be properly documented and unit tes
 
 My current progress can be tracked on Jupyter Notebook on [Github](https://github.com/swapsha96/socis/blob/master/Playing%20with%20Sunspotter%20Dataset.ipynb).
 
-I have finished getting familiar with Sunspotter dataset (point 1 of possible ideas in SunPy SOCIS wiki page). It involves extracting the dates, coordinates and file names from the database. It contains three CSV files (lookup_properties, lookup_timesfits and rankings) which contain details of images and the Elo rating score. Classifications.csv contains pairwise comparisons of images.
+**I have finished getting familiar with Sunspotter datas** (point 1 of possible ideas in SunPy SOCIS wiki page). It involves extracting the dates, coordinates and file names from the database. It contains three CSV files (`lookup_properties, lookup_timesfits and rankings) which contain details of images and the Elo rating score. `classifications.csv` contains pairwise comparisons of images.
 
 ![Flux vs Score Scatter Plot](https://i.imgur.com/q0C21E2.png)
 
