@@ -113,7 +113,7 @@ This project is principally about answering the validity of this scientific hypo
 I would like to approach this not only as a time-series-anomaly-detection approach (using Recurrent Neural Networks) but as a **forecasting**  proposition as well. 
 Hence I would like to try out to map the data to the following different models.
 
- 1. Recurrent Time series **Anomaly Detection** - since we are dealing with time series data and want to detect anomalies (flares) [RNNs based LSTMs](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf) written in TensorFlow is an ideal solution for anomaly detection in the industry.
+ 1. Recurrent Time series **Anomaly Detection** (Ref 1) - since we are dealing with time series data and want to detect anomalies (flares) [RNNs based LSTMs](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf) written in TensorFlow is an ideal solution for anomaly detection in the industry.
 
  2. Statistical **Forecasting** - Since we use **Elo rating** during the data preparation it would also be nice to experiment  using conventional statistical approaches to time series data as well. [FaceBook Prophet](https://facebook.github.io/prophet/) is very good at forecasting and much faster than machine learning models because they are based on statistical models rather than neural networks.
  3. I'm also comfortable with Conventional Machine Learning tasks like classification, clustering, regression and feature engineering principles, will try out with **Convolutional Neural Networks (CNNs)** to classify the images as well.
@@ -169,7 +169,7 @@ Implement Machine Learning models - based on the above 3 approaches mentioned. (
 Articles on the above three approaches to the problem. Complete Test Cases for the 3 approaches, and start on SunPy Example Gallery Notebook.
 
 ### Week 7
-Work on unconventional approaches to this problem like **disentangled variational auto-encoders**, (figuring out ways solar flares can occur - here we are not merely checking for **correlation**, we are checking for **causality** to answer the validity of the scientific hypothesis this project is addressing.  - **Pull Request**
+Work on unconventional approaches to this problem like **disentangled variational auto-encoders** (Ref 2), (figuring out ways solar flares can occur - here we are not merely checking for **correlation**, we are checking for **causality** to answer the validity of the scientific hypothesis this project is addressing.  - **Pull Request**
 
 ### Week 8-9
 Compare and validate the Accuracy, Recall (not for auto-encoders) , Precision (not for auto-encoders)  and F1 score of all the tested models with the SDO images. - **Pull Request**
@@ -188,8 +188,8 @@ I briefly touched upon auto-encoders and the Causal relationship of solar flares
 
 ## References
 
- - [Long Short Term Memory Networks for Anomaly Detection in Time Series](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf)
- - [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
+1. [Long Short Term Memory Networks for Anomaly Detection in Time Series](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf)
+2. [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
  
 
