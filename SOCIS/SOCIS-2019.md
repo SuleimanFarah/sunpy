@@ -23,3 +23,4 @@ that you have also to do a contribution to SunPy before the deadline.
 * [[Student A | SOCIS 2019 Student A]] - Title of submission.
 * [[Swapnil Sharma | SOCIS 2019 Swapnil Sharma]] - Space Weather Forecasting using Machine Learning
 * [[Ayoob Nazeem | SOCIS 2019 Ayoob Nazeem]] - Space Weather Forecasting using Machine Learning
+* [[Manuel Rey Area | SOCIS 2019 Manuel Rey Area]] - Space Weather Forecasting using Machine Learning
