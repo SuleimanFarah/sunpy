@@ -23,7 +23,7 @@ My biggest experience with open source libraries is OpenCV. I consider myself to
 My contribution to SunPy can be found [here](https://github.com/sunpy/sunpy/issues/3007)
 
 ## Me and the project
-The reason why I chose this project it is because it involves vision, ML and space. In the case of the latter, I did my [bachelor thesis](https://github.com/manurare/Superresolution-VideoSequences) on super-resolution techniques for the identification of anonymous subjects in video sequences using _Drizzle_ which is an algorithm used in the Hubble Space Telescope to correct the drift caused in consecutive images by inner artifacts from the telescope. I enjoyed a lot this time working with it and it kept me on the look for new algorithms apply to astronomic purposes. 
+The reason why I chose this project it is because it involves vision, ML and space. In the case of the latter, I did my [bachelor thesis](https://github.com/manurare/Superresolution-VideoSequences) on super-resolution techniques for the identification of anonymous subjects in video sequences using _Drizzle_ which is an algorithm used in the Hubble Space Telescope to correct the drift caused in consecutive images by inner artifacts from the telescope. I enjoyed a lot this time working with it and it kept me on the lookout for new algorithms apply to astronomic purposes. 
 
 I believe that my bachelor thesis along with the fact that I am studying state of the art ML makes a perfect match for the project. Also, I would like to propose it as my master's thesis meaning that I will be completely dedicated to it with no distractions. 
 
