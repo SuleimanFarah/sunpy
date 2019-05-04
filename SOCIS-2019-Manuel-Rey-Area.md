@@ -1,4 +1,4 @@
-# Project: Space Weather Forecasting using Machine Learning
+# Space Weather Forecasting using Machine Learning
 ## Personal Info
 - Name: Manuel Rey Area
 - University: Autonomous University of Barcelona
