@@ -28,7 +28,7 @@ I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learn
 
 * Worked in a team of 2 to build a system that uses transformer networks to predict protein secondary structure given protein amino acid sequence. (Ongoing project)
 
-* Top 0.5 percentile in [Flip kart GRID AI Challenge] 2019 
+* Top 0.5 percentile in [Flipkart GRID AI Challenge] 2019 
 
 [Flipkart GRID AI Challenge]: https://dare2compete.com/o/Flipkart-GRiD-Teach-The-Machines-2019-74928?utm_source=MailingList20&utm_medium=Mailer&utm_campaign=FlipkartGrid
 
@@ -64,9 +64,11 @@ Hence, we propose to train a CNN on two objective functions.
 1. Forecast loss (generally some form of cross entropy) 
 2. Complexity prediction loss (mse on the predicted values or on a transformed version of them)
 
-To train the model on complexity information we use a Siamese neural network that has a two CNNs with shared weights that act as feature extractors and a contrastive function. Given a pair of images the model is trained to predict the probability of one being more complex than the other when given to a human. Since the complexity is encoded in the form of elo ratings we use --- as the contrastive function to predict the probability.
+To train the model on complexity information we use a Siamese neural network that has a two CNNs with shared weights that act as feature extractors and a contrastive function. Given a pair of images the model is trained to predict the probability of one being more complex than the other when given to a human. Since the complexity is encoded in the form of elo ratings we use<img src="https://researchweb.iiit.ac.in/~shanmukh.alle/images/3.png" alt="drawing" width="100"/> as the contrastive function to predict the probability.
 
 The same function can be used to generate the ground truth probability values from elo ratings of the selected pair of images. 
+
+The contrastive function used is the equation used to get the win probability in a match between two players given their elo rating[[7]].
 
 An explanation of how Siamese neural networks can be found here [[5]]
 
@@ -136,3 +138,6 @@ ___
 
 [6]: https://towardsdatascience.com/multitask-learning-teach-your-ai-more-to-make-it-better-dde116c2cd40
 6. A nice blog on Multitask learning [[6]]
+
+[7]: https://www.geeksforgeeks.org/elo-rating-algorithm/
+7. Elo rating to win probability[[7]]
