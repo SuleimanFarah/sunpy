@@ -24,3 +24,4 @@ that you have also to do a contribution to SunPy before the deadline.
 * [[Swapnil Sharma | SOCIS 2019 Swapnil Sharma]] - Space Weather Forecasting using Machine Learning
 * [[Ayoob Nazeem | SOCIS 2019 Ayoob Nazeem]] - Space Weather Forecasting using Machine Learning
 * [[Manuel Rey Area | SOCIS 2019 Manuel Rey Area]] - Space Weather Forecasting using Machine Learning
+* [[Shanmukh Alle | SOCIS 2019 Shanmukh Alle]] - Space Weather Forecasting using Machine Learning
