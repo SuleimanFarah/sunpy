@@ -9,10 +9,11 @@ SunPy has participated in the last seven editions (2011 - 2017).
 During these editions SunPy has obtained a big push in the development and gained new members that have stuck to the core of SunPy.
 Don't doubt to find a project you would like to do and apply for it (some time soon!).
 
-## The requirements for students who want to apply are the same as [[GSoC]] (pay particular attention to [[GSoC: Advice for Students]]).
+## The requirements for students who want to apply are the same as [[GSoC]]
 
-This means, contact with the community and mentors, and having a (ideally a recent) pull request made to the SunPy organisation. 
-The application on the SOCIC website is quite small and as such we require a formal application to be added to our wiki to be **considered** for a SOCIS position. 
+Please read the [[GSOC]] pages and pay particular attention to [[GSoC: Advice for Students]].
+In summary, this means communicating with the SunPy community and project mentors, with a (ideally recent) pull request made to the SunPy organisation. 
+The application on the SOCIC website is quite small and as such we require a formal application to be added to our wiki to be even **considered** for a SOCIS position.
 
 ## Editions
 
