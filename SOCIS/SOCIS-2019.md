@@ -12,11 +12,8 @@ A part of these differences, the requirements from SunPy **are the same*** than 
 (pay particular attention to [[GSoC: Advice for Students]]).
 
 SOCIS application is very short (300 words), however, we require a more detailed
-application posted below. Use the [[GSoC Application template | GSoC: Student
-Application Template]] as a basis for your application. Note that for your
-application to be considered you need to post your application below and to
-apply via the [SOCIS platform](https://socis.esa.int/students/). Don't forget
-that you have also to do a contribution to SunPy before the deadline.
+application posted below. Use the [[GSoC: Student Application Template | GSoC Application template]] as a basis for your application. Note that for your application to be considered you need to post your application below and to apply via the [SOCIS platform](https://socis.esa.int/students/).
+Don't forget that you have also to do a contribution to SunPy before the deadline.
 
 ## Student applications
 
