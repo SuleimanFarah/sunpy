@@ -18,13 +18,13 @@ I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learn
 * Worked as Teaching Assistant for the course Statistical Methods in AI for fall 2018.
 * Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be accessed here -> [manga_colourisation]  
 
-[manga_colourisation]: https://github.com/shanmukh98/Manga_Colorization
+[manga_colourisation]: https://github.com/sudheerachary/Manga_Colorization
 * Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found here -> [show-and-tell] 
 
-[show-and-tell]: https://github.com/shanmukh98/Show-and-Tell
+[show-and-tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
 * Worked in a team of 2 to build a deep learning based system that segments road networks from satellite images. A live demo of the project can be found here -> [road_extraction]
 
-[road_extraction]: https://researchweb.iiit.ac.in/~shanmukh.alle/road_extraction.html
+[road_extraction]: https://a8f1d0ca.ngrok.io
 
 * Worked in a team of 2 to build a system that uses transformer networks to predict protein secondary structure given protein amino acid sequence. (Ongoing project)
 
@@ -68,7 +68,7 @@ To train the model on complexity information we use a Siamese neural network tha
 
 The same function can be used to generate the ground truth probability values from elo ratings of the selected pair of images. 
 
-The contrastive function used is the equation used to get the win probability in a match between two players given their elo rating[[7]].
+The contrastive function used is the equation used to get the win probability in a match between two players given their elo rating[[7]]. 
 
 An explanation of how Siamese neural networks can be found here [[5]]
 
