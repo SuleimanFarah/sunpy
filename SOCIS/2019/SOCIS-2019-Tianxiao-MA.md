@@ -153,4 +153,3 @@ I am usually online from 9 am to 10 pm. My time zone is UTC +2.
 ### 4.2 Available Platforms
 
 I usually work on Windows 10 Home x64 and sometimes test code on Ubuntu 18.04 (WSL).
-

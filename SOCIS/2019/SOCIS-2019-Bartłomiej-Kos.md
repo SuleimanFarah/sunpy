@@ -2,7 +2,7 @@ Name: Bartłomiej Kos
 Organisation: University of Wrocław, Poland
 Time zone: CEST
 github id: BartheqVonKoss
-e-mail: bartek.kos@live.com / kosu1414@gmail.com 
+e-mail: bartek.kos@live.com / kosu1414@gmail.com
 Education
 Graduating from University's of Wrocław faculty of Physics and Astronomy I received the title of engineer of physics. While studying, for five out of seven semesters I was collecting a scholarship granted for academic performance. The subject of my thesis was Electronic Measurement System of Wilberforce Pendulum which was published last year in European Journal of Physics. The project, being interdisciplinary, required me to use the knowledge and skills gained in the fields of physics, electronics and programming. As for now I am a master degree student in computational physics who leverages deep learning achievements to cosmological parameter estimation..
 Interest in Open Astronomy

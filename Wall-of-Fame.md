@@ -84,4 +84,3 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 #### 2012 - Trinity College Dublin
 * Radio Spectra for Callisto by [Florian Mayer](https://github.com/segfaulthunter) - now at package [radiospectra](https://github.com/sunpy/radiospectra)
-
