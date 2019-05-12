@@ -27,7 +27,7 @@ I also helped on the fix of some small bugs in the source code of the package of
 
 The research of structure and evolution of the magnetic field in solar Corona has been an important task over past decades. By imposing different magnetograms as boundary conditions in a finite or semi-finite scheme, the coronal magnetic field can be reconstructed from the Laplace equation:
 
-    ∇**B** = ∇<sup>2</sup>φ = 0     (1)
+∇**B** = ∇<sup>2</sup>φ = 0
 
 where **B** is the magnetic field and φ is the magnetic scalar potential function.
 
@@ -35,15 +35,15 @@ Solarbextrapolation is a Python API for extrapolation and reconstruction of the 
 
 However, a few features can be improved in the package, for example:
 
-    **1. Limited extrapolation region and lack of support for coordinate transformation**
+1. **Limited extrapolation region and lack of support for coordinate transformation**
 
     Solarbextrapolation currently solves the differential equation in normal Cartesian coordinates by implementing classical Shmidt method, which only works for small areas of the solar surface (about an active region).  A more general approach is necessary for magnetic field extrapolations over larger areas of the Sun, for example, the Potential Field Source Surface (PFSS) model. Additionally, the data of the boundary condition may in different coordinate systems,  all  of  which  are  widely  used  in  Solar  physics,  a  coordinate  transformation  will enhance Solarbextrapolation’s compatibility in solar magnetic field extrapolation.
 
-    **2. Development of better visualization methods**
+2. **Development of better visualization methods**
 
-Solarbextrapolation currently visualizes the 3D magnetic field extrapolation interactively using MayaVi package, which is non-universal library in scientific Python community and sometimes hard to code right.  It could be replaced by other commonly used and easily-implemented visualization libraries in Python.
+    Solarbextrapolation currently visualizes the 3D magnetic field extrapolation interactively using MayaVi package, which is non-universal library in scientific Python community and sometimes hard to code right.  It could be replaced by other commonly used and easily-implemented visualization libraries in Python.
 
-    **3. The lack of extrapolators for different magnetic field models**
+3. **The lack of extrapolators for different magnetic field models**
 
     The current model of the magnetic field extrapolation in Solarbextrapolation is based on Potential Fields model and Laplace equation. However, some advanced model, such as Linear Force-free Field model, Nonlinear Force-free Field model, and Non-force-free Fields, have been developed and numerically simulated by other researchers over the past decades, which could also be included in the package.
 
