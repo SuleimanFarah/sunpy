@@ -113,7 +113,7 @@ This project is principally about answering the validity of this scientific hypo
 I would like to approach this not only as a time-series-anomaly-detection approach (using Recurrent Neural Networks) but as a **forecasting**  proposition as well. 
 Hence I would like to try out to map the data to the following different models.
 
- 1. Recurrent Time series **Anomaly Detection** (Ref 1) - since we are dealing with time series data and want to detect anomalies (flares) [RNNs based LSTMs](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf) written in TensorFlow is an ideal solution for anomaly detection in the industry.
+ 1. Recurrent Time series **Anomaly Detection** (Ref 1) - since we are dealing with temporal data and want to detect anomalies (flares) [RNNs based LSTMs](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf) written in TensorFlow is an ideal solution for anomaly detection in the industry.
 
  2. Statistical **Forecasting** - Since we use **Elo rating** during the data preparation it would also be nice to experiment  using conventional statistical approaches to time series data as well. [FaceBook Prophet](https://facebook.github.io/prophet/) is very good at forecasting and much faster than machine learning models because they are based on statistical models rather than neural networks.
  3. I'm also comfortable with Conventional Machine Learning tasks like classification, clustering, regression and feature engineering principles, will try out with **Convolutional Neural Networks (CNNs)** to classify the images as well.
