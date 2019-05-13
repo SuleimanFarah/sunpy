@@ -24,7 +24,7 @@ I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learn
 [show-and-tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
 * Worked in a team of 2 to build a deep learning based system that segments road networks from satellite images. A live demo of the project can be found here -> [road_extraction]
 
-[road_extraction]: https://a8f1d0ca.ngrok.io
+[road_extraction]: https://researchweb.iiit.ac.in/~shanmukh.alle/road_extraction.html
 
 * Worked in a team of 2 to build a system that uses transformer networks to predict protein secondary structure given protein amino acid sequence. (Ongoing project)
 
