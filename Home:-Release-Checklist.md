@@ -8,8 +8,7 @@
 **All of the following assumes that you are on the release branch and not master**
 
 **Pre-release:**
-- [ ] Update version number in `setup.cfg`
-- [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/)
+- [ ] Update the changelog using [towncrier --version vX.Y.Z](https://pypi.org/project/towncrier/)
 - [ ] Commit the changes
 ```
 git add .
@@ -36,6 +35,7 @@ python setup.py sdist
 # Upload Release
 twine upload dist/sunpy-X.Y.Z.tar.gz
 ```
+- [ ] Check you have not shipped a broken release with `pip download --no-deps --no-binary :all: sunpy==X.Y.Z`
 - [ ] Update sunpy-wheels repo to build wheels for the release version
 - [ ] Update the sunpy-feedstock repo, ideally a bot should do it for you
 - [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
