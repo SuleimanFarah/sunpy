@@ -13,6 +13,8 @@ More information about [installation](https://docs.sunpy.org/en/stable/guide/ins
 * [Pull Request Review Procedure](http://docs.sunpy.org/en/latest/dev_guide/pr_review_procedure.html#review-process)
 * [SunPy Release](https://github.com/sunpy/sunpy/wiki/Home%3A-Release-Checklist)
 * [SunPy Roadmap](https://github.com/sunpy/roadmap)
+* Detailed wiki pages
+  * [Coordinate systems](https://github.com/sunpy/sunpy/wiki/Coordinate-systems)
 
 ## The SunPy Project Organization
 [[All the info | Home: Organization Information]] regarding to SunPy formation as an organization, including minutes of meetings
