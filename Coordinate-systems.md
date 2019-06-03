@@ -4,7 +4,7 @@ See Thompson (2006) and Franz & Harper (2002)
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |
 | Heliocentric Aries Ecliptic | HAE (also HEC) | Astropy's `HeliocentricMeanEcliptic` | If using an Astropy version before v3.2, use the misleadingly named `HeliocentricTrueEcliptic` |
-| Heliocentric Cartesian | HCC | `HeliocentricCartesian` | |
+| Heliocentric Cartesian | HCC | `Heliocentric` | |
 | Heliocentric Earth Ecliptic | HEE | none | Z=Mean ecliptic north pole, X=Sun-Earth line |
 | Heliocentric Earth Equatorial | HEEQ (also HEQ) | `HeliographicStonyhurst` | Specify the coordinate using `CartesianRepresentation` |
 | Heliocentric Inertial | HCI | none | Z=Solar rotational axis, X=Solar ascending node on ecliptic; Heliocentric of Date (HCD) is the precessed version to the ecliptic of date; similar to the "de-tilted HCRS" frame that is used for internal calculations, but that one is not dynamical |
