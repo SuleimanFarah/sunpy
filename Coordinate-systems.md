@@ -9,7 +9,7 @@ See Thompson (2006) and Franz & Harper (2002)
 | Heliocentric Earth Equatorial | HEEQ (also HEQ) | `HeliographicStonyhurst` | Specify the coordinate using `CartesianRepresentation` |
 | Heliocentric Inertial | HCI | none | Z=Solar rotational axis, X=Solar ascending node on ecliptic; Heliocentric of Date (HCD) is the precessed version to the ecliptic of date; similar to the "de-tilted HCRS" frame that is used for internal calculations, but that one is not dynamical |
 | Heliocentric Radial | HCR | none | Equivalent to HCC with a cylindrical representation |
-| Heliocentric/Heliographic Radial-Tangential-Normal | HGRTN | `HeliocentricCartesian` | The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X|
+| Heliocentric/Heliographic Radial-Tangential-Normal | HGRTN | `Heliocentric` | The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X|
 | Heliographic Carrington | HGC | `HeliographicCarrington` | |
 | Heliographic Stonyhurst | HGS | `HeliographicStonyhurst` | |
 | Helioprojective Cartesian | HPC | `Helioprojective` | |
