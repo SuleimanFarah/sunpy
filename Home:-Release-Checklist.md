@@ -26,7 +26,7 @@ If you need to fix anything do so on the branch and forward port as need be.
 - [ ] Tag on GitHub (tag should be full version number preceded by a `v`)
 ```
 git checkout X.Y
-git tag -a vX.Y.Z
+git tag -a vX.Y.Z -m "Releasing version vX.Y.Z"
 git push --follow-tags upstream vX.Y.Z
 ```
 This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
