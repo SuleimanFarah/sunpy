@@ -18,27 +18,20 @@ git commit -m "Release vX.Y.Z"
 ```
 git push upstream X.Y
 ```
-- [ ] Check that the CI passes on release commit
-- [ ] Test that RTD is building the documentation correctly on the release branch (and the version is correct)
-- [ ] Release on GitHub (tag should be full version number preceded by a `v`)
+- [ ] Check that the CI passes on last commit on the branch
+- [ ] Test that RTD is building the documentation correctly on the release branch
+
+If you need to fix anything do so on the branch and forward port as need be.
+
+- [ ] Tag on GitHub (tag should be full version number preceded by a `v`)
 ```
 git checkout X.Y
 git tag vX.Y.Z
 git push --follow-tags upstream vX.Y.Z
 ```
+This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-**Once all the checks are clear: Release**
-- [ ] Release on PyPI (using [twine](https://pypi.org/project/twine/)):
-```
-# Make sdist
-python setup.py sdist
-# Upload Release
-twine upload dist/sunpy-X.Y.Z.tar.gz
-```
-- [ ] Check you have not shipped a broken release with `pip download --no-deps --no-binary :all: sunpy==X.Y.Z`
-- [ ] Update sunpy-wheels repo to build wheels for the release version
 - [ ] Update the sunpy-feedstock repo, ideally a bot should do it for you
-- [ ] Update astropy/ci-helpers stable sunpy version number (Three places: `test_env.py`, `travis/setup_dependencies_common.sh`, `appveyor/install-miniconda.ps1`)
 
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
