@@ -31,7 +31,7 @@ git push --follow-tags upstream vX.Y.Z
 ```
 This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-- [ ] Update the sunpy-feedstock repo, ideally a bot should do it for you
+- [ ] Update the conda forge sunpy-feedstock repo, ideally a bot should do it for you
 
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
