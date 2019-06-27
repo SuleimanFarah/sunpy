@@ -36,6 +36,10 @@ This triggers the Azure release pipeline which will build and test the wheels an
 
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
+- [ ] Create the release on GitHub releases, copy the changelog into the description.
+- [ ] Enable the tag on Read the Docs
+
+**Announcements:**
 - [ ] Post release announcement on social media sites
 - [ ] Send release announcement to mailing lists
 ``` 
