@@ -1,6 +1,20 @@
 **For major releases only:**
 - [ ] Update RELEASE.rst
-- [ ] Remove developer's guide and link to latest version.
+- [ ] Remove the files under the developer's guide except for `index.rst`, `stability.rst` and `sunpy_stability.yaml`. Then change the `index.rst` file to read:
+
+```
+.. _dev_guide:
+
+Developer's Guide
+=================
+
+Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for our up to date developer's guide.
+
+.. toctree::
+   :maxdepth: 2
+
+   stability
+```
 
 **Branching:**
 - [ ] Create and change onto a new release branch from master labeled with the release number ```X.Y```.
