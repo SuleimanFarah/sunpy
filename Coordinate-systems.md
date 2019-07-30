@@ -19,8 +19,8 @@ See Thompson (2006) and Franz & Harper (2002)
 # Earth-centered coordinate systems
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |
-| Geocentric Equatorial Inertial (Mean) | GEI<sub>D</sub> | Astropy's `PrecessedGeocentric` | Be aware that `PrecessedGeocentric` includes aberration due to Earth motion |
-| Geocentric Equatorial Inertial (True) | GEI<sub>T</sub> | none |
+| Geocentric Earth Equatorial (Mean) | GEI<sub>D</sub> | Astropy's `PrecessedGeocentric` | Be aware that `PrecessedGeocentric` includes aberration due to Earth motion |
+| Geocentric Earth Equatorial (True) | GEI<sub>T</sub> | none |
 | Geographic | GEO | ? | Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator |
 | Geocentric Solar Ecliptic | GSE | `GeocentricSolarEcliptic`* | X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole |
 | Geocentric Solar Magnetospheric | GSM | none | Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line |
