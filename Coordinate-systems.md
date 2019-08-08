@@ -21,7 +21,7 @@ See Thompson (2006) and Franz & Harper (2002)
 | --- | --- | --- | --- |
 | Geocentric Earth Equatorial (Mean J2000.0 or Date) | GEI<sub>J2000</sub> or GEI<sub>D</sub> | `GeocentricEarthEquatorial`* | Astropy's `PrecessedGeocentric` is similar, but includes aberration due to Earth motion |
 | Geocentric Earth Equatorial (True) | GEI<sub>T</sub> | none |
-| Geographic | GEO | ? | Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator |
+| Geographic | GEO | Astropy's `ITRS`? | Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator |
 | Geocentric Solar Ecliptic | GSE | `GeocentricSolarEcliptic`* | X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole |
 | Geocentric Solar Magnetospheric | GSM | none | Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line |
 
