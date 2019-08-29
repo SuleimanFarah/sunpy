@@ -45,7 +45,8 @@ git push --follow-tags upstream vX.Y.Z
 ```
 This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-If there is an issue at this step, the fix will be to update the config on the [azure template repo](https://github.com/sunpy/azure-pipelines-template) and start a new tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
+If there is an issue at this step, the fix will be to update the config on the [azure template repo](https://github.com/sunpy/azure-pipelines-template), a patch to this repository should only happen if somehow the inputs to the template or the dependOn jobs change. 
+Then start a new tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
 
 - [ ] Update the conda forge sunpy-feedstock repo, ideally a bot should do it for you
 - [ ] Push the update to the stable branch
