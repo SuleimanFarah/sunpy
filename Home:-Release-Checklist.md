@@ -50,7 +50,7 @@ Then start a new tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/
 
 Since this is tag based, you might have to update and force push the tag as a result.
 
-- [ ] Update the conda forge sunpy-feedstock repo, ideally a bot should do it for you
+- [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), ideally a bot should do it for you
 - [ ] Push the git tag to the stable branch. i.e., `git push upstream +vX.Y.Z~0:stable`
 
 **Post Release:**
