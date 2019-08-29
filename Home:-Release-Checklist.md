@@ -48,6 +48,8 @@ This triggers the Azure release pipeline which will build and test the wheels an
 If there is an issue at this step, the fix will be to update the config on the [azure template repo](https://github.com/sunpy/azure-pipelines-template), a patch to this repository should only happen if somehow the inputs to the template or the dependOn jobs change. 
 Then start a new tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
 
+Since this is tag based, you might have to update and force push the tag as a result.
+
 - [ ] Update the conda forge sunpy-feedstock repo, ideally a bot should do it for you
 - [ ] Push the update to the stable branch
 
