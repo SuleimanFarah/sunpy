@@ -25,4 +25,4 @@ See Thompson (2006) and Franz & Harper (2002)
 | Geocentric Solar Ecliptic | GSE | `GeocentricSolarEcliptic`* | X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole |
 | Geocentric Solar Magnetospheric | GSM | none | Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line |
 
-\* PR is pending
+\* Will be available in SunPy 1.1 and currently available in the development version
