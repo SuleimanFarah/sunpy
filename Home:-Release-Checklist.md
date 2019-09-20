@@ -37,7 +37,7 @@ git push upstream X.Y
 
 If you need to fix anything do so on the branch and forward port as need be.
 
-- [ ] Tag on GitHub (tag should be full version number preceded by a `v`)
+- [ ] Tag on and push (tag should be full version number preceded by a `v`)
 ```
 git checkout X.Y
 git tag -a vX.Y.Z -m "Releasing version vX.Y.Z"
@@ -45,7 +45,11 @@ git push --follow-tags upstream vX.Y.Z
 ```
 This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-If there is an issue at this step, the fix will be to update the config in the [azure template repo](https://github.com/sunpy/azure-pipelines-template), a patch to this repository should only happen if somehow the inputs to the template or the `dependOn` jobs need to be changed.
+- [ ] Create a GitHub release for the tag.
+
+If you want to put the changelog in the GitHub release description (which is recommended) the following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
+
+If there is an issue at this step, the fix will be to update the config in the [azure template repo](https://github.com/OpenAstronomy/azure-pipelines-templates), a patch to this repository should only happen if somehow the inputs to the template need to be changed.
 Since we use tags, you will to update the tag and force push it.
 Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
 
