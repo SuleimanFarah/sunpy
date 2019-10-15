@@ -1,5 +1,8 @@
 The release schedule for SunPy is detailed in [SEP-9](https://zenodo.org/record/3261800) - this wiki page contains concrete dates for past and future releases and feature freeze dates.
 
+Releases are scheduled for the first friday in the month set by SEP-9, and feature freezes are two weeks prior to the release date. All PRs which want to be included in a release must be opened (and ready for review) by the feature freeze deadline. In most cases, PRs which haven't been merged within a week of the release will be bumped to the following release.
+
+
 | Release             | Scheduled Date | Actual Date |
 | ------------------- | -------------- | ----------- |
 | v2.1 Release        |     2020-11-06 |             |
@@ -18,3 +21,5 @@ The release schedule for SunPy is detailed in [SEP-9](https://zenodo.org/record/
 | v0.3 Release        |                |  2013-08-30 |
 | v0.2 Release        |                |  2012-11-26 |
 | v0.1 Release        |                |  2011-09-28 |
+
+*Note:* Historical release dates are taken from the GitHub release page.
