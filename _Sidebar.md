@@ -4,6 +4,7 @@
     * [Organization Information](./Home%3A-Organization-Information)
     * [Release Checklist](./Home%3A-Release-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
+    * [Release Calendar](./Home%3A-Release-Calendar)
   * [GSoC](./GSoC)
     * [Advice for Students](./GSoC%3A-Advice-for-Students)
     * [Mentors and Accepted Students](./GSoC%3A-Mentors-and-Accepted-Students)
