@@ -45,9 +45,6 @@ git push --follow-tags upstream vX.Y.Z
 ```
 This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-- [ ] Create a GitHub release for the tag.
-
-If you want to put the changelog in the GitHub release description (which is recommended) the following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
 
 If there is an issue at this step, the fix will be to update the config in the [azure template repo](https://github.com/OpenAstronomy/azure-pipelines-templates), a patch to this repository should only happen if somehow the inputs to the template need to be changed.
 Since we use tags, you will to update the tag and force push it.
@@ -58,7 +55,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
-- [ ] Create the release on GitHub releases, copy the changelog into the description.
+- [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
 - [ ] Enable the tag on Read the Docs
 
 **Announcements:**
