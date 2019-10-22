@@ -28,6 +28,8 @@ Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for ou
 git add .
 git commit -m "Release vX.Y.Z"
 ```
+**STOP for the next sunpy release, we should remove the stable build from rtd.**
+
 - [ ] Push directly to the release branch on SunPy
 ```
 git push upstream X.Y
