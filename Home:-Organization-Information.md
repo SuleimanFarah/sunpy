@@ -14,9 +14,9 @@ An overview of the team project is found on the [SunPy website](http://sunpy.org
 ## Minutes of SunPy board meetings
 
 
-[[Board Meeting 2018-08-02 | Minutes of SunPy Board Meeting 20180802]]
+[[Board Meeting 2018-08-02 | Minutes of SunPy Board Meeting 20190802]]
 
-[[Board Meeting 2019-03-06 | Minutes of SunPy Board Meeting 20180306]]
+[[Board Meeting 2019-03-06 | Minutes of SunPy Board Meeting 20190306]]
 
 [[Board Meeting 2018-09-05 | Minutes of SunPy Board Meeting 20180905]]
 
