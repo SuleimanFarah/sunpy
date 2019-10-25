@@ -13,17 +13,29 @@ An overview of the team project is found on the [SunPy website](http://sunpy.org
 
 ## Minutes of SunPy board meetings
 
+<details>
+<summary>2019 (3)</summary>
+
 [[Board Meeting 2019-09-20 | Minutes of SunPy Board Meeting 20190920]]
 
 [[Board Meeting 2019-08-02 | Minutes of SunPy Board Meeting 20190802]]
 
 [[Board Meeting 2019-03-06 | Minutes of SunPy Board Meeting 20190306]]
 
+</details>
+<details>
+<summary>2018 (3)</summary>
+
 [[Board Meeting 2018-09-05 | Minutes of SunPy Board Meeting 20180905]]
 
 [[Board Meeting 2018-06-19 | Minutes of SunPy Board Meeting 20180610]]
 
 [[Board Meeting 2018-02-21 | Minutes of SunPy Board Meeting 20180221]]
+
+</details>
+
+<details>
+<summary>2017 (6)</summary>
 
 [[Board Meeting 2017-09-22 | Minutes of SunPy Board Meeting 20170922]]
 
@@ -37,15 +49,30 @@ An overview of the team project is found on the [SunPy website](http://sunpy.org
 
 [[Board Meeting 2017-02-17 | Minutes-of-SunPy-Board-Meeting-20170214]]
 
+</details>
+
+<details>
+<summary>2016 (2)</summary>
+
 [[Board Meeting 2016-10-26 | Minutes-of-SunPy-Board-Meeting-20161026]]
 
 [[Board Meeting 2016-05-07 | Minutes-of-SunPy-Board-Meeting-20160507]]
+
+</details>
+
+<details>
+<summary>2015 (3)</summary>
 
 [[Board Meeting 2015-12-07 | Minutes-of-SunPy-Board-Meeting-20151207]]
 
 [[Board Meeting 2015-09-21 | Minutes-of-SunPy-Board-Meeting-20150921]]
 
 [[Board Meeting 2015-04-13 | Minutes-of-SunPy-Board-Meeting-20150413]]
+
+</details>
+
+<details>
+<summary>2014 (7)</summary>
 
 [[Board Meeting 2014-10-17 | Minutes-of-SunPy-Board-Meeting-20141017]]
 
@@ -60,3 +87,5 @@ An overview of the team project is found on the [SunPy website](http://sunpy.org
 [[Board Meeting 2014-04-16 | Minutes-of-SunPy-Board-Meeting-20140416]]
 
 [[Board Meeting 2014-04-07 | Minutes-of-SunPy-Board-Meeting-20140407]]
+
+</details>
