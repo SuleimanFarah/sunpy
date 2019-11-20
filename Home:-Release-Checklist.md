@@ -19,10 +19,10 @@ Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for ou
 **Branching:**
 - [ ] Create and change onto a new release branch from master labeled with the release number ```X.Y```.
 
-**All of the following assumes that you are on the release branch and not master**
+**All of the following assumes that you are on the release branch and not master (`X.Y` e.g `1.0`)**
 
 **Pre-release:**
-- [ ] Checkout the release branch `X.Y` e.g `1.0`
+
 - [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/): `towncrier --version vX.Y.Z`
 - [ ] Commit the changes
 ```
