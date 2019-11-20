@@ -38,7 +38,7 @@ git push upstream X.Y
 - [ ] Check that the CI passes on last commit on the branch
 - [ ] Activate the release branch on RTD and test that RTD is building the documentation correctly.
 
-If you need to fix anything do so on the branch and forward port as need be.
+If you need to fix anything do so on the branch and forward port to master as need be (to reduce the CI builds).
 
 - [ ] Tag on and push (tag should be full version number preceded by a `v`)
 ```
