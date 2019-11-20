@@ -22,6 +22,7 @@ Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for ou
 **All of the following assumes that you are on the release branch and not master**
 
 **Pre-release:**
+- [ ] Checkout the release branch `X.Y` e.g `1.0`
 - [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/): `towncrier --version vX.Y.Z`
 - [ ] Commit the changes
 ```
