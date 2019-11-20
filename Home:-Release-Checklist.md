@@ -36,7 +36,7 @@ git commit -m "Release vX.Y.Z"
 git push upstream X.Y
 ```
 - [ ] Check that the CI passes on last commit on the branch
-- [ ] Test that RTD is building the documentation correctly on the release branch
+- [ ] Activate the release branch on RTD and test that RTD is building the documentation correctly.
 
 If you need to fix anything do so on the branch and forward port as need be.
 
@@ -59,7 +59,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
-- [ ] Enable the tag on Read the Docs
+- [ ] Enable the tag on Read the Docs, and deactivate the branch (so it doesn't show up in the list).
 
 **Announcements:**
 - [ ] Post release announcement on social media sites
