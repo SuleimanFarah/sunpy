@@ -35,7 +35,7 @@ git commit -m "Release vX.Y.Z"
 ```
 git push upstream X.Y
 ```
-- [ ] Check that the CI passes on last commit on the branch
+- [ ] Check that the CI passes on last commit on the branch (including the wheel builds).
 - [ ] Activate the release branch on RTD and test that RTD is building the documentation correctly.
 
 If you need to fix anything do so on the branch and forward port to master as need be (to reduce the CI builds).
