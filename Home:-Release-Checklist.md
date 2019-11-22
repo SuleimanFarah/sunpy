@@ -23,7 +23,12 @@ Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for ou
 
 **Pre-release:**
 
-- [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/): `towncrier --version vX.Y.Z`
+- [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/):
+```
+towncrier --version vX.Y.Z
+```
+if it's a rc release do not select the option to delete the changelog files. We release full changelogs for all rcs.
+
 - [ ] Commit the changes
 ```
 git add .
