@@ -65,6 +65,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
 - [ ] Enable the tag on Read the Docs.
+- [ ] For a final major release, make a commit to master which renders the changelog and removes the files.
 
 **Announcements:**
 - [ ] Post release announcement on social media sites
