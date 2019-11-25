@@ -14,7 +14,10 @@ The meeting will be open for anyone to attend but key team members (e.g. maintai
   * morning: state of the union lightning talks
   * afternoon: 
 * Day 2
-* Day 3 - award ceremony
+  * coordinate!
+* Day 3
+  * coordinate!
+  * award ceremony
 * Day 4 - hacking
 * Day 5 - hacking
 
