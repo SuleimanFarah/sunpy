@@ -1,13 +1,14 @@
 
 This will be the first of a yearly series of in-person SunPy Coordination meetings. The purpose of this meeting is to 
 * plan the next sunpy core release
-* coordinate development across all of core
-* coordinate development between sunpy core and affiliated packages
+* coordinate development across all of the core subpackages
+* coordinate development between SunPy and affiliated packages
 * discuss long-term roadmap
+* to enable in-person development
 
 The meeting will be open for anyone to attend but key team members (e.g. maintainers, affiliated package leads, key devs, SunPy board members) will be invited. This meeting will also be used as an opportunity to recognize outstanding contributions to the community.
 
-**Meeting time frame**: Feb-Mar 2020 (exact dates to be decided to enable highest of key team members)
+**Meeting time frame**: Feb-Mar 2020 (exact dates TBD to maximize attendance by key team members)
 
 ### Schedule
 * Day 1
