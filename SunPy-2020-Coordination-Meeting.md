@@ -1,6 +1,6 @@
 
 This will be the first of a yearly series of in-person SunPy Coordination meetings. The purpose of this meeting is to 
-* plan the next sunpy core release
+* plan for the next sunpy core release cycle
 * coordinate development across all of the core subpackages
 * coordinate development between SunPy and affiliated packages
 * discuss long-term roadmap
