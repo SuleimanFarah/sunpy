@@ -4,7 +4,7 @@ This will be the first of a yearly series of in-person SunPy Coordination meetin
 * coordinate development across all of the core subpackages
 * coordinate development between SunPy and affiliated packages
 * discuss long-term roadmap
-* to enable in-person development
+* enable in-person development
 
 The meeting will be open for anyone to attend but key team members (e.g. maintainers, affiliated package leads, key devs, SunPy board members) will be invited. This meeting will also be used as an opportunity to recognize outstanding contributions to the community.
 
