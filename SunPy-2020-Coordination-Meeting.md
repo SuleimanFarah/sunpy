@@ -9,6 +9,7 @@ This will be the first of a yearly series of in-person SunPy Coordination meetin
 The meeting will be open for anyone to attend but key team members (e.g. maintainers, affiliated package leads, key devs, SunPy board members) will be invited. This meeting will also be used as an opportunity to recognize outstanding contributions to the community.
 
 **Meeting time frame**: Feb-Mar 2020 (exact dates TBD to maximize attendance by key team members)
+
 **Meeting Plate**: NASA Goddard Space Flight Center in Maryland, U.S.A.
 
 Discussion topics are to be decided by the community but the meeting should begin with a state of union talk by the lead developer followed by lightning talks by each of the sub-package maintainers as well as affiliated package leads.
