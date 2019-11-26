@@ -10,6 +10,8 @@ The meeting will be open for anyone to attend but key team members (e.g. maintai
 
 **Meeting time frame**: Feb-Mar 2020 (exact dates TBD to maximize attendance by key team members)
 
+Discussion topics are to be decided by the community but the meeting should begin with a state of union talk by the lead developer followed by lightning talks by each of the sub-package maintainers as well as affiliated package leads.
+
 ### Schedule
 * Day 1
   * morning: state of the union lightning talks
@@ -19,8 +21,8 @@ The meeting will be open for anyone to attend but key team members (e.g. maintai
 * Day 3
   * coordinate!
   * award ceremony
-* Day 4 - hacking
-* Day 5 - hacking
+* Day 4 - hack day
+* Day 5 - hack day
 
 A board meeting to take place during one of the evenings.
 
