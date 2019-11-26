@@ -14,7 +14,7 @@ The meeting will be open for anyone to attend but key team members (e.g. maintai
 
 Discussion topics are to be decided by the community but the meeting should begin with a state of union talk by the lead developer followed by lightning talks by each of the sub-package maintainers as well as affiliated package leads.
 
-Potential topics include state of the developer community, SunPy governance, infrastructure, testing, diversity of the community, outreach, tutorials and education.
+Potential topics include state of the developer community, SunPy governance, infrastructure, testing, diversity of the community, outreach, tutorials and education, documentation improvements.
 
 ### Schedule
 * Day 1
