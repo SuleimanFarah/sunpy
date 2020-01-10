@@ -34,7 +34,6 @@ if it's a rc release do not select the option to delete the changelog files. We 
 git add .
 git commit -m "Release vX.Y.Z"
 ```
-**STOP for the next sunpy release, we should remove the stable build from rtd.**
 
 - [ ] Push directly to the release branch on SunPy
 ```
@@ -59,7 +58,6 @@ Since we use tags, you will to update the tag and force push it.
 Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
 
 - [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), ideally a bot should do it for you
-- [ ] Push the git tag to the stable branch. i.e., `git push upstream +vX.Y.Z~0:stable`
 
 **Post Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
