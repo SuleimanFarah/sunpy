@@ -22,9 +22,7 @@ A board meeting to take place during one of the evenings.
 
 The meeting agenda is being openly discussed and determined on the following [google sheet](https://docs.google.com/spreadsheets/d/19n1qnlu04BmRbvDP718mxWlg5UBYbFFY0QkNm720uFg/edit?usp=sharing)
 
-as well as in the following chat room
-
-[https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org](https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org)
+as well as in the following chat room: [https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org](https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org)
 
 #### Monday, 30 March
 
