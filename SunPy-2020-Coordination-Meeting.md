@@ -17,16 +17,40 @@ Discussion topics are to be decided by the community but the meeting should begi
 Potential topics include state of the developer community, SunPy governance, infrastructure, testing, diversity of the community, outreach, tutorials and education, documentation improvements.
 
 ### Schedule
-* Day 1
-  * morning: state of the union lightning talks
-  * afternoon: 
-* Day 2
-  * coordinate!
-* Day 3
-  * coordinate!
-  * award ceremony
-* Day 4 - (optional) hack day
-* Day 5 - (optional) hack day
+
+#### Monday, 30 March
+
+| Time | Title | Speaker |
+|:-----|:------|:--------|
+| 9:00 | State of the Union: sunpy core | Stuart Mumford |
+| 9:30 | State of the Union: subpackages | subpackage maintainers |
+| 11:00 | Break | |
+| 11:10 | State of the Union: affiliated packages | affiliated package maintainers |
+| 12:00 | Lunch | |
+| 13:30 | Policies and workflows for maintaining the core package | |
+| 14:30 | Break | |
+| 14:40 | sunpy 2.0 roadmap discussion | all |
+| 16:10 | Adjourn | |
+
+#### Tuesday, 31 March
+
+| Time | Title | Speaker |
+|:-----|:------|:--------|
+
+
+#### Wednesday, 1 April
+
+| Time | Title | Speaker |
+|:-----|:------|:--------|
+
+
+#### Thursday, 2 April
+
+Hack day topics go here
+
+#### Friday , 3 April
+
+Hack day topics go here
 
 A board meeting to take place during one of the evenings.
 
