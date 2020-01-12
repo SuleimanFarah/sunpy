@@ -18,6 +18,14 @@ Potential topics include state of the developer community, SunPy governance, inf
 
 ### Schedule
 
+A board meeting to take place during one of the evenings.
+
+The meeting agenda is being openly discussed and determined on the following [google sheet](https://docs.google.com/spreadsheets/d/19n1qnlu04BmRbvDP718mxWlg5UBYbFFY0QkNm720uFg/edit?usp=sharing)
+
+as well as in the following chat room
+
+[https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org](https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org)
+
 #### Monday, 30 March
 
 | Time | Title | Speaker |
@@ -51,14 +59,6 @@ Hack day topics go here
 #### Friday , 3 April
 
 Hack day topics go here
-
-A board meeting to take place during one of the evenings.
-
-The meeting agenda is being openly discussed and determined on the following [google sheet](https://docs.google.com/spreadsheets/d/19n1qnlu04BmRbvDP718mxWlg5UBYbFFY0QkNm720uFg/edit?usp=sharing)
-
-as well as in the following chat room
-
-[https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org](https://riot.im/app/#/room/!vDAPettCDpqBqinmaF:matrix.org)
 
 ### Travel Funding
 Limited travel funding is available upon request.
