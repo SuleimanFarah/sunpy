@@ -116,14 +116,15 @@ We suggest that you think about these when writing your application.
     Has the student demonstrated that they have the ability to work with SunPy's code?
     Does the student have reasonable evidence they’ve competently done something relevant to this before?
 
-    For example:
-
-    - A GitHub profile,
+    Required:
+    - A GitHub profile
     - Pull requests on SunPy's repository
+
+    Other examples:
     - Published applications
     - Code from a uni assignment
+    - Code from other projects on GitHub
 
-    Absolutely no work available - not even a published app, some work experience, or code from a class assignment, is a red flag.
     Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.
     Try to select work you are most proud of, we do not want a link to everything you have ever done.
 
