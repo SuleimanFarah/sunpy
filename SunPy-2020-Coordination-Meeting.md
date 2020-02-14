@@ -8,6 +8,8 @@ This will be the first of a yearly series of in-person SunPy Coordination meetin
 
 The meeting will be open for anyone to attend but key team members (e.g. maintainers, affiliated package leads, key devs, SunPy board members) will be invited. This meeting will also be used as an opportunity to recognize outstanding contributions to the community.
 
+If you are planning to attend, either in-person or remotely please fill out the following form https://forms.gle/qjt6YKSCFciqFi3o8
+
 **Meeting time frame**: March 30 to April 3.
 
 **Meeting Place**: Adnet, Greenbelt, Maryland, U.S.A.
