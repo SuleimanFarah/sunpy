@@ -37,17 +37,17 @@ The meeting agenda is being openly discussed and determined on the following [go
     <th>Speaker</th>
     </tr>
     <tr>
-    <td>9:00</td>
+    <td> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T09&p1=5255&ah=7&am=30">09:00</a></td>
     <td>Welcome</td>
     <td>Steven Christe</td>
     </tr>
     <tr>
-    <td>9:10</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T0910&p1=5255">09:10</a></td>
     <td> State of the Union: sunpy core</td>
     <td >Stuart Mumford</td>
     </tr>
     <tr>
-    <td>9:40</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T0940&p1=5255">09:40</a></td>
     <td>
         State of the Union: subpackages (~7 minutes each)
         <ul>
@@ -67,11 +67,11 @@ The meeting agenda is being openly discussed and determined on the following [go
     <td></td>
     </tr>
     <tr>
-    <td>11:10</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1110&p1=5255">11:10</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>11:25</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1125&p1=5255">11:25</a></td>
     <td>
         State of the Union: Affiliated Packages (~12 minutes each)
         <ul>
@@ -84,11 +84,11 @@ The meeting agenda is being openly discussed and determined on the following [go
     <td></td>
     </tr>
     <tr>
-    <td>12:15</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T12:15&p1=5255">12:15</a></td>
     <td align="center" colspan="2">Lunch</td>
     </tr>
     <tr>
-    <td>13:45</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1345&p1=5255">13:45</a></td>
     <td>
         Policies and Workflows for Maintaining the Core Package
         <ul>
@@ -98,11 +98,11 @@ The meeting agenda is being openly discussed and determined on the following [go
     <td>Stuart Mumford, Nabil Freij</td>
     </tr>
     <tr>
-    <td>14:45</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1445&p1=5255">14:45</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>15:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1500&p1=5255">15:00</a></td>
     <td>
         SunPy v2.0 Roadmap Discussion
         <ul>
@@ -114,7 +114,7 @@ The meeting agenda is being openly discussed and determined on the following [go
     <td></td>
     </tr>
     <tr>
-    <td>16:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T1630&p1=5255">1630</a></td>
     <td align="center" colspan="2">Adjourn</td>
     </tr>
 </tbody>
@@ -131,55 +131,55 @@ The meeting agenda is being openly discussed and determined on the following [go
     </tr>
     <tr><td colspan="3" align="center"><em>Community Interactions</em></td></tr>
     <tr>
-    <td>9:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T09&p1=5255&ah=8&am=00">09:00</a></td>
     <td>Results from the survey of computational tools in solar physics</td>
     <td>Monica Bobra (?), Stuart Mumford (?)</td>
     </tr>
     <tr>
-    <td>9:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T0930&p1=5255&ah=7&am=30">09:30</a></td>
     <td>How do we turn users into contributors?</td>
     <td>Laura Hayes (?), Will Barnes</td>
     </tr>
     <tr>
-    <td>10:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1030&p1=5255">10:30</a></td>
     <td>A summer school on sunpy/Python for solar physics</td>
     <td>Will Barnes, Stuart Mumford</td>
     </tr>
     <tr>
-    <td>11:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1100&p1=5255">11:00</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>11:15</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1115&p1=5255">11:15</a></td>
     <td>Consistently Gathering User Information (e.g. via telemetry, surveys)</td>
     <td>Steven Christe</td>
     </tr>
     <tr>
-    <td>12:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1230&p1=5255">12:30</a></td>
     <td align="center" colspan="2">Lunch</td>
     </tr>
     <tr><td colspan="3" align="center"><em>Instrument and Affiliated Packages</em></td></tr>
     <tr>
-    <td>13:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1330&p1=5255">13:30</a></td>
     <td>aiapy: A Python Package for Analyzing Data from SDO/AIA</td>
     <td>Will Barnes</td>
     </tr>
     <tr>
-    <td>13:45</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1345&p1=5255">13:45</a></td>
     <td>Discussion on Effective Communication Between SunPy Developers and Instrument Teams</td>
     <td>Kevin Reardon (?), Bin Chen (?)</td>
     </tr>
     <tr>
-    <td>15:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1500&p1=5255">15:00</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>15:15</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1515&p1=5255">15:15</a></td>
     <td>Python in Heliophysics (PyHC) Projects and Their Relation to SunPy</td>
     <td>Jack Ireland, Daniel Ryan</td>
     </tr>
     <tr>
-    <td>17:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1700&p1=5255">17:00</a></td>
     <td align="center" colspan="2">Adjourn</td>
     </tr>
 </tbody>
@@ -197,75 +197,75 @@ The meeting agenda is being openly discussed and determined on the following [go
     </tr>
     <tr><td colspan="3" align="center"><em>Adding/Removing Features in the Core Package</em></td></tr>
     <tr>
-    <td>9:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T09&p1=5255&ah=8&am=0">09:00</a></td>
     <td>Should we move the instrument subpackage out of sunpy core?</td>
     <td>Will Barnes</td>
     </tr>
     <tr>
-    <td>9:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T0930&p1=5255">09:30</a></td>
     <td>Should we move the Helioviewer code out of sunpy core?</td>
     <td>Jack Ireland</td>
     </tr>
     <tr>
-    <td>10:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1000&p1=5255">10:00</a></td>
     <td>CompositeMap: Improve or Remove? (see <a href="https://github.com/sunpy/sunpy/issues/2150">Issue#2150</a>)</td>
     <td>Jack Ireland</td>
     </tr>
     <tr>
-    <td>11:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1100&p1=5255">11:00</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>11:15</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1115&p1=5255">11:15</a></td>
     <td>Support for Solar Orbiter Data</td>
     <td>David Stansby</td>
     </tr>
     <tr>
-    <td>11:40</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1140&p1=5255">11:40</a></td>
     <td>Supporting Velocities in the Coordinates Framework</td>
     <td>Albert Shih</td>
     </tr>
     <tr>
-    <td>12:05</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1205&p1=5255">12:05</a></td>
     <td>RA/Dec. Coordinate Frame with an Observer Origin</td>
     <td>Albert Shih</td>
     </tr>
     <tr>
-    <td>12:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1230&p1=5255">12:30</a></td>
     <td align="center" colspan="2">Lunch</td>
     </tr>
     <tr><td colspan="3" align="center"><em>Testing, CI, and DevOps</em></td></tr>
     <tr>
-    <td>13:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1330&p1=5255">13:30</a></td>
     <td>New Features in Python 3.7 and 3.8</td>
     <td>David Stansby</td>
     </tr>
     <tr>
-    <td>14:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1400&p1=5255">14:00</a></td>
     <td>Places to Make Use of setuptools Entry Points</td>
     <td>Albert Shih</td>
     </tr>
     <tr>
-    <td>14:30</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1430&p1=5255">14:30</a></td>
     <td>Testing Using hypothesis</td>
     <td>Albert Shih</td>
     </tr>
     <tr>
-    <td>15:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1500&p1=5255">15:00</a></td>
     <td align="center" colspan="2">Break</td>
     </tr>
     <tr>
-    <td>15:15</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1515&p1=5255">15:15</a></td>
     <td>The State of our CI</td>
     <td>Stuart Mumford</td>
     </tr>
     <tr>
-    <td>16:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1600&p1=5255">16:00</a></td>
     <td>Dependencies: Do we have too many? What versions of them should we support?</td>
     <td>Stuart Mumford</td>
     </tr>
     <tr>
-    <td>17:00</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1700&p1=5255">17:00</a></td>
     <td align="center" colspan="2">Adjourn</td>
     </tr>
 </tbody>
