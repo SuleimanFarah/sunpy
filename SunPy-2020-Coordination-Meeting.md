@@ -130,34 +130,21 @@ The meeting agenda is being openly discussed and determined on the following [go
     <th>Title</th>
     <th>Speaker</th>
     </tr>
-    <tr><td colspan="3" align="center"><em>Community Interactions</em></td></tr>
+    <tr><td colspan="3" align="center"><em>Adding/Removing Features in the Core Package</em></td></tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T09&p1=5255&ah=8&am=00">09:00</a></td>
-    <td>Results from the survey of computational tools in solar physics</td>
-    <td>Monica Bobra (?), Stuart Mumford (?)</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T09&p1=5255&ah=8&am=0">09:00</a></td>
+    <td>Should we move the instrument subpackage out of sunpy core?</td>
+    <td>Will Barnes</td>
     </tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1030&p1=5255">10:30</a></td>
-    <td>
-      Communication tools and rules.
-      <ul>
-         <li>Review of current communication platforms.</li>
-         <li>Ensuring things happen on GitHub.</li>
-         <li>What new tools could / should we be using.</li>
-       </ul>
-    </td>
-    <td>Stuart Mumford, Sophie Murray, Laura Hayes</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T0930&p1=5255">09:30</a></td>
+    <td>Should we move the Helioviewer code out of sunpy core?</td>
+    <td>Jack Ireland</td>
     </tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T0930&p1=5255&ah=7&am=30">09:30</a></td>
-    <td>
-      More users, more contributors.
-    <ul>
-       <li>User to contributor.</li>
-       <li>A Solar physics Python summer school.</li>
-     </ul>
-    </td>
-    <td>Laura Hayes (?), Will Barnes, Stuart Mumford</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1000&p1=5255">10:00</a></td>
+    <td>CompositeMap: Improve or Remove? (see <a href="https://github.com/sunpy/sunpy/issues/2150">Issue#2150</a>)</td>
+    <td>Jack Ireland</td>
     </tr>
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1100&p1=5255">11:00</a></td>
@@ -209,21 +196,34 @@ The meeting agenda is being openly discussed and determined on the following [go
     <th>Title</th>
     <th>Speaker</th>
     </tr>
-    <tr><td colspan="3" align="center"><em>Adding/Removing Features in the Core Package</em></td></tr>
+    <tr><td colspan="3" align="center"><em>Community Interactions</em></td></tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T09&p1=5255&ah=8&am=0">09:00</a></td>
-    <td>Should we move the instrument subpackage out of sunpy core?</td>
-    <td>Will Barnes</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T09&p1=5255&ah=8&am=00">09:00</a></td>
+    <td>Results from the survey of computational tools in solar physics</td>
+    <td>Monica Bobra (?), Stuart Mumford (?)</td>
     </tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T0930&p1=5255">09:30</a></td>
-    <td>Should we move the Helioviewer code out of sunpy core?</td>
-    <td>Jack Ireland</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1030&p1=5255">10:30</a></td>
+    <td>
+      Communication tools and rules.
+      <ul>
+         <li>Review of current communication platforms.</li>
+         <li>Ensuring things happen on GitHub.</li>
+         <li>What new tools could / should we be using.</li>
+       </ul>
+    </td>
+    <td>Stuart Mumford, Sophie Murray, Laura Hayes</td>
     </tr>
     <tr>
-    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1000&p1=5255">10:00</a></td>
-    <td>CompositeMap: Improve or Remove? (see <a href="https://github.com/sunpy/sunpy/issues/2150">Issue#2150</a>)</td>
-    <td>Jack Ireland</td>
+    <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T0930&p1=5255&ah=7&am=30">09:30</a></td>
+    <td>
+      More users, more contributors.
+    <ul>
+       <li>User to contributor.</li>
+       <li>A Solar physics Python summer school.</li>
+     </ul>
+    </td>
+    <td>Laura Hayes (?), Will Barnes, Stuart Mumford</td>
     </tr>
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200401T1100&p1=5255">11:00</a></td>
