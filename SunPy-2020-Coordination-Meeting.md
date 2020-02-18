@@ -137,13 +137,26 @@ The meeting agenda is being openly discussed and determined on the following [go
     </tr>
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T0930&p1=5255&ah=7&am=30">09:30</a></td>
-    <td>How do we turn users into contributors?</td>
-    <td>Laura Hayes (?), Will Barnes</td>
+    <td>
+      More users, more contributors.
+    <ul>
+       <li>User to contributor.</li>
+       <li>A Solar physics Python summer school.</li>
+     </ul>
+    </td>
+    <td>Laura Hayes (?), Will Barnes, Stuart Mumford</td>
     </tr>
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1030&p1=5255">10:30</a></td>
-    <td>A summer school on sunpy/Python for solar physics</td>
-    <td>Will Barnes, Stuart Mumford</td>
+    <td>
+      Communication tools and rules.
+      <ul>
+         <li>Review of current communication platforms.</li>
+         <li>Ensuring things happen on GitHub.</li>
+         <li>What new tools could / should we be using.</li>
+       </ul>
+    </td>
+    <td>Stuart Mumford, Sophie Murray, Laura Hayes</td>
     </tr>
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200331T1100&p1=5255">11:00</a></td>
