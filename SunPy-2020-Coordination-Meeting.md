@@ -49,12 +49,13 @@ The meeting agenda is being openly discussed and determined on the following [go
     <tr>
     <td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SunPy+2020+Coordination+meeting&iso=20200330T0940&p1=5255">09:40</a></td>
     <td>
-        State of the Union: subpackages (~7 minutes each)
+        State of the Union: subpackages (~5 minutes each)
         <ul>
             <li>coordinates: Albert Shih</li>
             <li>image: Jack Ireland</li>
             <li>instr: Daniel Ryan</li>
-            <li>map: Stuart Mumford</li>
+            <li>map: Steven Christe</li>
+            <li>net: Stuart Mumford</li>
             <li>physics: Jack Ireland</li>
             <li>roi: David P&eacute;rez-Su&aacute;rez</li>
             <li>sun: Steven Christe</li>
