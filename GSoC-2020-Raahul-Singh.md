@@ -5,7 +5,7 @@
 ### What excites me about this project? Why did I choose it?
 Just reading the title of the project was enough for me.
 A desire to work on problems like this is what got me into computer science and machine learning in the first place. To be able to work on problems in various fields of science and understand them in a way which wasn't even possible a few decades ago.
-There is a tremendous potential for applying data-driven solutions to solar physics and I wish to do my part in contributing to the effort.
+There is a tremendous potential for applying data-driven solutions to solar physics and I wish to do my part in it.
 I am a few months short of having a full year's worth of professional experience in machine learning and am well acquainted with SunPy. This gives me confidence that I would be able to finish this project successfully and on time.
 
 ### Challenges with the project
@@ -84,7 +84,7 @@ ___
 #### Week 1 (DATE)
 - As per the official timeline mentioned, this week will be spent visualising different types of data, the magnetograms, univariate, multivariate analysis of the SMART detection properties with respect to both flare generation and the ELO complexity score. I shall be making all the plots in multiple notebooks for the SunPy examples gallery.
 
-#### Week 2 - Week 3 (DATE)
+#### Week 2 (DATE)
 
 - Having already tinkered with the dataset, I have created a few basic plotting functions. Here is the [link](https://github.com/Raahul-Singh/SolarWeatherForecasting/blob/master/Data%20Preprocessing.ipynb) to the notebook that holds them. Here a few random examples. The red squares have been plotted using the Sunspotter data and the blue rectangles have been plotted from the queried HEK data. All functions are in the above-mentioned link. The red squares have been overplotted on purpose as the Sunspotter dataset lacks the information about the shape of the bounding boxes.
 
@@ -93,7 +93,7 @@ ___
 
 - I have also created a few helper functions to query the HEK database using HEKClient. I plan to further work on them and create the SunPy Search Events Object. I wish to give this at least four to five days to make this completely merge ready.
 
-#### Week 4 - Week 5 (DATE)
+#### Week 3 - Week 4 (DATE)
 
 - Having completed all the previous tasks, we are now ready to tackle the problem head-on. First, the fourth week shall be used in completing the data preprocessing as described in the previous section.
 - After ensuring that all the Cross-Validation sets are relatively balanced, the fifth week shall be used to implement a simple logistic regression model which a linear algebra model to map the complexity scores to the flare observations.
@@ -102,7 +102,7 @@ ___
 #### Phase 1 Evaluation (DATE)
 ___
 
-#### Week 6 - Week 7 (DATE)
+#### Week 5 - Week 6 (DATE)
 
 - Here, having completed the data preprocessing earlier, we will be able to use various machine learning algorithms with relative ease. All the following will be implemented using Scikit-Learn library.
 - For weeks 6 and 7, I shall make various models based on the following algorithms:
@@ -114,12 +114,12 @@ ___
 
 - All the implementations will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
-#### Week 8 (DATE)
+#### Week 7 (DATE)
 * Week 8 shall be used to implement models based on:
     * XGBoost
 - Like with the previous implementations, this will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
-#### Week 9 (DATE)
+#### Week 8 (DATE)
 
 - At this point, we move into the domain of Deep Learning.
 - For week 9, I shall be implementing a Deep Convolution Neural Network based on the paper, <br/>
@@ -130,16 +130,18 @@ ___
 #### Phase 2 Evaluation (DATE)
 ___
 
-#### Week 10 - Week 11 (DATE)
+#### Week 9 - Week 10 (DATE)
 - Here I plan on implementing an original idea for a multichannel neural network, which would have the ability to take both the Sunspotter SMART detection values along with the corresponding images. I plan on making these different types of inputs compatible by first training an AutoEncoder network on the Active Region images to learn an effective lower-dimensional encoding for the images. This shall be concatenated and re-normalised with the processed SMART detection values and the complexity score to make the final feed-forward neural network that will learn the mapping.
 This shall be a rather unchartered territory and I will give a full two weeks to implement this.
 
-#### Week 12 - Week 13 (DATE)
+#### Week 11 - Week 12 (DATE)
 - The last two weeks of the project shall be used to summarise the results of all the various experiments based on the different algorithms.
 - After selecting the best performing model, it shall be tested on SDO/HMI data from HEK.
 - An extensive notebook shall be written detailing the use of the model and possible ways to tweak the hyperparameters.
 - If time permits, as a side quest, I shall implement a neural network that directly maps the Active Region images with the ELO complexity rating. This shall help in automating the complexity prediction for magnetograms in the future.  
 
+#### Week 13 (DATE)
+- The final week shall be kept as a buffer to complete any work that for any reason was not completed on time and also to add final touches to the deliverables.
 ___
 #### Final Evaluation (DATE)
 ___
@@ -148,10 +150,7 @@ ___
 
 - Time zone: UTC+05:30
 - GitHub handle: [Raahul-Singh](https://github.com/Raahul-Singh)
-- Email: raahulsingh002@gmail.com
 - Riot: @raahulsingh:matrix.org
-- Phone: +91-8279969625
-- LinkedIn: [Raahul Singh](https://www.linkedin.com/in/raahulsingh299792458/)
 
 ### Education
 
@@ -163,45 +162,40 @@ ___
 
 - Programming Languages: Python, C++, C, Java(Basic knowledge)
 - Contributions to SunPy:
-  - As of writing this proposal I have 8 merged and 5 WIP PRs on SunPy repo. [Link](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+Raahul+Singh+is%3Aclosed)
+  - As of writing this proposal, [I have 8 merged and 5 WIP PRs on SunPy repo.](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+Raahul+Singh+is%3Aclosed)
    <br/>Some prominent ones are :
-       * One that significantly reduces the download time for the dataset used in this project through the HelioViewer API. [Link](https://github.com/sunpy/sunpy/pull/3862)
-       * One that adds a Rectangle coordinate parser to support multiple ways of specifying rectangular regions of  interest. [Link](https://github.com/sunpy/sunpy/pull/3737)
-       * One where we are working towards integrating parfive==1.1rc2 with SunPy.[Link](https://github.com/sunpy/sunpy/pull/3822)
-       * One where I implement implement Limb Darkening correction.[Link](https://github.com/sunpy/sunpy/pull/3728)
-       * One that updates warning message when coordinate information insufficient for creating sunpy map object is passed and informs the user about the missing meta data. [Link](https://github.com/sunpy/sunpy/pull/3692)
+       * [Significant reducuction of the download time for the dataset used in this project through the HelioViewer API.](https://github.com/sunpy/sunpy/pull/3862)
+       *  [Rectangle coordinate parser to support multiple ways of specifying rectangular regions of  interest.](https://github.com/sunpy/sunpy/pull/3737)
+       * [Integrating parfive==1.1rc2 with SunPy.](https://github.com/sunpy/sunpy/pull/3822)
+       * [Implementing Limb Darkening correction.](https://github.com/sunpy/sunpy/pull/3728)
+       * [Informing user when and what coordinate information may be missing when making a map.](https://github.com/sunpy/sunpy/pull/3692)
        
 - Contributions to other repos:
   - Parfive
       - [Adds support for passing User Agent headers and Proxies](https://github.com/Cadair/parfive/pull/32)
   - And other contributions to EinstienPy and ChiantiPy.
-      
+- I will be contributing to SunPy throughout the selection process and beyond.
 
 ### Work Experience
 
 ##### 1) Global Remote Mentoring (IBM GRM) Intern
 ###### IBM India
-###### Duration : January 2020 to present
+###### Duration : Four months
 - Worked on multimodal datasets containing stereo RGB and Lidar data for autonomous driving.
-- Studied various network architectures like Frustum-Point Net, Pyramid Stereo Matching Net, etc.
 - Studied about camera parameters and the linear algebra behind switching from one perspective to another.
 
 ##### 2) Data Science Intern
 ###### Masho, an e-commerce startup from Bangalore, India
-###### Duration : August 2019 to November 2019
-- Worked on cleaning and analysis of principal sourced data.
+###### Duration : Four months
 - Implemented Image to Image Similarity model using Siamese Networks for the Recommendation System, giving a robust recommendation.
-- Contributed to the core Machine Learning Recommendation Engine.
 
 #####  3) Machine Learning Intern
 ###### Indian Institute of Technology, Roorkee, India
-###### Duration : May 2019 to July 2019
-- Interned at the Biotech Department, working on Data Understanding and Visualization for Post-Harvest Apple data.
-- Made a model for understanding the behavior of various parameters like Sugar content, Acidity, Firmness, Ethyl Alcohol concentration.
+###### Duration : Three months
+- Made a model for understanding the behavior of various parameters like Sugar content, Acidity, Firmness, Ethyl Alcohol concentration and their visualization for Post-Harvest Apple data.
 - Made a predictor model for charting the evolution of these parameters over a period of six months from harvest.
 
 I think I have enough experience with python development to produce high quality, testable code.
-Further, I have [Letters of Recommendation](https://drive.google.com/open?id=1HTWUlAvQu8iQwauEmSx3T0-cupyuyjpN) from my previous employers, which demonstrate my commitment to the work assigned to me.
 
 ## You and GSoC
 
@@ -213,7 +207,7 @@ Further, I have [Letters of Recommendation](https://drive.google.com/open?id=1HT
 
 ### Commitments
 I don't have any other internship or work during this summer and have no plans for any vacations either. <br/>
-I can work full time on the project and can give ~40-50 hours per week and more if required.
+I can work full time on the project and can give ~35-40 hours per week and more if required.
 
 ### Eligibility
 Yes, I am eligible to receive payments from Google.
@@ -227,4 +221,5 @@ Yes, I am eligible to receive payments from Google.
 * `Solar flare prediction using advanced feature extraction, machine learning and feature selection` [Ahmed OW, Qahwaji RSR, Colak T, Higgins PA, Gallagher PTand Bloomfield DS (2013) Solar physics. 283(1): 157-175](https://bradscholars.brad.ac.uk/handle/10454/7581)
 
 * `Predicting Solar Flares Using a Novel Deep Convolutional Neural Network` [Xuebao Li, Yanfang Zheng, et al 2020](https://iopscience.iop.org/article/10.3847/1538-4357/ab6d04/pdf)
+
 
