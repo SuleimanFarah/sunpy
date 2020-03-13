@@ -3,10 +3,10 @@
 
 
 ### What excites me about this project? Why did I choose it?
-Just reading the title of the project was enough for me. **This** is what I want to do in life.
-This is what got me into computer science and machine learning in the first place. To be able to work on problems in various fields of science and understand them in a way which wasn't even possible a few decades ago.
-I dream of applying AI and data-driven solutions to understand our cosmos even further.
-I am a few months short of having a full year's worth of professional experience in ML, am well acquainted with SunPy and believe that I would be able to finish this project successfully and on time.
+Just reading the title of the project was enough for me.
+A desire to work on problems like this is what got me into computer science and machine learning in the first place. To be able to work on problems in various fields of science and understand them in a way which wasn't even possible a few decades ago.
+There is a tremendous potential for applying data-driven solutions to solar physics and I wish to do my part in contributing to the effort.
+I am a few months short of having a full year's worth of professional experience in machine learning and am well acquainted with SunPy. This gives me confidence that I would be able to finish this project successfully and on time.
 
 ### Challenges with the project
 
@@ -60,6 +60,14 @@ These models will map various inputs to the following forecast parameters.
 | `m5flr24hr`         | at least one M5.0 or greater flare within 24 hr after the observation. |
 
 The accuracy of the model in predicting these parameters would be its accuracy in forecasting the solar weather.
+
+## Deliverables
+ 
+This project will have the following deliverables:
+* Multiple notebooks for the Sunpy Examples gallery that highlight each algorithm implemented along with an interpretation of the results.
+* The best performing trained model, properly documented and with instructions on how to use it.
+* Instructions on how to retrain the model if necessary.
+* A well documented and tested SunPy Search Events Object for querying Heliophysics Events Knowledgebase using HEKClient API.
 
 ### Timeline
 ___
@@ -142,6 +150,7 @@ ___
 - GitHub handle: [Raahul-Singh](https://github.com/Raahul-Singh)
 - Email: raahulsingh002@gmail.com
 - Riot: @raahulsingh:matrix.org
+- Phone: +91-8279969625
 - LinkedIn: [Raahul Singh](https://www.linkedin.com/in/raahulsingh299792458/)
 
 ### Education
@@ -155,7 +164,13 @@ ___
 - Programming Languages: Python, C++, C, Java(Basic knowledge)
 - Contributions to SunPy:
   - As of writing this proposal I have 8 merged and 5 WIP PRs on SunPy repo. [Link](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+Raahul+Singh+is%3Aclosed)
-      <br/>Including one that significantly reduces the download time for the dataset used in this project through the HelioViewer API. [Link](https://github.com/sunpy/sunpy/pull/3862)
+   <br/>Some prominent ones are :
+       * One that significantly reduces the download time for the dataset used in this project through the HelioViewer API. [Link](https://github.com/sunpy/sunpy/pull/3862)
+       * One that adds a Rectangle coordinate parser to support multiple ways of specifying rectangular regions of  interest. [Link](https://github.com/sunpy/sunpy/pull/3737)
+       * One where we are working towards integrating parfive==1.1rc2 with SunPy.[Link](https://github.com/sunpy/sunpy/pull/3822)
+       * One where I implement implement Limb Darkening correction.[Link](https://github.com/sunpy/sunpy/pull/3728)
+       * One that updates warning message when coordinate information insufficient for creating sunpy map object is passed and informs the user about the missing meta data. [Link](https://github.com/sunpy/sunpy/pull/3692)
+       
 - Contributions to other repos:
   - Parfive
       - [Adds support for passing User Agent headers and Proxies](https://github.com/Cadair/parfive/pull/32)
@@ -211,4 +226,5 @@ Yes, I am eligible to receive payments from Google.
 
 * `Solar flare prediction using advanced feature extraction, machine learning and feature selection` [Ahmed OW, Qahwaji RSR, Colak T, Higgins PA, Gallagher PTand Bloomfield DS (2013) Solar physics. 283(1): 157-175](https://bradscholars.brad.ac.uk/handle/10454/7581)
 
-* `Predicting Solar Flares Using a Novel Deep Convolutional Neural Network` [Xuebao Li, Yanfang Zheng, et al 2020](https://iopscience.iop.org/article/10.3847/1538-4357/ab6d04/pdf`
+* `Predicting Solar Flares Using a Novel Deep Convolutional Neural Network` [Xuebao Li, Yanfang Zheng, et al 2020](https://iopscience.iop.org/article/10.3847/1538-4357/ab6d04/pdf)
+
