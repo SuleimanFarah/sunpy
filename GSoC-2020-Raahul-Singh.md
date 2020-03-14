@@ -71,7 +71,7 @@ This project will have the following deliverables:
 
 ### Timeline
 ___
-#### Community Bonding Period (DATE)
+#### Community Bonding Period 
 ___
 
 - I shall spend this time exploring the dataset, discussing possible modifications to the architectures and hyperparameter tuning with my mentors, and continuing my contributions to SunPy.
@@ -81,10 +81,10 @@ ___
 #### Coding Period Begins
 ___
 
-#### Week 1 (DATE)
+#### Week 1
 - As per the official timeline mentioned, this week will be spent visualising different types of data, the magnetograms, univariate, multivariate analysis of the SMART detection properties with respect to both flare generation and the ELO complexity score. I shall be making all the plots in multiple notebooks for the SunPy examples gallery.
 
-#### Week 2 (DATE)
+#### Week 2 
 
 - Having already tinkered with the dataset, I have created a few basic plotting functions. Here is the [link](https://github.com/Raahul-Singh/SolarWeatherForecasting/blob/master/Data%20Preprocessing.ipynb) to the notebook that holds them. Here a few random examples. The red squares have been plotted using the Sunspotter data and the blue rectangles have been plotted from the queried HEK data. All functions are in the above-mentioned link. The red squares have been overplotted on purpose as the Sunspotter dataset lacks the information about the shape of the bounding boxes.
 
@@ -93,16 +93,16 @@ ___
 
 - I have also created a few helper functions to query the HEK database using HEKClient. I plan to further work on them and create the SunPy Search Events Object. I wish to give this at least four to five days to make this completely merge ready.
 
-#### Week 3 - Week 4 (DATE)
+#### Week 3 - Week 4 
 
 - Having completed all the previous tasks, we are now ready to tackle the problem head-on. First, the fourth week shall be used in completing the data preprocessing as described in the previous section.
 - After ensuring that all the Cross-Validation sets are relatively balanced, the fifth week shall be used to implement a simple logistic regression model which a linear algebra model to map the complexity scores to the flare observations.
 - This model shall serve as a benchmark for comparing all other models.
 ___
-#### Phase 1 Evaluation (DATE)
+#### Phase 1 Evaluation 
 ___
 
-#### Week 5 - Week 6 (DATE)
+#### Week 5 - Week 6 
 
 - Here, having completed the data preprocessing earlier, we will be able to use various machine learning algorithms with relative ease. All the following will be implemented using Scikit-Learn library.
 - For weeks 6 and 7, I shall make various models based on the following algorithms:
@@ -114,12 +114,12 @@ ___
 
 - All the implementations will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
-#### Week 7 (DATE)
+#### Week 7 
 * Week 8 shall be used to implement models based on:
     * XGBoost
 - Like with the previous implementations, this will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
-#### Week 8 (DATE)
+#### Week 8 
 
 - At this point, we move into the domain of Deep Learning.
 - For week 9, I shall be implementing a Deep Convolution Neural Network based on the paper, <br/>
@@ -127,23 +127,23 @@ ___
 
 This shall be implemented using either the PyTorch or TensorFlow2.0 libraries, which shall be decided after discussing with the mentors.
 ___
-#### Phase 2 Evaluation (DATE)
+#### Phase 2 Evaluation 
 ___
 
-#### Week 9 - Week 10 (DATE)
+#### Week 9 - Week 10 
 - Here I plan on implementing an original idea for a multichannel neural network, which would have the ability to take both the Sunspotter SMART detection values along with the corresponding images. I plan on making these different types of inputs compatible by first training an AutoEncoder network on the Active Region images to learn an effective lower-dimensional encoding for the images. This shall be concatenated and re-normalised with the processed SMART detection values and the complexity score to make the final feed-forward neural network that will learn the mapping.
 This shall be a rather unchartered territory and I will give a full two weeks to implement this.
 
-#### Week 11 - Week 12 (DATE)
+#### Week 11 - Week 12 
 - The last two weeks of the project shall be used to summarise the results of all the various experiments based on the different algorithms.
 - After selecting the best performing model, it shall be tested on SDO/HMI data from HEK.
 - An extensive notebook shall be written detailing the use of the model and possible ways to tweak the hyperparameters.
 - If time permits, as a side quest, I shall implement a neural network that directly maps the Active Region images with the ELO complexity rating. This shall help in automating the complexity prediction for magnetograms in the future.  
 
-#### Week 13 (DATE)
+#### Week 13 
 - The final week shall be kept as a buffer to complete any work that for any reason was not completed on time and also to add final touches to the deliverables.
 ___
-#### Final Evaluation (DATE)
+#### Final Evaluation 
 ___
 
 ## Personal Info
