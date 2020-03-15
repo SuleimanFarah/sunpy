@@ -95,8 +95,8 @@ ___
 
 #### Week 3 - Week 4 
 
-- Having completed all the previous tasks, we are now ready to tackle the problem head-on. First, the fourth week shall be used in completing the data preprocessing as described in the previous section.
-- After ensuring that all the Cross-Validation sets are relatively balanced, the fifth week shall be used to implement a simple logistic regression model which a linear algebra model to map the complexity scores to the flare observations.
+- Having completed all the previous tasks, we are now ready to tackle the problem head-on. First, the third week shall be used in completing the data preprocessing as described in the previous section.
+- After ensuring that all the Cross-Validation sets are relatively balanced, the fourth week shall be used to implement a simple logistic regression model which a linear algebra model to map the complexity scores to the flare observations.
 - This model shall serve as a benchmark for comparing all other models.
 ___
 #### Phase 1 Evaluation 
@@ -105,7 +105,7 @@ ___
 #### Week 5 - Week 6 
 
 - Here, having completed the data preprocessing earlier, we will be able to use various machine learning algorithms with relative ease. All the following will be implemented using Scikit-Learn library.
-- For weeks 6 and 7, I shall make various models based on the following algorithms:
+- For weeks 5 and 6, I shall make various models based on the following algorithms:
     
     * Decision Trees
     * Random Forest
@@ -115,14 +115,14 @@ ___
 - All the implementations will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
 #### Week 7 
-* Week 8 shall be used to implement models based on:
+* Week 7 shall be used to implement models based on:
     * XGBoost
 - Like with the previous implementations, this will be accompanied by an analysis blog post on the nature of the algorithm, an analysis of the results and possible deductions on the accuracy metric.
 
 #### Week 8 
 
 - At this point, we move into the domain of Deep Learning.
-- For week 9, I shall be implementing a Deep Convolution Neural Network based on the paper, <br/>
+- For week 8, I shall be implementing a Deep Convolution Neural Network based on the paper, <br/>
  `Deep Learning-Based Solar Flare Forecasting Model. I. Results for Line-of-sight Magnetograms` [Huang et al.](https://iopscience.iop.org/article/10.3847/1538-4357/aaae00/pdf)
 
 This shall be implemented using either the PyTorch or TensorFlow2.0 libraries, which shall be decided after discussing with the mentors.
