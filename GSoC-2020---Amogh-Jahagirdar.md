@@ -171,7 +171,27 @@ discussed this with the mentors before, I decided to implement Stratified K-Fold
 ## Timeline:
 
 
-### Community Bonding Period (May 4 - June 1)
+<!----- Conversion time: 0.604 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β20
+* Fri Mar 27 2020 09:26:54 GMT-0700 (PDT)
+* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
+### Community Bonding Period (May 4 -  May 31)
 
 
 
@@ -189,7 +209,7 @@ discussed this with the mentors before, I decided to implement Stratified K-Fold
 *   Complete data pre-processing
 
 
-### Week 2 (June 7 - June 14)
+### Week 2 (June 8 - June 14)
 
 
 
@@ -216,72 +236,70 @@ discussed this with the mentors before, I decided to implement Stratified K-Fold
 ### Evaluation 1 (June 29 - July 3)
 
 
-### Week 5 - 6 (July 4 - July 18)
+### Week 5 - 6 (June 29  - July 12)
 
 
 
 *   Implementation of Deep Flare Network (DeFN)
+    *   Allocating 2 weeks here to ensure there is sufficient time for implementing and training the model
 
 
-### Week 7 (July 18 - July 25)
+### Week 7 (July 13 - July 19)
 
 
 
+*   Writing the essential classes and member functions which the user will interact with directly when using the module
 *   Write a jupyter notebook showing the use of the neural network for SunPy example gallery
-*   Write unit tests for the linear model pipeline
+
+
+### Week 8 (July 20 - July 26)
+
+
+
+*   Buffer week to overcome any lags in the schedule
 
 
 ### Evaluation 2 (July 27 - July 31)
 
 
-### Week 8 (August 1 - August 7)
+### Week 9 (July 27 - August 2)
 
 
 
+*   Write unit tests for the linear model pipeline
 *   Write unit tests for the neural network pipeline
+
+
+### Week 10 (August 3 - August 9)
+
+
+
 *   Write integration tests for the project
-
-
-### Week 9 (August 8 - August 14)
-
-
-
 *   Complete integration into the official SunPy library
+
+
+### Week 11 (August 10 - August 16)
+
+
+
 *   Test out the model against SDO/HMI data
 *   Write a notebook showcasing the same, along with external hyperparameter tuning for the neural network 
 
 
-### Week 10 (August 14 - 24)
+### Week 12 (August 17 - August 24)
 
 
 
 *   Documentation and final touches
 
 
-### Final Evaluation
+### Week 13 (August 24 - August 30)
 
+
+
+*   Final Evaluation
 
 <!-- Docs to Markdown version 1.0β20 -->
-<!----- Conversion time: 0.355 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β20
-* Fri Mar 27 2020 04:21:13 GMT-0700 (PDT)
-* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
-* This is a partial selection. Check to make sure intra-doc links work.
------>
-
-
-
 ## References:
 
 
