@@ -71,7 +71,7 @@ All my above projects have git-based version control and are hosted on github.co
 
 [Notebook](https://www.kaggle.com/amoghjrules/predicting-solar-activity) containing my exploratory analyses and implementation of baseline models 
 
-[Colab notebook](https://colab.research.google.com/drive/1gfoyXNClV2NbKCiAdX4JJr255QfocmXc) with Sunspotter EDA with interacting with SunPy modules
+[Colab notebook](https://colab.research.google.com/drive/1gfoyXNClV2NbKCiAdX4JJr255QfocmXc) with Sunspotter EDA and interacting with SunPy modules
 
 
 ## Proposal: 
