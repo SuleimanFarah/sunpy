@@ -170,8 +170,7 @@ discussed this with the mentors before, I decided to implement Stratified K-Fold
 ![Target distributions](https://i.postimg.cc/cJWkv3Bm/target.png)
 ## Timeline:
 
-
-<!----- Conversion time: 0.604 seconds.
+<!----- Conversion time: 0.956 seconds.
 
 
 Using this Markdown file:
@@ -184,7 +183,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β20
-* Fri Mar 27 2020 09:26:54 GMT-0700 (PDT)
+* Fri Mar 27 2020 13:33:18 GMT-0700 (PDT)
 * Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
 * This is a partial selection. Check to make sure intra-doc links work.
 ----->
@@ -225,6 +224,14 @@ Conversion notes:
 *   Implement ensemble learning
 
 
+### Pull Request 1
+
+
+
+---
+
+
+
 ### Week 4 (June 23 - June 29)
 
 
@@ -244,6 +251,14 @@ Conversion notes:
     *   Allocating 2 weeks here to ensure there is sufficient time for implementing and training the model
 
 
+### Pull Request 2
+
+
+
+---
+
+
+
 ### Week 7 (July 13 - July 19)
 
 
@@ -257,6 +272,14 @@ Conversion notes:
 
 
 *   Buffer week to overcome any lags in the schedule
+
+
+### Pull Request 3
+
+
+
+---
+
 
 
 ### Evaluation 2 (July 27 - July 31)
@@ -278,6 +301,14 @@ Conversion notes:
 *   Complete integration into the official SunPy library
 
 
+### Pull Request 4
+
+
+
+---
+
+
+
 ### Week 11 (August 10 - August 16)
 
 
@@ -293,11 +324,22 @@ Conversion notes:
 *   Documentation and final touches
 
 
+### Pull Request 5 (Final PR)
+
+
+
+---
+
+
+
 ### Week 13 (August 24 - August 30)
 
 
 
 *   Final Evaluation
+
+<!-- Docs to Markdown version 1.0β20 -->
+
 
 <!-- Docs to Markdown version 1.0β20 -->
 ## References:
