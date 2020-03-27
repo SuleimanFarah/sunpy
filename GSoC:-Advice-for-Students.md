@@ -23,7 +23,7 @@ To do this:
 * Set up your platform to develop with SunPy.
 
   You will need to create yourself an account on [GitHub](https://github.com).
-  Our [Newcommer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
+  Our [Newcomer's guide](http://docs.sunpy.org/en/latest/dev_guide/newcomers.html) will walk you through setting up git and lays out our preferred way of development.
 
 * Try using SunPy.
 
