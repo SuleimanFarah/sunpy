@@ -262,3 +262,31 @@ discussed this with the mentors before, I decided to implement Stratified K-Fold
 
 
 <!-- Docs to Markdown version 1.0β20 -->
+<!----- Conversion time: 0.355 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β20
+* Fri Mar 27 2020 04:21:13 GMT-0700 (PDT)
+* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
+## References:
+
+
+
+*   [Deep Flare Net (DeFN) for Solar Flare Prediction](https://arxiv.org/abs/1805.03421)
+
+<!-- Docs to Markdown version 1.0β20 -->
+
