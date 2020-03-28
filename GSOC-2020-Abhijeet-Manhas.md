@@ -44,7 +44,10 @@ Fido naturally seemed to be an obvious project for me in SunPy after the ideas l
 ## Synopsis
 
 **Federated internet data obtainer** (Fido) is a very powerful query and fetch interface when it comes to its flexibility and versatility with different types of clients and query attributes. The data archives available at various FTP and HTTP sites mostly offer file-based records accessible easily through time ranges, and Fido evolved to efficiently handle such queries.
-This project will be an attempt to refactor the net module by standardizing all client classes and their responses. It will enable Fido to parse metadata queries and allow users to inspect them as well. The project will also attempt to solve download failures with JSOC and VSO as in [Issue #3336](https://github.com/sunpy/sunpy/issues/3336)  and [Issue #3773](https://github.com/sunpy/sunpy/issues/3733) respectively. This would be followed by writing pytests for various untested functions in the module.
+
+This project will be an attempt to refactor the net module by standardizing all client classes and their responses. It will enable Fido to parse metadata queries and allow users to inspect them as well. The project will also attempt to solve download failures with JSOC and VSO as in [Issue #3336](https://github.com/sunpy/sunpy/issues/3336)  and [Issue #3773](https://github.com/sunpy/sunpy/issues/3733) respectively.
+
+This would be followed by writing pytests for various untested functions in the module.
 The project will end with easy interpretable documentation of code and gallery examples wherever possible; I will be constantly maintaining my blog as well so please feel free to check it before evaluation!
 
 Breaking down the project into components:-
