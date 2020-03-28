@@ -108,9 +108,9 @@ ___
 
 - I shall spend this time exploring the dataset, discussing possible modifications to the architectures and hyperparameter tuning with my mentors, and continuing my contributions to SunPy.
 
-- I also plan on familiarising with the SMART algorithm and its outputs from the ground up using the [IDL implementation](https://github.com/TCDSolar/SMART). This will help me understand the various parameters and their generation.
+- I also plan on familiarising myself with the SMART algorithm and its outputs from the ground up using the [IDL implementation](https://github.com/TCDSolar/SMART). This will help me understand the various parameters and their generation.
 
-- Since Google has provided an extra week this year for community bonding, I shall use this time to recreate the Elo rating in python and or compare it with other ratings (e.g.,   [Glicko's](https://en.wikipedia.org/wiki/Glicko_rating_system),
+- Since Google has provided an extra week this year for community bonding, I shall use this time to recreate the Elo rating in python and compare it with other ratings (e.g., [Glicko's](https://en.wikipedia.org/wiki/Glicko_rating_system),
   [Bradley-Terry's](https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model)).
   
   [Glicko](https://github.com/sublee/glicko) is an implementation I found on GitHub that I can fork and modify.
@@ -121,7 +121,7 @@ ___
 #### Week 1
 - As per the official timeline mentioned, this week will be spent visualising different types of data, the magnetograms, univariate, multivariate analysis of the SMART detection properties with respect to both flare generation and the ELO complexity score. I shall be making all the plots in multiple notebooks for the SunPy examples gallery.
 
-- The statistical analysis of the ELO complexity score and its variation respect to with the production of flares will be analyzed. It is believed that the more complex an active region, the more likely it is to produce flares. The work done this week will help test this belief.
+- The statistical analysis of the ELO complexity score and its variation with respect to with the production of flares will be analyzed. It is believed that the more complex an active region, the more likely it is to produce flares. The work done this week will help test this belief.
 
 - Further, I would begin working on the Search Events Object as has been described above.
 
@@ -134,7 +134,7 @@ ___
 
 - I have also created a few helper functions to query the HEK database using HEKClient. I plan to further work on them and create the SunPy Search Events Object. I wish to give this at least four to five days to make this completely merge ready.
 
-- Taking into consideration, the FIDO project schedule, I shall use the remaining days of this week as a buffer to accommodate any delays. If work is completed swiftly, I shall move on to the tasks of the following weeks straightaway.
+- Taking into consideration, the FIDO project schedule, I shall use the remaining days of this week as a buffer to accommodate any delays. If work is completed swiftly, I shall move on to the tasks of the following weeks straight away.
 
 #### Week 3 - Week 4
 
@@ -144,7 +144,7 @@ ___
 
 - These models shall serve as benchmarks for comparing against deep learning models.
 
-- All the following will be implemented using Scikit-Learn library:
+- All of the following will be implemented using Scikit-Learn and other ML libraries:
 
     * Random Forest
     * SVM
@@ -203,7 +203,7 @@ ___
 
 - Here I plan on implementing an original idea for a multichannel neural network, which would have the ability to take both the Sunspotter SMART detection values along with the corresponding images. I plan on making these different types of inputs compatible by first training an AutoEncoder network on the Active Region images to learn an effective lower-dimensional encoding for the images. This shall be concatenated and re-normalised with the processed SMART detection values and the complexity score to make the final feed-forward neural network that will learn the mapping.
 
-- Auto Encoder will be like a Neural Network version of SMART that given a particular image of an AR will characterise it with some properties. It will give us a vector of distilled information from each image, but unlike SMART, it is a black box. We will not know what the values in that vector represent.
+- Auto Encoder will be like a `Neural Network` version of SMART which when given a particular image of an AR, will characterise it with some properties. It will give us a vector of distilled information from each image, but unlike SMART, it is a black box. We will not know what the values in that vector represent.
 
 - I shall also retrain the best performing non-Deep Learning model from previous weeks to see if we can get comparable results from less computationally taxing algorithms.
 
