@@ -9,7 +9,7 @@ You can do this after you have finalised the version on the GSoC website.
 Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings.
 
 You should include most of the following information in your application.
-**However, we should suggest you use your own judgement remove sections that might not be relevant or to add news that are not listed but are relevant to the project.**
+**However, we should suggest you use your own judgement, remove sections that might not be relevant or add sections that are relevant to the project but are not listed.**
 
 ## Title
 
