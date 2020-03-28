@@ -1,6 +1,7 @@
 # Space Weather forecasting using machine learning 
 
 Main description is available at [the OA page for this project](https://openastronomy.org/gsoc/gsoc2019/#/projects?project=space_weather_forecasting_using_machine_learning).
+Are you looking for the [[GSoC 2020 version of this idea | GSOC-2020-Ideas-Information]]?
 
 ## Prior Knowledge
 
