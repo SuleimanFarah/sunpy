@@ -58,7 +58,8 @@ I, therefore, propose to use an Auto Encoder to distil the information in the im
 
 * Autoencoder is an unsupervised artificial neural network that learns how to efficiently compress and encode data then learns how to reconstruct the data back from the reduced encoded representation to a representation that is as close to the original input as possible. Autoencoder, by design, reduces data dimensions by learning how to ignore the noise in the data.
 
-* In addition to being used with a neural network, this lower-dimensional encoding can also be fed to simpler Machine Learning models. In my experience, the complexity and the representation of data plays a very important role in any learning task and if from simpler models, we can get comparable results to computationally heavy black box algorithms like neural networks, we should prefer simpler ones as they would be easier to debug. Explaining their classifications or regression outputs would also be easier.
+* In addition to being used with a neural network, this lower-dimensional encoding can also be fed to simpler Machine Learning models. In my experience, the complexity and the representation of data plays a very important role in any learning task. If with simpler models, we can get results comparable to computationally heavy black box algorithms like neural networks, we should prefer them as they are easier to debug and explain.
+
 
 The reasons why I would prefer reducing the dimensionality of knowledge using Auto Encoders over creating more data by using algorithms like GANs to solve the class imbalance problem is:
 
