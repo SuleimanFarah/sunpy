@@ -87,11 +87,12 @@ This will also include adding `_can_handle_meta_search` in each subclass to regi
 This will be responsible for dispatching the correct client based on the function`_can_handle_meta_search`. Luckily, the response objects would already have been standardized after task 1. Users will have to pass the arguments say for example:-
 ```Fido.search_metadata(a.EventType('FL'), a.Time(start,end))``` and Fido will know to use HEKClient for matching records through _can_handle_meta_search registration.
 This will return a modified dictionary of metadata and the `__repr__` function for this dictionary will ensure the output is human-readable.
-
+<!--
 ### 3.3 Standardizations for HelioViewer*
 
 It would be slightly typical to standardize the  `HelioViewerClient` since it has four types of searchers’ namely `get_closet_image`, `get_jp2_header` returning dict and `download_jp2`, `download_png` returning a file url.
  For those returning dict, a similar API to `meta_cols` shall be implemented allowing a few default columns and user-chosen columns. The `attrs` passed in the query will be used for meta only response for those which return a url. To increase interpretability, Users can provide options to display Sunpy maps in the response table also.
+-->
 
 ## 4. Query inspection and post search Filtering
 
@@ -170,7 +171,7 @@ Implement `meta_cols` for DR Clients for query-specific columns in the response 
 
 ### Week 8 (July 20 - july 27)
 
-Standardize HelioViewerClient.
+Make `GOESClient` able to know the satellite number without being hard coded datewise using scraper ([Issue #3337](https://github.com/sunpy/sunpy/issues/3337)).
 ___
 
 #### EVALUATION 2 (June 29 - July 3)
