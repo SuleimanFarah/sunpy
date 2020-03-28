@@ -335,7 +335,7 @@ Writing down documentation which clearly explains the purpose of the module, the
 
 
 
-*   Write a notebook showcasing the same, along with external hyperparameter tuning for the neural network 
+*   Write notebooks showcasing both neural network implementations, along with external hyperparameter tuning
 *   Documentation and final touches
 
 
