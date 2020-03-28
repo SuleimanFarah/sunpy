@@ -13,11 +13,11 @@ I am two months short of having a full year's worth of professional experience i
 
 - The first challenge with creating a Search Events Object would be matching the Active Regions in the Sunspotter dataset with the Active Regions in various Solar Data catalogues, like HEK and Helio. We only need to worry about matching Sunspotter ARs to any catalogue that has NOAA AR numbers. Once we have the NOAA AR numbers for the ARs, we can access various other catalogues easily.
 
-- Matching catalogues (joining tables) when the fields are not exactly with the same value (i.e., allowing to specify what counts as a match) would be the next task. For example, for any given observation date, the HEK data for the ARs usually does not match exactly with the Sunspotter data. This is made evident but the lack of proper overlap in the [various full disk plots that I have made in this notebook](https://github.com/Raahul-Singh/SolarWeatherForecasting/blob/master/Data%20Preprocessing.ipynb). 
+- Matching catalogues (joining tables) when the fields are not exactly with the same value (i.e., allowing to specify what counts as a match) would be the next task. For example, for any given observation date, the HEK data for the ARs usually does not match exactly with the Sunspotter data. This is made evident by the lack of proper overlap in the [various full disk plots that I have made in this notebook](https://github.com/Raahul-Singh/SolarWeatherForecasting/blob/master/Data%20Preprocessing.ipynb). 
 
-- This matching of various ARs across Sunspotter data and the HEK will be done by first identifying common fields and then to match the rows, the algorithm described in the [Tool for OPerations on Catalogues And Tables (TOPCAT)](http://www.star.bris.ac.uk/~mbt/topcat/sun253/pairMatch.html) which is [explained here](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) will be used.
+- This matching of various ARs across Sunspotter data and the HEK will be done by first identifying common fields and then to match the rows, the algorithm described in the [Tool for OPerations on Catalogues And Tables (TOPCAT)](http://www.star.bris.ac.uk/~mbt/topcat/sun253/pairMatch.html) [which is explained here](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) will be used.
 
-- Next, we extend the `hek2vso` client and towards better integrating it with Fido. The idea is to create a single interface for getting the metadata and the various types of files associated with an observation. The long term idea is to get a unified interface where we can get data and meta-information about any event from a given observation date. One of the outcomes would be, the user being able to get event-specific information from HEK or other sources and use them in conjunction with the downloaded HMI and AIA data [as is being done here.](https://docs.sunpy.org/en/stable/generated/gallery/sunpy_other_packages/reprojection_align_aia_hmi.html#sphx-glr-generated-gallery-sunpy-other-packages-reprojection-align-aia-hmi-py)
+- Next, we extend the `hek2vso` client and work towards better integrating it with Fido. The idea is to create a single interface for getting the metadata and the various types of files associated with an observation. The long term idea is to get a unified interface where we can get data and meta-information about any event from a given observation date. One of the outcomes would be, the user being able to get event-specific information from HEK or other sources and use them in conjunction with the downloaded HMI and AIA data [as is being done here.](https://docs.sunpy.org/en/stable/generated/gallery/sunpy_other_packages/reprojection_align_aia_hmi.html#sphx-glr-generated-gallery-sunpy-other-packages-reprojection-align-aia-hmi-py)
 
 Another aspect of this Search Events Object would be a dictionary that would map names between different catalogues so that the same `features.attribute` can be used on different catalogue searches (e.g., a flare is translated as FL in HEK and as the different flare tables on HELIO).
 The object would be made subscript-able to facilitate easy access.
@@ -60,11 +60,10 @@ I, therefore, propose to use an Auto Encoder to distil the information in the im
 
 * In addition to being used with a neural network, this lower-dimensional encoding can also be fed to simpler Machine Learning models. In my experience, the complexity and the representation of data plays a very important role in any learning task. If with simpler models, we can get results comparable to computationally heavy black box algorithms like neural networks, we should prefer them as they are easier to debug and explain.
 
-
 The reasons why I would prefer reducing the dimensionality of knowledge using Auto Encoders over creating more data by using algorithms like GANs to solve the class imbalance problem is:
 
 - There would be no way to verify the effect of the AR metadata on the final classification. If we mix real observations with artificially produced data, we would still only have the observed metadata (from sources like HEK) for the real data. This would restrict us to simply using images for our forecasting.
-- GANs would only produce more image data. This restricts us to image only algorithms, as the dataset would remain imbalanced for all other algorithms.
+- We would only produce more image data. This restricts us to image only algorithms, as the dataset would remain imbalanced for all other algorithms.
 - GANs are amongst the most computationally expensive algorithms and are not always stable enough to get diverse data production. There are [various other problems like mode collapse, etc.](https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b) which may cause major problems, quite unrelated to our main task of flare forecasting.
 
 
@@ -213,7 +212,7 @@ This shall be a rather unchartered territory and I will give a full two weeks to
 #### Week 11 - Week 12
 
 - The last two weeks of the project shall be used to summarise the results of all the various experiments based on the different algorithms.
-- After selecting the best performing model, it shall be tested on SDO/HMI data from HEK.
+- After selecting the best performing model, it shall be tested on SDO/HMI data.
 - An extensive notebook shall be written detailing the use of the model and possible ways to tweak the hyperparameters.
 - If time permits, as a side quest, I shall implement a neural network that directly maps the Active Region images with the ELO complexity rating. This shall help in automating the complexity prediction for magnetograms in the future.  
 
