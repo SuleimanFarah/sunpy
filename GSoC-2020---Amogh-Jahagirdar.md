@@ -83,6 +83,13 @@ What excites me about this project is the long lasting impact my work will have 
 I chose this project because it aligns with my technical skills and interests. Moreover, the SunPy community is very responsive and receptive, which is a sign that they are passionate about the project.
 
 As mentioned earlier, I have a sound background in Machine Learning, Neural networks and Data Science. Being fluent in Python will enable me to write clean, readable code and maintain the high coding standards of the library. Self motivated and enthusiastic, I will not have any problem working independently, asking the mentors for help only when it is really needed.
+### Challenges:
+
+On plotting out the target variable (the classification variable) a clear bias towards the negative class is visible. This unbalanced target distribution can lead to poorly trained models. Having 
+
+discussed this with the mentors before, I decided to implement Stratified K-Fold validation. Stratified K-Fold takes K-Fold validation a step further in that it ensures that the distribution of classes in every fold is identical to that of the overall dataset. I have already implemented a flexible Stratified K-Fold generating pipeline as a means of generating Out of Fold training data.
+![Target distributions](https://i.postimg.cc/cJWkv3Bm/target.png)
+
 
 
 ## Implementation:
@@ -111,6 +118,26 @@ Exploratory Data Analysis or EDA involves plotting graphs inorder to uncover und
 The inferences obtained on analyzing these plots will provide the basis on which the modeling technique(s) are chosen.
 
 ![](https://i.postimg.cc/2SJFfGpX/image.png)
+<!----- Conversion time: 0.792 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β20
+* Sat Mar 28 2020 00:13:31 GMT-0700 (PDT)
+* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
 ### Task 2 (b) - Feature Generation:
 
 The inference obtained will not only be used to choose the appropriate models, but will also be used to analyze the possibility of generating new more information rich features by combining 2 or more features with a low correlation score, or dropping redundant features to improve the model.
@@ -147,47 +174,33 @@ Here is where most of the heavy-lifting will be done.
 These methods are the industry standard in modern day data-science. I have just made a baseline implementation of the same in the notebook and yet I was able to achieve accuracy upwards of 88%.
 
 
-### Task 4 - Implementing the pipeline as an API into SunPy:
+### Task 4 - Implementing conditional GANs to overcome the class imbalance problems
+
+
+
+*   While cross validation techniques help reduce the impact of the class imbalance problem, it is still very likely that a machine learning model will train on the variation in frequency of different classes rather than training purely on the features.
+*   Implement a state of the art conditional Generative Adversarial Network ([cGANs with Multi-Hinge Loss](https://arxiv.org/abs/1912.04216v1)) to generate images of the imbalanced positive class, eliminating the class imbalance and hence improving predictions
+*   A Generative Adversarial Network (GAN) consists of a network that maps generated vectors onto a data example space (A generator) and concurrent network that evaluates its success by judging examples from the dataset as real or fake (A discriminator). GANs have been shown to be capable of generating high-quality and diverse images from data[[1](https://arxiv.org/abs/1809.11096v1)]
+*   In this specific framework of MHingeGANs, a single classifier is trained for multiple classes with 1 loss function instead of a real/fake discriminator pair. 
+*   Instead of using the minimum cross entropy loss function, here we generalize the binary hinge loss[[2](https://arxiv.org/abs/1702.08896)] to a multiclass hinge loss known for SVMs. This has been proved to outperform projection discrimination which was used in the previous state of the art.
+
+
+### Task 5 - Implementing the pipeline as an API into SunPy:
 
 Integrating the above trained models into a SunPy model class with member functions like fit, predict and feature importances, with the ability to choose between the different modelling techniques shown above. 
 
 
-### Task 5 - Writing unit and integration tests
+### Task 6 - Writing unit and integration tests
 
 This constitutes writing unit tests for each sub-module within the project and integration tests to ensure that there are no conflicts within the module itself.
 
 
-### Task 6 - Documentation
+### Task 7 - Documentation
 
 Writing down documentation which clearly explains the purpose of the module, the classes, member functions, callbacks and other details along with their usage.
 
 
-### Challenges:
-
-On plotting out the target variable (the classification variable) a clear bias towards the negative class is visible. This unbalanced target distribution can lead to poorly trained models. Having 
-
-discussed this with the mentors before, I decided to implement Stratified K-Fold validation. Stratified K-Fold takes K-Fold validation a step further in that it ensures that the distribution of classes in every fold is identical to that of the overall dataset. I have already implemented a flexible Stratified K-Fold generating pipeline as a means of generating Out of Fold training data.
-![Target distributions](https://i.postimg.cc/cJWkv3Bm/target.png)
 ## Timeline:
-
-<!----- Conversion time: 0.956 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β20
-* Fri Mar 27 2020 13:33:18 GMT-0700 (PDT)
-* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
-* This is a partial selection. Check to make sure intra-doc links work.
------>
-
 
 
 ### Community Bonding Period (May 4 -  May 31)
@@ -289,16 +302,16 @@ Conversion notes:
 
 
 
-*   Write unit tests for the linear model pipeline
-*   Write unit tests for the neural network pipeline
+*   Implementation of cGANs with Multi-Hinge Loss
 
 
 ### Week 10 (August 3 - August 9)
 
 
 
-*   Write integration tests for the project
-*   Complete integration into the official SunPy library
+*   Training of the cGAN will continue in this week
+*   Write unit tests for the linear model pipeline
+*   Write unit tests for the neural network pipeline
 
 
 ### Pull Request 4
@@ -313,14 +326,16 @@ Conversion notes:
 
 
 
-*   Test out the model against SDO/HMI data
-*   Write a notebook showcasing the same, along with external hyperparameter tuning for the neural network 
+*   Publishing dataset generated by the cGAN implementation
+*   Write integration tests for the project and merge into the SunPy module
+*   Test out the model against SDO/HMI data and the generated data and compare accuracy metrics
 
 
 ### Week 12 (August 17 - August 24)
 
 
 
+*   Write a notebook showcasing the same, along with external hyperparameter tuning for the neural network 
 *   Documentation and final touches
 
 
@@ -338,15 +353,14 @@ Conversion notes:
 
 *   Final Evaluation
 
-<!-- Docs to Markdown version 1.0β20 -->
 
-
-<!-- Docs to Markdown version 1.0β20 -->
 ## References:
 
 
 
 *   [Deep Flare Net (DeFN) for Solar Flare Prediction](https://arxiv.org/abs/1805.03421)
+*   [cGANs with Multi-Hinge Loss](https://arxiv.org/abs/1912.04216v1)
+*   [1] [Large scale GAN training for high fidelity natural image synthesis](https://arxiv.org/abs/1809.11096v1)
+*   [2] [Hierarchical implicit models and likelihood-free variational inference](https://arxiv.org/abs/1702.08896)
 
 <!-- Docs to Markdown version 1.0β20 -->
-
