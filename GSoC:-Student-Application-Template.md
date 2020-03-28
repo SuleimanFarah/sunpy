@@ -1,5 +1,4 @@
-**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS**
-**APPLICATIONS ARE MEANT TO BE CONCISE AND NOT YOUR LIFE STORY**
+**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS THAT YOU MUST ANSWER 100%**
 
 When you submit an application to GSoC, it will be in a Google Docs format and an application should be __concise__ and we suggest not exceeding 5(ish) pages.
 
@@ -9,7 +8,8 @@ You can do this after you have finalised the version on the GSoC website.
 
 Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings.
 
-You should include the following information in your application:
+You should include most of the following information in your application.
+**However, we should suggest you use your own judgement remove sections that might not be relevant or to add news that are not listed but are relevant to the project.**
 
 ## Title
 
@@ -46,15 +46,13 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
     We expect full time \~35h per week during GSoC.
-    If you plan to take any vacations over the summer or if you have exams or any other commitments, let us know about it here.
+    If you plan to take any vacations over the summer or if you have exams or any other commitments (like an internship), let us know about it here.
 
 ## You the programmer
 
 In your project proposal let us know about your programming experience.
 Don't worry if you don't know much about SunPy or git/GitHub.
 Many of our students start fresh on these topics and we will teach you what you need to know.
-
-* What platform do you use to code?
 
 * What is your experience with programming?
 
@@ -69,7 +67,8 @@ Many of our students start fresh on these topics and we will teach you what you 
 
 * What are your contributions to SunPy so far?
 
-    It should be a brief summary (with links) of pull requests including unmerged work.
+    It should be a brief summary (with links) of pull requests including un-merged work.
+    Pick what you think are your best pull requests.
 
 ## You and your project
 
