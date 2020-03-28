@@ -1,3 +1,5 @@
+**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS**
+
 When you submit an application to GSoC, it will be in a Google Docs format and an application should be concise and we suggest not exceeding 5(ish) pages.
 
 We also expect the application to be hosted on our wiki.
