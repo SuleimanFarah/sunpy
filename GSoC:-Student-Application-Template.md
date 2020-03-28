@@ -1,4 +1,4 @@
-**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS THAT YOU MUST ANSWER 100%**
+**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS THAT YOU MUST ANSWER TO COMPLETION. THE TEMPLATE WAS ENVISIONED AS A GUIDE.**
 
 When you submit an application to GSoC, it will be in a Google Docs format and an application should be __concise__ and we suggest not exceeding 5(ish) pages.
 
@@ -8,7 +8,7 @@ You can do this after you have finalised the version on the GSoC website.
 
 Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings.
 
-You should include most of the following information in your application.
+You should include a lot of the following information in your application.
 **However, we should suggest you use your own judgement, remove sections that might not be relevant or add sections that are relevant to the project but are not listed.**
 
 ## Title
