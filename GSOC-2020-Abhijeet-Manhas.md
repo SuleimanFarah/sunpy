@@ -171,7 +171,7 @@ Implement `meta_cols` for DR Clients for query-specific columns in the response 
 
 ### Week 8 (July 20 - july 27)
 
-Make `GOESClient` able to know the satellite number without being hard coded datewise using scraper ([Issue #3337](https://github.com/sunpy/sunpy/issues/3337)).
+Make `GOESClient` able to know the satellite number without being hard-coded date-wise using `scraper` ([Issue #3337](https://github.com/sunpy/sunpy/issues/3337)).
 ___
 
 #### EVALUATION 2 (June 29 - July 3)
