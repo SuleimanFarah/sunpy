@@ -17,7 +17,13 @@ I am two months short of having a full year's worth of professional experience i
 
 - This matching of various ARs across Sunspotter data and the HEK will be done by first identifying common fields and then to match the rows, the algorithm described in the [Tool for OPerations on Catalogues And Tables (TOPCAT)](http://www.star.bris.ac.uk/~mbt/topcat/sun253/pairMatch.html) [which is explained here](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) will be used.
 
+| :pencil: "here", where? :wink: |
+| ---                            |
+
 - Next, we extend the `hek2vso` client and work towards better integrating it with Fido. The idea is to create a single interface for getting the metadata and the various types of files associated with an observation. The long term idea is to get a unified interface where we can get data and meta-information about any event from a given observation date. One of the outcomes would be, the user being able to get event-specific information from HEK or other sources and use them in conjunction with the downloaded HMI and AIA data [as is being done here.](https://docs.sunpy.org/en/stable/generated/gallery/sunpy_other_packages/reprojection_align_aia_hmi.html#sphx-glr-generated-gallery-sunpy-other-packages-reprojection-align-aia-hmi-py)
+
+| :pencil: "here", where? :wink: |
+| ---                            |
 
 Another aspect of this Search Events Object would be a dictionary that would map names between different catalogues so that the same `features.attribute` can be used on different catalogue searches (e.g., a flare is translated as FL in HEK and as the different flare tables on HELIO).
 The object would be made subscript-able to facilitate easy access.
@@ -50,6 +56,9 @@ In the Sunspotter dataset, there is a significant bias. The following is a list 
 
 I’ll be modifying the code from the [repository mentioned in the original paper](https://github.com/FlarePrediction/Repository) to produce the 10 Cross-Validation splits.
 
+| :pencil: What does the modifications involve? Is just to change n to 10? Some further changes? Is that explained below? Then mentioned it here. |
+| ---                                                                                                                                             |
+
 
 ##### Further,
 
@@ -57,6 +66,11 @@ In any data-driven problem, the challenge is to get the best possible performanc
 I, therefore, propose to use an Auto Encoder to distil the information in the images and use this encoding in further forecasting algorithms. 
 
 * Autoencoder is an unsupervised artificial neural network that learns how to efficiently compress and encode data then learns how to reconstruct the data back from the reduced encoded representation to a representation that is as close to the original input as possible. Autoencoder, by design, reduces data dimensions by learning how to ignore the noise in the data.
+
+| :pencil: Autoencoder, auto encoder, ... whichever it is, be consistent. Also, add links to papers or other resources that may offer a larger explanation. Very good explanation, nevertheless. |
+| ---                                                                                                                                                       |
+|                                                                                                                                                           |
+
 
 * In addition to being used with a neural network, this lower-dimensional encoding can also be fed to simpler Machine Learning models. In my experience, the complexity and the representation of data plays a very important role in any learning task. If with simpler models, we can get results comparable to computationally heavy black box algorithms like neural networks, we should prefer them as they are easier to debug and explain.
 
@@ -105,6 +119,9 @@ ___
 ___
 
 - The basic layout for implementing the Search Events Object shall be designed at this time. I would take into account the schedule of the FIDO project and work towards making a timeline with the student working on the FIDO project for effective implementation. The efforts on this project will also complement the Fido metadata project with tools and uses cases.
+
+| :pencil: timeline should be independent from other projects |
+| ---                                                         |
 
 - I shall spend this time exploring the dataset, discussing possible modifications to the architectures and hyperparameter tuning with my mentors, and continuing my contributions to SunPy.
 
@@ -218,6 +235,10 @@ This shall be a rather unchartered territory and I will give a full two weeks to
 
 #### Week 13
 - The final week shall be used to add final touches to the deliverables.
+
+| :pencil: There's little or not mention about writing tests. |
+| ---                                                         |
+
 ___
 #### Final Evaluation
 ___

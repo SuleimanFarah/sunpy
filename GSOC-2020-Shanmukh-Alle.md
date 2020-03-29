@@ -38,6 +38,9 @@ transmission interruptions, high-frequency communications, aircraft rerouting, a
 
  Most of the methods mentioned in [[1]][[2]] do not use the structure of the sunspot cluster to arrive at a decision. Primarily, these methods make use of data measured from satellite sensors, such as Magnetic fields, continuum intensity etc. which do not explicitly incorporate structure of active region. In recent days, Convolutional Neural Networks have shown to work well in recognising complex patterns in images to perform various classification and regression tasks. Work done by Xin et al.[[3]] show that CNNs perform similar to the state of the art solar flare forecasting methods. A blog explaining the working of CNNs can be found here[[4]].
  
+ | :pencil: Use of here on the web is not advisable, read [what's wrong with "click here"](https://webaccess.berkeley.edu/ask-pecan/click-here) for more details. |
+ | ---                                                                                                                                                            |
+
  The Sun spotter project data sets contain images of sunspots ranked based on their complexity which is defined based on the elo rating. It is observed that there is a direct relationship between solar flare activity and the complexity of a sunspot[[2]]. Apart from this, the data sets also contain additional information(SMART data) about the active regions in the images. Performance of machine learning models are known to scale with the amount of data available, hence we intend to improve the performance of CNNs for forecast by using this additional data. 
 
 The following section describes the proposed solution in detail. 
@@ -60,6 +63,9 @@ Hence, we propose to train a CNN on two objective functions.
 2. Complexity prediction loss (mse on the predicted values or on a transformed version of them)
 
 To train the model on complexity information we use a Siamese neural network that has a two CNNs with shared weights that act as feature extractors and a contrastive function. Given a pair of images the model is trained to predict the probability of one being more complex than the other when given to a human. Since the complexity is encoded in the form of elo ratings we use<img src="https://researchweb.iiit.ac.in/~shanmukh.alle/images/3.png" alt="drawing" width="100"/> as the contrastive function to predict the probability.
+
+| :pencil: Any thoughts of why using 400? |
+| ---                                     |
 
 The same function can be used to generate the ground truth probability values from elo ratings of the selected pair of images. 
 
@@ -112,6 +118,13 @@ ___
 
 #### Week 12
 - Buffer 
+
+| :pencil: A more detailed timeline would be better with information of which blockers may appear on the way. |
+| ---                                     |
+
+| :pencil: Missing plans about how to combine datasets and tooling that could live within sunpy.
+| ---                                     |
+
 ___
 #### Final Evaluation
 ___

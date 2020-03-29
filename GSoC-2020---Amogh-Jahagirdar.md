@@ -34,7 +34,8 @@ Kaggle: [https://www.kaggle.com/amoghjrules](https://www.kaggle.com/amoghjrules)
 
 LinkedIn: [https://www.linkedin.com/in/amoghjahagirdar/](https://www.linkedin.com/in/amoghjahagirdar/)
 
-Contact No.: +91 9082180199
+| :warning: No need to provide personal information on this draft. I've removed all that's not needed |
+| ---                                     |
 
 
 ## About Me:
@@ -199,6 +200,8 @@ This constitutes writing unit tests for each sub-module within the project and i
 
 Writing down documentation which clearly explains the purpose of the module, the classes, member functions, callbacks and other details along with their usage.
 
+| :pencil: Good set of tasks, any plan on how they fit within sunpy? What would it involve? |
+| ---                                                                                       |
 
 ## Timeline:
 
@@ -239,6 +242,8 @@ Writing down documentation which clearly explains the purpose of the module, the
 
 ### Pull Request 1
 
+| :pencil: What would this (and future) PR include? |
+| ---                                               |
 
 
 ---
@@ -352,6 +357,10 @@ Writing down documentation which clearly explains the purpose of the module, the
 
 
 *   Final Evaluation
+
+
+| :pencil: A more detailed timeline would be better with information of which blockers may appear on the way. |
+| ---                                                                                                         |
 
 
 ## References:
