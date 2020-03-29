@@ -34,9 +34,6 @@ Kaggle: [https://www.kaggle.com/amoghjrules](https://www.kaggle.com/amoghjrules)
 
 LinkedIn: [https://www.linkedin.com/in/amoghjahagirdar/](https://www.linkedin.com/in/amoghjahagirdar/)
 
-| :warning: No need to provide personal information on this draft. I've removed all that's not needed |
-| ---                                     |
-
 
 ## About Me:
 
