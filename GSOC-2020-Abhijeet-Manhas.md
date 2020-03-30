@@ -70,7 +70,7 @@ I have been interested in Astronomy since my school days. I participated in vari
     </tr>
     <tr>
     <td>6</td>
-    <td>Implemented _get_time_for_url in GenericClient<a href="https://github.com/sunpy/sunpy/pull/3863">#3863</a></td>
+    <td>Implemented _get_time_for_url in GenericClient <a href="https://github.com/sunpy/sunpy/pull/3863">#3863</a></td>
     <td>Open (Approved)</td>
     </tr>
     <tr>
