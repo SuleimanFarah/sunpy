@@ -34,7 +34,7 @@
 
 I have been interested in Astronomy since my school days. I participated in various National level competitions like the *National Standard Examination in Astronomy* and qualified the state merit. After completing high school, I joined the Indian Institute of Technology for undergraduate studies in Computer Science. In June 2019, I was selected as the coordinator of **Space Technology and Astronomy Cell** (STAC) in IIT Mandi. I got to learn and engage in a lot of astrophysics and python owing to the open-source culture established by our seniors in the STAC and Programming Club of IIT Mandi. I actively coordinated in organizing **AstraX** (the annual Astro-meet) which witnessed lead developers of two astropy affiliated packages as keynote speakers. I also gave a talk on *how to be an astronomer using python* in a **Python Software Foundation** sponsored event in Mandi, India followed by a hands-on session.
 
-### Past Work in SunPy
+## Work done in SunPy
 
 <table>
     <tr>
