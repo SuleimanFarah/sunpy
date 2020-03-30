@@ -143,7 +143,7 @@ This will be of course followed by native and Fido tests for the implementation.
 
 These clients generally obtain metadata for the records. Except for the JSOCClient, all do not inherit the `BaseClient` class. In fact, we already have a `search_metadata` function for JSOCClient. The way by which Fido correctly uses the desired client for data retrieval is through the implementation of `_can_handle_query`. This subtask can be done as:-
 
-### 3.1  Make HEC, HELIO and HEK clients as subclasses of BaseClient
+### 3.1  Make HEC and HEK clients as subclasses of BaseClient
 
 This will also include adding `_can_handle_meta_search` in each subclass to register the attrs which can be handled by the respective client.
 
