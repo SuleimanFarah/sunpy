@@ -35,6 +35,8 @@ Please use a succinct title that describes your proposal.
 
 Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
+**We don't need your phone number, address, date of birth or any other personal info**
+
 ## You and GSoC
 
 * Have you participated previously in GSoC? When? With which project?
