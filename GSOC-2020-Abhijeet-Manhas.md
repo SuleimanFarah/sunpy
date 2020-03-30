@@ -291,7 +291,7 @@ ___
 
   - [Astrocker: Dockerizing all astropy affiliated packages on any system at once](https://github.com/STAC-IITMandi/astrocker)
 
-  - [activities.iitmandi.co.in](https://actvities.iitmandi.co.in) (dynamic site for event scheduling in Django)
+  - [activities.iitmandi.co.in](https://activities.iitmandi.co.in) (dynamic site for event scheduling in Django)
 
   - Exoplanet Detection by scraping data from K2 archive
 
