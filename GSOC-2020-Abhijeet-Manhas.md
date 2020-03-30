@@ -34,6 +34,71 @@
 
 I have been interested in Astronomy since my school days. I participated in various National level competitions like the *National Standard Examination in Astronomy* and qualified the state merit. After completing high school, I joined the Indian Institute of Technology for undergraduate studies in Computer Science. In June 2019, I was selected as the coordinator of **Space Technology and Astronomy Cell** (STAC) in IIT Mandi. I got to learn and engage in a lot of astrophysics and python owing to the open-source culture established by our seniors in the STAC and Programming Club of IIT Mandi. I actively coordinated in organizing **AstraX** (the annual Astro-meet) which witnessed lead developers of two astropy affiliated packages as keynote speakers. I also gave a talk on *how to be an astronomer using python* in a **Python Software Foundation** sponsored event in Mandi, India followed by a hands-on session.
 
+### Past Work in SunPy
+
+<table>
+    <tr>
+    <td><b>S. no.</b></td>
+    <td><b>Pull Requests</b></td>
+    <td><b>Status</b></td>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Created BaseHeliographic class <a href="https://github.com/sunpy/sunpy/pull/35952">#3592</a></td>
+    <td>Merged</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Removed astropy helpers from various files <a href="https://github.com/sunpy/sunpy/pull/3676">#3676</a> 
+    </td>
+    <td>Merged</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>Removed old SJI classes <a href="https://github.com/sunpy/sunraster/pull/123">#123</a></td>
+    <td>Merged</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td>Implemented Groundclients for Fido <a href="https://github.com/sunpy/sunpy/pull/3763">#3763</a></td>
+    <td>Open (WIP)</td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Implemented ACE Clients <a href="https://github.com/sunpy/sunpy/pull/3705">#3705</a></td>
+    <td>Open (Approved)</td>
+    </tr>
+    <tr>
+    <td>6</td>
+    <td>Implemented _get_time_for_url in GenericClient<a href="https://github.com/sunpy/sunpy/pull/3863">#3863</a></td>
+    <td>Open (Approved)</td>
+    </tr>
+    <tr>
+    <td>7</td>
+    <td>Fixed deprecationwarning due to vso.attrs <a href="https://github.com/sunpy/sunpy/pull/3813">#3813</a> 
+    </td>
+    <td>Closed</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>Implemented VSMClient <a href="https://github.com/sunpy/sunpy/pull/3809">#3809</a></td>
+    <td>Open</td>
+    </tr>
+    <td>9</td>
+    <td>Implemented KanzelhoheClient <a href="https://github.com/sunpy/sunpy/pull/3810">#3810</a></td>
+    <td>Open</td>
+    <tr>
+    <td>10</td>
+    <td>Implemented Gong and Farside Clients <a href="https://github.com/sunpy/sunpy/pull/3811">#3811</a></td>
+    <td>Open (Approved)</td>
+    </tr>
+    <tr>
+    <td>11</td>
+    <td>Implemented BBSOClients <a href="https://github.com/sunpy/sunpy/pull/3812">#3812</a></td>
+    <td>Open</td>
+    </tr>
+</table>
+
 ## Why this Project?
 
 I started using SunPy last winter; initially for AIA maps in slides for a session. From November I started to interact with the community by joining the riot channel and mailing list. I then explored its issues and tried to work on various submodules out of which sunpy/net seems to be more intriguing for me, I continued some client PRs and by making them compatible with current SunPy’s version, I became familiar with changes undergone by the submodule and how works.
@@ -211,14 +276,14 @@ ___
 
 - OS: Linux(Ubuntu) and Windows 10. Experience with both terminal and powershell.
 
-- Contributions to SunPy:
-I have total [10 Pull requests in Sunpy, with 2 merged, one approved and 1 WIP](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+author%3Aabhijeetmanhas)
+- **Contributions to SunPy**
 
-- My PRs were oriented towards redesigning dataretriever clients and suitable tests for them including optimizations. Working majorly on them made me very familiar with the workflow of `~sunpy.net` submodule and Fido.
+  - I have a total of [10 Pull requests in Sunpy (6 net labelled), with 2 merged,1 approved and 1 WIP.](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+author%3Aabhijeetmanhas)
 
-- [Raised 4 issues in sunpy](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+author%3Aabhijeetmanhas+)
+  - [Raised 4 issues in sunpy.](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+author%3Aabhijeetmanhas+)
 
-- [One merged PR in sunpy/sunraster](https://github.com/sunpy/sunraster/pull/123)
+  - [One merged PR in sunpy/sunraster.](https://github.com/sunpy/sunraster/pull/123)
+  - I have been contributing to sunpy since the last three months and have been quite active in the community. Many of my PRs were oriented towards redesigning dataretriever clients and suitable tests for them including optimizations. Working majorly on them made me very familiar with the workflow of `~sunpy.net` submodule and Fido.
 
 - Contribution in EinsteinPy and raised 3 issues in glue-solar and glue-astronomy as well.
 
@@ -234,7 +299,7 @@ I have total [10 Pull requests in Sunpy, with 2 merged, one approved and 1 WIP](
 
   - Pseudo-Simulation of n-bodies in Newtonian gravity
 
-- I have done a lot of mini-projects dealing with web-scraping using Selenium python such as [automatic Whatsapp birthday wishes](https://github.com/abhijeetmanhas/hpybday_shreyasb)
+- I have done a lot of mini-projects dealing with web-scraping using Selenium python such as [automatic Whatsapp birthday wisher.](https://github.com/abhijeetmanhas/hpybday_shreyasb)
 
 ## Me and GSoC
 
