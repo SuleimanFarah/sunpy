@@ -227,6 +227,26 @@ This constitutes writing unit tests for each sub-module within the project and i
 Writing down documentation which clearly explains the purpose of the module, the classes, member functions, callbacks and other details along with their usage
 
 
+<!----- Conversion time: 1.858 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β20
+* Tue Mar 31 2020 09:11:14 GMT-0700 (PDT)
+* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
 ## Timeline:
 
 
@@ -319,8 +339,8 @@ Consists of :
     *   Matching catalogues
         *   Write lambdas to identify common parameters
         *   Implement [matching algorithm](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) from TOPCAT for the identified common parameters
-    *   Expand hek2vso to be able to accomodate any data archive like HEK, FIdo, etc.
-    *   Setup uniformity between different data catalogues such that all catalogues have the same attributes increasing their usability
+    *   Expand hek2vso to be able to accomodate any data archive like HEK, Fido, etc.
+    *   Setup uniformity between different data catalogues such that all catalogues have the same attributes, thus increasing their usability
     *   Other SunPy related tasks that may come up on the way
 
 
