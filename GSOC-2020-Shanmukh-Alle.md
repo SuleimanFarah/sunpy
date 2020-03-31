@@ -13,15 +13,15 @@
     - Degree : B.Tech with MS by Research in ECE
 
 ### Personal Background
-I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learning enthusiast and I have extensively explored various state of the art models and techniques in fields including but not limited to Computer Vision, NLP and Computational Sciences. I am proficient in C,C++,Python and Matlab. I have experience in building machine learning models in  Keras, Pytorch and Scikit-learn. I occasionally participate in data science contests. I am primarily interested in computer vision and its application in various fields of knowledge.
+I am an undergraduate student at IIIT-Hyderabad. I am a machine learning enthusiast and I have extensively explored various state of the art models and techniques in fields including but not limited to Computer Vision, NLP and Computational Sciences. I am proficient in C,C++,Python and Matlab. I have experience in building machine learning models in  Keras, Pytorch and Scikit-learn. I occasionally participate in data science contests. I am primarily interested in computer vision and its application in various fields of knowledge.
 ### Experience with Machine Learning
 * Worked as Teaching Assistant for the course Statistical Methods in AI for fall 2018.
 * Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be found on the github repository [Manga_Colorization]  
 
-[manga_colourisation]: https://github.com/sudheerachary/Manga_Colorization
+[Manga_Colorization]: https://github.com/sudheerachary/Manga_Colorization
 * Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found on the github repository [Show-and-Tell] 
 
-[show-and-tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
+[Show-and-Tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
 
 * Top 0.5 percentile in [Flipkart GRID AI Challenge] 2019 
 
@@ -104,7 +104,7 @@ ___
 #### Week 5 - Week 8
 - Implement Siamese Network in keras
 - Experiment various CNN architectures
-- Debug is problems occur
+- Debug if problems occur
 
 #### Week 9
 - Build test set with images from SDO/HMI obtained through HEK
