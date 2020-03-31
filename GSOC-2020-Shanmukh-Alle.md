@@ -16,10 +16,10 @@
 I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learning enthusiast and I have extensively explored various state of the art models and techniques in fields including but not limited to Computer Vision, NLP and Computational Sciences. I am proficient in C,C++,Python and Matlab. I have experience in building machine learning models in  Keras, Pytorch and Scikit-learn. I occasionally participate in data science contests. I am primarily interested in computer vision and its application in various fields of knowledge.
 ### Experience with Machine Learning
 * Worked as Teaching Assistant for the course Statistical Methods in AI for fall 2018.
-* Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be accessed here -> [manga_colourisation]  
+* Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be found on the github repository [Manga_Colorization]  
 
 [manga_colourisation]: https://github.com/sudheerachary/Manga_Colorization
-* Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found here -> [show-and-tell] 
+* Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found on the github repository [Show-and-Tell] 
 
 [show-and-tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
 
@@ -36,7 +36,7 @@ ___
 Space weather is a branch of astronomy that deals with time varying conditions in the solar system. In this project we deal with forecasting of solar flares using machine learning methods. Solar flares are abrupt, powerful events that lead to sudden increase in the brightness on the sun which are observed near the surface close to a sunspot group. Solar flares have a potential to disrupt various human technologies that depend on EM radiations. Mobile phone
 transmission interruptions, high-frequency communications, aircraft rerouting, and power-grid performance to name a few[[1]].
 
- Most of the methods mentioned in [[1]][[2]] do not use the structure of the sunspot cluster to arrive at a decision. Primarily, these methods make use of data measured from satellite sensors, such as Magnetic fields, continuum intensity etc. which do not explicitly incorporate structure of active region. In recent days, Convolutional Neural Networks have shown to work well in recognising complex patterns in images to perform various classification and regression tasks. Work done by Xin et al.[[3]] show that CNNs perform similar to the state of the art solar flare forecasting methods. A blog explaining the working of CNNs can be found here[[4]].
+ Most of the methods mentioned in [[1]][[2]] do not use the structure of the sunspot cluster to arrive at a decision. Primarily, these methods make use of data measured from satellite sensors, such as Magnetic fields, continuum intensity etc. which do not explicitly incorporate structure of active region. In recent days, Convolutional Neural Networks have shown to work well in recognising complex patterns in images to perform various classification and regression tasks. Work done by Xin et al.[[3]] show that CNNs perform similar to the state of the art solar flare forecasting methods.
  
  | :pencil: Use of here on the web is not advisable, read [what's wrong with "click here"](https://webaccess.berkeley.edu/ask-pecan/click-here) for more details. |
  | ---                                                                                                                                                            |
