@@ -85,9 +85,7 @@ As mentioned earlier, I have a sound background in Machine Learning, Neural netw
 
 ### Challenges:
 
-On plotting out the target variable (the classification variable) a clear bias towards the negative class is visible. This unbalanced target distribution can lead to poorly trained models. Having 
-
-discussed this with the mentors before, I decided to implement Stratified K-Fold validation. Stratified K-Fold takes K-Fold validation a step further in that it ensures that the distribution of classes in every fold is identical to that of the overall dataset. I have already implemented a [flexible Stratified K-Fold generating pipeline](https://www.kaggle.com/amoghjrules/predicting-solar-activity) as a means of generating Out of Fold training data.
+On plotting out the target variable (the classification variable) a clear bias towards the negative class is visible. This unbalanced target distribution can lead to poorly trained models. Having discussed this with the mentors before, I decided to implement Stratified K-Fold validation. Stratified K-Fold takes K-Fold validation a step further in that it ensures that the distribution of classes in every fold is identical to that of the overall dataset. I have already implemented a [flexible Stratified K-Fold generating pipeline](https://www.kaggle.com/amoghjrules/predicting-solar-activity) as a means of generating Out of Fold training data.
 
 
 <!-- Docs to Markdown version 1.0β20 -->
