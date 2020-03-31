@@ -329,6 +329,26 @@ Consists of :
 *   Write a jupyter notebook showing the use of the neural network for SunPy example gallery
 
 
+<!----- Conversion time: 0.47 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β20
+* Tue Mar 31 2020 09:14:01 GMT-0700 (PDT)
+* Source doc: Space Weather Forecasting using Linear Methods - Amogh Jahagirdar
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
 ### Week 8 (July 20 - July 26)
 
 
@@ -339,9 +359,12 @@ Consists of :
     *   Matching catalogues
         *   Write lambdas to identify common parameters
         *   Implement [matching algorithm](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) from TOPCAT for the identified common parameters
-    *   Expand hek2vso to be able to accomodate any data archive like HEK, Fido, etc.
+    *   Expand hek2vso to be able to accomodate any data archive obtained from Fido and other sources
     *   Setup uniformity between different data catalogues such that all catalogues have the same attributes, thus increasing their usability
     *   Other SunPy related tasks that may come up on the way
+
+<!-- Docs to Markdown version 1.0β20 -->
+
 
 
 ### Pull Request 2
