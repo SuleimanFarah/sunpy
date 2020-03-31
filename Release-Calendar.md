@@ -13,7 +13,7 @@ Releases are scheduled for the first Friday in the month set by SEP-9, and featu
 | v2.1 Feature Freeze |     2020-10-23 |             |
 | v2.0 Release        |     2020-05-01 |             |
 | v2.0 Feature Freeze |     2020-04-17 |             |
-| v1.1 Release        |     2019-11-01 |             |
+| v1.1 Release        |     2019-11-01 |  2020-01-10 |
 | v1.1 Feature Freeze |     2019-10-18 |             |
 | v1.0 Release        |     2019-05-03 |  2019-06-01 |
 | v0.9 Release        |                |  2018-04-22 |
