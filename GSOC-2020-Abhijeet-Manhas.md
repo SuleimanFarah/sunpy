@@ -44,7 +44,7 @@ I have been interested in Astronomy since my school days. I participated in vari
     </tr>
     <tr>
     <td>1</td>
-    <td>Created BaseHeliographic class <a href="https://github.com/sunpy/sunpy/pull/3592">#3592</a></td>
+    <td>Created BaseHeliographic class <a href="https://github.com/sunpy/sunpy/pull/3595">#3595</a></td>
     <td>Merged</td>
     </tr>
     <tr>
