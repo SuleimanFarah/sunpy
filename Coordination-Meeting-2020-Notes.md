@@ -1,3 +1,10 @@
+This will be the first of a yearly series of in-person SunPy Coordination meetings. The purpose of this meeting is to 
+* plan for the next sunpy core release cycle
+* coordinate development across all of the core subpackages
+* coordinate development between SunPy and affiliated packages
+* discuss long-term roadmap
+* enable in-person development
+
 The 2020 SunPy Coordination meeting took place from the 30th March - 3rd April 2020, it was an online only meeting.
 
 Below is the running notes as taken during the week.
