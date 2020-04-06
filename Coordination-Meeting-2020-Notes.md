@@ -731,7 +731,6 @@ https://docs.google.com/document/d/1kYsVqGNMnAj2DCYVi1juC4T3fDk4scAmZoi7v_KTWS0/
 
 #### Places to Make Use of setuptools Entry Points
 
-Never use them for they are for only the weak.
 
 #### Dependencies: Do we have too many? What versions of them should we support?
 * Can we remove scipy and pandas from core dependencies?
