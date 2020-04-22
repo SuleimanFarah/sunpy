@@ -2,9 +2,33 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
-## 22 April 2020
+## 29 April 2020
 
 The collaboratively editable version of the minutes and agenda for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). These will be archived here on the wiki following the meeting.
+
+## 22 April 2020
+
+### The road to 2.0
+We need to review all PRs https://github.com/sunpy/sunpy/milestone/41 to get ready for an RC this week.
+
+## pyastro Hack ideas
+See https://docs.google.com/spreadsheets/d/1gsEQ3_xxHw4_gPnkfEna2IPqN9e7Cdom8KM_o6TVaUE/edit#gid=0 for the official list
+
+- Magnetogram sources/clients/examples (led by dstansby)
+
+# Meeting notes
+
+- Meeting streamed onto YouTube for posterity
+- 2.0 PRs
+    - Rectangle - leave for Albert to review
+    - Attr registration - waiting on changes in response to review
+    - User config - needs another review, should change funciton name to `copy_default_config`
+    - JSOC error - re-milestone to 2.1
+    - VSO fetch fix - re-milestone to 2.1
+    - Moving constants - restarted failing build, waiting for Albert to review
+    - Map singeldispatch - merged
+    - What's new - add ideas!
+- General chat about differences bewtween old and new differential rotation code
 
 ## 15 April 2020
 
