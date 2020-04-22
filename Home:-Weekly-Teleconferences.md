@@ -16,7 +16,7 @@ See https://docs.google.com/spreadsheets/d/1gsEQ3_xxHw4_gPnkfEna2IPqN9e7Cdom8KM_
 
 - Magnetogram sources/clients/examples (led by dstansby)
 
-# Meeting notes
+## Meeting notes
 
 - Meeting streamed onto YouTube for posterity
 - 2.0 PRs
