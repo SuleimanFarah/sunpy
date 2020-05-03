@@ -15,12 +15,12 @@ No community meeting was held due to the Python in Heliophysics Spring Meeting.
 ### The road to 2.0
 We need to review all PRs https://github.com/sunpy/sunpy/milestone/41 to get ready for an RC this week.
 
-## pyastro Hack ideas
+### pyastro Hack ideas
 See https://docs.google.com/spreadsheets/d/1gsEQ3_xxHw4_gPnkfEna2IPqN9e7Cdom8KM_o6TVaUE/edit#gid=0 for the official list
 
 - Magnetogram sources/clients/examples (led by dstansby)
 
-## Meeting notes
+### Meeting notes
 
 - Meeting streamed onto YouTube for posterity
 - 2.0 PRs
