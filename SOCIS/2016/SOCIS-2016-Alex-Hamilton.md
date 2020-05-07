@@ -3,13 +3,13 @@ About Me
 - **Name:**      Alex Hamilton
 - **Studies**:   Astrophysics Masters from Queen Mary University of London,
 Mathematics and Computer Science Student at the Open University,
-Accepted into PhD in Solar Physics at Hull University
+Accepted into PhD in Solar Physics
 - **GitHub**:    [Alex-Ian-Hamilton](http://github.com/Alex-Ian-Hamilton)
 - **Languages**: English (native)
 
 Background
 ========
-I graduated from Queen Mary with a Masters in Astrophysics and I am starting a PhD at Hull University in September.
+I graduated from Queen Mary with a Masters in Astrophysics and I am starting a PhD in September.
 I'm passionate about astronomy, science and technology with a specific focus in solar physics which is what has lead me to work with SunPy.
 I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching in Object Oriented Programming in Java with the Open University.
 
@@ -18,7 +18,7 @@ In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation
 My code can be found on GitHub:
 https://github.com/sunpy/solarbextrapolation
 
-In April 2016 I was accepted into a PhD position at Hull University to study the statistical likelihood of superflares (as seen on on other stars) happening on the Sun.
+In April 2016 I was accepted into a PhD position to study the statistical likelihood of superflares (as seen on on other stars) happening on the Sun.
 
 My general interests include climbing, photography, computer gaming and anything sci-fi.
 
