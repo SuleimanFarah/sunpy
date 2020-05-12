@@ -283,26 +283,6 @@ I have opened [7 issues](https://github.com/sunpy/sunpy/issues?q=author%3ARaahul
   - And other contributions to EinstienPy and ChiantiPy.
 - I will be contributing to SunPy throughout the selection process and beyond.
 
-### Work Experience
-
-##### 1) Global Remote Mentoring (IBM GRM) Intern
-###### IBM India
-###### Duration : Four months
-- Worked on multimodal data sets containing stereo RGB and Lidar data for autonomous driving.
-- Studied about camera parameters and the linear algebra behind switching from one perspective to another.
-
-##### 2) Data Science Intern
-###### Masho, an e-commerce startup from Bangalore, India
-###### Duration : Four months
-- Implemented Image to Image Similarity model using Siamese Networks for the Recommendation System, giving a robust recommendation.
-
-#####  3) Machine Learning Intern
-###### Indian Institute of Technology, Roorkee, India
-###### Duration : Three months
-- Made a model for understanding the behavior of various parameters like Sugar content, Acidity, Firmness, Ethyl Alcohol concentration and their visualization for Post-Harvest Apple data.
-- Made a predictor model for charting the evolution of these parameters over a period of six months from harvest.
-
-I think I have enough experience with python development to produce high quality, testable code.
 
 ## You and GSoC
 
