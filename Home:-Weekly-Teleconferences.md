@@ -2,6 +2,33 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 3 June 2020
+
+### Agenda
+
+- GSOC
+- 2.0 blockers
+
+### Minutes 
+
+#### GSoC
+
+##### FIDO
+
+- [#4055](https://github.com/sunpy/sunpy/pull/4055) ready for review
+
+##### Sunspotter
+
+- [#4238](https://github.com/sunpy/sunpy/pull/4238) table matcher, in progress with euclidian distance and cosine similarity.
+- Requested to have it also as example in the gallery.
+- Some people not convinced this should live on core
+
+##### Glue
+
+- click and see a spectrum profile of that pixel
+
+#### 2.0 Blockers
+
 ## 13 May 2020
 
 - Discussion of potential Fido clients: https://docs.google.com/document/d/1KYpqebFisjMRYJEoYKBJxqwIMW_jO2gaUsNVBCu_B7Y/edit#heading=h.ybxw3flop3dy
