@@ -1,7 +1,7 @@
 by schriste on 7-Jun-2020
 based on experience on PR #???
 
-There are 12 different checks being run on this PR. They are run on Giles, Azure Pipeline and Azure Pipeline(?).
+There are 12 different checks being run on this PR. They are run on Giles, Azure Pipeline and Azure Pipeline(?). Why do we have two different azure pipelines listed?
 
 On Giles we run
 * changelog
@@ -23,5 +23,13 @@ On Azure Pipeline we run
 At a quick glance I can't tell which of these are the building docs tests. 
 
 I received a test failure on the changelog that I was never able to figure out. It said that the number did not match the PR number but I checked it twice but perhaps I made a mistake.
+
+I am sure if I spend more time I could figure this out but most people don't have the time. Here are three recommendations.
+
+* Rename the tests so it is clear what each one is doing
+* Provide the command that can be run by the user somewhere easy to see (no having to dig into logs!) to reproduce the errors
+* All tests should be runnable on a user's machine.
+
+That is all.
 
 
