@@ -1,6 +1,6 @@
 **For major releases only:**
 - [ ] Update RELEASE.rst
-- [ ] Do a conda-forge build for at least one of the release candidates.
+- [ ] Do a conda-forge build for at least one of the release candidates
 - [ ] Remove the files under the developer's guide except for `index.rst`, `stability.rst` and `sunpy_stability.yaml`. Then change the `index.rst` file to read:
 
 ```
