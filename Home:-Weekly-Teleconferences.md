@@ -2,6 +2,49 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 17 June 2020
+
+### Agenda
+
+- GSOC
+- CI changes
+    - Figure tests
+    - RTD PR builds
+- Post 2.0 changes.
+- Pull Requests
+
+### Minutes 
+
+* Upadates on GSoC projects:
+    * Fido
+        * Generalized the way we get URLs from DR Clients from query attrs 
+        * Concatenation of query results
+        * Question regarding duplicate GOES files--just different formatting or actually different results
+    * Sunspotter
+    * Glue
+        * Completed a working version of the upstreaming of the WCSAxes enabled `glue` 1D Profile Viewer (where PR needs debugging and tidying up)
+        * Introduced a new icon for the pixel extraction tool originally in `glue-solar` (to be upstreamed)
+        * Added a non-collapsing `slice` function option for the 1D Profile viewer (in additional to the standard statistics operations)
+
+
+* RTD now builds on pull requests!
+    * Do we want to continue to have CircleCI and RTD builds for each PR?
+    * Move docs build off of CircleCI?
+    * Figure tests should stay on Circle
+    * We don't want to build the docs in 3 places on every PR
+    * Parallelize the doc build?
+    * Running docs build on dev 
+    * Proposal
+        * Build docs + gallery on RTD
+        * "No-gallery" doc build on Azure (no dev dependencies)
+* Figure tests
+    * Previously, running figure tests under conda
+    * Matplotlib wheels include version of freetype
+    * No freetype dependency so we can run figure tests in tox!
+    * Can easily run figure tests locally now :tada:
+* Mysterious macOS conda-forge failures still mysterious. See [PR #4293](https://github.com/sunpy/sunpy/pull/4293)
+
+
 ## 10 June 2020
 
 ### Agenda
