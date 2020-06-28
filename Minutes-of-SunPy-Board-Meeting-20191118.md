@@ -4,6 +4,7 @@
 
 ### Attendance
 **Present:** Steven Christe (Chair), Tiago Pereira, David Pérez-Suárez, Jack Ireland, Russell Hewett, Kevin Reardon, Bin Chen, Stuart Mumford
+
 **Absent:** Sabrina Savage, Monica Bobra
 
 ### Agenda
