@@ -50,7 +50,7 @@ Steven to look over the board governance ([SEP-002](https://github.com/sunpy/sun
 The current process makes making decisions harder than it needs to be (Steve notes that allowing votes only at board meetings is onerous).<BR>
 Monica will contact Sophie and confirm her appointment as Education and Community lead<BR>
 * Code of Conduct reporting: <BR>
-For example: The[NumFOCUS code of conduct](https://numfocus.org/code-of-conduct) has a direct link to a [Reporting Form](https://numfocus.typeform.com/to/ynjGdT) to register potential violations of the CoC.<BR>
+For example: The [NumFOCUS code of conduct](https://numfocus.org/code-of-conduct) has a direct link to a [Reporting Form](https://numfocus.typeform.com/to/ynjGdT) to register potential violations of the CoC.<BR>
 Sophie will come up with a draft
 Stuart will connect Sophie with Gina at NumFOCUS and Sophie will come up with a draft reporting form.
 * Attracting funding:<BR>
