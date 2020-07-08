@@ -2,6 +2,33 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 8 July 2020
+
+### Agenda
+
+- GSOC
+- PR Discussion
+
+### Minutes 
+
+* Upadates on GSoC projects:
+    * Fido
+    * Sunspotter (Rahuul is unwell, so he gave an update on the channel)
+        1. Further progress on the Search Events Object. We figured out where to get the NOAA number matched with SunSpotter data. There was a problem with the units that was mostly resolved. The SEO as was discussed should be done mostly by the end of the week.
+        2. I will be preparing a presentation for DavidPS on the different architectures of Neural Nets. Since we're interested in time series analysis, I'll include RNNs, LSTMs, etc as well.
+        3. The basic pipeline is done for the CNN in pytorch, so it'll be plug an play mostly from now on, for experiments.
+    * Glue
+        * Updates to 1D profile viewer--now working with time slider :tada:
+
+* Change in NOAA sunspot indices files (PR [#4340](https://github.com/sunpy/sunpy/pull/4340))
+    * Old text files on FTP server no longer exist
+    * Now in JSON format so we support both
+    * A lot of changes for a bugfix release--how to best document this?
+    * Big changelog? In the docs?
+* PRs need reviewing--we are up to 40+
+* Stuart will not be present next week; Will or Nabil will run the meeting
+* SciPy is this week
+
 ## 17 June 2020
 
 ### Agenda
