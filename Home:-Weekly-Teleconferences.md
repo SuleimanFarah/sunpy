@@ -1,6 +1,36 @@
 # Weekly Community Meetings
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
+## 15 July 2020
+
+### Agenda
+
+- GSOC
+- PR Discussion
+    - https://github.com/sunpy/sunpy/pull/4333
+    - https://github.com/sunpy/sunpy/pull/4053
+    - https://github.com/sunpy/sunpy/pull/4236
+    - https://github.com/sunpy/sunpy/pull/4343
+    - https://github.com/sunpy/sunpy/pull/4350
+    - https://github.com/sunpy/sunpy/pull/4331
+    
+### Minutes 
+
+- GSOC
+    - Fido
+        - Combined metadata and data product searches now working, e.g. HEC and XRS queries
+        - Helio queries require table name. If not specified user is prompted for it.
+    - Sunspotter
+    - Glue
+        - WCS autolinking PR
+        - Preferred colormap PR
+        - 1D Spectrum with WCS PR
+- PR Discussion
+    - Differential rotation test and HMI synoptic map PRs pretty much ready to be merged
+    - Put off ERFA discussion until next week (or the next time that interested parties are present)
+    - Nabil's PR for removing all deprecated 1.1 code is pretty much ready to be merged as well.
+- We need a 2.0.2 release soon, mostly for the NOAA fix
+
 
 ## 8 July 2020
 
