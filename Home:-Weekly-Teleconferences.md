@@ -2,6 +2,45 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 5 August 2020
+
+### Agenda
+
+- GSOC
+    - Glue Solar
+    - Sunspotter
+    - Fido
+- PR Discussion
+    - [#4405](https://github.com/sunpy/sunpy/pull/4405)
+    - [#4391](https://github.com/sunpy/sunpy/pull/4391)
+    - [#4378](https://github.com/sunpy/sunpy/pull/4378)
+    - [#4394](https://github.com/sunpy/sunpy/pull/4394)
+- Other Topics
+    
+### Minutes
+
+- GSOC
+    - Glue Solar
+        - Docs build
+        - tox issues
+        - Dev guide
+    - Sunspotter
+    - Fido
+        - Gallery example combining HELIO, HEK, and JSOC
+        - Old IRIS JSOC issue
+        - Integration of scraper/dataretriever with redesign of GenericClient [#4321](https://github.com/sunpy/sunpy/pull/4321)
+- PR Discussion
+    - GOES PR
+        - waiting on GenericClient updates
+        - we still aren't quite sure how to support the old FITS data for 13-15
+        - maybe an extra `attr`?
+        - But how best to handle data from multiple servers...
+    - JSOC url-tar PR
+        - Can this be used with `Fido`?
+        - Should this be an `attr` rather than a keyword argument?
+        - Discussion about using `JSOCClient` directly rather than through `Fido`
+        - What do `request_data` and `get_request` do that `search` and `fetch` don't?
+
 ## 22 July 2020
 
 ### Agenda
