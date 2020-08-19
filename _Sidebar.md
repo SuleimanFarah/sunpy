@@ -2,7 +2,7 @@
 
   * [Home](./Home)
     * [Organization Information](./Home%3A-Organization-Information)
-    * [Weekly Community Meetings](./Home%3A-Weekly-Teleconferences)
+    * [Weekly Community Meetings](./Home%3A-Weekly-Community-Meetings)
     * [Release Checklist](./Home%3A-Release-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
     * [Release Calendar](./Release-Calendar)
