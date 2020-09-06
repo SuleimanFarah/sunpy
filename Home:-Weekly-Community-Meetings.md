@@ -2,6 +2,26 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 2 September 2020
+
+### Agenda
+
+- PR Discussion
+    - Ready for review:
+        - https://github.com/sunpy/sunpy/pull/4433, Move colormap data to .csv files
+        - https://github.com/sunpy/sunpy/pull/4432, Ignore out-of-range years for an SRS query
+        - https://github.com/sunpy/sunpy/pull/4418, Add some missing bits to the API docs
+- 2.1 Release
+- Other Topics
+    
+### Minutes
+- PR Discussion
+    - 4433 is ready to go with a rebase if tests pass
+    - 4432 should wait for the GenericClient refactor PR
+    - 4418 waiting on a doc build to pass
+    - 3738 is not generic enough, and will need so much refactoring that it will be worth starting again, so decided to close.
+- 2.1 feature freeze is the 23rd October
+
 ## 19 August 2020
 
 ### Agenda
