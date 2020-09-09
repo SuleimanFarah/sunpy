@@ -2,6 +2,41 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 9 September 2020
+
+### Agenda
+
+* PR Discussion
+    * https://github.com/sunpy/sunpy/pull/4451 - Use bunit in sunpy.map
+    * https://github.com/sunpy/sunpy/pull/4455 - Improve title of differential rotation example
+* Affiliated package re-reviews https://github.com/sunpy/sunpy.org/issues/242
+* Affiliated package for various solar models (Will)
+* Performance versus elegance, i.e. how do we deal with the question "why is sunpy so slow???" (Will)
+    
+### Minutes
+* PR Discussion
+    * https://github.com/sunpy/sunpy/pull/4451 - Use bunit in sunpy.map
+        * Comments added
+    * https://github.com/sunpy/sunpy/pull/4455 - Improve title of differential rotation example
+        * Merged
+* Affiliated package re-review
+    * Concerns about how much extra effort this will place on reviewers, editors for affiliated packages
+    * We should probably have a re-evaluation PR/issue template for affiliated package maintainers to request a rereview
+    * We should explicitly note which version (e.g. via the commit hash or version) which will make it easier to diff the current versus review versions. See [this issue](https://github.com/sunpy/sunpy.org/issues/243)
+* Affiliate package for solar models
+    * Similar goal to the datasets repo
+    * Would bring together "canonical" models in solar physics, e.g. interior temperature, density as a function of radius, VAL/VAL-C atmospheres
+    * Will's use cases: analytical loop models like RTV, Martens, Serio, isothermal
+    * Others? Scope for now is any kind model that can be reference from literature
+    * Ideally, this should all be analytical/empirical and not complex, computationally intensive codes (i.e. should not include field extrapolation codes, MHD, even 1D loop models)
+    * Action item: Will to create a gist outlining a possible vision for this package
+* How do we deal with "sunpy is slow"?
+    * There is often feedback about sunpy being "slow," particular in the context of `sunpy.map.Map`
+    * sunpy is very general. While we do not ignore performance considerations, we do not optimize for them.
+    * There is a fear that as Python use in solar physics increases, users may drop sunpy or not use it to it's full potential because of actual or perceived performance bottlenecks
+    * We want to *encourage* users to report (or provide code contributions!) if they find that performance can be increased at different places or if some part of the package hampers their research workflows.
+    * See [this issue on the aiapy repo](https://gitlab.com/LMSAL_HUB/aia_hub/aiapy/-/issues/76) where Stuart exhaustingly benchmarked an aiaprep workflow
+
 ## 2 September 2020
 
 ### Agenda
