@@ -36,6 +36,7 @@ The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The lin
     * There is a fear that as Python use in solar physics increases, users may drop sunpy or not use it to it's full potential because of actual or perceived performance bottlenecks
     * We want to *encourage* users to report (or provide code contributions!) if they find that performance can be increased at different places or if some part of the package hampers their research workflows.
     * See [this issue on the aiapy repo](https://gitlab.com/LMSAL_HUB/aia_hub/aiapy/-/issues/76) where Stuart exhaustingly benchmarked an aiaprep workflow
+    * Opened https://github.com/sunpy/sunpy/issues/4459 for future discussion.
 
 ## 2 September 2020
 
