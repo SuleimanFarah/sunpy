@@ -2,6 +2,51 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 23 September 2020
+
+### Agenda
+
+* PR Discussion
+    * https://github.com/sunpy/sunpy/pull/4432 - Ignore out-of-range years for an SRS query
+    * https://github.com/sunpy/sunpy/pull/4476 - Force metadata to be a MetaDict
+* Issue discussion
+    * https://github.com/sunpy/sunpy/issues/4478 - OpenCV as an alternate affine transform library
+* Transferring `instr` issues from `sunpy` core to `sunkit-instruments`
+* `CompositeMap` woes (issue [#2745](https://github.com/sunpy/sunpy/issues/2745) et al.)
+* [`aiapy` JOSS paper](https://gitlab.com/LMSAL_HUB/aia_hub/aiapy/-/merge_requests/79)--feedback welcome!
+* NDCube 2.0 NDCube strikes back (https://demo.codimd.org/54dm5gPMQmmJux6fV-3AOQ)
+
+    
+### Minutes
+* PR Discussion
+    * https://github.com/sunpy/sunpy/pull/4432 - Ignore out-of-range years for an SRS query
+        * Merged, might backport
+    * https://github.com/sunpy/sunpy/pull/4476 - Force metadata to be a MetaDict
+        * Decided that it's probably not possible to trigger the fallback to basic wcs?
+    * https://github.com/sunpy/sunpy/pull/4394 - Functionality to client to download new GOES 16/17 data and reprocessed 13/14/15
+        * Discussion of which data to default to (new or old data)
+        * Discussion of whether to force the user to specify a version
+        * Decided to add provider option to switch between old/new data, and default to new data
+ * Issue discussion
+    * https://github.com/sunpy/sunpy/issues/4478 - OpenCV as an alternate affine transform library
+        * Lots of different affine transform implementations will be out there
+        * First bit of work is defining an `AffineTransform` base class that provides an interface for custom transform implementations
+* Discussion of affine transform/rotate
+    * Result of rotate() depends on whether you have scikit-image installed or not
+    * This can result in different results between the two implementations
+    * General reluctance to change/add stuff without first understanding the current behaviour
+    * Decided that the best way forward is to allow users to had their own functions into affine_transform.
+* Transferring `instr` issues from `sunpy` core to `sunkit-instruments`
+    * Way forward with this is to
+        * Do a first release of sunkit-instruments
+        * Deprecate code in sunpy core
+        * Transfer issues form core to sunkit-
+* `CompositeMap` woes (issue [#2745](https://github.com/sunpy/sunpy/issues/2745) et al.)
+    * Need to build `reproject` into `CompositeMap`
+    * People often assume that this will be done automatically
+* [`aiapy` JOSS paper](https://gitlab.com/LMSAL_HUB/aia_hub/aiapy/-/merge_requests/79)--feedback welcome!
+    * Being written right now!
+
 ## 9 September 2020
 
 ### Agenda
