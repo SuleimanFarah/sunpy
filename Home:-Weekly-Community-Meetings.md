@@ -2,6 +2,21 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 7th October 2020
+
+### Agenda
+
+* PR Discussion
+* Issue discussion
+    
+### Minutes
+
+* map.rotate PR addressed https://github.com/sunpy/sunpy/pull/4502/files
+* We need to properly test how different package affine transform and their effects on the data.
+* We should test the 'ground-truth' of a map.rotate with reproject (flux conservation) with other affine transformations on a SDO image. This is worth writing a paper upon with the results - as a 'standard'/best practices that can be referenced. 
+* Mike has lots of work done on different methods on image processing - hasn't published (yet) but definitely worth talking about more.
+* See this [PR on aiapy](https://gitlab.com/LMSAL_HUB/aia_hub/aiapy/-/issues/1) regarding the agreemement between SSW and aiapy
+
 ## 30 September 2020
 
 ### Agenda
