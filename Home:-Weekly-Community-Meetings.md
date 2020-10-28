@@ -2,6 +2,24 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 21 October 2020
+
+### Agenda
+
+* Milestones
+* 2.1 release triage
+* PR Discussion
+    *  Remove self_test() references from docs https://github.com/sunpy/sunpy/pull/4586
+* Issue discussion
+
+### Minutes
+
+* Policy on PR milestones
+    * Milestones should only go on PRs that block a release
+    * Backport PRs should be milestoned to the bugfix release
+    * Manual backport PRs should include only one backport per PR and should be milestoned in the same way as automatic backports and should reference the original PR
+    * Where do we record this new policy?
+
 ## 14th October 2020
 
 ### Agenda
