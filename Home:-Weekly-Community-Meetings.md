@@ -2,6 +2,98 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 28 October 2020
+
+### Agenda
+
+* 2.1 release triage
+* PR Discussion
+* Issue discussion
+
+
+### Minutes
+
+## ROSES Call Notes
+
+* Emphasize that these duties are not constrained to the core code base
+* This role is largely focused on the project as a whole--make sure to emphasize this in the proposal
+
+### A List of things to do right now!
+
+* Daily issue triage
+    * Back catalogue
+    * As they come in
+* Mailing list/Discourse maintenance
+* Dev-ops automation infrastructure
+    * Package template
+    * CI monitoring
+    * Make this less human in the loop!
+* Development work
+    * Adopting stale PRs
+    * Less development in the first year, more in later years
+    * Big feature requests from the community!
+    * Offload science features to community and review
+    * Non-science features that are important to the package and useful, but less likely to be implemented by the community
+* Fill open roles
+* Organize coordination meeting
+* Affiliated package
+    * Review / Re-review procedures
+    * Webpage
+    * Recruitment -- interfacing with instrument teams (instrument teams should front some cash)
+    * Updates for breaking changes in sunpy/other dependencies (e.g. Fido in radiospectra)
+* Interfacing with upstream changes
+    * Need to react quickly to these changes! These are the most time-sensitive
+    * How do we monitor these changes?
+    * Data providers
+        * e.g. GOES XRS
+    * Packages
+    * CI
+* Mentoring
+    * Filling open roles
+    * Educating community
+    * Onboarding contributors
+
+### Reorganize
+
+* Large future project design
+    Scope out and describe on issues project plans for large features i.e. metadata rewrite. To facillitate contributions or funding from other places etc. Also have discussions about these things before the dev work happens.
+
+* Day-to-day Duties
+    * Issue triage
+    * PR review
+    * CI monitoring
+    * Mailing List / Chat support
+    * Helping with releases / doing bugfixes
+* Technical infrastructure
+    * Development of Project Automation
+        * Package template & auto PR bot
+        * CI dashboard
+        * Release reminder bot
+        * Completely autonomus bugfixes
+        * Document the shit out of all of this for benefit of wider community
+    * CI maintenance
+    * Sponsored package template / updates
+* Project infrastructure
+    * Milestone policies
+    * Drafting SEPs
+    * Organize weekly meetings
+    * Organize coordination meetings
+* Interfacing with and reacting to upstream changes
+    * Need to react quickly to these changes! These are the most time-sensitive
+    * How do we monitor these changes?
+    * Data providers
+        * e.g. GOES XRS
+    * Packages
+    * CI
+* Community Interaction
+    * What features do we need in the project?
+    * Fill open roles
+    * Affiliated package
+        * Review / Re-review procedures
+        * Webpage
+        * Recruitment -- interfacing with instrument teams (instrument teams should front some cash)
+        * Updates for breaking changes in sunpy/other dependencies (e.g. Fido in radiospectra)
+
 ## 21 October 2020
 
 ### Agenda
