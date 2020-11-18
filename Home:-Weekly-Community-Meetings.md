@@ -2,6 +2,19 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 4 November
+
+### Agenda
+
+* 2.1
+* 2.1 pull Requests (https://github.com/sunpy/sunpy/pulls?q=is%3Aopen+is%3Apr+milestone%3A2.1)
+* Test behaviour discussion
+    * Should the tests fail if all the deps aren't installed? (https://github.com/sunpy/sunpy/issues/3701)
+    * Should the tests fail if servers are offline?
+    * Should the tests fail if pytest plugins are not installed? (https://github.com/sunpy/sunpy/issues/4612)
+
+### Notes
+
 ## 28 October 2020
 
 ### Agenda
