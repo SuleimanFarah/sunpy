@@ -2,6 +2,8 @@
 
 The process for a rc is the same as it is for a normal release, but **the changelog is not rendered with towncrier**.
 
+## Release Checklist
+
 **Before major releases only:**
 - [ ] Update RELEASE.rst
 - [ ] Do a conda-forge build for at least one of the release candidates
