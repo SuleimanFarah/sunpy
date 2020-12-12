@@ -1,30 +1,16 @@
-**For major releases only:**
+## Making a pre-release i.e. a release candidate (rc)
+
+The process for a rc is the same as it is for a normal release, but **the changelog is not rendered with towncrier**.
+
+**Before major releases only:**
 - [ ] Update RELEASE.rst
 - [ ] Do a conda-forge build for at least one of the release candidates
-- [ ] Remove the files under the developer's guide except for `index.rst`, `stability.rst` and `sunpy_stability.yaml`. Then change the `index.rst` file to read:
-
-```
-.. _dev_guide:
-
-Developer's Guide
-=================
-
-Please go `here <https://docs.sunpy.org/en/latest/dev_guide/index.html>`_ for our up to date developer's guide.
-
-.. toctree::
-   :maxdepth: 2
-
-   stability
-```
-
-**Branching:**
-- [ ] Create and change onto a new release branch from master labeled with the release number ```X.Y```.
 
 **All of the following assumes that you are on the release branch and not master (`X.Y` e.g `1.0`)**
 
-**Pre-release:**
+**Before release:**
 
-- [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/):
+- [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/) (not for rc releases):
 ```
 towncrier --version vX.Y.Z
 ```
@@ -60,7 +46,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 
 - [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), ideally a bot should do it for you
 
-**Post Release:**
+**After Release:**
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc -t markdown_strict CHANGELOG.rst`.
 - [ ] Enable the tag on Read the Docs.
