@@ -1,7 +1,3 @@
-## Making a pre-release i.e. a release candidate (rc)
-
-The process for a rc is the same as it is for a normal release, but **the changelog is not rendered with towncrier**.
-
 ## Release Checklist
 
 **Before major releases only:**
@@ -16,7 +12,7 @@ The process for a rc is the same as it is for a normal release, but **the change
 ```
 towncrier --version vX.Y.Z
 ```
-if it's a rc release do not select the option to delete the changelog files. We release full changelogs for all rcs.
+if it's a rc release do not do this, the changelog is only rendered in the documentation for per-releases.
 
 - [ ] Commit the changes
 ```
