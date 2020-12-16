@@ -2,6 +2,111 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+
+## 3rd December 2020
+
+* Stuart: Maybe we should advertise our weekly community meetings better (Some outreach work in order?)
+
+* PUNCH (Guests: Matt West and Dan Seaton)
+    * To be open-sourced and based in Python
+    * To be afiliated with SunPy (in the works)
+    * Have a frozen version to be remained untouched (kind of like SunPy's LTS?)
+    * GitHub to host the new addition from PUNCH to SunPy
+    * PyPi for release with `pip` (Maybe conda as well?)
+    * Laura suggested talk about package template for affiliated package applications (i.e., packaging for "structure" stuff)
+    * Matt expressed concerns about accuracy or relevance of latest version of official SunPy docs
+    * Matt: Actual transform code 
+    * Stuart: Elements.io as the de facto SunPy IRC channel, bridged with Slack via Matrix
+    * Matt: Concern about conversing about code dev over video telecons / call
+    * Matt: Have specific questions to ask
+    * PUNCH `transforms` package
+        * Ingest data products as FITS files 
+        * For specific transformation between different coordinate systems
+        * Using an azimuth for coordinate transformations
+        * Optical astronomy/ system - distortions in the imaging (due to various factors such as atmospheric aberrations?)
+        * Polynomial distortion algo needs to be worked into (interfaced with) SunPy's `map` module
+        * Can use Astropy `wcs.WCS` to handle the projection 
+        * (Thanks so Solar-Probe)
+        * SunPy map objects - represents meta tranlator / standardizer (for the converstion between coordinate systems)
+        * Aiming for APE 14 compliance 
+        * I/O issues as observed by Matt (exporting/importing after transformation), cannot be regenerated with SunPy currently without a patch
+        * Stuart: A valid FITS header conforming to APE 14 standard should allow such I/O issues to be resolved
+        * Matt: Issues with WCS (only recommondations for nonlinear projections), will need to adopt a non-linear approach upstream by Astropy (Action item: PR's to follow?)
+        * Recommendations: "Perfect" FITS (with proper header specs) format for input data products should work with existing Astropy/SunPy ecosystem
+        * Matt: Feel there is a need for a community docs for best practices for FITS handling for solar physics? (Answer: A recent publication as suggested by Stuart)
+        * PUNCH is currently working feverishly to develop code products for software infrastructure
+        * FITS header in solar physics observed to be in dire need of standardizaiton 
+        * Matt's bigger question: Having SunPy involved in PUNCH would be mutually beneficial
+        * Application as a transform package (suggested IRC channels? workflow for integration between PUNCH and SunPy)
+        * Dan R.: Incorporation of use of NDCube in PUNCH work?
+        * Dan R.: Respect PUNCH is mission-based
+        * PUNCH: Open to relying on SunPy chatroom for the time-being, with specific questions to be redirected to PUNCH specific channel later (as suggested by Dan R.)
+        * Stuart: Affiliated package application is currently being updated to remain relevant, all are welcome to open an issue there
+        * Matt: What happens to deprecated affiliated packages (Stuart: As long as it works we would keep it, despite it being outdated, unless there is serious issues with the exising package)
+        * Matt: Concerned for time to process the application (Laura clarified), worried might get stuck
+        * Stuart: SunPy is very open to feedback from PUNCH
+        * Matt: See SunPy as a potential "wrapper"
+        * Stuart: Expected something that are missing from the transforms package originally written in Perl by Dan S.
+        * Matt: Package architecture developed about 10 years ago, so may need reworking
+        * Matt: Some mem tests have been conducted on the existing codebase as benchmarking
+        * Matt: Jacobian in there probably will not be rewritten as it is written (def: a matrix for storing 2nd order derivatives for the tranformation?)
+        * Craig may be attending future SunPy meetings
+        * Specific Python questions... (to be continued)
+            * Superclass with a whole bunch of methods
+            * Subclass to reverse the name of two of the method the superclass for some inverse transform but would like to call forward transform (a layered superclass)
+            * Super-superclass
+            * Stuart: We will need to see the code
+            * Albert: Should be doable, but... (with caveats)
+            * Not private functions, but protected ones to be manipulated 
+    * Will: We would like to see more interaction with instrument teams
+    * Laura: PUNCH contact emails are kind of hidden, but found
+
+* NDCube 2.0 (post Beta)
+    * Dan needs feedback
+    * Could be useful if more feedback can be gotten regarding the API
+    * Previously received feedback is too technical and not general enough 
+    * Dan would really want new user to try it out and give honest feedback regarding functionality
+    * Before next week would be great (hoping possbily before Christmas)
+    * A focused discussion during next week's / next next week's community meeting would be great
+    * Ideally NDCube 2.0 should come out before SunPy 2.1, at least that's the expectations
+
+* 2.1 PR's, etc.
+    * Metadata is holding up branching, needs another review
+        * CI is largely passing
+    * Stuart will give it a review one more time
+    * Doc PR needs week before feature freeze
+    * Will need to update "What's New" as well
+    * 2 PR's open for a bug open on the googlemail mailing
+        * Can backport the fix for only one of the two
+        * The CTYPE's been missing
+        * Should default to a particular projection instead of leaving it "open"
+    * Pixel-to-world bug needs attention
+        * World-to-pixel returns an array of floats, wouldn't be able to used in submaps directly, will need to be multiplied by pixels first... 
+        * Basically boils down to: What do submaps do (by design as well as construction)?
+        * Stuart: WCS attributes coming from an NDCube perspective is fundamental
+        * Stuart: Why are we special-casing particular attributes
+    * Not to milestone the self tests (according to Nabil, someone says...)
+    * Will: Too hasty in approving a PR before some real CI/CD check failures
+    * Stuart: We do have the option of adding some "checks and balances" to the existing CI/CD mechanism as a secondary safeguard (for foolproof of genuine test failures)
+    * Stuart working on Azure configs for CI/CD checks (in "Stages")
+    * Stuart: API breaking stuff should be one thing we should be avoid doing
+    * (Maybe a warning to the console should be in order?)
+    * Dan: Depracation could be a solution 
+    * Stuart: pending depracation warnings to the console (so as not to yell at people at their face figuratively)
+    * Laura: many people complains about SunPy morphing / evoling too fast
+    * Stuart: warning fatigue observed
+    * Albert: Should encourage adoption and usage of WCS for it to gain traction
+    * Stuart: wary of making significant changes to the `map` API
+    * Dan: Would like to understand the metadata problem mentioned more (Stuart: why the `map` approach for the metadata transformation)
+    * Stuart: Metadata issue much like the polynomial distortion correction / fitting algo raised by PUNCH
+    * Dan: generic data object to a map object (for which Stuart agrees)
+
+* NASA ROSES grant application (1st call)
+    * Albert is in the process of writing the proposal for SunPy to be due in mid-January 2021
+
+* Outreachy
+    * Skipped for this week as agreed with mentors
+
 ## 18 November
 
 ### Agenda
