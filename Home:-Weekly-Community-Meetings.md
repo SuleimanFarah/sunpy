@@ -2,6 +2,35 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 16th December 2020
+
+This is the last community meeting of 2020
+
+### Agenda
+
+* NDCube 2.0 API and how it relates to sunpy Map
+
+### Notes
+
+Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.0: https://github.com/DanRyanIrish/notebooks/blob/master/ndcube_as_map/ndcube20_as_map.ipynb
+
+* Side-by-side comparison of Map and NDCube in their current states
+* NDCube strictly follows NumPy array ordering in pixel space (row, column)
+* Can you create a `WCSAxes` instance ahead of time and then pass it into `NDCube.plot()`?
+    * Will will try this and follow up
+    * This is easy in `Map.plot`, should be easy in `NDCube`
+* `submap` -> `crop` -- generalized N-dimensional cropping
+    * Spatial bounds are now `SkyCoord`
+    * Shouldn't have to specify bounds in dimensions that you don't want to slice
+* NDCube does not assume alignment between pixel and world space
+    * In HPC, can never have true independence between lon/lat because of projection of 3D image onto 2D screen
+* Can animate any arbitrary number of axes
+* Global coordinates
+* How do we go about reimplementing `Map` on top of `NDCube`?
+    * First pass: just try to reimplement `Map` exactly
+    * This will reveal rough edges, pain points
+    * Opportunity to rethink API for 3.x?
+
 
 ## 3rd December 2020
 
