@@ -4,6 +4,7 @@
     * [Organization Information](./Home%3A-Organization-Information)
     * [Weekly Community Meetings](./Home%3A-Weekly-Community-Meetings)
     * [Release Checklist](./Home%3A-Release-Checklist)
+    * [Feature Freeze Checklist](./Home%3A-Feature-Freeze-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
     * [Release Calendar](./Release-Calendar)
   * [GSoC](./GSoC)
