@@ -52,7 +52,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 
 **Announcements:**
 - [ ] Post release announcement on social media sites
-- [ ] Send release announcement to mailing lists
+- [ ] Send release announcement to mailing lists (sunpy@googlegroups.com and sunpy-dev@googlegroups.com)
 ``` 
 Email Template
 -----
