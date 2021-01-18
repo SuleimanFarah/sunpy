@@ -4,6 +4,7 @@ These projects are work-in-progress ideas what have not yet made the jump to fin
 The list of projects below will be changing as they are being taken by someone or made obsolete by the project as it moves on.
 
 ## Project Template
+
 **Abstract**
 
 **Requirements**
@@ -17,28 +18,6 @@ The list of projects below will be changing as they are being taken by someone o
 ***
 ***
 ***
-
-## Integration of the HESPE Data Archive
-* **Description**: The [HESPE Data Archive](http://hespe.eu/browser) gives access
-to pre-processed science products from the RHESSI satellite.
-The data are organized by flare event and are available both as printable quicklook
-files (PNGs) that can be directly displayed in SunPy, and in their original data
-structures and formats (FITS) that may need some additional processing.
-Access is provided through a web interface (REST) that can be used from within SunPy.
-Each flare event can have hundreds of data products connected to it, which requires
-special attention when displaying the search results.
-The integration task includes:
-(1) basic integration of the HESPE search (with feedback to the HESPE project team,
-if necessary);
-(2) basic integration of the RHESSI data products using existing SunPy structures;
-(3) optimizing the handling and presentation of the search, the search results
-(e.g. allowing to filter), and the data products themselves.
-The outcome should be two clients, command-line and GUI.
-
-* **Requirements**: Knowledge of GUI design; Basic knowledge of working with web
-services (REST) and JSON is a plus.
-
-* **Mentor**: Laszlo I. Etesi (HESPE data archive developer), Steven Christe (SunPy)
 
 ## HELIO - capabilities improvement
 
@@ -65,10 +44,6 @@ Detection algorithms:
 * Curve
 
 Tracking and property extraction using labelling and similar.
-
-## Interface to get heliospheric data from CDAweb
-CDAWEB provides as [SOAP interface](http://cdaweb.gsfc.nasa.gov/WebServices/SOAP/) which could be used
-within SunPy to download insitu data.
 
 ## GUI to use LCT tools
 ### Abstract:
