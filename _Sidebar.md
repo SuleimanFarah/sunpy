@@ -1,4 +1,4 @@
-![SunPy](https://github.com/sunpy/sunpy/blob/master/docs/logo/sunpy_icon_128x128.png)
+![SunPy](https://raw.githubusercontent.com/sunpy/sunpy-sphinx-theme/main/sunpy_sphinx_theme/sunpy/static/img/sunpy_icon_128x128.png)
 
   * [Home](./Home)
     * [Organization Information](./Home%3A-Organization-Information)
