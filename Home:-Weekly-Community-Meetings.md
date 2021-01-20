@@ -2,6 +2,20 @@
 
 The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The link to these weekly teleconferences can be found [here](https://sunpy.org/jitsi). The minutes for each meeting are recorded below. The agenda and minutes for the upcoming meeting can be found [here](https://demo.codimd.org/GAEnxycXQcCQLrAFN7ie8A). Community members should feel free to edit the agenda and add items as appropriate. Agenda items not covered at this week's meeting will be bumped to the agenda for the following week. Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
+## 06 January 2021
+
+### Agenda
+
+* NDCube 2.0
+* QueryResponses
+* 2.1 Schedule
+
+### Notes
+
+#### NDCube 2.0
+
+Issues to be tackled, but not much time between Stuart and Danny at the moment. All contributions welcome.
+
 ## 16th December 2020
 
 This is the last community meeting of 2020
