@@ -3,7 +3,7 @@
   * [Home](./Home)
     * [Organization Information](./Home%3A-Organization-Information)
     * [Weekly Community Meetings](./Home%3A-Weekly-Community-Meetings)
-    * [Weekly Community Meetings Archive](./Home%3A-Weekly-Community-Meetings)
+    * [Weekly Community Meetings Archive](./Home%3A-Weekly-Community-Meetings-Archive)
     * [Release Checklist](./Home%3A-Release-Checklist)
     * [Feature Freeze Checklist](./Home%3A-Feature-Freeze-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
