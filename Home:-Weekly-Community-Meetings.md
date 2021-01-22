@@ -4,9 +4,8 @@ The SunPy weekly community meeting is held every Wednesday at 16:00 UTC. The lin
 
 [Previous minutes can be found here.](./Home%3A-Weekly-Community-Meetings-Archive)
 
+Template
 ***
-Template for a meeting:
-
 ## DATE
 
 ### Agenda
