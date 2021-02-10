@@ -1,7 +1,7 @@
 # Weekly Community Meetings
 
 The SunPy weekly community meeting is held every Wednesday at 17:00 UTC.
-[The link to these weekly teleconferences here](https://sunpy.org/jitsi).
+[The link to these weekly teleconferences](https://sunpy.org/jitsi).
 
 [Previous minutes can be found here.](https://github.com/sunpy/sunpy/wiki/Home%3A-Weekly-Community-Meetings-Archive)
 
