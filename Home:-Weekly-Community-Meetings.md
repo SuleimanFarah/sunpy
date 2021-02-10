@@ -14,12 +14,13 @@ Template
 ### Notes
 ***
 
-## 27-01-2021
+## 10-02-2021
 
 ### Agenda
 
 * Release blockers for 2.1
-*
+* GSoC Projects
+* Anything else?
 
 ### Notes
 
