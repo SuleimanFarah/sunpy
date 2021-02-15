@@ -6,7 +6,7 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 ##### 2020
 
-* [Metadata searches using Fido](https://summerofcode.withgoogle.com/archive/2020/projects/6373058639560704/) by [Vishnunarayan K I](https://github.com/vn-ki/)
+* [Metadata searches using Fido](https://summerofcode.withgoogle.com/archive/2020/projects/6373058639560704/) by [Abhijeet Manhas](https://github.com/abhijeetmanhas)
 * [glue-solar
 ](https://summerofcode.withgoogle.com/archive/2020/projects/6025721211781120/) by [Kris Stern](https://github.com/akirahirohito)
 
