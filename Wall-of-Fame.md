@@ -1,8 +1,21 @@
 This page lists the names of these who have work for SunPy via summer of code or other type of funding
 
-### Google summer of Code (2013-2018)
+### Google summer of Code (2013-2020)
 
 #### With [Open Astronomy](http://openastronomy.org/)
+
+##### 2020
+
+* [Metadata searches using Fido](https://summerofcode.withgoogle.com/archive/2020/projects/6373058639560704/) by [Vishnunarayan K I](https://github.com/vn-ki/)
+* [glue-solar
+](https://summerofcode.withgoogle.com/archive/2020/projects/6025721211781120/) by [Kris Stern](https://github.com/akirahirohito)
+
+##### 2019
+
+* [Remote Data for SunPy](https://summerofcode.withgoogle.com/archive/2019/projects/5709992840134656/) by [Vishnunarayan K I](https://github.com/vn-ki/)
+* [Add Time-dependent Instrument Response Function to IRISpy](https://summerofcode.withgoogle.com/archive/2019/projects/6094580905148416/) by [Kris Stern](https://github.com/akirahirohito)
+* [Sunkit-Image](https://summerofcode.withgoogle.com/archive/2019/projects/6683198925307904/) by [Vatsalya Chaubey](https://github.com/vatch123)
+* [Supporting APE14 in NDCube](https://summerofcode.withgoogle.com/archive/2019/projects/5877302938828800/) by [yashrsharma44](https://github.com/yashrsharma44)
 
 ##### 2018
 
