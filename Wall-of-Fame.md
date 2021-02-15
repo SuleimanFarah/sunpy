@@ -1,6 +1,6 @@
 This page lists the names of these who have work for SunPy via summer of code or other type of funding
 
-### Outreachy (2020-2021)
+### Outreachy (2020)
 
 #### With [Open Astronomy](http://openastronomy.org/)
 
