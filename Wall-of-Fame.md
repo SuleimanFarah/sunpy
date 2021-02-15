@@ -1,5 +1,11 @@
 This page lists the names of these who have work for SunPy via summer of code or other type of funding
 
+### Outreachy (2020-2021)
+
+#### With [Open Astronomy](http://openastronomy.org/)
+
+* [Performance Monitoring for SunPy and Astropy](https://www.outreachy.org/outreachy-december-2020-internship-round/communities/openastronomy-astropy/#performance-monitoring-for-sunpy-and-astropy) by [Katherine Ivashkiv](https://github.com/kathivashkiv)
+
 ### Google summer of Code (2013-2020)
 
 #### With [Open Astronomy](http://openastronomy.org/)
