@@ -11,8 +11,9 @@ The following steps are to be taken on the master branch (via PR) prior to branc
 1. Update the `.mailmap` and `.zenodo.json` files. These are metadata files about the authorship of the code. 
     1. The `.mailmap` file needs updating manually, to remove any duplicates and where possible to add peoples real names. The best way to do this is to first run `git shortlog -ens vX.Y.dev..HEAD` where `vX.Y` is the previous release number. Look down this list and check for duplicates and people without real names. Edit the `.mailmap` file until all these are fixed.
     2. Next run the `tools/update_zenodo.py` file, this script uses the output of `git shortlog` to update the `.zenodo.json` file. Check the printed output of the script and the diff for sanity.
-3. Update the vendored modules in `extern/` if they need updating, these should be copied from their latest releases on GitHub.
-5. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
+1. Update the vendored modules in `extern/` if they need updating, these should be copied from their latest releases on GitHub.
+1. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
+1. Generate the release notes with the `tools/generate_releaserst.xsh` script.
 
 
 ## Branching
