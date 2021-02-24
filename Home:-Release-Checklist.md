@@ -1,8 +1,8 @@
 ## Release Checklist
 
 **Before major releases only:**
-- [ ] Update RELEASE.rst (this should hopefully have been done at feature freeze).
-- [ ] Do a conda-forge build for at least one of the release candidates
+- [ ] Ensure RELEASE.rst and the What's New have been finalised at feature freeze time.
+- [ ] Do a conda-forge build for at least one of the release candidates.
 
 **All of the following assumes that you are on the release branch and not master (`X.Y` e.g `1.0`)**
 
