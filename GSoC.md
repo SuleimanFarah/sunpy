@@ -36,6 +36,8 @@ But it does not have to be taken as the the definite version.
 
 ## Editions
 
+[[GSoC 2021]]
+
 [[GSoC 2020]]
 
 [[GSoC 2019]]
