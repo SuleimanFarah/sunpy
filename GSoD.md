@@ -1,3 +1,3 @@
 # Google Summer of Documentation
 
-[[GSOD s2020]]
+[[GSOD 2020]]
