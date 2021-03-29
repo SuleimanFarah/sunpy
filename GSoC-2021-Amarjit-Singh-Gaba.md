@@ -168,7 +168,7 @@ I will spend this time to get to know the community and interact with the mentor
 ### **Availability**
 ---
 As stated above, there are 2 occasions when I might not be available, on my exams, and on my sister’s wedding, but other than that I am available full time. 
-I won’t be doing any Summer Internship neither going for any trip, so can commit full time to this project, around ~40 hours per week, but if more needed I am more than happy to do that.
+I won’t be doing any Summer Internship neither going for any trip, so can commit easily around ~18 hours per week, but if more needed I am more than happy to do that.
 After my exams on June 9, 2021, my academic semester would be officially over and won’t start until September.
 
 
@@ -185,7 +185,7 @@ No, this is the only proposal I am submitting.
 
 - **How much time do you plan to invest in the project before, during, and after the Summer of Code?**
 
-During the coding period I can easily put in ~40 hours per week, as I don’t have any summer internships. After the Summer of Code, I’ll continue to work on the API, and get it integrated to SunPy as soon as possible. I can’t wait to see how that’ll turn out!
+During the coding period I can easily put in ~18 hours per week, as I don’t have any summer internships. After the Summer of Code, I’ll continue to work on the API, and get it integrated into SunPy as soon as possible. I can’t wait to see how that’ll turn out!
 
 - **Are you eligible to receive payments from Google?**
 
