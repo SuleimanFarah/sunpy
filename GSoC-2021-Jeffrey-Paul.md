@@ -30,8 +30,8 @@ The entire project is split into 3 major components which include:-
 
 
 #### 1) Extending Functionality
-- The existing code makes use of PyVista for 3D plotting functionality and all of the code for 3D plotting would make use of PyVista itself. Currently, there exists simple functionality for plotting any given `GenericMap` from SunPy to be plotted using Pyvista and this will be the baseline from where I would pick up on.
-- As stated by the requirements, moajority of the functionality of a 2D `GenericMap` from SunPy shall be implemented in 3D. It would include the extensions of all the available plotting mechanisms with the approptiate `AstroPy` units.
+- The existing code makes use of PyVista for 3D plotting functionality and all of the code for 3D plotting would make use of PyVista itself. Currently, there exists simple functionality for plotting any given `GenericMap` from SunPy to be plotted using Pyvista and this will be the baseline from which I would pick up on.
+- As stated by the requirements, majority of the functionality of a 2D `GenericMap` from SunPy shall be implemented in 3D. It would include the extensions of all the available plotting mechanisms with the appropriate `AstroPy` units.
 - The 3D PFSS field lines from Pfsspy shall also be implemented and tested carefully.
 - The underlying packages for 3D plotting would have to be listed out and this has to be carefully tested with different versions of the packages to make sure that this works with SunPy.
 - There are no bounds defined for 3D plotting capability and adding extra functionality for plotting Astropy's coordinates shall also be implemented.
@@ -62,7 +62,8 @@ The entire project is split into 3 major components which include:-
 
 ### Timeline and Weekly Deliverables
 
-![image](https://github.com/jeffreypaul15/Sunpy3D/blob/master/screenshots/112889241-03321a80-90f3-11eb-8f16-ad2f54b12b8d.png)
+![image](https://user-images.githubusercontent.com/50923538/113209478-bedc8100-9290-11eb-86a6-9522aaf68ebc.png)
+
 
 ### Further understanding of the deliverables
 #### Community Bonding Period
@@ -113,7 +114,7 @@ ___
 
 - Continue working towards adding the existing methods of SunPy's `GenericMap` to 3D.
 - I have implemented a few 2D plotting functionalities such as `draw_grid` and `draw_limb`.
-![image](https://github.com/jeffreypaul15/Sunpy3D/blob/master/screenshots/112277482-cce63c80-8ca7-11eb-8163-35adaa2b8830.png)
+![image](https://raw.githubusercontent.com/jeffreypaul15/Sunpy3D/master/screenshots/112277482-cce63c80-8ca7-11eb-8163-35adaa2b8830.png)
 - Ensuring the extensions are done appropriately with careful comparison from the 2D plots and appropriate tests.
 - Research on grid plotting with `WCS axes` in 3D and also research on `clip_interval` of for `vmin/vmax` set-up of the required 3D plots.
 - Implementation the plotting coordinates of various `Astropy` units and also drawing of `Great Arc` and `heliographic longitude and latitude lines` in 3D.
@@ -148,7 +149,7 @@ ___
 - Major bugs (if any) would be resolved by now and a considerable amount of time shall be devoted to testing all of the small implementations.
 - If any new requirements are requested by the mentors, they shall be implemented during these weeks and the testing of the new code as well.
 - I have already implemented some starter code for plotting field lines from a given `gong_map`.
-![image](https://github.com/jeffreypaul15/Sunpy3D/blob/master/screenshots/112165572-dffbfc80-8c14-11eb-9dd9-9eb3937607fa.png)
+![image](https://raw.githubusercontent.com/jeffreypaul15/Sunpy3D/master/screenshots/112165572-dffbfc80-8c14-11eb-9dd9-9eb3937607fa.png)
 
 #### Week 10
 - Cross-check if all the implemented functionalities are what is required for the project. 
@@ -179,7 +180,7 @@ ___
 ### Open Source background and Programming experience
 
 - Programming Languages: Python, Java, C, JavaScript, Dart (Basic)
--  As of writing this proposal, my contributions to SunPy include 11 merged and 3 WIP PRs. I have mainly worked with writing various tests and visualization for SunPy. I also spent quite a bit of time understanding the coordinate systems from a gallery example [PR](https://github.com/sunpy/sunpy/pull/5121).  Besides that, some important PRs are :
+-  As of writing this proposal, my contributions to SunPy include **11 merged** and **3 WIP PRs**. I have mainly worked with writing various tests and visualization for SunPy. I also spent quite a bit of time understanding the coordinate systems from a gallery example [PR](https://github.com/sunpy/sunpy/pull/5121).  Besides that, some important PRs are :
 -  [Added draw_quadrangle method](https://github.com/sunpy/sunpy/pull/4809) [visualization]
 -  [Added STEREO/SECCHI client](https://github.com/sunpy/sunpy/pull/4869)
 -  [Added dynamic z axis option](https://github.com/sunpy/sunpy/pull/5025) [visualization]
