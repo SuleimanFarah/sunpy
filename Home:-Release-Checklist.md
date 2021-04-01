@@ -51,6 +51,7 @@ Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunp
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc --wrap=none -t markdown_strict CHANGELOG.rst`.
 - [ ] Ensure the tag has built on read the docs and the "stable" marker has been updated. **Ensure that all the gallery examples have built correctly, restart the build if not**.
 - [ ] For a major release, commit the final rendered changelog to master. (The fragments should have been removed at feature freeze time)
+- [ ] Update the index.rst file in sunpy.org repo to point to the new whats new and update the version number.
 
 **Announcements:**
 - [ ] Post release announcement on social media sites
