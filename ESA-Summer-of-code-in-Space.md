@@ -10,7 +10,7 @@ Don't doubt to find a project you would like to do and apply for it (some time s
 
 ## Requirements for Students
 
-For those who want to apply, you need to follow the [[GSoC]] rules, so please read over these pages and pay particular attention to [[GSoC: Advice for Students]].
+For those who want to apply, you need to follow the [[Google-Summer-of-Code]] rules, so please read over these pages and pay particular attention to [[GSoC: Advice for Students]].
 In summary, this means communicating with the SunPy community and project mentors, with a (ideally recent) pull request made to the SunPy organisation. 
 
 **There is an extra requirement.**
