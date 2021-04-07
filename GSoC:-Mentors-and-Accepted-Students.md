@@ -50,13 +50,13 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
 * Chat
 
-    You can come hang at our IM room [here](https://riot.im/app/#/room/#sunpy:matrix.org), and feel free to ask for help.
+    You can come hang at our IM room [here](https://app.element.io/#/room/!unyYitVQrpIQvLQQHQ:cadair.com), and feel free to ask for help.
     If you are using riot you can start a group for the project with all the mentors.
     Remember to make tickets or send emails for any big bugs or design decisions, as chat logs are transient.
 
 * Videoconferencing
 
-    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on day light saving), we have a developer meeting [here](https://jitsi.riot.im/sunpy).
+    Every week on a wednesday at 16:00 UTC or 17:00 UTC (depending on daylight saving), [we have a developer meeting](https://sunpy.org/jitsi).
     An announcement email is sent to the mailing list.
     We expect all students to show up for these meetings (barring any issues) to discuss what they have done since the last meeting.
     You might have smaller meetings with your mentors often throughout the project life cycle.
@@ -81,7 +81,7 @@ You’ll establish a personal rhythm with your mentors, but please bear the foll
 
     From the Google Manual:
 
-        GSoC needs an investment of about 30 hours a week.
+        GSoC needs an investment of about 18 hours a week.
 
     If you know in advance that you’ll need to take a couple of days of vacation/break during the Summer of Code, you should communicate that with your mentor beforehand and plan to make up for lost days.
 
