@@ -1,8 +1,8 @@
-**PLEASE BE AWARE THAT THIS IS NOT MEANT TO BE TAKEN AS A CHECKLIST OF QUESTIONS/ITEMS THAT YOU MUST ANSWER TO COMPLETION. THE TEMPLATE WAS ENVISIONED AS A GUIDE.**
+**THIS TEMPLATE IS A GUIDE**
 
-When you submit an application to GSoC, it will be in a Google Docs format and an application should be __concise__ and we suggest not exceeding 5(ish) pages.
+When you submit an application to GSoC, it will be in a Google Docs format and an application should be __concise__ and we suggest not exceeding ~5 pages.
 
-We also expect the application to be hosted on our wiki.
+We also expect the final application to be hosted on our wiki.
 Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
 You can do this after you have finalised the version on the GSoC website.
 
@@ -47,13 +47,13 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-    We expect full time \~35h per week during GSoC.
+    We expect the full time commitment of \~18h per week during GSoC. 
     If you plan to take any vacations over the summer or if you have exams or any other commitments (like an internship), let us know about it here.
 
 ## You the programmer
 
 In your project proposal let us know about your programming experience.
-Don't worry if you don't know much about SunPy or git/GitHub.
+Don't worry if you don't know much about sunpy or git/GitHub.
 Many of our students start fresh on these topics and we will teach you what you need to know.
 
 * What is your experience with programming?
@@ -88,7 +88,7 @@ Answer the following questions in your proposal:
 
 * How do you plan to implement the project?
 
-    What parts of SunPy need changing and in what way?
+    What parts of sunpy need changing and in what way?
     What will you add?
     What could be stumbling blocks of the project?
     Will you need to make changes to upstream packages?
@@ -132,6 +132,8 @@ Below is a blank template of a timeline you can try to use to fill in for your G
 You are free to use another or a different style but we want this level of breakdown, either week by week or two weeks at most.
 You should tailor the timeline as as it suits you and the project you are working on.
 
+**The timetable dates and the format depends on GSoC, so will change year on year.**
+**So you might need to update it yourself.**
 ___
 #### Community Bonding Period (DATE)
 ___
@@ -151,11 +153,14 @@ ___
 #### Week 4 - Week 5 (DATE)
 - Point X
 
+#### Week 6 (DATE)
+- Point X
+
 ___
-#### Phase 1 Evaluation (DATE)
+#### First Evaluation (DATE)
 ___
 
-#### Week 6 - Week 7 (DATE)
+#### Week 7 (DATE)
 - Point X
 
 #### Week 8 (DATE)
@@ -164,14 +169,7 @@ ___
 #### Week 9 (DATE)
 - Point X
 
-___
-#### Phase 2 Evaluation (DATE)
-___
-
-#### Week 10 - Week 11 (DATE)
-- Point X
-
-#### Week 12 - Week 13 (DATE)
+#### Week 10 (DATE)
 - Point X
 
 ___
