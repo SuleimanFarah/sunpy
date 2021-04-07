@@ -1,25 +1,24 @@
 ## What is it?
-> Google Summer of Code is a global program that offers students stipends to write code for open source projects.
-> We have worked with the open source community to identify and fund exciting projects for the upcoming summer.
+> Google Summer of Code is a global program focused on bringing more student developers into open source software development. 
+> Students work with an open source organization on a 10 week programming project during their break from school.
 
 We participate in [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
 SunPy participated in 2013 for the first time and 2014 and 2015 under the [Python Software Foundation](https://wiki.python.org/moin/SummerOfCode/).
 
-## We recommend for people who want to apply for GSoC to read the GSoC wiki pages and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.
+**For anyone who wants to apply to GSoC, you should read the GSoC wiki pages and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.**
 
 ## Guidelines and helpful advice
 
 ### SunPy focused
 
-We have several SunPy related wiki pages for GSOoC with [[GSoC: Advice for Students]] being the main one.
+We have several wiki pages for GSoC with [[GSoC: Advice for Students]] being the main one.
 
 We have a [[GSoC Application template | GSoC: Student Application Template]], it should form the basis for your application.
-But it does not have to be taken as the definite version.
 
 [[GSoC: Mentors and Accepted Students]] is for mentors and accepted students.
 
->These pages are a combination of several other pages from around the world.
->We want to thank all those FOSS packages that we took heavy inspiration from, SymPy being the main one.
+> These pages are a combination of several other pages from around the world.
+> We want to thank all those FOSS packages that we took heavy inspiration from, SymPy being the main one.
 
 ### From other places
 
