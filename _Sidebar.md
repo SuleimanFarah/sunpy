@@ -8,7 +8,7 @@
     * [Feature Freeze Checklist](./Home%3A-Feature-Freeze-Checklist)
     * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
     * [Release Calendar](./Release-Calendar)
-  * [GSoC](./GSoC)
+  * [GSoC](./Google-Summer-of-Code.md)
     * [Advice for Students](./GSoC%3A-Advice-for-Students)
     * [Mentors and Accepted Students](./GSoC%3A-Mentors-and-Accepted-Students)
     * [Student Application Template](./GSoC%3A-Student-Application-Template)
