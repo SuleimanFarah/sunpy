@@ -1,4 +1,4 @@
-# If you are looking for final projects please [see here](http://openastronomy.org/gsoc/).
+# If you are looking for final projects please [see here](https://openastronomy.org/gsoc/).
 
 These projects are work-in-progress ideas what have not yet made the jump to final projects.
 The list of projects below will be changing as they are being taken by someone or made obsolete by the project as it moves on.
