@@ -1,4 +1,3 @@
-# ESA Summer of code in Space
 ## What is it?
 > [ESA Summer of Code in Space](http://sophia.estec.esa.int/socis/) is a program run by the [European Space Agency](http://www.esa.int/ESA).
 >It aims at offering student developers stipends to write code for various space-related open source software projects.
