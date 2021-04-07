@@ -13,7 +13,7 @@
     * [Mentors and Accepted Students](./GSoC%3A-Mentors-and-Accepted-Students)
     * [Student Application Template](./GSoC%3A-Student-Application-Template)
     * [WIP Ideas](./GSoC%3A-WIP-Ideas)
-  * [GSoD](./GSoD)
+  * [GSoD](./Google-Summer-of-Documentation)
   * [SOCIS](./SOCIS)
   * [Wall of Fame](./Wall-of-Fame)
 
