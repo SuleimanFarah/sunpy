@@ -84,14 +84,14 @@ Essentially what we are trying to achieve in this project is:
 
 - **Transforming Coordinates to Cartesian form**
 
-For this task I will need to study different datasets in SunPy and AstroPy that can be plotted in 3D. After this I will need to study different coordinate systems and understand what assumptions might be required to project them in 3D cartesian form. After building this theoretical knowledge I will develop code for the transformation. 
-I will start with plotting maps, and then when the initial API is ready I will work on other datasets.
+For this task I will need to study different datasets in SunPy and AstroPy that can be plotted in 3D. After this I will need to study different coordinate systems and understand what assumptions might be required to project them in 3D cartesian form. After building this theoretical knowledge I will start developing code.
+I will start with plotting maps, and then when the initial API is ready I will work on other things like Images of the sun, magnetic field lines (using pfsspy), drawing heliographic longitude and latitude, drawing differential rotation lines, and AstroPy coordinates.
 I will also need to add the functionality for combining visualisation of multiple objects (like maps and magnetic field lines) which can make 3D plot more useful. For this I will need to make sure that different objects perfectly align with their respective coordinates.
 
 
 - **Plotting the coordinates**
 
-After converting the coordinates I will need to plot them in 3D. For PyVista, as shown in the demo code ([PR#4591](https://github.com/sunpy/sunpy/pull/4591)), I will have to create PyVista `mesh` which can then be easily plotted. It is also worth trying out different 3D visualisation libraries as the installation of PyVista can require multiple dependencies (such as VTK), so I will be trying `matplotlib` and `plotly` as well, and see which one would better suit for the project.
+After converting the coordinates I will need to plot them in 3D. For PyVista, as shown in the demo code ([PR#4591](https://github.com/sunpy/sunpy/pull/4591)), I will have to create PyVista `mesh` which can then be easily plotted. It is also worth trying out different 3D visualisation libraries as the installation of PyVista can require multiple dependencies (such as VTK), so I will be trying `plotly` as well, and see which one would better suit the project.
 
 
 - **Tests and Documentation**
@@ -151,7 +151,7 @@ I will spend this time to get to know the community and interact with the mentor
 
     - *August 1, 2021 - August 5, 2021*
 
-    I plan to prepare the API for the first pre-release.
+    I plan to prepare the API for the first pre-release by writing any more tests (if left any) and documentation (you can never have too much documentation!), also I would be experimenting with the API for finding bugs.
 
     - *August 5, 2021 - August 16, 2021*
 
