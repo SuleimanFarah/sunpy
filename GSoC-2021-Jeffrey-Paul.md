@@ -12,7 +12,7 @@
 
 My open-source journey began with SunPy about 4 months ago, I enjoyed having to look at the visualization capabilities of SunPy and developed a keen interest in visualization while exploring the package and attempting to solve its issues. The efficient usage of python and purposeful open source contribution was the main drive for me.
 
-I have worked with Python as my primary programming language for over 3 years now and have a strong understanding of it and Pyvista while contributing to SunPy has made me better at it.
+I have worked with Python as my primary programming language for over 3 years now and have a strong understanding of it and Pyvista, while contributing to SunPy has made me better at it.
 
 I have been involved with contributing towards and understanding SunPy with its underlying libraries for about 4 months now which excites and gives me the confidence that I shall be able to complete the given project successfully and according to the required standards.
 
@@ -114,7 +114,7 @@ ___
 #### Week 6
 
 - Continue working towards adding the existing methods of SunPy's `GenericMap` to 3D.
-- I have implemented a few 2D plotting functionalities such as `draw_grid` and `draw_limb`.
+- I have implemented a few 2D plotting functionalities such as draw_grid and draw_limb by fetching the coordinates from matplotlib and converting them to Skycoord.
 ![image](https://raw.githubusercontent.com/jeffreypaul15/Sunpy3D/master/screenshots/112277482-cce63c80-8ca7-11eb-8163-35adaa2b8830.png)
 - Ensuring the extensions are done appropriately with careful comparison from the 2D plots and appropriate tests.
 - Research on grid plotting with `WCS axes` in 3D and also research on `clip_interval` for `vmin/vmax` set-up of the required 3D plots.
@@ -143,13 +143,14 @@ ___
 - Begin work on adding code for plotting AstroPy coordinate objects.
 - If other tests have to be performed, I shall implement this during this time.
 - Recreate `MapSequenceAnimator` as `gifs` with `PyVista`.
+- If time permits, extend a bit of the project's functionality to Plotly. As the mesh data says the same, we can use it to plot the GenericMap in Plotly.
 
 #### Week 9
 - The `Tox` environment shall be completely set up and all the tests shall be integrated accordingly.
 - Conduct a manual test of the documentation of the package so far and continue working on the documentation alongside the code ensuring accurate documentation.
 - Major bugs (if any) would be resolved by now and a considerable amount of time shall be devoted to testing all of the small implementations.
 - If any new requirements are requested by the mentors, they shall be implemented during these weeks and the testing of the new code as well.
-- I have already implemented some starter code for plotting field lines from a given `gong_map`.
+- I have already implemented some starter code for plotting field lines from a given `gong_map` which would come in handy during this time.
 ![image](https://raw.githubusercontent.com/jeffreypaul15/Sunpy3D/master/screenshots/112165572-dffbfc80-8c14-11eb-9dd9-9eb3937607fa.png)
 
 #### Week 10
@@ -181,12 +182,14 @@ ___
 ### Open Source background and Programming experience
 
 - Programming Languages: Python, Java, C, JavaScript, Dart (Basic)
--  As of writing this proposal, my contributions to SunPy include [**11 merged**](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+is%3Aclosed+author%3Ajeffreypaul15) and [**3 WIP PRs**](https://github.com/sunpy/sunpy/pulls/jeffreypaul15). I have mainly worked with writing various tests and visualization for SunPy. I also spent quite a bit of time understanding the coordinate systems from a gallery example [PR](https://github.com/sunpy/sunpy/pull/5121).  Besides that, some important PRs are :
+-  As of writing this proposal, my contributions to SunPy include **13 merged** and **2 WIP** PRs. I have mainly worked with writing various tests for SunPy as well as Sunkit-Image and visualization for SunPy. I also spent quite a bit of time understanding the coordinate systems from a gallery example PR. Besides that, some important PRs are :
 -  [Added draw_quadrangle method](https://github.com/sunpy/sunpy/pull/4809) [visualization]
+-  [Increasing Test coverage for Sunkit-Image](https://github.com/sunpy/sunkit-image/pull/59)
 -  [Added STEREO/SECCHI client](https://github.com/sunpy/sunpy/pull/4869)
 -  [Added dynamic z axis option](https://github.com/sunpy/sunpy/pull/5025) [visualization]
 -  [Added tests for map sequence animator](https://github.com/sunpy/sunpy/pull/5041) [visualization]
 -  [Added conversion of map data to float64 in GenericMap.rotate()](https://github.com/sunpy/sunpy/pull/5051) [visualization]
+-  All of my 21 contributions to sunpy are listed [here](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+is%3Aclosed+author%3Ajeffreypaul15).
 
 I have enjoyed contributing to SunPy and will continue to do so regardless of GSoC. 
 I have worked with Python as a primary programming language as I have spent over 2 years working, researching, and developing in the field of Artificial Intelligence.
