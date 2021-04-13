@@ -40,7 +40,7 @@ I love participating in hackathons and developing solutions. Our team recently w
 
 My experience with Python started with learning backend web development using Django. I’ve gotten proficient with it now. I’m currently interning at a company where I’m the primary person tasked with writing REST APIs with Python. A few months ago, we also developed the initial stage of a mutual fund portfolio management portal, whose development was sponsored by Principal Global Services, a Fortune 500 FinTech company. The entire backend for this application was written using Python.  
 
-I have some more Python experience related to machine learning, much of it from my previous internship at Resolute AI in Bangalore, India. This mostly entailed work with libraries like TensorFlow, Keras, numpy, pandas, etc. I worked on developing a model that tracked PPE kit compliance for people working in the healthcare industry.  
+I have some more Python experience related to machine learning, much of it from my previous internship at Resolute AI in Bangalore, India. This mostly entailed work with libraries like `TensorFlow`, `Keras`, `numpy`, `pandas`, etc. I worked on developing a model that tracked PPE kit compliance for people working in the healthcare industry.  
 
 I’m involved in the clubs at my campus like the [Google Developer Student Club](https://dsc.community.dev/pune-vidyarthi-grihas-college-of-engineering-and-technology-pune/) as the Technical Head. We organize and conduct technical workshops for fellow juniors. Through this, I’ve had the opportunity to reach hundreds of students and help them through their journey.  
 
@@ -115,14 +115,29 @@ Yes, this project will introduce a new API. In the original [issue](https://gith
 However, I don’t suppose that there will be any breaking change to the existing API.  
 
 * **Will you need additional software package requirements?**  
-Yes, the primary requirement will be Astropy’s `reproject`, which is released as a separate package [here](https://github.com/astropy/reproject). This package implements the necessary mathematical algorithms we can use for resampling, thereby reducing effort and redundancy. Its API is easy to use with NDCube, as demonstrated in the gist that I have linked above.  
+Yes, the primary requirement will be Astropy’s `reproject`, which is released as a separate package [here](https://github.com/astropy/reproject). This package implements the necessary mathematical algorithms we can use for resampling, thereby reducing effort and redundancy. Its API is easy to use with `NDCube`, as demonstrated in the gist that I have linked above.  
 
 
 ## Timeline
 
 |Period    |Plan                             |Date    |
 |----------|---------------------------------|--------|
-|Community Bonding Period|<ul><li>I'll utilize this time to keep contributing to sunpy and ndcube in other issues or PRs. This will help me get familiar with the community and understand how things work.<li>If possible, I'll try to get a headstart on understanding the math behind WCS transformations.</ul>|17^th May - 7th June|
+|**Community Bonding Period**|<ul><li>I'll utilize this time to keep contributing to sunpy and ndcube in other issues or PRs. This will help me get familiar with the community and understand how things work.<li>If possible, I'll try to get a headstart on understanding the math behind WCS transformations.</ul>|17<sup>th</sup> May - 7<sup>th</sup> June|
+|**Coding Period**||7<sup>th</sup> June - 16<sup>th</sup> August|
+|Week 1|<ul><li>Study different coordinate systems and equations that enable WCS to map pixel coordinates to/from real-world coordinates.|7<sup>th</sup> June - 14<sup>th</sup> June|
+|Week 2|<ul><li>Study the codebase of `ndcube` and understand how `astropy.wcs` is coupled with `NDCube` for operations like slicing, visualizing, etc.<li>Understand how `extra_coords` and `global_coords` behave.|14<sup>th</sup> June - 21<sup>st</sup> June|
+|Week 3, 4|<ul><li>Discuss and formulate a basic use case and write code that solves it.<li>Try to visualize the difference by plotting the data.<li>Create a PR that introduces this new API, along with necessary documentation. Try to get feedback from the community.|21<sup>st</sup> June - 5<sup>th</sup> July|
+|Week 5|<ul><li>Formulate more use cases and try out some code to understand what needs to be done.<li>Figure out what WCS transformations will be necessary in such cases.|5<sup>th</sup> July - 12<sup>th</sup> July|
+|**First Evaluation**||12<sup>th</sup> July - 16<sup>th</sup> July|
+|Week 6, 7|<ul><li>Write code for the above use cases and write basic documentation and tests.<li>Create a PR with this functionality. Get feedback from the community.|12<sup>th</sup> July - 26<sup>th</sup> July|
+|Week 8|<ul><li>Make necessary modifications to the API based on the received feedback.|26<sup>th</sup> July - 2<sup>nd</sup> August|
+|Week 9|<ul><li>Improve documentation and tests. Create PRs for both.|2<sup>nd</sup> August - 9<sup>th</sup> August|
+|Week 10|<ul><li>Buffer time to fix things in case something comes up during the tests.<li>Merge leftover code and facilitate the release of a new version of `ndcube` with complete resampling support!|9<sup>th</sup> August - 16<sup>th</sup> August|
+|**Submission and Final Evaluation**||16<sup>th</sup> August - 23<sup>rd</sup> August|
+|Post Google Summer of Code|<ul><li>Keep contributing to `sunpy` and `ndcube`. Maintain the resampling functionality.<li>Enhance it if necessary by adding more algorithms, perhaps by contributing to astropy’s `reproject`.|
 
-|1       |<ul><li>Study ndcube and WCS transformations<li>Study how `astropy.wcs` is coupled with `NDCube`</ul>|22 June |
-|        |ons                                       
+## What I Wish To Gain From Google Summer of Code  
+
+Primarily, I aim to gain more experience working with open-source communities. I have contributed a bit to other repositories before, and hope that Summer of Code serves as an entry point for me to give back more to the community.  
+
+Secondly, I'm excited about being mentored during this project. Even during my recent contributions to sunpy, I understood that developing software at this level is different from academic projects. I want to grow these skills and hope to learn the difference between good, bad, and great code.  
