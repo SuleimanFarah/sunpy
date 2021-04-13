@@ -1,5 +1,5 @@
 <hr>
-Find the LaTex/submitted version of the proposal
+LaTex/submitted version of the proposal
 <a href="https://github.com/devanshshukla99/GSoC-2021/blob/main/Tex/gsoc.pdf">here</a>.
 <hr>
 <br>
