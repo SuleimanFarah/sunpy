@@ -1,6 +1,6 @@
 <hr>
 Find the LaTex/submitted version of the proposal
-<a href="https://github.com/devanshshukla99/GSoC-2021/blob/015773df00fb3a998abdc8232c90a96326a1d5fa/Tex/gsoc.pdf">here</a>.
+<a href="https://github.com/devanshshukla99/GSoC-2021/blob/main/Tex/gsoc.pdf">here</a>.
 <hr>
 <br>
 
@@ -25,7 +25,7 @@ Find the LaTex/submitted version of the proposal
 <b>Academic Program</b>: Integrated Master of Science in Physics. <br>
 <b>CGPA</b>: 9.71/10 <br>
 <b>Expected Year of Graduation</b>: 2023 <br>
-My Resume is availabel at <a href="https://github.com/devanshshukla99/devanshshukla99/blob/ff7d9d9bbd5e70345af307bd22dce285b77fc72a/cv/cv_devanshshukla99.pdf"> Curriculum vitae </a> <br>
+My Resume is available at <a href="https://github.com/devanshshukla99/devanshshukla99/blob/master/cv/cv_devanshshukla99.pdf"> Curriculum vitae </a> <br>
 
 <hr>
 
