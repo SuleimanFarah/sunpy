@@ -14,7 +14,7 @@ Find the LaTex/submitted version of the proposal
 <b>Matrix</b>: @devanshshukla99:matrix.org <br>
 <b>E-Mail</b>: <a href="mailto:devanshshukla99@gmail.com">devanshshukla99@gmail.com</a> <br>
 <b>Contact No.</b>: +91 9826887954 <br>
-<b>Permanent Address</b>: HNo. 269, Triveni Complex, One-Way Gate, Sagar, MP, India 470002 <br>
+<b>Location</b>: Sagar, MP, India 470002 <br>
 <b>TimeZone</b>: IST | UTC +5:30 <br>
 
 <hr>
