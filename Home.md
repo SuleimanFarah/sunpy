@@ -23,7 +23,7 @@ More information about [installation](https://docs.sunpy.org/en/stable/guide/ins
 SunPy has participated successfully in both the ESA Summer of Code (SOCIS) and the Google Summer of Code (GSoC) Programs.
 
 ## Google Summer of Code (GSoC)
-* [[GSoC Overview | GSoC]]
+* [[GSoC Overview | Google-Summer-of-Code]]
 
 ## ESA Summer of Code (SOCIS)
 * [[SOCIS Overview | SOCIS]]
