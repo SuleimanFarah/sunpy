@@ -1,6 +1,3 @@
-SunPy Feature Freeze Checklist
-==============================
-
 So it's that time again when it's time to feature freeze and create a new release branch, this checklist is a list of things to do as part of that process. When the checklist is finished you should be able to tag an rc from the newly created release branch.
 
 
