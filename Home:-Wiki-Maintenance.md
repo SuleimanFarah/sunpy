@@ -1,5 +1,3 @@
-# Wiki Maintenance
-
 This is a tricky topic since it is possible for anyone to write to the wiki.
 This is compounded by the fact that the wiki does not see folder hierarchy.
 So as it stands, each subsection has its own series of folders as outlined below.
