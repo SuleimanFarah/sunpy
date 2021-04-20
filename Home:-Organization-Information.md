@@ -11,12 +11,14 @@ An overview of the team project is found on the [SunPy website](http://sunpy.org
 
 [[Affiliated Packages Discussion | Affiliated-Packages-Discussion-20180221]]
 
+[[ Coordination Meeting 2020 | Coordination-Meeting-2020-Notes]]
+
 ## Minutes of SunPy board meetings
 
 <details>
 <summary>2020 (2)</summary>
 
-[[Board Meeting 2020-06-03 | Minutes of SunPy Board Meeting 2020603]]
+[[Board Meeting 2020-06-03 | Minutes of SunPy Board Meeting 20200603]]
 
 [[Board Meeting 2020-09-09 | Minutes of SunPy Board Meeting 20200909]]
 
