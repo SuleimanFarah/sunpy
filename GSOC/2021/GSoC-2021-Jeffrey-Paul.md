@@ -14,7 +14,11 @@ My open-source journey began with SunPy about 4 months ago, I enjoyed having to 
 
 I have worked with Python as my primary programming language for over 3 years now and have a strong understanding of it and Pyvista, while contributing to SunPy has made me better at it.
 
-I have been involved with contributing towards and understanding SunPy with its underlying libraries for about 4 months now which excites and gives me the confidence that I shall be able to complete the given project successfully and according to the required standards.
+I have been involved with contributing towards and understanding SunPy with its underlying libraries for about
+4 months now which excites and gives me the confidence that I shall be able to complete the given project
+successfully and according to the required standards. I have spent time understanding the coordinate frames
+and experimenting with their conversions along with matplotlib and SkyCoord to produce the respective
+cartesian coordinates in 3D.
 
   
 
@@ -54,7 +58,8 @@ The entire project is split into 3 major components which include:-
 #### 3) Testing and Integration with SunPy and PfssPy
 
 - The entire project shall be tested efficiently wherever necessary.
-- Testing shall mainly be performed with **Tox** integrated with Pytest. The project shall be set up using tox according to SunPy's requirements.
+- Testing shall mainly be performed with Tox integrated with Pytest. The project shall be set up
+using tox according to SunPy's requirements (if not already performed by the mentors).
 - The appropriate 3D testing methodology shall also be researched and decided on.
 - Once tested, benchmark tests shall also be performed to understand the computation required for visualization.
 
@@ -77,6 +82,7 @@ ___
 - Rendering of the 3D plots correctly for generating 2D images.
 #### Week 2
 - Spend time exploring the capabilities of 3D plotting and continuously add functionality such as the extension of plotting to `LASCO maps` and work on the exploration of magnetic field lines from `PfssPy`.
+- Explore the various GenericMap instruments from SunPy and decide on their implementation in 3D.
 - I shall also get familiar with the possibility of extending most of the 2D plotting functionality to 3D from SunPy.
 	
 ___
@@ -162,7 +168,7 @@ ___
 ___
 
 #### Final Evaluation
-Add finishing touches to the aforementioned deliverables and deliver the entire package ready to be used with SunPy.
+Add finishing touches to the aforementioned deliverables and deliver the entire package ready to be used with SunPy. Work for the project would not stop here as I shall continue contributing to it and maintaining it as an when it is required.
 ___
 
   
