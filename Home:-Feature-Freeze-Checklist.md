@@ -9,7 +9,7 @@ The following steps are to be taken on the master branch (via PR) prior to branc
     2. Next run the `tools/update_zenodo.py` file, this script uses the output of `git shortlog` to update the `.zenodo.json` file. Check the printed output of the script and the diff for sanity.
 1. Update the vendored modules in `extern/` if they need updating, these should be copied from their latest releases on GitHub.
 1. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
-1. Check if the API stability page needs updating.
+1. Check if the API stability yaml needs updating.
 1. Generate the release notes with the `tools/generate_releaserst.xsh` script.
 
 
