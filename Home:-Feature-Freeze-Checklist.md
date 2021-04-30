@@ -39,7 +39,7 @@ Once this is done there is a couple of things left to do before the first rc rel
 
 1. Commit (and PR) the removed changelog fragments to master.
 
-1. Tag the master branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag master with `3.1.dev`, which has the pattern `next_major.next_minor.dev`. Push this tag to upstream with `git push upstream v3.1.dev`.
+1. Tag the master branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag master with `3.1dev`, which has the pattern `[next_major].[next_minor]dev`. Push this tag to upstream with `git push upstream v3.1dev`.
 
 1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
 
