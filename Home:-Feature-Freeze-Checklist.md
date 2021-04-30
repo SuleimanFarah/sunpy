@@ -43,8 +43,6 @@ Once this is done there is a couple of things left to do before the first rc rel
 
 1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
 
-1. Add an empty what's new page to the documentation on the master branch for writing what's new entries for the next release.
-
 ## Pre-releases
 
 Making a pre-release (normally we just use "release candidate" `.rcZ` versions) should follow the normal release procedure: https://github.com/sunpy/sunpy/wiki/Home:-Release-Checklist
