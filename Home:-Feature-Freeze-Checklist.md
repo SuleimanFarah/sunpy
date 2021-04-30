@@ -27,7 +27,7 @@ This will add a new branch to the upstream sunpy/sunpy which is level with the m
 
 Once this is done there is a couple of things left to do before the first rc release:
 
-1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file:
+1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file, somewhere under the `[tool.gilesbot]` heading:
 
 ```
   [ tool.gilesbot.milestones ]
@@ -40,8 +40,6 @@ Once this is done there is a couple of things left to do before the first rc rel
 1. Commit (and PR) the removed changelog fragments to master.
 
 1. Tag the master branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag master with `3.1.dev`, which has the pattern `next_major.next_minor.dev`. Push this tag to upstream with `git push upstream v3.1.dev`.
-
-Add this somewhere under the `[tool.gilesbot]` heading.
 
 1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
 
