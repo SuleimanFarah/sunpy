@@ -10,7 +10,7 @@
 ```
 towncrier --version X.Y.Z
 ```
-if it's a rc release do not do this, the changelog is only rendered automatically in the documentation for pre-releases.
+**if it's a rc release do not do this**, the changelog is only rendered automatically in the documentation for pre-releases.
 
 - [ ] Edit the generated changelog header to remove the leading "Sunpy". The title should be in the format `X.Y.Z (date)` with no leading `v` or "sunpy".
 
