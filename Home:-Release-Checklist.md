@@ -12,6 +12,8 @@ towncrier --version X.Y.Z
 ```
 **if it's a rc release do not do this**, the changelog is only rendered automatically in the documentation for pre-releases.
 
+- [ ] Modify the version for RTD in the docs/conf.py until the bug is fixed.
+
 - [ ] Commit the changes
 ```
 git add .
