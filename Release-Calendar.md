@@ -5,9 +5,13 @@ Releases are scheduled for the first Friday in the month set by SEP-9, and featu
 
 | Release             | Scheduled Date | Actual Date |
 | ------------------- | -------------- | ----------- |
+| v4.1 Release        |     2022-11-04 |             |
+| v4.1 Feature Freeze |     2022-10-21 |             |
+| v4.0 Release        |     2022-05-06 |             |
+| v4.0 Feature Freeze |     2022-05-22 |             |
 | v3.1 Release        |     2021-11-05 |             |
 | v3.1 Feature Freeze |     2021-10-22 |             |
-| v3.0 Release        |     2021-05-07 |             |
+| v3.0 Release        |     2021-05-07 |  2021-05-14 |
 | v3.0 Feature Freeze |     2021-04-23 |  2021-04-30 |
 | v2.1 Release        |     2020-11-06 |  2021-02-22 |
 | v2.1 Feature Freeze |     2020-10-23 |  2021-01-06 |
