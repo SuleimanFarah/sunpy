@@ -101,7 +101,7 @@ Currently, there are multiple algorithms supported by `reproject` like Interpola
 
 ## What I've Explored
 
-I studied a bit about different coordinate systems and WCS from this article that [@nabobalis](https://www.github.com/nabobalis) shared with me. It provided me with a clearer understanding of how these transformations work. I have put some code together, trying to resample an `NDCube` using bicubic interpolation. I upscaled the wavelength axis by a factor of 10, manually creating a new WCS that supported this transformation. For this, I modified the `CDELT` parameter that corresponds to pixel width (for real-world values). I have also plotted a slice of the cube to compare the result.  
+I studied a bit about different coordinate systems and WCS from [this article](https://fits.gsfc.nasa.gov/wcs/coordinates.pdf) that [@nabobalis](https://www.github.com/nabobalis) shared with me. It provided me with a clearer understanding of how these transformations work. I have put some code together, trying to resample an `NDCube` using bicubic interpolation. I upscaled the wavelength axis by a factor of 10, manually creating a new WCS that supported this transformation. For this, I modified the `CDELT` parameter that corresponds to pixel width (for real-world values). I have also plotted a slice of the cube to compare the result.  
 
 The code and the graph can be found at this gist: [https://gist.github.com/adwaitbhope/d056fd5a5a8eb5781a9ccc5615a644f0](https://gist.github.com/adwaitbhope/d056fd5a5a8eb5781a9ccc5615a644f0).  
 
