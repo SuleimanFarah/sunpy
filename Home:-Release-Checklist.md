@@ -3,7 +3,7 @@
 - [ ] Do a conda-forge build for at least one of the release candidates.
 
 **Before release candidate releases:**
-- https://github.com/sunpy/sunpy/wiki/Home%3A-Feature-Freeze-Checklist
+- [Feature Freeze Checklist](https://github.com/sunpy/sunpy/wiki/Home%3A-Feature-Freeze-Checklist)
 
 **All of the following assumes that you are on the release branch and not main (`X.Y` e.g `1.0`)**
 
