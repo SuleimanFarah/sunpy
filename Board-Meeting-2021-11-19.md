@@ -39,7 +39,7 @@ Will Barnes will start at Goddard in Feb and will work on this Project.
 **Board Recommendation**: The sunpy website should be update with information for potential proposers that may want to extend SunPy to explain how to coordinate with the project. The project should consider offering official letters of support for proposers to endorse a proposal.
 
 ### SPD Funds
-Discussion on how to use the funds provided.
+Discussion on how to use the funds provided.<br>
 **Board Recommendation**: 
 1. fund a yearly developer prize. Consider creating a prize committee. Prizes could be of order $500.
 2. Fund a yearly general-purpose workshop/tutorial like software carpentry on version control and git. These tutorials should take place in June or before the summer so that summer interns (also REU and GSOC) could benefit. Presentations at conferences on SunPy-specific topics should continue.
@@ -50,6 +50,6 @@ Will take place in Spring.
 ### Board Position Openings and Announcement Plans
 Deferred subject and agreed on extending terms of expired positions by 6 months.
 
-* Board Restructuring Plan SEP and Vision and Mission Statement SEP
+* Board Restructuring Plan SEP and Vision and Mission Statement SEP<br>
 They are not perfect but required. Can be fixed later. Much discussion has already taken place. Board should go ahead and approve through GitHub ASAP.
 
