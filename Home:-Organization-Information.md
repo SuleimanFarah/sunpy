@@ -13,6 +13,8 @@ An overview of the team project is found on the [SunPy website](https://sunpy.or
 
 [[ Coordination Meeting 2020 | Coordination-Meeting-2020-Notes]]
 
+[[ Coordination Meeting 2021 | Coordination-Meeting-2021-Notes]]
+
 ## Minutes of SunPy board meetings
 
 <details>
