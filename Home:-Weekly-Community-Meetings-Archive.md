@@ -1,3 +1,49 @@
+## 23 February 2022
+
+### Agenda
+
+* TimeSeries summary
+* Continued saga of Azure builds
+* `conda-forge` feedstock for affiliated/sponsored packages
+* GSOC?
+* Comments restructuring of examples: https://github.com/sunpy/sunpy-project/issues/11#issuecomment-1043342482
+* Kicking off instrumentation working group again
+    * https://github.com/orgs/sunpy/projects/1/views/1
+    * https://demo.hedgedoc.org/aaeE1nMxQ-yhRCcvuEvbAw?view
+* PR Review
+
+### Notes
+
+
+* Timeseries quicklook
+    * Matt gave us a demo of the new quicklook functionality being developed for timeseries
+    * Plotly and non-plotly versions--very neat!
+    * There is significant resistance to adding plotly as even an optional dependency
+    * Healthy debate on purpose of plot versus quicklook methods
+    * It would be cool to support plotly (other plotting backends), but we are largely bound to matplotlib because of WCSAxes
+    * David points out that matplotlib does do interactive plotting in the notebook
+    * Stuart: people can pull their data into any kind of visualization framework
+    * `bokeh` is another option too (David: the docs are really great!)
+    * Laura: used both `bokeh` and `plotly`, found the former to be more user-friendly.
+    * **Potential Topic for coordination meeting: how much work do we do to support other kinds of plotting?**
+* Azure
+    * Stuart has call with them soon
+    * Is it time to just move on? to GH actions
+    * David: basic testing and doc are working in the `sunpy/sunpy` repo
+    * Stuart: need to recreate the OA template repo
+    * David: Will open issue to collect TODOs for the template: https://github.com/sunpy/sunpy/issues/5913
+* Feedstocks
+    * `sunkit-image`
+* GSoC
+    * All of our projects are listed (Will/Stuart still need to scope out DB project a bit more)
+    * Not as much OA participation as in previous years
+* Examples
+    * Laura/Shane did straw poll of students and many said searching for examples was an issue
+    * Even core contributors have issues finding which examples show what
+    * docs.sunpy.org could become docs for the ecosystem, not just for the core library.
+    * Stuart: have to be careful about breaking URLs
+    * We should be motivated by a plan to restructure our docs/guide, not just a particular technology choice
+
 ## 10 February 2021
 
 ### Agenda
