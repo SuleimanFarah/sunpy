@@ -9,16 +9,4 @@ Community members should feel free to edit the agenda and add items as appropria
 Agenda items not covered at this week's meeting will be bumped to the agenda for the following week.
 Typically, the lead developer or deputy lead developer will announce the community meeting in the chat a few hours prior to the start of the meeting.
 
-This document may change dramatically or be purged periodically.
-
-## 10-02-2021
-
-### Agenda
-
-* Release blockers for 2.1
-* GSoC Projects
-* Anything else?
-
-### Notes
-
-*
+[Agenda and notes should be added here]() before/during the meeting. This document may change dramatically or be purged periodically. After each meeting, the notes will be copied into the archive linked above.
