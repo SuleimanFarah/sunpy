@@ -1,3 +1,10 @@
+## 10 February 2021
+
+### Agenda
+
+* Release blockers for 2.1
+* GSoC Projects
+* Anything else?
 
 ## 06 January 2021
 
