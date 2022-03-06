@@ -1,3 +1,42 @@
+## 2 March 2022
+
+### Agenda
+
+* 2022 Coordination Meeting
+    * Hybrid format
+    * Proposed locations: Washington, D.C. (American University) or Dublin (DIAS)
+    * Proposed dates: mid to late summer--will depend on location
+    * Duration? 4 days? 5 days?
+    * Will needs to put together a larger poll to get a sense of best date/location combination
+* Policy for supporting multiple versions of test deps (https://github.com/sunpy/sunpy/pull/5926)
+* `conda-forge` errors: https://github.com/conda-forge/sunpy-feedstock/pull/114
+* CI Status?
+* Kicking off instrumentation working group again
+    * https://github.com/orgs/sunpy/projects/1/views/1
+    * https://demo.hedgedoc.org/aaeE1nMxQ-yhRCcvuEvbAw?view
+* PR Review
+
+### Notes
+
+* `conda-forge` errors
+    * asdf problems 
+    * Stuart cannot look at them at the moment
+    * Skip the tests?
+    * Something wrong with `asdf` on conda?
+    * Trying pinning to 2.9.2?
+    * `asdf` on `conda-forge` is broken
+* Test deps
+    * We now support versions of test dependencies released in the last 12 months
+* CI
+    * Work is happening upstream in openastronomy repositories to replicate Azure functionality in Github Actions
+    * Conor suggested adding Apple Silicon M1 builds
+    * Note that these would be untested because we don't have CI there
+* Coordination meeting
+    * DIAS is looking like a more attractive option
+    * Poll needed, but summer is ideal
+    * Is there a meeting we should be looking to coincide with? (maybe the SO workshop...)
+    * As far as American meetings go, there is SPD/TESS in Seattle
+
 ## 23 February 2022
 
 ### Agenda
