@@ -1,3 +1,19 @@
+## 9 March 2022
+
+### Agenda
+
+* Coordination meeting planning survey: https://forms.gle/pj74HicDgjBAWcj36
+* PR Review
+
+### Notes
+
+* Please fill out coordination survey
+* PyHC have asked about presentations for some affiliated packages
+    * More general presentation on affiliated package ecosystem?
+* PR "cheat sheet" (see https://github.com/sunpy/sunpy/issues/5944)
+    * should this go in the template?
+    * is the current template useful? reevaluate?
+
 ## 2 March 2022
 
 ### Agenda
