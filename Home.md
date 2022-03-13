@@ -2,18 +2,18 @@ Welcome to the SunPy wiki.
 
 SunPy is a community-developed, free and open-source solar data analysis environment for Python.
 More information about the project can be found at [sunpy.org](https://sunpy.org) and you can find our documentation at [docs.sunpy.org](https://docs.sunpy.org).
-Please also don't forget to check our [Code of Conduct](https://docs.sunpy.org/en/stable/coc.html).
+Please also don't forget to check our [Code of Conduct](https://sunpy.org/coc.html).
 
 ## For users
-More information about [installation](https://docs.sunpy.org/en/stable/guide/installation/index.html) can be found in our documentation.
+More information about [installation](https://docs.sunpy.org/en/stable/guide/installation.html) can be found in our documentation.
 
 ## For Developers
 * [Coding Standards](https://docs.sunpy.org/en/latest/dev_guide/index.html)
 * [Feature Wishlist](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22)
-* [Pull Request Review Procedure](http://docs.sunpy.org/en/latest/dev_guide/pr_review_procedure.html#review-process)
+* [Pull Request Review Procedure](https://docs.sunpy.org/en/latest/dev_guide/contents/pr_review_procedure.html#review-process)
 * [Roadmap](https://github.com/sunpy/roadmap)
-* [Feature Freeze Checklist](https://github.com/sunpy/sunpy/wiki/Home%3A-Feature-Freeze-Checklist)
-* [Release Checklist](https://github.com/sunpy/sunpy/wiki/Home%3A-Release-Checklist)
+* [[Feature Freeze Checklist | Home: Feature Freeze Checklist]]
+* [[Release Checklist | Home: Release Checklist]]
 * Detailed wiki pages
   * [Coordinate systems](https://github.com/sunpy/sunpy/wiki/Coordinate-systems)
 
