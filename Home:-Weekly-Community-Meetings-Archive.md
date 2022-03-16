@@ -1,3 +1,32 @@
+## 16 March 2022
+
+### Agenda
+
+* Fill out the coordination meeting planning survey if you have not already (https://forms.gle/dtaYfaw2csDqUoaW6) 
+* SunPy Tutorial at PyHC Summer School
+* GitHub Actions
+* `physics.solar_rotation` (https://github.com/sunpy/sunpy/issues/5965)
+* IRIS SJI Maps (https://github.com/sunpy/sunpy/issues/5962)
+* PR Review
+
+### Notes
+
+* Should there be a models subpackage in core? (Dan)
+    * Models would have to be physics-based and solar-specific, e.g. thermal X-ray bremsstrahlung using solar abundances.
+    * Models would be widely used/integral to at least a sub-field of solar physics.
+    * Models are stable over years, i.e. are rarely going to change.
+    * Subpackage would not contain complex tools like fitting infrastructures.
+    * What models should go in?  What should the bar for inclusion be?
+    * Should this even be in core?
+    * This seems like a topic for the coordination meeting...
+* (Jack) I have to leave, but one issue for the coordination meeting an issue I would like discussed is the use of SunPy in cloud environments. Are there changes to SunPy that could enable it to use a cloud environment more efficiently? We should have more experience to report on this topic at the end of the summer.
+    * (Will) It depends on what you mean by "enable it to use a cloud environment more efficiently", but I think this is somewhat covered by our OSTFL proposal--one of our proposed improvements is improving support for large datasets, e.g. making Map operations Dask-friendly.
+* GH Actions migration is going well/mostly working
+* Mapsequence derotate
+    * Agreed it at least needs to be renamed
+    * Deprecate and put into `sunkit-image`?
+* IRIS SJIMap needs to be fixed, but also will be deprecated soon (in favor of irispy)
+
 ## 9 March 2022
 
 ### Agenda
