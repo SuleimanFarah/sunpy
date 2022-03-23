@@ -1,3 +1,35 @@
+## 23 March 2022
+
+### Agenda
+
+* Coordination meeting--quick planning meeting on Friday?
+* WE WILL BE ADDING MAXWELLS AND STUART CAN NOT STOP ME
+* Status of ASV?
+* Deprecations
+    * `sunpy.io.fits` -- going private
+    * `sunpy.image.coalignment` -> `sunkit_image.coalignment`
+    * `sunpy.physics.solar_rotation` -> `sunkit_image.coalignment` (in progress) -- we need to refactor coalignment capabilities in `sunkit_image`
+    * `GenericMap.shift` -> `.shift_reference_coord` (in progress)
+* What features to try and get into 4.0?
+    * Feature freeze is in ~1 month
+    * Current list at https://docs.sunpy.org/en/latest/whatsnew/4.0.html
+* PR Review
+
+### Notes
+
+* Ideally would like to lock down a date by Monday
+    * Quick planning meeting Friday?
+    * Will will put a message in the chat
+* ASV is up and running
+    * https://github.com/sunpy/sunpy-benchmarks
+    * Only a minimal set of benchmarks exist currently
+    * We should be strategic about what benchmarks we add and when
+    * Adding new benchmarks and running them over the history of the project takes a long time (~6 hours)
+    * For PRs, comparison is just between the PR and main
+    * Weird regression in `parse_time`?
+* Milestoning more things for 4.0
+* Good progress on changelog bot
+
 ## 16 March 2022
 
 ### Agenda
