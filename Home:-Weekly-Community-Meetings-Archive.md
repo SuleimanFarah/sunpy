@@ -1,3 +1,18 @@
+## 30 March 2022
+
+### Agenda
+
+* Firming up coordination meeting plans
+* Timeseries refactor PR: [#5834](https://github.com/sunpy/sunpy/pull/5834 )
+* PR Review
+
+### Notes
+
+* We need to book a room/firm up dates for the meeting
+    * Will will get in touch with Shane to book room at DIAS for 22 August barring any major objections in the next few days.
+* Significant discussion on Albert's new affine transform PR
+* Agreement that default for missing in rotate should be NaN
+* Timeseries PR review still needs to be addressed--Stuart and Will will provide reviews
 ## 23 March 2022
 
 ### Agenda
