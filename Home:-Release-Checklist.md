@@ -11,7 +11,7 @@
 
 - [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/) (not for rc releases):
 ```
-towncrier --version X.Y.Z
+towncrier build --version X.Y.Z
 ```
 **if it's a rc release do not do this**, the changelog is only rendered automatically in the documentation for pre-releases.
 
