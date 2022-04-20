@@ -1,3 +1,27 @@
+## 20 April 2022
+
+### Agenda
+
+* Discussion of what "draft" means
+    * See [#6085](https://github.com/sunpy/sunpy/pull/6085)
+    * Should the context of what "draft" is be in the PR template?
+    * Need a consensus about what we mean by "draft"
+    * Does GH have a way to adjust permissions on who can mark as draft?
+* SSL Certificate Verification Failure on things that access NOAA data?
+    * https://github.com/sunpy/sunpy/runs/6083862087?check_suite_focus=true#step:8:23179
+    * The NGDC NOAA domain is currently undergoing maintaince until the 21st https://www.ngdc.noaa.gov/index.html, this is probably the issue
+* PR Review
+
+### Notes
+
+* Skip the NOAA tests? Or don't check the SSL cert?
+    * Tell someone they need to fix their certificates
+* Will and Nabil giving short PyHC presentation on affiliated package ecosystem
+* Draft status discussion
+    * shouldn't mark as draft without explanation
+    * Will: should "mark as draft" be used as a review tool?
+    * Stuart: particularly in context of new contributors, should encourage them to mark as draft if we think the PR is not ready for review (e.g. needs significant work before doing review)
+
 ## 30 March 2022
 
 ### Agenda
