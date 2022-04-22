@@ -10,7 +10,7 @@ The following steps are to be taken on the master branch (via PR) prior to branc
 1. Update the vendored modules in `/sunpy/extern/` if they need updating, these should be copied from their latest releases on GitHub.
 1. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
 1. Check if the API stability yaml needs updating.
-1. Generate the statistics for the what's new with with the `tools/generate_releaserst.xsh` script.
+1. Generate the statistics for the what's new with with `./tools/generate_releaserst.xsh x.y.0 vx.ydev --pat=<your GH PAT>`
 
 
 ## Branching
