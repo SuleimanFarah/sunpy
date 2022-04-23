@@ -2,7 +2,7 @@ So it's that time again when it's time to feature freeze and create a new releas
 
 ## Before branching
 
-The following steps are to be taken on the master branch (via PR) prior to branching:
+The following steps are to be taken on the main branch (via PR) prior to branching:
 
 1. Update the `.mailmap` and `.zenodo.json` files. These are metadata files about the authorship of the code. 
     1. The `.mailmap` file needs updating manually, to remove any duplicates and where possible to add peoples real names. The best way to do this is to first run `git shortlog -es vX.Ydev..HEAD` where `vX.Y` is the previous release number. Look down this list and check for duplicates and people without real names. Edit the `.mailmap` file until all these are fixed.
@@ -18,10 +18,10 @@ The following steps are to be taken on the master branch (via PR) prior to branc
 The next step is to create the release branch, to do this following series of git commands:
 
     $ git remote update
-    $ git switch -c X.Y upstream/master
+    $ git switch -c X.Y upstream/main
     $ git push upstream X.Y
 
-This will add a new branch to the upstream sunpy/sunpy which is level with the master branch. Note the branch names (unlikle tags) are not prefixed with `v`.
+This will add a new branch to the upstream sunpy/sunpy which is level with the main branch. Note the branch names (unlikle tags) are not prefixed with `v`.
 
 ## Post-Branching
 
@@ -35,11 +35,11 @@ Once this is done there is a couple of things left to do before the first rc rel
     missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"
 ```
 
-1. Remove all changelog fragments on the master branch.
+1. Remove all changelog fragments on the main branch.
 
-1. Commit (and PR) the removed changelog fragments to master.
+1. Commit (and PR) the removed changelog fragments to main.
 
-1. Tag the master branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag master with `3.1dev`, which has the pattern `[next_major].[next_minor]dev`. Push this tag to upstream with `git push upstream v3.1dev`.
+1. Tag the main branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag main with `3.1dev`, which has the pattern `[next_major].[next_minor]dev`. Push this tag to upstream with `git push upstream v3.1dev`.
 
 1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
 
@@ -52,4 +52,4 @@ Unlike a normal release, **DO NOT RENDER THE CHANGELOG**.
 Things to remember to test during the pre-release phase are:
 
 1. Open a PR to the conda-forge feedstock testing building the conda package with at least one rc release. **DO NOT MERGE IT**.
-2. Ensure all sponsored packages tests pass with the rc (or lastest master if tested regularly), sunpy core versions which break sponsored packages should not be released. Make a new release of the package if needed.
+2. Ensure all sponsored packages tests pass with the rc (or lastest main if tested regularly), sunpy core versions which break sponsored packages should not be released. Make a new release of the package if needed.
