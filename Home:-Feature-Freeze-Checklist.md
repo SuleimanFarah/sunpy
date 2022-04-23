@@ -35,11 +35,11 @@ Once this is done there is a couple of things left to do before the first rc rel
     missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"
 ```
 
-1. Remove all changelog fragments on the main branch.
+2. Remove all changelog fragments on the main branch.
 
 1. Commit (and PR) the removed changelog fragments to main.
 
-1. Tag the main branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag main with `3.1dev`, which has the pattern `[next_major].[next_minor]dev`. Push this tag to upstream with `git push upstream v3.1dev`.
+1. Tag the main branch with the "start of development" tag for the next version. So if you just branched 3.0 you would tag main with `v3.1dev`, which has the pattern `v[next_major].[next_minor]dev`. Push this tag to upstream with `git push upstream v3.1dev`.
 
 1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
 
