@@ -1,3 +1,17 @@
+## 27 April 2022
+
+### Agenda
+
+* SciPy BoF Session ideas? https://www.scipy2022.scipy.org/bof-sessions
+* Coordination Meeting Announcement (https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit)
+    * Duration: 4 days? 5 days? 
+    * Hard cap on in-person attendance? I've put 40.
+    * Mailing lists: sunpy, sunpy-dev, UKSP, Solar News, Helionauts, OA Discourse
+* GSOC
+* PR Review
+
+### Notes
+
 ## 20 April 2022
 
 ### Agenda
