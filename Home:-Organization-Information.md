@@ -20,7 +20,7 @@ An overview of the team project is found on the [SunPy website](https://sunpy.or
 <details>
 <summary>2021 (1)</summary>
 
-[[Board Meeting 2021-11-19 | Minutes of SunPy Board Meeting 29121119]]
+[[Board Meeting 2021-11-19 | Minutes of SunPy Board Meeting 20211119]]
 
 </details>
 
