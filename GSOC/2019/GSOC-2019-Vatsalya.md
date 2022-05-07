@@ -7,7 +7,7 @@
 #### Personal Details
 
 * **Name:** Vatsalya Chaubey
-* **Email:** [vc13@iitbbs.ac.in](vc13@iitbbs.ac.in)  
+* **Email:** [vc13@iitbbs.ac.in](vc13@iitbbs.ac.in)
 * **GitHub:** [vatch123](https://github.com/vatch123)
 * **Riot.im:** vatch123
 
@@ -24,13 +24,14 @@ I am a sophomore year undergraduate with a deep interest in image processing, co
 
 #### Programming Experience
 
-* As per sunpy's GSoC requirement, I have opened a pull request in sunkit-image which implements the [Fourier Normalizing Radial Gradient Filter](https://github.com/sunpy/sunkit-image/pull/17). 
+* As per sunpy's GSoC requirement, I have opened a pull request in sunkit-image which implements the [Fourier Normalizing Radial Gradient Filter](https://github.com/sunpy/sunkit-image/pull/17).
 * I have also made a critical [comment](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-472108908) on the Multi scale Gaussian Normalization issue which would be essential in resolving that issue.
 * I have been using python for most of my projects. Being a computer vision enthusiast most of my projects involve convolutional neural networks. Some of them are [Hindi Handwritten Character Recognition](https://github.com/vatch123/Hindi-Handwritten-Character-Recognition), [Facial Keypoints Recognition](https://github.com/vatch123/Facial-Keypoint-Detection), [MNIST Digit Recognition](https://github.com/vatch123/MNIST).
 * I also made a working [Mp3 player](https://github.com/vatch123/Mp3-player) using Python's Tkinter and pygame libraries.
 * I am not shy of working with new technologies and have extensively worked with C++ and Java for the last three years. I have built an android [app](https://github.com/vatch123/InstiApp) for the student community of our institute.
 
 #### Open Source Experience
+
 The [pull request](https://github.com/sunpy/sunkit-image/pull/17) which I made in ```sunkit-image``` was the first time when I contributed to a community outside my institution. I have just started with open source project development but I am sure this lack of experience will not be a hindrance. I have ample experience working with Git and GitHub as I have been using it for collaborative projects for the past year. This lack of experience further excites me to learn something new and inspires me to work hard towards a particular problem.
 
 ------
@@ -45,7 +46,7 @@ This project aims at developing various image processing algorithms and manipula
 
 #### My Motivation
 
-I have always been fascinated by astronomy, the stars and the night sky. It was, for this reason, I joined the astronomy club of my institute. So when I came across Open Astronomy organisation I was immediately attracted. On exploring more in the organisation I came across this project. I chose this project especially because it combines both of my interests - image processing and astronomy. I started working on it by January end, way before the GSoC organisations were declared. I was so attached to this project that I hardly searched for any other projects when the final list of organisations was declared. With this project, I want to become part of the Open Astronomy community and remain a contributor in the long term. 
+I have always been fascinated by astronomy, the stars and the night sky. It was, for this reason, I joined the astronomy club of my institute. So when I came across Open Astronomy organisation I was immediately attracted. On exploring more in the organisation I came across this project. I chose this project especially because it combines both of my interests - image processing and astronomy. I started working on it by January end, way before the GSoC organisations were declared. I was so attached to this project that I hardly searched for any other projects when the final list of organisations was declared. With this project, I want to become part of the Open Astronomy community and remain a contributor in the long term.
 
 #### My Goals
 
@@ -53,35 +54,35 @@ There are four major tasks along with some optional tasks which need to be done 
 
 * **Implement the [normalizing-radial-graded filter (NRGF)](http://adsabs.harvard.edu/abs/2006SoPh..236..263M).**
 
-  *Overview*  
-  There is a sharp decrease in the brightness as one moves radially away from the surface of the sun. This makes it extremely difficult to visualise the coronal density structures because those fine structures are almost washed out from the view. A good algorithm is required to get rid of that radial gradient and one such is the **Normalizing Radial Graded Filter.** In NRGF, the part of the image above the solar surface is divided into various circular rings known as ```bins```. Now, for each bin, the mean and standard deviation of brightness is calculated. These values are then used to normalise every pixel within that bin. This procedure is again repeated for other bins. 
+  *Overview*
+  There is a sharp decrease in the brightness as one moves radially away from the surface of the sun. This makes it extremely difficult to visualise the coronal density structures because those fine structures are almost washed out from the view. A good algorithm is required to get rid of that radial gradient and one such is the **Normalizing Radial Graded Filter.** In NRGF, the part of the image above the solar surface is divided into various circular rings known as ```bins```. Now, for each bin, the mean and standard deviation of brightness is calculated. These values are then used to normalise every pixel within that bin. This procedure is again repeated for other bins.
 
-  *Deliverables*  
+  *Deliverables*
   A working [implementation](https://github.com/sunpy/sunkit-image/blob/2e80992ae424a7b4c97343f8e7de4ac11211c8fc/sunkit_image/offlimb_enhance.py#L205), written by [Jack](https://github.com/wafels) is already present in the library which only requires a few more tests and examples. I have already written some tests as part of my [FNRGF pull request](https://github.com/sunpy/sunkit-image/pull/17) and will add some more robust tests. Then a comparison is also to be made among the IDL versions [1](https://hesperia.gsfc.nasa.gov/ssw/packages/nrl/idl/nrlgen/display/nrgf.pro), [2](http://www.heliodocs.com/php/xdoc_print.php?file=$SSW/packages/corimp/idl/nrgf_corimp.pro) and the one written by Jack.
 
 * **Port the Multi-Scale Gaussian Normalisation (MGN) code from [#1899](https://github.com/sunpy/sunpy/pull/1899).**
 
-  *Overview*  
+  *Overview*
   Any solar image contains information distributed over a very wide range of spatial scales. This information is mostly hidden. Processing such an image to retrieve back that hidden information is very important. **Multi-scale Gaussian Normalisation** effectively reduces noises locally revealing the hidden features. It finds the local mean and local standard deviation by convolving the image with a Gaussian kernel. The pixel values are then normalised using them. This process is repeated at different scales i.e. using different widths of the Gaussian kernel. Finally, all the images are combined taking a weighted average. This method is quite effective at bringing those hidden features.
-  
-  *Deliverables*  
+
+  *Deliverables*
   [Stuart Mumford](https://github.com/Cadair) had originally written a [implementation](https://github.com/sunpy/sunpy/pull/1899) of this algorithm as part of the ```sunpy.image```. That implementation had some differences from the original paper which needs to be resolved. I have already identified those differences and mentioned them in [my comment](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-472108908) on that issue. The only thing left is to rectify them and write some tests. There exists [one more implementation](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py) written by [Eric Buchlin](https://github.com/ebuchlin) which applies some novel techniques to the original algorithm. The need and usefulness of those changes have to be validated and if found useful should be incorporated. Some more details and my initial attempt is mentioned in this [gist](https://gist.github.com/vatch123/2a77bb68c414463d7c6efdedc59b121a).
 
 * **Implement the [OCCULT-2 algorithm](http://arxiv.org/abs/1307.5046) for coronal loop tracing.**
 
-  *Overview*  
+  *Overview*
   Coronal loops form the basic structure of the lower corona and transition region of the Sun.  The population of coronal loops can be directly linked with the solar cycle; it is for this reason coronal loops are often found with sunspots at their footprints. So detecting them becomes extremely important. **OCCULT-2** is used to trace magnetized loops from images of the solar corona. There are four major steps in which this algorithm works. First is background suppression in which the pixels having intensities below a certain value are set to median intensity values. It is essentially a method to suppress the detection of background structures. The second step is feature enhancement by passing through a bandpass filter. The third step is the main part where the coronal loop is actually detected. Here we begin at the point having maximum flux intensity and then move based on the direction of the ridge with maximum flux. The final step is to remove the tracked loop such that it is not detected again.
-  
-  *Deliverables*  
+
+  *Deliverables*
   Implement Oriented Coronal CUrved Loop Tracing (OCCULT) -2 algorithm after comparing the various IDL versions of the code present. This algorithm needs to be implemented from scratch in ```sunkit-image``` seeking inspiration from the paper and the IDL codes [1](https://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/tracing_auto.pro), [2](https://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/tracing_auto2.pro), [3](https://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/tracing_direction.pro), [4](https://hesperia.gsfc.nasa.gov/ssw/packages/mjastereo/idl/tracing_step.pro). This algorithm will be implemented in various sub-routines, each sub-routine corresponding to one of the four steps. I have written a [gist](https://gist.github.com/vatch123/00c38687bfae80a7d8d68794cc2a51e6) describing the above four steps.
 
 * **Implement the [soft morphological filtering of solar images](https://www.aanda.org/articles/aa/pdf/2006/38/aa4852-06.pdf)**
 
-  *Overview*  
+  *Overview*
   **Soft Morphological Transform** is an image processing algorithm which aims at reducing the cosmic ray hits in an image taken by LASCO by training a genetic algorithm on a noisy dataset. This is like training a machine learning model to learn the weight matrices which will be used to perform a particular transformation.
-  
-  *Deliverables*  
-  [Astroscrappy](https://github.com/astropy/astroscrappy) already contains a routine which minimizes the cosmic ray hits in an image. Though the algorithm followed in astroscrappy is not the one mentioned in the [paper](https://www.aanda.org/articles/aa/pdf/2006/38/aa4852-06.pdf). We need to perform thorough testing on that module, if the code written is working for solar data then only tests would be added; if not the entire algorithm would be written from scratch following the paper. Implementing a well-documented algorithm along with complete test coverage. The IDL source code and the training dataset is not available. The training dataset needs to be replicated and the source code needs to be found out. 
+
+  *Deliverables*
+  [Astroscrappy](https://github.com/astropy/astroscrappy) already contains a routine which minimizes the cosmic ray hits in an image. Though the algorithm followed in astroscrappy is not the one mentioned in the [paper](https://www.aanda.org/articles/aa/pdf/2006/38/aa4852-06.pdf). We need to perform thorough testing on that module, if the code written is working for solar data then only tests would be added; if not the entire algorithm would be written from scratch following the paper. Implementing a well-documented algorithm along with complete test coverage. The IDL source code and the training dataset is not available. The training dataset needs to be replicated and the source code needs to be found out.
 
 The optional tasks are:
 
@@ -107,6 +108,7 @@ The optional tasks are:
 |  20 August - 25 August <br> (6 days)| <ul><li>Wrap up everything, make sure everything is working.</li><li>Implement the resampling of solar images, if time permits.</li></ul>|
 
 #### Software Packages Required
+
 * **Numpy:** It will be used throughout the project for performing various operations on the image.
 * **Matplotlib:** It will be used to plot various plots and maps.
 * **Sunpy:** Various modules like ```sunpy.map``` and ```sunpy.coordinates``` will be used.
@@ -131,4 +133,3 @@ This is my first attempt at GSoC. I have not participated before. I am applying 
 
 ----
 For any further details or queries, please contact me at [vc13@iitbbs.ac.in](vc13@iitbbs.ac.in).
-

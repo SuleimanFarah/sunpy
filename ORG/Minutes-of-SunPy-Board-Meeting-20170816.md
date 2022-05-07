@@ -1,14 +1,16 @@
 ### Date of Meeting
+
 16 August 2017
 
 ### Attendance
+
 **Present**: Steven Christe (Acting Chair), Sabrina Savage (Acting Secretary), Albert Shih, Stuart Mumford, Juan Carlos Martinez Oliveros, Monica Bobra, David Perez-Suarez
 
 **Absent:** Russ Hewett, Jack Ireland
 
 ### Meeting Notes
 
-* 0.8 is ready for release prior to SPD meeting. Expect some possible debugging during workshop. 
+* 0.8 is ready for release prior to SPD meeting. Expect some possible debugging during workshop.
 * sunpy.org updated and released, more photos needed (Jack!)
 * Voting for Board Positions
   * Chair:  Steven Christe, + 6 – David, Monica, Sabrina, Kevin, Stuart, Albert[, Steven]
@@ -22,5 +24,3 @@
   * Voting on provisional packages postponed to email, + 7 – Steven, Albert, Stuart, Sabrina, Monica, Kevin, David
 * Issues
   * Hosting for documentation. Current build takes a lot of time due to the gallery. Problem with stalling during builds. We are at the limit of how much free build time readthedocs can provide. Should we move away from readthedocs? Stuart suggested that he could possibly do the hosting, but not feasible for time and money. Looking for other suggestions
-
-

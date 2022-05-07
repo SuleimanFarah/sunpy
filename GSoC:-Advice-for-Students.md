@@ -111,13 +111,13 @@ We suggest that you think about these when writing your application.
     Does the student have reasonable evidence they’ve competently done something relevant to this before?
 
     Required:
-    - A GitHub profile
-    - Pull requests on any SunPy repository
+    * A GitHub profile
+    * Pull requests on any SunPy repository
 
     Other examples:
-    - Published applications
-    - Code from a uni assignment
-    - Code from other projects on GitHub
+    * Published applications
+    * Code from a uni assignment
+    * Code from other projects on GitHub
 
     Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.
     Try to select work you are most proud of, we do not want a link to everything you have ever done.

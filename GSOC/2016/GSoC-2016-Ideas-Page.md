@@ -16,6 +16,7 @@ ideas_team: SunPy
 *Programming skills:* Python
 
 #### Description
+
 The `Lightcurve` class is one of the three core datatypes in SunPy, along with Map and Spectra.
 `Lightcurve` is designed to read in, process and store meta data related to solar physics time series data.
 Currently, `Lightcurve` uses the pandas library as its underlying data structure, however, this is subject to change in the future.
@@ -41,9 +42,7 @@ Someone under taking this project will complete the following tasks:
 1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`. The API design for the factory class is in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
 1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
 
-
 A successful proposal for this project will demonstrate that the applicant has understood the mechanism behind the `Map` factory as already implemented in SunPy and presents a timeline of what things need to change in Lightcurve to mirror the design of `Map` and follow the design for Lightcurve in [SEP 7](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md).
-
 
 ### Improvements to the SunPy Database
 
@@ -79,7 +78,7 @@ This project aims to achieve the following things:
 
 A successful proposal will schedule updates to the database package in small sections, rather than in one large pull request. The work should be understood and broken down into individual sections.
 
-There are various other maintenance tasks which need undertaking (https://github.com/sunpy/sunpy/labels/Database) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
+There are various other maintenance tasks which need undertaking (<https://github.com/sunpy/sunpy/labels/Database>) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
 
 ### Real time data access and visualisation tools
 
@@ -132,7 +131,7 @@ the project.
 
 *Programming skills:* Python.
 
-####Description
+#### Description
 
 The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics.
 The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enables the calculation of various parameters from this information.
@@ -158,10 +157,8 @@ Other potential applications of ChiantiPy in SunPy include:
 A successful proposal will outline a schedule for implementing at least a single set of temperature and wavelength response functions for AIA, and the response functions for arbitrary plasma conditions would be a bonus.
 Familiarity with CHIANTI, ChiantiPy and SSW's implementation of the response functions will help to properly assess how long will be required to recreate them in SunPy.
 
-
-
-
 ### GUI to use LCT tools
+
 *Suggested Mentor(s):* [Jose Iván Campos Rozo](https://github.com/Hypnus1803) (National Astronomical Observatory, National University of Colombia), Santiago Vargas Domínguez (National Astronomical Observatory, National University of Colombia), [David Pérez Suárez](https://github.com/dpshelio).
 
 *Difficulty:* Intermediate
@@ -170,14 +167,15 @@ Familiarity with CHIANTI, ChiantiPy and SSW's implementation of the response fun
 
 *Programming skills:* Python, basic knowledge of qt4, pyqt4, qt designer
 
-#### Description:
-The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is https://github.com/Hypnus1803/flow_maps
+#### Description
+
+The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is <https://github.com/Hypnus1803/flow_maps>
 
 *Expected Outcomes:* To integate efficiently the code in SunPy libraries.
 
 ### SunPy Gallery, Docs, Website Upgrades
 
-*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Steven Christe](https://github.com/ehsteve), 
+*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Steven Christe](https://github.com/ehsteve),
 
 *Difficulty:* Beginner
 
@@ -186,16 +184,16 @@ The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robu
 *Programming skills:* Python
 
 #### Description
-The SunPy documentation need some love. The purpose of the 
+
+The SunPy documentation need some love. The purpose of the
 
 **Expected Outcomes**
 
 Someone under taking this project will complete the following tasks:
 
 1. Research and implement a gallery of SunPy examples which support jupyter notebooks.
-2. Update the docs (insert tasks). 
+2. Update the docs (insert tasks).
    1. Net documentation need to be refactored.
 3. Update the website (insert tasks).
 
 A successful proposal for this project will demonstrate that the applicant has understood the task and presents a timeline of what things need to change to be implemented.
-

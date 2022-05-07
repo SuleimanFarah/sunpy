@@ -11,7 +11,7 @@
 - Chat Handle: naman9639
 
 ### Personal Background
-Hello, I am Naman Agarwal, a third year undergraduate student at UIET Chandigarh, India. I'm pursuing a degree in Computer Science and Engineering. I have a very little experience with open source but I love programming a lot, particularly in Python. I am comfortable with a lot of programming languages but I specifically like Python because of its intuitive interface and very broad spectrum of usage from simple scripting to web applications and scientific uses. I use Ubuntu mainly for coding purposes and my favourite editor is Sublime Text. 
+Hello, I am Naman Agarwal, a third year undergraduate student at UIET Chandigarh, India. I'm pursuing a degree in Computer Science and Engineering. I have a very little experience with open source but I love programming a lot, particularly in Python. I am comfortable with a lot of programming languages but I specifically like Python because of its intuitive interface and very broad spectrum of usage from simple scripting to web applications and scientific uses. I use Ubuntu mainly for coding purposes and my favourite editor is Sublime Text.
 
 ### University Information
 - **University:** [University Institute of Engineering and Technology, Chandigarh](http://uiet.puchd.ac.in/)

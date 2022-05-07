@@ -1,19 +1,23 @@
 # SunPy Scraper rewrite
-## About me
-My name is Yukie Nomiya and I'm a Computer Science student from Rome, Italy. I will graduate in May with a Bachelor's Degree at Sapienza University of Rome and I will start my Master's Degree next fall. 
 
-### My contact information:
+## About me
+
+My name is Yukie Nomiya and I'm a Computer Science student from Rome, Italy. I will graduate in May with a Bachelor's Degree at Sapienza University of Rome and I will start my Master's Degree next fall.
+
+### My contact information
+
 Timezone: GMT+1
 
 Email: nomiyayukie@gmail.com
 
-Github: https://github.com/yukienomiya
+Github: <https://github.com/yukienomiya>
 
-Linkedin: https://www.linkedin.com/in/yukie-nomiya
+Linkedin: <https://www.linkedin.com/in/yukie-nomiya>
 
-Resume: https://drive.google.com/file/d/1a8ib3fXWy5oYjYRcwgY9WRXeWFGwT88p
+Resume: <https://drive.google.com/file/d/1a8ib3fXWy5oYjYRcwgY9WRXeWFGwT88p>
 
 ## GSoC experience
+
 I participated in the 2020 edition of Google Summer of Code working on the "Italian translation and i18n improvements" project with the Processing Foundation.
 To briefly summarize, I worked on improving and facilitating the internationalization process of the [p5.js website](https://p5js.org/) (p5.js is an open-source JavaScript library for creative coding, one of the most popular libraries maintained by the Processing Foundation). The improvements I made ranged from JS scripts that parsed i18n info, to workflow automation using GitHub actions and even a small web platform created to facilitate the translation work for contributors.
 You can read more about my project in the [project wrap-up post](https://github.com/processing/p5.js/blob/main/contributor_docs/project_wrapups/yukienomiya_gsoc_2020.md).
@@ -30,7 +34,7 @@ Yes, I am.
 
 **How much time do you plan to invest in the project before, during, and after the Summer of Code?**
 
-I plan to spend ~20h per week working on this GSoC program, but I am prepared to put in more hours if the project turns out to be more difficult than anticipated. 
+I plan to spend ~20h per week working on this GSoC program, but I am prepared to put in more hours if the project turns out to be more difficult than anticipated.
 The only time I might be a little busy could be during the last weeks of May (due to graduation), but I don't think it's going to interfere much with the Community Bonding Period. As I have already finished my exams, this summer I don't have any other particular commitments that would cause a break from work.
 
 ## Programming experience
@@ -41,7 +45,6 @@ During the last couple of years, I've also grown an interest in Competitive Prog
 During the application period, I built a simple [link scraper](https://github.com/yukienomiya/link-scraper) from scratch to familiarize myself with the topic and to better understand what I needed to focus on.
 
 I have been using GitHub for a few years now to upload both my personal and academic projects, but prior to my first GSoC I never really contributed with code to a big open source project. Last summer was therefore a great learning experience that allowed me to get more familiar and comfortable with the contribution process, from understanding other people's code to making Pull Requests and discussing ideas and solutions with the Community.
-
 
 **What are your contributions to SunPy so far?**
 
@@ -65,12 +68,12 @@ Due to my last GSoC experience, I'm pretty familiar with the tools required to w
 Currently, the `Scraper` class works by receiving in input a string pattern and multiple optional keyword arguments. The pattern is a string that contains one or more datetime format strings (e.g. %Y %m %d) and that may contain placeholders for the keyword arguments. Optionally, the pattern may contain regexs as well but only in the file name and if there are no keyword arguments.
 The Scraper then uses the format() function to insert the keywords in the pattern string.
 
-The main function of the Scraper API is the `filelist(timerange)`: it makes a request (using protocols like http, ftp and file) to the "base URL" (the pattern obtained by removing the file's name and extension) substituting in the datetime format string of the pattern every valid date and times that respect the timerange provided. 
+The main function of the Scraper API is the `filelist(timerange)`: it makes a request (using protocols like http, ftp and file) to the "base URL" (the pattern obtained by removing the file's name and extension) substituting in the datetime format string of the pattern every valid date and times that respect the timerange provided.
 Then for each file in the directory the filelist function matches its file pattern with the one fetched on the server it returns it if the patterns match.
 
 A lot of issues with the current API have been reported by users. For example:
 
-* If the "base URL" of a pattern contains a regex, the scraper won't find any matches. 
+* If the "base URL" of a pattern contains a regex, the scraper won't find any matches.
 
 ![example 1](https://user-images.githubusercontent.com/49163604/114612984-11f80000-9ca3-11eb-9957-ef2ecdde8556.png)
 
@@ -103,7 +106,6 @@ In the following, I will assume that backward compatibility is important, and th
 
 First I would design a `BaseScraper` class that simply takes a file server (more details below) and starts to walk the file tree partially matching the pattern as it walks the folder.
 
-
 So for instance if the server root is `http://solarmonitor.org/data/` and the pattern is the regex `\d{4}/\d{2}/\d{2}/fits/\w*/\w*_\d{5}_fd_\d{4}\d{2}\d{2}_\d{2}\d{2}\d{2}\.fts\.gz` the `Scraper` will first matches the regex `\d{4}` among the files inside of `http://solarmonitor.org/data` then for each subfolder it will match `\d{2}` (e.g. folders inside `http://solarmonitor.org/data/2015/`), etc.
 
 Using this kind of directory-level pattern allows us to both discover and match files as we walk the tree (avoiding pre-fetch the entire tree and then matching). This has the advantage of being quite efficient, though has the limitation of not allowing patterns like `.*\.fts\.gz` since we can't partially match them as we walk the tree, and we would need to first visit the whole file server tree and for each leaf (i.e. file) match the regex on the whole path from the root to leaf. This limitation means that we would need to make sure to tell the user that regex are on a per-directory basis and do not span over multiple directories.
@@ -111,7 +113,6 @@ Using this kind of directory-level pattern allows us to both discover and match 
 Once the simple `BaseScraper` class is implemented, I would create a new class `DatedScraper` that introduces the concept of datetime formats inside paths and that uses the implementation of `BaseScraper` but with the additional logic to filter out paths that are outside the given time range.
 
 The logic that handles the protocol-specific way of discovering files on a server would be abstracted away from the `BaseScraper` class by Implementing 3 separate classes namely `FTPFileTree`, `HTTPFileTree`, `LocalFileTree` all extending an ABC class `FileTree` that provides a unified API to access files on a file server. In this way `BaseScraper` simply takes a `FileTree` in input instead of a string and then uses its APIs to walk the file tree and match the pattern.
-
 
 Once all this is done, it should be possible to write a wrapper around the new `DatedScraper` class to mimic the old implementation.
 
@@ -144,5 +145,3 @@ Once all this is done, it should be possible to write a wrapper around the new `
   Write documentation on how to migrate to the new API/or in case of backward compatible API implementing the wrapper to mimic the old API.
 
   _Final Evaluation (August 16, 2021)_
-
-

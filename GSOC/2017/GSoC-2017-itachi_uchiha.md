@@ -1,15 +1,19 @@
 ## Organization: OpenAstronomy
+
 ## Sub-Organization: SunPy
+
 ## Student Information
+
 * **Name:** Punyaslok Pattnaik
 * **E mail:** punyaslok.pattnaik@gmail.com
 * **Time Zone:** +05:30 GMT
 * **IRC Handle:** itachi_uchiha_
 * **Github Username:** [Punyaslok](https://github.com/Punyaslok)
 * **Blog :** [My Blog](https://punyaslokpattnaik.wordpress.com)
-* **Blog RSS feed :** https://punyaslokpattnaik.wordpress.com/feed/
+* **Blog RSS feed :** <https://punyaslokpattnaik.wordpress.com/feed/>
 
 ## University Information
+
 * **University:** [International Institute of Information Technology, Hyderabad](https://www.iiit.ac.in)
 * **Major:** Computer Science
 * **Current Year:** Third Year
@@ -22,7 +26,6 @@ I participated in GSoC under SunPy in 2016.
 
 [GSoC 2016 Product Submission](https://github.com/Punyaslok/sunpy/pull/1)
 
-
 **My github url :** [Punyaslok](https://github.com/Punyaslok)
 
 **Operating System Experience:** I use Ubuntu, Arch Linux and Windows.
@@ -30,16 +33,16 @@ I participated in GSoC under SunPy in 2016.
 Apart from the above projects, I am also proficient in C/C++ and I love sport programming.
 
 ## PR links
-* **Astropy**
- * [Removed discussion of Keyword class in Getting Started section.](https://github.com/astropy/ccdproc/pull/296)
-* **SunPy (excludes GSoC 2016 work)**
- * [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
- * [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
- * [Download and fetch both accept kwargs now.](https://github.com/sunpy/sunpy/pull/1719)
- * [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
- * [Now downloads take place in the correct directory](https://github.com/sunpy/sunpy/pull/1856)
- * [Quick Examples for the database package](https://github.com/sunpy/sunpy/pull/1822)
 
+* **Astropy**
+* [Removed discussion of Keyword class in Getting Started section.](https://github.com/astropy/ccdproc/pull/296)
+* **SunPy (excludes GSoC 2016 work)**
+* [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
+* [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
+* [Download and fetch both accept kwargs now.](https://github.com/sunpy/sunpy/pull/1719)
+* [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
+* [Now downloads take place in the correct directory](https://github.com/sunpy/sunpy/pull/1856)
+* [Quick Examples for the database package](https://github.com/sunpy/sunpy/pull/1822)
 
 ## Project Proposal Information
 
@@ -47,7 +50,7 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
 
 **Mentors :** [Stuart Mumford](http://github.com/Cadair), [David Pérez-Suárez](http://github.com/dpshelio)
 
-### Abstract :
+### Abstract
 
 The Sun releases large amounts of magnetic energy in the form of X-rays, EUV (Extreme ultraviolet), radio waves and high energy particles regularly. This kind of radiation bursts can threaten space and ground based technological infrastructure. Hence it is important to monitor solar activity to be prepared for potential threats.
 
@@ -60,6 +63,7 @@ In order to serve this data, an additional Fido client will need to be implement
 Also for proton and electron flux data to be served, a new instrument will need to be added to GOES.
 
 Hence his project would have these main tasks :
+
 1. Make a new Fido client for DSCOVR data
 2. Add new instrument in GOES for getting proton flux and electron flux data
 3. Building the webapp - This needs to get updated everyday for new plots to come in.
@@ -68,8 +72,7 @@ Hence his project would have these main tasks :
 6. Generate new plots for each client everyday  ( cronjob type of thing, `schedule.every().day.at("10:30").do(job)`  )
 7. On initial deployment, make plots of past year’s files and save them
 
-
-### Project Goals :
+### Project Goals
 
 1. A DSCOVR client for Fido.
 2. A new instrument for obtaining proton and electron flux data.
@@ -92,10 +95,12 @@ Database → Multiple Client tables → Each client has 2 tables
 I thought each client should have separate table only for the reason that future replacement of that data’s source should not tamper with other clients’ data indexing.
 
 Every client will have 2 tables :
+
 * Image table
 * Info / metadata table
 
 Image table
+
 * ID (numbered serially, i.e. 6 images will be numbered from 1 to 6) - Primary Key
 * Start Date-time
 * End Date-time
@@ -103,6 +108,7 @@ Image table
 * File path
 
 Info / metadata table ( client is already known, no need for a separate field )
+
 * ID (numbered serially) - Primary Key
 * Start Date-time
 * End Date-time
@@ -113,6 +119,7 @@ Info / metadata table ( client is already known, no need for a separate field )
 **Join operations for query to be done using start and end date-times.**
 
 List of data sources ( Decreasing priority ) :
+
 1. HMI → LOS_magnetic_field  ( almost done ) → start with this
 2. AIA (imaging) - works
 3. HMI (imaging)
@@ -133,14 +140,16 @@ List of data sources ( Decreasing priority ) :
 **Note :** **_works_** above means that I have written a standalone python script for which plotting and overlaying of active region works.
 
 **Reference :**
+
 * Hieronymous’ list(not linking it as I have an edit link)
 * [Solar Monitor](www.solarmonitor.org)
 * [Real-Time Solar Wind](http://www.swpc.noaa.gov/products/real-time-solar-wind)
 * [https://www.ngdc.noaa.gov/dscovr/portal/index.html#/download/1490227200000;1490572799999](https://www.ngdc.noaa.gov/dscovr/portal/index.html#/download/1490227200000;1490572799999)
 
-
 ### How Time Allocation was made in the Timeline
+
 To get a fair estimate of how much time to allocate to each client, I wrote scripts to plot each client’s data. Among all clients, common parameters are :
+
 * Input : Date Range
 * Output : Plot of that client with AR information from SRS plotted on top of it.
 Most clients worked well and hence lesser time has been allocated to them as all their implementation would be similar to the magnetogram example.
@@ -154,7 +163,6 @@ Also I took into account Cadair’s suggestion for this year’s projects : fini
 
 * Document and keep track of all policy decisions made.
 * Make it a rule to post all policy decisions on that PR page. Avoids unnecessary confusion/time-wasting later on.
-
 
 ## Timeline
 
@@ -182,10 +190,7 @@ NOTE : Exact database schema for each client will be decided as when the time co
 
 **Side goal :** The ability to serve the images as interactive js plots, if time permits
 
-
-
-
-### How I will successfully complete the project:
+### How I will successfully complete the project
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
@@ -195,28 +200,27 @@ I am already very familiar with Fido’s working and I should be able to get thi
 
 Even after the project ends, I will be available if anyone has any questions regarding my code.
 
-
 ### Benefits to the Community
 
 * **Webapp** - Ready availability of solar activity data along with AR information will aid in flare prediction. Also the attached python scripts will give users an idea of how to use SunPy’s various clients.
 * **DSCOVR client** - Users can now get DSCOVR data using SunPy
 * Users can get proton/electron flux data using SunPy
 
-
 ## GSoC
 
 ### Have you participated previously in GSoC? When? With which project?
 
 I have successfully completed a project in GSoC 2016 with SunPy.
+
 * [Improvements to the SunPy Database](https://summerofcode.withgoogle.com/archive/2016/projects/5092662445080576/)
 * [GSoC 2016 Product Submission](https://github.com/Punyaslok/sunpy/pull/1)
-
 
 ### Are you also applying to other projects?
 
 **No.** This is the **only project** and **SunPy is the only organization** that I have applied for.
 
 ### Commitment
+
 I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
 
 My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.

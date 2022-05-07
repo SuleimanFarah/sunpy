@@ -68,14 +68,14 @@
 
 == Hackathons and Open Source experience ==
 
-* '''Go-Hack Idea 2016''': I participated in Go-Hack Idea in 2016 where I proposed an idea on smart home security systems along with some small implementations using Adruino, Raspberry Pi. 
+* '''Go-Hack Idea 2016''': I participated in Go-Hack Idea in 2016 where I proposed an idea on smart home security systems along with some small implementations using Adruino, Raspberry Pi.
 
-* '''Contributing to Organisations like The Algorithms''': I had been contributing to some open source organisations and repositories for the past two years. 
+* '''Contributing to Organisations like The Algorithms''': I had been contributing to some open source organisations and repositories for the past two years.
 Some of them include:
 ** [https://github.com/codeIIEST/Algorithms CODEIIEST]  - [https://github.com/codeIIEST/Algorithms/graphs/contributors My Contribution to this repository]
 ** [https://github.com/TheAlgorithms/Python The Algorithms] - [https://github.com/TheAlgorithms/Python/graphs/contributors My Contribution to this repository]
 ** [https://github.com/MrBlaise/learnpython Python Algorithms] - [https://github.com/MrBlaise/learnpython/graphs/contributors My Contribution to this repository]
-** [https://github.com/geekcomputers/Python GeekComputers] - [https://github.com/geekcomputers/Python/commits?author=prateekiiest My Contribution to this repository] 
+** [https://github.com/geekcomputers/Python GeekComputers] - [https://github.com/geekcomputers/Python/commits?author=prateekiiest My Contribution to this repository]
 ** [https://github.com/udacity/ud120-projects Udacity Projects] - [https://github.com/udacity/ud120-projects/pulls?q=is%3Apr+author%3Aprateekiiest+is%3Aclosed My Contribution to this repository]
 ** [https://github.com/TheAlgorithms/C Algorithms] - [https://github.com/TheAlgorithms/C/graphs/contributors My Contribution to this repository]
 ** [https://github.com/karan/Projects-Solutions Simple Projects] - [https://github.com/karan/Projects-Solutions/pulls/prateekiiest My Contribution to this repository]
@@ -88,15 +88,15 @@ Some of them include:
 
 == Interest In OpenAstronomy ==
 
-OpenAstronomy consisting of 8 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by researchers around the world to study our universe. The analysis of data obtained from observatories like SDO , Hubble Space Telescope helps multiple types of research from being able to forecast a solar storm to detect planets in other stars.  
+OpenAstronomy consisting of 8 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by researchers around the world to study our universe. The analysis of data obtained from observatories like SDO , Hubble Space Telescope helps multiple types of research from being able to forecast a solar storm to detect planets in other stars.
 
-'''Astronomy is at the frontier of science.''' There are new discoveries made all the time. 
+'''Astronomy is at the frontier of science.''' There are new discoveries made all the time.
 
-I had always a love for the sky and a kind of childhood fascination in the field astronomy and to me its feels amazing to see real time data of the Sun , captured just a few hours back, in my computer screen and I am able to analyse those data obtained. 
+I had always a love for the sky and a kind of childhood fascination in the field astronomy and to me its feels amazing to see real time data of the Sun , captured just a few hours back, in my computer screen and I am able to analyse those data obtained.
 The organisation is inspiring new developers like me to join the open source community and build the project code base together with lead developers and that is where I find the joy of Open Source.
 It has been really a great experience contributing to Sunpy since I joined the Sunpy community.
 
-OpenAstronomy along with Google Summer of Code has given me this opportunity to be a part of these huge project work on Solar Data Analysis and I feel it as a privilege to contribute to such an open-source software in the field of astronomy.   
+OpenAstronomy along with Google Summer of Code has given me this opportunity to be a part of these huge project work on Solar Data Analysis and I feel it as a privilege to contribute to such an open-source software in the field of astronomy.
 
 
 
@@ -110,12 +110,12 @@ OpenAstronomy along with Google Summer of Code has given me this opportunity to 
 === Abstract ===
 
 '''Sunpy Website'''
-The [http://sunpy.org/ Sunpy Website] is the main gateway through which users get to know about the software , its versions, installation procedures, its features and many more. So for any big software, it is really essential for the users have easy access to all the resources - ''(guides and how to use the software package)''. 
-It is therefore required to have a new design for it using HTML/CSS. 
+The [http://sunpy.org/ Sunpy Website] is the main gateway through which users get to know about the software , its versions, installation procedures, its features and many more. So for any big software, it is really essential for the users have easy access to all the resources - ''(guides and how to use the software package)''.
+It is therefore required to have a new design for it using HTML/CSS.
 It is also ensured that the theme for the website developed can be used by the current Jekyll website and also in the future by Drupal, Joomla or Medium.
 
 '''Sunpy Documentation'''
-The [http://docs.sunpy.org/en/stable/ Sunpy Documentation] contains all the relevant information related to the software package. 
+The [http://docs.sunpy.org/en/stable/ Sunpy Documentation] contains all the relevant information related to the software package.
 The design for the website is now used to create a corresponding Sphinx theme. This theme will then be used for the Sunpy documentation and also for the Sunpy affiliated packages.
 
 The website and the documentation needs much improvement in terms of design and content.
@@ -131,8 +131,8 @@ The website and the documentation needs much improvement in terms of design and 
 
 '''Extensions to the project I plan to work on'''
 
-* To improve the content of the website. 
-* To implement a registry of Sunpy affiliated packages on the website. 
+* To improve the content of the website.
+* To implement a registry of Sunpy affiliated packages on the website.
 
 ------------
  
@@ -141,7 +141,7 @@ The website and the documentation needs much improvement in terms of design and 
 
 The Sunpy Website is in its naive stage. The website is like a window to new users and developers who would like to learn about the software, its core features and also use it for their project_works. So I believe the website is a core part of the organisation which plays a vital role in conveying about the software, the organisation's work to the users outside.
 
-It is therefore required to have a new design for the website, create a completely new look for the website with some additional features. 
+It is therefore required to have a new design for the website, create a completely new look for the website with some additional features.
 
 It is also a necessity to have the same design for the documentation as in the website. The documentation holds all the relevant information and guides pertaining to the software and it currently uses the ''Read the docs'' theme. It would be much better if the documentation is made to have the same theme as that of the website.
 
@@ -156,7 +156,7 @@ While working on with the code and also for the installation procedures, I had t
 |-
 |* First of all, the website needs a much improvement in the design. It needs improvement in terms of style. ||* The Sunpy Docs has many areas lacking proper documentation like for ROI, some parts of the Lightcurve Section. Some of the functions have not been documented. So it is really important to update them.
 |-
-|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to answer such frequent questions. ||* The documentation should have more details for the installation procedure. 
+|* The website does not have a FAQ section, which is really necessary to seek answers to common questions. Hence members of the organisation need not have to answer such frequent questions. ||* The documentation should have more details for the installation procedure.
 |-
 |* The gallery of the website only contains tutorial on Lightcurve using IPython Notebook. It should also contain some tutorials on map resampling, submaps and solar cycle using IPython Notebook. The website gallery have a possibility to get removed as said by my mentors.
 * Also, the website doesn't contain presentations and video tutorials and research paper links. ||* The documentation currently does not contain the corresponding issues related to the details under the [http://docs.sunpy.org/en/stable/code_ref/index.html API reference]. So new developers can get more acquainted with the issues faced corresponding to the given module.
@@ -176,7 +176,7 @@ While working on with the code and also for the installation procedures, I had t
 ;'''Dividing the project into two parts'''
 
 
-: '''First part of the project''' 
+: '''First part of the project'''
 
 ''The first part of the project deals with the design of the website and creating the sphinx theme having the same design to be used by the Sunpy documentation and the affiliated packages.''
 
@@ -184,12 +184,12 @@ While working on with the code and also for the installation procedures, I had t
 
 * The ''design'' of the website is sketched out  - The design will give a completely new look for the website with some additional new features.
 
-* The design is implemented using HTML/CSS.   
+* The design is implemented using HTML/CSS.
 
 : '''Second part of the project'''
 
 
-* Since when I started knowing about the Sunpy codebase and started working on the issues - ''package_novice'' and ''package_medium'' ones mostly, I would always go through the documentation and try to understand exactly why the issue was brought up, before going to the coding part. So the documentation part is really crucial for beginners to understand such a huge code-work and get a better flavor about the software. Hence, I would devote my time to working on some new features to make the documentation more better. 
+* Since when I started knowing about the Sunpy codebase and started working on the issues - ''package_novice'' and ''package_medium'' ones mostly, I would always go through the documentation and try to understand exactly why the issue was brought up, before going to the coding part. So the documentation part is really crucial for beginners to understand such a huge code-work and get a better flavor about the software. Hence, I would devote my time to working on some new features to make the documentation more better.
 
 * I remember some of topics where I faced issues. I will thus try to clear those issues by giving more examples and also links to some extra resources which are not present in the current documentation, so that beginners don't have to face those issues again.
 
@@ -197,36 +197,36 @@ While working on with the code and also for the installation procedures, I had t
 * I also saw that there were some modules which were not defined, or the documentation for that part was not added. For example [http://docs.sunpy.org/en/latest/generated/api/sunpy.net.vso.attrs.Time.html  sunpy.net.vso.attrs.Time :collides, pad]. So I would like to work on them and give appropriate documentation for better understanding of the modules.
 
 
-;'''Extensions to this project I would work on ''' 
+;'''Extensions to this project I would work on '''
 
-: '''Improve the content of the SunPy website'''  
-* The website does not contain much description on some of the core functionality of Sunpy. I plan to add some feature section where there will be bulleted list on some of the main modules of Sunpy along with their functionality (their description, what is their function in the Sunpy code base) and their corresponding links to the Sunpy Documentation.  
+: '''Improve the content of the SunPy website'''
+* The website does not contain much description on some of the core functionality of Sunpy. I plan to add some feature section where there will be bulleted list on some of the main modules of Sunpy along with their functionality (their description, what is their function in the Sunpy code base) and their corresponding links to the Sunpy Documentation.
 * I also want to create a FAQ (Frequently Asked Questions) section in order to address some common questions from the beginners.
 
 * I plan to add some links to some of the presentations [https://www.youtube.com/watch?v=bXPPTCkaVu8 SunPy - Python for Solar Physicists; SciPy 2013 Presentation]  and video talks done by Sunpy like [https://www.youtube.com/watch?v=1KdeO-lZ2dQ PyAstro16 - Steven Christe - SunPy, the solar data analysis package] and [https://www.youtube.com/watch?v=3HYEr4NdziQ&t=231s Stuart Mumford - SunPy: Python for Solar Physics] on the website.
 
-* I would also want to add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.      
+* I would also want to add some more content about the instruments used here, and also some links for resources related to various issues. I would also add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
 * Lastly, I want to give links to some of the latest research papers associated with the Sunpy Organisation and also some of the research papers that beginners may need in order to implement some algorithm for usage in a module.
 Research papers example I would like to add include:
 * [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/V9GADNPC SunPy—Python for solar physics]
 * [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/553I2IUE Dynamic Precursors of Flares in Active Region NOAA 10486]
 * [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/8KXJBBTI SunPy: Python for Solar Physics. An implementation for local correlation tracking] and others under the [https://www.zotero.org/groups/sunpy_-_python_for_solar_physicists/items/itemKey/8KXJBBTI Zotero|Groups > Sunpy]
 
-: '''Why this extension?''' 
+: '''Why this extension?'''
 
 The Sunpy Website is in still in its initial stage and there is much to improve in the website and improving its content is one of the important things that needs to be done. Users will only get to know about the software package through the Sunpy Website and hence it is essential that get to know about it in detail, and if any confusion they may leave a question at the matrix channel. The website should include the details of some of the core libraries of Sunpy, the data sources used for the project , the description or some link to the instruments used for gathering data for Sunpy. Likewise it will be a much better outreach for Sunpy to the users interested in working on Solar Project.
-: '''Implement a registry of SunPy Affiliated packages on the website.''' 
+: '''Implement a registry of SunPy Affiliated packages on the website.'''
 * Add more about some of the core features of the latest version, so that new users can get a better understanding of the software.
-* Create a registry of Sunpy dependencies and the affiliated packages on the website in a prescribed format under a separate section.  
+* Create a registry of Sunpy dependencies and the affiliated packages on the website in a prescribed format under a separate section.
 ** ''A list of the affiliated packages will be kept in a publicly available location. This list shall contain links to the source code, any website associated with the package and contact details of the maintainer of the package. There will be a list of packages maintained on the www.sunpy.org website, which shall provide information to users about the affiliated packages.''
 
-* Give description as to how to register an affiliated package 
+* Give description as to how to register an affiliated package
 ** ''To register an affiliated package it is needed to contact the chair of the SunPy board, or another board member, who will propose the package to the board who will then make a decision on that package.''
 
 * Packaging Affiliated Packages
 ** To make it easier for developers to maintain affiliated packages a package template will be provided. This will allow package maintainers to not have to worry about Python packaging and documentation / testing infrastructure, and concentrate on the development of their package. This template will provide a package which is laid out and behaves much like the core SunPy library.
 
-: '''Why this extension?''' 
+: '''Why this extension?'''
 
 The Affiliated Packages are registered with the SunPy Project to benefit from the publicity and support available within the SunPy community, while maintaining their independence and control over the package. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. Not all solar physics software falls within the remit of the core SunPy library, and some software developers may wish to maintain a degree of control over their software than it being part of the core library would afford them. Both of these reasons provide motivation for software which is associated with SunPy but not contained within the core library. Having an association with SunPy will provide advantages to these packages, such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to grow and provide useful tools to a larger audience.
 
@@ -242,52 +242,52 @@ Lastly,
 
 === Work Schedule ===
 {|
-|  '''Time Period'''    ||   '''                My Work  Plan'''     
+|  '''Time Period'''    ||   '''                My Work  Plan'''
 |-
 |          '''Community Bonding Period'''                       ||         '
 |-
-| '''4 May - 29 May'''     || ;First Week  
+| '''4 May - 29 May'''     || ;First Week
 :* Dedicate this time to knowing more about the project, the project code base and the ''Documentation''.
 
-:* Discuss with mentors about the  design of the website and what tools that will be required for this. 
+:* Discuss with mentors about the  design of the website and what tools that will be required for this.
 
 ;Second Week
 
-:* Discuss with mentors  which particular features they want me to include the website and the documentation.    
+:* Discuss with mentors  which particular features they want me to include the website and the documentation.
 
 ;Third Week
-:* Finalize  the design of the website.   
-:* Go through the code work of the Sunpy website, and clear my doubts from mentors regarding how the website can be used by any static site generator like Jekyll, or any future technologies.  
+:* Finalize  the design of the website.
+:* Go through the code work of the Sunpy website, and clear my doubts from mentors regarding how the website can be used by any static site generator like Jekyll, or any future technologies.
 |-
 |        '''First Part of the Project starts'''       ||  '''Work Period'''
 |-
-|'''30 May - 25 June''' || 
+|'''30 May - 25 June''' ||
 ;First Week
 
-:* Start building the website with the finalized design. 
-:* Implement the design for the ''Home Page'' using CSS, HTML and build the page locally. 
-:* Update Pull Request for the new home page designed. 
+:* Start building the website with the finalized design.
+:* Implement the design for the ''Home Page'' using CSS, HTML and build the page locally.
+:* Update Pull Request for the new home page designed.
 ;Second Week
 :* Implement the design for the ''About'' and the ''Blog'' section of the page and see the page build it locally.
-:*  Discuss with mentors about the format of the ''Blog'' section and also what should be the corresponding style of writing under each blog writing. 
+:*  Discuss with mentors about the format of the ''Blog'' section and also what should be the corresponding style of writing under each blog writing.
 ;Third Week
-:* Submit patches for issues or new features proposed under the the website code_base. 
+:* Submit patches for issues or new features proposed under the the website code_base.
 ;Fourth Week
-:* Include the new features like FAQ under a separate page.   
-:* Test and ensure that the website design is completely done by using local installation through WAMP or creating a new test domain using cPanel . Any remaining work is addressed to in this period. Prevailing issues are addressed to in this period. 
-:* Finalize Part 1 of the project after reviewing it with mentors. 
+:* Include the new features like FAQ under a separate page.
+:* Test and ensure that the website design is completely done by using local installation through WAMP or creating a new test domain using cPanel . Any remaining work is addressed to in this period. Prevailing issues are addressed to in this period.
+:* Finalize Part 1 of the project after reviewing it with mentors.
 |-
 |               '''26 June -30 June'''                                         ||       '''Phase 1 Evaluation '''
 |-
 |                      '''First part of the Project ends.'''
-'''Second part of the Project starts'''                 ||   
+'''Second part of the Project starts'''                 ||
 |-
 |      '''31 June - 12 July'''                      ||      '''Work Period'''
 ;First Week
-:* The Sphinx theme is developed having the same design as the website.  
+:* The Sphinx theme is developed having the same design as the website.
 ;Second Week
-:* Discuss with mentors about the customization of Sphinx theme.  
-:* Implement this theme for the Sunpy Documentation and other Sunpy packages. 
+:* Discuss with mentors about the customization of Sphinx theme.
+:* Implement this theme for the Sunpy Documentation and other Sunpy packages.
 |-
 |    '''13 July - 23 July'''                              ||    '''Work on the extensions to the project.'''
 ;First Week
@@ -307,8 +307,8 @@ Lastly,
 
 ;Fourth Week
 :* Give a detailed description of each of the affiliated packages along with their current versions and some of their important features.
-:* Update Pull Requests corresponding to documentation issues under the documentation section.  
-:* Add documentation to the modules under the Sunpy API Reference that has not yet been documented. 
+:* Update Pull Requests corresponding to documentation issues under the documentation section.
+:* Add documentation to the modules under the Sunpy API Reference that has not yet been documented.
 |-
 |  '''25 July - 28 July'''                                ||   '''Phase 2 Evaluation'''
 |-
@@ -316,9 +316,9 @@ Lastly,
 Any remaining amount of work is finished during this period.
 * Any issues remaining is addressed to during this time.
 |-
-|       '''Second phase of project completed.'''                     ||   
+|       '''Second phase of project completed.'''                     ||
 |-
-|   Final week: Students submit their final work product and their final mentor evaluation.           || 
+|   Final week: Students submit their final work product and their final mentor evaluation.           ||
 |-
 |  '''August 21 - August 28'''  ||
 ;Final Week
@@ -342,7 +342,7 @@ Any remaining amount of work is finished during this period.
 The website of SunPy is still in its initial state. I believe that by the time I complete this project I would be able to give a complete new look to the website along with improved content and features which will be beneficial to all users who want to use Sunpy for knowing about the software and also using it for their research work. As a community-driven project SunPy encourages contributions from a diverse group of people on a wide range of software. By implementing a registry of the affiliated packages, Sunpy  will provide advantages to these packages,such as the knowledge of the SunPy community and the publicity provided by SunPy, while also allowing the whole SunPy community to evolve and provide useful tools to a larger audience.
 
 -------------
-     
+
 === My Contribution to Sunpy so far ===
 {|
 | '''Pull Requests'''   ||  '''Corresponding Issues'''     ||       '''Status'''
@@ -379,7 +379,7 @@ The website of SunPy is still in its initial state. I believe that by the time I
 
 
 
-{| 
+{|
 | '''Issues Opened '''
 |-
 |* [https://github.com/sunpy/sunpy/issues/2020  reshape_image_to_4d_superpixel array seems broken : #2020]
@@ -402,7 +402,7 @@ The website of SunPy is still in its initial state. I believe that by the time I
 I have already started with the design by preparing a slide.
 My work for the site so far:
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/home.jpg Sunpy Home 1]
-* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2] 
+* [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunweb.gif Sunpy Page Home 2]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/About%20Page.jpg  About Section]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/blogsun.jpg Blog Section]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/contribute%20sun.jpg Contribute Section]
@@ -432,7 +432,7 @@ Its Design
 [[https://raw.githubusercontent.com/prateekiiest/sunpy_myrepo/master/blogsun.jpg]]
 
 -----
-Implementation of the registry. 
+Implementation of the registry.
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/sunpyaffiliated.jpg Sunpy Affiliated Packages]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/featuredpack.jpg Featured Packages]
 * [https://github.com/prateekiiest/sunpy_myrepo/blob/master/registry.jpg Registry of Affiliated Packages]
@@ -461,11 +461,11 @@ Recently I tried implementing the website design here
 
 -----------
 
-=== Software Packages to be used ===   
+=== Software Packages to be used ===
 
-* '''Sphinx''' : Sphinx is a tool that allows us to create as many restructured documents as we want and then it merges them together into a single website or a book. It uses HTML, LaTeX as its output format. 
+* '''Sphinx''' : Sphinx is a tool that allows us to create as many restructured documents as we want and then it merges them together into a single website or a book. It uses HTML, LaTeX as its output format.
 
-* '''Jekyll''' : Jekyll is a tool to transform any plain text into static websites and blogs. The current Sunpy website uses Jekyll. 
+* '''Jekyll''' : Jekyll is a tool to transform any plain text into static websites and blogs. The current Sunpy website uses Jekyll.
 
 * '''Graphviz''' : Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
 --------------
@@ -476,10 +476,10 @@ What I proposed is that I want to include Jupyter Notebook tutorials under Sunpy
 
 == How I wish to complete the project ==
 
-I am confident of completing this project because this project interests me a lot and also fits my current skill sets. 
-I have read much about the Sphinx documentation since the last few weeks. 
+I am confident of completing this project because this project interests me a lot and also fits my current skill sets.
+I have read much about the Sphinx documentation since the last few weeks.
 I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
-At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software. 
+At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software.
 
 -------------
 
@@ -518,7 +518,7 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 
 * My classes for the new semester will begin around October 5th, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
 
-* Also, because my summer vacation starts on May 7, I will start working on the project early so that I can try to complete the project well before the deadline ( around 2-3 weeks before the deadline ). 
+* Also, because my summer vacation starts on May 7, I will start working on the project early so that I can try to complete the project well before the deadline ( around 2-3 weeks before the deadline ).
 
 * I have my semester exams from 22nd of April to 1 May. So I will not be able to contribute much time to the project work during this time. Still I will try to devote 2-3 hours everyday to do my work.
 

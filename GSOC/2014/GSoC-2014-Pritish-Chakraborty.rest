@@ -39,8 +39,8 @@ My secondary goal would be to work on integrating the ``astropy.units`` package 
 Detailed Description
 ~~~~~~~~~~~~~~~~~~~~
 
-:Community bonding period (April 21 — May 18): 
- Communicate with mentor(s) and take note of any extra requirements and helpful insights (SWOT analysis). Comb through and do an extensive reading of the Astropy and SunPy documentations for coordinate system implementation. Implement the relevant packages of Astropy and SunPy in the interpreter for a working understanding. Establish a thorough mental picture of the APE5 guidelines to help when programming. 
+:Community bonding period (April 21 — May 18):
+ Communicate with mentor(s) and take note of any extra requirements and helpful insights (SWOT analysis). Comb through and do an extensive reading of the Astropy and SunPy documentations for coordinate system implementation. Implement the relevant packages of Astropy and SunPy in the interpreter for a working understanding. Establish a thorough mental picture of the APE5 guidelines to help when programming.
 
 :May 19 — May 26 (1 week):
  Begin with the creation of the ``HelioProj``, ``HelioCent`` and ``HelioGraph`` classes. These shall be made to derive from ``CoordinateFrame`` as already discussed. Create some unit tests to check whether the inheritance mechanism has been implemented properly.
@@ -70,23 +70,23 @@ Detailed Description
  The GSoC buffer period. Complete all documentation, testing, and ``sphinx`` related work in this period. If there is time, try and optimize the work done so far if it isn't optimized already.
 
 :August 11 — August 22 (> 1 week):
- The GSoC pencils-down period. Finish any remaining work. Squash any remaining bugs. Sprint to (hopefully) glory.   
+ The GSoC pencils-down period. Finish any remaining work. Squash any remaining bugs. Sprint to (hopefully) glory.
 
 Code Sample(s)
 --------------
 
-I have uploaded some patches on SunPy's Github which have been merged by 
+I have uploaded some patches on SunPy's Github which have been merged by
 means of pull requests. For example, the PR regarding `repr for Wave`_
 provides a repr method for Wave objects, which are a part of VSO
-attributes. The PR which was made for `distinguishing supported VSO objects`_ 
+attributes. The PR which was made for `distinguishing supported VSO objects`_
 provides a frozenset which contains attributes of VSO which are currently
 supported. Yet another ongoing PR deals with the `restructuring`_ of the Map package folder structure.
 This work has helped me get up to speed with SunPy's workflow.
 
 I am currently working on a `final year project`_ for college which
 aims to convert PDF files to HTML files, which is a part of my
-industrial training which began last year. The PDF shall be 
-single-columnar and have a simple layout, and may have images and 
+industrial training which began last year. The PDF shall be
+single-columnar and have a simple layout, and may have images and
 some graphics which are not too complex in nature. The goal is to
 generate one HTML file per PDF page. These HTML files will then be
 used as input in a pre-built HTML to XML library, from where XML files
@@ -106,17 +106,17 @@ I am a 21 year old college student, studying computer science and engineering
 and am in my final year. The first programming language that I ever touched was C,
 and it aroused a lot of interest in me. I delved into C++ using a college book
 and the Dev-C++ compiler, and taught myself a few things about classes and objects.
-I haven't looked back since then. I am thankful to my high-school computer science 
+I haven't looked back since then. I am thankful to my high-school computer science
 teacher for helping me develop a strong grasp in programming fundamentals. It was in
 high-school, again, that I got my mathematics and analytical capability sorted out.
 
 However, I did not get the chance to take part in coding competitions until I was in college, and it was only the beginning. I managed to get to the final round in one competition and completed four out of seven programs in another one which was organized by an Indian company. My programming interests had, by then, shifted to Java and C#. I worked to get myself Oracle certified for Java SE 6 in 2012, and it has helped me to grasp Java a lot better. I plan to get started on TopCoder and CodeChef very soon, as a way to plug my earlier deficiencies in data structures and algorithms.
 
-I completed my industrial training under a well known IT services company last year. In a team of four, I was made the lead and we built the offline version of their flagship assessment 
+I completed my industrial training under a well known IT services company last year. In a team of four, I was made the lead and we built the offline version of their flagship assessment
 exam center product over a period of six months, in C#. I helped build the
-heavier modules and guided the others on their prowess. This training 
-taught me a lot about how different real-world development is from writing 
-simple programs as a hobby. Most importantly, it taught me how to absorb 
+heavier modules and guided the others on their prowess. This training
+taught me a lot about how different real-world development is from writing
+simple programs as a hobby. Most importantly, it taught me how to absorb
 pressure and work against the odds, while working together as a team.
 
 When I was a kid, I really wanted to be an astronaut on growing up. While that has not materialized, and career interests have greatly changed since then, the childlike fascination with astronomy remains. It is perhaps this fascination that has led me to SunPy, and by extension, AstroPy. My current career goal is to enter the field of information security. It was from here that stemmed my interest in Python: Python is the most frequently used scripting language in the grayhat world. Its natural elegance and easy high-level syntax make it the perfect candidate for a scripting language that every programmer should know. It is a well known fact that study and work experience combined can help one master a language. What better way to learn Python than to contribute to SunPy, I thought, and here I am!
@@ -128,7 +128,7 @@ Note: Times in this section are GMT+530.
 
 According to the tentative schedule released by my university, my semester exams
 will begin around the time of the coding period. I will try my best to complete
-40 hours a week despite this minor tiff with exams. The good thing is that I have 
+40 hours a week despite this minor tiff with exams. The good thing is that I have
 only five subjects whose exams will be conducted in this semester. In keeping with
 GSoC rules, I will be enrolled as a student as of April 27th, 2014.
 

@@ -1,12 +1,17 @@
 ### Administrator
+
 David PS
+
 ### Organization ID
+
 sunpy
 
 ### Organization name
+
 SunPy
 
 ### Organization description
+
 SunPy is a new (2 years old) open-source project which aims to provide a complete framework in Python for solar, heliospheric, and space weather data analysis. We envision SunPy, within the python ecosystem, as a powerful and free tool for analysing and processing solar data. However, much more work is required to make SunPy into a viable alternative choice to the ''de facto'' standard library [SolarSoft (SSW)][1] that is widely used within the solar community.  SSW is based on the  [Interactive Data Language (IDL)][2] programming environment, which is propriety software, with costly recurring licensing fees. Since SSW is built with IDL, it limits the access to solar data analysis to those people and institutions who can afford the license fees and makes it difficult for amateurs or institutions with limited resources to become involved.  Python is the perfect alternative to build a solar data analysis framework, as it is freely available to everyone and is already being used as a scientific data analysis environment in other science fields ([NumPy][3], [SciPy][4], [PyRAF][5], [Astropy][6]) with many already-written scientific libraries available.
 The SunPy community is growing to include more users and developers, and to encourage the adoption of the open source ethos into the solar physics community. We have an active, friendly IRC channel and mailing list offering quick bug fixes and technical assistance.
 
@@ -18,21 +23,26 @@ The SunPy community is growing to include more users and developers, and to enco
 [6]: http://www.astropy.org/
 
 ### Organization home page url
-http://www.sunpy.org/
+<http://www.sunpy.org/>
 
 ### Main organization license
+
 New and Simplified BSD licenses
 
 ### Veteran/New
+
 New
 
 ### Backup Admin
+
 Cadair
 
-### If you chose "veteran" in the dropdown above, please summarize your involvement and the successes and challenges of your participation. Please also list your pass/fail rate for each year. 
+### If you chose "veteran" in the dropdown above, please summarize your involvement and the successes and challenges of your participation. Please also list your pass/fail rate for each year
+
 N/A
 
 ### If you chose "new" in the dropdown above, have you applied in the past? If so, for what year(s)?
+
 No.
 
 ### Why is your organization applying to participate in Google Summer of Code 2013? What do you hope to gain by participating?
@@ -44,16 +54,20 @@ After two years of development, this is the first time that SunPy has applied to
 We also hope to use this opportunity for our potential summer student to be introduced to astronomy and solar physics, while contributing code to a project that will help solar physicists around the world.
 
 [7]: http://www.e-callisto.org/
+
 ### What is the URL for your Ideas list?
+
 [[GSoC 2013 Ideas]]
 
 ### What is the main development mailing list for your organization?
+
 [SunPy-Dev](https://groups.google.com/forum/#!forum/sunpy-dev)
 
 ### What is the main IRC channel for your organization?
+
 \#sunpy on Freenode.net
 
-### What criteria did you use to select your mentors for this year's program? Please be as specific as possible.
+### What criteria did you use to select your mentors for this year's program? Please be as specific as possible
 
 Each idea proposed has two mentors linked with it.  These mentors are experts in the given subject area and they are active developers in Sunpy.  Though not all are expert Python programmers, the SunPy community will be available to support Python questions.  Also, we have established links with webservice developers from solar and heliosphere data archives in Europe and USA, who will participate in the discussions aimed to help us implement the access to their services.  All mentors are experienced users of solar data, with expertise in data acquisition, analysis or both.
 
@@ -85,11 +99,10 @@ They will also be asked to participate in the creation of posters, presentations
 
 We aim to involve all the new people with the community as much as we can.  GSoC students will be encouraged no less.  We hope to convince them of the attractive and usability that our projects have for the long shoot.  As many solar physicists are new to Python, we will try to invite the students to give SunPy tutorials to the solar physics institutes near their home location.  This will help the student to get a better understanding of the needs in the community and to get closer to the users and the field.  This may provide the student a big push in their career, and open new doors in the solar physics research world.
 
-
-### Are you a new organization who has a Googler or other organization to vouch for you? If so, please list their name(s) here.
+### Are you a new organization who has a Googler or other organization to vouch for you? If so, please list their name(s) here
 
 No (is it here where we would put PSF?)
 
-### Are you an established or larger organization who would like to vouch for a new organization applying this year? If so, please list their name(s) here.
+### Are you an established or larger organization who would like to vouch for a new organization applying this year? If so, please list their name(s) here
 
 No

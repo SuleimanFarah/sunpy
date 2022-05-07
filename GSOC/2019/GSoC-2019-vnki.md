@@ -1,5 +1,7 @@
 # Project Proposal
+
 ## Project: Remote data in SunPy
+
 - Name: Vishnunarayan K I
 - Organisation: SunPy
 
@@ -21,10 +23,11 @@
   - GSoC 2018 student with SunPy.
   - I have 24 merged PRs on SunPy repo. [Link](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3Avn-ki+is%3Aclosed)
 - Contributions to other repos:
-  - Co-maintainer for [mps-youtube](https://github.com/mps-youtube), [pafy](https://github.com/mps-youtube/pafy) and 
+  - Co-maintainer for [mps-youtube](https://github.com/mps-youtube), [pafy](https://github.com/mps-youtube/pafy) and
     [spotify-downloader](https://github.com/ritiek/spotify-downloader). All python projects.
 
 My personal python projects are:
+
 - [anime-downloader](https://github.com/vn-ki/anime-downloader) (Python)
 - [codechef-cli](https://github.com/vn-ki/codechef-cli) (Python)
 - [YoutubePlayer](https://github.com/vn-ki/YoutubePlayer) (Python)
@@ -35,12 +38,13 @@ Therefore I think I am a good fit for this project.
 ## Design/Implementation
 
 The requirements mentioned in the [issue](https://github.com/sunpy/sunpy/issues/1939) are:
+>
 > 1. Data is downloaded and cached to `$HOME/sunpy/data/...` when first needed.
 > 2. There is some validation that the data has been transferred correctly (sha hashes etc).
 > 3. There is a mechanism by which we can allow users to re-download data.
 > 4. The download code supports multiple mirrors.
 
-`remote_data_manager` will be a singleton. This makes sense because it is not to be 
+`remote_data_manager` will be a singleton. This makes sense because it is not to be
 customized after once initialized.
 
 `remote_data_manager` will handle these in the methods mentioned below:
@@ -71,6 +75,7 @@ def require(
 This function can have `**kwargs` which can be used to specify arguments specific to the downloader.
 
 The flow of `require` would be:
+
 1. The function checks if the file exists locally and hash matches.
 2. If exists, then proceed normally.
 3. If the file does not exist, the file will be downloaded from the URL.
@@ -78,7 +83,6 @@ The flow of `require` would be:
     If the hash matches, proceed normally.
     If it does not match, retry from step 3 with the next mirror URL.
     If there are no mirror URLs left, raise an `Exception`.
-
 
 If the file has been updated on the server and the hash does not match the mentioned hash, an `Exception`
 is thrown.
@@ -102,12 +106,11 @@ There will be two functions to re-download the data.
   This is different from `skip_hash_check` because if a function uses more than one file, user
   can selectively replace files and provide new mirror URLs.
 
-
 ### Cache storage
 
-The cache metadata will be stored using sqlite. 
+The cache metadata will be stored using sqlite.
 This is inspired by the [implementation](https://github.com/reclosedev/requests-cache/tree/master/requests_cache/backends)
-of `requests-cache`. `requests-cache` support a number of backends for cache storage (SQLite, 
+of `requests-cache`. `requests-cache` support a number of backends for cache storage (SQLite,
 Redis, MongoDB, dynamodb etc.). Even though remote data manager does not need multiple backends,
 following a similar design to that will give us more extensibility in the future and an easier to
 mock backend for testing purposes.
@@ -141,11 +144,12 @@ can be accelerated when downloading a single file. Downloading by parts and reco
 I already have the experience of doing this for a personal project.
 
 # Project Plan
+
 ### Community Bonding Period (May 7 - May 26)
 
 My vacations start on May 3rd. So I would like to code at least a small part during this period.
 
-I am familiar with most libraries that are going to be used and have a good idea about the python 
+I am familiar with most libraries that are going to be used and have a good idea about the python
 features that will be used like context managers and decorators. I also have experience with pytest
 and general testing procedures like mocking past GSoC and from personal projects.
 
@@ -155,7 +159,9 @@ The next task is to start coding the skeleton of the remote data manager.
 
 I like to write tests with the code I write so some tests will be done with tasks itself.
 ___
+
 ### Coding Period Begins
+
 ___
 
 ### Week 1 (May 27 - June 2)
@@ -169,8 +175,11 @@ ___
 ### Week 4 - Week 5 (June 17 - June 23)
 
 - Integrate the data manager with the cache.
+
 ___
+
 ### Phase 1 Evaluation
+
 ___
 
 ### Week 6-7 (June 25 - July 7)
@@ -186,7 +195,9 @@ ___
 - Implement parfive download by parts complete with tests and documentation.
 
 ___
+
 ### Phase 2 Evaluation
+
 ___
 
 ### Week 10 - Week 11 (July 23 - August 6)
@@ -201,19 +212,25 @@ ___
 - Work on possible improvements to parfive
 
 ___
+
 ### Final Evaluation
+
 ___
 
 ## GSoC
 
 ### Have you participated previously in GSoC? When? Under which project?
+
 **Yes**, I participated in 2018 under SunPy.
 
 ### Are you also applying to other projects?
+
 **Yes**, I am also applying for Prometheus under CNCF.
 
 ### Commitments
+
 I don't have any other internship or work during this summer. I have no plans for any vacations either.
 
 ### Eligibility
+
 Yes, I am eligible to receive payments from Google.

@@ -90,7 +90,7 @@ Milestones:
                               the configuration file or if the according
                               option is not set, an operating
                               system-dependent value will be used. For
-                              unix-like systems this is $XDG_DATA_HOME or 
+                              unix-like systems this is $XDG_DATA_HOME or
                               $HOME/.local/share, if this environment
                               variable is not set. For windows it is
                               the directory AppData in the home directory

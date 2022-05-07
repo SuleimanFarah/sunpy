@@ -1,4 +1,5 @@
 ### Date of Meeting
+
 3 June, 2020
 
 ### Attendance
@@ -8,6 +9,7 @@
 **Absent:** Russell Hewett, Tiago Pereira
 
 **Agenda:**
+
 * Board Roles
 * Vision statement
 * Process improvement for board structure
@@ -33,7 +35,7 @@ Vote taken on allowing email voting to appoint members to board roles: **Approve
 **Vision statement:**
 
 Various input has been received on the draft vision statement.<BR>
-Board agrees that SunPy Vision Statement should be adopted through the SEP process. 
+Board agrees that SunPy Vision Statement should be adopted through the SEP process.
 
 **Process Improvements for Board Structure:**
 
@@ -41,7 +43,7 @@ Steven states that default to voting "in person" (i.e. only during board meeting
 He says that desire for in person voting was to ensure that there was discussion and thought by board members before committing to a vote.<BR>
 
 SEP approval process maybe doesn’t need continual board approval. Board should only intervene to reject or modify SEP’s that appear to be controversial or problematic.<BR>
-There is a possible misperception that SEP’s are controlled by the board, but it is intended to be a community-driven process. Is submission of a new SEP too complex for general community involvement (given that most users can’t be bothered to submit bug reports)? We only really expect SEP’s to come from package maintainers or other deeply involved people (with broader community input). 
+There is a possible misperception that SEP’s are controlled by the board, but it is intended to be a community-driven process. Is submission of a new SEP too complex for general community involvement (given that most users can’t be bothered to submit bug reports)? We only really expect SEP’s to come from package maintainers or other deeply involved people (with broader community input).
 
 Is the Board too big? What is the Board?<BR>
 Is it merely advisory to the executive? Then why should it manage grant funding?<BR>
@@ -58,7 +60,7 @@ We should strive to get community input on how the board and structure of the Su
 
 **Roadmap Process:**
 
-The SunPy roadmap process is not well defined. Jack said he would “take a stab” at roadmap. In part this is by identifying other people to contribute. This will also include defining mechanisms for updating the roadmap to keep it relevant. 
+The SunPy roadmap process is not well defined. Jack said he would “take a stab” at roadmap. In part this is by identifying other people to contribute. This will also include defining mechanisms for updating the roadmap to keep it relevant.
 
 **Other Business:**
 

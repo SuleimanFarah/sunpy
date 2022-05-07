@@ -8,19 +8,19 @@
 
 **Applicant (Full) Name**: Kris Akira STERN
 
-**Current University Enrolments**: 
+**Current University Enrolments**:
 
 * University of London (London, U.K.), B.Sc. in Computing and Information Systems, Year 2
 * University of Hong Kong (Hong Kong SAR, China), Ph.D. in Physics (Observational Astrophysics), Year 4
 
-**Points of Contact**: 
+**Points of Contact**:
 
 * Email: krisastern@gmail.com
 * GitHub username: [@kakirastern](https://github.com/kakirastern)
-* Medium profile: https://medium.com/@krisastern
+* Medium profile: <https://medium.com/@krisastern>
 * Riot.im handle: @K.S. (Timezone: HKT GMT/UTC + 8 hours)
 
-**Short Bio**: 
+**Short Bio**:
 
 I am currently a university student pursuing both a graduate Ph.D. degree in Observational Astrophysics in Hong Kong at the University of Hong Kong, and also a B.Sc. degree in Computing and Information Systems by distance at the University of London (London, U.K.) concurrently. My academic interests lie in the stellar evolution of evolved stars of low-to-intermediate-mass stars during the planetary nebula phase, applying nebular diagnostics as a means to study the processes through which the planetary nebula recycles back to the intermediate stellar medium (ISM), serving as a breeding ground for new stars as the planetary nebula expands and cools. I am also an open-source software enthusiast, and am particularly drawn to both Python and C++ programming, though I am slightly stronger in the former. Previously I was chosen as a GSoC 2019 Student Developer, and was fortunate to be working with the OpenAstronomy sub-organization Sunpy to develop the formerly IRISpy project (now known as the sunraster project) with mentors Dr. Dan Ryan and Dr. Laura Hayes. The project has been completed successfully. More recently, I have some working experience in the industry as a web developer for a startup, so am proficient in HTML/CSS and Javascript as applied in the React Javascript framework. My plans for the future is to either become a software engineer working in academia or industry, or to work as some type of researcher in academia engaging in research in some physics/astrophysics discipline. Previously, I have also been receiving training in Deep Learning and Computer Vision through Udacity’s Nanodegree programs offered in 2019/20. Also, I was recently an Intel® Edge AI Scholarship recipient, and have received some very basic training in using Intel’s OpenVINO toolkit for Internet of Things (IoT) development. In my spare time, I am also an occasional Kaggle dabbler, and am interested in some science-related applications of artificial intelligence (AI).
 
@@ -30,8 +30,8 @@ I am currently a university student pursuing both a graduate Ph.D. degree in Obs
 
 * **What is your experience programming? Tell us about something you have created.**
 
-I have over one year of open-source programming experience, mostly with Astropy (including Learn Astropy). Computing-language wise, I have roughly five years of programming experience in Python, about one year in C/C++, four years in HTML/CSS, Javascript, PHP for web development, and one year of solid experience with GitHub. 
-Something that I have helped created so far are some source code to the IRISpy project, now [“sunraster”](https://github.com/sunpy/sunraster), can be accessed at https://summerofcode.withgoogle.com/archive/2019/projects/6094580905148416/. 
+I have over one year of open-source programming experience, mostly with Astropy (including Learn Astropy). Computing-language wise, I have roughly five years of programming experience in Python, about one year in C/C++, four years in HTML/CSS, Javascript, PHP for web development, and one year of solid experience with GitHub.
+Something that I have helped created so far are some source code to the IRISpy project, now [“sunraster”](https://github.com/sunpy/sunraster), can be accessed at <https://summerofcode.withgoogle.com/archive/2019/projects/6094580905148416/>.
 
 ***
 
@@ -43,7 +43,7 @@ I have been a Python programmer contributing to open-source projects for a littl
 
 * **Have you ever used git or another version control system?**
 
-Yes, I have used git for version control and am quite proficient in it, both for my open-source contributions and for work. I am still used to using the command line interface via the terminal to make commits to git. But I also know how to use the shortcuts provided by tools such as VS Code and SourceTree (a free git GUI or Mac and Windows) for version control on git as well. I am also acquainted with Apache Subversion for software versioning. 
+Yes, I have used git for version control and am quite proficient in it, both for my open-source contributions and for work. I am still used to using the command line interface via the terminal to make commits to git. But I also know how to use the shortcuts provided by tools such as VS Code and SourceTree (a free git GUI or Mac and Windows) for version control on git as well. I am also acquainted with Apache Subversion for software versioning.
 
 ***
 
@@ -63,7 +63,7 @@ What excites me most about the project is the prospect of working with Python fo
 
 * **What have other people done on this idea? Has it been implemented before?**
 
-Technically speaking the idea has been explored and applied to other disciplines for data visualization. The project uses Glue, which is a “python project to link visualizations of scientific datasets across many files.” What this project is concerned about is a specific plugin of Glue for solar physics that uses Sunpy. Similar plugins have been developed for use in other disciplines, such as glue-medical for medicine, glue-geospatial for the geosciences, and glue-wwt, glue-aladin, glue-samp, specviz, as well as STScI’s cubeviz and mosviz for astronomy (see:    http://docs.glueviz.org/en/stable/customizing_guide/available_plugins.html), but none for solar physics specifically exists thus far. Therefore, there will be ample examples we will be able to use as references if the glue-solar project will get selected this year. 
+Technically speaking the idea has been explored and applied to other disciplines for data visualization. The project uses Glue, which is a “python project to link visualizations of scientific datasets across many files.” What this project is concerned about is a specific plugin of Glue for solar physics that uses Sunpy. Similar plugins have been developed for use in other disciplines, such as glue-medical for medicine, glue-geospatial for the geosciences, and glue-wwt, glue-aladin, glue-samp, specviz, as well as STScI’s cubeviz and mosviz for astronomy (see:    <http://docs.glueviz.org/en/stable/customizing_guide/available_plugins.html>), but none for solar physics specifically exists thus far. Therefore, there will be ample examples we will be able to use as references if the glue-solar project will get selected this year.
 
 ***
 
@@ -76,17 +76,17 @@ I have engaged in some Sunpy programming work on NDCube and the formerly IRISpy 
 * **Some Use Cases of glue-solar**
 
 1. Some testing/improvements are needed for Glue-Solar’s beta feature for creating derived datasets from pixel selections, which is more efficient than the normal subset extraction, as follows:
-   * To ensure that the subsets extracted with the tool have the correct WCS information and are linked to the other datasets. For example, when highlighting subsets, these should show up in the extracted dataset. 
-   * To find a good icon for the pixel extraction tool 
+   * To ensure that the subsets extracted with the tool have the correct WCS information and are linked to the other datasets. For example, when highlighting subsets, these should show up in the extracted dataset.
+   * To find a good icon for the pixel extraction tool
    * To implement other UX improvements
 
 2. To enable extraction of a 1D profile from a pixel selection of a dataset with greater than 3 in dimensions (or ND > 3D), and be able to perform animation that would profile along any extra dimensions. For example, taking a (space, space, wavelength, time) cube, select a pixel in (space, space) leading to a 2D derived dataset with the dimensions of (wavelength, time). Currently, Glue will collapse the time dimension, when it would be good for it to be able to provide a slider functionality such that one can see the wavelength profile with time.
 
-3. Some testing of dataset auto-linking for subsets of ND cubes is warranted. Currently, if one loads in two ND cubes, like (space, space, time) and (space, space, wavelength) there is special handling in the auto-linking code to link the two spatial axes. However, if one loads in a (space, space, time) and a (time, wavelength) dataset the time axes will not be autolinked. This behavior might need to be modified. 
+3. Some testing of dataset auto-linking for subsets of ND cubes is warranted. Currently, if one loads in two ND cubes, like (space, space, time) and (space, space, wavelength) there is special handling in the auto-linking code to link the two spatial axes. However, if one loads in a (space, space, time) and a (time, wavelength) dataset the time axes will not be autolinked. This behavior might need to be modified.
 
 4. To enable extraction of derived datasets from a path, this would allow drawing a line on an image and extracting a derived dataset for the pixels under that line. (Mentor Tom R. has a prototype of this which can be used as a reference.)
 
-5. To enable Dask support. Especially, to facilitate the not loading of all the array into memory for calculating pixel limits. 
+5. To enable Dask support. Especially, to facilitate the not loading of all the array into memory for calculating pixel limits.
 
 6. To enable image/movie export, both with axes and without axes, via matplotlib.
 
@@ -96,9 +96,10 @@ I have engaged in some Sunpy programming work on NDCube and the formerly IRISpy 
 
 ***
 
-* **Goals to be Reached for the GSoC Project** 
+* **Goals to be Reached for the GSoC Project**
 
-The following list is arranged in descending order of priority/importance: 
+The following list is arranged in descending order of priority/importance:
+
 1. Glue-solar as an installable package, with a first official release.
 2. Glue-solar is well documented, both for users and future developers, with screenshots and screencasts as appropriate.
 3. Glue-solar can load many different complex datasets such as NDCube/NDData, SST cubes, IRIS data, EIS data, DKIST data as well as AIA data, HMI data, among many others.
@@ -110,13 +111,13 @@ The following list is arranged in descending order of priority/importance:
 
 * **Proposed Time Commitment**
 
-I am planning to invest between 30 and 40 hours per week in carrying out the project during the entire duration of the coding period (with on average 5 to 6 hours per day, 7 days a week). And, I will take no summer vacation for the entire duration of GSoC 2020. Also, I plan on committing to the project long-term if possible after the completion of GSoC this year, so am prepared to continue work even after the conclusion of the program to ensure the goal of delivering the glue-solar as an installable package, with a first official release can be accomplished in the near future. 
+I am planning to invest between 30 and 40 hours per week in carrying out the project during the entire duration of the coding period (with on average 5 to 6 hours per day, 7 days a week). And, I will take no summer vacation for the entire duration of GSoC 2020. Also, I plan on committing to the project long-term if possible after the completion of GSoC this year, so am prepared to continue work even after the conclusion of the program to ensure the goal of delivering the glue-solar as an installable package, with a first official release can be accomplished in the near future.
 
 ***
 
 * **Proposed Student Timeline**
 
-Glue already supports many types of solar data out-of-the-box. Hence the overarching guiding principle in driving this project in particular is to develop a feature-complete version of the software and to focus on edge features on top of the existing functionalities offered by glue. As a reference, the sort of features that exist in other interactive data exploration tools include the following list: 
+Glue already supports many types of solar data out-of-the-box. Hence the overarching guiding principle in driving this project in particular is to develop a feature-complete version of the software and to focus on edge features on top of the existing functionalities offered by glue. As a reference, the sort of features that exist in other interactive data exploration tools include the following list:
 
 1. Able to open the files and understand the metadata. (Existing feature)
 2. Creating movies or PNGs of different frames and wavelengths.
@@ -132,53 +133,53 @@ Glue already supports many types of solar data out-of-the-box. Hence the overarc
 
 **Phase II: First 4-weeks (from June 3, 2020 up until the 1st Evaluation during June 30, 2020 - July 4, 2020 HKT)**
 
-* Week 1: Document and test the loading of AIA & HMI data and show built-in alignment with glue-solar. (Carry out unit testing at every step.) 
+* Week 1: Document and test the loading of AIA & HMI data and show built-in alignment with glue-solar. (Carry out unit testing at every step.)
 * Week 2: Test and document re-scaling of images with glue-solar as well as the existing line profile fitting feature for solar physics data.
-* Week 3: Enable glue-solar to create movies or PNGs of different frames and wavelengths. 
+* Week 3: Enable glue-solar to create movies or PNGs of different frames and wavelengths.
 * Week 4: Enable glue-solar to carry out basic slit analysis of images through several dimensions.
 
 **Phase III: Second 4-weeks (from July 5, 2020 up until the 2nd Evaluation during July 28, 2020 - August 1, 2020 HKT)**
 
 * Week 5: Enable glue-solar to demonstrate how to implement custom linked layouts (i.e. SJI plus Raster IRIS data).
-* Week 6: Enable glue-solar to demonstrate how to implement custom data loaders (i.e. for IRIS data). 
+* Week 6: Enable glue-solar to demonstrate how to implement custom data loaders (i.e. for IRIS data).
 * Weeks 7-8: Enable glue-solar to load many different complex datasets such as NDCube/NDData, SST cubes, IRIS data, EIS data, DKIST data as well as AIA data, HMI data, among many others.
 
 **Phase IV: Third 4-weeks (from August 2, 2020 up until the final Evaluation for Students during August 25, 2020 - September 1, 2020 HKT)**
 
-* Week 9: Test and integrate existing prototype of path extraction tool into glue-solar. 
-* Week 10: Further develop, test, and document the solar datasets extraction tool, and combine this with the path extraction tool developed previously in Week 9. Upstream the new tool into the glue core if it is sufficiently polished. 
+* Week 9: Test and integrate existing prototype of path extraction tool into glue-solar.
+* Week 10: Further develop, test, and document the solar datasets extraction tool, and combine this with the path extraction tool developed previously in Week 9. Upstream the new tool into the glue core if it is sufficiently polished.
 * Week 11: Enable glue-solar to include a custom splash screen with the Sunpy logo, and add basic Doppler and magnetic field support to glue-solar if time permits.
-* Week 12: Complete glue-solar documentation so that the package will emerge as well documented, both for users and future developers, with screenshots and screencasts as appropriate. Carry out beta testing. 
+* Week 12: Complete glue-solar documentation so that the package will emerge as well documented, both for users and future developers, with screenshots and screencasts as appropriate. Carry out beta testing.
 
 **Phase V: Post-GSoC (September 2, 2020 HKT and beyond)**
 
 * Work further on completing the documentation for the package.
-* Work further on adding more features to the package, such as adding Dask support to glue-solar.  
+* Work further on adding more features to the package, such as adding Dask support to glue-solar.
 * Work further towards finalizing the package for first official release.
 
 ***
 
 ## Section 4: Links to Patches
 
-During the recent months (within the past six months), the following patches have been submitted as my personal open-source contributions, the first of which is for satisfying the basic patch requirement of Open Astronomy. 
+During the recent months (within the past six months), the following patches have been submitted as my personal open-source contributions, the first of which is for satisfying the basic patch requirement of Open Astronomy.
 
 * **PRs opened in the core Astropy repo:**
 
-   1. Add examples to illustrate use of fill_include/exclude_names:   https://github.com/astropy/astropy/pull/10050
-   2. Update documentation of "astropy.wcs": https://github.com/astropy/astropy/pull/10058
+   1. Add examples to illustrate use of fill_include/exclude_names:   <https://github.com/astropy/astropy/pull/10050>
+   2. Update documentation of "astropy.wcs": <https://github.com/astropy/astropy/pull/10058>
 
-* **PRs opened in the coordinated Astropy project repos:** 
+* **PRs opened in the coordinated Astropy project repos:**
 
-   3. Add draft of flux calibration functionality to specreduce: https://github.com/astropy/specreduce/pull/45
-   4. Attempt to fix the astropy.tests.pytest_plugins bug: https://github.com/astropy/specreduce/pull/44
-   5. Add standard star data to specreduce via "onedstds" directory: https://github.com/astropy/specreduce/pull/43
-   6. Modify code in attempt to fix image display issue on web: https://github.com/astropy/astropy-tutorials/pull/434
-   7. Add spectrumplot tutorial data cube to astropy-data: https://github.com/astropy/astropy-data/pull/86
-   8. Add "Spectrum Plot" tutorial to Learn Astropy repo: https://github.com/astropy/astropy-tutorials/pull/423
+   3. Add draft of flux calibration functionality to specreduce: <https://github.com/astropy/specreduce/pull/45>
+   4. Attempt to fix the astropy.tests.pytest_plugins bug: <https://github.com/astropy/specreduce/pull/44>
+   5. Add standard star data to specreduce via "onedstds" directory: <https://github.com/astropy/specreduce/pull/43>
+   6. Modify code in attempt to fix image display issue on web: <https://github.com/astropy/astropy-tutorials/pull/434>
+   7. Add spectrumplot tutorial data cube to astropy-data: <https://github.com/astropy/astropy-data/pull/86>
+   8. Add "Spectrum Plot" tutorial to Learn Astropy repo: <https://github.com/astropy/astropy-tutorials/pull/423>
 
 ***
 
-## References: 
+## References
 
 1. [Goodman et al. (2012), Principles of high-dimensional data visualization in astronomy](http://adsabs.harvard.edu/abs/2012AN....333..505G)
 2. [Beaumont et al. (2015), Hackable User Interfaces In Astronomy with Glue](http://adsabs.harvard.edu/abs/2015ASPC..495..101B)
@@ -187,4 +188,4 @@ During the recent months (within the past six months), the following patches hav
 
 ***
 
-Recorded in the Wiki on April 5th, 2020. 
+Recorded in the Wiki on April 5th, 2020.

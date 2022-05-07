@@ -1,7 +1,7 @@
-#   GSOC 2019  
-#   Project Proposal  
+#   GSOC 2019
+#   Project Proposal
 
-##   Project Title : Feature and Event Objects in SunPy  
+##   Project Title : Feature and Event Objects in SunPy
 
 * Name : Sarthak Jain
 * Organisation : OpenAstronomy
@@ -15,12 +15,12 @@
 * Time Zone : Indian Standard Time(UTC+5:30)
 * Link to the Sample Pull Request : [#3026](https://github.com/sunpy/sunpy/pull/3026) [open]
 
-###   Education  
+###   Education
 * University : [Indian Institute of Technology Indore](http://iiti.ac.in)
 * Department : Computer Science & Engineering
 * Year of Study : First Year
 
-####   Open Source Background  
+####   Open Source Background
 * Programming Languages : Python, C++, Java(Basic Knowledge) and a knowledge of Django Framework
 * Started Programming with Competitive Programming
 * Studied Python during Intermediate Classes
@@ -33,7 +33,7 @@
 
 I believe that the selected project suits to my knowledge of Python and I will be able to complete the project in the given time.
 
-####   Interest in OpenAstronomy  
+####   Interest in OpenAstronomy
 
 In my Intermediate Classes, I was told that Python is one of the best languages to develop applications and scripts because of its clarity, readability and versatility. As said by the Creator,
 
@@ -42,14 +42,14 @@ In my Intermediate Classes, I was told that Python is one of the best languages 
 Along with this, Astronomy is a subject to interest to me. The project SunPy thereby interests me to learn a lot about Astronomy.
 
 
-###   Abstract  
+###   Abstract
 The Sun displays many different features and events (FEs). These are detected and described either automatically by algorithm, or by visual inspection by human, or by a combination of both. There are many different repositories of these FEs online. SunPy provides access to two large FE repositories, the Heliophysics Event Knowledgebase (HEK) and the Helio Event Catalogue (HEC).
 
 The aim of this project is to create a SunPy object that normalizes input from both the HEK and HEC and creates a SunPy FE object. The SunPy FE object should take advantage of existing SunPy capabilities such as SunPy spatial co-ordinates and SunPy time. This will make FE data much more useful to SunPy users.
 
 The SunPy FE object should interact intuitively with existing SunPy objects such as the SunPy maps and timeseries. For example, it should be simple for a FE with a spatial extent property to be overplotted on SunPy map; similarly, it should be simple for a FE with a temporal duration to be overplotted on a SunPy timeseries.
 
-##   Synopsis  
+##   Synopsis
 
 These are the following things that I have planned to be done under this project :
 
@@ -69,7 +69,7 @@ Since the information of a single event is contained as an object of subclasses 
 
 Once the Feature and Event class is implemented, what is needed is to write specific functions in the existing SunPy objects for intuitive interaction of the ``` FE ``` object with those objects.
 
-####   Interaction of FE Object with SunPy Maps :  
+####   Interaction of FE Object with SunPy Maps :
 
 The information obtained from the HEK/ HEC clients can be used to implement certain features in SunPy Maps. The features observed were :
 
@@ -85,7 +85,7 @@ The information obtained from the HEK/ HEC clients can be used to implement cert
 
 These were the few things as thought regarding the interaction of FE object with SunPy Maps. Other ideas would also be implemented based on the advice of the Mentors.
 
-####   Interaction of FE Object with SunPy TimeSeries :  
+####   Interaction of FE Object with SunPy TimeSeries :
 
 SunPy TimeSeries is a 1-Dimensional data that plots the variation of features like intensity, wavelength etc. with respect to Time over a plot. Instruments like GOES, XRS generate 1-Dimensional data rather than capturing the images of sun during that Event. This the information received from the HEK/ HEC Clients correspnding to these Instruments would be helpful in generating certain TimeSeries Plots. The ideas regarding the interaction of SunPy TimeSeries with ``` FE ``` object is mentioned as :
 
@@ -95,7 +95,7 @@ SunPy TimeSeries is a 1-Dimensional data that plots the variation of features li
 
 Other ideas would also be implemented based on the Mentors' Advice.
 
-###   Interaction of FE Object with SunPy ROI :  
+###   Interaction of FE Object with SunPy ROI :
 
 Since the current ROI Package is under development, the functions for its interaction with ``` FE ``` object would be implemented once the package is developed.
 
@@ -103,9 +103,9 @@ Since the current ROI Package is under development, the functions for its intera
 
 This would aim at changing with the responses fetched from the HEK/HEC servers to be returned as proper Astropy Quantities. I have made a sample [gist](https://gist.github.com/jains8844/ea3159e80bf272d58e85dba55138d7de#file-hek-py-L75) for this. This would be implemented as separate functions that would change the datatypes accordingly.
 
-##   Project Plan  
+##   Project Plan
 
-###   Community Bonding Period (May 6 - May 27)  
+###   Community Bonding Period (May 6 - May 27)
 
 I have my summer vacations starting from May 5. Further I do not have any plans for the vacations. So I will work completely on the project in the Community Bonding Period. I would get in touch with the mentors and SunPy Codebase. I will go through the whole documentation again so as to add the feature I missed out. Also, I will be learning about writing tests using pytest, PEP8 Style Coding. Further I will develop a basic prototype for the Feature and Event Class.
 
@@ -116,7 +116,7 @@ At the end of the Community Bonding Period, I would aim to :
 * Gather more information related to the project from the websites of HEK and HEC Clients.
 * Develop a basic prototype for the Feature and Event Class.
 
-###   Coding Period Starts  
+###   Coding Period Starts
 
 #### Week 1 (May 27 - June 2)
 
@@ -135,7 +135,7 @@ At the end of the Community Bonding Period, I would aim to :
 * Beginning the work on interaction of ``` FE ``` object with SunPy Packages.
 
 ***
-###   Phase 1 Evaluation  
+###   Phase 1 Evaluation
 ***
 
 #### Week 6 - Week 7 (June 25 - July 5)
@@ -181,19 +181,19 @@ At the end of the Community Bonding Period, I would aim to :
 ### Final Evaluation
 ***
 
-##   GSOC  
+##   GSOC
 
-####   Have you participated previously in GSoC? When? With which project?  
+####   Have you participated previously in GSoC? When? With which project?
 No, this is the first time I am participating in Google Summer of Code.
 
-####   Are you also applying to other projects?  
+####   Are you also applying to other projects?
 No, OpenAstronomy(SunPy) is the only organisation I am applying to.
 
-####   Are you eligible to receive payments from Google?  
+####   Are you eligible to receive payments from Google?
 Yes, I am eligible to receive payments from Google.
 
-####   How much time do you plan to invest in the project before, during, and after the Summer of Code?  
+####   How much time do you plan to invest in the project before, during, and after the Summer of Code?
 I have my Summer Vacations in the month of May, June and till Mid July. I am not pursuing any kind of internship during this time nor do I have any plan for the vacations. So, I will be able to give atleast 40hrs a week. After the vacations, I will be able to give atleast 30hrs a week.
 
-####   Will you continue contributing to SunPy after the Summer of Code too ?  
+####   Will you continue contributing to SunPy after the Summer of Code too ?
 Yes, I will keep contributing to SunPy after the Summer of Code too.

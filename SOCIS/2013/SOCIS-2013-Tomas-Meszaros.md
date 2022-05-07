@@ -1,10 +1,10 @@
 Personal Details
 ================
 
- - Name: Tomas Meszaros
- - Email: exo@tty.sk
- - IRC: examon (online most of the time at irc.freenode.net and irc.oftc.net)
- - GitHub: examon (https://github.com/examon)
+- Name: Tomas Meszaros
+- Email: exo@tty.sk
+- IRC: examon (online most of the time at irc.freenode.net and irc.oftc.net)
+- GitHub: examon (<https://github.com/examon>)
 
 Background and Programming Experience
 =====================================
@@ -31,23 +31,23 @@ I'm still student and apparently got a lot of free time during this summer :-) s
 Time Line
 =========
 
- * ```Week 1-2:``` Research more about the problem and desired problem solution. Identify the required features and discuss with mentor/community potential approach and methods used for the development.
+- ```Week 1-2:``` Research more about the problem and desired problem solution. Identify the required features and discuss with mentor/community potential approach and methods used for the development.
 
- * ```Week 3-4:``` Get more familiar with the MapCube code. Design and implement "sort the Maps in the cube"  feature prototype.
+- ```Week 3-4:``` Get more familiar with the MapCube code. Design and implement "sort the Maps in the cube"  feature prototype.
 
- * ``` Week 5-6:``` Get feedback from mentor and community. Fix potential bugs, write tests and documentation for written code. Discuss design/implementation for "image registration routine upgrade" feature.
+- ```Week 5-6:``` Get feedback from mentor and community. Fix potential bugs, write tests and documentation for written code. Discuss design/implementation for "image registration routine upgrade" feature.
 
- * ```Week 7-8:``` Midterm review. Design and Implement "image registration routine upgrade". Get feedback, debug written code, write tests and documentation.
+- ```Week 7-8:``` Midterm review. Design and Implement "image registration routine upgrade". Get feedback, debug written code, write tests and documentation.
 
- * ```Week 9-10:``` Cleanup written code. Fix potential bug or write additional requested functionality by the community. Discuss approach for implementing "list<->np.ndarray converstion".
+- ```Week 9-10:``` Cleanup written code. Fix potential bug or write additional requested functionality by the community. Discuss approach for implementing "list<->np.ndarray converstion".
 
- * ```Week 11-12:``` Implement "list<->np.ndarray conversion". Get feedback, cleanup and document implementation. Design and implement prototype for "storing MapCube of CompositeMaps" feature.
+- ```Week 11-12:``` Implement "list<->np.ndarray conversion". Get feedback, cleanup and document implementation. Design and implement prototype for "storing MapCube of CompositeMaps" feature.
 
- * ```Week 13-14:``` Final review. Last code cleanup, write missing tests and documentation. Get feedback, implement missing parts or improve current code.
+- ```Week 13-14:``` Final review. Last code cleanup, write missing tests and documentation. Get feedback, implement missing parts or improve current code.
 
 Experience with SunPy
 =====================
 
 I'm already familiar with the SunPy development workflow (Git/GitHub) although I'm not a long time SunPy user or developer.
 
-I wanted to understand the SunPy code so I've gone trough the issues marked on the SunPy GitHub page and tried to fix some of them (https://github.com/sunpy/sunpy/pull/512). I think the code is pretty well written and easy to read/understand for me.
+I wanted to understand the SunPy code so I've gone trough the issues marked on the SunPy GitHub page and tried to fix some of them (<https://github.com/sunpy/sunpy/pull/512>). I think the code is pretty well written and easy to read/understand for me.

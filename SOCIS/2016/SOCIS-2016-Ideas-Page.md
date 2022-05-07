@@ -54,7 +54,7 @@ The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robu
 
 ### SunPy Gallery, Docs, Website Upgrades
 
-*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Steven Christe](https://github.com/ehsteve), 
+*Suggested Mentor(s):* [Stuart Mumford](http://github.com/Cadair), [Steven Christe](https://github.com/ehsteve),
 
 *Difficulty:* Beginner
 
@@ -63,16 +63,15 @@ The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robu
 *Programming skills:* Python
 
 #### Description
-The SunPy documentation need some love. The purpose of the 
+The SunPy documentation need some love. The purpose of the
 
 **Expected Outcomes**
 
 Someone under taking this project will complete the following tasks:
 
 1. Research and implement a gallery of SunPy examples which support jupyter notebooks.
-2. Update the docs (insert tasks). 
+2. Update the docs (insert tasks).
    1. Net documentation need to be refactored.
 3. Update the website (insert tasks).
 
 A successful proposal for this project will demonstrate that the applicant has understood the task and presents a timeline of what things need to change to be implemented.
-

@@ -1,14 +1,18 @@
 ### Date of Meeting
+
 19 June 2018
 
 ### Attendance
-- **Present: David, Stuart, Juan, Steve, Monica, Sabrina (partial), Kevin** 
-- **Absent: Juan, Jack, Russel** 
+
+- **Present: David, Stuart, Juan, Steve, Monica, Sabrina (partial), Kevin**
+- **Absent: Juan, Jack, Russel**
 
 ### Notes by
+
 - Steven & Sabrina
 
 ### Agenda
+
 1. NAS and NASA OSS
 2. TESS Meeting, Python Meeting and helioPython, SPD business meeting
 3. Python Survey
@@ -28,7 +32,7 @@ Jack attended the SPD business meeting. They committed to providing some funding
 
 Steven and Andy Inglis attended the Python meeting TESS. Primary output is that Aaron Roberts (NASA HQ) has funded [Alex deWolf](http://lasp.colorado.edu/home/personnel/alex.dewolfe/) to facilitate the development of Python for Heliophysics (see [heliopython.org](heliopython.org)) and will fund a "PyHelio" type meeting to begin organizing.
 
-A [room](https://chat.openastronomy.org/#/room/#heliopython:openastronomy.org) is now available to facilitate communication 
+A [room](https://chat.openastronomy.org/#/room/#heliopython:openastronomy.org) is now available to facilitate communication
 
 **Topic 3: Python Survey**
 
@@ -47,8 +51,8 @@ _Vote_: To allow to allow for approval of SEP through github PR approval process
 
 Proposed SEP to move to using AstroPy time [here](https://github.com/sunpy/sunpy-SEP/pull/32/files?short_path=6af3642#diff-6af364282ff05fde769ea1cacd533f77)
 
-General consensus that this is a good idea. Most users may not encounter this change as much of our 
-API accepts times as strings anyway. 
+General consensus that this is a good idea. Most users may not encounter this change as much of our
+API accepts times as strings anyway.
 
 SEP is currently in draft form and will be cleaned up.
 

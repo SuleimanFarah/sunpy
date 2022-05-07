@@ -51,7 +51,6 @@ Then there are folders for each year and in each one of those are the files for 
   * 2018
     * Individual student applications
 
-
 ## Sidebar
 
 The wiki sidebar is created via [this package.](https://github.com/adriantanasa/github-wiki-sidebar)

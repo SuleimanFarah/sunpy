@@ -27,6 +27,7 @@ I am sophomore student pursuing B.Tech. in Computer Science and Engineering from
 My interest in astronomy developed when I was introduced to Astronomy club of my college in the first semester. I participated in activities like night-sky stargazing, interactive sessions and Astrophotography. Currently I am the coordinator of the club and highly active to organise related activities and float technical projects to promote and increase involvement in this field. Since then, I have been looking for opportunities to contribute in the field of astronomy through outstanding open-source communities like AstroPy and SunPy. I have made myself familiar with the SunPy development workflow on Github and stay in touch with the contributors although I'm not a long time SunPy user or developer.
 
 # Experience in projects
+
 Currently I am working on Space Telescope Science Institute, Maryland (STScI) project, 3D-HST data extractor and API interface with Dr. Ivelina Momcheva (Mentor) and Mr. Ayush Yadav (full stack developer). During this project I worked on **development of new API endpoints for single object search and developed a web interface** for displaying the information of the objects in the catalogue. I also used various libraries like **Astropy**, **Numpy**, and **Matplotlib** to provide a stamp size picture of the object from actual 3D-HST observations from FITS files ([see example](http://narwhal.astro.yale.edu/morphology/aegis/12387/J/model)). Other tasks involved using jQuery for real-time JSON requests, and querying cone-search, near-position and object search from database. The project is still under development which can be visited here and will soon be public (open-source). Following are the links for reference:
 
 [Designed and developed new homepage](http://narwhal.astro.yale.edu/home)
@@ -101,31 +102,34 @@ The final submission will also include complete documentation of image reconstru
 * Begin to create suitable representation for generalised visibilities.
 
 ## Week 5-6
+
 * Continue coding.
 * Begin writing relevant documentation and unit tests.
 * Start familiarizing with SunPy with the help of documentation.
 * Get continuous reviews and feedback from the mentor.
 
 ## Week 7-8
+
 * Midterm review.
 * Continue coding.
 * Start working with `sunpy.map.Map` object and outline the integration.
 * Begin cleanup and continue debugging.
 
-
 ## Week 9-10
+
 * Continue integration with `sunpy.map.Map` object.
 * Work on implementation of other advanced algorithms.
 * Finalize the features and code developed.
 * Document and test new features added.
 
 ## Week 11-12
+
 * Clean up and optimize code.
 * Finish documentation, testing and debugging.
 * Write examples to facilitate understanding of implementation.
 
-
 ## Beyond the project
+
 I plan to stay in close contact with SunPy community and the mentor for further implementation of remaining advanced algorithms and discuss other possibilities. I will continue to be a part of SunPy community on Github after the summer.
 
 ## All stages
@@ -134,18 +138,18 @@ At all stages, I keep maintaining documentation and tests for every feature adde
 
 **Preferred working hours: (Indian Standard Time)**
 
-		5PM to 3AM : Before June 10
+  5PM to 3AM : Before June 10
 
-		10AM to 11PM : June 10 - August 10
+  10AM to 11PM : June 10 - August 10
 
-		5PM to 3AM : After August 10
+  5PM to 3AM : After August 10
 
 **Other commitments:**
 
-		Before June 02 : College will take 15 hours per week
+  Before June 02 : College will take 15 hours per week
 
-		June 02 - June 09 : Final semester examination
+  June 02 - June 09 : Final semester examination
 
-		June 10 - August 10 : Summer break and no other commitments
+  June 10 - August 10 : Summer break and no other commitments
 
-		After August 10 : College will take 15 hours per week
+  After August 10 : College will take 15 hours per week

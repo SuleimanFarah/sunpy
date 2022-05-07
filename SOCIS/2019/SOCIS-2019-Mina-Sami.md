@@ -97,7 +97,7 @@ The aim of the first month is to produce a basic fully-developed pipeline starti
   * Develop and deploy first agreed-upon model. Suggestion for model: a transfer-learning model like VGG16 or so as it's fairly easy and accurate for our purpose(as above, can also be extended according to chosen model if needed)
 
 By the end of first month there should be at least two pull requests: one for parts improved and one for newly added modules.
-  
+
 ### Month 2
 
 * **Week 1 - Week 2**

@@ -1,7 +1,9 @@
 ### Date of Meeting
+
 **20** **September** **2019**
 
 ### Attendance
+
 - **Present:** Steven Christe (Chair), Kevin Reardon, Bin Chen, Stuart Mumford
 - **Absent:** Tiago Pereira (technical issues), David Pérez-Suárez, Sabrina Savage, Jack Ireland, Monica Bobra, Russell Hewett
 
@@ -29,10 +31,11 @@ Who funds this work? Instrument teams/projects/missions might have funding.<BR>
 Would be better to provide guidance up front, before package is “complete” and needs to be integrated.<BR>
 External package/Instrument team/Affiliated package liaison?<BR>
 
-### Actions:
+### Actions
+
 * Update SEP to express that affiliated package is the preferred way to integrate compliant, instrument-specific (or instrument-task-specific) packages into SunPy.
-* Create more user friendly documentation on affiliated packages (how, why, who), standardize application process. Create a conda channel?
-* Create an Instrument Team sub-Committee - monthly meetings? Include board members with different expertise.
+- Create more user friendly documentation on affiliated packages (how, why, who), standardize application process. Create a conda channel?
+- Create an Instrument Team sub-Committee - monthly meetings? Include board members with different expertise.
 
 ***
 
@@ -67,14 +70,14 @@ Some of these roles are more important and necessary than others.<BR>
 Finance Committee is needed -- NumFocus Summit arrangements are moving forward.<BR>
 Raises question of how to allocate SPD grant.
 
-### Actions:
+### Actions
+
 * Bin to get a letter from the SPD board about what is expected to be done with the SPD money.
-* Add Ombudsperson and Diversity and Inclusion Lead
-* Steven to create a board subcommittee and roles document. Should not be an SEP!
-* Draft responsibilities for Instrument Team Liaison
+- Add Ombudsperson and Diversity and Inclusion Lead
+- Steven to create a board subcommittee and roles document. Should not be an SEP!
+- Draft responsibilities for Instrument Team Liaison
 
 ***
-
 
 **Topic 3: Proposal Preparation**
 
@@ -88,8 +91,9 @@ Identify a lead for collecting this information.<BR>
 There should be an Official SunPy Webinar about ndcube - to demonstrate how it can be integrated into science use cases. Bin (and Kevin?) will be able to provide some sample data cubes.<BR>
 This could/should be the first in an evolving series.
 
-### Actions:
+### Actions
+
 * Start SunPy webinar series
-* Add webpage about webinars
+- Add webpage about webinars
 
 ***

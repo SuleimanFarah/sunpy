@@ -1,6 +1,6 @@
 **THIS TEMPLATE IS A GUIDE**
 
-When you submit an application to GSoC, it will be in a Google Docs format and an application should be __concise__ and we suggest not exceeding ~5 pages.
+When you submit an application to GSoC, it will be in a Google Docs format and an application should be **concise** and we suggest not exceeding ~5 pages.
 
 We also expect the final application to be hosted on our wiki.
 Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
@@ -29,9 +29,9 @@ Please use a succinct title that describes your proposal.
 * How can we contact you (email, GitHub username, etc.)?
 
     This information will help us associate all of your various usernames with you.
-    - Email
-    - GitHub username
-    - Any other user name you want us to know about
+  * Email
+  * GitHub username
+  * Any other user name you want us to know about
 
 Also, please use your full real name in your GSoC portal profile, so that it appears in the proposal list.
 
@@ -47,7 +47,7 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-    We expect the full time commitment of \~18h per week during GSoC. 
+    We expect the full time commitment of \~18h per week during GSoC.
     If you plan to take any vacations over the summer or if you have exams or any other commitments (like an internship), let us know about it here.
 
 ## You the programmer
@@ -135,43 +135,59 @@ You should tailor the timeline as as it suits you and the project you are workin
 **The timetable dates and the format depends on GSoC, so will change year on year.**
 **So you might need to update it yourself.**
 ___
+
 #### Community Bonding Period (DATE)
-___
-
-- Point X
 
 ___
+
+* Point X
+
+___
+
 #### Coding Period Begins
+
 ___
 
 #### Week 1 (DATE)
-- Point X
+
+* Point X
 
 #### Week 2 - Week 3 (DATE)
-- Point X
+
+* Point X
 
 #### Week 4 - Week 5 (DATE)
-- Point X
+
+* Point X
 
 #### Week 6 (DATE)
-- Point X
+
+* Point X
 
 ___
+
 #### First Evaluation (DATE)
+
 ___
 
 #### Week 7 (DATE)
-- Point X
+
+* Point X
 
 #### Week 8 (DATE)
-- Point X
+
+* Point X
 
 #### Week 9 (DATE)
-- Point X
+
+* Point X
 
 #### Week 10 (DATE)
-- Point X
+
+* Point X
 
 ___
+
 #### Final Evaluation (DATE)
+
 ___

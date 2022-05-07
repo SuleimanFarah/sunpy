@@ -65,7 +65,7 @@ It is worth to mention that our first SOCIS students has kept participating with
 
 ## Mailing list(s):
 
-[Users](https://groups.google.com/forum/?hl=en#!forum/sunpy) and 
+[Users](https://groups.google.com/forum/?hl=en#!forum/sunpy) and
 [developers](https://groups.google.com/forum/?hl=en#!forum/sunpy-dev)
 
 ## Forum(s):

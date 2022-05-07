@@ -14,9 +14,9 @@
 
 * Github ID: [prateekiiest](https://github.com/prateekiiest)
 
-* Blog - [Prateek Chanda @Med](https://medium.com/@prateekkol21)[ium](https://medium.com/@prateekkol21) 
+* Blog - [Prateek Chanda @Med](https://medium.com/@prateekkol21)[ium](https://medium.com/@prateekkol21)
 
-* Twitter -[ prateekiiest](https://twitter.com/prateekiiest)
+* Twitter -[prateekiiest](https://twitter.com/prateekiiest)
 
 * LinkedIn : [My LinkedIn Profile](https://www.linkedin.com/in/prateek-chanda-iiest/)
 
@@ -42,30 +42,29 @@ I am currently an undergraduate student from India, pursuing computer science as
 
 * I did one project as part of my work with SunPy - [Solar Data Analysis](https://github.com/prateekiiest/Solar-Data-Analysis-with-SunPy)
 
-* I did two major projects on Machine Learning in Python which majorly uses statistical analysis (pandas, numpy, scipy) and the use of Jupyter Notebook. These were project works for Udacity Machine Learning Nanodegree: [Titanic Survival Exploration, ](https://github.com/prateekiiest/titanic_survival_exploration)   [Boston Housing.](https://github.com/prateekiiest/boston_housing)
+* I did two major projects on Machine Learning in Python which majorly uses statistical analysis (pandas, numpy, scipy) and the use of Jupyter Notebook. These were project works for Udacity Machine Learning Nanodegree: [Titanic Survival Exploration,](https://github.com/prateekiiest/titanic_survival_exploration)   [Boston Housing.](https://github.com/prateekiiest/boston_housing)
 
 * I worked recently on one of my personal projects based in python which saw many active participation from different communities. The project being called [Code Sleep Python](https://github.com/prateekiiest/Code-Sleep-Python). It is a project based in python for building desktop applications and games in python
 
-* I also did one research internship during previous summer working on a data mining project using Python - [ Group Activity Recognition](https://github.com/prateekiiest/Student-Group-Activity-Recognition). 
+* I also did one research internship during previous summer working on a data mining project using Python - [Group Activity Recognition](https://github.com/prateekiiest/Student-Group-Activity-Recognition).
 
-* All my independent project works (mostly in Python) can be seen in my [Repositories List](https://github.com/prateekiiest?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=). 
+* All my independent project works (mostly in Python) can be seen in my [Repositories List](https://github.com/prateekiiest?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=).
 
 #### **Open Source experience**
 
 * Contributing to Organizations like *SunPy*, *FOSSASIA* and other small organisations. I have currently total 163 Pull Requests and 72 issues being worked so far, with a total 1,165 contributions in the last year.
 
-* Mentored other students under different Open Source events like *Hacktoberfest* ,* Kharagpur Winter of Code *and *24 Pull Requests* on some of my own personal projects primarily written in Python.
+* Mentored other students under different Open Source events like *Hacktoberfest* ,*Kharagpur Winter of Code*and *24 Pull Requests* on some of my own personal projects primarily written in Python.
 
-* Got the opportunity to speak at different* Open Source Summits* and  *Python Conferences*. Got invited to different developer conferences like *[RISE Hong Kong 201*7](https://riseconf.com/), *FOSSASIA Open Tech* , *[Google Developers Solve for Indi*a](https://events.withgoogle.com/solve-for-india-2017/) among others.
+* Got the opportunity to speak at different*Open Source Summits* and  *Python Conferences*. Got invited to different developer conferences like *[RISE Hong Kong 201*7](https://riseconf.com/),*FOSSASIA Open Tech*,*[Google Developers Solve for Indi*a](https://events.withgoogle.com/solve-for-india-2017/) among others.
 
 * Currently I am the [GitHub Campus Expert](https://githubcampus.expert/prateekiiest/) of my university and along with direct support from GitHub I am helping to grow my community in campus, involving more people in Open Source.
 
 * * *
 
-
 #### **Interest In OpenAstronomy**
 
-OpenAstronomy consisting of 14 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by astrophysicists all around the world. The analysis of solar data obtained from observatories like SDO helps multiple types of research from being able to detect sunspot locations or study solar flares over a time frame. I watched this [TED Talk by Miho Janvier](https://www.ted.com/talks/miho_janvier_lessons_from_a_solar_storm_chaser#t-291234) where she discusses effects of solar storms, how solar storms get created and how it affects Earth, along with space weather. Hence I got more interested in this. I had always been in love with the field astronomy but never really got the opportunity to work on a project until I started working on the SunPy project. 
+OpenAstronomy consisting of 14 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by astrophysicists all around the world. The analysis of solar data obtained from observatories like SDO helps multiple types of research from being able to detect sunspot locations or study solar flares over a time frame. I watched this [TED Talk by Miho Janvier](https://www.ted.com/talks/miho_janvier_lessons_from_a_solar_storm_chaser#t-291234) where she discusses effects of solar storms, how solar storms get created and how it affects Earth, along with space weather. Hence I got more interested in this. I had always been in love with the field astronomy but never really got the opportunity to work on a project until I started working on the SunPy project.
 
 I did not qualify for my first GSOC with Open Astronomy back in 2017. But I did not give up. I had always loved the project and wanted to contribute as much as I can. Having worked with the SunPy project for the past 1 year and being in close touch with the community, I learnt many new things in open source, team management, adding new features, and lastly the joy of your contribution being accepted. It has been really a great experience so far contributing to Sunpy.  I feel it as a privilege to be able to contribute to such an open-source software in the field of astronomy. OpenAstronomy along with Google Summer of Code will thus give me this unique opportunity to be a part of this amazing project.
 
@@ -141,7 +140,6 @@ I have been involved with the SunPy project for the past 1 year contributing sin
   </tr>
 </table>
 
-
 **Contribution to SunPy Website**
 
 <table>
@@ -172,8 +170,7 @@ I have been involved with the SunPy project for the past 1 year contributing sin
   </tr>
 </table>
 
-
-### All my contributions to SunPy are [listed here](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+author%3Aprateekiiest+is%3Aclosed).
+### All my contributions to SunPy are [listed here](https://github.com/sunpy/sunpy/pulls?q=is%3Apr+author%3Aprateekiiest+is%3Aclosed)
 
 ### **Abstract**
 
@@ -209,7 +206,7 @@ As we shift outwards from the solar center, we observe a sharp fall in the inten
 
 **What my work will include**
 
-The [IDL version](https://hesperia.gsfc.nasa.gov/ssw/packages/nrl/idl/nrlgen/display/nrgf.pro) of the algorithm has been already implemented. It includes additional features like detecting pixels which are on or off limb in a solar map. It is required to implement the python version of the same code, only the part demonstrating the calculation of the processed image intensity as discussed above. If time provides, we can work on the extra additional features as proposed in the IDL code. Another[ IDL code](http://www.heliodocs.com/php/xdoc_print.php?file=$SSW/packages/corimp/idl/nrgf_corimp.pro) is also presented which can be used to compare with.
+The [IDL version](https://hesperia.gsfc.nasa.gov/ssw/packages/nrl/idl/nrlgen/display/nrgf.pro) of the algorithm has been already implemented. It includes additional features like detecting pixels which are on or off limb in a solar map. It is required to implement the python version of the same code, only the part demonstrating the calculation of the processed image intensity as discussed above. If time provides, we can work on the extra additional features as proposed in the IDL code. Another[IDL code](http://www.heliodocs.com/php/xdoc_print.php?file=$SSW/packages/corimp/idl/nrgf_corimp.pro) is also presented which can be used to compare with.
 
 Much of this has already been implemented by @wafels [here](https://github.com/wafels/sunkit-image/blob/master/sunkit_image/offlimb_enhance.py). The current code implements both calculating the radial intensity (a summary statistic of the intensity in a solar map as a function of radius) and the intensity distribution in each of the radial bins. Lastly it calculates the corresponding processed intensity using the method described above. The implementation is quite modular, but it still needs to be checked first whether the output is correct by validating against the corresponding IDL output (preferrably a LASCO image). The python implementation needs to be optimized as much as possible in terms of memory and CPU usage. Finally before merging into the sunkit repository, the above code needs to be rigorously tested and well documented in terms of what each function does and about the parameters used.
 
@@ -225,9 +222,9 @@ The proposed algorithm provides an efficient process which normalizes the data l
 
 **What my work will include**
 
-The algorithm has been specified in this [paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf) "*Multi-Scale Gaussian Normalization for Solar Image Processing"** **. *The[ IDL code](http://eagle.imaps.aber.ac.uk/mgn.pro) has already been implemented for the MGN code but some areas of the code have contradiction to the actual algorithm stated in the paper. Firstly its needed to check in which areas the IDL code is inconsistent with the paper. For example here are a few inconsistencies that I found while comparing the IDL code with the corresponding paper algorithm. They are listed in this [thread](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-369625009).
+The algorithm has been specified in this [paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf) "*Multi-Scale Gaussian Normalization for Solar Image Processing"** **.*The[IDL code](http://eagle.imaps.aber.ac.uk/mgn.pro) has already been implemented for the MGN code but some areas of the code have contradiction to the actual algorithm stated in the paper. Firstly its needed to check in which areas the IDL code is inconsistent with the paper. For example here are a few inconsistencies that I found while comparing the IDL code with the corresponding paper algorithm. They are listed in this [thread](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-369625009).
 
-Two python implementations of the MGN algorithm has been mentioned in this [issue](https://github.com/sunpy/sunpy/pull/1899). One has been implemented by @Cadair [here](https://github.com/sunpy/sunpy/pull/1899/files#diff-ec25d2a41758e53b3ab8c9dca5ab4e96)  and the other one by @ebuchlin [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py). The output image based on an input* AIA* image data with necessary input parameters needs to be compared among the two python implementations along with the IDL output. After this, we need to check which is more memory efficient and time efficient. I have already worked on comparing the two implementations by seeing the memory utilization of the two codes and also the time taken by each of them. The memory usage comparisons can be seen [here](https://github.com/sunpy/sunkit-image/issues/1).
+Two python implementations of the MGN algorithm has been mentioned in this [issue](https://github.com/sunpy/sunpy/pull/1899). One has been implemented by @Cadair [here](https://github.com/sunpy/sunpy/pull/1899/files#diff-ec25d2a41758e53b3ab8c9dca5ab4e96)  and the other one by @ebuchlin [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py). The output image based on an input*AIA* image data with necessary input parameters needs to be compared among the two python implementations along with the IDL output. After this, we need to check which is more memory efficient and time efficient. I have already worked on comparing the two implementations by seeing the memory utilization of the two codes and also the time taken by each of them. The memory usage comparisons can be seen [here](https://github.com/sunpy/sunkit-image/issues/1).
 
 The output of the two codes proposed by @Cadair and @ebuchlin is shown in this [issue](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-369515706). As it can be seen, the outputs are quite different. So careful investigation needs to be done what are the implementation differences between the two codes and also compare that with the paper. Some of the inconsistencies which I found have been mentioned in [issue 1](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-369625009). Some of the flaws associated with the current implementation in ebuchlin's code are listed [here](https://github.com/sunpy/sunkit-image/issues/1#issuecomment-375879917).
 
@@ -255,7 +252,7 @@ The OCCULT Algorithm works in 4 steps
 
 **What my work will include**
 
-I have prepared a rough pseudo-code implementation of the proposed algorithm and have uploaded them in a [gist](https://gist.github.com/prateekiiest/993d1a1cd0a8a25ce8675c56bc534689). I plan to implement the algorithm in a modular fashion by writing separate functions for *background suppression*, *filtering* , *loop tracing* and the* loop subtraction* part to provide more clarity to the user. Finally once done, the output needs to be cross-checked with that of the IDL implementation and the output of the algorithm needs to be verified (using TRACE Data).  After this, I will work on documenting the relevant portions of the algorithm along with working on some examples demonstrating the working of the algorithm. In the end the code needs to be thoroughly tested before finally merging into the main package.
+I have prepared a rough pseudo-code implementation of the proposed algorithm and have uploaded them in a [gist](https://gist.github.com/prateekiiest/993d1a1cd0a8a25ce8675c56bc534689). I plan to implement the algorithm in a modular fashion by writing separate functions for *background suppression*, *filtering* , *loop tracing* and the*loop subtraction* part to provide more clarity to the user. Finally once done, the output needs to be cross-checked with that of the IDL implementation and the output of the algorithm needs to be verified (using TRACE Data).  After this, I will work on documenting the relevant portions of the algorithm along with working on some examples demonstrating the working of the algorithm. In the end the code needs to be thoroughly tested before finally merging into the main package.
 
 #### **Implementation of Image Resampling**
 
@@ -269,7 +266,7 @@ The following [paper](https://link.springer.com/article/10.1023%2FB%3ASOLA.00000
 
 **What my work will include**
 
-Some initial functionality including the coordinate transformation and performing interpolation (bilinear interpolation) on the data has been done in [this Pull Request](https://github.com/astrofrog/reproject/pull/52). The current code has done with a nice cython implementation (with an aim for faster execution) and has implemented both the hanning filter and gaussian filter. These functions need to be thoroughly tested first and also checked first against the proposed methodology in the paper for any discrepancy. 
+Some initial functionality including the coordinate transformation and performing interpolation (bilinear interpolation) on the data has been done in [this Pull Request](https://github.com/astrofrog/reproject/pull/52). The current code has done with a nice cython implementation (with an aim for faster execution) and has implemented both the hanning filter and gaussian filter. These functions need to be thoroughly tested first and also checked first against the proposed methodology in the paper for any discrepancy.
 
 I propose to implement the main image resampling algorithm by using (svd for singular value decomposition, map_coordinates functions for the calculation of the Jacobian and interpolation). Once the algorithm is set up, it needs to be thoroughly tested for checking the output using known image plots (AIA_171 may be an example). Finally the entire code will need to be documented describing what each function specifically does, along with updating docstrings.
 
@@ -283,30 +280,30 @@ I propose to implement the main image resampling algorithm by using (svd for sin
   <tr>
     <td>Apr 24- May 14
 Community Bonding Period</td>
-    <td>First Week   
-Dedicate this time to knowing more about the project and the algorithms that needs to be implemented as part of the project. 
+    <td>First Week
+Dedicate this time to knowing more about the project and the algorithms that needs to be implemented as part of the project.
 Discuss with mentors the modules that need to be imported from the main sunpy repository.
 Second Week  and Third Week
- Re-read the papers for all the four algorithms to be implemented and discuss with mentors about implementation details. 
+ Re-read the papers for all the four algorithms to be implemented and discuss with mentors about implementation details.
 Inform mentors for possible inconsistencies of IDL codes with corresponding mentors (like in case of MGN) and get it resolved if possible within this week. </td>
   </tr>
   <tr>
     <td>May 14 - Jun 11</td>
-    <td>First Week 
- After having going through the paper, I would start working on the MGN algorithm in the sunkit repository. 
-Having discussed with mentors the potential inconsistencies in the current IDL implementation with the paper, I will work on merging the two python codes, available to me and finally remove any inconsistency in the final code. 
+    <td>First Week
+ After having going through the paper, I would start working on the MGN algorithm in the sunkit repository.
+Having discussed with mentors the potential inconsistencies in the current IDL implementation with the paper, I will work on merging the two python codes, available to me and finally remove any inconsistency in the final code.
 Will dedicate this entire week to work on the two python implementations of MGN, checking for any remaining inconsistencies and validating the output of the two codes against the IDL output.
-Second Week 
+Second Week
 After having updated the two python implementations, I plan to make a quick comparison of the memory and CPU utilization of the two codes.
-Based on the results will port the optimized code (or may be both) into the sunkit repository. Add tests for the updated MGN code. This can be done within the first half of the week. 
+Based on the results will port the optimized code (or may be both) into the sunkit repository. Add tests for the updated MGN code. This can be done within the first half of the week.
 Remaining half can be used as a buffer, for fixing any bug in the code.
-Third Week 
+Third Week
 Dedicate the first 2-3 days of the week to documenting the updated MGN code  in terms of docstrings, all the parameters being used like the data, constants like a0 and a1 and details on signal depths.
-Remaining part of the week will be dedicated to working on the NRGF algorithm. Since @wafels has already implemented a part of the NRGF, it would not take much time to implement the rest of it. 
-Once the function is set up, the output needs to be validated with the corresponding IDL output. 
+Remaining part of the week will be dedicated to working on the NRGF algorithm. Since @wafels has already implemented a part of the NRGF, it would not take much time to implement the rest of it.
+Once the function is set up, the output needs to be validated with the corresponding IDL output.
 Last few days of the week will be dedicated to update the documentation of the algorithm.
 Fourth Week
- Add tests for NRGF and will try to complete this within the first half. 
+ Add tests for NRGF and will try to complete this within the first half.
 This period will also act as a buffer. In case of any bugs and errors in the implementation, I will try to fix that within this time frame.</td>
   </tr>
   <tr>
@@ -315,15 +312,15 @@ This period will also act as a buffer. In case of any bugs and errors in the imp
   </tr>
   <tr>
     <td>Jun 15 - Jul 9</td>
-    <td>First Week 
+    <td>First Week
 Work on removing any potential bugs or issues if any in the implementations of MGN and NRGF. Solve PEP8 issues if any and ensure good code readability.
-Once the two implementations are all set up and having get them reviewed by mentors, I will get them merged within the first half of the week. 
-Second Week  
-This week  will be dedicated to studying the OCCULT-2 algorithm from the paper and studying the IDL code side by side. 
+Once the two implementations are all set up and having get them reviewed by mentors, I will get them merged within the first half of the week.
+Second Week
+This week  will be dedicated to studying the OCCULT-2 algorithm from the paper and studying the IDL code side by side.
 After having discussed further details with mentors regarding its implementation, I plan to dedicate the rest of the week to write code for OCCULT-2. This would involve working on all the 4 stages of the algorithm as discussed above
-Third Week 
-Work on the implementation of OCCULT-2 and try to finish within this week.  
-If approved by mentor I will work on a cython implementation of the code. 
+Third Week
+Work on the implementation of OCCULT-2 and try to finish within this week.
+If approved by mentor I will work on a cython implementation of the code.
 By the end of the week , I would cross-check with the corresponding IDL output for any inconsistencies, if any.
 Fourth Week -- This of the week will be dedicated to writing tests and checking for any bugs or breaks in the code. Any documentation that remains for NRGF will be completed</td>
   </tr>
@@ -333,9 +330,9 @@ Fourth Week -- This of the week will be dedicated to writing tests and checking 
   </tr>
   <tr>
     <td>Jul 13 - August 6</td>
-    <td>First Week -- Start working on the image resampling algorithm. This will start by working on the portion being left behind in the pull request. 
+    <td>First Week -- Start working on the image resampling algorithm. This will start by working on the portion being left behind in the pull request.
 Second Week -- Write functions which will call appropriate function under the current cython implementation (like svd, bilinear interpolation  )and will perform the image resampling method. Test the called functions like svd, hanning filter and others and check if any error.
-Third Week  
+Third Week
 Once the function is set up, I plan to write tests for the implemented algorithm along with detailed documentation.
 Keep 3-4 days for writing the tests and the remaining days will be devoted to writing the documentation and updating with an example.</td>
   </tr>
@@ -345,10 +342,9 @@ Keep 3-4 days for writing the tests and the remaining days will be devoted to wr
   </tr>
 </table>
 
-
 #### **Post GSOC Goals**
 
-I would still contribute to this project after GSOC ends. If I can finish the project 1-2 weeks prior to deadline, I would like to implement two optional extras as part of the project. - **Implementation of NAFE **and** Soft Morphological Filter. **If by any chance I don’t get time for working on the additional features in NRGF during the time period proposed, I will do that during this time.
+I would still contribute to this project after GSOC ends. If I can finish the project 1-2 weeks prior to deadline, I would like to implement two optional extras as part of the project. - **Implementation of NAFE**and**Soft Morphological Filter.**If by any chance I don’t get time for working on the additional features in NRGF during the time period proposed, I will do that during this time.
 
 ## **Software Packages to be used**
 
@@ -358,7 +354,7 @@ I would still contribute to this project after GSOC ends. If I can finish the pr
 
 * **Scipy** - Some simple image processing modules like gamma transformation
 
-* **Skimage** -Modules under skimage like for normalization purposes 
+* **Skimage** -Modules under skimage like for normalization purposes
 
 * **Numpy** - Numpy will be used majorly throughout the whole sunkit project
 
@@ -368,7 +364,7 @@ I would still contribute to this project after GSOC ends. If I can finish the pr
 
 During the last few months I have been contributing to gallery examples based on SunPy maps and I worked on a Pull Request to [find local peaks in the solar map](https://github.com/sunpy/sunpy/pull/2339). There I had used image processing tools of scipy and learnt a lot on how we can use such processing tools on solar data to obtain hidden information. Thus I got more interested in the project work. I have also done projects in my university based on image processing and also as a part of course-work had computer graphics course during my previous semester.
 
-I will abide by the time-table as proposed above and will update patch-works regularly. I will be in touch with mentors every week and will update them with my current proceedings and also seek out to them in case of any queries. I will write blog posts based on the three stages of the project (Phase-1, Phase-2 and Final) and will also try to update the posts with relevant works from specific weeks. I will provide clear documentation to each of the algorithms to be implemented so that it can be understood easily by anyone. 
+I will abide by the time-table as proposed above and will update patch-works regularly. I will be in touch with mentors every week and will update them with my current proceedings and also seek out to them in case of any queries. I will write blog posts based on the three stages of the project (Phase-1, Phase-2 and Final) and will also try to update the posts with relevant works from specific weeks. I will provide clear documentation to each of the algorithms to be implemented so that it can be understood easily by anyone.
 
 I would still be contributing to this project even after GSOC ends and would be available if anyone has any specific queries to my proposed work.
 
@@ -399,4 +395,3 @@ SunPy is the only organisation I am applying to and I am applying to another pro
 ## **Eligibility**
 
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanations, feel free to contact me at prateekkol21@gmail.com .
-

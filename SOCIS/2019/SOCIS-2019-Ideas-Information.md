@@ -1,4 +1,4 @@
-# Space Weather forecasting using machine learning 
+# Space Weather forecasting using machine learning
 
 Main description is available at [the OA page for this project](https://openastronomy.org/gsoc/gsoc2019/#/projects?project=space_weather_forecasting_using_machine_learning).
 Are you looking for the [[GSoC 2020 version of this idea | GSOC-2020-Ideas-Information]]?
@@ -14,16 +14,16 @@ python, image processing and machine learning.
 [Sunspotter](http://sunspotter.org/) collected lot of data on two campaigns:
  - [All-clear](https://doi.org/10.5281/zenodo.1478965)
  - [14 years](https://doi.org/10.5281/zenodo.1478971)
- 
+
 Each dataset contains information about the date and location of each active
 region used in the project and how it was classified by the volunteers. The
 volunteers were simply asked which image from a set of two seemed more complex,
 and by an [Elo rating system](https://en.wikipedia.org/wiki/Elo_rating_system)
 provided a score.
- 
+
 The All-clear dataset was also used on a [comparison on flare forecasting](https://doi.org/10.3847/0004-637X/829/2/89).
- 
- 
+
+
 ## SunPy and Sunspotter
 
 This project will use different aspects of SunPy:
@@ -35,8 +35,8 @@ This project will use different aspects of SunPy:
 while using them we may find new needs that the above is not covering and
 hopefully we can improve them on the way.
 For example, the idea about designing a SunPy search events mechanism based on the images using HEK or HELIO,
-could provide information from the available catalogues about the images we are interested (how many spots 
-had that active region? when did it flare? how long did it live? ... ). This could be added as to the region 
+could provide information from the available catalogues about the images we are interested (how many spots
+had that active region? when did it flare? how long did it live? ... ). This could be added as to the region
 of interest class.
 
 ## Image processing
@@ -71,5 +71,3 @@ it looks more complex. Does this data show that?
 # Expand the scope of solarbextrapolation
 
 Main description is available at [the OA page for this project](https://openastronomy.org/gsoc/gsoc2019/#/projects?project=expand_the_scope_of_solarbextrapolation.).
-
-

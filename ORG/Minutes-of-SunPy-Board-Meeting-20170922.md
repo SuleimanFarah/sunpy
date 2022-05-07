@@ -1,7 +1,9 @@
 ### Date of Meeting
+
 22 September 2017
 
 ### Attendance
+
 **Present:** Steven Christe (Chair), Sabrina Savage (Secretary), Albert Shih, Juan Carlos Martinez Oliveros, Monica Bobra, David Perez-Suarez, Kevin Reardon, Jack Ireland
 
 **Absent:** Stuart Mumford, Russ Hewett
@@ -28,7 +30,7 @@
 * Decision handling?
   * Does the board formalize the VCS?
   * If not, what happens if the lead developer changes?
-    * Not desirable for the VCS to change based on developer. 
+    * Not desirable for the VCS to change based on developer.
   * Agreement that the board should have say in the framework (but not necessarily the choice of system).
     * Consensus that Stuart will take lead on choice of VCS.
 

@@ -49,7 +49,7 @@ I have been interested in Astronomy since my school days. I participated in vari
     </tr>
     <tr>
     <td>2</td>
-    <td>Removed astropy helpers from various files <a href="https://github.com/sunpy/sunpy/pull/3676">#3676</a> 
+    <td>Removed astropy helpers from various files <a href="https://github.com/sunpy/sunpy/pull/3676">#3676</a>
     </td>
     <td>Merged</td>
     </tr>
@@ -75,7 +75,7 @@ I have been interested in Astronomy since my school days. I participated in vari
     </tr>
     <tr>
     <td>7</td>
-    <td>Fixed deprecationwarning due to vso.attrs <a href="https://github.com/sunpy/sunpy/pull/3813">#3813</a> 
+    <td>Fixed deprecationwarning due to vso.attrs <a href="https://github.com/sunpy/sunpy/pull/3813">#3813</a>
     </td>
     <td>Closed</td>
     </tr>
@@ -206,7 +206,6 @@ The community bonding period is almost one month this time, so I would spend som
 - Implement a `.cdf` file reader in sunpy. Many files accessible through **CDAWeb** are mostly of this extension so it would be handy to have such reader in `~sunpy.util` or `~sunpy.io`; if in future such files are to be independently read by SunPy. Luckily there is also a python library for it ([cdflib](https://github.com/MAVENSDC/cdflib)).
 
 - Get all [groundclients PRs](https://github.com/sunpy/sunpy/pull/3763) complete and reviewed by maintainers and the same for [ACE Clients](https://github.com/sunpy/sunpy/pull/3705/).
-
 
 ### Week 1 (June 1 - June 8)
 

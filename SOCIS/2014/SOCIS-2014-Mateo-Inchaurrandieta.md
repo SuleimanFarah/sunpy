@@ -9,7 +9,7 @@ About Me
 
 Background
 ==========
-I first started programming when I was 13, when I found an old TI-83 that no one claimed. I wrote Snake and Pacman clones, but coding in TI-BASIC was horrible, slow and prone to errors. A couple of years after that I discovered Python, and the incredible ease and elegance it offered. After that I learnt C, but didn't appreciate its power until much later - in high school, I took a CS course in Java, and in college I've studied C, Haskell and Java. I also know OCaml, Scala, and I'm teaching myself Perl. After Perl I plan on going on to Lisp. My main interests are functional programming, cryptography and quantum computing. 
+I first started programming when I was 13, when I found an old TI-83 that no one claimed. I wrote Snake and Pacman clones, but coding in TI-BASIC was horrible, slow and prone to errors. A couple of years after that I discovered Python, and the incredible ease and elegance it offered. After that I learnt C, but didn't appreciate its power until much later - in high school, I took a CS course in Java, and in college I've studied C, Haskell and Java. I also know OCaml, Scala, and I'm teaching myself Perl. After Perl I plan on going on to Lisp. My main interests are functional programming, cryptography and quantum computing.
 
 I'm familiar with git and the Linux shell. I have never contributed to an open source project before, because I was daunted and frankly a bit intimidated by some communities. I'm glad to have discovered SunPy - everybody here seems very nice and I look forward to working with you!
 
@@ -57,11 +57,11 @@ Some of my past projects can be found on my GitHub page [here](https://github.co
 Other Info
 ==========
 ##Available Platforms
-I run Linux Mint 16 KDE, 64-bit and Windows 7, 64 bit. 
+I run Linux Mint 16 KDE, 64-bit and Windows 7, 64 bit.
 
 ##Availability
 I'm usually available from about 9 am to around 11 pm. My time zone is UTC +1 (British Summer Time / West Africa Time - so 0800 to 2200 UTC), but I will probably change that to UTC -5 (Canada/US/Mexico Central Daylight Time - so 1400 to 0400 UTC). I might take a week or so off, when I will have full internet access but little or no coding will take place.
 
 ##Sunpy Contributions
 * [Solution](https://github.com/sunpy/sunpy/pull/967) for [Issue 960](https://github.com/sunpy/sunpy/issues/960)
-* PEP-8 fixes: #986 
+* PEP-8 fixes: #986

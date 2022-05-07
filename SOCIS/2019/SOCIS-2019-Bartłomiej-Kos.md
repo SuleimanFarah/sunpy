@@ -10,9 +10,6 @@ As a physicist I find it essential to grasp the nature of things. I am particula
 Title
 Space Weather forecasting using machine learning.
 
-
-
-
 Summary
 Entrusted tasks I used to fulfill conscientiously; I am a hungry for knowledge and skills especially in the fields of learning techniques and artificial intelligence; deficiencies of experience I make up with work and independent, deep exploration of the topic.
 Description/timeline

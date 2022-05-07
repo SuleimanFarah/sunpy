@@ -1,6 +1,7 @@
 See Thompson (2006) and Franz & Harper (2002)
 
 # Sun-centered coordinate systems
+
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |
 | Heliocentric Aries Ecliptic (Mean J2000.0 or Date) | HAE (also HEC) | Astropy's `HeliocentricMeanEcliptic` | If using an Astropy version before v3.2, use the misleadingly named `HeliocentricTrueEcliptic` |
@@ -17,6 +18,7 @@ See Thompson (2006) and Franz & Harper (2002)
 | Helioprojective Radial | HPR | none | Is to Heliocentric Radial what HPC is to HCC |
 
 # Earth-centered coordinate systems
+
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |
 | Geocentric Earth Equatorial (Mean J2000.0 or Date) | GEI<sub>J2000</sub> or GEI<sub>D</sub> | `GeocentricEarthEquatorial`* | Astropy's `PrecessedGeocentric` is similar, but includes aberration due to Earth motion |

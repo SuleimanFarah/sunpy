@@ -1,5 +1,6 @@
 ## What is it?
-> Google Summer of Code is a global program focused on bringing more student developers into open source software development. 
+
+> Google Summer of Code is a global program focused on bringing more student developers into open source software development.
 > Students work with an open source organization on a 10 week programming project during their break from school.
 
 We participate in [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
@@ -33,6 +34,8 @@ We have a [[GSoC Application template | GSoC: Student Application Template]], it
 [Mixxx's Advice](https://www.mixxx.org/wiki/doku.php/gsocadvice#application_evaluation_criteria)
 
 ## Editions
+
+[[GSoC 2022]]
 
 [[GSoC 2021]]
 

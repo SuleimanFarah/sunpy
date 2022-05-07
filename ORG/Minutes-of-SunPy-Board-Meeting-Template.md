@@ -1,9 +1,11 @@
 ### Date of Meeting
+
 **DAY** **MONTH** **YEAR**
 
 ### Attendance
-- **Present:** 
-- **Absent:** 
+
+- **Present:**
+- **Absent:**
 
 ### Agenda
 
@@ -13,8 +15,6 @@
 
 **Topic 1:**
 
-
 **Topic 2:**
 
 **AOB**
-

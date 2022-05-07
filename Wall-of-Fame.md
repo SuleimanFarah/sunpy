@@ -38,7 +38,7 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 * [[Real time data access and visualisation tools|GSOC-2016-Hieronymous]] by [Sudarshan Konge](https://github.com/sudk1896)
 * [[Improvements to the SunPy Database|GSOC-2016-itachi_uchiha]] by [Punyaslok Pattnaik](https://github.com/Punyaslok)
-* [[AIA Response Functions| GSoC-2016-tessa-wilkinson]] by [Tessa Wilkinson ](https://github.com/tdwilkinson)
+* [[AIA Response Functions| GSoC-2016-tessa-wilkinson]] by [Tessa Wilkinson](https://github.com/tdwilkinson)
 
 #### With the [Python Software Foundation](https://www.python.org/psf/)
 
@@ -53,7 +53,6 @@ This page lists the names of these who have work for SunPy via summer of code or
 * [[Units on SunPy | GSoC-2014 Asish Panda]] by [Asish Panda](https://github.com/kaichogami).
 * [[A ginga based data explorer / database browser |GSoC-2014 Rajul]] by [Rajul](https://github.com/rajul).
 * [[Lightcurve | GSOC-2014 RISHABH SHARMA]] by [Rishabh Sharma](https://github.com/gunner272).
-
 
 ##### 2013
 
@@ -90,7 +89,6 @@ This page lists the names of these who have work for SunPy via summer of code or
 
 * VSO Client by [Florian Mayer](https://github.com/segfaulthunter)
 
-
 ### Other funds
 
 #### 2015 - Royal Astronomy Society / Mullard Space Science Laboratory
@@ -102,4 +100,5 @@ This page lists the names of these who have work for SunPy via summer of code or
 * Now by [Jessey](https://github.com/tortoiseJess)
 
 #### 2012 - Trinity College Dublin
+
 * Radio Spectra for Callisto by [Florian Mayer](https://github.com/segfaulthunter) - now at package [radiospectra](https://github.com/sunpy/radiospectra)

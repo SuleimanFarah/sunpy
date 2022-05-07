@@ -13,6 +13,7 @@ _Stuart_: possibly split Executive Director into an Executive Board, and convert
 
 Actions
 -------
+
 **Motion**: Reappoint Steven and David to Board, for a period from March 2020 to March 2022.
 **Approved**: Monica, Bin, Russell, Stuart, Tiago, Kevin
 
@@ -36,11 +37,12 @@ Make an executive **board** which fills the role of the current ED.
 
 SPD has allocated some money for SunPy workshops or other effort, need to check with them on guidance on how to spend it. Bin passed on this information from SPD board minutes: _Agreed to allocate 000 from the general fund to support a software development workshop at the 2021 SPD meeting" to be led by SunPy._
 
-Monica: Maybe use that money to set up a prize for software development? Small monetary prize ($500?), prize lecture during meeting? 
+Monica: Maybe use that money to set up a prize for software development? Small monetary prize ($500?), prize lecture during meeting?
 Steven: pay people to run (online?) workshops throughout the year.
 Russell: Lecture series - science topics but enabled by SunPy. Or a SunPy fellow that gives a few talks during the year.
 
 Future plans:
+
 * Have a couple meetings in next 1-2 months to:
-    * Discuss SPD coordination plans
-    * Discuss future SunPy governance
+  * Discuss SPD coordination plans
+  * Discuss future SunPy governance

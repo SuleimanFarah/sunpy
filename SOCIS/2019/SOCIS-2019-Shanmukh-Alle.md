@@ -16,10 +16,10 @@
 I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learning enthusiast and I have extensively explored various state of the art models and techniques in fields including but not limited to Computer Vision, NLP and Computational Sciences. I am proficient in C,C++,Python and Matlab. I have experience in building machine learning models in  Keras, Pytorch and Scikit-learn. I occasionally participate in data science contests. I am primarily interested in computer vision and its application in various fields of knowledge.
 ### Experience with Machine Learning
 * Worked as Teaching Assistant for the course Statistical Methods in AI for fall 2018.
-* Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be accessed here -> [manga_colourisation]  
+* Worked in a team of 3 to build a Manga/Comic colourisation system using Conditional Generative Adversarial Networks. Code for the project can be accessed here -> [manga_colourisation]
 
 [manga_colourisation]: https://github.com/sudheerachary/Manga_Colorization
-* Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found here -> [show-and-tell] 
+* Worked in a team of 4 to build a Neural Image Captioning System using attention based CNN. Code for the project can be found here -> [show-and-tell]
 
 [show-and-tell]: https://github.com/Saiteja-Reddy/Show-and-Tell
 * Worked in a team of 2 to build a deep learning based system that segments road networks from satellite images. A live demo of the project can be found here -> [road_extraction]
@@ -28,7 +28,7 @@ I am a fourth year undergraduate student at IIIT-Hyderabad. I am a machine learn
 
 * Worked in a team of 2 to build a system that uses transformer networks to predict protein secondary structure given protein amino acid sequence. (Ongoing project)
 
-* Top 0.5 percentile in [Flipkart GRID AI Challenge] 2019 
+* Top 0.5 percentile in [Flipkart GRID AI Challenge] 2019
 
 [Flipkart GRID AI Challenge]: https://dare2compete.com/o/Flipkart-GRiD-Teach-The-Machines-2019-74928?utm_source=MailingList20&utm_medium=Mailer&utm_campaign=FlipkartGrid
 
@@ -42,15 +42,15 @@ Space weather is a branch of astronomy that deals with time varying conditions i
 transmission interruptions, high-frequency communications, aircraft rerouting, and power-grid performance to name a few[[1]].
 
  Most of the methods mentioned in [[1]][[2]] do not use the structure of the sunspot cluster to arrive at a decision. Primarily, these methods make use of data measured from satellite sensors, such as Magnetic fields, continuum intensity etc. which do not explicitly incorporate structure of active region. In recent days, Convolutional Neural Networks have shown to work well in recognising complex patterns in images to perform various classification and regression tasks. Work done by Xin et al.[[3]] show that CNNs perform similar to the state of the art solar flare forecasting methods. A blog explaining the working of CNNs can be found here[[4]].
- 
- The Sun spotter project data sets contain images of sunspots ranked based on their complexity which is defined based on the elo rating. It is observed that there is a direct relationship between solar flare activity and the complexity of a sunspot[[2]]. Apart from this, the data sets also contain additional information(SMART data) about the active regions in the images. Performance of machine learning models are known to scale with the amount of data available, hence we intend to improve the performance of CNNs for forecast by using this additional data. 
 
-The following section describes the proposed solution in detail. 
+ The Sun spotter project data sets contain images of sunspots ranked based on their complexity which is defined based on the elo rating. It is observed that there is a direct relationship between solar flare activity and the complexity of a sunspot[[2]]. Apart from this, the data sets also contain additional information(SMART data) about the active regions in the images. Performance of machine learning models are known to scale with the amount of data available, hence we intend to improve the performance of CNNs for forecast by using this additional data.
+
+The following section describes the proposed solution in detail.
 
 ### Proposed solution
 
 #### Baseline CNN
-As a baseline, we intend to implement a basic CNN model with 2D convolutions followed by a multi layer perceptron. The image of active region is fed in as input. The model will be trained to predict the class of solar flare as the output. The baseline when trained gives us an understanding of the complexity of the dataset and serves as a comparison. 
+As a baseline, we intend to implement a basic CNN model with 2D convolutions followed by a multi layer perceptron. The image of active region is fed in as input. The model will be trained to predict the class of solar flare as the output. The baseline when trained gives us an understanding of the complexity of the dataset and serves as a comparison.
 
 To improve the performance, additional important numerical features about the active region obtained from HEK or Helio or the Sun spotter dataset can be added one by one to the multilayer perceptron. This step involves performing some exploratory data analysis to understand the importance of specific features.
 The dataflow can be observed in the image below.
@@ -60,15 +60,15 @@ The dataflow can be observed in the image below.
 Since the task is formulated as a classification problem the objective function will be cross entropy calculated between the predicted and ground truth class labels of the image.
 #### Siamese CNN
 It is a well documented fact that multi-task learning[[6]] improves the performance of each of the tasks trained on when the tasks are highly correlated.
-Hence, we propose to train a CNN on two objective functions. 
-1. Forecast loss (generally some form of cross entropy) 
+Hence, we propose to train a CNN on two objective functions.
+1. Forecast loss (generally some form of cross entropy)
 2. Complexity prediction loss (mse on the predicted values or on a transformed version of them)
 
 To train the model on complexity information we use a Siamese neural network that has a two CNNs with shared weights that act as feature extractors and a contrastive function. Given a pair of images the model is trained to predict the probability of one being more complex than the other when given to a human. Since the complexity is encoded in the form of elo ratings we use<img src="https://researchweb.iiit.ac.in/~shanmukh.alle/images/3.png" alt="drawing" width="100"/> as the contrastive function to predict the probability.
 
-The same function can be used to generate the ground truth probability values from elo ratings of the selected pair of images. 
+The same function can be used to generate the ground truth probability values from elo ratings of the selected pair of images.
 
-The contrastive function used is the equation used to get the win probability in a match between two players given their elo rating[[7]]. 
+The contrastive function used is the equation used to get the win probability in a match between two players given their elo rating[[7]].
 
 An explanation of how Siamese neural networks can be found here [[5]]
 
@@ -116,7 +116,7 @@ ___
 - Write a tutorial on usage of both the models
 
 #### Week 12
-- Buffer 
+- Buffer
 ___
 #### Final Evaluation
 ___

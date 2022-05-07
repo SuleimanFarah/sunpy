@@ -24,7 +24,6 @@
 
 * * *
 
-
 #### **University Information**
 
 * University: Indian Institute of Engineering Science and Technology, Shibpur
@@ -37,12 +36,11 @@
 
 * * *
 
-
 #### **Experience In Programming**
 
 * I have been involved in open source for the past 2 years and been contributing to different open source projects including Algorithms based and Python based Desktop Applications.
 
-* I did two major projects on Machine Learning in Python which majorly uses statistical analysis (pandas, numpy) and the use of Jupyter Notebook. These were project works for Udacity Machine Learning Nanodegree: [Titanic Survival Exploration, ](https://github.com/prateekiiest/titanic_survival_exploration)[Boston Housing.](https://github.com/prateekiiest/boston_housing)
+* I did two major projects on Machine Learning in Python which majorly uses statistical analysis (pandas, numpy) and the use of Jupyter Notebook. These were project works for Udacity Machine Learning Nanodegree: [Titanic Survival Exploration,](https://github.com/prateekiiest/titanic_survival_exploration)[Boston Housing.](https://github.com/prateekiiest/boston_housing)
 
 * I worked recently on one of my personal projects based in python which saw many active participation from different communities. The project being called [Code Sleep Python](https://github.com/prateekiiest/Code-Sleep-Python). It is a project based in python for building desktop applications and games in python.
 
@@ -58,9 +56,7 @@
 
 * * *
 
-
 #### **Interest In OpenAstronomy**
-
 
 OpenAstronomy consisting of 8 sub-organisations is a collaboration between open source astronomy and astrophysics projects that are being used by researchers around the world to study our universe. The analysis of data obtained from observatories like SDO , Hubble Space Telescope helps multiple types of research from being able to forecast a solar storm to detect planets in other stars.
 
@@ -149,7 +145,6 @@ I have been involved with the SunPy project for the past 1 year contributing sin
   </tr>
 </table>
 
-
 Contribution to SunPy Website
 
 <table>
@@ -185,21 +180,17 @@ Contribution to SunPy Website
   </tr>
 </table>
 
-
-
- 
-
 ### Abstract
 
 #### Mentors : @Cadair, @Nabobalis, @Punyaslok
 
- During analysis of solar data, precision at the observation time is one of the fundamental factors in deciding the accuracy of the data collected. Hence we need to be as much as precise as possible with respect to time of observation while collecting data from solar observatories. 
+ During analysis of solar data, precision at the observation time is one of the fundamental factors in deciding the accuracy of the data collected. Hence we need to be as much as precise as possible with respect to time of observation while collecting data from solar observatories.
 
  Majority of SunPy uses the datetime.datetime object as its representation of time. However using only datetime.datetime has demerits including less precision as opposed to astropy.time which supports much higher precision representations of time such as leap seconds. astropy.time also supports time formats e.g. TAI time which can not be done using datetime.datetime. Hence switching to astropy.time is required in order to support such additional features.
 
 ### Milestones
 
-### The project will involve the following parts.
+### The project will involve the following parts
 
 * Transition of every part of the SunPy code base to astropy.Time instead of using datetime.datetime for representation of time.
 
@@ -209,16 +200,13 @@ Contribution to SunPy Website
 
 * Including tests for the newly designed parse_time along with proper documentation. Also some of the documentation needs to be updated or created wherever any SunPy module will be using astropy.Time instead of datetime.
 
-
-
-
 ### Detailed Description
 
 #### Switching to Astropy.Time from Datetime
 
 **Why we need a transition**
 
-If we make a quick comparison between datetime.datetime and astropy.time.Time we get the following defects of `datetime` over `astropy.time.Time`. 
+If we make a quick comparison between datetime.datetime and astropy.time.Time we get the following defects of `datetime` over `astropy.time.Time`.
 
 <table>
   <tr>
@@ -244,17 +232,17 @@ If we make a quick comparison between datetime.datetime and astropy.time.Time we
 </table>
 
 The current [issue](https://github.com/sunpy/sunpy/issues/993) also discusses about some of the demerits of `datetime`.
- 
+
 **Which modules under sunpy are currently using `datetime ?**
 
-* Most of the program files under `sunpy.net` use `datetime` 
-  - `sunpy/net/tests/strategies.py` 
-  - `sunpy/net/dataretriever/sources/goes.py`
-  - `sunpy/net/hek2vso/hek2vso.py` 
+* Most of the program files under `sunpy.net` use `datetime`
+  * `sunpy/net/tests/strategies.py`
+  * `sunpy/net/dataretriever/sources/goes.py`
+  * `sunpy/net/hek2vso/hek2vso.py`
 
 * Modules like `sunpy.time` and `sunpy.spectra`
-  - `sunpy/time/timerange.py`
-  - `sunpy/spectra/tests/test_callisto.py`
+  * `sunpy/time/timerange.py`
+  * `sunpy/spectra/tests/test_callisto.py`
 
 * Other modules like `sunpy.io`, `sunpy.instr` , `sunpy.coordinates` and many more  under SunPy
 * Also affiliated packages under SunPy like `solarbextrapolation` and `Irispy` use `datetime` in their operations
@@ -272,19 +260,18 @@ Also documentation for all such modules under the sunpy codebase needs to be upd
 **Why we need a redesign ?**
 
 The `parse_time` function residing under `sunpy.time` module gets used for parsing specific time inputs and returning `datetime` object as output. Since `datetime` has its demerits as discussed above, we want `parse_time` to return `astropy.Time` object instead. Most functions under sunpy currently use `parse_time` for parsing such time strings. Thus a redesign of `parse_time` will let such functions using `parse_time` handle only `astropy.Time` object instead of `datetime`.
- 
+
 **Which modules under `sunpy` use `parse_time`?**
 
 * Currently most of the time related operations under SunPy is based on sunpy.time.parse_time function.There are currently 342 files that use parse_time, 231 from net, 10 from physics. Most modules under sunpy.net like vso , jsoc and helio also use sunpy.time.parse_time.
 
 **What changes are required in the function ?**
 
-* The main change that will involve is to make the sunpy.time.parse_time return astropy.Time object instead of returning datetime objects as of now. 
+* The main change that will involve is to make the sunpy.time.parse_time return astropy.Time object instead of returning datetime objects as of now.
 
 * Secondly, the sunpy.time.parse_time needs to have a more robust API and provide extra features as discussed below.
 
 * Making the current function more modular.
-
 
 --------------------------------------------------
 
@@ -299,15 +286,12 @@ This is a proposed solution to replace the common datetime operations with corre
 | Datetime operations| Under  which modules in sunpy | Astropy.Time operations|
 |:---------------:|:-----------------:|:-------------:|
 |`datetime.timedelta`| `sunpy.net`, `sunpy.time`, `sunpy.util`, `sunpy.lightcurve` , `sunpy.timeseries`|`datetime.timedelta` supports additional formats like hours, milliseconds, weeks as opposed to `Timedelta` which only supports `jd` and `sec`. See discussion below|
-|For ` datetime(year, month, day)` `tx = (year, month, day)` |`sunpy.time.tests`|`t.Time('{}-{}-{}'.format(*tx))`|
+|For `datetime(year, month, day)` `tx = (year, month, day)` |`sunpy.time.tests`|`t.Time('{}-{}-{}'.format(*tx))`|
 |`datetime.isoformat`|`sunpy.roi`, `sunpy.lightcurve`, `sunpy.timeseries`,`sunpy.instr`|`t.Time(time_string).isot`|
-
-
 
 -----------------------------------------------------------------
 
 ### Proposed Solution for Redesign of sunpy.time.parse_time function
-
 
 **Making Parse_time return astropy.Time instead of datetime.**
 
@@ -317,7 +301,6 @@ The following table will show the input time instances that parse_time support c
 
 This can be seen [here](https://gist.github.com/prateekiiest/5ee9b91c42f9a896316970536d4553bb)
 
-
 -----------------------------------------------------
 
 **What extra time strings will `parse_time` support if it returns `astropy.Time`**
@@ -325,7 +308,6 @@ This can be seen [here](https://gist.github.com/prateekiiest/5ee9b91c42f9a896316
 The current [issue](https://github.com/sunpy/sunpy/issues/2155) discusses the inability of `parse_time` to handle **FITS compliant time formats**. Like `parse_time('2011-01-01T00:10:00.000(UTC)')` currently returns an error. But `t.Time('2011-01-01T00:10:00.000(UTC)')` works fine.
 
 If we can make provision for handling such time formats and apply the `astropy.Time` on such type of strings, we can then make parse_time handle such inputs.
-
 
 **Making parse_time more modular**
 
@@ -361,10 +343,9 @@ Separate functions that we can implement will include some of the following
   </tr>
 </table>
 
-
 **Extra features in parse_time**
 
-* First of all, provision for handling FITs file formats should be made for `parse_time`. 
+* First of all, provision for handling FITs file formats should be made for `parse_time`.
 * Secondly I would discuss with mentors what other time instances they would like as input for `parse_time` apart from the current ones. I would thus proceed accordingly to work on such proposed time instances.
 * `parse_time` should be made to use the single dispatch module, since SunPy will moving over to Python 3 under 0.9 version. [This issue](https://github.com/sunpy/sunpy/issues/2383) discusses about this.
 * I plan to import some functions for setting the scale and formats of the Time objects which will let the user some freedom to set the scales and formats of the time_strings accordingly. Although this is subject to change as per reviews from mentors.
@@ -375,10 +356,10 @@ This would involve updating all the functions under sunpy which use `parse_time`
 
 **Documenting and Testing `Parse_time` Function**
 
-This would involve updating the documentation for `parse_time`. Since I plan to make `parse_time` functionality more modular , the docs for all the separate conversion time functions needs to be written. Along with that new tests need to be written for such new conversion functions (like in this cases [updating all the test functions](https://github.com/sunpy/sunpy/blob/master/sunpy/time/tests/test_time.py#L18)). 
+This would involve updating the documentation for `parse_time`. Since I plan to make `parse_time` functionality more modular , the docs for all the separate conversion time functions needs to be written. Along with that new tests need to be written for such new conversion functions (like in this cases [updating all the test functions](https://github.com/sunpy/sunpy/blob/master/sunpy/time/tests/test_time.py#L18)).
 
 Some examples of test updates which I implemented can be found here - [Test Updates](https://gist.github.com/prateekiiest/1d11bf7972724dcd6bed259bb13d1fbe)
- 
+
 ## Timeline
 
 <table>
@@ -406,7 +387,7 @@ Have the modified version of parse_time ready. Should address to any prevalent b
   </tr>
   <tr>
     <td>Jul 9 - Jul 13</td>
-    <td><b>Phase 2 Evaluation</b> 
+    <td><b>Phase 2 Evaluation</b>
 Remaining time will be dedicated to check for any bugs or breaks in the code where the transitions are made. Cover up any remaining related issues during this time.</td>
   </tr>
   <tr>
@@ -421,7 +402,6 @@ Remaining time will be dedicated to check for any bugs or breaks in the code whe
   </tr>
 </table>
 
-
 ## GSoC
 
 ### **Have you participated previously in GSoC? When? With which project?**
@@ -433,7 +413,6 @@ Are you also applying to other projects?
 No. This is the only project and SunPy under OpenAstronomy is the only organization that I have applied for.
 
 * * *
-
 
 ### **Commitment**
 
@@ -449,8 +428,6 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 
 * * *
 
-
 ## **Eligibility**
 
 Yes, I am eligible to receive payments from Google. For any queries, clarifications or further explanations, feel free to contact me at prateekkol21@gmail.com .
-

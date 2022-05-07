@@ -24,7 +24,7 @@ I want to try develop "Sunkit-image", especially:
 5. Implement running and base difference functionality and the persistence transform. See Figure 2 in [this paper](http://iopscience.iop.org/article/10.1088/0004-637X/736/2/102/pdf) for some ideas.
 
 
-Timeline 
+Timeline
 ========
 - Until May 31: Study the sources of `SunPy` profoundly and everything related to astronomy and solar physics data.
 - Week 1/2: Study how to develop the algorithm.

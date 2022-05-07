@@ -1,6 +1,7 @@
 # Application for GSOC 2015
 
 ## Student Information
+
 * **Name:** Dumindu Buddhika Karunathilaka
 * **Email:** dumindukarunathilaka@gmail.com
 * **Time-zone:** +0530 GMT
@@ -10,6 +11,7 @@
 * **Blog RSS feed:**
 
 ## University Information
+
 * **University:** University of Moratuwa
 * **Major:** Computer Science and Engineering
 * **Current year:** Third year
@@ -17,9 +19,11 @@
 * **Degree:** Bachelor of Science in Engineering.
 
 ## Project Proposal Information
+
 **Proposal Title:** Improvements to the SunPy Database
 
 ### **Abstract:**
+
 The database module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name. The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft. It also allows more complex queries by enabling searches of the raw meta data associated with the files. database module also stops multiple downloads of the same file thus saving bandwidth. This proposed project aims to improve the functionality provided by the current database module implementation by focusing on following major areas.
 
   1. Integration of UnifiedDownloader code to database search.
@@ -27,8 +31,7 @@ The database module provides functionality to users to manage collections of fil
   3. Support all data supported by `sunpy.lightcurve` module in the database.
   4. Split database by query into two databases.
 
-
-###**Detailed Description**
+### **Detailed Description**
 
 **1. Integration of UnifiedDownloader code to database search.**
 
@@ -62,7 +65,7 @@ base path can be stored in sunpyrc file. It can also be optionally overridden at
 
 **3. Support all data supported by the `sunpy.lightcurve` module in the database.**
 
-Current database module implementation does not integrate with lightcurve data. The current database supports database entries to be created from FITS files. But the current database module integration does not support downloading and saving lightcurve type FITS file data. Communicating with the person who is doing lightcurve re-factor project when dealing with meta data will be needed. 
+Current database module implementation does not integrate with lightcurve data. The current database supports database entries to be created from FITS files. But the current database module integration does not support downloading and saving lightcurve type FITS file data. Communicating with the person who is doing lightcurve re-factor project when dealing with meta data will be needed.
 
 Under this phase,
 
@@ -72,17 +75,17 @@ Under this phase,
 
 **4. Split database by query into two databases(issue #917)**
 
-This feature will add the ability to split a database up into two databases by a query: the function will return two databases where one of them contains all the entries that match the passed query and the other one contains all other entries. This function will be very useful if someone needs to divide database entries based on some query. 
+This feature will add the ability to split a database up into two databases by a query: the function will return two databases where one of them contains all the entries that match the passed query and the other one contains all other entries. This function will be very useful if someone needs to divide database entries based on some query.
 
 The high level signature of the function is,
-	`split_database(database, database2, *query)`
+ `split_database(database, database2, *query)`
 
 database2 will be filled with entries that did not match the query while database will have all the entries that match the query.
 
-##Timeline
+## Timeline
 |Period|Description|
 |------|-----------|
-|Community Bonding Period (April 27 – May 25)| I would like to utilize this period to go through the SunPy code base(Specially database module, lightcurve module and new UnifiedDownloader code) and solve any misunderstandings/problems by talking with mentors| 
+|Community Bonding Period (April 27 – May 25)| I would like to utilize this period to go through the SunPy code base(Specially database module, lightcurve module and new UnifiedDownloader code) and solve any misunderstandings/problems by talking with mentors|
 |May 25 – June 7 (14 days)|Working on implementing and modifying methods required to integrate UnifiedDownloader to database module.|
 |June 8 – June 12(4 days)|Writing tests for the code written earlier. Updating documentation. Re-factoring the code. At this point I will have completed section 1.|
 |June 13 – June 26(14 days)|Working on implementing the support for relative paths in database search. Writing test cases to test code for supporting relative paths. At this point I will have completed section 2.|
@@ -100,23 +103,28 @@ Code samples of contributions to opensource projects including SunPy.
 **SunPy**
 
 Fix for issue #1171 (VSO download filenames have incorrect extension).
-* Pull request- https://github.com/sunpy/sunpy/pull/1341
+
+* Pull request- <https://github.com/sunpy/sunpy/pull/1341>
 
 Test cases added for noaa clients in UnifiedDownloader.
-* Pull request- https://github.com/sunpy/sunpy/pull/1334
+
+* Pull request- <https://github.com/sunpy/sunpy/pull/1334>
 
 Fix for issue #1342(database complains of EIT non-existent wavelengths units)
-* Pull request- https://github.com/sunpy/sunpy/pull/1346
+
+* Pull request- <https://github.com/sunpy/sunpy/pull/1346>
 
 **Tor Project**
 
 A script to create report of the status of Tor default bridges which are shipped with Tor Browser.
-* Code- https://github.com/dumindux/TorBridgeChecker/blob/master/tor_bridgecheck.py
+
+* Code- <https://github.com/dumindux/TorBridgeChecker/blob/master/tor_bridgecheck.py>
 
 A small bug-fix for Stem library.
-* Ticket- https://trac.torproject.org/projects/tor/ticket/14628
 
-##About me
-I am a third year undergraduate student from Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka. I am pursuing a BSc(eng) in Computer Science and Engineering. My first programming language is C. Then I learned Java and then I found Python and fell in love with it. I have been freelancing on Fiverr.com in my free times for over a year with Python(also with Java but mostly with Python) which gave me a good experience in writing different kinds of python programs. I have sometimes helped out my friends who are following other engineering fields(Civil engineering, Mechanical engineering etc) with simple scripts for some of their calculations. I am fluent in SQL and have experience in using git. I have a strong interest in mathematics and algorithms. I am also interested in information security and anonymity(thus Tor Project). I use Ubuntu as the operating system in my computer. I am currently in the last few weeks of my six month internship with Leapset incorporated(www.leapset.com). I am mostly working with Java, JavaScript and databases there. We are building a card swipe based authentication system for their main product. 
+* Ticket- <https://trac.torproject.org/projects/tor/ticket/14628>
 
-As most people, I have always fascinated about the sky and astronomy  since I was a kid. I read quite often about astronomy when I was in high school. I find its really wonderful that this project gives me an opportunity to work with something related to an area I fancy about using my skills. I hope this is a great opportunity for me to learn something about solar physics too. Though I always supported FOSS(and use open source software mostly) I haven't contributed in development before. I think this is a good opportunity to begin contributing to open source. 
+## About me
+I am a third year undergraduate student from Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka. I am pursuing a BSc(eng) in Computer Science and Engineering. My first programming language is C. Then I learned Java and then I found Python and fell in love with it. I have been freelancing on Fiverr.com in my free times for over a year with Python(also with Java but mostly with Python) which gave me a good experience in writing different kinds of python programs. I have sometimes helped out my friends who are following other engineering fields(Civil engineering, Mechanical engineering etc) with simple scripts for some of their calculations. I am fluent in SQL and have experience in using git. I have a strong interest in mathematics and algorithms. I am also interested in information security and anonymity(thus Tor Project). I use Ubuntu as the operating system in my computer. I am currently in the last few weeks of my six month internship with Leapset incorporated(www.leapset.com). I am mostly working with Java, JavaScript and databases there. We are building a card swipe based authentication system for their main product.
+
+As most people, I have always fascinated about the sky and astronomy  since I was a kid. I read quite often about astronomy when I was in high school. I find its really wonderful that this project gives me an opportunity to work with something related to an area I fancy about using my skills. I hope this is a great opportunity for me to learn something about solar physics too. Though I always supported FOSS(and use open source software mostly) I haven't contributed in development before. I think this is a good opportunity to begin contributing to open source.

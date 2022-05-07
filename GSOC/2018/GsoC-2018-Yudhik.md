@@ -48,72 +48,69 @@
 
 * Sunpy:
 
-    * Region of Interest Object
+  * Region of Interest Object
 
-        * (WIP) [https://github.com/sunpy/sunpy/issues/164](https://github.com/sunpy/sunpy/issues/164)
+    * (WIP) [https://github.com/sunpy/sunpy/issues/164](https://github.com/sunpy/sunpy/issues/164)
 
-    * Functionality of concatenation of two Unified Responses from fido.fetch
+  * Functionality of concatenation of two Unified Responses from fido.fetch
 
-        * (Open) [Overrode `+` operator for UnifiedResponse object](https://github.com/sunpy/sunpy/pull/2466)
+    * (Open) [Overrode `+` operator for UnifiedResponse object](https://github.com/sunpy/sunpy/pull/2466)
 
-    * The simple extension to Map Stonyhurst grid plotting. 
+  * The simple extension to Map Stonyhurst grid plotting.
 
-        * (Merged) [Fixed Padding values in some of the documentation pages](https://github.com/sunpy/sunpy/pull/2497)
+    * (Merged) [Fixed Padding values in some of the documentation pages](https://github.com/sunpy/sunpy/pull/2497)
 
-    * importing lightcurve and net under Python 2 ends the world
+  * importing lightcurve and net under Python 2 ends the world
 
-        * (WIP) [https://github.com/sunpy/sunpy/issues/2122](https://github.com/sunpy/sunpy/issues/2122)
+    * (WIP) [https://github.com/sunpy/sunpy/issues/2122](https://github.com/sunpy/sunpy/issues/2122)
 
-    * Solved instant disappearing of timeseries plot
+  * Solved instant disappearing of timeseries plot
 
-        * (Contributed in) [https://github.com/sunpy/sunpy/pull/2467](https://github.com/sunpy/sunpy/pull/2467)
+    * (Contributed in) [https://github.com/sunpy/sunpy/pull/2467](https://github.com/sunpy/sunpy/pull/2467)
 
 * Scilab:
 
-    * Arguments passed to the function in wrong order
+  * Arguments passed to the function in wrong order
 
-      * (Merged) [Arguments in wrong order](https://codereview.scilab.org/#/c/19689/)
+    * (Merged) [Arguments in wrong order](https://codereview.scilab.org/#/c/19689/)
 
-    * Typecasting wrong data type
+  * Typecasting wrong data type
 
-      * (Merged) [Sizeof not portable](https://codereview.scilab.org/#/c/19660/)
+    * (Merged) [Sizeof not portable](https://codereview.scilab.org/#/c/19660/)
 
-    * Data Race condition
+  * Data Race condition
 
-      * (WIP) [Data Race condition](https://codereview.scilab.org/#/c/19691/)
+    * (WIP) [Data Race condition](https://codereview.scilab.org/#/c/19691/)
 
-    * Storing a long number in int
+  * Storing a long number in int
 
-      * (WIP) [Bad bit shift operation](https://codereview.scilab.org/#/c/19690/)
+    * (WIP) [Bad bit shift operation](https://codereview.scilab.org/#/c/19690/)
 
-    * Division or modulo by zero
+  * Division or modulo by zero
 
-      * (WIP) [Division or modulo by zero](https://codereview.scilab.org/#/c/19693/)
+    * (WIP) [Division or modulo by zero](https://codereview.scilab.org/#/c/19693/)
 
-    * Pointer value was not freed before returning
+  * Pointer value was not freed before returning
 
-      * (WIP) [Resource Leak](https://codereview.scilab.org/#/c/19662/)
+    * (WIP) [Resource Leak](https://codereview.scilab.org/#/c/19662/)
 
-    * Null value being accessed
+  * Null value being accessed
 
-      * (WIP) [Explicit null dereferenced](https://codereview.scilab.org/#/c/19686/) 
+    * (WIP) [Explicit null dereferenced](https://codereview.scilab.org/#/c/19686/)
 
-    * Useless call being made/ Dead code
+  * Useless call being made/ Dead code
 
-      * (WIP) [Useless call](https://codereview.scilab.org/#/c/19658/)
-
+    * (WIP) [Useless call](https://codereview.scilab.org/#/c/19658/)
 
 ## **Project Proposal Information**
 
 **Project**: ***Region of Interest***
 
-**Mentors :** [dpshelio](https://github.com/dpshelio) ,[ wafels](https://github.com/wafels)
-
-
+**Mentors :** [dpshelio](https://github.com/dpshelio) ,[wafels](https://github.com/wafels)
 
 ## **Abstract**
 
-This project will need to redesign **roi.py** and **chaincode.py** to work well with coordinates used in the **ROI** and will cover not only images but other dimensions (**timeseries** or **multidimensional data**). This project aims to design and implement an object so that we can find **ROI in any physical dimension** ( such as spatial area or temporal range and interact with the rest of data types used in sunpy). 
+This project will need to redesign **roi.py** and **chaincode.py** to work well with coordinates used in the **ROI** and will cover not only images but other dimensions (**timeseries** or **multidimensional data**). This project aims to design and implement an object so that we can find **ROI in any physical dimension** ( such as spatial area or temporal range and interact with the rest of data types used in sunpy).
 
 The **TimeRange object** could be used to store the **time extent** of the "region". The region of interest object should also be derivable from the main object classes - **HEK, HELIO.**
 
@@ -138,73 +135,61 @@ We will start it by using ROI on images and then extend it to use timeseries as 
 
 * ROI will also be capable of returning list of events for a specified time range for a HEK query and for HELIO (hfc is not accessible from sunpy in an easy way so it depends on how the module is modified during these months, so the feature will be implemented as guided by the mentors).
 
-* User will be able to overlay multiple ROI at the same time eg: `aia.show(overlay = [roi1, roi2, ...]`. 
+* User will be able to overlay multiple ROI at the same time eg: `aia.show(overlay = [roi1, roi2, ...]`.
 
 * Make future addition of similar objects easier to integrate.
-
-
 
 **Detailed Description:**
 
 Currently, if users want to get information about Solar events such as flare information, active regions, they would have to first find HEK / HELIO results and after then specify the timerange (which is the window he is interested in) and then club those two as an overlay. Finally, after that while reproducing images user will have to specify the bounding box to focus on a certain region.
 
-  
-
 Eg. If a user is interested in the finding the biggest coronal hole within 80 degrees north/south of the equator in "sunpy.data.sample.AIA_171_IMAGE"
 
 ```python
 Class roi(object):
-	def __init__ (self, object = None , timeseries = None, responses = None, *argv, **kwargs):
-		if object is  'hek':
-			self.hek_roi(responses, *argv, **kwargs)
-	def hek_roi(self, responses = None, *argv, **kwargs):
-		# for all responses building a return value based on different 
-		# Arguments
-		return roi_response
+ def __init__ (self, object = None , timeseries = None, responses = None, *argv, **kwargs):
+  if object is  'hek':
+   self.hek_roi(responses, *argv, **kwargs)
+ def hek_roi(self, responses = None, *argv, **kwargs):
+  # for all responses building a return value based on different
+  # Arguments
+  return roi_response
 
-  	def helio_roi(self, responses = None, *argv, **kwargs):
-		# for all responses building a return value based on different 
-		# Arguments
-		return roi_response
-	def time_range(self):
-		....
-		return TimeRange(self.start_time, self.end_time)
-  	def plot():
+   def helio_roi(self, responses = None, *argv, **kwargs):
+  # for all responses building a return value based on different
+  # Arguments
+  return roi_response
+ def time_range(self):
+  ....
+  return TimeRange(self.start_time, self.end_time)
+   def plot():
         ...
         return plot
     # various other functions
 
-	
+
 ```
 
 **<u>Class ROI</u>**
 
 **Parameters:**
 
-- **Object** – type of object.
-- **timeseries** – will contain sample data and source.
-- **Response** - (ndarray) - array of responses.
-- **Methods** - args that will define ROI attributes and properties.
+* **Object** – type of object.
+* **timeseries** – will contain sample data and source.
+* **Response** - (ndarray) - array of responses.
+* **Methods** - args that will define ROI attributes and properties.
 
 **Returns:**
 
-- **Returns**  – A final ROI response which can be overlayed on an image.
-
-
-
+* **Returns**  – A final ROI response which can be overlayed on an image.
 
 **Actual Image of AIA_171**
 
-
 ![Actual Image of AIA_171](https://drive.google.com/uc?id=1_MfpyUQdVSbxUqul9hAjsS8BYLfIth2k)
-
-
 
 ## CODE COMPARISON
 
 ### Initializing map and collecting responses from HEK
-
-
 
 ```python
 imports ...
@@ -216,8 +201,7 @@ responses = hek_client.search(hek.attrs.Time(start_time, end_time),
                              hek.attrs.CH, hek.attrs.FRM.Name == 'SPoCA')
 ```
 
-
-​    
+​
 
 ```python
 ### Work which ROI will automate
@@ -227,7 +211,7 @@ for i, response in enumerate(responses):
    if response['area_atdiskcenter'] > area and np.abs(response['hgc_y']) < 80.0:
        area = response['area_atdiskcenter']
        response_index = i
-      
+
 ch = responses[response_index]
 p1 = ch["hpc_boundcc"][9:-2]
 p2 = p1.split(',')
@@ -240,17 +224,11 @@ ch_boundary = SkyCoord(
 rotated_ch_boundary = solar_rotate_coordinate(ch_boundary, aia_map.date)
 ```
 
-
-
 ```python
 ### ROI
 
 req_roi = roi(object = 'hek', responses, area_atdiskcenter_max = true ,hgc_y_max = 80 )
 ```
-
-
-
-
 
 ```python
 ### Plotting
@@ -267,16 +245,13 @@ plt.colorbar()
 plt.show()
 ```
 
-
-
-
 **RESULT WITH MARKED ROI**
 
 ![RESULT WITH MARKED ROI](https://drive.google.com/uc?id=1DH5RLLP6ijn6RzvrSSHyqjoPtRYJ_mEC)
 
-It will be more convenient to use ROI module as it will **save a user from writing a lot of code**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically **mark our ROI** with a certain **zoom** which is intended and will have space for **panning** as well. 
+It will be more convenient to use ROI module as it will **save a user from writing a lot of code**. ROI will use various features to **enhance user experience** like aia.show(overlays=hek_events) will automatically **mark our ROI** with a certain **zoom** which is intended and will have space for **panning** as well.
 
-The final reproduced image will look like: 
+The final reproduced image will look like:
 
 ![zoomed image](https://drive.google.com/uc?id=1b38cuhDC-WwwgcjCkCP6OLgigjNnCkco)
 
@@ -298,19 +273,19 @@ responses[2] = hek_client.search(hek.attrs.Time(start_time, end_time),hek.attrs.
 ### Roi-3 (biggest coronal hole within 80 degrees north/south fn the equator)
 
 responses[3] = hek_client.search(hek.attrs.Time(start_time, end_time),
-                          	hek.attrs.CH, hek.attrs.FRM.Name == 'SPoCA')
+                           hek.attrs.CH, hek.attrs.FRM.Name == 'SPoCA')
 
 response_index = [None]*4
 rotated_ch_boundary = [None]*4
 for j in range(1,4):
-	area = 0.0
-	for i, response in enumerate(responses[j]):
-    		if j == 3 and response['area_atdiskcenter'] and response['area_atdiskcenter'] > area and np.abs(response['hgc_y']) < 80.0:
-        		area = response['area_atdiskcenter']
-        		response_index[j] = i
-    		elif response['area_atdiskcenter'] and response['area_atdiskcenter'] > area and np.abs(response['hgc_x']) < 50.0:
-        		area = response['area_atdiskcenter']
-        		response_index[j] = i
+ area = 0.0
+ for i, response in enumerate(responses[j]):
+      if j == 3 and response['area_atdiskcenter'] and response['area_atdiskcenter'] > area and np.abs(response['hgc_y']) < 80.0:
+          area = response['area_atdiskcenter']
+          response_index[j] = i
+      elif response['area_atdiskcenter'] and response['area_atdiskcenter'] > area and np.abs(response['hgc_x']) < 50.0:
+          area = response['area_atdiskcenter']
+          response_index[j] = i
 
 ch = responses[j][response_index[j]]
 p1 = ch["hpc_boundcc"][9:-2]
@@ -318,17 +293,13 @@ p2 = p1.split(',')
 p3 = [v.split(" ") for v in p2]
 ch_date = parse_time(ch['event_starttime'])
 ch_boundary = SkyCoord(
-	[(float(v[0]), float(v[1])) * u.arcsec for v in p3],
-	obstime=ch_date,
-	frame=frames.Helioprojective)
+ [(float(v[0]), float(v[1])) * u.arcsec for v in p3],
+ obstime=ch_date,
+ frame=frames.Helioprojective)
 rotated_ch_boundary[j] = solar_rotate_coordinate(ch_boundary, aia_map.date)
 ```
 
-
-
 ### With ROI
-
-
 
 ```python
 responses = [None]*4
@@ -344,16 +315,16 @@ responses[2] = hek_client.search(hek.attrs.Time(start_time, end_time),hek.attrs.
 ### Roi-3 (biggest coronal hole within 80 degrees north/south fn the equator)
 
 responses[3] = hek_client.search(hek.attrs.Time(start_time, end_time),
-                          	hek.attrs.CH, hek.attrs.FRM.Name == 'SPoCA')
+                           hek.attrs.CH, hek.attrs.FRM.Name == 'SPoCA')
 
 req_roi = [None]*4
 for i range(1,4):
-	if i == 3:
-		req_roi[i] = roi(object = 'hek', responses[i], area_atdiskcenter_max = true ,hgc_y_max = 80 )
-	else:
-		req_roi[i] = roi(object = 'hek', responses[i], area_atdiskcenter_max = true ,hgc_x_max = 50 )</td>
-        
-  ∀roi  rotated_ch_boundary[i] = solar_rotate_coordinate(ch_boundary[i], 
+ if i == 3:
+  req_roi[i] = roi(object = 'hek', responses[i], area_atdiskcenter_max = true ,hgc_y_max = 80 )
+ else:
+  req_roi[i] = roi(object = 'hek', responses[i], area_atdiskcenter_max = true ,hgc_x_max = 50 )</td>
+
+  ∀roi  rotated_ch_boundary[i] = solar_rotate_coordinate(ch_boundary[i],
 
 Aia_map . date )
 ax = plt.subplot(projection=aia_map)
@@ -361,48 +332,34 @@ aia_map.plot(axes=ax)
 ∀roi  ax.plot_coord(rotated_ch_boundary[i], color='c')
 ```
 
-  
-
-
-
-
 ![Multiple ROI marked](https://drive.google.com/uc?id=1-KXGFdYbdMyj_k4RJi_ufZLw47mmq5cv)
-
-
 
 **Various Geometric Shapes which will help to plot ROI**
 
 For geometric shapes like square and circle, the arguments for ROI can be passed like:
-	
 
-​	
+​
 
 ```python
 
 Square[center_x, center_y, side_length]
 Rectangle[center_x, center_y, breadth, height]
 Circle[center_x, center_y, radius]
-  
+
 ```
 
 These geometric shapes can be used to represent ROI on a specific need and for the rest of the responses we can use chaincode([convex](http://mathworld.wolfram.com/ConvexPolygon.html) and [concave](http://mathworld.wolfram.com/ConcavePolygon.html) polygon).
 
-
-
 #### **Invalid user input**
 
-As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498) 
+As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 **Invalid inputs** by the user can be handled by first checking whether the given args belong to a dictionary of attributes of the object.
-
-
 
 **Proposed solution:**
 
 * Returning each wrong argument can be cumbersome so an error message can be returned describing the method and args which are expected and the specific order.
 * Rest of the handling can be done in accordance with the proposed solution that we come up along with the mentors.
-
-
 
 <u>Hence the following are the **main tasks** of the project</u> :
 
@@ -411,8 +368,6 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 3. Extract information from the interaction (overlay a sunspot detection on a corona image and extract the total area of that region or the date at which it was observed).
 4. Later the ROI can be extended to objects like timeseries.
 5. Extensive testing of different possibilities for the plot of ROI.
-
-
 
 ## **References:**
 
@@ -428,11 +383,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 **Timeseries:** [http://docs.sunpy.org/en/latest/code_ref/timeseries.html](http://docs.sunpy.org/en/latest/code_ref/timeseries.html)
 
-
-
 ## **Timeline**
-
-
 
 <table>
 <tr>
@@ -447,7 +398,7 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 <td> <b>Community Bonding</b> (April 24 - May 22, 2018) </td>
 
-<td><ul> <li>Get <b>familiar with ROI</b> and responses from <b>various data-types</b> which can be used to plot ROI.</li><li>Laying the <b>base to start building ROI</b>.</li> <li>Learn more about the <b>various attributes of HEK/HELIO</b>.</li></ul>  
+<td><ul> <li>Get <b>familiar with ROI</b> and responses from <b>various data-types</b> which can be used to plot ROI.</li><li>Laying the <b>base to start building ROI</b>.</li> <li>Learn more about the <b>various attributes of HEK/HELIO</b>.</li></ul>
 
 </td>
 
@@ -473,13 +424,13 @@ As mentioned in the issue: [2498](https://github.com/sunpy/sunpy/issues/2498)
 
 <td>May 23 - June 6, 2018 (Week 2 - Week 3)</td>
 
-<td><ul><li>Embedding <b>hek / helio responses as inputs in ROI</b>.</li> <li>Querying for <b>multiple attributes</b>. Eg. 
+<td><ul><li>Embedding <b>hek / helio responses as inputs in ROI</b>.</li> <li>Querying for <b>multiple attributes</b>. Eg.
 
 ```python
-region = ROI(hek_response) 
-region.plot() # overlay the plot over a hek region 
-region.position() # tells the centre of the location 
-region.area() # gives me the area of the region 
+region = ROI(hek_response)
+region.plot() # overlay the plot over a hek region
+region.position() # tells the centre of the location
+region.area() # gives me the area of the region
 region.date() # tells me when that was observed
 ```
 
@@ -581,11 +532,6 @@ region.date() # tells me when that was observed
 </tr>
 </table>
 
-
-
-
-
-
 ### **Software packages to be used**
 
 **Language:** Python
@@ -593,10 +539,6 @@ region.date() # tells me when that was observed
 **Libraries and modules:** astropy, json, pytest, sympy
 
 **SunPy dependencies:** numpy, scipy, matplotlib, suds, pandas
-
-
-
-
 
 ### **How I propose to complete the project:**
 
@@ -609,21 +551,15 @@ I spent a lot of time going through SunPy documentations and also through severa
 * I will update my blogs regularly.
 * I will be available all the time for reviews and answer questions regarding my implementation.
 
-
-
 ## **GSoC**
 
 ### **Have you participated previously in GSoC? When? With which project?**
 
 **No.** This is the **first time** that I would be participating in GSoC
 
-
-
 ### **Are you also applying to other projects?**
 
 **No.** **SunPy** is the only organization that I am applying for.
-
-
 
 ### **Commitments**
 
@@ -632,8 +568,6 @@ I commit to work for 35-40 hours a week during GSoC period. I don't have any oth
 I have my end Semester exams from 19 April – 27 April so I won’t be able to devote most of the time to the project. During that week I would be able to give 15-20 hrs and would further try whenever necessary.
 
 My next semester will start from the 1st week of August still I would be able to devote most of my time as in the initial days of the semester we have less workload.
-
-
 
 ### **Eligibility**
 

@@ -1,15 +1,19 @@
 ## Organization: OpenAstronomy
+
 ## Sub-Organization: SunPy
+
 ## Student Information
+
 * **Name:** Punyaslok Pattnaik
 * **E mail:** punyaslok.pattnaik@gmail.com
 * **Time Zone:** +05:30 GMT
 * **IRC Handle:** itachi_uchiha
 * **Github Username:** [Punyaslok](https://github.com/Punyaslok)
 * **Blog :** [My Blog](https://punyaslokpattnaik.wordpress.com)
-* **Blog RSS feed :** https://punyaslokpattnaik.wordpress.com/feed/
+* **Blog RSS feed :** <https://punyaslokpattnaik.wordpress.com/feed/>
 
 ## University Information
+
 * **University:** [International Institute of Information Technology, Hyderabad](https://www.iiit.ac.in)
 * **Major:** Computer Science
 * **Current Year:** Second Year
@@ -33,13 +37,14 @@ I haven’t had much Open Source experience before contributing to SunPy, but I 
 Apart from the above projects, I am also proficient in C/C++ and I love sport programming.
 
 ## PR links
+
 * **Astropy**
- * [Removed discussion of Keyword class in Getting Started section.](https://github.com/astropy/ccdproc/pull/296)
+* [Removed discussion of Keyword class in Getting Started section.](https://github.com/astropy/ccdproc/pull/296)
 * **SunPy**
- * [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
- * [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
- * [Download and fetch both accept kwargs now.](https://github.com/sunpy/sunpy/pull/1719)
- * [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
+* [Implemented feature request: split database by query into two databases](https://github.com/sunpy/sunpy/pull/1700)
+* [Database(default_waveunit) should take a Unit](https://github.com/sunpy/sunpy/pull/1701)
+* [Download and fetch both accept kwargs now.](https://github.com/sunpy/sunpy/pull/1719)
+* [Fixed the test_add_entry_from_hek_qr test](https://github.com/sunpy/sunpy/pull/1717)
 
 ## Project Proposal Information
 
@@ -47,7 +52,7 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
 
 **Mentors :** [Stuart Mumford](http://github.com/Cadair), [Simon Liedtke](http://github.com/derdon), [Steven Christe](http://github.com/ehsteve)
 
-### Abstract :
+### Abstract
 
 The SunPy database module enables users to manage files on a disk, or a network hosted database. Users can find files by using physical parameters such as wavelength, time etc. or by using attributes such as instrument name. Queries can also be combined to form complex queries.
 
@@ -57,7 +62,7 @@ The first part of the project would involve making several modifications to the 
 
 The second part involves improving the caching mechanism. Currently, the caching system uses queries to decide whether a file needs to be downloaded. So, if two queries have largely similar results, they both are completely downloaded.
 
-### Project Goals :
+### Project Goals
 
 **Part 1 :** Use Fido to replace VSO for doing internal database operations, primarily to achieve the goal of being able to store different formats of data in the database. **This will create the ability to quickly support more and more data types in the future as support for each type can be added by creating relevant sub-classes.**
 
@@ -75,7 +80,6 @@ The second part involves improving the caching mechanism. Currently, the caching
 I would divide this part of the project into 4 broad subparts.
 In sequence, they go like this:
 
-
 1. **Adding with Fido**
 
    Successfully add entries to the database from a Fido search result. Currently, client-specific functions like `Database.add_from_vso_query_result()` are used to add entries. Implement functionality such as `Database.add_from_Fido_result()` that will add the results of the `QueryResponse` object returned by the underneath client.
@@ -87,15 +91,15 @@ In sequence, they go like this:
 3. **Downloading with Fido**
 
    Given a Fido search query, download the relevant files from the client which Fido decides can best serve the query. This will involve downloading files from different clients for different types of queries. All files from all clients must be downloaded successfully.
-   
+
    There will be many file types which will be returned by different clients. Currently the database module handles FITS file types pretty well. So, in order to store metadata of other file types such as `ana`, `jp2` etc. a new feature can be implemented which will allow newer file types in the future to specify their metadata format and hence they can be easily stored in the database.
 
    Also, it would be better if a mapping is created which relates each client to its possible file types, which could allow the caching mechanism to become even faster while searching for data of a particular client in the future.
 
 4. **Miscellaneous**
 
-  1. Test the database module again to ensure that all functionalities such as `tag`, `star`, `undo` etc. work fine after integrating Fido.
-  2. Make the database module pass quantified code checks (optional)
+1. Test the database module again to ensure that all functionalities such as `tag`, `star`, `undo` etc. work fine after integrating Fido.
+2. Make the database module pass quantified code checks (optional)
 
 **Note :** Documentation and writing tests will be done simultaneously along with each subpart. So, completion of each subpart will involve writing code for implementation, writing tests for that feature, and documenting that feature.
 
@@ -134,36 +138,37 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 | August 24, 2016 - August 30, 2016 | **Mentors Submit Final Evaluations** |
 | August 30, 2016 | **Results Announced** |
 
-
 ```
-DavidPS: When saying "push" in the updates, do you mean to GH or to do a 
-         Pull Request? 
+DavidPS: When saying "push" in the updates, do you mean to GH or to do a
+         Pull Request?
          I cannot talk for the mentors in this project, but I would prefer
          to see frequently updates and pushes to your fork (almost daily).
-         
-         An important point that hasn't been mentioned is how you plan to 
+
+         An important point that hasn't been mentioned is how you plan to
          handle data stored in files that are not FITS.
 
-itachi_uchiha: By "push" in each update, I meant a Pull Request for each 
-               independent feature. It has been mentioned in the project 
+itachi_uchiha: By "push" in each update, I meant a Pull Request for each
+               independent feature. It has been mentioned in the project
                idea that a large PR at the end isn't recommended.
-               
+
                Apart from the updates/PRs, I plan on pushing code to my
                github fork regularly so that the mentors can keep track of
                my progress. I've mentioned it explicitly now just before the
                timeline.
 
                Added the file handling part.
-               
+
 ```
+
 ### Software packages to be used
+
 **Language:** Python
 
 **Libraries and modules:** astropy, sqlalchemy, datetime, itertools, json, pytest
 
 **SunPy dependencies :** numpy, scipy, matplotlib, pandas, suds
 
-### How I will successfully complete the project:
+### How I will successfully complete the project
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
@@ -190,6 +195,7 @@ I have **not** participated in GSoC before. This is the first time that I would 
 **No.** This is the **only project** and **SunPy is the only organization** that I have applied for.
 
 ### Commitment
+
 I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
 
 My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester.  I will be able to spare 35-40 hours for the project per week easily.

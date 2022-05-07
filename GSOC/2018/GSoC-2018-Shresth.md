@@ -1,5 +1,7 @@
 # Transition to AstroPy Time in SunPy
+
 ## Organisation: OpenAstronomy
+
 # **1. Sub-organization**
 
 SunPy
@@ -36,7 +38,7 @@ SunPy
 
 **Programming and Open Source development :**  Python is my language of preference and I have roughly 7 years of experience working in it. Apart from it, I am also comfortable with C, C++ (5 years of experience) and C# (3 years experience). I am also well versed with the working of github. I am relatively new to open source development but other than SunPy and AstroPy, I have also contributed in OpenCV and Shogun ML Toolkit.
 
-**Coursework : **I have taken graduate level courses in Engineering Mathematics, Engineering Physics, Data Structures, Object Oriented Programming, Software Engineering, Modelling and Simulation, Design And Analysis of Algorithms.
+**Coursework :**I have taken graduate level courses in Engineering Mathematics, Engineering Physics, Data Structures, Object Oriented Programming, Software Engineering, Modelling and Simulation, Design And Analysis of Algorithms.
 
 **Libraries and Modules:**
 
@@ -56,9 +58,9 @@ Proposal Title : Transition to AstroPy Time in SunPy
 
 Suggested mentors : Stuart Mumford, Nabil Freij, Punyaslok Pattnaik
 
-**5.1 Abstract** 
+**5.1 Abstract**
 
-Time is a central concept in lots of sub-modules within SunPy and at present, SunPy uses `datetime.datetime` objects for representing time. This works fairly well except that `datetime.datetime` has numerous shortcomings when used in the domain of astronomy such as  
+Time is a central concept in lots of sub-modules within SunPy and at present, SunPy uses `datetime.datetime` objects for representing time. This works fairly well except that `datetime.datetime` has numerous shortcomings when used in the domain of astronomy such as
 
 * Firstly,  `datetime.datetime` doesn’t have a notion of leap seconds. This results in the loss of precision (as reported in issue [https://github.com/sunpy/sunpy/issues/993](https://github.com/sunpy/sunpy/issues/993)).
 
@@ -74,7 +76,7 @@ In addition to transitioning to  `astropy.time.Time`, another major change would
 
 **5.2 Project Goals**
 
-**Part 1 **: This would involve refactoring of the  `sunpy.time.parse_time` function. Currently, this function takes in input a time string so as to return a datetime.time object. But we would like it to return an  `astropy.time.Time` object instead. This will need major planning beforehand of how we want to present it to users. In addition to this, it will involve writing extensive tests for the refactored function and comprehensive documentation for the same.
+**Part 1**: This would involve refactoring of the  `sunpy.time.parse_time` function. Currently, this function takes in input a time string so as to return a datetime.time object. But we would like it to return an  `astropy.time.Time` object instead. This will need major planning beforehand of how we want to present it to users. In addition to this, it will involve writing extensive tests for the refactored function and comprehensive documentation for the same.
 
 **Part 2:** This would involve other modules in SunPy such as sunpy.timeseries, spectra, database and vso, hek clients in  `sunpy.net` to be modified in order to work with   `astropy.time.Time`. Again, this would need some tests and added documentation to assist users in making the transition.
 
@@ -92,13 +94,13 @@ In addition to transitioning to  `astropy.time.Time`, another major change would
 
 The main idea here is to change the API of `parse_time` to be a thin wrapper around  `astropy.time.Time`. From design point of view, this will have many advantages, such as
 
-* Some of the cases written in `parse_time` can be covered and parsed by  `astropy.time.Time` under the hood. 
+* Some of the cases written in `parse_time` can be covered and parsed by  `astropy.time.Time` under the hood.
 
 * For instance, pandas timestamp and datetime objects are already supported by  `astropy.time.Time` as input so they wouldn’t be needed to be written as explicitly different cases.
 
 * Another thing that can be removed by use of  `astropy.time.Time` is utime format (or in fact any Time format) as it is now supported as a time format ([https://github.com/sunpy/sunpy/pull/2409](https://github.com/sunpy/sunpy/pull/2409))
 
-Now, the structure of refactored `parse_time` can either first parse using  `astropy.time.Time` and then fall back upon the explicitly defined formats supported by `parse_time` or the other way round. I believe that it would be better the latter way because of ease in error handling. That is, if `parse_time` formats can’t handle the string input, it will try  `astropy.time.Time` (for inputs such as '2018-03-20T00:00:00.000(UTC)') and if astropy can’t handle it either, then a meaningful error will be thrown by the error handling machinery of  `astropy.time.Time`. 
+Now, the structure of refactored `parse_time` can either first parse using  `astropy.time.Time` and then fall back upon the explicitly defined formats supported by `parse_time` or the other way round. I believe that it would be better the latter way because of ease in error handling. That is, if `parse_time` formats can’t handle the string input, it will try  `astropy.time.Time` (for inputs such as '2018-03-20T00:00:00.000(UTC)') and if astropy can’t handle it either, then a meaningful error will be thrown by the error handling machinery of  `astropy.time.Time`.
 
 After this, only the cases which are new for astropy Time (such as ‘now’ or np.datetime64) would have to be explicitly parsed by `parse_time` and even they would be reduced to a bunch of object conversions to astropy time. This would also simplify much of regex parsing of `parse_time` as some part of it would be handled by astropy time.
 
@@ -110,7 +112,7 @@ Another aim of this refactoring is to tidy up the code. As implemented in [https
 
 Some things to note in this implementation
 
-* Whenever a new format is decided to be supported for time_string, we can easily extend this by registering a new function to convert_time. This will prevent the previous problem of complex nested conditionals. 
+* Whenever a new format is decided to be supported for time_string, we can easily extend this by registering a new function to convert_time. This will prevent the previous problem of complex nested conditionals.
 
 * Special care would have to be taken for cases such as tuple which can mean differently for `parse_time` and AstroPy time like in the case (2018,3,3) and (‘2018-03-03’, ‘2018-03-04’). Similar cases might arise for string regex where discussion would be needed for deciding how the new `parse_time` should interpret the time string.
 
@@ -142,7 +144,7 @@ This includes modules such as net, timeseries, coordinates, instr, spectra and t
 
 Majorly, the work would be in  `sunpy.net` which uses time extensively for getting remote data over a range of time. Currently, there are many ways of retrieving data in SunPy, through hek client, vso client, fido queries etc and all of them parse the time string of time range and keep them as datetime objects. This is done as special  `sunpy.net`.attr.Attr class. A transition will have to be made to switch it to AstroPy time and make it compliant with the existing tests.
 
-**Part 3 **
+**Part 3**
 
 **Testing and Documentation**
 
@@ -170,29 +172,29 @@ May 14th, 2018 - June 14th, 2018
 
 * **Week 1 (May 14th)**
 
-    * Start with the refactoring of `parse_time` function using the single dispatch method following up from the PR already in place. 
+  * Start with the refactoring of `parse_time` function using the single dispatch method following up from the PR already in place.
 
-    * Develop wrappers to create  `astropy.time.Time` object from all existing types that `parse_time` supports such as pandas.series, np.datetime64 etc.
+  * Develop wrappers to create  `astropy.time.Time` object from all existing types that `parse_time` supports such as pandas.series, np.datetime64 etc.
 
-    * Make sure that previous tests don’t break with the changes in `parse_time` and also modify some tests if needed (such as those which are expecting `parse_time` to return  `datetime.datetime` object)
+  * Make sure that previous tests don’t break with the changes in `parse_time` and also modify some tests if needed (such as those which are expecting `parse_time` to return  `datetime.datetime` object)
 
 * **Week 2 (May 28th)**
 
-    * Evaluate the string formats that already exist in AstroPy time which need not be explicitly implemented in `parse_time` and remove them from existing implementation.
+  * Evaluate the string formats that already exist in AstroPy time which need not be explicitly implemented in `parse_time` and remove them from existing implementation.
 
-    * Discuss with mentors the way time scale, time formats, precision should be assigned by the user through `parse_time`.
+  * Discuss with mentors the way time scale, time formats, precision should be assigned by the user through `parse_time`.
 
-    * Implement the additional parameters passed to `parse_time` though **kwargs to be passed on to  `astropy.time.Time` object at creation.
+  * Implement the additional parameters passed to `parse_time` though **kwargs to be passed on to  `astropy.time.Time` object at creation.
 
 * **Week 3, 4 (May 28th - June 14th )**
 
-    * Add tests to check new functionality of `parse_time` function. 
+  * Add tests to check new functionality of `parse_time` function.
 
-    * Add documentation explaining the changes in `parse_time` and docstrings of return type.
+  * Add documentation explaining the changes in `parse_time` and docstrings of return type.
 
-    * Work upon the features required in  `astropy.time.Time` and get those PRs merged. 
+  * Work upon the features required in  `astropy.time.Time` and get those PRs merged.
 
-    * Buffer time in case things take longer to implement.
+  * Buffer time in case things take longer to implement.
 
 June 15th
 
@@ -204,27 +206,27 @@ June 16th, 2018 - July 12th, 2018
 
 * **Week 5 (June 16th)**
 
-    * Make changes in sunpy.time.TimeRange so as to use  `astropy.time.Time`Delta in internal machinery. 
+  * Make changes in sunpy.time.TimeRange so as to use  `astropy.time.Time`Delta in internal machinery.
 
-    * Start transitioning all tests to use  `astropy.time.Time` objects instead of  `datetime.datetime`.
+  * Start transitioning all tests to use  `astropy.time.Time` objects instead of  `datetime.datetime`.
 
-    * Make necessary changes for transition in modules not using Time extensively such as maps, coordinates, roi, physics, database, io.
+  * Make necessary changes for transition in modules not using Time extensively such as maps, coordinates, roi, physics, database, io.
 
 * **Week 6 (June 23rd)**
 
-    * Begin the modification of code in  `sunpy.net` to work with  `astropy.time.Time` and discuss with mentors about possible additional options that might have to be added.
+  * Begin the modification of code in  `sunpy.net` to work with  `astropy.time.Time` and discuss with mentors about possible additional options that might have to be added.
 
-    * Simultaneously, add tests for  `sunpy.net` to be compliant with  `astropy.time.Time`.
+  * Simultaneously, add tests for  `sunpy.net` to be compliant with  `astropy.time.Time`.
 
-    *  `sunpy.net` has the most extensive use of Time so this will take the longest time in transitioning.  
+  * `sunpy.net` has the most extensive use of Time so this will take the longest time in transitioning.
 
 * **Week 7, 8 (June 30th - July 12th)**
 
-    * Transition of  instr, timeseries, spectra modules to use AstroPy Time.
+  * Transition of  instr, timeseries, spectra modules to use AstroPy Time.
 
-    * Add tests related to these modules too and continue to work on  `sunpy.net`.
+  * Add tests related to these modules too and continue to work on  `sunpy.net`.
 
-    * Make the code pep8 compliant and do code clean ups.
+  * Make the code pep8 compliant and do code clean ups.
 
 July 13th
 
@@ -236,19 +238,19 @@ July 14th, 2018 - August 14th, 2018
 
 * **Week 9, 10 (July 14th - August 3rd)**
 
-    * Write tests and documentations to account for the changes and refactoring done.
+  * Write tests and documentations to account for the changes and refactoring done.
 
-    * The documentation should also serve as a guide to users to make them aware of changes as well as new functionalities that the API offers.
+  * The documentation should also serve as a guide to users to make them aware of changes as well as new functionalities that the API offers.
 
 * **Week 11, 12 (August 4th - August 14th)**
 
-    * Update the examples in docstrings to be in accordance with the newer API for Time.
+  * Update the examples in docstrings to be in accordance with the newer API for Time.
 
-    * Add examples in SunPy example gallery demonstrating the use of Time object in SunPy as well as the time strings that it supports.
+  * Add examples in SunPy example gallery demonstrating the use of Time object in SunPy as well as the time strings that it supports.
 
-    * Buffer period for work that might take longer to implement.
+  * Buffer period for work that might take longer to implement.
 
-    * Get ready for final evaluation!
+  * Get ready for final evaluation!
 
 August 14th - August 21st
 
@@ -260,7 +262,7 @@ August 22nd
 
 August 23rd -
 
-**Continue contributing to AstroPy and SunPy **
+**Continue contributing to AstroPy and SunPy**
 
 **Note: I will regularly push code to my github fork instead of having one large PR at the end so that reviewing code is easier and my mentors can keep track of my progress.**
 
@@ -280,7 +282,7 @@ Added convolution filter and peakfinding examples
 
 [https://github.com/sunpy/sunpy/pull/2488](https://github.com/sunpy/sunpy/pull/2488)
 
-Refactor `parse_time` 
+Refactor `parse_time`
 
 [https://github.com/sunpy/sunpy/pull/2408](https://github.com/sunpy/sunpy/pull/2408)
 
@@ -294,7 +296,7 @@ Added LOCAL time scale
 
 [https://github.com/astropy/astropy/pull/7122](https://github.com/astropy/astropy/pull/7122)
 
-Fix for poor performance in Angle.__str__ and Angle._repr_latex_
+Fix for poor performance in Angle.**str** and Angle.*repr_latex*
 
 [https://github.com/astropy/astropy/pull/7004](https://github.com/astropy/astropy/pull/7004)
 

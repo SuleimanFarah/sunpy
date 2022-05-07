@@ -3,6 +3,7 @@
 18 November 2019
 
 ### Attendance
+
 **Present:** Steven Christe (Chair), Tiago Pereira, David Pérez-Suárez, Jack Ireland, Russell Hewett, Kevin Reardon, Bin Chen, Stuart Mumford
 
 **Absent:** Sabrina Savage, Monica Bobra
@@ -10,14 +11,13 @@
 ### Agenda
 
 * **SunPy Roles**
-* **NumFocus Summit Report** 
-* **Python in Heliophysics Report** 
-* **SunPy Survey and Papers** 
-* **SunPy Coordination Meeting** 
-* **Instrument Package Working Group** 
-* **OpenAstronomy** 
+* **NumFocus Summit Report**
+* **Python in Heliophysics Report**
+* **SunPy Survey and Papers**
+* **SunPy Coordination Meeting**
+* **Instrument Package Working Group**
+* **OpenAstronomy**
 * **Other Business**
-
 
 ***
 
@@ -35,6 +35,7 @@ Stuart wants to write a blog post, with time commitments estimates, and email th
 A PR will be created with a time limit for comments.
 
 Monica got some suggestions from Brigitta at Astropy that she tried to incorporate in the roles list.
+
 * Don't have too many roles – this leads to viscosity in taking action
 * Number of community and technical roles should be balanced, to indicate equal importance.
 
@@ -45,6 +46,7 @@ Monica got some suggestions from Brigitta at Astropy that she tried to incorpora
 **NumFocus Summit Report:**
 
 Board received an update from Stuart and Monica on the NumFOCUS Summit. Primary topics were:
+
 * Governance:<BR>
 Steven to look over the board governance ([SEP-002](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0002.md)) and propose edits<BR>
 The current process makes making decisions harder than it needs to be (Steve notes that allowing votes only at board meetings is onerous).<BR>
@@ -57,7 +59,7 @@ Stuart will connect Sophie with Gina at NumFOCUS and Sophie will come up with a 
 We should put together a flyer about project vision (why), key target areas (what), and funding needs (how much).<BR>
 SunPy has a mission statement (how we operate), but not much of a vision statement (where we are going)
 * Discourse for SunPy:<BR>
-Stuart applied for and got a free instance. 
+Stuart applied for and got a free instance.
 This might be more useful for developer communication than board;
 
 <U>Actions:</U><BR>
@@ -96,7 +98,7 @@ SunPy will participate to raise awareness of existing approaches and implementat
 The group will agree on a code of conduct.<BR>
 
 <U>Actions:</U><BR>
-– Kevin will send out an initial email/invitation to groups listed in Google Doc and board members to set up initial organizational meeting. 
+– Kevin will send out an initial email/invitation to groups listed in Google Doc and board members to set up initial organizational meeting.
 
 **OpenAstronomy**:
 
@@ -105,7 +107,7 @@ We currently have $3,600 from previous years, and an additional $1,800 to be tra
 
 **Other Business:**
 
-We should make a public announcement about Jack’s NASA/HDEE funding for SunPy projects, plus Dan Ryan’s project (ndcube), on Twitter, mailing lists, blog post, and to Numfocus. Is a SolarNews announcement appropriate? 
+We should make a public announcement about Jack’s NASA/HDEE funding for SunPy projects, plus Dan Ryan’s project (ndcube), on Twitter, mailing lists, blog post, and to Numfocus. Is a SolarNews announcement appropriate?
 
 <U>Actions:</U><BR>
 – Steve will talk to Peter Young, SPD secretary, about a possible announcement.

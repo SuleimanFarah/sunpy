@@ -1,11 +1,13 @@
 Agenda
 ------
+
 - release of 0.8 should happen by the SPD meeting
 - website updates from stuart
 - monica update for spd workshop
 
 0.8 release – Stuart
 --------------------
+
 - freeze ~next Monday
 - outstanding: documentation; guide section needs review
 - vso client documentation
@@ -14,12 +16,12 @@ Agenda
 - fido is the new interface for downloading data
 - one interface and determines correct client and consistent api
 - major feature of 0.8
-   - working on deprecating lightcurve to time series (wcs)
-   - sunpy coordinates = astropy sky coordinates
-   - corners of submap need to be in coordinates framework
-   - albert added ability to move from solar coordinates to astro coordinates
-   - can put galactic coordinates on sun, if you ever wanted to
-   - no uses of wcs left
+  - working on deprecating lightcurve to time series (wcs)
+  - sunpy coordinates = astropy sky coordinates
+  - corners of submap need to be in coordinates framework
+  - albert added ability to move from solar coordinates to astro coordinates
+  - can put galactic coordinates on sun, if you ever wanted to
+  - no uses of wcs left
 - biggest blocker for release right now is documentation
 - rename net methods
 - beta release early next week
@@ -27,6 +29,7 @@ Agenda
 
 website updates – Nabil/Stuart
 ------------------------------
+
 - a few issues still outstanding
 - main content issue – no formal board page / want bios & photos / github, affiliations or links
 - need website and documentation consistency
@@ -40,6 +43,7 @@ website updates – Nabil/Stuart
 
 SunPy SPD workshop – Monica
 ---------------------------
+
 - Wednesday, 6:30-8:30
 - SPD business meeting at same time
 - People need to have Python already installed since Binder appears dead
@@ -47,18 +51,18 @@ SunPy SPD workshop – Monica
 eclipse photo for flair
 - Other notebook suggestions: fido/coordinates
 - Agenda for workshop:
-   - Monica gives a ~15 minute overview of why Python is cool
-   - Monica gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
+  - Monica gives a ~15 minute overview of why Python is cool
+  - Monica gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
 in a jupyter notebook
-   - Sabrina gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
+  - Sabrina gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
 in a jupyter notebook
-   - Dan gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis in a
+  - Dan gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis in a
 jupyter notebook
-   - Andrew gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
+  - Andrew gives a ~5 minute lightning talk showcasing some interesting tools and/or analysis
 in a jupyter notebook
-   - Andrew gives a ~10 minute lightning talk about Sunpy, governance, and how it differs from
+  - Andrew gives a ~10 minute lightning talk about Sunpy, governance, and how it differs from
 SSWIDL
-   - We have an interactive session that lasts ~1:15. During this interactive session, people
+  - We have an interactive session that lasts ~1:15. During this interactive session, people
 (either individually or in pairs) load up one of the four jupyter notebooks presented during the
 lightning talks (using either their own machine or Binder) and work through the notebooks --
 by understanding and executing the existing code, manipulating the code, and appending to
@@ -66,4 +70,5 @@ the code. All of us will be around to help people work through their notebook of
 
 AOB: Jack
 ---------
+
 - He and Stuart are going to numfocus meeting to coordinate sustainability, may be room for one more.

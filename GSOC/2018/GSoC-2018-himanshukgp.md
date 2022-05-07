@@ -1,9 +1,12 @@
 
 # Develop sunkit-image
+
 ## Organisation: OpenAstronomy
+
 ## Sub-organisation: SunPy
 
 ## About me
+
 ### Contact Information
 
 * **Name**: Himanshu
@@ -18,10 +21,9 @@
 
 * **Blog**: [wordpress/himanshukgp](https://himanshukgp.wordpress.com/)
 
-
 ### Personal Background
 
-Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I love python as it is very intuitive and easy. I work on Ubuntu 16.04 LTS with sublime as editor. 
+Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, India. I'm pursuing a degree in Mathematics and Computing. I love python as it is very intuitive and easy. I work on Ubuntu 16.04 LTS with sublime as editor.
 
 ### Education
 
@@ -30,10 +32,10 @@ Hello, I am Himanshu, a second year undergraduate student at IIT Kharagpur, Indi
 * **Current Year**: 2nd year (4th semester ongoing)
 * **Expected Graduation cum Post-graduation**: 2021
 
-
 ### Links to Pull Requests
 
 Here are some of my contributions to SunPy :
+
 * `Merged`[Map Save Test][2]: Wrote a missing **test** for save method of Map.
 * `Merged`[Migrate to hypothesis.strategies.datetimes][3]:
 
@@ -41,15 +43,17 @@ Here are some of my contributions to SunPy :
 * `Merged` [Adding  python setup.py test --figure-only][5]: This PR adds support to the flag --figure-only. This flag along with **`python setup.py test`** triggers only those tests that create figures.
 
 ## About
+
 Project: **Develop sunkit-image**
 
 Mentors: [Stuart Mumford](http://github.com/Cadair),  [Jack Ireland](https://github.com/wafels), [Nabil Freij](https://github.com/nabobalis), [Monica Bobra](https://github.com/mbobra)
+
 ## Abstract
+
 This project is to create foundations of the **sunkit-image** a **Sunpy** affiliated package, to contain **image processing** routines and functionality specific to the analysis of solar physics data. The plan of this project is to complete implementations of **MGN, NRGF, OCCULT-2** and **deforest**. Three of these have already been implemented, which have to be fine tuned, **tested**, **documented** and merged into main sunkit-image repository. We have optional extras upon which we can work if time permits and everything goes as planned. It includes implementation of [Soft Morphological Filtering](https://www.aanda.org/articles/aa/pdf/2006/38/aa4852-06.pdf), Refactor and write a Python wrapper for [FLCT](https://arxiv.org/pdf/0712.4289.pdf) code and Implement image alignment using feature detection and tracking.
 <br/>
 
-##  Problems and Motivation
-
+## Problems and Motivation
 
 1. **NRGF**
 
@@ -58,18 +62,14 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
    While applying NRGF first segment the corona into narrow and `concentric circular regions` called `bins`. Then we calculate mean and deviation of intensity for each segment. Finally at every point on a segment, its mean intensity value is subtracted (thus removing the sharp radial gradient in brightness) from its value and then the result is divided by deviation (to remove radially decreasing brightness contrast). In this way intensity at each point is calculated and we get our final image. This has been implemented by [Wafels](https://github.com/wafels) in [this PR](https://github.com/sunpy/sunkit-image/pull/8). This is now a part of main repository. There is no exact IDL version of this implementation. We will have to decide how to confirm about the results we get from this implementation. We have to add tests, documentation and examples as well. We can also look into its optimization if time permits.
 <br/>
 
-
 2. **MGN**
 
    Multiscale Gaussian Normalization which we will have in Sunkit-image is based on [this paper](https://link.springer.com/content/pdf/10.1007%2Fs11207-014-0523-9.pdf). In paper an AIA image pre-processed using aia-prep has been used as example. The EUV image is mostly dark and only the active region of Sun is visible. We want to process the image to show more details in quiet sun and off-limb regions. A quick and easy way is to take square root or log of each pixel in the image. Here we will process the image with MGN algorithm. Following is a brief explanation of the algorithm.
 
-   For each pixel in the image we calculate local mean and deviation of intensity values using kernels (weighted by the Gaussian function centred on the pixel).  Then we subtract mean from its intensity value and divide that from its deviation. Then an arctan transformation is applied over all the pixels. These two processes are separately done for n-different values of 2D Gaussian kernel width. A global gamma-transformed image C_g is also created. Then we calculate final processed image by taking a weighted mean among all these images. Gamma transformed image has been given a larger weight in the paper. One last thing is that all these have been shown on an EUV image in the paper but this can be applied as well on other images that we have, like in the result section MGN applied on a LASCO image has been shown in the paper. 
- 
+   For each pixel in the image we calculate local mean and deviation of intensity values using kernels (weighted by the Gaussian function centred on the pixel).  Then we subtract mean from its intensity value and divide that from its deviation. Then an arctan transformation is applied over all the pixels. These two processes are separately done for n-different values of 2D Gaussian kernel width. A global gamma-transformed image C_g is also created. Then we calculate final processed image by taking a weighted mean among all these images. Gamma transformed image has been given a larger weight in the paper. One last thing is that all these have been shown on an EUV image in the paper but this can be applied as well on other images that we have, like in the result section MGN applied on a LASCO image has been shown in the paper.
 
    This algorithm has been fully implemented by [Cadair](http://github.com/Cadair) in [this PR](https://github.com/sunpy/sunpy/pull/1899), we also have few examples of this code being run on AIA images. We want to port this implementation to main branch and add tests and documentations.  There is also another implementation [here](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py) by [Ebuchlin](https://github.com/ebuchlin). We have to compare both methods and maybe both can exist within this package. There are few differences in the algorithm suggested in paper and IDL version.  We have to carefully spot the algorithmic differences among paper, its IDL version and the two python implementations. After we have successfully implemented this algorithm with all the tests we can even try to compare its result to other algorithms like NRGF on an image (like LASCO), though this is just minor detail to look at when we write examples.
 <br/>
-
-
 
 3. **OCCULT-2**
 
@@ -93,6 +93,7 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
    Re-sampling can be done using `direct interpolation` but this method is not very efficient. In [this paper](https://link.springer.com/content/pdf/10.1023/B:SOLA.0000021743.24248.b0.pdf) an optimised method using the padded ellipse of transformation to approximate the input sampling area for each output pixel, has been proposed. We have to update
  [this PR](https://github.com/astrofrog/reproject/pull/52) by [rubendv](https://github.com/rubendv) to the Astropy [image resampling](https://reproject.readthedocs.io/en/stable/) library. <br/><br/>
 <br/><br/>
+
 ## Timeline
 
 | Time Period        | Plan           |
@@ -109,33 +110,37 @@ This project is to create foundations of the **sunkit-image** a **Sunpy** affili
 |July 23, 2018 - Aug 5,2018 <br/>( 2 weeks )|<ul><li>Write tests and documentation for deforest implementation.</li><li>This period can be buffer for deforest implementation and testing.</li><li>Work on optional extras (soft morphological filtering).</li></ul>|
 |Aug 6, 2018 - Aug 14, 2018 <br/>(1 week )|<ul><li>Work on any leftover tasks which were stuck before.</li><li>Write tests and docs for soft morphological filtering if implemented.</li></ul>|
 
-
 ### Software packages to be used
+
 **Language:** Python, Cython
 
 **Libraries and modules:** astropy, pytest
 
+## How I propose to complete the project
 
-## How I propose to complete the project:
 I previously had some exposure to Image processing tasks during a winter workshop organised in my college. I have grown a lot of interest in this field thereafter. There are lots of materials available online and I will approach to my mentor if I am stuck for long on a given problem. I also plan to discuss new implementation details with my mentors beforehand.
 
 I will push to my pull requests regularly to keep my mentors updated on my work and blog every week as well. I will be available all the time for reviews and answer questions regarding my implementation.  I will also clearly explain everything in documentation so that it is easy to understand in future. We know that sunkit-image is in its very nascent stage so I am very excited about how much we can do in future and interesting things I'll get to learn in the process.
 
 I will also be available in future for any questioning related to my work.
 
-## Benefits to the community:
+## Benefits to the community
+
  This project will add MGN, NRGF, OCCULT-2 and Image resampling in Sunkit-Image. We will also have CI and documentation up and running. We will also get some **testing routine** as we have in **Sunpy.** We will have tools to extract coronal loops and extract hidden features in white image through MGN.
  We have few libraries for image processing in sunpy itself. Their is a huge scope on this topic. There are numerous more algorithms which we can implement and fine tune to be available for users. This project will provide a base for sunkit-image for all future works.
 
 ## GSoC
 
 ### Have you participated previously in GSoC? When? Under which project?
+
 No, I have **not** participated in GSoC before. This is the first time I am participating in GSoC.
 
 ### Are you also applying to other projects?
+
 **No** ,This is the **only project** and **SunPy is the only organization** that I have applied for.
 
 ### Commitments
+
 I don't have any other internship or work during this summer. I have no plans for any vacations either.
 
 My classes start from 16th of July, even after my classes start I can give about 35 hours a week on this project, as I have around 21 hours of class time every week in my college and there is very less academic pressure during beginning of the course. Also I have  proposed this time mostly for  extras upon which I can keep working even after the program ends.
@@ -143,8 +148,8 @@ My classes start from 16th of July, even after my classes start I can give about
 I have my exams for this semester from 19th April to 27th April so I will be unavailable during this period. I'll start work on preparing detailed layout of OCCULT-2 during first half of April itself to make up for this lost time and then I can discuss more of details with mentors in May during community bonding period. I will have my vacations from **28th of April to 15th of July**. Apart from above mentioned involvements I am free to work on my project but if I get any emergency situation I'll communicate to my mentors and improvise.
 
 ### Eligibility
-Yes, I am eligible to receive payments from Google.
 
+Yes, I am eligible to receive payments from Google.
 
 [2]: https://github.com/sunpy/sunpy/pull/2365
 [3]:https://github.com/sunpy/sunpy/pull/2368

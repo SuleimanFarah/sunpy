@@ -9,6 +9,7 @@
 *Programming skills:* Python, some database knowledge would be helpful, but not required.
 
 #### Description
+
 The `database` module provides functionality to users to manage collections of files on disk in a way not reliant upon folder structure and file name.
 The database allows users to find files on disk by either physical parameters, such as wavelength and time or properties of the instrument such as name and spacecraft.
 It also allows more complex queries by enabling searches of the raw meta data associated with the files.
@@ -19,9 +20,7 @@ The improvements to the database functionality that would be implemented by this
 1. Support for relative paths in the database module [#783](https://github.com/sunpy/sunpy/issues/783) to allow a centralised database with multiple users, all referencing a central file store mounted with different absolute paths on each client.
 1. Supporting all data supported by the `sunpy.lightcurve` module in the database. The major hurdle here is the lack of standardisation in the file used by this data.
 
-There are various other maintenance tasks which need undertaking (https://github.com/sunpy/sunpy/labels/Database) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
-
-
+There are various other maintenance tasks which need undertaking (<https://github.com/sunpy/sunpy/labels/Database>) which would be a good way for someone interested in this project to familiarise themselves with the codebase.
 
 ### Integrating ChiantiPy and SunPy
 
@@ -33,7 +32,7 @@ There are various other maintenance tasks which need undertaking (https://github
 
 *Programming skills:* Python.
 
-####Description
+#### Description
 
 The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics. The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enabled the calculation of various parameters from this information. Using CHIANTI it is possible to calculate the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) from the observed elemental abundances and ionisation states.
 These synthetic spectra are essential for comparing to the data observed by various instruments to calculate the response functions of the instruments and to compare to the properties of observed plasma to allow the calculation of physical parameters such as temperature.
@@ -48,8 +47,6 @@ Other potential application of ChiantiPy in SunPy include:
 
 **Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) in producing and maintaining files required by the sunpy.instr.goes module for determining the thermodynamic properties of the emitting plasma observed by GOES.  It would also allow SunPy users to calculate spectra and exclusively through Python without relying on SSW.
 
-
-
 ### Support for analysis of Solar Energetic Particles
 
 *Suggested Mentor(s):* [David Pérez-Suárez](http://github.com/dpshelio), Timo Laitinen (University of Central Lancashire)
@@ -60,7 +57,7 @@ Other potential application of ChiantiPy in SunPy include:
 
 *Programming skills:* Python.
 
-####Description
+#### Description
 
 SunPy is able to read a lightcurve from different sources (GOES x-ray, Lyra, Norh,...), however these are not all.
 [Solar Energetic Particles](https://en.wikipedia.org/wiki/Solar_energetic_particles) (SEPs)
@@ -110,6 +107,7 @@ Read more about the data format, archive and visualisation examples in [[the pro
 *Programming skills:* Python
 
 #### Description
+
 The `Lightcurve` class is one of the three core datatypes in SunPy, along with Map and Spectra.
 `Lightcurve` is designed to read in, process and store meta data related to solar physics time series data.
 Currently, `Lightcurve` uses the pandas library as its underlying data structure, however, this is subject to change in the future.
@@ -133,10 +131,8 @@ Someone under taking this project will complete the following tasks:
 
 1. Become familiar with the `UnifiedDownloader` code, if it has not been accepted into the SunPy codebase, complete the remaining tasks for this to be achieved.
 1. Re-write any new lightcurve sources that were not included in the `UnifiedDownloader` code as sources for `UnifiedDownloader`.
-1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`. The API design for the factory class is here: https://github.com/sunpy/sunpy-SEP/pull/6
+1. Write a factory class for `lightcurve` similar to the `sunpy.map.Map` class. This class will be a generic constructor for `lightcurve` allowing the user to instantiate any one of the many subclasses of `GenericLightcurve` present in `sunpy.lightcurve.sources`. The API design for the factory class is here: <https://github.com/sunpy/sunpy-SEP/pull/6>
 1. Design and develop a robust method of dealing with lightcurve meta data, which can handle joining different parts of timeseries from different files, each with their own meta data. (See [#1122](https://github.com/sunpy/sunpy/issues/1122))
-
-
 
 ### IRIS, 4D Cubes and GUI
 
@@ -146,10 +142,9 @@ Someone under taking this project will complete the following tasks:
 
 *Astronomy knowledge needed:* None
 
-*Programming skills:* Python and basic knowledge of GUI design. 
+*Programming skills:* Python and basic knowledge of GUI design.
 
-
-#### Description:
+#### Description
 
 Recently, a new Sun observing satellite was launched, called [IRIS](http://iris.lmsal.com).
 It performs high-resolution, multi-wavelength observations of the solar atmosphere.
@@ -161,15 +156,15 @@ Using this language, a GUI was created called [CRISPEX](http://folk.uio.no/grega
 
 This project aims to create a smaller scale version that uses [Ginga](http://ejeschke.github.io/ginga/) as a backend.
 Ginga is a file viewer that was created with astrophysics in mind.
-It allows basic manipulation of FIT files, which are the standard data container in astrophysics. 
+It allows basic manipulation of FIT files, which are the standard data container in astrophysics.
 A Python plugin will be created and integrated into Ginga, allowing the user to open 3D/4D datasets and perform basic analysis, such as, slit extraction.
 
 To achieve this, a previous ESA summer project created a cube class.
 While it was finished, it was never integrated into SunPy.
-The code was created to hold and manipulate complex datatypes. 
+The code was created to hold and manipulate complex datatypes.
 It is similar in style to the SunPy Map Class and follows that convention.
-It however, has extra features enabling specific data formats to be extracted that the user requires, for example, a spectrum. 
-The student will need to become familiar with this code, as small tweaks need to occur before it is added to SunPy. 
+It however, has extra features enabling specific data formats to be extracted that the user requires, for example, a spectrum.
+The student will need to become familiar with this code, as small tweaks need to occur before it is added to SunPy.
 
 Finally, the plugin will be created using Python.
 However, a background in QT would ideally be needed but it is not necessary.
@@ -226,6 +221,7 @@ HDF5 files, or csv files.  It will also be important to allow users
 import their data through modules of their own.
 
 ## GUI to use LCT tools
+
 *Suggested Mentor(s):* [Jose Iván Campos Rozo](https://github.com/Hypnus1803) (National Astronomical Observatory, National University of Colombia), Santiago Vargas Domínguez (National Astronomical Observatory, National University of Colombia), [David Pérez Suárez](https://github.com/dpshelio).
 
 *Difficulty:* Intermediate
@@ -234,7 +230,8 @@ import their data through modules of their own.
 
 *Programming skills:* Python, basic knowledge of qt4, pyqt4, qt designer
 
-### Description:
-The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is https://github.com/Hypnus1803/flow_maps
+### Description
 
-*Expected Outcomes:* To integate efficiently the code in SunPy libraries. 
+The Local Correlation Tracking (LCT, November & Simon, 1988) technique is a robust method used to study the dynamics of structures in a time series of images. By tracking pixel displacements, using a correlation window, LCT can determine proper motions and generate flow maps of horizontal velocities. This procedure is used to study the dynamics of plasma in the solar photosphere at different spatial scales, e.g the analysis of granular and supergranular convective cells, meridional flows, etc. A widget implemented in Python was developed. It generates a user-friendly graphical user interface (GUI) to control various parameters for the process of calculating flow maps of proper motions for a series of filtergrams (data cube). Our purpose is to implement this tool in Sunpy using its structure and to improve it with some more options, i.e. masks, statistics, histograms, contours and multi-plots. Although an initial version is already developed, our proposal is to focus on the efficient integration of the code in the  SunPy libraries. The code (without widget files yet) is <https://github.com/Hypnus1803/flow_maps>
+
+*Expected Outcomes:* To integate efficiently the code in SunPy libraries.

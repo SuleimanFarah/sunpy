@@ -20,7 +20,7 @@ The objective of this project is to create an afiliated package which will
 provide high-level access to generalised algorithms such as but not limited to:
 
 * [CLEAN](http://adsabs.harvard.edu/abs/1974A%26AS...15..417H)
-* [Multiscale CLEAN](https://ieeexplore.ieee.org/document/4703304/) 
+* [Multiscale CLEAN](https://ieeexplore.ieee.org/document/4703304/)
 * [MEM](http://iopscience.iop.org/article/10.1086/498225)
 * PIXON [1](iopscience.iop.org/article/10.1086/133207), [2](adsabs.harvard.edu/abs/2001MNRAS.324..108E).
 
@@ -35,14 +35,14 @@ At the conclusion of this project the community will have access to well documen
 image reconstruction algorithms in python.
 
 Someone undertaking this project will specifically complete the following:
-1. Create suitable representation for generalised visibilities 
+
+1. Create suitable representation for generalised visibilities
 1. Implement CLEAN with sufficient documentation and tests
 1. Integrate the resulting images with the existing SunPy `sunpy.map.Map` object
 1. Investigate implementation of the advanced method(s).
 
 A successful proposal will demonstrate that the applicant has understood the
 project and present tasks and timeline for completion.
-
 
 ### sunkit-image
 
@@ -53,7 +53,6 @@ project and present tasks and timeline for completion.
 *Astronomy knowledge needed:* None
 
 *Programming skills:* Python
-
 
 In this project you would create the foundations of the 'sunkit-image' SunPy
 affiliated package, a package to contain image processing routines and
@@ -81,7 +80,6 @@ optional extras:
 6. Refactor and write a Python wrapper for [FLCT](https://arxiv.org/abs/0712.4289) [code](http://solarmuri.ssl.berkeley.edu/overview/publicdownloads/software.html).
 8. Implement image alignment using feature detection and tracking. [Example](http://scikit-image.org/docs/dev/auto_examples/features_detection/plot_brief.html)
 
-
 **Expected Outcomes**
 
 * Have copied in and documented and tested the MGN code.
@@ -89,4 +87,3 @@ optional extras:
 * Have implemented the Map warping code.
 * Have got the SunPy PR for coordinates in `sunpy.physics` merged.
 * Have implemented OCCULT-2.
-
