@@ -1,3 +1,39 @@
+## 4 May 2022
+
+### Agenda
+
+* Sign up for the coordination meeting! https://sunpy.org/project/meetings
+* Upcoming release of v4.0
+    * Need for RC2?
+    * More milestones?
+    * Anything that *really* needs to make it in?
+* PR Review
+
+### Notes
+
+* Coordination meeting
+    * Things to add to the website:
+        * hotels
+        * google map
+        * travel funding information
+    * Shane will look into costs for coffee/snacks
+        * Maybe can use numfocus money
+        * May need to collect small amount of cash from everyone
+    * Who do we want to invite from instrument teams?
+        * SolO--particularly in-situ stuff (EPD, RPW)
+        * PSP
+        * PUNCH
+        * EUVST
+        * Radio people--LOFAR, EOVSA, solar with ALMA
+        * would be nice to get as many in person as possible!
+    * Agenda
+        * have a relatively
+    * Breakdown of full session versus break out sessions?
+        * Main lecture hall
+        * 3 side rooms
+        * Maybe 1 office
+        * This will depend on number of participants and who comes
+
 ## 27 April 2022
 
 ### Agenda
