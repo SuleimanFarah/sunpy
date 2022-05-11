@@ -1,3 +1,21 @@
+## 11 May 2022
+
+### Agenda
+
+* PR Review
+
+### Notes
+
+* Please register for coordination meeting if you've not already
+    * If we don't have a true critical mass of in-person people, is it worth considering going virtual-only?
+* Frontiers Snakes on a Spaceship submission
+    * consensus is that we should submit something
+    * abstract deadline impending and submission deadline as well (29 July)
+    * Laura will contact Sophie re: scope of the papers
+    * Think about what we want to emphasize: what science does sunpy enable?
+* Also start thinking about another ApJ paper for v5.0...
+* Docs gallery refactor using things from Jupyterbook; see https://github.com/orgs/sunpy/projects/1
+
 ## 4 May 2022
 
 ### Agenda
