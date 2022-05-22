@@ -216,9 +216,9 @@ Talking to **[Daniel Garcia Briseno](https://github.com/dgarciabriseno)**, I fou
 
 The scraper client uses the URL scraper to find files on the remote server. The three components that are needed to make the Scraper client are
 
-* Attribute** Base Url**: [https://api.helioviewer.org/jp2/](https://api.helioviewer.org/jp2/)
+* Attribute **Base Url**: [https://api.helioviewer.org/jp2/](https://api.helioviewer.org/jp2/)
 
-* Attribute **Pattern: **This is a template that is used to extract the metadata from URLs matched by **Base Url**.
+* Attribute **Pattern**: This is a template that is used to extract the metadata from URLs matched by **Base Url**.
 
 For example, **[https://api.helioviewer.org/jp2/AIA/335/2012/01/29/](https://api.helioviewer.org/jp2/AIA/335/2012/01/29/)** this URL can be used to make a request, breaking it down we have this template
 
