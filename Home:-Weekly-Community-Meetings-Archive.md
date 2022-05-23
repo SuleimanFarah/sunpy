@@ -1,3 +1,30 @@
+## 18 May 2022
+
+### Agenda
+
+* Adopting sunpy-soar: Maintenence promises and precidents.
+    * Will got a response back from the help desk re: SOAR query errors--open up line of communication this way? or better for those closer to SolO (i.e. Laura/Shane) to make this contact
+* Presence at TESS
+    * SunPy after-hours tutorial per usual?
+    * Do we have money/space to do this? Would SPD/AAS allow it?
+        * Who do we contact about this?
+        * Too late in the game?
+    * "New contributor" mini workshop?
+        * Anatomy of a sunpy contribution
+        * Do a live PR submission and review cycle
+        * Rather than demoing how to use sunpy, how to contribute to sunpy
+        * Emphasis on contributions that are not just code too!
+        * Can we resonably do this in a few hours?
+* PR Review
+
+### Notes
+
+* Nabil: move all external clients besides JSOC and VSO to an external package?
+    * Enables us to make changes to these clients not on a usual sunpy release cycle
+    * No new clients in core?
+* Will needs to follow up with TESS organizers re: getting space for workshop
+    * Seems to be universally agreed upon that this is a good idea
+
 ## 11 May 2022
 
 ### Agenda
