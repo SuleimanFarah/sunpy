@@ -22,6 +22,7 @@
 * Nabil: move all external clients besides JSOC and VSO to an external package?
     * Enables us to make changes to these clients not on a usual sunpy release cycle
     * No new clients in core?
+* Will and Stuart to meet in person with SOAR team at ESAC in late May
 * Will needs to follow up with TESS organizers re: getting space for workshop
     * Seems to be universally agreed upon that this is a good idea
 
