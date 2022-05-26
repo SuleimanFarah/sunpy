@@ -1,3 +1,37 @@
+## 25 May 2022
+
+### Agenda
+
+* ASV Demo for Albert?
+    * "Getting Started with ASV"
+* Presence at TESS
+* Draft of abstract for Frontiers article
+* Should we support integer data?
+    * See Will's issue about rotate and `missing=NaN`
+* Meta (Steve)
+* PR Review
+
+### Notes
+
+* Presence at TESS
+    * Email organizers and ask for room (Dale Gary is a good first contact)
+    * Charge? Use SPD money for things like this..
+    * Hybrid meeting? Should we figure out how to broadcast this regardless?
+    * Is this a good idea?
+        * SC: still continegent of people that know nothing about SunPy
+        * The distribution of advanced/beginners is bimodal
+        * Formal/informal discussion: discussion of what you like/dislike about SunPy, anatomy of a PR
+    * Live poll for questions
+        * Some way to capture the feedback we get from the community
+* Frontiers abstract (https://www.frontiersin.org/research-topics/33555/snakes-on-a-spaceship-an-overview-of-python-in-space-physics)
+    * Outline the difference between the package and project
+    * Say what is in core, what are the primary capabilities (coordinates, data download, data structures)
+    * Summarize the current affiliated package landscape (new ones! aiapy, pfsspy) as well as possilby new affiliated packages? (e.g. sunxspex, fiasco, ....)
+        * Probably worth summarizing our affiliated package review process as this is new post our 1.0 paper...
+    * what is our vision for the future (e.g. standardizing on NDCube)
+    * Better support for reprojection
+    * Up and coming high level features: rebasing on NDCube, metadata model, scalable performance with Dask
+
 ## 18 May 2022
 
 ### Agenda
