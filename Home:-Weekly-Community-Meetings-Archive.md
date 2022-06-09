@@ -1,3 +1,47 @@
+## 8 June 2022
+
+### Agenda
+
+* PyHC Summer School Debrief (Will and Stuart)
+* [SunPy Frontiers paper](https://www.frontiersin.org/research-topics/33555/snakes-on-a-spaceship-an-overview-of-python-in-space-physics)
+    * Due **29 July**--we should begin a draft now
+    * Will submitted the abstract with Stuart, Nabil, and Laura as coauthors (Authorship on the paper itself can be changed at time of submission)
+    * This is a high-level overview of the package and affiliated packages (little to no implementation detail)
+    * This is going to be [expensive](https://www.frontiersin.org/about/publishing-fees)--is it worth it?
+* Presence at TESS
+    * Response from SPD: we can have a shorter afternoon session or a longer evening session
+    * Latter may compete with other evening events
+    * Need to decide ASAP
+* SunPy nuggets
+    * Put call out for people who have done interesting things with SunPy
+    * Publish a (short!) blog post summarizing what they've done as notebooks
+    * Stuart suggests having a few in the pipe before we start putting them up
+    * Could give them on a DOI via Zenodo such that they're citable (people can get credit!)
+* Coordination meeting planning
+    * Check in with Shane re: LOC things
+    * [Agenda](https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit): ideally we would firm this up by **1 July**
+* PR Review
+
+### Notes
+
+* SunPy Frontiers paper
+    * Can use ROSES money
+    * there is confusion about core versus affiliated package--good to have something to point people towards
+    * can use the text from the ROSES proposal as a starting point
+    * Laura will create Overleaf template--move to GH later
+* SO/PyHC wrap up
+    * Lots of interest in contributing to SunPy from those at SO Workshop
+    * support for SO in-situ data is an area we need to improve in--lots of demand!
+    * Established relationship with SOAR--hopefully close loop when users report problems to us
+    * Laura said some people at SO Workshop still using HelioPy for in-situ data--should identify what functionality in HelioPy has not been covered by other packages
+* TESS
+    * Albert suggested asking participants for 1 slide showing a cool things (i.e. research) they've done with SunPy
+    * Maybe use this as a jumping off point for a community forum about what functionality users want to see in SunPy
+    * We want to keep this relatively high-level--should not turn into a tech support session (but gladly will do that other times throughout the week!)
+    * Suggestion was that Monday evening would probably be best--people still energized and then gives them rest of week to think about any other problems they want to discuss
+    * Could even hold "SunPy office hours" during coffee breaks (very informally)
+
+
 ## 25 May 2022
 
 ### Agenda
