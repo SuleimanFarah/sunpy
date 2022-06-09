@@ -29,6 +29,7 @@
     * there is confusion about core versus affiliated package--good to have something to point people towards
     * can use the text from the ROSES proposal as a starting point
     * Laura will create Overleaf template--move to GH later
+    * Should think about using showyourwork: https://show-your.work/en/latest/
 * SO/PyHC wrap up
     * Lots of interest in contributing to SunPy from those at SO Workshop
     * support for SO in-situ data is an area we need to improve in--lots of demand!
