@@ -1,3 +1,34 @@
+## 15 June 2022
+
+### Agenda
+
+* TESS Meeting session
+    * Aiming for a ~2 hr session Monday evening
+    * will cost $650 but should be able to pay with SPD money
+    * unknown if remote participation will be possible (it is not a hybrid meeting...)
+    * Thoughts?
+        > Title: SunPy Showcase and Community Forum
+        > Description: We invite members of the solar physics community to showcase the interesting ways that they've used SunPy in their research and to contribute feedback to guide the direction of the package and the future of the SunPy ecosystem. The first half of this session will feature a lightning talk round in which users are invited to present a single slide for 3 minutes showcasing how they've made use of SunPy in their research. In the second half of this session, we will hold a community forum to discuss how the solar physics community at large is making use of the SunPy ecosystem, with the discussion informed by the preceding presentations on uses of SunPy. Several core SunPy maintainers will be present to give a brief introduction to the ecosystem and guide discussion. In particular, we would like to know where researchers are making use of SunPy, where they are not using SunPy, and where they feel the strengths and weaknesses of the ecosystem are. We invite all members of the solar physics community to contribute feedback on the current state of the SunPy ecosystem, whether they are actively using Python and SunPy or not. Additionally, we encourage participation and contributions from both senior and early-career members of the community.
+* Coordination meeting planning
+    * Check in with Shane re: LOC things
+    * What do we need to do "on the ground" prior to the meeting?
+    * [Agenda](https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit): ideally we would firm this up by **1 July**
+    * Accomodation? 
+* Oh god `draw_` methods make it stop: https://github.com/sunpy/sunpy/pull/6251#pullrequestreview-1006105303
+* PR Review
+
+### Notes
+
+* coordination meeting
+    * user feedback session from those at DIAS/Trinity
+    * coffee catered, lunch we will go out (adhere to schedule for sake of remote participants)
+    * Shane will chase down guest Wi-Fi codes
+    * IT needs--Stuart will handle machine for streaming to Jitsi, Shane to contact IT about audio in the room
+    * need to set agenda soon-ish--Will and Stuart to draft agenda, people can add to it as they see fit; main motivation is that participants coming in for only a session or two know when they need to drop in
+* Draw methods
+    * proliferation of GenericMap API--too much code in mapbase (Stuart)
+    * Can we just move all `draw_*` methods to visualization?
+
 ## 8 June 2022
 
 ### Agenda
