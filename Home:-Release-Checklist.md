@@ -45,13 +45,13 @@ git tag -a vX.Y.Z -m "Releasing version vX.Y.Z"
 git push --follow-tags upstream vX.Y.Z
 ```
 
-This triggers the Azure release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
+This triggers the GitHub Actions release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
 
-If there is an issue at this step, the fix will be to update the config in the [azure template repo](https://github.com/OpenAstronomy/azure-pipelines-templates), a patch to this repository should only happen if somehow the inputs to the template need to be changed.
+If there is an issue at this step, the fix will be to update the config in the [github actions workflows repo](https://github.com/OpenAstronomy/github-actions-workflows), a patch to this repository should only happen if somehow the inputs to the template need to be changed.
 Since we use tags, you will to update the tag and force push it.
-Then (re)start the tag job on [azure pipelines](https://dev.azure.com/sunpy/sunpy/_build?definitionId=4).
+This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/sunpy/actions)
 
-- [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), ideally a bot should do it for you
+- [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), the bot will do it (normally) but can be slow.
 
 **After Release:**
 
