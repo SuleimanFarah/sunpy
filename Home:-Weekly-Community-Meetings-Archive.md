@@ -1,3 +1,38 @@
+## 29 June 2022
+
+### Agenda
+
+* Frontiers Paper Progress
+* Coordination Meeting agenda
+* PR Review
+
+### Notes
+
+* Frontiers paper progress
+    * Will will add text from proposal
+    * Will and Nabil to reorganize that text
+    * Need to think about a coherent way to present affiliated package organization and justify/flesh out our philosophy
+* Coordination meeting agenda
+    * See the agenda doc [here](https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit)
+    * Instrument Team Day notes:
+        * Instrument presentations (state of analysis tools, show us what you're doing)
+            * HERMES (Steven Christe) -- instrument package template
+        * Feedback forum
+            * First, focus on functionality
+            * Then, foucus on standards
+            * It is on us to demonstrate why an instrument package would want to foster interoperability
+                * We should demonstrate why playing in the ecosystem benefits an instrument team
+                * "Why would you want to use sunpy"
+                * This is mostly focused on user-tools, but what about processing pipelines as well?
+                    * HERMES, PUNCH, MUSE conversation
+            * We want to build an ecosystem
+            * How close to the ecosystem do you want to be?
+                * being in the ecosystem doesn't necessarily mean being an affiliated package
+            * Where are the gaps
+            * What could sunpy be doing better?
+            * Are our affiliated package requirements too onerous?
+            * Feedback on the affiliated package requirements/process?
+
 ## 15 June 2022
 
 ### Agenda
