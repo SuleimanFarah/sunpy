@@ -1,3 +1,18 @@
+## 6 July 2022
+
+### Agenda
+
+* TESS Session--finalized for Wednesday evening (8/10)
+* SunPy Tutorial at SPHERE Workshop
+* Finalize Coordination Meeting Schedule
+    * We should post a first draft of this on the webpage by the end of the week
+    * https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit
+* Thoughts on correspondence with instrument teams
+    * https://demo.hedgedoc.org/aaeE1nMxQ-yhRCcvuEvbAw?view
+* PR Review
+    * [#6323](https://github.com/sunpy/sunpy/pull/6323) has generated a lot of dicsussion
+    * [#6262](https://github.com/sunpy/sunpy/pull/6262)
+
 ## 29 June 2022
 
 ### Agenda
