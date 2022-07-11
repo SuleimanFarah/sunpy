@@ -2,6 +2,7 @@
 
 - [ ] Ensure What's New have been finalised at feature freeze time.
 - [ ] Do a conda-forge build for at least one of the release candidates.
+- [ ] Check license end year and update if needed.
 
 **Before release candidate releases:**
 
