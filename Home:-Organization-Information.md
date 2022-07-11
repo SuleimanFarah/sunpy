@@ -18,6 +18,14 @@ An overview of the team project is found on the [SunPy website](https://sunpy.or
 ## Minutes of SunPy board meetings
 
 <details>
+<summary>2022 (1)</summary>
+
+[[Board Meeting 2022-06-24 | Minutes of SunPy Board Meeting 20220624]]
+
+</details>
+
+
+<details>
 <summary>2021 (1)</summary>
 
 [[Board Meeting 2021-11-19 | Minutes of SunPy Board Meeting 20211119]]
