@@ -1,3 +1,27 @@
+## 20 July 2022
+
+### Agenda
+
+* Frontiers paper deadline is now 31 August
+* Coordination meeting logistics
+    * Coffee
+    * Remote participation setup
+    * Others?
+* TESS Session Planning
+    * 6-7:30 PM on 10 August (Wednesday)
+    * Rough outline of program
+    * Advertise session (Twitter, mailing lists, etc.)
+* Notes from SciPy?
+* PR Review
+
+### Notes
+
+* Frontiers paper delayed
+* Error messages re: failed downloads
+    * What's the best way to propagate information to the user about failed downloads/unavailable servers?
+    * Need to close loop between users and upstream data providers
+    * Better error messages spit out by Fido?
+
 ## 6 July 2022
 
 ### Agenda
