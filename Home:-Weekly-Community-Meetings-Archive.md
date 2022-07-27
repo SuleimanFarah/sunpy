@@ -1,3 +1,42 @@
+## 27 July 2022
+
+### Agenda
+
+* Recent bugfix release (3.1.8)
+    * Thanks Nabil and David!
+    * User feedback pointed this bug out to us and it was fixed in ~hours, released in days
+    * A success story!
+* TESS Session Planning
+    * Tweet (Laura/Stuart)
+    * Solar News/UKSP (Will)
+    * Discussion questions for second half of session
+* Coordination meeting logistics
+    * Coffee
+    * Remote participation setup
+    * Instrument working group
+    * Others?
+* PR Review
+
+### Notes
+
+* TESS Session Planning
+    * Will: Put together slides for guiding discussion
+    * Discussion questions for second half of session
+        * What has been your experience using SunPy? The good? The bad?
+        * What is missing from SunPy that you would like to see?
+        * What would you like to be able to do with SunPy that you can't currently do?
+        * What do you think about SunPy’s online documentation and examples?
+        * If you’re using Python packages in place of SunPy for your solar physics data analysis, why is that?
+        * Do you know how to contact SunPy if you have a question?
+        * Do you know what PyHC is?
+        * Do you use SunPy with other parts of the PyHC ecosystem?
+* Coordination Meeting planning
+    * Need to add an item for roadmap discussion
+    * Who to invite for scalable computing discussion
+        * Raphael Attie
+        * Brian Thomas (and ask anyone from APL...Sandy Antunes, John Vandegriff)
+        * Mark Cheung / Paul Wright
+
 ## 20 July 2022
 
 ### Agenda
