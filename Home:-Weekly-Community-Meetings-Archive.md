@@ -1,3 +1,32 @@
+## 3 August 2022
+
+### Agenda
+
+* AGU Abstract (due today!!)
+    * https://demo.hedgedoc.org/I2tJv-heQia0n2nlqgOJpA#
+* TESS Session Planning
+    * Another Tweet on Monday (i.e. the first day of the meeting)
+* Coordination meeting logistics
+    * Coffee
+    * Remote participation setup--what needs to be done on the ground before we get there?
+    * Instrument working group
+    * Finalize agenda by 15 August
+    * Identify a discussion lead for each session by 15 August
+    * Another Twitter announcement--when?
+    * Others?
+* Contributor/Reviewer Checklist
+    * Build contributor checklist from this: https://github.com/sunpy/sunpy/pull/6346
+    * Reviewer checklist as well? Maybe auto-generated once the PR is moved from "draft" to "ready for review"?
+* Backport bot
+* Infrastructure priorities
+
+### Notes
+
+* Coordination meeting
+    * Stuart to follow up with Shane re: setup for streaming
+    * Coffee can be expensed to OpenCollective, but we need to figure out where to buy it...
+    * Agenda still needs some shuffling around
+
 ## 27 July 2022
 
 ### Agenda
