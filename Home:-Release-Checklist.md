@@ -12,10 +12,15 @@
 
 **Before release:**
 
+Set the release version environment variable:
+```
+export SUNPY_VERSION="X.Y.Z"
+```
+
 - [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/) (not for rc releases):
 
 ```
-towncrier build --version X.Y.Z
+towncrier build --version $SUNPY_VERSION
 ```
 
 **if it's a rc release do not do this**, the changelog is only rendered automatically in the documentation for pre-releases.
@@ -24,7 +29,7 @@ towncrier build --version X.Y.Z
 
 ```
 git add .
-git commit -m "Release vX.Y.Z"
+git commit -m "Release v$SUNPY_VERSION"
 ```
 
 - [ ] Push directly to the release branch on SunPy
@@ -42,8 +47,8 @@ If you need to fix anything do so on the branch and forward port to main as need
 
 ```
 git checkout X.Y
-git tag -a vX.Y.Z -m "Releasing version vX.Y.Z"
-git push --follow-tags upstream vX.Y.Z
+git tag -a v$SUNPY_VERSION -m "Releasing version v$SUNPY_VERSION"
+git push --follow-tags upstream v$SUNPY_VERSION
 ```
 
 This triggers the GitHub Actions release pipeline which will build and test the wheels and dist then upload them to PyPi for you.
