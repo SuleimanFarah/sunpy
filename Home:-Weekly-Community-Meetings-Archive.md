@@ -1,3 +1,22 @@
+## 17 August 2022
+
+### Agenda
+
+* After action report from TESS
+* Coordination meeting logistics
+    * Coffee??? We at least need a plan for where it will be picked up from
+    * Remote participation setup--what needs to be done on the ground before we get there?
+    * Identify a presenter for each session
+        * Master running notes doc: https://demo.hedgedoc.org/fqLNg0xpStac_M9v92v99Q?edit
+        * Everyone can contribute notes here
+        * Post this on the meeting webpage
+    * Another Twitter announcement--when?
+    * Others?
+* PR Review
+
+### Notes
+
+
 ## 3 August 2022
 
 ### Agenda
