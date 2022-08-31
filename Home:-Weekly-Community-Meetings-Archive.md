@@ -1,3 +1,51 @@
+## 31 August 2022
+
+### Agenda
+
+* Welcome to newcomers
+* Frontiers paper status
+    * We've been given an extension until mid October (no more extending!!)
+    * TODO: divvy up sections and start writing
+    * TODO: make a "science-y" figure
+    * TODO: make a figure laying out project structure
+* Small development grant application: https://docs.google.com/document/d/1bS6mFd3XJ7cbHvgpPfdVmFLFErLOEYqeeN_ndeLQNY4/edit
+* PR Review
+    *  Make sure data examples achieve a single task #6384: https://github.com/sunpy/sunpy/pull/6384
+    *   Deprecate timeseries peek() positional arguments #6310: https://github.com/sunpy/sunpy/pull/6310
+    *   Mask values when reading CDF files #5956: https://github.com/sunpy/sunpy/pull/5956
+
+### Notes
+
+- Discussion about https://github.com/sunpy/ndcube/pull/541
+    - Suffers from issues with dask bringing arrays into memory
+- Frontiers paper
+    - Deadline is mid-October
+    - Discussed plan of action for dividing up work
+    - Divided up work
+- Discussion on affiliated/sponsored nomenclature
+    - present: Will, David, Nabil, Alasdair (Jack, Laura and Danny present for some but dropped off before the discussion concluded)
+    - use of the terms "affiliated" and "sponsored" is (potentially) confusing
+    - everything is an "affiliated" package
+    - those that are maintained by the project are sponsored packages, i.e. the project is responsible for their maintenance and direction
+    - affiliated packages are maintained by the community (not necessarily the project) and must meet criteria for being an affiliated package as established by our affiliated package criteria: https://sunpy.org/project/affiliated
+    - It was proposed that we make the following changes to the nomenclature around our package structure:
+        - Do away with the terms "sponsored" and "affiliated"
+        - Define "The SunPy Ecosystem" to include all packages which we previously considered "affiliated"
+        - The requirements to be part of the Ecosystem would be the same as those laid out by the current affiliated package requirements
+        - On our website, we would then list each package in the Ecosystem and list who maintains it.
+        - Those packages previously referred to as "sponsored" would just be listed as maintained by "The SunPy Project" (e.g. sunpy, ndcube) 
+        - All others would list the appropriate person/organization as their maintainer (e.g. David Stansby for pfsspy)
+        - The core package (sunpy) is part of the ecosystem
+        - If we want to make this change, it would require a new SEP or changes to the existing affiliated package SEP
+    - Regarding Figure 1 for the Frontiers paper
+        - it was suggested that we have an umbrella labeled "The SunPy Ecosystem" and then have all packages underneath, including the core package
+        - these could be grouped by functionality but perhaps not explicitly so
+        - All packages live under the umbrella
+        - We seemed to decide that we don't want to indicate any sort of hierarchy in this figure
+        - Nabil suggested we should start thinking about logos for the other packages in the ecosystem
+    - It was suggested that we may want to have a separate logo for the package and the ecosystem
+        - Keep the current logo for the package, come up with alternate logo for ecosystem?
+
 ## 17 August 2022
 
 ### Agenda
