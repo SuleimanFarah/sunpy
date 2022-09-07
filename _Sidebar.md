@@ -4,7 +4,7 @@
   * [Organization Information](./Home%3A-Organization-Information)
   * [Weekly Community Meetings](./Home%3A-Weekly-Community-Meetings)
   * [Weekly Community Meetings Archive](./Home%3A-Weekly-Community-Meetings-Archive)
-  * [Adding the Backport Bot to a New Repo](./Home%3A-Backport-Bot.md)
+  * [Adding the Backport Bot to a New Repo](./Home%3A-Backport-Bot)
   * [Wiki Maintenance](./Home%3A-Wiki-Maintenance)
 * [Core Package](./Core)
   * [Release Checklist](./Core%3A-Release-Checklist)
