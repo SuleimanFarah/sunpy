@@ -48,4 +48,5 @@ $RECYCLE.BIN/
 .history
 .vscode
 
-
+node_modules/
+package*.json
