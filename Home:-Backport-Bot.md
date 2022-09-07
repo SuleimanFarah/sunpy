@@ -1,7 +1,7 @@
 # Backport Bot
 
 This page describes how to add the backport bot to a new repo, you will need to
-be a GitHub org admin to do this.
+be a repo admin to do this.
 
 If you want to know why and how the backport bot works see the 
 [developer guide](https://docs.sunpy.org/en/latest/dev_guide/contents/backports.html).
@@ -13,7 +13,7 @@ The backport bot we currently use is
 
 ### Preparing the Repo
 
-Before unleasing the bot upon the repo you need to setup a few things.
+Before unleashing the bot upon the repo you need to setup a few things.
 
 1) Labels
 
