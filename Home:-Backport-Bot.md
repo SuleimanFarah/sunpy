@@ -13,7 +13,7 @@ The backport bot we currently use is
 
 ### Preparing the Repo
 
-Before unleasing the bot upon the repo you need to setup a few things.
+Before unleashing the bot upon the repo you need to setup a few things.
 
 1) Labels
 
