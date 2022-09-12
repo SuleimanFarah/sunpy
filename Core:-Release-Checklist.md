@@ -38,8 +38,10 @@ git commit -m "Release v$SUNPY_VERSION"
 git push upstream X.Y
 ```
 
+
 - [ ] Check that the CI passes on last commit on the branch (including the wheel builds).
 - [ ] Test that RTD is building the documentation correctly on the branch.
+***
 
 If you need to fix anything do so on the branch and forward port to main as need be (to reduce the CI builds).
 
@@ -60,7 +62,7 @@ This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/s
 - [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), the bot will do it (normally) but can be slow.
 
 **After Release:**
-
+***
 - [ ] Make sure all builds of sunpy are complete and uploaded (conda-forge and wheels)
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc --wrap=none -t markdown_strict CHANGELOG.rst`.
 - [ ] Ensure the tag has built on read the docs and the "stable" marker has been updated. **Ensure that all the gallery examples have built correctly, restart the build if not**.
