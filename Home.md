@@ -14,8 +14,8 @@ More information about [installation](https://docs.sunpy.org/en/stable/guide/ins
 * [Feature Wishlist](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22)
 * [Pull Request Review Procedure](https://docs.sunpy.org/en/latest/dev_guide/contents/pr_review_procedure.html#review-process)
 * [Roadmap](https://github.com/sunpy/roadmap)
-* [[Feature Freeze Checklist | Home: Feature Freeze Checklist]]
-* [[Release Checklist | Home: Release Checklist]]
+* [[Feature Freeze Checklist | Core: Feature Freeze Checklist]]
+* [[Release Checklist | Core: Release Checklist]]
 * Detailed wiki pages
   * [Coordinate systems](https://github.com/sunpy/sunpy/wiki/Coordinate-systems)
 
