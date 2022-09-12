@@ -39,8 +39,8 @@ git push upstream X.Y
 ```
 
 
-- [ ] Check that the CI passes on last commit on the branch (including the wheel builds).
-- [ ] Test that RTD is building the documentation correctly on the branch.
+- [ ] Check that the [GitHub actions build](https://github.com/sunpy/sunpy/actions) passes on last commit on the branch (including the wheel builds).
+- [ ] Test that [readthedocs build](https://readthedocs.org/projects/sunpy/builds/) is building the documentation correctly on the branch.
 ***
 
 If you need to fix anything do so on the branch and forward port to main as need be (to reduce the CI builds).
