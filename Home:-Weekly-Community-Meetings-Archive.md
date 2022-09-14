@@ -1,3 +1,72 @@
+## 14 September 2022
+
+### Agenda
+
+* Welcome to newcomers
+* Standardized Metadata SEP: https://github.com/sunpy/sunpy-SEP/pull/61
+* Frontiers paper status
+* ASV
+    * Status Albert's PR: https://github.com/sunpy/sunpy/pull/6392
+    * What does this look like on PRs?
+    * What is the role of ASV in our workflow?
+    * How do we use ASV to evaluate PRs? visually? quantitatively?
+* PR Review
+    *  Make sure data examples achieve a single task #6384: https://github.com/sunpy/sunpy/pull/6384
+    *  Deprecate timeseries peek() positional arguments #6310: https://github.com/sunpy/sunpy/pull/6310
+
+### Notes
+
+* Metadata SEP Discussion
+    * Question of whether this should be done in SunPy
+    * This is an ontology defined in Python objects
+    * Trade study on existing ontologies and understand which ones are useful before completely inventing a new one
+    * We want complext Python objects--do we also want the components blown out as separate attributes to be accessed?
+        * e.g. distance from the Sun to observer as its own property
+    * Living document that can be updated as we find more metadata that should be part of the standard
+        * Common metadata that people want
+        * Should it be an SEP?
+        * Is it an ontology if it is constantly being added to?
+        * What is the criteria for adding to this metadata "standard"?
+    * Not all metadata objects have to use all of these
+        * but if they do use that, they should use this name
+    * Provides a vocabulary with expected return types and also meanings
+    * We should leave WCS out of this (a harder problem to solve)
+    * Map kind of already does this, we use the Map properties as an informal/implicit metadata standard
+    * This is just formalizing that existing vocabulary
+    * Can we at least agree on the names?
+        * Then maybe take a stab at implementing it in Map and see how it goes
+    * What existing solar/heliophysics vocabularies can we pull from?
+        * VSO - https://umbra.nascom.nasa.gov/vso/docs/dm_1.8.html
+        * EGSO - https://hesperia.gsfc.nasa.gov/ssw/vobs/egso/doc/EGSO.Data.Model.v1.4.pdf
+        * SPASE - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018SW002038
+        * HAPI - https://github.com/hapi-server/data-specification/blob/master/hapi-3.0.0/HAPI-data-access-spec-3.0.0.md
+    * More general astrophysics vocabularies
+        * UCD - https://ivoa.net/documents/UCD1+/20210616/EN-UCDlist-1.4-20210616.html
+        * IVOA - https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaDataModel 
+        
+* Kevin is working with three graduate students taking a course on scientific software engineering who are looking for a semester-long software project 
+    * Where is the best place to contribute?
+    * Concern about amount of work on the side of the maintainers
+    * Open PRs early, come talk to us early
+    * December deadline for the course
+    * Engage with the process from the beginning
+    * David just opened a bunch of issues on `sunkit-instruments` that are scoped relatively small--good intro to opening a PR, making a contribution
+    * Dan has mentioned that `ndcube` has some less esoteric issues open at the moment as well
+    * See the "Good First Issue" tag on multiple repos
+    * Also see Newcomer's Guide: https://docs.sunpy.org/en/latest/dev_guide/contents/newcomers.html
+    * Potential projects
+        * `sunkit-image`
+            * limb darkening: https://github.com/sunpy/sunkit-image/issues/68
+            * NAFE: https://github.com/sunpy/sunkit-image/issues/6
+            * https://github.com/sunpy/sunkit-image/issues/10
+            * STARA: https://github.com/sunpy/sunkit-image/issues/37
+        * GOES EM/T functions in `sunkit-instruments` (Dan/Laura)
+        * Refactor of spectral fitting code in `sunkit-spex` (Dan/Shane)
+        * Adding resampling and/or arithmetic operations to NDCube (Dan)
+* Paper discussion
+    * Continue with use of "affiliated"
+    * Aim to have a full draft by end of September; will give us two weeks to iterate, make corrections before submitting ~15 October
+
 ## 31 August 2022
 
 ### Agenda
