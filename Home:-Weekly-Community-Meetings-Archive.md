@@ -1,3 +1,12 @@
+## 20 September 2022
+
+### Agenda
+
+* Roadmap
+* Solo Workshop
+* ndcube releases
+* PR Review
+
 ## 14 September 2022
 
 ### Agenda
