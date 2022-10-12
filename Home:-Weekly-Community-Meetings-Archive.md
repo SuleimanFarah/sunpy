@@ -1,3 +1,54 @@
+## 12 October 2022
+
+### Agenda + minutes
+
+* Welcome to Newcomers
+* Paper progress
+    * Lots of content is there
+    * Still needs lots of tidying up though
+    * Deadline for final draft EOB Friday (14th Oct)
+    * Will be submitted a week today (19th Oct)
+* Devstats are live: https://devstats.scientific-python.org/_generated/sunpy.html
+    * Anything else we would want to see on this dashboard?
+    * e.g. plots from our previous papers?
+* Sprint Planning
+    * Bi-monthly or quarterly
+    * Lasting 1 day (starting in Europe, ending on West Coast)
+    * Intention is two-fold
+        * Get core devs working semi-synchronously for a confined period of time on a regular basis
+        * Onboard new contributors (advertise on Twitter, AAS News, etc.)
+    * Scope out sprints ahead of time
+        * Structured, but not too structured...
+    * Temper expectations appropriately
+* SunPy Office Hours at GSFC
+* DEMs in Python
+* PR Review
+
+### Notes
+
+* What is the PyHC story?
+    * Steve asks if there has been any progress agreement on standards for units, time, coordinates
+    * Thus far, no progress...
+    * There is a movement to have connectors between them, but no standards thus far
+* xrtpy
+    * ask them to join the sunpy channel
+    * what can we do to better support them
+    * also follow up on involving them in the instrument working group
+    * There is also the "Instrument Working Group" channel
+    * Reach out to Joy and Nick (maybe ask them if they would want to present at a community meeting?)
+* DEMs
+    * David will be working on DEMs for two weeks after first of the year
+    * Documenting and wrapping current routines
+    * Maybe implement MCMC version (time permitting)
+    * Setup a call for others to weigh in towards the end of the year
+* Packaging in Python
+    * poetry
+    * Stuart has issue with non-setuptools setups not supporting "-e" option
+    * interesting, but too new?
+    * We can use modern setuptools stuff and get most of the way there
+    * Don't need a `setup.py` file to use setuptools
+
+
 ## 20 September 2022
 
 ### Agenda
