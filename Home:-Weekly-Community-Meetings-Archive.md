@@ -1,3 +1,29 @@
+## 19 October 2022
+
+### Agenda + minutes
+
+* Welcome to Newcomers
+* Paper wrap-up
+    * Almost done
+    * Submit by tomorrow (if at all possible)
+* PR Review
+    * Feature freeze is Friday (!)
+    * What PRs need reviews?
+    * Anything that we really want in 4.1 that has not been opened yet?
+    * Review deprecations to make sure we've removed everything
+
+### Notes
+
+- Frontiers paper
+    - Submit by Friday at lunch time
+    - Jack reading over this afternoon
+    - Will wrapping up the roadmap/governance and community section
+    - Final read throughs today and tomorrow
+- Feature freeze is Friday (10/21)
+    - PRs that make it into 4.1 should be opened by Friday and reasonably close to complete
+- Extended debate about `__author__`/`__email__` tags
+    - See https://github.com/sunpy/sunpy/issues/3650
+
 ## 12 October 2022
 
 ### Agenda + minutes
