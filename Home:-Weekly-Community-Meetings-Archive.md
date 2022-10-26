@@ -1,3 +1,52 @@
+## 26 October 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* Database deprecation announcement
+    * https://hackmd.io/@5tUXI9ejSAmY27nKY7SvAA/BJW2JKLEi
+* Docs Sprint Planning
+    * Diátaxis refactor is large
+    * We should figure out a day where we are all working on components of this refactor
+    * Scope out a plan before hand
+    * Preferably before the end of year
+    * Possible dates--need a poll here
+        * 4 November
+        * 16 November
+        * 18 November
+        * 5 December
+        * 8 December
+* Governance Updates
+* PR Review
+    * Priority list for 4.1: https://github.com/sunpy/sunpy/milestone/90
+
+
+### Notes
+
+- JSOC cutout example failing; disable it for now
+    - Should nail down what exactly is failing--download or the actual query service?
+    - It looks like its actually the initial VSO query that is failing
+- Remove sunpy-dev
+
+#### Database deprecation plan
+
+- Pending deprecation warning
+- Nabil posted to mailing list, no responses
+
+#### Docs refactor discussion
+- Use sample data for HMI magnetogram upside down example
+- Should have a "How-to" for downloading HMI magnetogram data
+    - This uses `physobs.los_magnetic_field` which may not be obvious
+- Stuart thinks most gallery examples should be how-tos, not tutorials
+- We need a larger-scale plan about how to accomplish this
+- There still seems to be some confusion about terminology in the diátaxis
+  - Need both common agreement and common understanding before moving forward
+- We should come up with some sort of minimal example of this applied to our docs
+  - e.g. splitting out gallery examples into how-tos and tutorials
+  - taking some of the coordinates pages and splitting them into the four quadrants
+
+
+
 ## 19 October 2022
 
 ### Agenda + minutes
