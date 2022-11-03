@@ -1,3 +1,26 @@
+## 2 November 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* DST and meeting time
+* Status of 4.1 release
+* Docs sprint doodle: https://doodle.com/meeting/participate/id/b2xxQnAe
+* SunPy LINCC talk next week: https://www.lsstcorporation.org/lincc/tech-talks
+* Reviews on `eispac` PRs
+    * Fido client: https://github.com/USNavalResearchLaboratory/eispac/pull/31
+    * Map source: https://github.com/USNavalResearchLaboratory/eispac/pull/50
+* PR Review
+
+### Notes
+
+- radiospectra discussion
+- pydantic???
+- `header_helper` discusssion
+    - should we provide an additional namespace now that we have multiple helpers
+    - proliferation of namespaces but also of things that live under the `.map` namespace
+    - decided that since there are likely to be more header helpers, makes sense for them to live under their own namespace
+
 ## 26 October 2022
 
 ### Agenda
