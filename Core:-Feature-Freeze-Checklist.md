@@ -46,7 +46,7 @@ Once this is done there is a couple of things left to do before the first rc rel
 
 ## Pre-releases
 
-Making a pre-release (normally we just use "release candidate" `rcZ` versions) should follow the normal release procedure: <https://github.com/sunpy/sunpy/wiki/Home:-Release-Checklist>
+Making a pre-release (normally we just use "release candidate" `rcZ` versions) should follow the normal release procedure: <https://github.com/sunpy/sunpy/wiki/Core%3A-Release-Checklist>
 
 Unlike a normal release, **DO NOT RENDER THE CHANGELOG**.
 
