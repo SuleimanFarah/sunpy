@@ -28,7 +28,7 @@ This will add a new branch to the upstream sunpy/sunpy which is level with the m
 
 Once this is done there is a couple of things left to do before the first rc release:
 
-1. Create a new backport label for the newly created branch (https://github.com/sunpy/sunpy/labels)
+1. Create a new backport label for the newly created branch (https://github.com/sunpy/sunpy/labels). The label should have the name "backport X.Y" and description "on-merge: backport to X.Y".
 1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file, somewhere under the `[tool.gilesbot]` heading:
 
 ```
