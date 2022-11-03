@@ -28,6 +28,7 @@ This will add a new branch to the upstream sunpy/sunpy which is level with the m
 
 Once this is done there is a couple of things left to do before the first rc release:
 
+1. Create a new backport label for the newly created branch (https://github.com/sunpy/sunpy/labels)
 1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file, somewhere under the `[tool.gilesbot]` heading:
 
 ```
@@ -36,7 +37,7 @@ Once this is done there is a couple of things left to do before the first rc rel
     missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"
 ```
 
-2. Remove all changelog fragments on the main branch.
+3. Remove all changelog fragments on the main branch.
 
 1. Commit (and PR) the removed changelog fragments to main.
 
