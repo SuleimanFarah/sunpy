@@ -18,6 +18,7 @@ The following steps are to be taken on the main branch (via PR) prior to branchi
 The next step is to create the release branch, to do this following series of git commands:
 
     git remote update
+    git fetch upstream
     git switch -c X.Y upstream/main
     git push upstream X.Y
 
