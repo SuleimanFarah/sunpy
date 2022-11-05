@@ -59,7 +59,7 @@ If there is an issue at this step, the fix will be to update the config in the [
 Since we use tags, you will to update the tag and force push it.
 This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/sunpy/actions)
 
-- [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), the bot will do it (normally) but can be slow.
+- [ ] Update the conda forge [sunpy-feedstock repo](https://github.com/conda-forge/sunpy-feedstock), the bot will do it (normally) but can be slow. **For release candidates** follow the [instructions for doing a pre-release on conda-forge](https://conda-forge.org/docs/maintainer/knowledge_base.html#pre-release-builds).
 
 ## After Release
 
