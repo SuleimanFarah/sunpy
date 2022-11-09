@@ -1,3 +1,24 @@
+## 9 November 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* Docs sprint scheduled for **18 November** (unless there are strong objections)
+* Feedback from 4.1 RC
+    * status of testing on all sponsored packages?
+    * any feedback from other affiliated packages?
+* PR Review
+
+### Notes
+
+* What should we do ahead of the docs sprint?
+    * Will: map rotation example separated out using the diátaxis framework
+    * Identify what content we have that falls into the certain areas
+    * What does our content look like if we split it out
+    * What has been done thus far?
+* Goals of the sprint:
+    * Plan for making incremental progress towards this goal
+
 ## 2 November 2022
 
 ### Agenda
