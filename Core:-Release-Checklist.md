@@ -87,6 +87,7 @@ Post to:
     - [Solar news mailing list](https://solarnews.nso.edu/)
     - [Helionauts forum](https://helionauts.org/)
     - [OpenAstronomy discourse](https://community.openastronomy.org/c/sunpy/5)
+    - [Python in Heliophysics mailing list](https://heliopython.org/contact/)
 
 ```
 Email Template
