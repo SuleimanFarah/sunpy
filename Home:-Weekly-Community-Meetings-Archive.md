@@ -1,3 +1,37 @@
+## 16 November 2022
+
+### Agenda
+
+* Welcome to Newcomers
+    * Nick and Joy from xrtpy :tada:
+* Docs sprint scheduled for **18 November**: https://demo.hedgedoc.org/8z21gCI8QpeH4wvpzDo-1g?view
+* 4.1 released :tada:
+* PR Review
+
+### Notes
+
+- xrtpy discussion from Nick and Joy
+    - Joy showing the xrtpy poster and docs page
+    - motivated by what capabilities are in SolarSoft
+    - main capabilities are 
+        - calculation of the effective area as function of wavelength
+        - calculation of temperature response as a function of temperature
+    - future capabilities
+        - temperature diagnostics
+        - better integration with CHIANTI
+    - what does better interoperability between instrument packages mean?
+        - affiliated package guide is a good place to start
+    - Laura asked about prep routines
+        - Nick says no tentative plans for this 
+        - Maybe more definitive discussion with Kathy Reeves
+        - Some general confusion about what the XRT prep routine does
+    - some discussion about a general interface for computing effective areas, accessing instrument information
+        - would be good to define a common API for this
+        - aiapy and xrtpy both provide interfaces to similar information but the APIs are fairly different
+        - more and more packages will want to do the same
+        - better to define some sort of interface now
+        - Will to follow up with issue on xrtpy trying to scope out an interface
+
 ## 9 November 2022
 
 ### Agenda
