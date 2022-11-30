@@ -1,3 +1,27 @@
+## 23 November 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* PR Review
+
+### Notes
+
+* Frontiers paper 
+    * got not so positive response from reviewer 1
+    * there appears to be a mismatch in understanding of what the scope of the paper should be
+    * some suggestions are helpful
+    * first action item (for Will): contact the editor to clarify what the purpose of the article should be
+* docs sprint summary
+    * need a place for a 
+* more sprints
+    * quarterly?
+    * another docs one but maybe more focused
+    * Potentially: Staurt and David to tackle user guide
+* docs structure
+    * avoid more sphinx galleries for now
+    * appetite for putting most things in RST files
+
 ## 16 November 2022
 
 ### Agenda
