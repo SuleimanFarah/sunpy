@@ -1,3 +1,34 @@
+## 30 November 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* PR Review
+* AGU talk
+    * Will is giving a sunpy talk at AGU
+    * Input welcome
+    * Talk has to be recorded before next Thursday (8 December)
+    * Title: "The SunPy Project: Past, Present, and Future"
+    * Abstract: "For over a decade, the SunPy Project has facilitated and promoted the use and development of community-led, free, and open-source Python software for solar physics data analysis. Consisting of both the core library and an affiliated package ecosystem, the SunPy Project provides critical science enabling functionality such as data search and download, data structures for remote sensing and in-situ observations, solar-specific coordinate systems, and a variety of image processing techniques. As such, a wide variety of science analysis workflows and instrument data pipelines depend on the SunPy ecosystem. In this talk, I will provide a short retrospective on the development of the SunPy Project and give an update on the current state of the project, including the latest release of the sunpy core library and the status of the affiliated package ecosystem. Furthermore, I will discuss the broad goals of the SunPy Project moving forward, particularly those enabled by the NASA Open Source Tools and Frameworks proposal. These include community outreach efforts, the relation of the SunPy Project to other Python-based heliophysics packages, support for current and future solar missions, and support for scalable computing in heliophysics."
+
+### Notes
+
+* VSO health reports discussion
+    * https://vso1.nascom.nasa.gov/vso/health/daily/daily_vso_health_summary_python.html
+    * Nice UI for seeing which tests are passing over the last month
+* Notes on talk
+    * ablog
+    * Pull material from Frontiers paper
+    * Roadmap
+    * ndcube
+    * slide on 4.1 release
+    * "sunpy needs you" recruitment
+    * wider ecosystem
+    * advertise that we have an annual planning session, re: the coordination meeting
+    * summarize coordination meeting decisions
+    * people know the core package but they don't necessarily know the other stuff in the ecosystem
+    * don't necessarily know the difference between ecosystem/project
+
 ## 23 November 2022
 
 ### Agenda
