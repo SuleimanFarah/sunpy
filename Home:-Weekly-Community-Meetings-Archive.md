@@ -1,3 +1,18 @@
+## 7 December 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* AGU talk
+* Letter to Frontiers Editor
+    * Send by today
+    * Extended deadline to respond to reviewer 1 to 14 December
+* PR Review
+
+### Notes
+
+- Question about progress on WCS and xarray
+
 ## 30 November 2022
 
 ### Agenda
