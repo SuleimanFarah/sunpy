@@ -4,7 +4,9 @@ Releases are scheduled for the first Friday in the month set by SEP-9, and featu
 
 | Release             | Scheduled Date | Actual Date |
 | ------------------- | -------------- | ----------- |
-| v4.1 Release        |     2022-11-04 |             |
+| v5.0 Release        |     2023-05-06 |             |
+| v5.0 Feature Freeze |     2023-04-22 |             |
+| v4.1 Release        |     2022-11-04 | 2022-11-11  |
 | v4.1 Feature Freeze |     2022-10-21 |             |
 | v4.0 Release        |     2022-05-06 |  2022-05-06 |
 | v4.0 Feature Freeze |     2022-04-22 |             |
