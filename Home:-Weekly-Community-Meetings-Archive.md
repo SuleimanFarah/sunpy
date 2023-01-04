@@ -1,3 +1,25 @@
+## 14 December 2022
+
+### Agenda
+
+* Welcome to Newcomers
+* Frontiers Paper Referee Response
+    * Revisions technically due today
+    * Working on response to referee
+    * Decide what we actually want to change
+* Timeseries Refactor (David S.)
+    * Context https://hackmd.io/-0y4uN9lSYyAHa_3_LjQ-A
+* PR Review
+
+### Notes
+
+* Timeseries refactor discussion
+    * David has NF small dev grant for refactoring Timeseries
+    * decide on a new base data container
+    * currently using pandas but this has issues (e.g. leap seconds)
+    * https://hackmd.io/-0y4uN9lSYyAHa_3_LjQ-A
+    * want to accomodate multi-dimensional data as well (e.g. in-situ data from SolO)
+
 ## 7 December 2022
 
 ### Agenda
