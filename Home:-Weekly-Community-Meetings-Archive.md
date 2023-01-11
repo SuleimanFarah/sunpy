@@ -1,3 +1,17 @@
+## 4 January 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* GitHub Releases release notes (what is their purpose, and can we just link to release notes in the docs?)
+* PR Review
+
+### Notes
+* GitHub Releases release notes (what is their purpose, and can we just link to release notes in the docs?)
+    * Issue at https://github.com/sunpy/sunpy/issues/6134 for any future discussion
+* AGU updates
+    * NASA open source meeting
+
 ## 14 December 2022
 
 ### Agenda
