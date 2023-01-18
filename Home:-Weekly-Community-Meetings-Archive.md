@@ -1,3 +1,24 @@
+## 11 January 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* GSoC 2023 Project Discussions
+* PR Review
+
+### Notes
+
+- Are there things that we can do to make it more clear that people should cite sunpy when using it and also how they should cite it
+- GSoC
+    - https://github.com/OpenAstronomy/openastronomy.github.io/pull/330 proposed project ideas
+- Database
+    - Shane: we should scope out what database could be useful for
+    - Scope currently is very muddy and not clear what the utility is and why it couldn't be accomplished with a custom scraper
+    - Should not be a general solution for all scales for deploying a database
+    - The original scope of database is not particularly important
+
+
+
 ## 4 January 2023
 
 ### Agenda
