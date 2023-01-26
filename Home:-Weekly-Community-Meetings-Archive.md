@@ -1,3 +1,49 @@
+## 25 January 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* `xrtpy` discussion
+* Discuss Change all uses of GenericMap.world_to_pixel/pixel_to_world to GenericMap.wcs.world_to_pixel/pixel_to_world aka https://github.com/sunpy/sunpy/issues/6435 
+* PR Review
+
+### Notes
+
+* XRTpy functionality being adapted from XRT functionality in SSWIDL
+* [xrtpy docs](https://xrtpy.readthedocs.io/en/latest/)
+* XRTpy has functionality for representing channels, calculating the effective area & temperature response, and (soon) using filter ratios to diagnose the electron temperature and emission measure.
+* Current refactoring about how times are handled
+    * Anything that is handled by parse_time can be put in to the effective area and temperature response functions
+* Channel object holds all the things you need to compute the effective area
+    * Users likely will 
+* Roadmap?
+    * xrt_dem_iterative Python version is most requested
+    * PSF deconvolution
+    * Composite images 
+        * Take a long & short exposure, and replace saturated pixels in the long exposure with unsaturated ones from the short exposure
+        * Need to think about what the FITS header will look like
+    * Will not recreate `xrt_prep` in xrtpy, will work with level 1 data
+* Question about Data availability of Level 1 data
+    * Archive being transferred over to SDAC, done fairly soon
+* Have a common data model for working with temperature responses, etc.
+    * Where would the data model go? SunPy? Maybe start off in AIApy?
+    * Harder to do this since it wasn't done in SSWIDL 
+    * XRT & AIA are not the only instruments that need this; also for other X-Ray and EUV imagers too
+    * Abstract base class?
+    * Word of caution about trying to program against every possible imager
+    * Will, Joy, Nick (and other interested parties) will follow up with some rough design of what a more general framework could look like for doing this calculation; plan such a meeting
+* From Mark Weber: Quick note on units. For XRT, there are e-, DN, and ergs. You cannot get to photon count, but you can get to total energy. 
+* NDCube rebin discussion
+    * This is an API we may be stuck with if we rebase Map on top of NDCube
+    * Are we happy with it?
+* Discussion of meta keywords dict on [#6722](https://github.com/sunpy/sunpy/pull/6722)
+    * Some debate about whether making a copy of the dictionary (without returning from a function) adequately protects a user from overwriting it.
+    * Also question of why we need this thing at all?
+* Discussion of XRT unit detection [#6725](https://github.com/sunpy/sunpy/pull/6725)
+    * Discovered that there was an inconsistency between how the dummy test maps exposed the `HISTORY` key versus how actual maps read from FITS file expose it
+    * Now that that is merged, should simplify the unit checking
+
+
 ## 11 January 2023
 
 ### Agenda
