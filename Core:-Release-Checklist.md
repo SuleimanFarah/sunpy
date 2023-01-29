@@ -67,7 +67,7 @@ This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/s
 - [ ] Create the release on GitHub releases, copy the changelog into the description. The following pandoc command will convert it to markdown: `pandoc --wrap=none -t markdown_strict CHANGELOG.rst`.
 - [ ] Ensure the tag has built on read the docs and the "stable" marker has been updated. **Ensure that all the gallery examples have built correctly, restart the build if not**.
 - [ ] Close milestone associated with the release on the [milestones page](https://github.com/sunpy/sunpy/milestones)
-
+- [ ] Open an extra milestone for the version after, we want to keep two future versions milestone active.
 
 *For a major release:*
 
