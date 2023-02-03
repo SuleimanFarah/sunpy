@@ -1,3 +1,42 @@
+## 1 Feb 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* `sunkit-instruments`
+* https://github.com/sunpy/sunpy/pull/6743 and the point of `meta_keywords()`
+* PR Review
+* Quick discussion on Solar Orboter SPICE + other fitting tools available
+
+### Notes
+
+* GOES XRS NRT discussion
+    * where should the code to read these kinds of files go?
+    * two files needed
+    * consensus seems to be that it isn't worth a Fido client
+    * Separate TimeSeries source? Combine with exisiting XRS source?
+    * Example for now
+* sunkit-instruments
+    * Will asking if it makes sense to put code in sunkit-instruments that is too specific for core but can be used across instrument packages
+    * context: instrument response functions for aiapy and xrtpy
+    * abstract/base classes for defining an API for computing effective areas and temperature response
+    * bits of xrtpy are a good starting point for this (e.g. objects for channels, filters, mirrors, etc.)
+    * No strong objections to starting this effort in `sunkit-instruments`
+    * Does not preclude a move to core in the future (if that makes sense)
+    * Laura also suggested things like PSF deconovlution--does it makese sense to move this to `sunkit-instruments`? other functionality?
+* Meta keywords function
+    * Laura wrote this originally for documentation
+    * We should just make it a table in our docs because this useful information
+    * Deprecate the function
+    * change it to make a copy 
+* case-insensitive file systems
+    * avoid filenames that clash with object names (e.g. `database.py` and `Database`)
+
+* SPICE Team fitting tools
+    * informal chat with people developing spectral fitting for SPICE
+    * see what they're doing, where they are having problems
+    * demo of how ndcube and sunraster
+
 ## 25 January 2023
 
 ### Agenda
