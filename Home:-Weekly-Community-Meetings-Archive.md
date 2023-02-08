@@ -1,3 +1,26 @@
+## 8 Feb 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* Planning for upcoming meetings--who is going to what and do we have a vision for what we would want to do at each of these meetings?
+    * SPD (Minneapolis) 8/{13-18}/23
+    * SPHERE (DC) 6/{20-23}/23
+    * *Hinode*/IRIS (Japan) Fall 2023
+    * others?
+    * Spreadsheet: https://docs.google.com/spreadsheets/d/1muxbnL2h_pJgUVdEX_1ncrliKQeZzRiTV2BxQtJ_QtY/edit?usp=sharing
+    * 
+* Session proposals for [DASH](http://dash.heliophysics.net/)?
+    * 10/{9-11}/23 (DC)
+* [NumFocus Small Development Grant](https://numfocus.org/programs/small-development-grants)
+* sunpy v5.0
+* Coordination meeting?
+    * Do we need one? In person or remote?
+    * When?
+* PR Review
+
+### Notes
+
 ## 1 Feb 2023
 
 ### Agenda
