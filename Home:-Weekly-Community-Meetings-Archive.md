@@ -1,3 +1,42 @@
+## 15 Feb 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* Planning for upcoming meetings--who is going to what and do we have a vision for what we would want to do at each of these meetings?
+    * Spreadsheet: https://docs.google.com/spreadsheets/d/1muxbnL2h_pJgUVdEX_1ncrliKQeZzRiTV2BxQtJ_QtY/edit?usp=sharing
+* [B.20 Heliophysics Tools and Methods](https://science.nasa.gov/researchers/solicitations/roses-2022/amendment-5-b20-heliophysics-tools-and-methods-final-text)
+* Coordination meeting?
+* NDCube things (Danny)
+* PR Review
+
+### Notes
+
+- Python meetings
+    - Nabil is going to PyCon (Salt Lake City, UT)
+    - scipy
+        - Nabil
+        - maybe Will? Jack?
+        - should be we submit an abstract?
+        - Birds of a Feather session?
+        - Abstract deadline 
+        - Working title: "The SunPy Ecosystem in the Cloud"
+            - where does our ecosystem break down at scale?
+            - discussions with Dask, Jupyter folks could be fruitful
+            - Will and Jack to draft an abstract
+            - Talk about what the limitations are in terms of using scalable compute with our ecosystem
+            - Have others have encountered these issues before?
+- NDCube paper
+    - Section on scalability of NDCube--does not have to be a numpy array! (Will to add a paragraph about this)
+- No in person coordination meeting this year
+    - Maybe an in-person meetup at Dash?
+    - Maybe an online meeting?
+- Some confusion about how to cite sunpy
+    - Danny could not find it in the docs--worrying? Are other users not finding it as well?
+    - Maybe it is too hidden in thedocs
+    - Add a button to the landing page of the sunpy.org 
+- SDAC looking to hire a Python developer to support the sunpy ecosystem
+
 ## 8 Feb 2023
 
 ### Agenda
