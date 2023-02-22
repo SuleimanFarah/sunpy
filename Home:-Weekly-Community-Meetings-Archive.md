@@ -1,3 +1,62 @@
+## 22 Feb 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* Governance discussion **next week** (3/1/23)
+    * Review this in the next week: https://github.com/sunpy/sunpy-SEP/pull/62
+    * Discourse announcement: https://community.openastronomy.org/t/updating-the-sunpy-projects-governance/584
+    * The more in attendance the better
+* TimeSeries
+    * https://gist.github.com/dstansby/b715efc9af89de1676a0783cd296be4c
+* SciPy Meeting Abstract (due today!!!)
+    * Submitted
+    * If you see this before 17:12 UTC, we still have time to change it
+* PR Review
+
+### Notes
+
+- Governance review is in the wild, see above for details. Will discuss next week.
+ 
+#### Timeseries
+
+Work funded by a small dev grant, to scope out the options for a new data container for the time series class.
+
+Collated a list of requirements from various mailing lists etc.
+Came up with 5 options:
+ - pd
+ - astropy.timeseries
+ - xarray
+ - numpy
+ - ndcube
+
+compared to what other python packages are using, whole selection other than astropy represented.
+
+Recommendations:
+
+numpy isn't really appropriate, too many missing features.
+xarray is pretty much a straight upgrade on pandas, only real selling point to pandas is things stay the same.
+NDCube, stores data with WCS. Timeseries data has different requirements to imaging / spectral data, and NDCube is more focused on the latter data. Also NDCube exists because of WCS, without WCS we would probably be using xarray.
+
+The main comparision is between xarray and astropy timeseries:
+
+Xarray dosen't support different time scales (as indicies) but there may be a path to extending it.
+Xarray also dosen't support physical units. There is some ongoing work, but it's a big problem for the whole scipy ecosystem.
+
+Astropy timeseries has limited out of memory support (columns can be dask arrays).
+Astropy timeseries has no multi-index / multi-dimensional data.
+Less mature data manipulation support in timeseries.
+
+Discussion on relative priorities of requirements:
+
+Leap seconds is a known requirement on our currently supported timeseries data.
+Multi-dimensional data support in astropy timeseries, is a bit of an unknown, you can store the data in the table, but you can't access it based on index.
+Observer coordinates: Supported as SkyCoord columns in Astropy, but SkyCoord probably not supported in xarray, although xarray's non-dimensional coordinats support the workflow.
+Swarm spacecraft, PSP, SolO, etc all need to know the spacecraft location, so probably an important future feature.
+
+Can xarray ever be brought close enough to sunpy to feel sunpy or will it always feel different to our other classes.
+Stuart: xarray brings massive interoperability with sci python, docs, api etc are good, but doesn't have astronomy domain specific things (skycoord).
+
 ## 15 Feb 2023
 
 ### Agenda
