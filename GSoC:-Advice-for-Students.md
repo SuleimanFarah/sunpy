@@ -6,12 +6,12 @@ So please do give your application some thought.
 
 ## Pull Request requirement
 
-In addition to the written proposal, we require every GSoC applicant to have opened a pull request to SunPy.
+In addition to the written proposal, we require every GSoC applicant to have opened a pull request to a SunPy Project repository.
 **It does not need to be merged for you to be considered for GSoC.**
 
 Please note that we take your pull request(s) to SunPy into strong consideration when reviewing your proposal.
 This is your best opportunity to prove to us that you are capable of doing what you have written in your proposal.
-Be aware we don't count how many you have done, if you have 10 it doesn't mean you will have a better chance than someone who has opened 1. We consider the **quality** of the pull request over the number of pull requests.
+Be aware we don't count how many you have done, if you have ten it doesn't mean you will have a better chance than someone who has opened one. We consider the **quality** of the pull request over the number of pull requests.
 
 To do this:
 
