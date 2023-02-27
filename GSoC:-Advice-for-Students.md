@@ -11,8 +11,7 @@ In addition to the written proposal, we require every GSoC applicant to have ope
 
 Please note that we take your pull request(s) to SunPy into strong consideration when reviewing your proposal.
 This is your best opportunity to prove to us that you are capable of doing what you have written in your proposal.
-Be aware we don't count how many you have done, if you have 10 it doesn't mean you will have a better chance than someone who has opened 1.
-We consider the **quality** of the pull request over the number of pull requests.
+Be aware we don't count how many you have done, if you have 10 it doesn't mean you will have a better chance than someone who has opened 1. We consider the **quality** of the pull request over the number of pull requests.
 
 To do this:
 
