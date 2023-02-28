@@ -1,7 +1,7 @@
-Welcome to the SunPy wiki.
+Welcome to the SunPy Project wiki.
 
-SunPy is a community-developed, free and open-source solar data analysis environment for Python.
-More information about the project can be found at [sunpy.org](https://sunpy.org) and you can find our documentation at [docs.sunpy.org](https://docs.sunpy.org).
+``sunpy`` is a community-developed, free and open-source solar data analysis environment for Python.
+More information about the SunPy Project can be found at [sunpy.org](https://sunpy.org) and you can find our documentation at [docs.sunpy.org](https://docs.sunpy.org).
 Please also don't forget to check our [Code of Conduct](https://sunpy.org/coc.html).
 
 ## For users
@@ -38,3 +38,7 @@ SunPy has participated successfully in both the ESA Summer of Code (SOCIS) and t
 # Wall of fame
 
 Check the [[Wall of Fame]] to see everyone that has participated in some program for the improvement of SunPy.
+
+# Grant Applications
+
+Check the [[Grant Applications]] to see (un)funded applications for the SunPy Project.

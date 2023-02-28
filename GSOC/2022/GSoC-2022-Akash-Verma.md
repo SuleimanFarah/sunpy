@@ -105,7 +105,7 @@ class getJP2Header(HTTPLayer):
     def request(self):
     # Returns a response object
     # All the required parameters
-    
+
     query = {
     "id": self.id,
     }

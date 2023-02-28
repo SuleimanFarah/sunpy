@@ -1,3 +1,3 @@
-## Editions
+# Editions
 
 [[GSOD 2020]]

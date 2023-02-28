@@ -17,7 +17,7 @@
 ### Notes
 
 - Governance review is in the wild, see above for details. Will discuss next week.
- 
+
 #### Timeseries
 
 Work funded by a small dev grant, to scope out the options for a new data container for the time series class.
@@ -78,7 +78,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
         - maybe Will? Jack?
         - should be we submit an abstract?
         - Birds of a Feather session?
-        - Abstract deadline 
+        - Abstract deadline
         - Working title: "The SunPy Ecosystem in the Cloud"
             - where does our ecosystem break down at scale?
             - discussions with Dask, Jupyter folks could be fruitful
@@ -93,7 +93,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 - Some confusion about how to cite sunpy
     - Danny could not find it in the docs--worrying? Are other users not finding it as well?
     - Maybe it is too hidden in thedocs
-    - Add a button to the landing page of the sunpy.org 
+    - Add a button to the landing page of the sunpy.org
 - SDAC looking to hire a Python developer to support the sunpy ecosystem
 
 ## 8 Feb 2023
@@ -107,7 +107,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * *Hinode*/IRIS (Japan) Fall 2023
     * others?
     * Spreadsheet: https://docs.google.com/spreadsheets/d/1muxbnL2h_pJgUVdEX_1ncrliKQeZzRiTV2BxQtJ_QtY/edit?usp=sharing
-    * 
+    *
 * Session proposals for [DASH](http://dash.heliophysics.net/)?
     * 10/{9-11}/23 (DC)
 * [NumFocus Small Development Grant](https://numfocus.org/programs/small-development-grants)
@@ -149,7 +149,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * Laura wrote this originally for documentation
     * We should just make it a table in our docs because this useful information
     * Deprecate the function
-    * change it to make a copy 
+    * change it to make a copy
 * case-insensitive file systems
     * avoid filenames that clash with object names (e.g. `database.py` and `Database`)
 
@@ -164,7 +164,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 
 * Welcome to Newcomers
 * `xrtpy` discussion
-* Discuss Change all uses of GenericMap.world_to_pixel/pixel_to_world to GenericMap.wcs.world_to_pixel/pixel_to_world aka https://github.com/sunpy/sunpy/issues/6435 
+* Discuss Change all uses of GenericMap.world_to_pixel/pixel_to_world to GenericMap.wcs.world_to_pixel/pixel_to_world aka https://github.com/sunpy/sunpy/issues/6435
 * PR Review
 
 ### Notes
@@ -175,11 +175,11 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 * Current refactoring about how times are handled
     * Anything that is handled by parse_time can be put in to the effective area and temperature response functions
 * Channel object holds all the things you need to compute the effective area
-    * Users likely will 
+    * Users likely will
 * Roadmap?
     * xrt_dem_iterative Python version is most requested
     * PSF deconvolution
-    * Composite images 
+    * Composite images
         * Take a long & short exposure, and replace saturated pixels in the long exposure with unsaturated ones from the short exposure
         * Need to think about what the FITS header will look like
     * Will not recreate `xrt_prep` in xrtpy, will work with level 1 data
@@ -187,12 +187,12 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * Archive being transferred over to SDAC, done fairly soon
 * Have a common data model for working with temperature responses, etc.
     * Where would the data model go? SunPy? Maybe start off in AIApy?
-    * Harder to do this since it wasn't done in SSWIDL 
+    * Harder to do this since it wasn't done in SSWIDL
     * XRT & AIA are not the only instruments that need this; also for other X-Ray and EUV imagers too
     * Abstract base class?
     * Word of caution about trying to program against every possible imager
     * Will, Joy, Nick (and other interested parties) will follow up with some rough design of what a more general framework could look like for doing this calculation; plan such a meeting
-* From Mark Weber: Quick note on units. For XRT, there are e-, DN, and ergs. You cannot get to photon count, but you can get to total energy. 
+* From Mark Weber: Quick note on units. For XRT, there are e-, DN, and ergs. You cannot get to photon count, but you can get to total energy.
 * NDCube rebin discussion
     * This is an API we may be stuck with if we rebase Map on top of NDCube
     * Are we happy with it?
@@ -316,13 +316,13 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 
 ### Notes
 
-* Frontiers paper 
+* Frontiers paper
     * got not so positive response from reviewer 1
     * there appears to be a mismatch in understanding of what the scope of the paper should be
     * some suggestions are helpful
     * first action item (for Will): contact the editor to clarify what the purpose of the article should be
 * docs sprint summary
-    * need a place for a 
+    * need a place for a
 * more sprints
     * quarterly?
     * another docs one but maybe more focused
@@ -346,7 +346,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 - xrtpy discussion from Nick and Joy
     - Joy showing the xrtpy poster and docs page
     - motivated by what capabilities are in SolarSoft
-    - main capabilities are 
+    - main capabilities are
         - calculation of the effective area as function of wavelength
         - calculation of temperature response as a function of temperature
     - future capabilities
@@ -355,7 +355,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     - what does better interoperability between instrument packages mean?
         - affiliated package guide is a good place to start
     - Laura asked about prep routines
-        - Nick says no tentative plans for this 
+        - Nick says no tentative plans for this
         - Maybe more definitive discussion with Kathy Reeves
         - Some general confusion about what the XRT prep routine does
     - some discussion about a general interface for computing effective areas, accessing instrument information
@@ -588,9 +588,9 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
         * HAPI - https://github.com/hapi-server/data-specification/blob/master/hapi-3.0.0/HAPI-data-access-spec-3.0.0.md
     * More general astrophysics vocabularies
         * UCD - https://ivoa.net/documents/UCD1+/20210616/EN-UCDlist-1.4-20210616.html
-        * IVOA - https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaDataModel 
-        
-* Kevin is working with three graduate students taking a course on scientific software engineering who are looking for a semester-long software project 
+        * IVOA - https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaDataModel
+
+* Kevin is working with three graduate students taking a course on scientific software engineering who are looking for a semester-long software project
     * Where is the best place to contribute?
     * Concern about amount of work on the side of the maintainers
     * Open PRs early, come talk to us early
@@ -648,7 +648,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
         - Define "The SunPy Ecosystem" to include all packages which we previously considered "affiliated"
         - The requirements to be part of the Ecosystem would be the same as those laid out by the current affiliated package requirements
         - On our website, we would then list each package in the Ecosystem and list who maintains it.
-        - Those packages previously referred to as "sponsored" would just be listed as maintained by "The SunPy Project" (e.g. sunpy, ndcube) 
+        - Those packages previously referred to as "sponsored" would just be listed as maintained by "The SunPy Project" (e.g. sunpy, ndcube)
         - All others would list the appropriate person/organization as their maintainer (e.g. David Stansby for pfsspy)
         - The core package (sunpy) is part of the ecosystem
         - If we want to make this change, it would require a new SEP or changes to the existing affiliated package SEP
@@ -837,7 +837,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * Check in with Shane re: LOC things
     * What do we need to do "on the ground" prior to the meeting?
     * [Agenda](https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit): ideally we would firm this up by **1 July**
-    * Accomodation? 
+    * Accomodation?
 * Oh god `draw_` methods make it stop: https://github.com/sunpy/sunpy/pull/6251#pullrequestreview-1006105303
 * PR Review
 

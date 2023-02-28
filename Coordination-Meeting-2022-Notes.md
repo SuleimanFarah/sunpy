@@ -117,7 +117,7 @@ Package updates:
     - A major refactor, version 2.0, has been released. Entire re-write of code base. Uses `astropy`'s WCS API.
     - 10 contributors to 2.0
     - `NDCube` paper being written to provide some of the background and historical context to `NDCube` 2.0
-    - Used in DKIST pipeline, `sunraster`, `specutils`, other projects outside solar commumity 
+    - Used in DKIST pipeline, `sunraster`, `specutils`, other projects outside solar commumity
 - **drms**
 - **sunraster**
 - **sunxpex**: package for solar x-ray spectroscopy. **Not released or stable!**
@@ -132,10 +132,10 @@ Package updates:
 - **aiapy**: for AIA image analysis
     - Nabil is primarly dev/maintainer
     - Developed by instrument team itself.
-    - Has a Journal of Open Source Science paper. 
+    - Has a Journal of Open Source Science paper.
     - Spinning this out from sunpy core gave the instrument team ownership over code, and prevented them from being bound from the sunpy core release cycle.
-    - Current workflow is to load a map with `sunpy.map.Map`, and then use `aiapy` for any instrument specific analysis. 🥬 Add this info to the documentation on why this is structured like it is 
-- **pfsspy**: works well, does what it says on the tin. 
+    - Current workflow is to load a map with `sunpy.map.Map`, and then use `aiapy` for any instrument specific analysis. 🥬 Add this info to the documentation on why this is structured like it is
+- **pfsspy**: works well, does what it says on the tin.
     - Lots of new bits and pieces that could be added around the edges.
     - No longer actively maintained since lead maintainer (David S) no longer active in solar physics, so 🌻 unsure what the future of the package is.
 
@@ -147,7 +147,7 @@ General discsussion
     - DEM map sources
     - eispac
 - 🌻 Will B and David S think we should drop "sponsored packages" as language, Stuart M thinks that there is still an important distinction to be made, but probably not as prominent - discuss this later
-- What is a sponsored package? 
+- What is a sponsored package?
     - Currently it's kind of a side project of existing maintainers, but ideally we would like to get away from this.
     - On a technical level a sponsored package means the lead SunPy developer decides who has commit access to a package.
     - Perhaps sponsored packages split into "generic packages" and "packages that are useful but at risk of being unmaintained"
@@ -183,7 +183,7 @@ General discsussion
 - Talking just about the core library here, but our discussion and choices will shape sponsored package documentation
 - Documentation issues:
     - No updates to the user guide since sunpy 1.0
-    - Exmaples are scattered and hard to find, no way to search just the examples. 
+    - Exmaples are scattered and hard to find, no way to search just the examples.
     - Gallery has a mix of examples and tutorials
     - See slides (link above) for more issues
 - Django **put link here** https://developer.mozilla.org/en-US/docs/Learn is an example of good documentation structure - they have a page about how the documentation is structured itself, and which bit you should go to depending on what you're looking for.
@@ -209,7 +209,7 @@ Proposed structure:
 
 General discussion about how we get users to interact. Helionauts is great because it's  a user "safe" space that isn't just full of developers, so users feel helpful. How do we tap into that to get useful user feedback?
 
-Suggestion in the 
+Suggestion in the
 
 🥬 TODO:
 - Add the four documentation sections to the `sunpy core` landing page, even if they don't have any content
@@ -270,10 +270,10 @@ Definitions of time frames
 
 Priority list
 * High - the sunpy community should be actively working to solve these, directly associated with things we are doing poorly
-* Medium - 
+* Medium -
 * Low - should be done in your spare time, not related to something we are doing poorly
 
-Roadmap Items - should be associated to issues found 
+Roadmap Items - should be associated to issues found
 
 * Integrate NDCube into sunpy core (high priority, short-term).
     * Have Map inherit from NDCube and update API.
@@ -340,7 +340,7 @@ TODO: Add github login to matrix.
     * More effort needed to put into discourse before we can migrate
     * Mailing list is still reasonably active
     * discourse is more modern
-    * mailing list and discourse are technologically equivalent 
+    * mailing list and discourse are technologically equivalent
     * David: mailing list is 1-to-many, release announcements
     * "you can configure discourse to interact with it only via email"--Stuart
     * There is a lot of momentum behind the mailing list, academics love listservs/email
@@ -362,10 +362,10 @@ TODO: Add github login to matrix.
     * Where are the conferences
     * Who is going
     * What are we presenting
-    * Find ways to get someone there if they are not/funding 
+    * Find ways to get someone there if they are not/funding
 * For instrument specific conferences, tutorials should be targeted to the data products from that instrument
 * Danny--chat window directly in the docs
-* Anecdotally, people don't use sunpy/python because of inertia from work 
+* Anecdotally, people don't use sunpy/python because of inertia from work
 * Messaging around the ecosystem is not clear
     * Show that sunpy is an entrypoint to the ecosystem
     * Historical context, the "why" could help to clarify this in the docs
@@ -382,7 +382,7 @@ TODO: Add github login to matrix.
 
 Helionauts discussion
 
-* We should pay attention to it but not feel obligated 
+* We should pay attention to it but not feel obligated
 * It is an important resource to the community, we should be careful in the way we talk about it
 * Redirect people to sunpy channels of communication
     * Show them they are likely to get more help from our project channels
@@ -463,11 +463,11 @@ TODOs
 
 * Goal of session to have structure pf new documentation for governance agreed
 * SEP2 describes current governance structure
-    * SEP2 was written in 2014 before numfocus 
+    * SEP2 was written in 2014 before numfocus
     * Followed US non-profit model
     * Self elected board votes on SEPs
     * Executive part runs the project Executive director = lead developer
-    * Should have deputy or 
+    * Should have deputy or
     * All board members were active or recently active developers
     * Board has moved into more diverse as members transitioned to management roles
 * Financial control moved from board to lead developer
@@ -477,12 +477,12 @@ TODOs
     * No PhD or grad students on board
     * At inception many board members were early career researchers
     * Some prizes define Early career as within 10 years of getting a PhD - should we adopt this definition?
-* During COVID times board has been somewhat static 
+* During COVID times board has been somewhat static
 * Reorganisation of board governance structure
 * What should the governance of the project do:
-    * what should be kept 
+    * what should be kept
     * what needs to be changed
-* Run for the community by the community 
+* Run for the community by the community
 * Current structure can be overly bureaucratic
 * What does the board do:
     * numfocus expenese approval
@@ -517,7 +517,7 @@ TODOs
     * members vote in lead, deputy and one other major role (maybe fincial)
     * if the board don't approve SEPs and there is no executative or small they have a lot of power
     * SEP are consensus based a vote would be to agree consensus has or has not been reached
-    * Helpful to keep a guidance of the project from the outside interms of larger solar phyics community 
+    * Helpful to keep a guidance of the project from the outside interms of larger solar phyics community
     * advisory board (committee) could have slots for PhD, ECR etc
     * what roles should be voted - proposals:
         * lead and deputy and 3rd role?
@@ -537,7 +537,7 @@ TODOs
     * Yes from Jack, effort for older data to be brought up to standards e.g. SOHO/LASCO data
 
 * If there are instruments that need help in getting data into better standards for meta data etc there is scope to do this (maybe even SkyLab(!))
-* VSO can also give assistance/advice for older datasets to be more easily queried etc (I think thats what was said?) 
+* VSO can also give assistance/advice for older datasets to be more easily queried etc (I think thats what was said?)
 * How does support for sunpy development etc get accessed from this source?
     * Someone sends Jack an unsolicited proposal, and it is reviewed by people in the community
     * Decision would be made by folks on larger sunpy community (e.g. board etc) for larger proposed efforts/changes
@@ -547,13 +547,13 @@ TODOs
     * SOAR - David: two sides, want people to have access to the data, but on the other side dont want to write a specific client for every mission, so this is why the VSO is ideal
     * Another example, SUVI, level 2 data available online, however NOAA have asked not to provide it through the VSO due to fact its not of "scientific quality", however it is availble through sunpy
 
-* VSO currently has available ~83% of the data that it says it will provide 
+* VSO currently has available ~83% of the data that it says it will provide
 
 * Propagation of errors to sunpy - how can a VSO error message become less opaque?
     * show there be a VSO dashboard to show errors, or whats down or not down. The VSO health status - e.g. "please check the VSO health status: `link`"
     * How to differentiate whether the search is wrong or cant be made due to server down or whether there is no actually no data available
     * The VSO also wants to point to the issue - for example the HAO could be down and want to propagate this (i.e. its not the VSO thats the issue its another server etc)
-    * VSO also wants to provide an easy machine readable health report that checks every hour or so. 
+    * VSO also wants to provide an easy machine readable health report that checks every hour or so.
     * Future version of Fido could first check the health status of the VSO before going to query
         * however this would be a challenge as you build the query before you know what provider you are pinging
     * XRT another example, the data provider (CfA) is down and people think that sunpy or the VSO dont provide XRT where is actual fact they do if the issue with CfA is fixed (which it will be soon :tada:)
@@ -562,7 +562,7 @@ TODOs
 * In-situ data providers?
     * is spdf the vso of in-situ?
     * if there was a sole ESA mission would it be within the spdf to index that data?
-    * 
+    *
 
 
 * No exchange of funds between NASA and NJAO but the VSO still provides the data. This is more of a mutual agreement - want data to be provided to community
@@ -572,14 +572,14 @@ TODOs
 
 * Could Fido be taken out of sunpy and be "one provider to rule them all"?
     * Will: Heliocloud people would be very interested of a data search functionality outside of sunpy i.e. be its own package?
-    * If people wanted to download data outside scope of sunpy (e.g. magnetospheric) and use Fido, why should someone need to download sunpy? would this just become a large python VSO 
+    * If people wanted to download data outside scope of sunpy (e.g. magnetospheric) and use Fido, why should someone need to download sunpy? would this just become a large python VSO
     * However, do you want to fragment packages more, another package to maintain etc
     * View of others that want Fido outside of sunpy - why should I have the sunpy dependency?
     * The drive for one downloader to rule them all is from a NASA or overarching view of one big heliophysics downloader, maybe Fido has a HAPI interface
     * There's no point in moving it out unless someone is going to use. For example, where would the Fido clients live? the data model of the core attrs reflect the solar data provides (e.g. heavily influenced by VSO)
     * Several arguments for, but no one is making them (apart from having sunpy dependency)
     * Response to people to ask - ask they to raise and issue with their arguments
-    
+
 * VSO take-aways:
     * health reports
     * propagation of error messages back to user
@@ -593,8 +593,8 @@ TODOs
 * Bigger picture - what clients should be in core?
     * could it be opt in?
     * should sunpy core only have vso/jsoc?
-    * what about SOAR? shouldnt that be in core? It will be indexed by the VSO but the SOAR is still the official source. 
-    * VSO is more institutional but sunpy are more like talking to users 
+    * what about SOAR? shouldnt that be in core? It will be indexed by the VSO but the SOAR is still the official source.
+    * VSO is more institutional but sunpy are more like talking to users
     * Should there be a formalized relationship between sunpy and VSO to have link between providers users?
 
 
@@ -701,7 +701,7 @@ TODOs
     * Type hints: telling the type of the inputs
         * Nabil wants to apply type hinting
         * Use mypy to do type checking
-        * Nabil: many of the projects that we are depending 
+        * Nabil: many of the projects that we are depending
     * Precommit / black
     * This is (arguably) something that helps both the users and the developers
     * This adds a lot of dev overhead (you have to know how to use them) and reduces readability
@@ -766,7 +766,7 @@ EIS [(github)](https://github.com/USNavalResearchLaboratory/eispac):
 * EISCube subclasses NDCube
 * Based upon IDL-routines, uses mpfit.py to fit files
 * Want tools for doing spectral modelling (e.g. using Chiantipy) for deriving information from the data (e.g. temperature etc).
-* Future tools - 
+* Future tools -
     * tools of quickly visualing, and exploring spectral fits. Want tools for user-generated fit templates
     * Collections for EISCubes for slicing and fitting multiple spectral cubes at once
     * Expansion of fit_spectra() to use other fitting packages such as astropy.modelling (but currently VERY slow)
@@ -774,18 +774,18 @@ EIS [(github)](https://github.com/USNavalResearchLaboratory/eispac):
 * What overlap is there between EISPAC and the tools developed for SPICE?
     * There is alot of overlap, but EISPAC was developed in particular to analyse EIS in python
     * One of the main goals was continuity between IDL tools and Python tools which drove the choice of using mpfit
-    * Lots of opportunity to collaborate 
+    * Lots of opportunity to collaborate
 
-* EISPAC focused on L1 data, and several things in EISPAC that are specific to EIS and not needed, for example the (EIS) L1 file archive for SPICE. But of course SPICE has its own requirements. 
-    * Speed of developement for need of analysis tools meant that the two were independently worked on (although communication between two was had) 
+* EISPAC focused on L1 data, and several things in EISPAC that are specific to EIS and not needed, for example the (EIS) L1 file archive for SPICE. But of course SPICE has its own requirements.
+    * Speed of developement for need of analysis tools meant that the two were independently worked on (although communication between two was had)
 
 * Some issues with NDCube with slicing and saving back to fits as some coordinate information is lost. More to do from NDCube side on this. EISPAC have overwritten the slicing of NDCube to keep track of coordinate information to save to fits file for loading into a sunpy map. Currently quite "hacky" in EISPAC.
 
-Data search: 
+Data search:
 
 * EIS has a Fido client in developement. EIS data is available from a directory tree, so first Fido client was a scraper on the site and searches for files between a certain time and not on any other factors. EISPAC searches the EIS catalogue rather than just the time period thats availale in the directory tree
 
-* SOAR webpage has limited flexibility to search for specific data (such as currently its indexed over time and dataset ID and level). But ideally want to search over some metadata (not available at moment through sunpy_soar either). 
+* SOAR webpage has limited flexibility to search for specific data (such as currently its indexed over time and dataset ID and level). But ideally want to search over some metadata (not available at moment through sunpy_soar either).
     * What is needed is also to search over an observing mode/SOOP/event list etc.
 
 
@@ -795,16 +795,16 @@ SunCASA/EOVSA (Sijie):
 * SunCASA open-source python package for synthesis imaging and visualizing solar spectral radio imaging data
 * Dynamic spectra (freqtime), complex visibilities (polarization x baseline x frequency x time) and imaging products (freq x time x space x space)
 * Relies on CASA, not ported to Python 3.7+, then SunCASA depends on SunPy 2
-* EOVSASpectrogram class which subclassed from radiospectra and is in development 
+* EOVSASpectrogram class which subclassed from radiospectra and is in development
 * Pure python development of reading measurment sets into Dask arrays (without needing CASA) see: https://casa-formats-io.readthedocs.io/en/latest/ :tada:
 * Also developing pygsfit for fitting gyrosynchrotron emission. Its a widget based tool to visualize and analyse high-dimensional radio spectral imaging data. Spectral fitting based on GS and thermal emission model.
     * The fitting capability is available outside the GUI, it is also CLI
 
 * Is SunCASA EOVSA specific? can a LOFAR ms be passed?
     * It was developed for EOVSA but can be expanded
-    * As long as the ms is in the CASA format it _should_ work. However, in the US EOVSA is only the solar radio telescope with ms. 
+    * As long as the ms is in the CASA format it _should_ work. However, in the US EOVSA is only the solar radio telescope with ms.
     * LOFAR should work, as SunCASA is quite generic.
-    
+
 * EOVSA within radiospectra:
     * Currently can read the ready made EOVSA dynamic spectra, and Fido can search for those dynamic spectra already available.
     * Small issue with getting the data to look same as on the EOVSA website, should be a small issue
@@ -820,14 +820,14 @@ PUNCH:
 * NDCube is core data handler!
 * PUNCH can contribute the polarization resolution code as a seperate package (affiliate package), and punchbowl too.
 * Imaging mosaic using astropy reproject
-* PUNCH wants a strong relationship with sunpy as it's being developed  :tada: 
+* PUNCH wants a strong relationship with sunpy as it's being developed  :tada:
 * how is reproject dealt with for different observer location?
     * how is the 3d position assumption used with PUNCH?
 * There is currently no Affiliated Package Liaison - who should PUNCH contact directly -> Will! but also on the sunpy chat.
     * Will has now been added as the Affiliated Package Liason :tada:
 * Data representation: currently PUNCH uses dictionaries of NDCubes. Need advice
     * NDCollections could be the solution! But PUNCH found issue with aligned axis - will chat offline
-    * Other point -> Dan: Maybe the Metadata class could be a way to go, maybe we should standardise some metadata standard in solar? More discussion here 
+    * Other point -> Dan: Maybe the Metadata class could be a way to go, maybe we should standardise some metadata standard in solar? More discussion here
     * PUNCH can help shape this idea with their use cases
 
 
@@ -862,17 +862,17 @@ HERMES:
     * add data products will be provided as cdf files
 
 * What is the data types of these measurements
-    * mainly timeseries 
+    * mainly timeseries
     * fluxes in different energy bands
     * spectra as a function of time (and of angle as a function of time)
 
 * Everything is being developed openly [(github)](https://github.com/HERMES-SOC)
 
 * Space physics doesnt typically use WCS, so no real need for NDCube
-    * if we want interoperability between in-situ, we need to think about how we develop wcs-driven data conatiners for remote sensing. 
+    * if we want interoperability between in-situ, we need to think about how we develop wcs-driven data conatiners for remote sensing.
 
 * Steve: someone should maintain a set of package templates that do not necessarily depend on sunpy
-    * send them all to stuart 
+    * send them all to stuart
 
 * There should be an instrument specific package template as requirments are different for analysis packages and instrument packages.
 
@@ -900,7 +900,7 @@ DKIST:
 
 
 * Challenges for large data with sunpy - e.g. ground-based instruments. Cant load/play movie etc.
-    * IDL does very well in terms of plotting images, matplotlib isnt build for this, and unable to do. 
+    * IDL does very well in terms of plotting images, matplotlib isnt build for this, and unable to do.
     * WCSAxis slows this down
     * Coordinate information not that important, unless you want to combine with other observations. If you want a quick look movie or look at a feature in particular, you really only need pixels
     * [PyQtGraph](https://www.pyqtgraph.org) is a good package for doing this
@@ -910,10 +910,10 @@ DKIST:
 * Should speedy visualization of data be on the roadmap? i.e. quick plotting. Do we just throw away coordinates
     * sunpy has typically focused on coordinate aware arrays, but how does this fit into sunpy (e.g. just read data arrays with astropy and plot data array?)
     * regardless of where this lives within the sunpy project, there is a need within solar physics to rapidly visualise large datasets. This is missing from the project, so would be a good item to put in the Roadmap
-    * 
+    *
 
 STIX:
- * STIX is great and developing well within sunpy ecosystem 
+ * STIX is great and developing well within sunpy ecosystem
  * could STIXMap and TimeSeries be upstreamed to core in the future? maybe but probably not a good idea -> core shouldnt have instrument specific sources
 
 
@@ -921,8 +921,8 @@ CubiXSS/MOXSI:
  * Multi-order X-ray Spectral Imager
  * Overlappograms - lots of orders, slitless spectrograph (i.e. without having to raster) but challengng to disentagle the information from the overlappogram
      * Will showed the magic that can be done with the wcs machinery :dizzy:
-    
-    
+
+
 SST:
 * Most people use the two main instruments: CHROMIS and CRISP
 * Images of same field of view, scanning slit spectro-polarimetry (CHROMIS currently doesnt have polarimetry but may have in the future)
@@ -945,7 +945,7 @@ SST:
 
 * There are tools to keep templates up-to date and packages that use the templates up-to date too
 * [HERMES development/updates to package template](https://github.com/HERMES-SOC/hermes_core):
-    * For HERMES, the plan is to use it on the cloud, so a dev container within the template. Development is done within this container. Can test within a certain machine, and so can test and ensure it works on the processing machnine. Production level code. 
+    * For HERMES, the plan is to use it on the cloud, so a dev container within the template. Development is done within this container. Can test within a certain machine, and so can test and ensure it works on the processing machnine. Production level code.
     * HERMES uses github actions rather than CircleCI
     * Instrument specific template may want a calibration directory for caibration files as these would want to be called by the package and also they can change
     * depends on the calibration files - could be on a remote server (based on size) or just in repo if small
@@ -957,11 +957,11 @@ SST:
 
 What is benefit of a package that already exists to use a template?
 * Steve: If you are using a template, indivudal maintainers dont need to continuously maintain the template, this can be done if the template updated. For example, if github actions changed etc. For easy of maintaining several packages
-* You could have a template that maintains itself (opens PRs automatically to do updates) 
+* You could have a template that maintains itself (opens PRs automatically to do updates)
 * Same package structure between packages - easier for contributing and familiarity between them, more potential contributors (lower barrier to entry)
 * On the other side, if you are not maintaining lots of packages (unlike HERMES/SunPy), this isnt as important. You have one package so easy enough to keep up to date as these package updates happen on longer timescales
 * If starting from scratch, lots of benefits
-* another example, setup.py is going away in next two years, so you would need to update the package. but if you had a bot to do updates, it would sort it out 
+* another example, setup.py is going away in next two years, so you would need to update the package. but if you had a bot to do updates, it would sort it out
 
 ## Thursday 25 August
 
@@ -994,7 +994,7 @@ What is benefit of a package that already exists to use a template?
         * Martin: you can have arbitrary "attributes" as long as you can store them
             * An attribute can be anything, could be interpreted as the world coordinate
             * attribute tells you the type and the extra information you need to interpret it
-            * Would the return types of the 
+            * Would the return types of the
         * when you select a point, you get the coordinate and the value
 * In the present picture of xarray, you can do this with flexible index arrays
 * FITS provides the standard for where you store the metadata to reconstruct your rich objects that are returned when indexing your array
@@ -1023,13 +1023,13 @@ What is benefit of a package that already exists to use a template?
     * xarray could support that in the same way
 * Still space for an NDCube object (as a subclass for xarray)?
     * Best of both worlds (astro-specific stuff + power of xarray)
-    * data-tree example of glueing collection of things together with xarray subclasses 
+    * data-tree example of glueing collection of things together with xarray subclasses
 * We want something that benefits the users, unlocks different parts of the ecosystem
 * Stuart: we stil have a lot to learn about xarray
 * Danny: long term project of collaboration between these communities
     * Not competitive
 * With large data volumes, not practical to pull everything down to your machine locally
-    * xarray had to go through this transition 
+    * xarray had to go through this transition
 * Martin: fsspeck support for loading FITS in astropy
 * Solar in this era has so much data, but not taking advantage of this data
     * Earth science has Pangeo, but there are still many people with older tools that are not doing this
@@ -1048,7 +1048,7 @@ What is benefit of a package that already exists to use a template?
     * you can slice your files down before actually loading them
     * in principle, you can just get the stuff you need
     * "let's just pretend it is Zarr"
-* Stuart: for dkist and aia, we need support for tiled compression 
+* Stuart: for dkist and aia, we need support for tiled compression
     * Example of this is Rice compression
     * Stuart and Tom are planning to reimplement tiled compression algorithm in pure Python, astropy won't have to rely on cfits
 * kerchunk is a logical set of arrays -- more than just one xarray
@@ -1104,7 +1104,7 @@ Timeseries and xarray
         * Coordinates?
         * Reproject?
 * Also I/O problems
-    * Difficult 
+    * Difficult
 * Data formats are going to play a signficiant issue in how we enable science in the cloud
     * experiments with Zarr
     * kerchunk very useful -- translation layer between zarr and fits
@@ -1119,11 +1119,11 @@ Timeseries and xarray
     * not as simple when you have more arbitrary functions
 * Friction between Dask and astropy
 * You can use with SunPy with Dask
-* Outstanding questions about using SunPy functionality with Dask arrays 
+* Outstanding questions about using SunPy functionality with Dask arrays
 * People aren't necessarily telling us about the incompatibilities they're encountering
 
  TODO
- 
+
 * Example of how to use Dask + NDCube
      * How to create a Dask-backed NDCube
 * Example of how to use Dask with sunpy
@@ -1150,7 +1150,7 @@ Brainstorm your ideas here. Once we settle on a few projects, we can write more 
 * ASV -- Albert
 * SolarOrbiter Meeting -- Shane
 * Draft an SEP proposing standardised metadata data attribute names -- Danny
-* Add `pfsspy` project status and roadmap to the documentation -- David 
+* Add `pfsspy` project status and roadmap to the documentation -- David
 * Improving Element onboarding and discoverability -- Stuart
 * Finish `vcrpy` work
 * Write https://github.com/psf/fundable-packaging-improvements/blob/master/FUNDABLES.md for the SunPy project

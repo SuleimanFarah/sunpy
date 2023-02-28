@@ -3,7 +3,7 @@
 This page describes how to add the backport bot to a new repo, you will need to
 be a repo admin to do this.
 
-If you want to know why and how the backport bot works see the 
+If you want to know why and how the backport bot works see the
 [developer guide](https://docs.sunpy.org/en/latest/dev_guide/contents/backports.html).
 
 ## Meeseeks

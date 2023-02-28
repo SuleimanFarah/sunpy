@@ -1,18 +1,18 @@
 ## What is it?
 
-> Google Summer of Code is a global program focused on bringing more student developers into open source software development.
-> Students work with an open source organization on a 10 week programming project during their break from school.
+> Google Summer of Code is a global, online program focused on bringing new contributors into open source software development.
+> GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.
 
-We participate in [GSoC](http://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization.](http://openastronomy.org/gsoc/)
-SunPy participated in 2013 for the first time and 2014 and 2015 under the [Python Software Foundation](https://wiki.python.org/moin/SummerOfCode/).
+We participate in [GSoC](https://summerofcode.withgoogle.com/) via the [OpenAstronomy umbrella organization](https://openastronomy.org/gsoc/).
 
-**For anyone who wants to apply to GSoC, you should read the GSoC wiki pages and the linked advice. It will considerably help you to understand what is required to be successful for GSoC.**
+**For anyone who wants to apply to GSoC, you should read these wiki pages and the linked advice.**
+**It will considerably help you to understand what is required to be successful for GSoC.**
 
 ## Guidelines and helpful advice
 
 ### SunPy focused
 
-We have several wiki pages for GSoC with [[GSoC: Advice for Students]] being the main one.
+We have several pages for GSoC with [[GSoC: Advice for Students]] being the main one.
 
 We have a [[GSoC Application template | GSoC: Student Application Template]], it should form the basis for your application.
 
@@ -23,7 +23,7 @@ We have a [[GSoC Application template | GSoC: Student Application Template]], it
 
 ### From other places
 
-[OpenAstronomy GSoC](http://openastronomy.org/gsoc/background.html)
+[OpenAstronomy GSoC](https://openastronomy.org/gsoc/background.html)
 
 [Python Software Foundation's Advice](https://wiki.python.org/moin/SummerOfCode/FrequentlyAskedQuestions)
 
@@ -31,9 +31,11 @@ We have a [[GSoC Application template | GSoC: Student Application Template]], it
 
 [Google's Advice](https://google.github.io/gsocguides/student/)
 
-[Mixxx's Advice](https://www.mixxx.org/wiki/doku.php/gsocadvice#application_evaluation_criteria)
+[Mixxx's Advice](https://github.com/mixxxdj/mixxx/wiki/gsocadvice#application_evaluation_criteria)
 
 ## Editions
+
+[[GSoC 2023]]
 
 [[GSoC 2022]]
 
