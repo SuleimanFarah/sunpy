@@ -1,6 +1,6 @@
-# The Project
+# The SunPy Project
 
-The SunPy organization is organized by the SunPy [SEP-0001](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0001.md) and SunPy [SEP-0002](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0002.md).
+The SunPy Project is organized by [SEP-0001](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0001.md) and [SEP-0002](https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0002.md).
 
 It is run by a board of members which meet regularly to discuss the direction of organization as well as elect a lead developer.
 An overview of the team project is found on the [SunPy website](https://sunpy.org/project/).

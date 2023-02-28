@@ -41,7 +41,7 @@ My predominant programming is done with Python because it easily helps me conver
 
 NDCube is a SunPy-affiliated package for generalized handling, manipulating and visualizing N-dimensional astronomical data. Currently, the translations between the pixel indices and the real world coordinates are described by the FITS-standard World Coordinate System (FITS-WCS). However, other standards for WCS also exist, such as generalized WCS (gWCS) developed by astropy. In order to support gWCS, and other WCSs in the near future, an API was proposed, in which all such WCSs were required to propose a given set of API endpoints, thereby facilitating the use of different types of WCSs that exist, and abstracting the inner methods, without adding overhead to work with these methods.
 
-This document proposes to add the support for APE14 in NDCube, which is a SunPy-affiliated project. In order to support both FITS-WCS and gWCS and hence support more future WCSs libraries, this project aims to convert the ndcube package to use a  common WCS API. The new API has already been outlined by astropy’s APE14. Implementing support for APE14 will enable ndcube to use FITS-WCS and gWCS independently and hence increase the power and scope of the ndcube package. With this new feature, ndcube will become better placed to serve a wider array of n-dimensional data analysis needs from multiple astronomical communities.
+This document proposes to add the support for APE14 in NDCube, which is a SunPy-affiliated project. In order to support both FITS-WCS and gWCS and hence support more future WCSs libraries, this project aims to convert the ndcube package to use a  common WCS API. The new API has already been outlined by astropy's APE14. Implementing support for APE14 will enable ndcube to use FITS-WCS and gWCS independently and hence increase the power and scope of the ndcube package. With this new feature, ndcube will become better placed to serve a wider array of n-dimensional data analysis needs from multiple astronomical communities.
 
 ## Breakdown of the project
 
@@ -63,7 +63,7 @@ Since the visualizing part of the project consists of various attributes of the 
 
 ### Community Bonding Period (May 6 - May 27)
 
-During the community bonding period, I would start discussing with my mentors, about any change in the proposal. I would be participating in a research project with my university’s professor, so I would be fairly busy. I would be free by May 20, so that should not be a hurdle, given that the coding period begins from May 27. I would be closely looking at the codebase of NDCube and would start to prototype the proposed API from May 20. I have fair experience with pytest and mocking, so that should be up and running for me. Other than that, I would like to solve an issue or two of NDCube, if time permits.
+During the community bonding period, I would start discussing with my mentors, about any change in the proposal. I would be participating in a research project with my university's professor, so I would be fairly busy. I would be free by May 20, so that should not be a hurdle, given that the coding period begins from May 27. I would be closely looking at the codebase of NDCube and would start to prototype the proposed API from May 20. I have fair experience with pytest and mocking, so that should be up and running for me. Other than that, I would like to solve an issue or two of NDCube, if time permits.
 
 At the end of the Community Bonding Period, I would aim to -
 

@@ -68,7 +68,7 @@ Following is the link to my contributions to SunPy on Github: [link](https://git
 
 ## ABSTRACT
 
-Space weather studies Sun-Earth interaction events. One of these, is the effect of solar flares have on our civilisation. The forecast of solar flares is not a solved problem, and many approaches have been tried. Sunspotter is a citizen science project that asked volunteers to classify solar active regions by their complexity - as it’s believed complexity has a direct relationship with their activity. With more than 25,000 volunteers and millions of classifications produced, we’ve got a very nice dataset that can be used to train a neural network. The images used come from the MDI instrument, which is onboard of SoHO - the NASA-ESA mission that’s been observing the sun for more than two decades.
+Space weather studies Sun-Earth interaction events. One of these, is the effect of solar flares have on our civilisation. The forecast of solar flares is not a solved problem, and many approaches have been tried. Sunspotter is a citizen science project that asked volunteers to classify solar active regions by their complexity - as it's believed complexity has a direct relationship with their activity. With more than 25,000 volunteers and millions of classifications produced, we've got a very nice dataset that can be used to train a neural network. The images used come from the MDI instrument, which is onboard of SoHO - the NASA-ESA mission that's been observing the sun for more than two decades.
 
 ## DESCRIPTION
 
@@ -76,7 +76,7 @@ The primary datasets come from **Sunspotter project**: All-Clear and 14 years of
 
 The project also involves acquiring MDI sun images from Solar and Heliospheric Observatory using VSO. Once we have the model with MDI then we can start to tune it to HMI (SDO). It will also include querying and downloading from solar feature archives like HEK or HELIO. Using scikit-image, we will obtain the segments from the FITS files using the position coordinated provided in the data available.
 
-The **prediction of the score of complexity** can be done using either the AR properties of the images or using the images themselves. This problem can be seen as a regression problem for which ML models such as **Linear regression, Gradient Boosting regressor and Random Forest regressor** can be used. We’ll find scikit-learn handy for this purpose. The components of the complete process will be put into SunPy for easy use.
+The **prediction of the score of complexity** can be done using either the AR properties of the images or using the images themselves. This problem can be seen as a regression problem for which ML models such as **Linear regression, Gradient Boosting regressor and Random Forest regressor** can be used. We'll find scikit-learn handy for this purpose. The components of the complete process will be put into SunPy for easy use.
 
 The dataset also contains data of **pairwise comparison of active region images** which can be used to re-run the rating using different parameters or a different system altogether. **Bradley-Terry model** is a good example of a probability model which predicts the outcome of paired comparisons. For this purpose, `choix` can be used which a Python library that provides various inference algorithms.
 

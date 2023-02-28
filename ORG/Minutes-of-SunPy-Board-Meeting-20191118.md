@@ -76,7 +76,7 @@ Pushed to next meeting or email due to lack of time.
 Paper is being drafted for submission to _Solar Physics_.
 If Stuart is corresponding author, then through UK agreement it will be OpenAccess.<BR>
 Monica would like it if whole board were co-authors - will add weight to paper.<BR>
-John Leibacher agreed to make it an “Editor’s Choice” paper.<BR>
+John Leibacher agreed to make it an “Editor's Choice” paper.<BR>
 Follow up with an “Op Ed” piece somewhere else – offering more guidance and ideas about community future. Keep the paper more “factual.”
 
 <U>SunPy Paper: -</U><BR>
@@ -107,7 +107,7 @@ We currently have $3,600 from previous years, and an additional $1,800 to be tra
 
 **Other Business:**
 
-We should make a public announcement about Jack’s NASA/HDEE funding for SunPy projects, plus Dan Ryan’s project (ndcube), on Twitter, mailing lists, blog post, and to Numfocus. Is a SolarNews announcement appropriate?
+We should make a public announcement about Jack's NASA/HDEE funding for SunPy projects, plus Dan Ryan's project (ndcube), on Twitter, mailing lists, blog post, and to Numfocus. Is a SolarNews announcement appropriate?
 
 <U>Actions:</U><BR>
 – Steve will talk to Peter Young, SPD secretary, about a possible announcement.

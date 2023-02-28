@@ -1,6 +1,10 @@
-The release schedule for SunPy is detailed in [SEP-9](https://zenodo.org/record/3261800) - this wiki page contains concrete dates for past and future releases and feature freeze dates.
+# Release Calendar
 
-Releases are scheduled for the first Friday in the month set by SEP-9, and feature freezes are two weeks prior to the release date. All PRs which want to be included in a release must be opened (and ready for review) by the feature freeze deadline. In most cases, PRs which haven't been merged within a week of the release will be bumped to the following release.
+The release schedule for `sunpy` is detailed in [SEP-9](https://zenodo.org/record/3261800) - this wiki page contains concrete dates for past and future releases and feature freeze dates.
+
+Releases are scheduled for the first Friday in the month set by SEP-9, and feature freezes are two weeks prior to the release date.
+All PRs which want to be included in a release must be opened (and ready for review) by the feature freeze deadline.
+In most cases, PRs which haven't been merged within a week of the release will be bumped to the following release.
 
 | Release             | Scheduled Date | Actual Date |
 | ------------------- | -------------- | ----------- |

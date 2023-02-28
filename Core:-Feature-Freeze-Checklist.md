@@ -1,4 +1,7 @@
-So it's that time again when it's time to feature freeze and create a new release branch, this checklist is a list of things to do as part of that process. When the checklist is finished you should be able to tag an rc from the newly created release branch.
+# Feature Freeze
+
+So it's that time again when it's time to feature freeze and create a new release branch, this checklist is a list of things to do as part of that process.
+When the checklist is finished you should be able to tag an rc from the newly created release branch.
 
 ## Before branching
 
@@ -28,22 +31,26 @@ This will add a new branch to the upstream sunpy/sunpy which is level with the m
 
 Once this is done there is a couple of things left to do before the first rc release:
 
-1. Create a new backport label for the newly created branch (https://github.com/sunpy/sunpy/labels). The label should have the name "backport X.Y" and description "on-merge: backport to X.Y".
-1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file, somewhere under the `[tool.gilesbot]` heading:
+1. Create a new backport label for the newly created branch (https://github.com/sunpy/sunpy/labels).
+   The label should have the name "backport X.Y" and description "on-merge: backport to X.Y".
+2. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release.
+   We need to enable this by editing the `pyproject.toml` file. Add the following to this file, somewhere under the `[tool.gilesbot]` heading:
 
-```
-  [ tool.gilesbot.milestones ]
-    enabled = true
-    missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"
-```
+   ```yaml
+   [ tool.gilesbot.milestones ]
+   enabled = true
+   missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"
+   ```
 
 3. Remove all changelog fragments on the main branch.
 
-1. Commit (and PR) the removed changelog fragments to main.
+4. Commit (and PR) the removed changelog fragments to main.
 
-1. Tag the main branch with the "start of development" tag for the next version using `git tag vX.Ydev` So if you just branched 3.0 you would tag main with `v3.1dev`. Push this tag to upstream with `git push upstream vX.Ydev`.
+5. Tag the main branch with the "start of development" tag for the next version using `git tag vX.Ydev` So if you just branched 3.0 you would tag main with `v3.1dev`.
+   Push this tag to upstream with `git push upstream vX.Ydev`.
 
-1. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker. This is mainly to ensure that the builds work on that branch.
+6. Enable the new branch on read the docs. Mark it as hidden, so it does not show up on the version picker.
+   This is mainly to ensure that the builds work on that branch.
 
 ## Pre-releases
 
@@ -54,4 +61,5 @@ Unlike a normal release, **DO NOT RENDER THE CHANGELOG**.
 Things to remember to test during the pre-release phase are:
 
 1. Open a PR to the conda-forge feedstock testing building the conda package with at least one rc release. **DO NOT MERGE IT**.
-2. Ensure all sponsored packages tests pass with the rc (or lastest main if tested regularly), sunpy core versions which break sponsored packages should not be released. Make a new release of the package if needed.
+2. Ensure all sponsored packages tests pass with the rc (or lastest main if tested regularly), sunpy core versions which break sponsored packages should not be released.
+   Make a new release of the package if needed.

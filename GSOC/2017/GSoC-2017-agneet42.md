@@ -23,14 +23,14 @@ The following are the Pull requests, Issues (both open and closed) I contributed
 1. **Updated Index.rst**(#2017) - DocFix to explicitly mention that Sunpy supports 2.7.  and     3.4x.
 2. **Added Units Parameter**(#2027)- This PR dealt with adding a Units Parameter to the NDData being used in mapbase.py. As the Unit is instrument dependent it is to parsed from the FITS header in the factory for that particular instrument.
 3. **Added Checking of size of data and frequency axis**(#2028) - A function check_dimensions was added to check the length( because data and freq_axis are 1D Arrays) of the two quantities and return an error accordingly.
-4.**Removed extract_time**(#2029) - Removed the extract_time function as it dealt with things that weren’t dates, as dates. The change was made in time.py and the calling object along with the functon was removed.
+4.**Removed extract_time**(#2029) - Removed the extract_time function as it dealt with things that weren't dates, as dates. The change was made in time.py and the calling object along with the functon was removed.
 5. **Use of loggers in place of print**(#2050) - The aim of this PR is to replace the print() function with loggers as it provides more information to the user, also giving them the opportunity to  choose what they want to see.
 
 ### Work and Open Source Experience
 
 Although I haven't really had much experience contributing to Open source Projects before, I have extensive experience in developing projects implementing scientific and mathematical ideas by using Python and its Libraries. I have avid interests in Machine(Deep) Learning, Natural Language Processing.
 
-1. I have worked on Handwriting Recognition using LSTM’s using TensorFlow. (link)
+1. I have worked on Handwriting Recognition using LSTM's using TensorFlow. (link)
 2. I have worked on AudioQA using TensorFlow and music21. (link)
 
 Apart from the above projects, I am also proficient in C/C++/Java. Also, I have extensively worked with OpenCV.
@@ -41,11 +41,11 @@ Currently, I use Debian Mint. I have previously used Ubuntu and Arch Linux as we
 
 ### Proposal Abstract
 
- I intend to work on the project - **sunkit-image**. The project aims at creating the foundation of a Sunpy affiliated package, ‘sunkit-image’. This package will contain image processing routines and functionalities specific to the analysis of solar physics data. As the project is about adding up a new package, the project aims at adding modules upon which this package can be built upon. They are:
+ I intend to work on the project - **sunkit-image**. The project aims at creating the foundation of a Sunpy affiliated package, ‘sunkit-image'. This package will contain image processing routines and functionalities specific to the analysis of solar physics data. As the project is about adding up a new package, the project aims at adding modules upon which this package can be built upon. They are:
 
 1. _Porting the Multi-Scale Gaussian Normalisation code from [1899](https://github.com/sunpy/sunpy/pull/1899)_ : Multi-Scale Gaussian Normalisation for Solar Image Processing was presented by Huw Morgan and Miloslav Druckmüller([link](https://arxiv.org/abs/1403.6613)). A common approach of processing EUV images is simply to display the square root (or a gamma-curve transformation), or alternatively, the logarithm, of the original pixel values. MGN is a  very efficient process based on localised normalising of the data at many different spatial scales. The method reveals information at the finest scales whilst maintaining enough of the larger-scale information to provide context. It also intrinsically flattens noisy regions and can reveal structure in off-limb regions out to the edge of the field of view.
 
-The pseudo-code has been implemented in #1899 has been mentioned above. There also has been another implementation of MGN by Eric Buchlin ([link](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py)).  An interesting observation is that when the code in #1899 is run, it does not have lots of NAN’s around the corner whilst the other implementation has lot’s of NAN’s floating around the corner  probably because the estimate for the width (swi) in the code is zero. The image used was an AIA_171_IMAGE.
+The pseudo-code has been implemented in #1899 has been mentioned above. There also has been another implementation of MGN by Eric Buchlin ([link](https://git.ias.u-psud.fr/ebuchlin/aia-movie/blob/master/medocimage/mgn.py)).  An interesting observation is that when the code in #1899 is run, it does not have lots of NAN's around the corner whilst the other implementation has lot's of NAN's floating around the corner  probably because the estimate for the width (swi) in the code is zero. The image used was an AIA_171_IMAGE.
 
 The code in #1899 is a much more optimized version of the pseudo code as it reduces temporary arrays in memory without specific prodding. But, in #1899, Line 85 and 86 need to be replaced as the paper states of applying Arctan only to (k*Ci). Also, we need to figure out inconsistencies in the IDL code([link](http://eagle.imaps.aber.ac.uk/mgn.pro)) and the paper and report the same to the author/s, if any.
 
@@ -98,7 +98,7 @@ The difference schemes are also mentioned along with the image/s.
 
 ### Post GSoC goals
 
-1. _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf)) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we’ll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ([link](https://docs.python.org/2/c-api/)).
+1. _Writing a Python Wrapper for the FLCT Code_ : To be implemented off this paper ( [link](http://folk.uio.no/eamonms/viktor/flct_1.01-1/doc/flct_technique.pdf)) . This paper deals with a fast, efficient for performing Local Correlation Tracking. The FLCT Code currently has a C version. The aim is to write a Python Wrapper for the same. For this we'll need the [numpy.fft](https://docs.scipy.org/doc/numpy/reference/routines.fft.html) functionality as FLCT uses Fourier Transform in Step 2 of its pseudo-code. Also, help will be taken from the Python/C API Reference Manual for creating the Python Wrapper. ([link](https://docs.python.org/2/c-api/)).
 2. _Implement image alignment using feature detection and tracking_ : To be implemented off this paper( [link](https://www.robots.ox.ac.uk/~vgg/rg/papers/CalonderLSF10.pdf) ) .  The BRIEF binary descriptor uses the fact that  that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons. It simply  creates a bit vector out of the test responses, which are computed after having smoothed the image patch.
 3. _Implementing NAFE_( as mentioned above ) .
 
@@ -112,7 +112,7 @@ Matplotlib, SunPy, Scikit-Image, Scipy.
 
 ### Deliverables
 
-An image processing module that will contain implementations of various image processing frameworks related to Solar Physics. To start off with it’ll contain the implementation of Muti-Scale Gaussian Normalisation. Following it, will be changes in the Differential Rotation code to use sunpy.coordinates along with the Image Warping Functionality. This will be followed by the Implementation of the OCCULT-2 algorithm along with coding the base difference functionality. This will be 3 months of GSoC.
+An image processing module that will contain implementations of various image processing frameworks related to Solar Physics. To start off with it'll contain the implementation of Muti-Scale Gaussian Normalisation. Following it, will be changes in the Differential Rotation code to use sunpy.coordinates along with the Image Warping Functionality. This will be followed by the Implementation of the OCCULT-2 algorithm along with coding the base difference functionality. This will be 3 months of GSoC.
 This will be followed by a post-GSoC Endeavour which will involve writing a Python Wrapper for the FLCT Code, followed lastly by the implementation of the BRIEF Binary Descriptor in the Solar Physics Domain.
 
 ### Benefits to the Community
@@ -124,7 +124,7 @@ This package will lay the foundations of a currently absent module in SunPy whic
 I would be writing documentation, tests and doctests along with writing the code for the module proposed in the project. This would make sure that mentors are able to understand my ideas lucidly, to ensure correctness and ease of maintainability. I would be opening PRs regularly so that SunPy developers can review my code and provide valuable feedback. I would also be pushing regularly to my own fork so that mentors can keep track of my progress.
 
 _May 5 - May 30(Community Bonding Period)_:
- Discuss with the mentors on firstly, the changes to be made in the MGN implementation and whether any inconsistencies occur between the IDL Code and the paper, secondly get well-versed with sunpy.coordinates and it’s various dependencies on other functionalities. Decide upon the best implementation of image warping in Differential Rotation Code and its scope and also the most optimised way to deal with the OCCULT-2 algorithm. Optimisation is a very important factor as we’ll be dealing with numpy arrays here.
+ Discuss with the mentors on firstly, the changes to be made in the MGN implementation and whether any inconsistencies occur between the IDL Code and the paper, secondly get well-versed with sunpy.coordinates and it's various dependencies on other functionalities. Decide upon the best implementation of image warping in Differential Rotation Code and its scope and also the most optimised way to deal with the OCCULT-2 algorithm. Optimisation is a very important factor as we'll be dealing with numpy arrays here.
 
 _May 30 - June 12(2 weeks)_:
  Setting up the package repository on GitHub and get the CI started. This period will be focused on porting the MGN code. Once, we have reports of any inconsistencies coming out from the community bonding period, the changes will be made in the code. Changes will be made in the code to ensure proper warnings are displayed when a nan value is encountered so the user is above of the same. Also, changes are to be made depending on whether spurious negative pixels are to be replaced as mentioned in the paper or left to the user. Multiprocessing will be added to the code. New tests are to be added.  All the steps, along with the assumptions(if any) will be documented.
@@ -156,7 +156,7 @@ _September 6_: Final results of Google Summer of Code 2017 announced.
 
 ### Commitments
 
-I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
+I don't have any other internships or work ( I don't plan on having any ) for the summer. I don't have any plans to go on vacation either.
 
 My classes for the new semester will begin from the 31st of July, but I would still be able to give sufficient time for the project as the academic load is very less during the initial few weeks of the semester. I will be able to work 42 hours for the project per week before my classes start and 35-40 hours from thereafter.
 

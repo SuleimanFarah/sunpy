@@ -69,7 +69,7 @@ utilized SunPy to generate AIA and HMI Image of the Sun, thereby showing the cor
 magnetic field; I have been reading about SunPy since then, slowly learning about the incredible community.
 I choosed this project since it brings out the best of both worlds, some Solar Physics and some Programming; for
 me, it looked like a natural choice in my career to learn and hopefully contribute positively to the community;
-more specifically, next subsection points to some reasons and benefits of such a project; of course, I’m open
+more specifically, next subsection points to some reasons and benefits of such a project; of course, I'm open
 to finding more in the future.
 
 ## Benefits of 3D Plotting in SunPy
@@ -83,7 +83,7 @@ image. One of the best use-cases of 3D plotting in SunPy.
 
 ## What have other people contributed to this project previously?
 
-Presently, PR #4591 by Dr. David Stansby(@dstansby) provides a foundation for the project. It’s basically
+Presently, PR #4591 by Dr. David Stansby(@dstansby) provides a foundation for the project. It's basically
 a proof-of-concept; it takes a sunpy.map.Map object, converts it to Heliocentric-Inertial Coordinate system,
 creates a mesh and finally plots in PyVista.
 
@@ -105,13 +105,13 @@ creates a mesh and finally plots in PyVista.
 ## Abstract
 
 SunPy currently uses Matplotlib for plots and has limited support for 3D plots owing to PR #4591 .
-The project’s goal is to pack PR #4591 into a new package, independent of SunPy, and develop a complete
+The project's goal is to pack PR #4591 into a new package, independent of SunPy, and develop a complete
 API initially interfacing with PyVista but general enough for other backends like plotly too.
 SunPy has excellent support for 2D plots with Matplotlib, but 3D support is missing; through 3D backing, one
-can easily combine visualizations of multiple objects such as overlapping HMI on a AIA image in 3D; it’ll be a
+can easily combine visualizations of multiple objects such as overlapping HMI on a AIA image in 3D; it'll be a
 gem for intuitiveness. Moreover, PFSSPy, a dependent package of SunPy, which calculates the Potential-Field
 Source-surface model for computing the coronal magnetic field features, has an exciting attribute, which can
-overlap field over the image; this’ll precisely be the best use case for 3D support in SunPy. I believe the project
+overlap field over the image; this'll precisely be the best use case for 3D support in SunPy. I believe the project
 is evenly balanced between writing, testing and documenting code
 
 ## Goals
@@ -131,19 +131,19 @@ weekly task schedules, with some buffer time for unforeseeable circumstances and
 
 ## Timeline
 
-I have attached a thorough timeline of the proposed project. Regarding my commitments, I’ll have my course
-classes from August 10, so I’ve shifted some of the workload to July.
+I have attached a thorough timeline of the proposed project. Regarding my commitments, I'll have my course
+classes from August 10, so I've shifted some of the workload to July.
 I plan to to publish a weekly blog for the project with all relevant details to help future developers and users; I
 believe this would be critical in the long run.
 
 - May 17, 2021 - May 24, 2021
   - Familiarize with the code and the community.
-  - Since I am already familiar with the dev env and test systems used in SunPy so I’ll quickly go through it again just in-case, and will focus more on the code and how it all is integrated together.
+  - Since I am already familiar with the dev env and test systems used in SunPy so I'll quickly go through it again just in-case, and will focus more on the code and how it all is integrated together.
   - Create a separate package with PR #4591 as foundation and set-up all necessary workflows.
 
 - May 24, 2021 - June 1, 2021
-  - During this time, I’ll discuss with my mentors and come with more specific details about the project, like how the public face of the API should behave, etc.
-  - I’ll learn and try to solve the challenges I’m already aware-of in the project, see subsection V.IV
+  - During this time, I'll discuss with my mentors and come with more specific details about the project, like how the public face of the API should behave, etc.
+  - I'll learn and try to solve the challenges I'm already aware-of in the project, see subsection V.IV
   - Learn more about dependencies like AstroPy, plotly, MPL, PyVista and see how their API is designed.
 
 - May 24, 2021 - June 1, 2021
@@ -222,10 +222,10 @@ believe this would be critical in the long run.
 
 ## Probable Issues/Challenges
 
-- The API will initially depend upon pyvista, which works on VTK, unfortunately Read the Docs doesn’t
+- The API will initially depend upon pyvista, which works on VTK, unfortunately Read the Docs doesn't
 support a headless-display, but this need to be investigated after reply from @cadair suggesting a possible
 solution.
-- As of now, whenever I run pyvista from Jupyter Notebook it bugs out crashing the notebook, I’m not sure
+- As of now, whenever I run pyvista from Jupyter Notebook it bugs out crashing the notebook, I'm not sure
 if this is a wide-spread or localised issue
 
 <hr>

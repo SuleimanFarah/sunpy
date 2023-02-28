@@ -49,7 +49,7 @@ My first hobby project was a sprite based game back in 10th grade. It received 7
 
 I am ranked in the top 0.5% (Rank 495 of 100000+) on Google's Competitive Machine Learning and Data Science platform, [kaggle.com](https://www.kaggle.com). Having worked in the field of Data Science from the past 2 years, I have acquired decent experience with respect to Linear ML Models, Python and Neural Network based models. (Some of [my work](https://www.kaggle.com/amoghjrules/notebooks) related to modelling methods, feature engineering, etc.)
 
-Recently, I co-authored a [research paper](https://drive.google.com/open?id=1xif6lI7y224q3yi5LA4_-kuG7cPpT6-o) for Beebots, which is a blockchain-based decentralised swarm robotic system. I implemented and tested a density-based clustering algorithm in Python which helped optimize the bots’ behaviour. [(Github repo)](https://github.com/spider-tronix/bee-bots)
+Recently, I co-authored a [research paper](https://drive.google.com/open?id=1xif6lI7y224q3yi5LA4_-kuG7cPpT6-o) for Beebots, which is a blockchain-based decentralised swarm robotic system. I implemented and tested a density-based clustering algorithm in Python which helped optimize the bots' behaviour. [(Github repo)](https://github.com/spider-tronix/bee-bots)
 
 Last winter, I mentored at the Tensorflow organisation at Google Code-In. I meticulously reviewed 70+ machine-learning tasks and provided constructive criticism and assisted students in debugging their code. [(Certificate)](https://drive.google.com/open?id=1UlXxFnHFcCmjo99-NzAe25X8B5UH4OtU)
 

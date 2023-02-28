@@ -29,13 +29,13 @@
 
 - Programming Language: Python, C++ (Basic Knowledge)
 
-- I have done summer research with School of Chemistry, Cardiff University. The topic of my project was [‘Developing Analytical Tools for Molecular Dynamics Simulations’](https://drive.google.com/file/d/1jRh4YQszBku2Y5_J0ezBUVXCnON9e_zW/view?usp=sharing), in this I developed a functionality for [ASE (Atomic Simulation Environment, Python)](https://wiki.fysik.dtu.dk/ase/) to plot diffusion coefficient for Molecular Dynamics Simulations.
+- I have done summer research with School of Chemistry, Cardiff University. The topic of my project was [‘Developing Analytical Tools for Molecular Dynamics Simulations'](https://drive.google.com/file/d/1jRh4YQszBku2Y5_J0ezBUVXCnON9e_zW/view?usp=sharing), in this I developed a functionality for [ASE (Atomic Simulation Environment, Python)](https://wiki.fysik.dtu.dk/ase/) to plot diffusion coefficient for Molecular Dynamics Simulations.
 
 - I am currently developing a Python Package, [FractPy](https://github.com/asinghgaba/fractpy) which will be used for plotting Fractals, mainly focussing on using Newtons Method to generate it for a given function. I plan to upload it to PyPi by the end of April.
 
 - I have taken Computing for Mathematics course in my University, in which I learned not only programming but other as important concepts like documentation, testing, referencing, and writing a paper.
 
-- Open Source Contributions: I joined Github this year, so don’t have much experience in open source, but I have been learning a lot since then and have contributed to the following repositories:
+- Open Source Contributions: I joined Github this year, so don't have much experience in open source, but I have been learning a lot since then and have contributed to the following repositories:
 
   - SunPy
 
@@ -99,11 +99,11 @@ After converting the coordinates I will need to plot them in 3D. For PyVista, as
 
 - **Tests and Documentation**
 
-After developing a working code I’ll write tests for image comparisons and all the other code. For documentation I will write it in a format which would make the API easy to use: Tutorial, How-to, Explanation, and References.
+After developing a working code I'll write tests for image comparisons and all the other code. For documentation I will write it in a format which would make the API easy to use: Tutorial, How-to, Explanation, and References.
 
 In tutorial I will show the basic idea behind the API, and how it can be super useful.
 
-For How-to I’ll show examples for each feature that will be provided with this API, and how to make the most out of them.
+For How-to I'll show examples for each feature that will be provided with this API, and how to make the most out of them.
 
 In explanation I will explain what method I employed for the API, and what assumptions were made. The explanation section will be useful for further development.
 
@@ -133,7 +133,7 @@ I will spend this time to get to know the community and interact with the mentor
 
   - *June 29, 2021 - July 7, 2021*
 
-    My sister is getting married, so I won’t be available during this time period. (I understand the time period is long, but brown weddings aren't a one day event lol!)
+    My sister is getting married, so I won't be available during this time period. (I understand the time period is long, but brown weddings aren't a one day event lol!)
 
   - *July 8, 2021 - July 12, 2021*
 
@@ -169,9 +169,9 @@ I will spend this time to get to know the community and interact with the mentor
 ### **Availability**
 
 ---
-As stated above, there are 2 occasions when I might not be available, on my exams, and on my sister’s wedding, but other than that I am available full time.
-I won’t be doing any Summer Internship neither going for any trip, so can commit easily around ~18 hours per week, but if more needed I am more than happy to do that.
-After my exams on June 9, 2021, my academic semester would be officially over and won’t start until September.
+As stated above, there are 2 occasions when I might not be available, on my exams, and on my sister's wedding, but other than that I am available full time.
+I won't be doing any Summer Internship neither going for any trip, so can commit easily around ~18 hours per week, but if more needed I am more than happy to do that.
+After my exams on June 9, 2021, my academic semester would be officially over and won't start until September.
 
 ## GSoC
 
@@ -179,7 +179,7 @@ After my exams on June 9, 2021, my academic semester would be officially over an
 
 - **Have you participated previously in GSoC? When? Which project?**
 
-No, I haven’t participated previously. This is my first time taking part in GSoC.
+No, I haven't participated previously. This is my first time taking part in GSoC.
 
 - **Are you also applying to other projects?**
 
@@ -187,7 +187,7 @@ No, this is the only proposal I am submitting.
 
 - **How much time do you plan to invest in the project before, during, and after the Summer of Code?**
 
-During the coding period I can easily put in ~18 hours per week, as I don’t have any summer internships. After the Summer of Code, I’ll continue to work on the API, and get it integrated into SunPy as soon as possible. I can’t wait to see how that’ll turn out!
+During the coding period I can easily put in ~18 hours per week, as I don't have any summer internships. After the Summer of Code, I'll continue to work on the API, and get it integrated into SunPy as soon as possible. I can't wait to see how that'll turn out!
 
 - **Are you eligible to receive payments from Google?**
 

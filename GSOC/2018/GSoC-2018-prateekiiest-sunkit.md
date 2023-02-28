@@ -344,7 +344,7 @@ Keep 3-4 days for writing the tests and the remaining days will be devoted to wr
 
 #### **Post GSOC Goals**
 
-I would still contribute to this project after GSOC ends. If I can finish the project 1-2 weeks prior to deadline, I would like to implement two optional extras as part of the project. - **Implementation of NAFE**and**Soft Morphological Filter.**If by any chance I don’t get time for working on the additional features in NRGF during the time period proposed, I will do that during this time.
+I would still contribute to this project after GSOC ends. If I can finish the project 1-2 weeks prior to deadline, I would like to implement two optional extras as part of the project. - **Implementation of NAFE**and**Soft Morphological Filter.**If by any chance I don't get time for working on the additional features in NRGF during the time period proposed, I will do that during this time.
 
 ## **Software Packages to be used**
 
@@ -384,7 +384,7 @@ SunPy is the only organisation I am applying to and I am applying to another pro
 
 ### **Commitment**
 
-* I don’t have any other internships or work for the summer. I don’t have any other plans to go on vacation.
+* I don't have any other internships or work for the summer. I don't have any other plans to go on vacation.
 
 * My classes for the new semester will begin around August 2nd, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. Hence it will not be much of a problem during the final week. I will be able to spare 30-35 hours for the project per week easily.
 

@@ -1,3 +1,5 @@
+# 2020 SunPy Coordination Meeting Agenda and Notes
+
 This will be the first of a yearly series of in-person SunPy Coordination meetings. The purpose of this meeting is to
 
 * plan for the next sunpy core release cycle
@@ -769,7 +771,7 @@ Here is a link to a google doc for future drafts and gathering comments.
   * Could expand to cover all python solar physics instead of just sunpy as discourse allows subgroups.
 * We need to advertise sunpy more via the blog, social media with the idea of getting a more friendly welcoming face (like astropy have done over the last few years)
 * Expand our blog to have nice tutorials or more community information aka the face of sunpy.
-* Need to make sure we don’t have or keep an anti-IDL sheen we might have. Unhelpful.
+* Need to make sure we don't have or keep an anti-IDL sheen we might have. Unhelpful.
 * Add maybe an ask sunpy room on riot? Re purpose the off topic or add a new one? Will be fixed by matrix in the future (alleged, like they will fix server performance).
   * We want to encourage however we can, more questions and open discussion from users.
 

@@ -13,7 +13,7 @@ Background
 
 I graduated from Queen Mary with a Masters in Astrophysics and I am starting a PhD in September.
 I'm passionate about astronomy, science and technology with a specific focus in solar physics which is what has lead me to work with SunPy.
-I have been a casual coder since working along with a child’s coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching in Object Oriented Programming in Java with the Open University.
+I have been a casual coder since working along with a child's coding book on my dads old BBC micro, I then moved into basic web development and playing with JavaScript and finally started to get formal teaching in Object Oriented Programming in Java with the Open University.
 
 My dissertation was based on extrapolation of coronal magnetic fields, it involved reading key scientific literature on the subject and implementing a simple mathematical model in Python (using SunPy) which I then evaluated both qualitatively using MayaVi visualization and quantitatively using the Titov-Demoulin Equilibrium model.
 In 2015 I was funded by the ESA SoCiS program to develop the SolarBExtrapolation SunPy affiliated package, this is an API for the development and evaluation of magnetic field extrapolation routines.
@@ -62,12 +62,12 @@ This project aims to refactor the code from the sunpy.lightcurve object to make 
 ### Time Series Implementation
 
 Currently the lightcurve class is implemented using the Pandas Dataframe class, this is designed to store time series and includes much of the necessary time manipulation/selection method.
-It has been suggested re-implementing using an AstroPy QTable based time-series, this would give native support for AstroPy Quantities and AstroPy Time objects, however AstroPy doesn’t currently have such a class and consultation with SunPy members has suggested continuing to use Pandas is ideal for this project. Note, there is a proposal for a suitable AstroPy time series class here:
+It has been suggested re-implementing using an AstroPy QTable based time-series, this would give native support for AstroPy Quantities and AstroPy Time objects, however AstroPy doesn't currently have such a class and consultation with SunPy members has suggested continuing to use Pandas is ideal for this project. Note, there is a proposal for a suitable AstroPy time series class here:
 <https://github.com/Cadair/astropy-APEs/blob/master/APE9.rst>
 
 ### Defining Instrument Source
 
-Lightcurve data is stored in a variety of data formats, some with header information (such as fits files) that defines the instrument details, others simply don’t have this information, such as data stored in csv files. There needs to be a user-defined way to tell the constructor what source the data is from if it’s not available in the file, a source keyword argument would be a neat and consistent way to do this. This is defines in:
+Lightcurve data is stored in a variety of data formats, some with header information (such as fits files) that defines the instrument details, others simply don't have this information, such as data stored in csv files. There needs to be a user-defined way to tell the constructor what source the data is from if it's not available in the file, a source keyword argument would be a neat and consistent way to do this. This is defines in:
 
 <https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0007.md>
 

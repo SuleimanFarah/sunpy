@@ -1,3 +1,4 @@
-# Editions
+# Google Summer of Documentation (GSoD)
+## Editions
 
-[[GSOD 2020]]
+[[GSoD 2020]]

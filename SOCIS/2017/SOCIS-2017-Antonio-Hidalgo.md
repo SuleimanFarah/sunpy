@@ -7,7 +7,7 @@ Github: [anhiga](https://github.com/anhiga)
 
 e-mail: [a_j_1995@hotmail.com](mailto://a_j_1995@hotmail.com)
 
-Studies: I’m finishing my Bachelor’s Degree in Aerospace Engineering at Universidad Politecnica de Valencia, and also studying a CFGS (the Spanish equivalent of Higher Vocational Training Course) in Web Application Development.
+Studies: I'm finishing my Bachelor's Degree in Aerospace Engineering at Universidad Politecnica de Valencia, and also studying a CFGS (the Spanish equivalent of Higher Vocational Training Course) in Web Application Development.
 
 OS: Mainly Linux and Windows, but also MacOS if needed.
 

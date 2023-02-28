@@ -22,7 +22,7 @@ _Overarching Question_: How to interface with external packages developed by ins
 
 We already have SEP-004 - is this sufficient? Maybe we need to add in some additional text about instrument packages?<BR>
 Is an instrument package different than other affiliated packages? <BR>
-We should document this, but maybe it doesn’t need to be in a SEP (for flexibility)?<BR>
+We should document this, but maybe it doesn't need to be in a SEP (for flexibility)?<BR>
 Need more information about what does SunPy provide to affiliated packages?<BR>
 Should finally write up a review process for accepting affiliated packages, adding more clarity and structure that we can point to.<BR>
 New territory - not many (no?) instrument teams have already released data prep code in Python.<BR>

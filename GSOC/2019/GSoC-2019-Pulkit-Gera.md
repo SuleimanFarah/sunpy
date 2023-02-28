@@ -76,7 +76,7 @@ This will be retrieved back  through jsonify in the following form
 The various fields are explained as follows:-
 
 * File_name: Name of the file
-* Function_name: The function in the file. Its under the impression that one file will have one function as we dont want to interfere with other function within the same file’s data.
+* Function_name: The function in the file. Its under the impression that one file will have one function as we dont want to interfere with other function within the same file's data.
 * Version: It contains the version which it has. The originally downloaded will be referred as 1 and every subsequent override will be updated and stored.This will be used for versioning of the data.
 * Skip_hash: This will be used to identify whether the hash of the downloaded file needs to be checked after downloading or not.
 * Last_modified: This will be used to request a file with a different modified time.
@@ -290,7 +290,7 @@ My interests include programming, open source and reading blogs. I started contr
 * Developed a Proxy Server in Python
 * Developed an AI bot playing ultimate tic tac toe using alpha beta pruning
 These projects are all on my [github](https://github.com/darthgera123)
-I came across Sunpy via going through a friend of mine’s contributions and found the project a bit unusual. After contributing to it, I really liked the mission. I enjoyed going over other PR’s to get a hang of it along with keep myself updated.The thing I like most about Python is how easily you can hack/prototype things, with such smooth ease. Interning with SunPy would strengthen my skills in Python and also make me a better developer and give me insight to a scientific libraries.
+I came across Sunpy via going through a friend of mine's contributions and found the project a bit unusual. After contributing to it, I really liked the mission. I enjoyed going over other PR's to get a hang of it along with keep myself updated.The thing I like most about Python is how easily you can hack/prototype things, with such smooth ease. Interning with SunPy would strengthen my skills in Python and also make me a better developer and give me insight to a scientific libraries.
 When Im not programming, either Im following Man Utd or playing badminton
 
 ## GSOC
@@ -309,7 +309,7 @@ Yes, I am eligible to receive payments from Google.
 
 ### How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
-I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either. My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
+I don't have any other internships or work ( I don't plan on having any ) for the summer. I don't have any plans to go on vacation either. My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
 Also, because my summer vacation starts on May 3, I will start working on the project early so that I can try to complete the project well before the deadline ( around 2-3 weeks before the deadline ). This will also ensure that any extra unforeseen and time consuming challenges will be taken care of (there are also buffer periods to handle this).
 
 ### Will you continue contributing to SunPy after the Summer of Code too ?

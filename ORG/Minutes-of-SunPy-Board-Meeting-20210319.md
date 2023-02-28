@@ -27,8 +27,8 @@ The project needs oversight of the political, financial, and technical dimension
 
 This PR is part of a larger puzzle, which is not supposed to solve all the problems, but just get the board out of certain areas. Board members will make additional comments to PR, and approve off-line through the review process.
 
-SEP’s are an avenue for direct community input or guidance, and the board is still intended to vote on those SEP’s.
-Some SEP’s are more technical, and some could be more general (i.e. SEP's may lie somewhere along technical or political dimensions). I evvaluating the different SEP's the board should state it will follow community consensus.
+SEP's are an avenue for direct community input or guidance, and the board is still intended to vote on those SEP's.
+Some SEP's are more technical, and some could be more general (i.e. SEP's may lie somewhere along technical or political dimensions). I evvaluating the different SEP's the board should state it will follow community consensus.
 
 How does the existing NASA ROSES proposal change the immediate needs and role of board? Maybe the ROSES project is not tightly tied to SunPy governance.
 

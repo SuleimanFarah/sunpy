@@ -1,8 +1,11 @@
 # sunpy.timeseries small development grant
+
 ## Proposal Title
+
 Scoping the future of timeseries data in sunpy.
 
 ## Two Sentence Summary of Proposal
+
 The data storage container for timeseries data in sunpy does not support all solar physics datasets. We propose to scope out user requirements for a new timeseries storage container, and use these to identify a new internal data container.
 
 ## Description of Proposal
@@ -22,27 +25,33 @@ Accomplishing this requires the following steps
 1. Gathering user requirements for timeseries data
 2. Translating these into requirements for an internal data container.
 3. Evaluating possible containers against these requirements. Containers we are currently considering are:
-- pandas.DataFrame
-- astropy.timeseries.TimeSeries
-- ndcube.NDCube
-- xarray.DataArray
+   - pandas.DataFrame
+   - astropy.timeseries.TimeSeries
+   - ndcube.NDCube
+   - xarray.DataArray
 4. Recommending a container to implement, discussing with the community, and arriving at a consensus community choice.
 
-In addition to this scoping work, the path to implementing the container will be prepared by increasing the test coverage of sunpy.timeseries from 93% to 100%. This will ensure when making the change of container in future we do not break any user workflows without first warning them of upcoming changes.
+In addition to this scoping work, the path to implementing the container will be prepared by increasing the test coverage of sunpy.timeseries from 93% to 100%.
+This will ensure when making the change of container in future we do not break any user workflows without first warning them of upcoming changes.
 
-## Please explain the benefit of this proposal including:
+## Please explain the benefit of this proposal including
+
 No more than 400 words (2,500 characters max)
+
 ### Impact to the project
+
 Spending the time to do a proper scoping job will ensure we only have to make a complicated change to the code base once and for the long term. Doing a proper scoping job before implementation will also ensure no time is wasted on attempts to implement a new data container without full consideration of the best option.
 
 ### Impact to the scientific ecosystem
+
 All options being considered are part of the wider scientific Python ecosystem, and whichever is chosen will benefit from upstream contributions from the SunPy developer community. Ensuring our chosen data container is interoperable with other packages (including other Matplotlib, scipy, astropy, pysat, pandas, xarray, dask) will reduce duplication of developer effort on both SunPy and other packages parts.
 
 ### Impact to the community
-Being able to support a wide range of solar physics timeseries datasets will ensure sunpy continues to serve its scientific community during and beyond the next decade. This is particularly important for supporting data analysis with the new generation solar physics missions (e.g. ESA’s Solar Orbiter, NASA’s Parker Solar Probe, ISRO’s Aditya-L1).
 
-# Outcome
+Being able to support a wide range of solar physics timeseries datasets will ensure sunpy continues to serve its scientific community during and beyond the next decade. This is particularly important for supporting data analysis with the new generation solar physics missions (e.g. ESA's Solar Orbiter, NASA's Parker Solar Probe, ISRO's Aditya-L1).
+
+## Outcome
+
 Funded by NUMFocus. Feedback on proposal:
-
 
 "Good proposal and description of the benefit to the community, especially the upstream projects. The detail and breakdown in the budget is also appreciated. The timeline seems unnecessarily stretched out, and with only 10 hours scheduled per month, the rate of pay seems quite high; how much time will the maintainer spend getting back up to speed on the progress, vs actually making progress with only 1.25 days per month?"

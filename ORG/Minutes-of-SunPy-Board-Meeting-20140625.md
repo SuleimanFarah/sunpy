@@ -18,7 +18,7 @@
 
 ### Meeting Notes
 
-- **Steven** initiated a **discussion** of the nature of SunPy. Whether we should consider it as it’s own ‘environment’, or whether it is more of a package that exists within the wider Python ‘environment’. This was linked to the issue of whether, within SunPy, it is philosophically acceptable to deviate from what is considered 'Pythonic' in order to provide a different 'environment' for users. Different points of view were raised, without a clear consensus.
+- **Steven** initiated a **discussion** of the nature of SunPy. Whether we should consider it as it's own ‘environment', or whether it is more of a package that exists within the wider Python ‘environment'. This was linked to the issue of whether, within SunPy, it is philosophically acceptable to deviate from what is considered 'Pythonic' in order to provide a different 'environment' for users. Different points of view were raised, without a clear consensus.
 
 - A related **discussion** was raised regarding becoming compatible with Python 3.x. Currently dropping SunPy support for Python 2.6 is imminent. It was agreed that SunPy Developers need to become more familiar with Python 3.x for future development. **Decision made** to write an SEP for the transition between 2.x to 3.x
   - A timeline for transitioning to Python 3 is also present in the SunPy roadmap, and may need updating.

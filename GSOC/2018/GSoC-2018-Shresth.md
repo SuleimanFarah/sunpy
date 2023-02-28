@@ -62,11 +62,11 @@ Suggested mentors : Stuart Mumford, Nabil Freij, Punyaslok Pattnaik
 
 Time is a central concept in lots of sub-modules within SunPy and at present, SunPy uses `datetime.datetime` objects for representing time. This works fairly well except that `datetime.datetime` has numerous shortcomings when used in the domain of astronomy such as
 
-* Firstly,  `datetime.datetime` doesn’t have a notion of leap seconds. This results in the loss of precision (as reported in issue [https://github.com/sunpy/sunpy/issues/993](https://github.com/sunpy/sunpy/issues/993)).
+* Firstly,  `datetime.datetime` doesn't have a notion of leap seconds. This results in the loss of precision (as reported in issue [https://github.com/sunpy/sunpy/issues/993](https://github.com/sunpy/sunpy/issues/993)).
 
-* Secondly,  `datetime.datetime` works at local time while solar physicists may need to work with more FITS compliant time formats such as TAI, TDB, TT, UT1 etc.  This problem can be solved by transitioning to the Time object in AstroPy. It provides a much powerful representation of Time as it supports various Time Formats,  Time scales and efficient interconversion between them using the ERFA’s python wrapper.
+* Secondly,  `datetime.datetime` works at local time while solar physicists may need to work with more FITS compliant time formats such as TAI, TDB, TT, UT1 etc.  This problem can be solved by transitioning to the Time object in AstroPy. It provides a much powerful representation of Time as it supports various Time Formats,  Time scales and efficient interconversion between them using the ERFA's python wrapper.
 
-* Another reason is that, some time scales are sensitive to observer’s location (such as TDB scale) and require an EarthLocation object (or a tuple which can instantiate one) to be passed along so as to define them. This isn’t possible at all with  `datetime.datetime` but is supported in  `astropy.time.Time`.
+* Another reason is that, some time scales are sensitive to observer's location (such as TDB scale) and require an EarthLocation object (or a tuple which can instantiate one) to be passed along so as to define them. This isn't possible at all with  `datetime.datetime` but is supported in  `astropy.time.Time`.
 
 * There is a support of different Time formats in  `astropy.time.Time` such as jd, mjd, unix, cxcsec which can provide diverse forms of representations of the internal time keeping machinery.
 
@@ -96,13 +96,13 @@ The main idea here is to change the API of `parse_time` to be a thin wrapper aro
 
 * Some of the cases written in `parse_time` can be covered and parsed by  `astropy.time.Time` under the hood.
 
-* For instance, pandas timestamp and datetime objects are already supported by  `astropy.time.Time` as input so they wouldn’t be needed to be written as explicitly different cases.
+* For instance, pandas timestamp and datetime objects are already supported by  `astropy.time.Time` as input so they wouldn't be needed to be written as explicitly different cases.
 
 * Another thing that can be removed by use of  `astropy.time.Time` is utime format (or in fact any Time format) as it is now supported as a time format ([https://github.com/sunpy/sunpy/pull/2409](https://github.com/sunpy/sunpy/pull/2409))
 
-Now, the structure of refactored `parse_time` can either first parse using  `astropy.time.Time` and then fall back upon the explicitly defined formats supported by `parse_time` or the other way round. I believe that it would be better the latter way because of ease in error handling. That is, if `parse_time` formats can’t handle the string input, it will try  `astropy.time.Time` (for inputs such as '2018-03-20T00:00:00.000(UTC)') and if astropy can’t handle it either, then a meaningful error will be thrown by the error handling machinery of  `astropy.time.Time`.
+Now, the structure of refactored `parse_time` can either first parse using  `astropy.time.Time` and then fall back upon the explicitly defined formats supported by `parse_time` or the other way round. I believe that it would be better the latter way because of ease in error handling. That is, if `parse_time` formats can't handle the string input, it will try  `astropy.time.Time` (for inputs such as '2018-03-20T00:00:00.000(UTC)') and if astropy can't handle it either, then a meaningful error will be thrown by the error handling machinery of  `astropy.time.Time`.
 
-After this, only the cases which are new for astropy Time (such as ‘now’ or np.datetime64) would have to be explicitly parsed by `parse_time` and even they would be reduced to a bunch of object conversions to astropy time. This would also simplify much of regex parsing of `parse_time` as some part of it would be handled by astropy time.
+After this, only the cases which are new for astropy Time (such as ‘now' or np.datetime64) would have to be explicitly parsed by `parse_time` and even they would be reduced to a bunch of object conversions to astropy time. This would also simplify much of regex parsing of `parse_time` as some part of it would be handled by astropy time.
 
 **2) Single Dispatch in `parse_time`**
 
@@ -114,11 +114,11 @@ Some things to note in this implementation
 
 * Whenever a new format is decided to be supported for time_string, we can easily extend this by registering a new function to convert_time. This will prevent the previous problem of complex nested conditionals.
 
-* Special care would have to be taken for cases such as tuple which can mean differently for `parse_time` and AstroPy time like in the case (2018,3,3) and (‘2018-03-03’, ‘2018-03-04’). Similar cases might arise for string regex where discussion would be needed for deciding how the new `parse_time` should interpret the time string.
+* Special care would have to be taken for cases such as tuple which can mean differently for `parse_time` and AstroPy time like in the case (2018,3,3) and (‘2018-03-03', ‘2018-03-04'). Similar cases might arise for string regex where discussion would be needed for deciding how the new `parse_time` should interpret the time string.
 
 * Another change here is that, time_format parameter is removed from parameters and instead, `format` parameter for AstroPy would be used as a more generic term for the  `astropy.time.Time` object created. The user can also specify Time scale, location, precision and all the parameters that the Time object supports which would be passed on from **kwargs of `parse_time` to  `astropy.time.Time` at object creation.
 
-The next subpart of this implementation would be to write tests that make sure that newer functionality of `parse_time` work properly. This would include tests related to time formats that weren’t supported earlier, time scales, cases where there might be ambiguity between old `parse_time` behaviour and newer results. Furthermore, we need to add documentation explaining the newer features as well as changes in API so as to assist user in making the transition.
+The next subpart of this implementation would be to write tests that make sure that newer functionality of `parse_time` work properly. This would include tests related to time formats that weren't supported earlier, time scales, cases where there might be ambiguity between old `parse_time` behaviour and newer results. Furthermore, we need to add documentation explaining the newer features as well as changes in API so as to assist user in making the transition.
 
 **Part 2 : Making rest of the SunPy to work with AstroPy Time**
 
@@ -176,7 +176,7 @@ May 14th, 2018 - June 14th, 2018
 
   * Develop wrappers to create  `astropy.time.Time` object from all existing types that `parse_time` supports such as pandas.series, np.datetime64 etc.
 
-  * Make sure that previous tests don’t break with the changes in `parse_time` and also modify some tests if needed (such as those which are expecting `parse_time` to return  `datetime.datetime` object)
+  * Make sure that previous tests don't break with the changes in `parse_time` and also modify some tests if needed (such as those which are expecting `parse_time` to return  `datetime.datetime` object)
 
 * **Week 2 (May 28th)**
 
@@ -320,9 +320,9 @@ No. This is the only project I am applying for.
 
 ### **9.1 Commitments**
 
-I am free for the summer of 2018 as I am not having any internship. But I do have my final term exams from 1st May to 6th May. Luckily, this lies in the community bonding period so it shouldn’t affect the project much. My summer holidays would end in the last week of July but I am sure I can spend 35-40 hours working on this project even during regular classroom schedule as it is not that hectic.
+I am free for the summer of 2018 as I am not having any internship. But I do have my final term exams from 1st May to 6th May. Luckily, this lies in the community bonding period so it shouldn't affect the project much. My summer holidays would end in the last week of July but I am sure I can spend 35-40 hours working on this project even during regular classroom schedule as it is not that hectic.
 
-Apart from this, I have to start working on my btech project in second half of July but that won’t require more than 4 hours a week of commitment as it is only the initial phase involving discussion with faculty.
+Apart from this, I have to start working on my btech project in second half of July but that won't require more than 4 hours a week of commitment as it is only the initial phase involving discussion with faculty.
 
 I have also added buffer periods in my proposed timeline so that there is time to cover up lagging milestones(just in case there are any) or if any particular stage takes longer to implement. This will ensure that work gets completed at right time before the deadline.
 

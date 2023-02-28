@@ -1,3 +1,5 @@
+# Weekly Community Meetings Archive
+
 ## 22 Feb 2023
 
 ### Agenda
@@ -736,8 +738,8 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
         * What has been your experience using SunPy? The good? The bad?
         * What is missing from SunPy that you would like to see?
         * What would you like to be able to do with SunPy that you can't currently do?
-        * What do you think about SunPy’s online documentation and examples?
-        * If you’re using Python packages in place of SunPy for your solar physics data analysis, why is that?
+        * What do you think about SunPy's online documentation and examples?
+        * If you're using Python packages in place of SunPy for your solar physics data analysis, why is that?
         * Do you know how to contact SunPy if you have a question?
         * Do you know what PyHC is?
         * Do you use SunPy with other parts of the PyHC ecosystem?

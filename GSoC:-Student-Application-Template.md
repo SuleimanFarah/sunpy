@@ -1,10 +1,12 @@
-**THIS TEMPLATE IS A GUIDE**
+# GSoC Application Template
+
+## THIS TEMPLATE IS A GUIDE
 
 When you submit an application to GSoC, it will be in a Google Docs format and an application should be **concise** and we suggest not exceeding ~5 pages.
 
 We also expect the final application to be hosted on our wiki.
 Please keep this in mind if you plan to use the fancier formatting features of Google Docs.
-You can do this after you have finalised the version on the GSoC website.
+You can do this after you have finalized the version on the GSoC website.
 
 Any code you want to include should be in a gist but we recommend not writing empty pseudo code or just documentation strings.
 
@@ -26,7 +28,7 @@ Please use a succinct title that describes your proposal.
 
 * Short bio / overview of your background
 
-* How can we contact you (email, GitHub username, etc.)?
+* How can we contact you (email, GitHub username, etc)?
 
     This information will help us associate all of your various usernames with you.
   * Email
@@ -53,7 +55,7 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 ## You the programmer
 
 In your project proposal let us know about your programming experience.
-Don't worry if you don't know much about sunpy or git/GitHub.
+Don't worry if you don't know much about `sunpy` or git/GitHub.
 Many of our students start fresh on these topics and we will teach you what you need to know.
 
 * What is your experience with programming?
@@ -67,7 +69,7 @@ Many of our students start fresh on these topics and we will teach you what you 
 
 * Have you ever used git or another version control system?
 
-* What are your contributions to SunPy so far?
+* What are your contributions to the SunPy Project so far?
 
     It should be a brief summary (with links) of pull requests including un-merged work.
     Pick what you think are your best pull requests.
@@ -88,7 +90,7 @@ Answer the following questions in your proposal:
 
 * How do you plan to implement the project?
 
-    What parts of sunpy need changing and in what way?
+    What parts of `sunpy` need changing and in what way?
     What will you add?
     What could be stumbling blocks of the project?
     Will you need to make changes to upstream packages?
@@ -99,13 +101,13 @@ Answer the following questions in your proposal:
 
     Does it improve on the current API? If so, how?
 
-* Will you require any software packages that are not already a requirement of SunPy?
+* Will you require any software packages that are not already a requirement?
 
     If the answer is no, you can skip this.
     Please do not add redundant information into the application.
 
     If the answer is yes, what ones and why?
-    We need to be given a good reason to add extra requirements to SunPy.
+    We need to be given a good reason to add extra requirements to any package.
 
 * Please provide a schedule of how this time will be spent on sub-tasks of the project over the period of the summer.
 
@@ -132,11 +134,11 @@ Below is a blank template of a timeline you can try to use to fill in for your G
 You are free to use another or a different style but we want this level of breakdown, either week by week or two weeks at most.
 You should tailor the timeline as as it suits you and the project you are working on.
 
-**The timetable dates and the format depends on GSoC, so will change year on year.**
-**So you might need to update it yourself.**
+**The timetable dates and the format depends on GSoC, these change year on year.**
+**So you will update it yourself.**
 ___
 
-#### Community Bonding Period (DATE)
+### Community Bonding Period (DATE)
 
 ___
 

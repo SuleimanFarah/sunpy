@@ -107,7 +107,7 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
 | ts = datetime() | `Time(ts)` |
 | `ts = datetime.date` | `Time(ts.isoformat())` |
 
-  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428. The current implementation of parse_time cannot convert np.datetime64(‘2012-06-18T02:00:05.453000000-0400’). This gist gives `parse_time` the ability to convert the mentioned `np.datetime64`s.
+  NOTE: Conversion of `np.datetime64` to `astropy.Time`   can be accomplished by [this  gist](https://gist.github.com/vn-ki/01b6d32b7a255e796ea54e8b882c8512) based on the issue astropy/#6428. The current implementation of parse_time cannot convert np.datetime64(‘2012-06-18T02:00:05.453000000-0400'). This gist gives `parse_time` the ability to convert the mentioned `np.datetime64`s.
 
   Before returning `Time`, `.replicate` function could be called on it so that we get a uniform format for all the returned `Time` objects.
   We could also set the scale as we need (utc, tai etc.).

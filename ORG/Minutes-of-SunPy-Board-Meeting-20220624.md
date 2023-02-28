@@ -24,12 +24,12 @@
 TESS Plans and SPD funding – Will is working with Dale Gary to arrange a time for a SunPy workshop/town hall. Timing is still TBD. SPD funds will be used to purchase refreshments during the workshop.
 
 ### ROSES SunPy Project Update
-Will Barnes has started part time and will increase his share of time next year. Stuart’s funding is held up in getting the sub-award NumFocus. Different people are working on the various components of the project - infrastructure, coordinates, dask, community training.
+Will Barnes has started part time and will increase his share of time next year. Stuart's funding is held up in getting the sub-award NumFocus. Different people are working on the various components of the project - infrastructure, coordinates, dask, community training.
 
 ### Governance Changes
 There has been an increasing disconnect between board members and active developers. Stuart has recently participated in a lot of governance discussions within the AstroPy project.
 
-The AstroPy experience - they started with an internal four-person committee. This wasn’t sufficiently formal to be funded directly by NSF. They have gone about setting up a framework with an advisory board and voting contributors.
+The AstroPy experience - they started with an internal four-person committee. This wasn't sufficiently formal to be funded directly by NSF. They have gone about setting up a framework with an advisory board and voting contributors.
 
 Four aspects of governance:
 * Financial oversight and documentation

@@ -78,7 +78,7 @@ So, the calculated response function is up to date depends on:
 
 This is definitely not a long-term solution.
 
-2. Currently SunPy uses AstroPy’s `download_file` to download remote data for tutorials like [hmi_synoptic_maps](https://github.com/sunpy/sunpy/blob/master/examples/hmi_synoptic_maps.py).One of the few problems that AstroPy’s `download_file` possess is that it doesn't version the data it downloads.It doesn't provide an override mechanism to redownload data whenever data changes on the remote server (deliberately due to calibration change etc.). This could be a really useful feature if we are tying SHA hash to our source code.
+2. Currently SunPy uses AstroPy's `download_file` to download remote data for tutorials like [hmi_synoptic_maps](https://github.com/sunpy/sunpy/blob/master/examples/hmi_synoptic_maps.py).One of the few problems that AstroPy's `download_file` possess is that it doesn't version the data it downloads.It doesn't provide an override mechanism to redownload data whenever data changes on the remote server (deliberately due to calibration change etc.). This could be a really useful feature if we are tying SHA hash to our source code.
 
 With these 2 issues stated, I have only scratched the surface, there are possibly many more uses of `remote_data_manager` that one can think of.
 
@@ -131,11 +131,11 @@ OSError
 This function will work as a decorator and will have the following functionalities:-
 * It will accept `remote_url` as an argument and download the file  from the `remote_url`
 * If there is a problem with the `remote_url` , it will use the `mirror_urls` to download the file.
-* It will also cache the downloaded data and add the function’s name to the cache.
+* It will also cache the downloaded data and add the function's name to the cache.
 * It will verify the downloaded data with the provided hash.
 
 * If the file is already present in the cache, it will do nothing.
-* The file will be saved in the directory  `$HOME/sunpy/data/file_name/…` and with the name of the file determined by the it’s  hash.
+* The file will be saved in the directory  `$HOME/sunpy/data/file_name/…` and with the name of the file determined by the it's  hash.
 * Database of cache will be maintained in a JSON file.
 
 A glimpse of proposed cache database :
@@ -422,7 +422,7 @@ I will strictly follow my proposed timeline .I will be pushing my changes to  re
 
 ### Other Schedule Information
 
-I have my end semester exams from 20 April -  28 April. So, I won’t be completely available during the Community Bonding Period. However, I would try my best to complete the tasks mentioned in the Community Bonding Period.
+I have my end semester exams from 20 April -  28 April. So, I won't be completely available during the Community Bonding Period. However, I would try my best to complete the tasks mentioned in the Community Bonding Period.
 
 I don't have any other internship during this summer.
 I commit working for 40 hours a week (Mon-Sat) during GSoC period. I am also willing to work on Sundays if my mentor(s) and I feel that I am falling behind on my project work.

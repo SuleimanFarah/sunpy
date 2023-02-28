@@ -478,7 +478,7 @@ What I proposed is that I want to include Jupyter Notebook tutorials under Sunpy
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets.
 I have read much about the Sphinx documentation since the last few weeks.
-I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+I will work on the project regularly and give regular updates to my mentors about my progress and seek guidance if I face any problem. I would try to adhere to the timetable proposed for weekly progress and try my best to complete the project before time. I will also push code regularly so that the mentors can keep track of my progress. Also I'll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 At the end of the project, I would still like to be inside the Sunpy channel as a contributor to make new improvements to the software.
 
 -------------
@@ -514,7 +514,7 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 
 === Commitment ===
 
-* I don’t have any other internships or work for the summer. I don’t have any plans to go on vacation either.
+* I don't have any other internships or work for the summer. I don't have any plans to go on vacation either.
 
 * My classes for the new semester will begin around October 5th, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
 

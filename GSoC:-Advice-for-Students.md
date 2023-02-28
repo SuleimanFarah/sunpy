@@ -1,3 +1,5 @@
+# GSoC Student Advice
+
 Do you want to participate in SunPy as part of GSoC?
 **Then make sure you read through all the advice on the wiki and the provided links.**
 
@@ -18,7 +20,7 @@ To do this:
 * Get in touch with the community.
 
   There are many ways to get yourself known by the community.
-  You can introduce yourself through the [mailing list](https://groups.google.com/group/sunpy), chat with us in the [Matrix channel](https://app.element.io/#/room/#sunpy:openastronomy.org) and even contact the mentors to know more about the project that interested you.
+  Chat with us in the [Matrix channel](https://app.element.io/#/room/#sunpy:openastronomy.org) and even contact the mentors to know more about the project that interested you.
   We strongly recommend you browse [Shakthi Kannan's book "i want 2 do project. tell me wat 2 do"](http://shakthimaan.com/downloads/book/chapter1.pdf).
 
 * Set up your platform to develop with SunPy.
@@ -26,12 +28,12 @@ To do this:
   You will need to create yourself an account on [GitHub](https://github.com).
   Our [Newcomer's guide](https://docs.sunpy.org/en/latest/dev_guide/contents/newcomers.html) will walk you through setting up git and lays out our method of development.
 
-* Try using sunpy.
+* Try using `sunpy`.
 
-  To get an understanding of sunpy, browse through our [documentation and the user guide](https://docs.sunpy.org/en/stable/guide/index.html).
+  To get an understanding of `sunpy`, browse through our [documentation and the user guide](https://docs.sunpy.org/en/stable/guide/index.html).
   You can also check all the [different posters we have done](https://figshare.com/search?q=sunpy&quick=1).
 
-* Find something in sunpy that doesn't work or needs improvement.
+* Find something in `sunpy` that doesn't work or needs improvement.
 
   If you need inspiration, feel free to fix any issue from our [Good first issues](https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Good+First+Issue%22).
   Aside from the issues, search for `FIXME` or `TODO` in the code.
@@ -43,7 +45,7 @@ To do this:
   **We use the pull requests as a basis to judge your ability to program Python or other relevant topics and that you are able to interact with the community in code reviews.**
   If the project you are interested in will use a language other than Python (e.g., C) or working on a specific concept (like signal analysis or mathematics), you should submit pull requests that demonstrate that you are able to work on these topics.
 
-* For the pull request requirement to be fulfilled, you must have opened at least one pull request in SunPy.
+* For the pull request requirement to be fulfilled, you must have opened at least one pull request in the wider SunPy Project.
 
   We may be slow to review the pull requests therefore you do not have to have your pull request merged by the application deadline.
   But you do need at least have opened one pull request by the deadline.
@@ -108,7 +110,7 @@ We suggest that you think about these when writing your application.
 4. **Experience**
 
     Has the student demonstrated that they have the ability to work with sunpy's code?
-    Does the student have reasonable evidence they’ve competently done something relevant to this before?
+    Does the student have reasonable evidence they've competently done something relevant to this before?
 
     Required:
     * A GitHub profile
@@ -122,20 +124,11 @@ We suggest that you think about these when writing your application.
     Students must have submitted a pull request to SunPy and provide links to code they have written before in their application.
     Try to select work you are most proud of, we do not want a link to everything you have ever done.
 
-## Interview
-
-**Please note, if you don't get an interview, it does not mean you have been rejected.**
-**Sometimes it is impossible to interview anyone due to time constraints of the mentors.**
-
-One of the parts of GSoC that isn't very common to other packages is that we try to "interview" the students.
-This is generally very informal, much closer to a chat than anything else.
-We use this to try and get everyone (all the mentors) who will be involved with the project to have spoken beforehand.
-
 ## How the ranking process works
 
 All students with a finalized proposal will have their proposals reviewed by all of the project mentors in the organization, and ranked out of 5 based on the criteria above.
 This score will also be averaged to provide a mean result.
-These scores are not the final acceptance criteria - so a 4.1 won’t automatically win over an 3.6 - but they do help provide general guidelines for the mentors who are choosing from a large body of qualified students.
+These scores are not the final acceptance criteria - so a 4.1 won't automatically win over an 3.6 - but they do help provide general guidelines for the mentors who are choosing from a large body of qualified students.
 
 ## Accepted students
 

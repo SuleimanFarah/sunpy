@@ -6,7 +6,7 @@
 - Github: [@manurare](https://github.com/manurare)
 
 ## About me
-I am currently enrolled on the Computer Vision master programe at the Autonomous University of Barcelona (UAB). During the past four years I’ve been studying Telecommunications Engineering at University of Vigo as well in Spain and I specialized in Image and Sound. Also in my last year of my bachelors I did an Erasmus scholarship in Denmark where I coursed subjects in AI and medical imaging.
+I am currently enrolled on the Computer Vision master programe at the Autonomous University of Barcelona (UAB). During the past four years I've been studying Telecommunications Engineering at University of Vigo as well in Spain and I specialized in Image and Sound. Also in my last year of my bachelors I did an Erasmus scholarship in Denmark where I coursed subjects in AI and medical imaging.
 
 Since I discovered the field of Computer Vision I have never stopped learning. I started by raw image processing during my career and at the moment we are learning the core of Machine Learning apply to images. What defines me most is that I am not satisfied only with knowing how to use a specific framework or a specific library but I try to understand the roots (why and hows) of the techniques I am using thus building a strong and robust knowledge on the topic.
 

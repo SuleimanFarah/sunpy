@@ -29,7 +29,7 @@ Steven Christe, Jack Ireland, David Perez-Suarez, Stuart Mumford, Russ Hewitt, A
 - **Juan Carlos Martinez Oliveros** confirmed as a new board member (unanimous vote)
 - It was suggested to nominate a member of AstroPy to be on the board. **Tom Robitaille** was suggested as a candidate.
 - It was decided that board meeting minutes should be recorded as a google document, and uploaded to the SunPy Github Wiki upon conclusion of the meeting.
-- Decided that Chair, Vice-Chair and Executive Director should be the only ‘owners’ of the SunPy repository on Github
+- Decided that Chair, Vice-Chair and Executive Director should be the only ‘owners' of the SunPy repository on Github
 - Discussion of formalising the PR acceptance process - **Stuart** will present at the next meeting.
 - Next meeting will be one month from this meeting (5th May 2014 at 1pm EST)
 - Meeting concluded.

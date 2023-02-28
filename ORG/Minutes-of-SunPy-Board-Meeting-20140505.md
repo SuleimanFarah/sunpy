@@ -38,7 +38,7 @@
 
 - Vote is held on whether to allow proxy voting. Result is **7-0 against allowing proxies, with 1 abstention**.
 
-- Vote is held on whether voting by email/remote means should be allowed in exceptional cases. ‘Exceptional circumstances’ would have to be agreed at a prior Board meeting. **Result is 7-0 in favour, with 1 abstention**.
+- Vote is held on whether voting by email/remote means should be allowed in exceptional cases. ‘Exceptional circumstances' would have to be agreed at a prior Board meeting. **Result is 7-0 in favour, with 1 abstention**.
 
 **Albert Shih** departed the meeting.
 

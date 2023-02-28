@@ -89,7 +89,7 @@ DavidPS: It would be better if the links are to the sunpy repository
           I started  looking into SunPy about 2-3 weeks back. I was
           pretty active on IRC asking out mentors about SunPy. I am pretty
           familiar with the software now. My main task is to look into all the
-          things I could do with Jupyter Notebooks(as I don’t know much about it).
+          things I could do with Jupyter Notebooks(as I don't know much about it).
           On the programming part, I keep looking into Python Docs, Edx courses.
 
           I will go through the documentation again and again so that I
@@ -132,7 +132,7 @@ DavidPS: add links to these, that way mentors can get a better picture of
           Recently I made 2 pull requests:
 
 1. [\#1710](https://github.com/sunpy/sunpy/pull/1710): It involved
-    change in Developer’s guide document, also changed another file for
+    change in Developer's guide document, also changed another file for
     the issue [\#1704](https://github.com/sunpy/sunpy/issues/1704).
 
 2. [\#1707](https://github.com/sunpy/sunpy/pull/1707): This pull
@@ -147,7 +147,7 @@ I have been a Ubuntu user for more than 6 months .
 
 This period will be dedicated to knowing about the project more and
 more. I would seek answers as in what format(bug fixes, tutorials,
-SEP’s)  do my mentors want me to improve the website and the
+SEP's)  do my mentors want me to improve the website and the
 documentation(Region Of Interest ,Customizing SunPy etc), which
 subtopics does the SunPy community expect me to focus on the most.
 
@@ -227,7 +227,7 @@ DavidPS: There's an orthographic mistake here!
 
 10. **Commitments**
 
-I have my end Semester exams from 15 April – 8 May so I won’t be able to
+I have my end Semester exams from 15 April – 8 May so I won't be able to
 devote most of the time to the project. Still I would try my best to take out 2-3 hours a
 day for the project.
 
@@ -245,7 +245,7 @@ Technology, Jaipur, India.
 My interests are Data science, Problem solving. I also took a course in
 Discrete Mathematical Structures, Shell Programming . My open Source
 journey began from November 2015 when I participated in Google Code-In.
-Though I didn’t contribute much but I learned the basics of open source
+Though I didn't contribute much but I learned the basics of open source
 i.e. Git, IRC etc. Other than Python I am pretty good at C
 programming and also used it recently for my research project about
 which I had mentioned earlier in this document. On the non-technical

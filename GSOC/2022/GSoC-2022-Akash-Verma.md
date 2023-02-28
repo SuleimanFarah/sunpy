@@ -34,7 +34,7 @@ The current HelioviewerClient in sunpy does not offer full access to the Heliovi
 
 But the Helioviewer API has a huge number of endpoints that provide different functionality.
 
-The current implementation doesn’t integrate with Fido (sunpy’s search and download interface) and also, the HelioviewerClient doesn’t belong to sunpy’s core and needs to be moved out of the codebase.
+The current implementation doesn't integrate with Fido (sunpy's search and download interface) and also, the HelioviewerClient doesn't belong to sunpy's core and needs to be moved out of the codebase.
 
 In this project, I will be proposing wrapping every aspect of Helioviewer API in a Python package and extending its support to Fido with the help of a new client.
 
@@ -194,7 +194,7 @@ If we **mock our requests**, we receive data from our requests which does not ch
 
 Setting the implementation of the API endpoint methods as the priority, I decided that, if ~2 endpoints methods were implemented per week, we can achieve wrapping 55% of API before the first evaluation, if any endpoint requires low effort then I can also implement more than ~ 3 endpoints. The first one or two will take longer. then subsequent ones should be faster. Once we have the class hierarchy setup adding new endpoints should be a lot easier. This will save time for the implementation of the **Fido client**. Implementing each endpoint will include writing a test case along with documentation for each of them. Every endpoint implementation will be pushed in a different git branch with a clear summary, rather than a single big pull request. This will help mentors to monitor my progress easily and probably save their time.
 
-Here’s a list of all the API endpoint classes that will be implemented, in this project:
+Here's a list of all the API endpoint classes that will be implemented, in this project:
 
 * **JPEG2000** [5 endpoints]
 
@@ -370,7 +370,7 @@ Expected by Evaluation 2, end of the coding period
 
 This is my first time participating in GSoC. I am eligible to participate and receive payment from Google. I am not applying to any other organizations. I don't have any other commitments in the summer. So, I have decided to dedicate 4 - 6 hrs per day.
 
-I read a few books by Stephen Hawking and got fascinated by physics and astronomy. Searching organizations for Google summer of code I came to know that there are astronomy-based open source organizations. When I started open source, I read a blog about [How to be an open source gardener](https://steveklabnik.com/writing/how-to-be-an-open-source-gardener) and I am inspired by that. For a long time, I wish to do something like this for an open source organization and I think this is my best opportunity. So, after GSoC, I planned to start preparing for my master’s entrance exam and along with that, I will become an open source gardener at Sunpy or openAstronomy, cleaning up issues like weeds in the garden and helping community members. The new package will be a project that I wrote and I wish to keep supporting the maintainers of the package with my continuous contributions.
+I read a few books by Stephen Hawking and got fascinated by physics and astronomy. Searching organizations for Google summer of code I came to know that there are astronomy-based open source organizations. When I started open source, I read a blog about [How to be an open source gardener](https://steveklabnik.com/writing/how-to-be-an-open-source-gardener) and I am inspired by that. For a long time, I wish to do something like this for an open source organization and I think this is my best opportunity. So, after GSoC, I planned to start preparing for my master's entrance exam and along with that, I will become an open source gardener at Sunpy or openAstronomy, cleaning up issues like weeds in the garden and helping community members. The new package will be a project that I wrote and I wish to keep supporting the maintainers of the package with my continuous contributions.
 
 ## Coding experience
 

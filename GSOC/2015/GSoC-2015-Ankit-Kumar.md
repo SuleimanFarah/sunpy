@@ -105,7 +105,7 @@ SEPs are observed with several instruments onboard several spacecraft, such as G
 **Pre-Work:**
 
 Read documentation and development guide, practice examples and get familiar with lightcurve module, sunpy.instr.goes, sunpy.lightcurve.sources.goes file, Unified Downloader PR, Maps class. Get the final idea about approach.
-Discuss and create a list of each ‘X’ vs ‘Y’ visualization to be implemented during the project and sort out project implementation and additional feature that should be added after thoroughly discussing it with mentor.
+Discuss and create a list of each ‘X' vs ‘Y' visualization to be implemented during the project and sort out project implementation and additional feature that should be added after thoroughly discussing it with mentor.
 
 **I  {25 May - 21 June} ( 4 weeks) (This I believe will be the bulk of the initial task and might take unto a month or so)**
 
@@ -123,7 +123,7 @@ As of now the lightcurve class reads in data and stores it as pandas.DataFrame t
 
 **II  {22 June -  9 July} (2.5 weeks)**
 
-Correspondingly add the analytical functions to sunpy.instr module for each of the three new instruments that’ll help analyze the data retrieved from the instrument. Also goes.py might need some new analyzing functions (thats up for discussion with mentor later)
+Correspondingly add the analytical functions to sunpy.instr module for each of the three new instruments that'll help analyze the data retrieved from the instrument. Also goes.py might need some new analyzing functions (thats up for discussion with mentor later)
 
 * add analytical functions to sunpy.instr module for analyzing data from above three instruments
 
@@ -156,7 +156,7 @@ Time Series visualization of SEP data vs other data. e.g. Xray, Solar Wind Prope
 
 **VII  {12 August - 17 August} (In case I end up completing before the deadlines and time permits)**
 
-I’d like to suggest/add a new feature. (This will be optional and added with further discussion with mentor):
+I'd like to suggest/add a new feature. (This will be optional and added with further discussion with mentor):
 
 Event Recognition and Response Mechanism : I plan to at least start the development of events recognition and corresponding response for a few sample popularly monitored events in the solar weather.
 

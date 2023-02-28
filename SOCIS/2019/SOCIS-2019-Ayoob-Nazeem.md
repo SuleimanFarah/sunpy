@@ -9,7 +9,7 @@ I have been interested in Astronomy and Space from my early teens, and want to h
 
 Other than these my interests lie in Artificial Intelligence and am currently learning TensorFlow and Stacked GANs (Generative Adversarial Networks) for my Final year project for my degree starting September 2019.
 
-My hobbies are cooking and reading books. When I’m doing neither I can be found hiking or riding my bicycle.
+My hobbies are cooking and reading books. When I'm doing neither I can be found hiking or riding my bicycle.
 
 ### <u>Contact Information</u>
 

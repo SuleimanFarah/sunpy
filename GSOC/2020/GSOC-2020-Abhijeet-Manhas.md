@@ -101,7 +101,7 @@ I have been interested in Astronomy since my school days. I participated in vari
 
 ## Why this Project?
 
-I started using SunPy last winter; initially for AIA maps in slides for a session. From November I started to interact with the community by joining the riot channel and mailing list. I then explored its issues and tried to work on various submodules out of which sunpy/net seems to be more intriguing for me, I continued some client PRs and by making them compatible with current SunPy’s version, I became familiar with changes undergone by the submodule and how works.
+I started using SunPy last winter; initially for AIA maps in slides for a session. From November I started to interact with the community by joining the riot channel and mailing list. I then explored its issues and tried to work on various submodules out of which sunpy/net seems to be more intriguing for me, I continued some client PRs and by making them compatible with current SunPy's version, I became familiar with changes undergone by the submodule and how works.
 Fido naturally seemed to be an obvious project for me in SunPy after the ideas list were out and I was very excited to go for it.
 
 # The Project Plan
@@ -131,11 +131,11 @@ The `time_query` of HEC can be renamed to search for uniformity with other clien
 
 ## 2. Chosen metadata columns in Response tables of DR Clients
 
-The one thing which bugged me while working with sunpy/net was ‘nan’ values in the wavelength column of the response table of DR Clients. This issue was also raised here [#3221](https://github.com/sunpy/sunpy/issues/3321). There really should be a way by which users can decide what columns they want to see in the table.
+The one thing which bugged me while working with sunpy/net was ‘nan' values in the wavelength column of the response table of DR Clients. This issue was also raised here [#3221](https://github.com/sunpy/sunpy/issues/3321). There really should be a way by which users can decide what columns they want to see in the table.
 
 The way I am thinking to solve it is by making a dictionary `meta_cols` data member of client class with keys as attrs (column name to be shown in the result table) and values. The `build_table` of `ClientResponse` will use meta_cols to make the `Astropy.table.Table`.
 
-The meta_cols values will be filled using helper functions defined within the source client class or to be retrieved from the file name read by Scraper. For example, for `GOESClient` the `get_goes_sat_num()` call  will result in ```meta_cols[‘sat_no’].append(sat_num)```.
+The meta_cols values will be filled using helper functions defined within the source client class or to be retrieved from the file name read by Scraper. For example, for `GOESClient` the `get_goes_sat_num()` call  will result in ```meta_cols[‘sat_no'].append(sat_num)```.
 
 This will be of course followed by native and Fido tests for the implementation.
 
@@ -155,13 +155,13 @@ This will return a modified dictionary of metadata and the `__repr__` function f
 <!--
 ### 3.3 Standardizations for HelioViewer*
 
-It would be slightly typical to standardize the  `HelioViewerClient` since it has four types of searchers’ namely `get_closet_image`, `get_jp2_header` returning dict and `download_jp2`, `download_png` returning a file url.
+It would be slightly typical to standardize the  `HelioViewerClient` since it has four types of searchers' namely `get_closet_image`, `get_jp2_header` returning dict and `download_jp2`, `download_png` returning a file url.
  For those returning dict, a similar API to `meta_cols` shall be implemented allowing a few default columns and user-chosen columns. The `attrs` passed in the query will be used for meta only response for those which return a url. To increase interpretability, Users can provide options to display Sunpy maps in the response table also.
 -->
 
 ## 4. Query inspection and post search Filtering
 
- The feature worked for VSO till v0.9.9 but broke when v1.0.0 was released. After knowing the bad commit, first I’ll correct it for VSO and then add a `search` method to query response objects of all clients.
+ The feature worked for VSO till v0.9.9 but broke when v1.0.0 was released. After knowing the bad commit, first I'll correct it for VSO and then add a `search` method to query response objects of all clients.
 
 ### 4.1 Implement filter_results for net attrs
 
@@ -169,7 +169,7 @@ It would be slightly typical to standardize the  `HelioViewerClient` since it ha
 
 ### 4.2 Filtering using Fido
 
-Before implementing this, first I’ll register QR objects based on the client by which they are used as raised in [issue #3732](https://github.com/sunpy/sunpy/issues/3732). Then add a search function to `UnifiedResponse` class of `fido_factory.py` similar to the way explained for the rest clients.
+Before implementing this, first I'll register QR objects based on the client by which they are used as raised in [issue #3732](https://github.com/sunpy/sunpy/issues/3732). Then add a search function to `UnifiedResponse` class of `fido_factory.py` similar to the way explained for the rest clients.
 
 <hr>
 
@@ -304,18 +304,18 @@ ___
 
 ### Have you participated previously in GSoC? When? Under which project?
 
-I haven’t participated in GSoC before.
+I haven't participated in GSoC before.
 
 ### Are you applying to other projects?
 
-I haven’t applied to any other project and focused on Fido.
+I haven't applied to any other project and focused on Fido.
 
 ### Commitments?
 
-I don’t have any internships or other projects to do in summer. I won’t be even having classes in June and July, so I can fully commit my time to the project. I can easily commit 35-45 hours a week to my project.
-For one week in June, I’ll be busy with my end-sem examinations.
+I don't have any internships or other projects to do in summer. I won't be even having classes in June and July, so I can fully commit my time to the project. I can easily commit 35-45 hours a week to my project.
+For one week in June, I'll be busy with my end-sem examinations.
 I will love to contribute to SunPy even after the GSoC period. Integrating the HESPE data archive will be my next objective after the summer of code.
 
 ### Eligibility?
 
-Yes, I’m eligible to receive payments from Google.
+Yes, I'm eligible to receive payments from Google.

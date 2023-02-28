@@ -1,3 +1,5 @@
+# Release Checklist
+
 ## Before major releases
 
 - [ ] Ensure What's New have been finalised at feature freeze time.
@@ -13,13 +15,14 @@
 ## For all normal releases
 
 Set the release version environment variable:
-```
+
+```bash
 export SUNPY_VERSION="X.Y.Z"
 ```
 
 - [ ] Update the changelog using [towncrier](https://pypi.org/project/towncrier/) (not for rc releases):
 
-```
+```bash
 towncrier build --version $SUNPY_VERSION
 ```
 
@@ -27,27 +30,25 @@ towncrier build --version $SUNPY_VERSION
 
 - [ ] Commit the changes
 
-```
+```bash
 git add .
 git commit -m "Release v$SUNPY_VERSION"
 ```
 
 - [ ] Push directly to the release branch on SunPy
 
-```
+```bash
 git push upstream X.Y
 ```
 
-
 - [ ] Check that the [GitHub actions build](https://github.com/sunpy/sunpy/actions) passes on last commit on the branch (including the wheel builds).
 - [ ] Test that [readthedocs build](https://readthedocs.org/projects/sunpy/builds/) is building the documentation correctly on the branch.
-***
 
 If you need to fix anything do so on the branch and forward port to main as need be (to reduce the CI builds).
 
 - [ ] Tag on and push (tag should be full version number preceded by a `v`)
 
-```
+```bash
 git checkout X.Y
 git tag -a v$SUNPY_VERSION -m "Releasing version v$SUNPY_VERSION"
 git push --follow-tags upstream v$SUNPY_VERSION
@@ -77,19 +78,22 @@ This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/s
 ## Announcements
 
 ### Social media
+
 Post to:
+
 - [ ] Twitter
 
 ### Email
+
 - [ ] Send release announcement to mailing lists (sunpy@googlegroups.com and sunpy-dev@googlegroups.com)
 - [ ] For major releases, send release announcement to
-    - [UKSP mailing list](https://www.uksolphys.org/news/newsletter-archive/)
-    - [Solar news mailing list](https://solarnews.nso.edu/)
-    - [Helionauts forum](https://helionauts.org/)
-    - [OpenAstronomy discourse](https://community.openastronomy.org/c/sunpy/5)
-    - [Python in Heliophysics mailing list](https://heliopython.org/contact/)
+  - [UKSP mailing list](https://www.uksolphys.org/news/newsletter-archive/)
+  - [Solar news mailing list](https://solarnews.nso.edu/)
+  - [Helionauts forum](https://helionauts.org/)
+  - [OpenAstronomy discourse](https://community.openastronomy.org/c/sunpy/5)
+  - [Python in Heliophysics mailing list](https://heliopython.org/contact/)
 
-```
+```text
 Email Template
 -----
 

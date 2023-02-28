@@ -49,7 +49,7 @@ In the Sunspotter data set, there is a significant bias. The following is a list
   - We shall construct about 10 separate Cross-Validation data sets by the method of shuffle and split Cross-Validation based on AR segregation (AR segregation is, to balance out the classes, I will make sure that the ten Cross-validation splits that I make will have an almost equal number of C, M and No flare producing ARs.). First, we randomly shuffle the AR numbers in different levels of No-flare/C/M and then split the AR numbers at a ratio of around 80%:20% which would correspond to training and testing data respectively.
   - The advantage of this method is that in each of the 10 data sets, not only do the samples in the testing data set not overlap with those in the training data set but also the ARs in the testing data set are disjoint from those in the training data set. We train and evaluate our model on these 10 separate training and testing data sets. We adopt the loss function calculated from the weighted cross-entropy loss.
 
-I’ll be modifying the code from the [repository mentioned in the original paper](https://github.com/FlarePrediction/Repository) to produce the 10 Cross-Validation splits. These modifications would mostly be for making the preprocessing step into a SunPy compliant class, which can be merged into the main repository.
+I'll be modifying the code from the [repository mentioned in the original paper](https://github.com/FlarePrediction/Repository) to produce the 10 Cross-Validation splits. These modifications would mostly be for making the preprocessing step into a SunPy compliant class, which can be merged into the main repository.
 
 ##### Further
 
@@ -74,7 +74,7 @@ The reasons why I would prefer reducing the dimensionality of knowledge using Au
 
 Different algorithms will consume a different amount of resources in terms of memory and training time.
 I shall be running all the algorithms locally on my machine equipped with an NVIDIA 1050Ti GPU.
-If need be, I’ll migrate to Google Colab.
+If need be, I'll migrate to Google Colab.
 
 #### 4) Testing and Integration
 

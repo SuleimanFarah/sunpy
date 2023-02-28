@@ -11,13 +11,13 @@
 
 ## Experience as a programmer
 
-* Editor - I prefer using Vim and sometimes when I need all the bells and whistles I use pycharm. I love Vim because it is highly customisable and I can program it to do pretty much anything that I want . I use pycharm mainly for debugging purposes because I don’t like the interface of **pdb**as I cannot see the values of all the variables at all the time.
+* Editor - I prefer using Vim and sometimes when I need all the bells and whistles I use pycharm. I love Vim because it is highly customisable and I can program it to do pretty much anything that I want . I use pycharm mainly for debugging purposes because I don't like the interface of **pdb**as I cannot see the values of all the variables at all the time.
 * Experience in programming - I have some experience in python as well as in C++, I have a strong base in data structures and algorithms. I am also well versed in python and built quite a few projects with python like :
   * Signature recognition - I have built a classifier that uses Convolution neural network as well as XGBoost in order to differentiate forged signatures from genuine signatures.
   * Playlist transfer - When I switched my music streaming platform from spotify to YouTube-Music, I wrote a script in python to create all my spotify playlist in YouTube-Music, now I can transfer almost any spotify playlist to YouTube Music.
-  * Notifier - It is a python script that scraped my college’s website at a regular interval and notified the college student’s on telegram if the college put some notice on it.
+  * Notifier - It is a python script that scraped my college's website at a regular interval and notified the college student's on telegram if the college put some notice on it.
 * Experience with python - I consider myself an intermediate level of python programmer. Since Python is an interpreted language and it is dynamically typed I can do many things with python like creating a class at run time and using it in my code that is practically not possible in many of the languages, list and dictionary comprehension are also some of the features that I miss on other programming language. Metaclass is so far the most advanced feature that I have used in python.
-* Experience with Git and Version Control - I know all the basic features of git. I consider myself a beginner when it comes to git, besides git I don’t have any experience with other version-control systems.
+* Experience with Git and Version Control - I know all the basic features of git. I consider myself a beginner when it comes to git, besides git I don't have any experience with other version-control systems.
 
 ## Project Details
 
@@ -87,7 +87,7 @@ This will be implemented by using sqlite in which the response can be stored as 
 
 **July 27 - August 8 (2 weeks):**
 
-Implement the object that will encapsulate the Astropy.Table of the various client’s response.
+Implement the object that will encapsulate the Astropy.Table of the various client's response.
 
 Implement various functions to manipulate these objects, in order to interact with the metadata post search. These functions can provide a functionality like filtering out wavelength greater than threshold from the metadata available, these functions can also provide functionality like conversion of units, like if a particular column of the has the temperature as Fahrenheit and we want to display the metadata as Kelvin then these functions can be used to convert the values.
 
@@ -125,8 +125,8 @@ No. I am not applying in any other projects, earlier I was applying for n-way ma
 
 **Commitments?**
 
-I don’t have any internships or other projects to do in summer. I won’t be even having any classes in June and July, so I can fully commit my time to the project. I can easily commit 40 - 45 hours a week to my project.
+I don't have any internships or other projects to do in summer. I won't be even having any classes in June and July, so I can fully commit my time to the project. I can easily commit 40 - 45 hours a week to my project.
 
 **Eligibility?**
 
-Yes, I’m eligible to receive payments from Google.
+Yes, I'm eligible to receive payments from Google.

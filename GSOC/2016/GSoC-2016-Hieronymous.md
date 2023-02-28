@@ -54,9 +54,9 @@ Specifically, Taking an example, We would first download latest, real-time SWAP 
 I would divide this project nicely, in 2-3 modular parts.
 
 * Fetching and Downloading data. This would involve writing custom clients using ``Fido`` interface to download the fits data and write a similar client to download text/html data (from different sources).
-* Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don’t require. I would create a parser with a separate logic for each source which would extract the tables we want and we could then conveniently manipulate the tables using ``astropy.ascii``.
+* Pre-processing data. The data in form of text/html that we download, would not be in the format that we require. Most of the information is in form of tables which are garbled along with other unnecessary data that we don't require. I would create a parser with a separate logic for each source which would extract the tables we want and we could then conveniently manipulate the tables using ``astropy.ascii``.
 * Plotting. We would use ``matplotlib`` to overlay the data obtained from the table along with the fits data to create the plots.
-Fetching and downloading data should be simple (due to ``Fido``). The main challenges that we would face is most probably in the second step of pre-processing data. Since every source would have its own way in which data is structured we would have to implement a parser with a custom logic for each source. We would use the ``Table`` provided in ``astropy.ascii`` to store the tabular data in the text/html files. Also, the different sources from which we would obtain textual/html data haven’t been decided so far. More might be scrapped/added in the future.
+Fetching and downloading data should be simple (due to ``Fido``). The main challenges that we would face is most probably in the second step of pre-processing data. Since every source would have its own way in which data is structured we would have to implement a parser with a custom logic for each source. We would use the ``Table`` provided in ``astropy.ascii`` to store the tabular data in the text/html files. Also, the different sources from which we would obtain textual/html data haven't been decided so far. More might be scrapped/added in the future.
 
 I would be adding the requisite documentation in form of doc-strings, clearly explaining the utility of the module. I am already familiar with the SunPy docs conventions, One of my PRs dealt with building documentation. If time permits, I would also add doc-tests.
 
@@ -170,7 +170,7 @@ My interests are programming, problem-solving, algorithms and very recently Open
 My interest in Open Source is rather recent. I started contributing regularly from December'15. I liked hanging around on the IRC, trying to get to know SunPy's mission, better. I'm fascinated by how Software Engineering forms the very backbone of SunPy and how proficient and better the SunPy developers are at programming than me, when software engineering isn't even their job, I have lots to learn!
 The thing I like most about Python is how easily you can hack/prototype things, with such smooth ease. Interning with SunPy would strengthen my skills in Python and also make me a better developer.
 
-When I’m not programming, I [read](https://www.goodreads.com/user/show/38044206-sudarshan) and also lift weights in the gymnasium. I lift 3 times a week in the mornings.
+When I'm not programming, I [read](https://www.goodreads.com/user/show/38044206-sudarshan) and also lift weights in the gymnasium. I lift 3 times a week in the mornings.
 
 ## 13. Eligibility
 

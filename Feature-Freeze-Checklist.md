@@ -1,7 +1,7 @@
-SunPy Feature Freeze Checklist
-==============================
+# Feature Freeze Checklist
 
-So it's that time again when it's time to feature freeze and create a new release branch, this checklist is a list of things to do as part of that process. When the checklist is finished you should be able to tag an rc from the newly created release branch.
+So it's that time again when it's time to feature freeze and create a new release branch, this checklist is a list of things to do as part of that process.
+When the checklist is finished you should be able to tag an rc from the newly created release branch.
 
 ## Before branching
 
@@ -10,8 +10,8 @@ The following steps are to be taken on the master branch (via PR) prior to branc
 1. Update the `.mailmap` and `.zenodo.json` files. These are metadata files about the authorship of the code.
     1. The `.mailmap` file needs updating manually, to remove any duplicates and where possible to add peoples real names. The best way to do this is to first run `git shortlog -ens vX.Y.dev..HEAD` where `vX.Y` is the previous release number. Look down this list and check for duplicates and people without real names. Edit the `.mailmap` file until all these are fixed.
     2. Next run the `tools/update_zenodo.py` file, this script uses the output of `git shortlog` to update the `.zenodo.json` file. Check the printed output of the script and the diff for sanity.
-3. Update the vendored modules in `extern/` if they need updating, these should be copied from their latest releases on GitHub.
-5. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
+2. Update the vendored modules in `extern/` if they need updating, these should be copied from their latest releases on GitHub.
+3. Update the stored `sunpy/net/vso/data/attrs.json` and `sunpy/net/jsoc/data/attrs.json` files by running the `tools/update_attrs_json.py` file, commit and PR the changes.
 
 ## Branching
 
@@ -29,7 +29,7 @@ Once this is done there is a couple of things left to do before the first rc rel
 
 1. On release branches we use the milestone checker in the Giles bot to ensure that all backport PRs are attached to a release. We need to enable this by editing the `pyproject.toml` file. Add the following to this file:
 
-```
+```yaml
   [ tool.gilesbot.milestones ]
     enabled = true
     missing_message_long = "This pull request does not have a milestone assigned to it. Only maintainers can change this, so you don't need to worry about it. :smile:"

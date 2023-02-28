@@ -70,7 +70,7 @@ Hence his project would have these main tasks :
 4. Design a database schema to handle the data - keep extra fields to account for future interactive js support.
 5. New Individual clients addition, one by one.
 6. Generate new plots for each client everyday  ( cronjob type of thing, `schedule.every().day.at("10:30").do(job)`  )
-7. On initial deployment, make plots of past year’s files and save them
+7. On initial deployment, make plots of past year's files and save them
 
 ### Project Goals
 
@@ -92,7 +92,7 @@ Hence his project would have these main tasks :
 
 Database → Multiple Client tables → Each client has 2 tables
 
-I thought each client should have separate table only for the reason that future replacement of that data’s source should not tamper with other clients’ data indexing.
+I thought each client should have separate table only for the reason that future replacement of that data's source should not tamper with other clients' data indexing.
 
 Every client will have 2 tables :
 
@@ -113,7 +113,7 @@ Info / metadata table ( client is already known, no need for a separate field )
 * Start Date-time
 * End Date-time
 * FITS file path ( may be needed in future if we need to replot past data )
-* Python Script path ( Assuming we’ll generate the python script beforehand). If it is decided to just template render it with flask, then this field won’t be needed.
+* Python Script path ( Assuming we'll generate the python script beforehand). If it is decided to just template render it with flask, then this field won't be needed.
 * Additional parameters specific to each instrument
 
 **Join operations for query to be done using start and end date-times.**
@@ -141,14 +141,14 @@ List of data sources ( Decreasing priority ) :
 
 **Reference :**
 
-* Hieronymous’ list(not linking it as I have an edit link)
+* Hieronymous' list(not linking it as I have an edit link)
 * [Solar Monitor](www.solarmonitor.org)
 * [Real-Time Solar Wind](http://www.swpc.noaa.gov/products/real-time-solar-wind)
 * [https://www.ngdc.noaa.gov/dscovr/portal/index.html#/download/1490227200000;1490572799999](https://www.ngdc.noaa.gov/dscovr/portal/index.html#/download/1490227200000;1490572799999)
 
 ### How Time Allocation was made in the Timeline
 
-To get a fair estimate of how much time to allocate to each client, I wrote scripts to plot each client’s data. Among all clients, common parameters are :
+To get a fair estimate of how much time to allocate to each client, I wrote scripts to plot each client's data. Among all clients, common parameters are :
 
 * Input : Date Range
 * Output : Plot of that client with AR information from SRS plotted on top of it.
@@ -159,7 +159,7 @@ Most clients worked well and hence lesser time has been allocated to them as all
 A sample image from the magnetogram plot + AR info on top of it (blue dots are AR locations):
 ![](https://github.com/Punyaslok/proposal_images/blob/master/magnetogram-ars.png)
 
-Also I took into account Cadair’s suggestion for this year’s projects : finished, polished and merged PRs at the end is better than a lot of unmerged PRs at the end. Hence I have taken a bit more time to ensure that a client is fully up and running before moving to the next client.
+Also I took into account Cadair's suggestion for this year's projects : finished, polished and merged PRs at the end is better than a lot of unmerged PRs at the end. Hence I have taken a bit more time to ensure that a client is fully up and running before moving to the next client.
 
 * Document and keep track of all policy decisions made.
 * Make it a rule to post all policy decisions on that PR page. Avoids unnecessary confusion/time-wasting later on.
@@ -170,13 +170,13 @@ Also I took into account Cadair’s suggestion for this year’s projects : fini
 | ------------- | ------------- |
 | **Community Bonding** May 5 - 30, 2017     |   <ul><li>Get familiar with Flask</li><li>Set up a simple flask webapp that can run and display the [magnetogram example](https://github.com/sunpy/sunpy/pull/2037). This will act as a base upon which the whole project will be built.</li><li>Set up the database for this LOS_magnetic_field and make sure the webapp is up and running for any queries for LOS_magnetic_field.</li></ul>|
 | | **Coding Period Starts (May 30, 2017)** |
-| June 1 - 7, 2017 ( 1 week ) | <ul><li>Add AIA client</li><li>Write and run job to populate database with past years’ plots</li></ul> |
-| June 8 - 22 ( 2 weeks ) | <ul><li>Add HMI client ( LOS would’ve already been done )</li><li>Add instrument to download proton flux and electron flux data in GOES</li><li>Complete the instrument implementation</li><li>Add GOES client to website</li></ul> |
-| June 23 - 30, 2017 ( 1 week ) | <ul><li>Add EVE client</li><li>Write and run job to populate database with past years’ plots</li></ul> |
+| June 1 - 7, 2017 ( 1 week ) | <ul><li>Add AIA client</li><li>Write and run job to populate database with past years' plots</li></ul> |
+| June 8 - 22 ( 2 weeks ) | <ul><li>Add HMI client ( LOS would've already been done )</li><li>Add instrument to download proton flux and electron flux data in GOES</li><li>Complete the instrument implementation</li><li>Add GOES client to website</li></ul> |
+| June 23 - 30, 2017 ( 1 week ) | <ul><li>Add EVE client</li><li>Write and run job to populate database with past years' plots</li></ul> |
 | | **First Evaluation ( June 26 - 30, 2017 )** |
-| July 1 - 21, 2017 ( 3 weeks ) | <ul><li>Implement new Fido client to download DSCOVR data</li><li>Add DSCOVR client to website</li><li>Write and run job to populate database with past years’ plots</li></ul> |
+| July 1 - 21, 2017 ( 3 weeks ) | <ul><li>Implement new Fido client to download DSCOVR data</li><li>Add DSCOVR client to website</li><li>Write and run job to populate database with past years' plots</li></ul> |
 | | **Second Evaluation ( July 24 - 28, 2017 )** |
-| July 21 - 28, 2017 ( 1 week ) | <ul><li>Add EUVI</li><li>Write and run job to populate database with past years’ plots</li></ul> |
+| July 21 - 28, 2017 ( 1 week ) | <ul><li>Add EUVI</li><li>Write and run job to populate database with past years' plots</li></ul> |
 | July 29 - August 5, 2017 ( 1 week ) | **Buffer Period** |
 | August 6 - 19, 2017 ( 2 weeks ) | <ul><li>Write scheduled jobs for each client which will run once everyday to update the existing data with new plots.</li></ul> |
 | August 20 - 26 ( 1 week ) | <ul><li>Final polishing</li><li>Re-check daily scheduled jobs. Make sure they work correctly for each client.</li></ul> |
@@ -194,15 +194,15 @@ NOTE : Exact database schema for each client will be decided as when the time co
 
 I am confident of completing this project because this project interests me a lot and also fits my current skill sets. Also, I have worked on projects having strict deadlines and high dependencies on other teammates' progress.
 
-I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I’ll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
+I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I'll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 
-I am already very familiar with Fido’s working and I should be able to get things done quickly.
+I am already very familiar with Fido's working and I should be able to get things done quickly.
 
 Even after the project ends, I will be available if anyone has any questions regarding my code.
 
 ### Benefits to the Community
 
-* **Webapp** - Ready availability of solar activity data along with AR information will aid in flare prediction. Also the attached python scripts will give users an idea of how to use SunPy’s various clients.
+* **Webapp** - Ready availability of solar activity data along with AR information will aid in flare prediction. Also the attached python scripts will give users an idea of how to use SunPy's various clients.
 * **DSCOVR client** - Users can now get DSCOVR data using SunPy
 * Users can get proton/electron flux data using SunPy
 
@@ -221,7 +221,7 @@ I have successfully completed a project in GSoC 2016 with SunPy.
 
 ### Commitment
 
-I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
+I don't have any other internships or work ( I don't plan on having any ) for the summer. I don't have any plans to go on vacation either.
 
 My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. I will be able to spare 35-40 hours for the project per week easily.
 

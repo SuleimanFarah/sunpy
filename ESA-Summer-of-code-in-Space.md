@@ -1,3 +1,5 @@
+# ESA Summer of Code in Space
+
 ## What is it?
 
 > [ESA Summer of Code in Space](http://sophia.estec.esa.int/socis/) is a program run by the [European Space Agency](http://www.esa.int/ESA).
@@ -19,16 +21,16 @@ The application on the SOCIC website is quite small and as such we require a for
 
 ## Editions
 
-* [[SOCIS 2019]]
+[[SOCIS 2019]]
 
-* [[SOCIS 2017]]
+[[SOCIS 2017]]
 
-* [[SOCIS 2016]]
+[[SOCIS 2016]]
 
-* [[SOCIS 2015]]
+[[SOCIS 2015]]
 
-* [[SOCIS 2014]]
+[[SOCIS 2014]]
 
-* [[SOCIS 2013]]
+[[SOCIS 2013]]
 
-* [[SOCIS 2012]]
+[[SOCIS 2012]]

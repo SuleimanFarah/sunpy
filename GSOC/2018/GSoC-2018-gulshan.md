@@ -268,8 +268,8 @@ def calculate_hash_func(file):
 2. Secondly, the file is cached and **database** of cache will be maintained in JSON format.
 3. **Use of exception raises for error handling** will be done in the following manner:
    1. If the **`download_file`** function is taking a long time and timeout occurs, an exception will be thrown using try and except statement.
-   2. The URLs given in the URL’s argument in `require` function are invalid, a URLError will be raised using urllib2 i.e. **urllib2.URLError**.
-   3. The client system doesn’t have enough space for the downloaded file to cache, an **OSError exception** derived from **EnvironmentError** will be raised.
+   2. The URLs given in the URL's argument in `require` function are invalid, a URLError will be raised using urllib2 i.e. **urllib2.URLError**.
+   3. The client system doesn't have enough space for the downloaded file to cache, an **OSError exception** derived from **EnvironmentError** will be raised.
 
 ### Testing and documentation
 
@@ -335,7 +335,7 @@ I have not participated in GSoC before. This is the first time that I would be p
 
 ## Commitment
 
-I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
+I don't have any other internships or work ( I don't plan on having any ) for the summer. I don't have any plans to go on vacation either.
 
 My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as the academic load is very less during the initial few weeks of the semester.  I will be able to spare 40-42 hours for the project per week easily.
 

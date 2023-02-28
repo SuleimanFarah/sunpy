@@ -376,7 +376,7 @@ Some examples of test updates which I implemented can be found here - [Test Upda
   <tr>
     <td>Jun 11 -Jun15</td>
     <td>  <b>Phase 1 Evaluation</b>
-Have the modified version of parse_time ready. Should address to any prevalent bugs that may occur due to involvement of new functions. Once it’s set up , I plan to start working on the tests for the newly designed function. Tests will include writing tests for each of the separate time conversion functions for parse_time. Apart from this, I will try to complete as much as documentation possible. These will include documentation for the type we are using for input and output along with links to astropy Time docs corresponding to particular conversion operations, if required.</td>
+Have the modified version of parse_time ready. Should address to any prevalent bugs that may occur due to involvement of new functions. Once it's set up , I plan to start working on the tests for the newly designed function. Tests will include writing tests for each of the separate time conversion functions for parse_time. Apart from this, I will try to complete as much as documentation possible. These will include documentation for the type we are using for input and output along with links to astropy Time docs corresponding to particular conversion operations, if required.</td>
   </tr>
   <tr>
     <td>Jun 15 - Jul 9</td>
@@ -416,7 +416,7 @@ No. This is the only project and SunPy under OpenAstronomy is the only organizat
 
 ### **Commitment**
 
-* I don’t have any other internships or work for the summer. I don’t have any plans to go on vacation either.
+* I don't have any other internships or work for the summer. I don't have any plans to go on vacation either.
 
 * My classes for the new semester will begin around August 2nd, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester. Hence it will not be much of a problem during the final week. I will be able to spare 35-40 hours for the project per week easily.
 

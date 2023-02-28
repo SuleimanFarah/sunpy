@@ -255,7 +255,7 @@ The final reproduced image will look like:
 
 ![zoomed image](https://drive.google.com/uc?id=1b38cuhDC-WwwgcjCkCP6OLgigjNnCkco)
 
-### Multiple ROI’s plotted
+### Multiple ROI's plotted
 
 ### Current implementation without ROI
 
@@ -542,7 +542,7 @@ region.date() # tells me when that was observed
 
 ### **How I propose to complete the project:**
 
-I have been contributing to SunPy from the beginning of the February. I will discuss design specific problems and implementation details with my mentors before starting a new topic. Also, if I feel any problem that needs to addressed or designed carefully, I would rather go through several documentations and try finding solutions online and won’t hesitate approaching mentors for my doubts.
+I have been contributing to SunPy from the beginning of the February. I will discuss design specific problems and implementation details with my mentors before starting a new topic. Also, if I feel any problem that needs to addressed or designed carefully, I would rather go through several documentations and try finding solutions online and won't hesitate approaching mentors for my doubts.
 
 I spent a lot of time going through SunPy documentations and also through several references provided to me other than that. I also worked on some pseudo codes and got to know about its functionalities and figured out the way to design a solution.
 
@@ -565,7 +565,7 @@ I spent a lot of time going through SunPy documentations and also through severa
 
 I commit to work for 35-40 hours a week during GSoC period. I don't have any other internship or work during this summer.
 
-I have my end Semester exams from 19 April – 27 April so I won’t be able to devote most of the time to the project. During that week I would be able to give 15-20 hrs and would further try whenever necessary.
+I have my end Semester exams from 19 April – 27 April so I won't be able to devote most of the time to the project. During that week I would be able to give 15-20 hrs and would further try whenever necessary.
 
 My next semester will start from the 1st week of August still I would be able to devote most of my time as in the initial days of the semester we have less workload.
 

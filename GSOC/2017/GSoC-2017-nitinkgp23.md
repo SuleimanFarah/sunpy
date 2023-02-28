@@ -78,13 +78,13 @@ Here is a detailed study of the differences between the present JSOC Client and 
 
 * There is only a very little integration of the web API in the present JSOCClient. If one is unsure of the series name to query for, there is no way one can query for the data by providing similar or a subset of the series name.
 
-    Whereas in drms, one can easily acquire all the series names available by `Client.series()` and all the series containing `hmi` in their names by doing `Client.series(‘hmi’)`. Moreover, one can get all the primekeys and segments information interactively, while querying for information. Prior knowledge about the keys and segments is not needed.
+    Whereas in drms, one can easily acquire all the series names available by `Client.series()` and all the series containing `hmi` in their names by doing `Client.series(‘hmi')`. Moreover, one can get all the primekeys and segments information interactively, while querying for information. Prior knowledge about the keys and segments is not needed.
 
 * The present JSOC Client supports very limited attributes, as segments, while querying for data and filtering out information based on them. The keys that are supported presently are `Instrument`, `Wavelength` and `Level`, which are simple VSO attributes predefined.
 
     The drms module will allow us to filter out data on the basis of all the keys that are available for a certain series.
 
-* The drms module deals with ‘segments’ in a much better way. While in the present JSOC Client, the segment is a VSO Simple Attr like `Wavelength` and `Instrument`, drms makes a clear distinction between keys and segments. As opposed to the present Client, drms supports more than 1 segment name in a single query. This will reduce export time drastically when querying for more than 1 segment simultaneously.
+* The drms module deals with ‘segments' in a much better way. While in the present JSOC Client, the segment is a VSO Simple Attr like `Wavelength` and `Instrument`, drms makes a clear distinction between keys and segments. As opposed to the present Client, drms supports more than 1 segment name in a single query. This will reduce export time drastically when querying for more than 1 segment simultaneously.
     For e.g., the query for 2 data segments continuum and magnetogram of hmi.sharp_720s data series at a certain given time will generate two different queries, denoted by the query strings :
     ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{magnetogram}`
     ds = `hmi.sharp_720s[2014.11.30_00:00_TAI]{continuum}`
@@ -107,7 +107,7 @@ Here is a detailed study of the differences between the present JSOC Client and 
 * The drms module provides only a very basic download routine that sequentially downloads the requested files.
 SunPy's downloader, instead, is a threaded-download manager which parallely downloads the requested files, hence greatly reducing the download time.
 
-    Sunpy’s downloader also gives the user custom options to modify the downloading as required, for e.g. by passing the path as parameter, or an option to whether overwrite or ignore the files in case the names of files match. Path, if not passed, can be taken up from sunpy’s config file and be downloaded in the default download directory.
+    Sunpy's downloader also gives the user custom options to modify the downloading as required, for e.g. by passing the path as parameter, or an option to whether overwrite or ignore the files in case the names of files match. Path, if not passed, can be taken up from sunpy's config file and be downloaded in the default download directory.
 
     Therefore, we will stick to using SunPy's downloader to get the files downloaded, after fetching the download URLs from the drms client.
 
@@ -129,7 +129,7 @@ The project can be divided into 3 main parts:
 
    SunPy is currently rather restricted in when it comes to accessing HMI and AIA data from JSOC, and the drms module provides a more general interface to access the data series from JSOC servers. Drms module can be used as a backend for the present JSOC Client, to improve communication with JSOC servers.
 
-    The current JSOC Client has limited attributes for generating the query string, and can’t filter out the contents of data based on other keywords such as `QUALITY`. There is no option of downloading the metadata of the data-series exclusively.
+    The current JSOC Client has limited attributes for generating the query string, and can't filter out the contents of data based on other keywords such as `QUALITY`. There is no option of downloading the metadata of the data-series exclusively.
 
     The drms module will allow one to:
 
@@ -183,7 +183,7 @@ Since, I haven't used `unittest.mock` before, I will be working on it in next 2 
 
     A dynamic attribute creation can be implemented in this case, depending upon the keys and primekeys of the queried series. This will also allow auto-complete of the primekeys.
 
-* The query function should have another attribute `query_str` which, if provided, won’t require any other attribute as input. This `query_str` will then directly be passed to `drms.query()` to fetch data. Adding this functionality is necessary because a query string can be modified in a number of ways to filter out data, and a function to generate query string is viable only if the number of arguments are small. In case of large number of arguments or keys, a manually generated query string is more suitable.
+* The query function should have another attribute `query_str` which, if provided, won't require any other attribute as input. This `query_str` will then directly be passed to `drms.query()` to fetch data. Adding this functionality is necessary because a query string can be modified in a number of ways to filter out data, and a function to generate query string is viable only if the number of arguments are small. In case of large number of arguments or keys, a manually generated query string is more suitable.
 
 * **Allow downloading of metadata and image data separately**
     Solar data, are stored in the form of metadata and image data at two different systems. Data are merged together, upon export, in the form of FITS files at JSOC. This merging of data on the server side takes up some time. If instead, the metadata and image data can be downloaded separately, and be merged together on the client side, it will greatly reduce the server load and the export time.
@@ -196,7 +196,7 @@ Since, I haven't used `unittest.mock` before, I will be working on it in next 2 
 
 ### Community Bonding period (May 4 - May 29)
 
-The community bonding period will mainly be for getting to know more about the codebase and learning to write tests. I am already pretty familiar with the JSOC client, but I have to look into Fido client since it uses JSOC’s api. I have spent much time playing with export requests on the JSOC interface, and am familiar with the drms module. Yet, more of time is to be given to understand the inner functionality of drms package.
+The community bonding period will mainly be for getting to know more about the codebase and learning to write tests. I am already pretty familiar with the JSOC client, but I have to look into Fido client since it uses JSOC's api. I have spent much time playing with export requests on the JSOC interface, and am familiar with the drms module. Yet, more of time is to be given to understand the inner functionality of drms package.
 Since I have had little prior experience in writing tests, I will devote a larger part of this month in learning to write sample tests in Pytest and using mock. I will constantly be in touch with mentors, and getting help wherever needed. By the end of this period, my aims are to:
 
 - Get familiar with FIDO Client
@@ -317,9 +317,9 @@ No, I have **not** participated in GSoC before. This is the first time I am part
 I am also applying for the project **Sunkit-image**, in the same organisation SunPy. Though, this project is my **first priority**. I am **not** applying to any other organisation.
 
 ### Commitments
-I may be involved in a short internship of 20 days from 10th May till 31st May. The work hours will be from 5:30 UTC - 11:30 UTC. Since, the internship will be over before the coding period starts, I won’t face any problem in managing my tasks. Even in the community bonding period (during my internship), I will be able to give 5-6 hours easily on understanding the codebase and discussing with the mentors, since I will be free for most of the day according to UTC time.
+I may be involved in a short internship of 20 days from 10th May till 31st May. The work hours will be from 5:30 UTC - 11:30 UTC. Since, the internship will be over before the coding period starts, I won't face any problem in managing my tasks. Even in the community bonding period (during my internship), I will be able to give 5-6 hours easily on understanding the codebase and discussing with the mentors, since I will be free for most of the day according to UTC time.
 
-I won’t have any involvement during the first 8 weeks of coding period. I will be able to give 8 - 9 hours daily, including weekends during the first 2 phases.
+I won't have any involvement during the first 8 weeks of coding period. I will be able to give 8 - 9 hours daily, including weekends during the first 2 phases.
 My classes for the new semester will resume on 17th July. Due to very less academic load during the start of the semester, I will be able to dedicate around 6 hours everyday for the last 4 weeks of the coding period. Nevertheless, I have distributed my tasks in such a way that the last 4 weeks will only be given to documentation and will act as a buffer period.
 
 ### Eligibility

@@ -22,7 +22,7 @@
 
 ## Work and Open Source Experience
 
-I haven’t had much Open Source experience before contributing to SunPy, but I have experience working in team projects, especially involving python.
+I haven't had much Open Source experience before contributing to SunPy, but I have experience working in team projects, especially involving python.
 
 * Made a 2D cannon shooting game using OpenGL [Repo link](https://github.com/Punyaslok/OpenGL-2D-Game)
 * Made a 3D obstacle course maze game using OpenGL  [Repo link](https://github.com/Punyaslok/3D-Obstacle-Game)
@@ -56,7 +56,7 @@ Apart from the above projects, I am also proficient in C/C++ and I love sport pr
 
 The SunPy database module enables users to manage files on a disk, or a network hosted database. Users can find files by using physical parameters such as wavelength, time etc. or by using attributes such as instrument name. Queries can also be combined to form complex queries.
 
-The database module also acts as a proxy and can handle downloading files from different clients. It takes queries and if the user wants to download files, the database makes the query and downloads the files, with the option of the user specifying the download path. It also has a caching mechanism so that if a same download query is made the second time, the files aren’t redownloaded.
+The database module also acts as a proxy and can handle downloading files from different clients. It takes queries and if the user wants to download files, the database makes the query and downloads the files, with the option of the user specifying the download path. It also has a caching mechanism so that if a same download query is made the second time, the files aren't redownloaded.
 
 The first part of the project would involve making several modifications to the database module used by SunPy to integrate the Fido interface with the database which will enable users to use only the Fido to make queries, instead of making separate queries for separate clients like VSO, LightCurve etc. Currently in the internal working of the database uses VSO queries, VSO download methods etc. So, for different individual clients like LightCurve, the user has to supply separate queries. *So, using the Fido store and query in the database, we can store many types of data in the database. Currently, only VSO and HEK data can be stored in the database.*
 
@@ -105,7 +105,7 @@ In sequence, they go like this:
 
 Specifically speaking, after implementing Part 1, the database will be able to take queries like `Fido.search(attrs.Time("2012/1/1", "2012/1/2"), attrs.Instrument('lyra'))` and decide which client can best serve the query and automatically handle adding to database, downloading files etc.
 
-For example, currently we have to use specific queries like `vso.VSOClient().query(vso.attrs.Time('2001/1/1', '2001/1/2'), vso.attrs.Instrument('eit'))` for VSO and `hek.HEKClient().query(hek.attrs.Time('2011/08/09 07:23:56', '2011/08/09 12:40:29'),  hek.attrs.EventType(‘FL’))` for HEK.
+For example, currently we have to use specific queries like `vso.VSOClient().query(vso.attrs.Time('2001/1/1', '2001/1/2'), vso.attrs.Instrument('eit'))` for VSO and `hek.HEKClient().query(hek.attrs.Time('2011/08/09 07:23:56', '2011/08/09 12:40:29'),  hek.attrs.EventType(‘FL'))` for HEK.
 
 **Part 2**
 
@@ -121,13 +121,13 @@ Now, for the cache to work, it has to be ensured that whenever a query is made t
 
 | Time Period        | Plan           |
 | ------------- | ------------- |
-| April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client’s query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>**Discuss with mentors and get a final idea of which client will serve which kinds of files and decide how the metadata of each file type will be stored in the database. Also finalize how to store metadata of any file types which are not currently supported ( maybe create an additional feature that will allow easy additions of new file types’ metadata to the database in the future ).**</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
+| April 22, 2016 - May 22, 2016 **(Community Bonding Period)**      |   <ul><li>Read documentation and get more familiar with how Fido works.</li><li>Discuss with mentors and get a final idea of how to approach the project.<li>**Get familiar with the various clients that Fido would be supporting and also understand how each client's query is different from other clients and how to download data from each client.** This is important because later on one common query will have to be assigned to a client automatically, and downloads from that particular client will be made.</li><li>**Discuss with mentors and get a final idea of which client will serve which kinds of files and decide how the metadata of each file type will be stored in the database. Also finalize how to store metadata of any file types which are not currently supported ( maybe create an additional feature that will allow easy additions of new file types' metadata to the database in the future ).**</li><li>Read code and get more familiar with the caching mechanism and try to get an idea of what challenges could possibly arise while implementing the new caching mechanism. This is important because query results of multiple clients will be stored in the cache.</li></ul>|
 | | **Part 1 starts** |
 | May 23, 2016 - May 29, 2016 ( 1 week ) | <ul><li>**Implement adding the Fido records to the database.**</li><li>Ensure that functionalities like `display_entries` etc. are working. Cross check by adding entries using specific client methods (the old way).</li><li>Document and write tests for adding while using Fido.</li><li>**Update 1 : Push code which will enable the database to accept Fido records/entries.**</li></ul> |
 | May 30, 2016 -  June 12, 2016 ( 2 weeks ) | <ul><li>**Implement querying with Fido.** Ensure that the different clients are recognized correctly and correct results are returned. Cross check by using custom queries for each client.</li><li>Write tests for querying with Fido.</li><li>Document querying with Fido.</li><li>**Update 2 : Push code so that querying inside the database is successfully done using Fido attributes.**</li></ul> |
 | June 13, 2016 - June 20, 2016 ( 1 week ) | <ul><li>**Implement downloading files for VSO and HEK queries after querying database.**</li><li>Ensure that the correct files from the correct clients are being downloaded by checking using the old separate download functions.</li></ul> |
 | **June 21, 2016 - June 28, 2016 (Midterm Evaluations / Buffer period)** | **Mid term deliverables :**<ul><li>Querying with Fido</li><li>Adding Fido records to the database</li><li>Downloading files from VSO and HEK queries using Fido. Downloading using other clients, tests and documentation will be done after mid-term evaluations.</li><li>Continue work on downloading files using Fido.</li></ul> |
-| June 28, 2016 - July 4, 2016 ( 1 week ) | <ul><li>**Implement downloading files for all other remaining clients.**</li><li>**For all supported file types, implement storing their metadata in the database. The database module already handles FITS files pretty well.**</li><li>**If needed, create a new feature/wrapper which will allow new file types’ metadata to be added easily to the database in the future.**</li><li>Cross check for every client by using the old separate download methods for downloading files.</li><li>Document and write tests for downloading files using Fido.</li><li>**Update 3 : Push code so that files from all clients can be downloaded from a Fido search result.**</li></ul> |
+| June 28, 2016 - July 4, 2016 ( 1 week ) | <ul><li>**Implement downloading files for all other remaining clients.**</li><li>**For all supported file types, implement storing their metadata in the database. The database module already handles FITS files pretty well.**</li><li>**If needed, create a new feature/wrapper which will allow new file types' metadata to be added easily to the database in the future.**</li><li>Cross check for every client by using the old separate download methods for downloading files.</li><li>Document and write tests for downloading files using Fido.</li><li>**Update 3 : Push code so that files from all clients can be downloaded from a Fido search result.**</li></ul> |
 | July 5, 2016 - July 11, 2016 ( 1 week ) | <ul><li>**Test and ensure that all other pre-existing functionalities of the database module like `tag`, `star`, `undo` etc. are still working.**</li><li>Clean up code to make it PEP8 compliant.</li><li>Finalize Part 1 of the project after reviewing it with mentors.</li></ul> |
 | | **Part 1 completed**<br />**Part 2 starts** |
 | July 12, 2016 - July 25, 2016 ( 2 weeks ) | <ul><li>**Implement functionality that serializes each query result by converting them to JSON.** Make sure that the serialization and deserialization processes work correctly.</li></ul> |
@@ -174,13 +174,13 @@ I am confident of completing this project because this project interests me a lo
 
 I will work on the project regularly and also regularly update mentors with my progress and also seek guidance if I am stuck at a particular problem. I will also push code regularly so that the mentors can keep track of my progress. Also I'll try to make the commit messages and documentation clear and concise to help anyone who works with the code in the future.
 
-I will spend time on the project before the coding period so that I have a good final idea of my approach and I can hit the ground running as soon as the coding period starts. I have started understanding the structure of UnifiedDownloader and I’m also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins.
+I will spend time on the project before the coding period so that I have a good final idea of my approach and I can hit the ground running as soon as the coding period starts. I have started understanding the structure of UnifiedDownloader and I'm also already acquainted with the Database module. I will fully understand it and experiment with it before the coding period begins.
 
 Even after the project ends, I will be available if anyone has any questions regarding my code.
 
 ### Benefits to the Community
 
-**Part 1 :** The integration of Fido inside the database will enable researchers to easily use SunPy’s database to query and store various types of data locally. There will be no need to use separate queries for separate clients. **Support for querying, adding and downloading for any new client in the future can be added easily by just defining a new class from which Fido can use its functionalities.**
+**Part 1 :** The integration of Fido inside the database will enable researchers to easily use SunPy's database to query and store various types of data locally. There will be no need to use separate queries for separate clients. **Support for querying, adding and downloading for any new client in the future can be added easily by just defining a new class from which Fido can use its functionalities.**
 
 **Part 2 :** The improved caching mechanism will also help to save bandwidth, disk space and load on the VSO, HEK etc servers as only new results will be downloaded. It will also eliminate unnecessary wastage of time brought about by downloading the same files again.
 
@@ -196,7 +196,7 @@ I have **not** participated in GSoC before. This is the first time that I would 
 
 ### Commitment
 
-I don’t have any other internships or work ( I don’t plan on having any ) for the summer. I don’t have any plans to go on vacation either.
+I don't have any other internships or work ( I don't plan on having any ) for the summer. I don't have any plans to go on vacation either.
 
 My classes for the new semester will begin around August 1, but I would still be able to give sufficient time for the project as academic load is very less during the initial few weeks of the semester.  I will be able to spare 35-40 hours for the project per week easily.
 

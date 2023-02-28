@@ -1,6 +1,8 @@
+# Coordinate Systems
+
 See Thompson (2006) and Franz & Harper (2002)
 
-# Sun-centered coordinate systems
+## Sun-centered coordinate systems
 
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |
@@ -17,7 +19,7 @@ See Thompson (2006) and Franz & Harper (2002)
 | Helioprojective Cartesian | HPC | `Helioprojective` | |
 | Helioprojective Radial | HPR | none | Is to Heliocentric Radial what HPC is to HCC |
 
-# Earth-centered coordinate systems
+## Earth-centered coordinate systems
 
 | Coordinate system | Abbreviation | SunPy/Astropy equivalent | Notes |
 | --- | --- | --- | --- |

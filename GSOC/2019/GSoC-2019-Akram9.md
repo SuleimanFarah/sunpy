@@ -29,7 +29,7 @@ Time zone: UTC +0530
 
 ## Background
 
-A third-year mechanical engineering student, I grudgingly came across programming and Python about five years ago in school, and after getting a hang of it, programming stuck with me. I came across open source about two years back, but never properly contributed. Being more interested in changing my laptop’s OS, I destroyed its hard drive distro-hopping, the last one being FreeBSD. From then on, I have been using WSL on Windows 10, occasionally testing some distros in the back. Apart from my operating system, most of what I use is open source.
+A third-year mechanical engineering student, I grudgingly came across programming and Python about five years ago in school, and after getting a hang of it, programming stuck with me. I came across open source about two years back, but never properly contributed. Being more interested in changing my laptop's OS, I destroyed its hard drive distro-hopping, the last one being FreeBSD. From then on, I have been using WSL on Windows 10, occasionally testing some distros in the back. Apart from my operating system, most of what I use is open source.
 
 As for astronomy, I am more interested in physics than engineering, and actually plan to turn my career towards it eventually. Taking my shift to physics seriously, I came across SunPy and PlasmaPy, and chose SunPy to start with. This is the first time I have contributed to an open source project, apart from just reporting issues. In SunPy, I find an opportunity to use and increase my abilities, which I believe will be quite helpful for me in the long run, while also contributing to a community project that impacts many people worldwide.
 
@@ -51,7 +51,7 @@ It has been about a month and a half since I started contributing to SunPy. The 
 
 ## Abstract
 
-The sun, made of gas and plasma, rotates differentially – having different speeds at different locations. This sort of rotation highly influences the massive magnetic fields surrounding it. The uneven turning and twisting of these magnetic fields cause lots of events and features to form up the surface of the sun. These features and events are studied to know more about our star. SunPy provides access to two big repositories that host related information – the HEK and HEC. Users can download data from these sources and use SunPy’s built-in capabilities to make analyses on the data.
+The sun, made of gas and plasma, rotates differentially – having different speeds at different locations. This sort of rotation highly influences the massive magnetic fields surrounding it. The uneven turning and twisting of these magnetic fields cause lots of events and features to form up the surface of the sun. These features and events are studied to know more about our star. SunPy provides access to two big repositories that host related information – the HEK and HEC. Users can download data from these sources and use SunPy's built-in capabilities to make analyses on the data.
 
 The objective of this project is to make it easy for the users to use SunPy features on the aforementioned features and events data by creating a SunPy object that extracts data from HEC/HEK, does mathematical manipulations on it, and gives an output in an appropriate fashion using existing SunPy objects like plots, series and animations.
 
@@ -72,7 +72,7 @@ The data may be, as required, modified per any algorithm – like normalization,
 **5. Output the data**
 As per the type of input, the modified data can be discriminated for an appropriate output – as an astropy table, as a plot, as an animation, a timeseries, etc. The discrimination can be done by the F/E class or may be specified by the user.
 
-From the user’s point of view, the F/E object should be able to take input of the qualities of the data and the type of output, and give an output that may be further used by SunPy objects – like an overplotted sunpy Map object can be yet modified for visualization, or saved to create an animation with other pictures.
+From the user's point of view, the F/E object should be able to take input of the qualities of the data and the type of output, and give an output that may be further used by SunPy objects – like an overplotted sunpy Map object can be yet modified for visualization, or saved to create an animation with other pictures.
 ***
 
 ## Project Timeline
@@ -125,7 +125,7 @@ I will be off for two days again.
 
 ### Commitments
 
-I can commit north of 35h/week during the first two months of the duration. I don’t have any other commitments, internships or vacations. But over the duration of GSoC, I will not be able to work for a total of about a week due to college and travelling. I expect to make up for that in the first two months of the project.
+I can commit north of 35h/week during the first two months of the duration. I don't have any other commitments, internships or vacations. But over the duration of GSoC, I will not be able to work for a total of about a week due to college and travelling. I expect to make up for that in the first two months of the project.
 The last third of the project-time I will be in college, so my work time will change, though I will be able to give about 4-5 hours a day during the weekdays with the whole of the weekend to compensate for any losses.
 
 ### Extra Info

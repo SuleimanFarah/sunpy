@@ -18,7 +18,7 @@ April 2019
 In the last two year, I have finished two projects about computational physics and spaces craft operation:
 
 1. Microscopic Study of Surface Adhesion in Friction Problem: Developed numerical tool by means of Discrete Element Method and Finite Element Method in Python and C++ to simulate and study microscopic contact evolution and friction mechanism
-2. Simulation of spacecraft’s interplanetary travel: Designed and simulated a spacecraft’s interplanetary trajectory in the solar system.
+2. Simulation of spacecraft's interplanetary travel: Designed and simulated a spacecraft's interplanetary trajectory in the solar system.
 
 In the first project, I implemented different integration schemes, such as Leapfrog and Velocity Verlet, and boundary conditions, such as rigid boundaries and periodic boundaries, to simulate the evolution of friction mechanism.  Along with this project, I acquire an insight into different numerical methods of the computational physics simulation.  In the second project, I got some exposure to coordinate transformations in the solar system, such as Heliocentric Earth ecliptic system, Heliocentric Aries ecliptic system and Heliocentric Earth equatorial system.
 I also helped on the fix of some small bugs in the source code of the package of Solarbextrapolation, they can be found [here](https://github.com/sunpy/solarbextrapolation/pull/24).
@@ -33,13 +33,13 @@ The research of structure and evolution of the magnetic field in solar Corona ha
 
 where **B** is the magnetic field and φ is the magnetic scalar potential function.
 
-Solarbextrapolation is a Python API for extrapolation and reconstruction of the coronal magnetic field, which could be evaluated both quantitatively, such as extrapolation by the Green’s Function Methods, and qualitatively, such as visualization of 3D field extrapolation.
+Solarbextrapolation is a Python API for extrapolation and reconstruction of the coronal magnetic field, which could be evaluated both quantitatively, such as extrapolation by the Green's Function Methods, and qualitatively, such as visualization of 3D field extrapolation.
 
 However, a few features can be improved in the package, for example:
 
 1. **Limited extrapolation region and lack of support for coordinate transformation**
 
-    Solarbextrapolation currently solves the differential equation in normal Cartesian coordinates by implementing classical Shmidt method, which only works for small areas of the solar surface (about an active region).  A more general approach is necessary for magnetic field extrapolations over larger areas of the Sun, for example, the Potential Field Source Surface (PFSS) model. Additionally, the data of the boundary condition may in different coordinate systems,  all  of  which  are  widely  used  in  Solar  physics,  a  coordinate  transformation  will enhance Solarbextrapolation’s compatibility in solar magnetic field extrapolation.
+    Solarbextrapolation currently solves the differential equation in normal Cartesian coordinates by implementing classical Shmidt method, which only works for small areas of the solar surface (about an active region).  A more general approach is necessary for magnetic field extrapolations over larger areas of the Sun, for example, the Potential Field Source Surface (PFSS) model. Additionally, the data of the boundary condition may in different coordinate systems,  all  of  which  are  widely  used  in  Solar  physics,  a  coordinate  transformation  will enhance Solarbextrapolation's compatibility in solar magnetic field extrapolation.
 
 2. **Development of better visualization methods**
 

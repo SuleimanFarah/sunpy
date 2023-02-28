@@ -26,7 +26,7 @@
   - Sunpy 0.4.1 has been released.
   - Currently SunPy has problems compiling under Anaconda 2.0. Working on a solution.
   - Travis is now set up to run in parallel, to speed up testing of PRs. Still outstanding issues with Travis timing out when downloading data or querying web-based services like VSO.
-  - Discussion of whether offline instances of the Travis tests could be run separately from full ‘online’ test runs. This would provide a baseline level of testing and verification.
+  - Discussion of whether offline instances of the Travis tests could be run separately from full ‘online' test runs. This would provide a baseline level of testing and verification.
   - SunPy 0.5 was delayed slightly. Partly motivated by a desire to wait for AstroPy 0.4. Also some 0.5 issues still outstanding. Desire to get GOES Temperature and Emission Measure code into 0.5, along with AIA_PREP functionality. Lightcurve refactor, astropy quantities and WCS likely to be 0.6.
 
 - Discussion of WCS SEP postponed until a later date.

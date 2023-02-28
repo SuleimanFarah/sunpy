@@ -36,7 +36,7 @@ website updates – Nabil/Stuart
 - search is broken but will be fixed
 - official launch with 0.8 / August 18th or 21st
 - will be live before announcement (~week after next)
-- buttons on home page at the bottom of some people screens (fine on all of savage’s screens/browsers...shrug)
+- buttons on home page at the bottom of some people screens (fine on all of savage's screens/browsers...shrug)
 - SunPy version number not displayed
 - need the latest version, how to install, and what to do with it immediately accessible
 - steven still does not like sun in background because busy, reverse-scaled annoying
