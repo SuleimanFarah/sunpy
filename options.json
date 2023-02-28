@@ -5,11 +5,7 @@
     "category-1": "![SunPy](https://github.com/sunpy/sunpy/blob/master/docs/logo/sunpy_icon_128x128.png)\n\n{{{subitems}}}\n"
   },
   "rules": {
-    "exclude": [
-      "GSoC-2022-Akash-Verma.md",
-      "Minutes-of-SunPy-Board-Meeting-20210319.md",
-      "Minutes-of-SunPy-Board-Meeting-20220624.md"
-    ],
+    "exclude": [],
     "order": [
       "Home.md"
     ]

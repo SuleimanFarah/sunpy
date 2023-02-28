@@ -18,17 +18,12 @@ Then there are folders for each year and in each one of those are the files for 
     * Individual student applications
   * 2015
     * Individual student applications
-  * 2016
-    * Individual student applications
-  * 2017
-    * Individual student applications
-  * 2018
-    * Individual student applications
+  * repeat
 
 ### Org
 
 Nothing, all the files are just placed in here.
-I could not figure out a nice structure so I moved on.
+I could not figure out a good structure so I moved on.
 
 ### SOCIS
 
@@ -42,16 +37,9 @@ Then there are folders for each year and in each one of those are the files for 
     * Individual student applications
   * 2014
     * Individual student applications
-  * 2015
-    * Individual student applications
-  * 2016
-    * Individual student applications
-  * 2017
-    * Individual student applications
-  * 2018
-    * Individual student applications
+  * repeat
 
 ## Sidebar
 
-The wiki sidebar is created via [this package.](https://github.com/adriantanasa/github-wiki-sidebar)
+The wiki sidebar is created via [this package](https://github.com/adriantanasa/github-wiki-sidebar).
 Update it if you want more links but you have to add the files to the highest level of the repository.
