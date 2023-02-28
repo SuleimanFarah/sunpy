@@ -1,3 +1,5 @@
+# Wall of Fame
+
 This page lists the names of these who have work for SunPy via summer of code or other type of funding
 
 ## Outreachy (2020-2021)
