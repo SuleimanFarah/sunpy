@@ -1,5 +1,114 @@
 # Weekly Community Meetings Archive
 
+## 1 March 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* Governance discussion
+    * Review this in the next week: https://github.com/sunpy/sunpy-SEP/pull/62
+    * Discourse announcement: https://community.openastronomy.org/t/updating-the-sunpy-projects-governance/584
+    * The more in attendance the better
+* SPD Plans
+    * Decide what we will present at SPD
+    * We at least have an hour long "splinter" session
+    * Do we want to ask for something longer?
+    * If we have an hour, what do we want to show? Two hours? 
+    * Retrospective on what went right/wrong at TESS...
+* DASH Session Proposal
+    * https://dash.heliophysics.net/
+* PR Review
+
+### Notes
+
+- Governance
+    - "Benevolent dictator for as long as the board wants"
+    - New gov structure in https://github.com/sunpy/sunpy-SEP/pull/62
+    - Involve dev community more in how project is run and make things a bit more democratic
+    - spread around responsibilities of the lead developer a bit more
+    - Jack's question: why reorganize?
+        - Stuart: current governance not really doing much...
+        - current board not doing much currently and not much interaction between developer community and the board
+        - financial decision now sits with the lead developer--should make this more transparent
+        - Maybe most importantly: need a governing body that a funder can give money to if *the Project* is ever to win a grant
+    - Maybe pressure from NumFocus as well...
+    - Within the steering committee, should we just have two lead developers?
+        - rather than a lead developer and a deputy lead developer
+    - Alasdair: shouldn't members of the steering committee be project members?
+    - Project members
+        - formalize the process of who gets to decide how the project is run
+        - ultimately this is where the power lies
+        - project members delegate responsibilities to the steering committee
+        - as many people as meet the criteria can become project members
+        - Alasdair: should add coherence to code of conduct to project members criteria
+        - Don't necessarily have to be members of the solar physics community; Stuart, Albert pointed out that we've had signficant contributions from those outside of the solar community
+        - Debate about whether we should just explicitly list the initial project members in the SEP
+        - Extended debate about initial member list
+            - Albert: we should see the list in order to determine whether our criteria our adequate
+            - Stuart: starting with a criteria, trying not to be exclusionary and to not have the appearance of "an old boys club"
+            - Albert: presenting it this way is nearly disingenuous because we are really just using it to pick the people we expect to be there anyway and in this way is *less* transparent and just obfuscates what we are trying to achieve
+            - Stuart: to some extent, it does not matter because we can always add people after the initial membership
+            - Danny: argument does not matter because the initial members will add people according to the membership criteria
+            - Conclusion: not really much of one but debate should continue on PR
+        - Project member election
+            - Albert: What stops people spamming nomination?
+            - Stuart: Astropy batches nominations and votes on some particular cadence (e.g. every 6 months)
+            - At this point, favoring flexibility as opposed to being overly bureaucratic about it
+            - Nabil: Is this some "time out" period for unsuccessful nominations?
+            - Albert: don't box ourselves in to a particular election cycle, may be really beneficial for some to have more frequent elections
+- SPD Plans
+    - Discussion
+        - Danny: different stations showing off different stations so that people can move around and learn about the things
+        - Different sessions for developers and for users depending on level of interest and granularity of the question
+        - DKIST session that could be combined with more developer/power-user session
+        - "New Era of Solar Instruments with the SunPy Ecosystem"
+        - Several suggestions that we target users at multiple levels, give opportunities for newcomers as well as more advanced users
+        - Rough consensus after discussion today:
+            - tutorial showing off multi-instrument capabilities, perhaps combined with a DKIST demo, would be best; DKIST + SolO would be really great, plus multi-messanger stuff
+            - also a more hands-on office hours/hackathon
+            - plan for a 60 minute splinter/townhall
+            - also ask for space to do office hours/hackathon
+    - At a minimum we will have 1 60 minute session at SPD
+    - If we want to do something more ambitious, we need to come to them with a fairly well-scoped proposal of what we want to do
+    - Q: How would we fill a larger block of time?
+    - Q: What are are our goals in having a presence at SPD?
+    - Schedule type (ordered by decreasing probability)
+        - A: 1 60 min "splinter" session (scheduled during lunch, evening, before "free afternoon" i.e. probably less attendance)
+        - B: 1 60 min "splinter" + open-ended time during free afternoon
+        - C: 90 min session (part of normal program, parallel with others)
+        - D: 2 90 min sessions with a coffee break in between
+    - Formats
+        - *Tutorial*
+            - what we've done in the past
+            - does not seem to fit well within allotted time
+            - easiest
+            - could we do a more focused tutorial that shows off newer parts of the ecosystem? different from what we've done in the past? i.e. show multiple affiliated (or adjacent) packages working together to do science
+        - *Town hall*
+            - similar to what we did at TESS last year
+            - what would be different?
+            - main purpose would be to update community on ecosystem
+            - also gather feedback
+            - less interactive, more "talking at"
+        - *Office hours / hacking*
+            - More free form and direction based on user needs
+            - Offer help to newer users
+            - Market as hacking session for more experienced users, i.e. fix a bug or implement a feature
+            - Potential for lowest turnout
+            - Most informal
+        - *Contributor workshop*
+            - most ambitious
+            - "Anatomy of a SunPy contribution"
+            - Goal would be to bring in new contributors from the solar physics community
+            - Live demo of how to contribute to sunpy
+            - Emphasis would be on contributing rather than using, but not limited to just code either (e.g. creating issues, fixing docs)
+            - Not clear whether this would scale and if we could actually do this in any of our a
+    - Proposed scenarios
+        1. Tutorial, schedule A
+        2. Town hall, schedule A
+        3. Town hall + office hours/hacking, schedule B
+        4. Tutorial, schedule C
+        5. Contributor workshop, schedule D
+
 ## 22 Feb 2023
 
 ### Agenda
