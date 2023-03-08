@@ -1,5 +1,64 @@
 # Weekly Community Meetings Archive
 
+## 8 March 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* Advertise Frontiers paper
+    * https://www.frontiersin.org/articles/10.3389/fspas.2023.1076726/full
+* DASH Session Proposal
+    * https://dash.heliophysics.net/
+* PR Review
+* SPD Plans--wrap-up discussion from last week
+    - Goals:
+	    - Advertise the wider SunPy ecosystem
+	    - Gather feedback from users that we can act on
+	    - Encourage contributions from the wider community
+    - Tentative Plan:
+	    1. Ecosystem update/Demonstration (working title: "New Era of Solar Instruments with the SunPy Ecosystem")
+		    -  **Schedule: 60 minute session to be requested during the "Town Hall" block either Monday or Tuesday**
+		    - Brief update on existing ecosystem and affiliated packages
+		    - Advertise paper where people can find more information
+		    - Demo of multiple affiliated packages working together
+		    - Concurrent observation of same event/structure with Solar Orbiter and DKIST
+		    - Use both *in situ* and remote sensing data from SolO--show how the SunPy ecosystem enables "multi-messanger" solar physics in a way that a more fractured/disparate software ecosystem does not
+		    - Show an image with EUI, fit a spectra with SPICE, look at time series data from some *in situ* instrument, show alternate viewing angle with AIA, look at polarization with DKIST
+		    - Allow people to provide real-time feedback during the session (e.g. via Slido)
+		    - Prompt people to give feedback (e.g. during the presentation, make flyers with Slido QR code on them and example questions, offer stickers for giving feedback)
+		    - Solicit input on what topics people want to hear about ahead of the meeting, e.g. announcement in solar news a month or two ahead of time with survey link
+		    - Use this session as an advertisement for the office hours/hacking session later in the week
+		    - Should run this on Binder or some equivalent platform to allow for people to follow along if they want
+	    2. Office hours/hacking
+		    -  **Schedule: 120+ minute session to be requested during the "Splinter" session before free afternoon on Wednesday**
+		    - Hands-on session meant to follow on from the town hall/demonstration
+		    - Appeal to different experience levels: office hours session for less experienced users wanting help with installation, getting started, or maybe even doing their science
+		    - At the same time, have a hacking session for those who are wanting to add features, fix bugs, or even "hack" on their own science question (which may lead to bugs, feature requests)
+		    - Have different stations for different experience levels
+		    - Have some way of systematically gathering feedback during this session as well--follow-up survey? make sure that users are creating issues (or we are creating them for them) during the session?
+    - Questions:
+	    - Is this too ambitious? Not ambitious enough?
+	    - Lessons learned from tutorials/presentations at past meetings?
+	    - What are some things we can do to maximize feedback from users?
+	    - Are there goals that I'm missing?
+	    - Will there be a sufficient number of us at the meeting in order to adequately execute something like this?
+	    - Will DKIST be an affiliated package by the time of this tutorial?
+
+
+### Notes
+
+- Newcomers--Welcome Eve!
+- Re: the paper, David suggested advertising to the mailing lists listed in the release notes
+    - should also go to twitter
+- DASH
+    - Brett Morris has reached out to organizers
+    - We should draft something ASAP, deadline by 3/31
+    - "Uses of Astropy in the Heliophysics Ecosystem"
+    - Full draft by next week
+- Lots of enthusiasm for SPD tutorial given the plan above
+    - ambitious, should start as soon as possible
+    - Nabil, Will, and maybe Stuart will be at SPD in person (the more the better)
+
 ## 1 March 2023
 
 ### Agenda
