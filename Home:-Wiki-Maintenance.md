@@ -6,6 +6,10 @@ So as it stands, each subsection has its own series of folders as outlined below
 When files are added to the wiki, GitHub adds it to the main level of the folder tree.
 This means that someone has to clone the wiki and manually move it in order to maintain the wiki.
 
+## Pre-commit
+
+There is a pre-commit file in the repository and this checks for whitespace and typos.
+
 ## Directory Tree
 
 ### GRANTS
