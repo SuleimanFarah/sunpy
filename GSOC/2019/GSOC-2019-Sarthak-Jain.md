@@ -45,7 +45,7 @@ Along with this, Astronomy is a subject to interest to me. The project SunPy the
 ###   Abstract
 The Sun displays many different features and events (FEs). These are detected and described either automatically by algorithm, or by visual inspection by human, or by a combination of both. There are many different repositories of these FEs online. SunPy provides access to two large FE repositories, the Heliophysics Event Knowledgebase (HEK) and the Helio Event Catalogue (HEC).
 
-The aim of this project is to create a SunPy object that normalizes input from both the HEK and HEC and creates a SunPy FE object. The SunPy FE object should take advantage of existing SunPy capabilities such as SunPy spatial co-ordinates and SunPy time. This will make FE data much more useful to SunPy users.
+The aim of this project is to create a SunPy object that normalizes input from both the HEK and HEC and creates a SunPy FE object. The SunPy FE object should take advantage of existing SunPy capabilities such as SunPy spatial coordinates and SunPy time. This will make FE data much more useful to SunPy users.
 
 The SunPy FE object should interact intuitively with existing SunPy objects such as the SunPy maps and timeseries. For example, it should be simple for a FE with a spatial extent property to be overplotted on SunPy map; similarly, it should be simple for a FE with a temporal duration to be overplotted on a SunPy timeseries.
 
@@ -54,7 +54,7 @@ The SunPy FE object should interact intuitively with existing SunPy objects such
 These are the following things that I have planned to be done under this project :
 
 1. Implementing the Feature and Event Class as described in the project description.
-2. Writing appropriate funtions in Sunpy Maps and TimeSeries for the interaction of a Feature and Event class object with these SunPy objects.
+2. Writing appropriate functions in Sunpy Maps and TimeSeries for the interaction of a Feature and Event class object with these SunPy objects.
 3. Making changes with the existing ``` HEKClient ``` and ``` HECClient ``` classes so that the output provided by these classes is in terms of appropriate Astropy and SunPy Quantities.
 
 The above mentioned tasks would be implemented in the following ways :
@@ -87,7 +87,7 @@ These were the few things as thought regarding the interaction of FE object with
 
 ####   Interaction of FE Object with SunPy TimeSeries :
 
-SunPy TimeSeries is a 1-Dimensional data that plots the variation of features like intensity, wavelength etc. with respect to Time over a plot. Instruments like GOES, XRS generate 1-Dimensional data rather than capturing the images of sun during that Event. This the information received from the HEK/ HEC Clients correspnding to these Instruments would be helpful in generating certain TimeSeries Plots. The ideas regarding the interaction of SunPy TimeSeries with ``` FE ``` object is mentioned as :
+SunPy TimeSeries is a 1-Dimensional data that plots the variation of features like intensity, wavelength etc. with respect to Time over a plot. Instruments like GOES, XRS generate 1-Dimensional data rather than capturing the images of sun during that Event. This the information received from the HEK/ HEC Clients corresponding to these Instruments would be helpful in generating certain TimeSeries Plots. The ideas regarding the interaction of SunPy TimeSeries with ``` FE ``` object is mentioned as :
 
 *   Plotting a TimeSeries corresponding to the responses from HEK/ HEC Client :   &nbsp; This feature would fetch the Fido responses from the Observation Instrument for the given time range and plot the data from those files as a TimeSeries plot. This can either be done as a separate member function in the Feature and Event Class or can also be done in the SunPy TimeSeries module so as to support the usage of ``` FE ``` object in SunPy TimeSeries.
 
@@ -131,7 +131,7 @@ At the end of the Community Bonding Period, I would aim to :
 #### Week 4 - Week 5 (June 17 - June 23)
 
 * Completing all the functions required to parse the clients information into their respective Astropy Quantities/ SunPy Datatypes.
-* Wrapping up all the funtions together to develop a basic working template of ``` FE ``` class with data members.
+* Wrapping up all the functions together to develop a basic working template of ``` FE ``` class with data members.
 * Beginning the work on interaction of ``` FE ``` object with SunPy Packages.
 
 ***
@@ -141,13 +141,13 @@ At the end of the Community Bonding Period, I would aim to :
 #### Week 6 - Week 7 (June 25 - July 5)
 
 * Working on the interaction of the ``` FE ``` object with SunPy Maps.
-* Writing specific functions in the ``` FE ``` class for implementation on features like overplotting, creatind submap or downloading specific data fron ``` Fido ```.
+* Writing specific functions in the ``` FE ``` class for implementation on features like overplotting, creatind submap or downloading specific data from ``` Fido ```.
 * Writing specific functions in SunPy Maps for the support of use of ``` FE ``` object in the package.
 
 #### Week 8 (July 6 - July 12)
 
 * Working in the interaction of the ``` FE ``` object with SunPy TimeSeries.
-* Writing specific funtions for overplotting, adding the feature for querying the ``` Fido ``` for the data and checking whether the data is 1-Dimensional or 2-Dimensional.
+* Writing specific functions for overplotting, adding the feature for querying the ``` Fido ``` for the data and checking whether the data is 1-Dimensional or 2-Dimensional.
 
 #### Week 9(July 13 - July 21)
 
@@ -193,7 +193,7 @@ No, OpenAstronomy(SunPy) is the only organisation I am applying to.
 Yes, I am eligible to receive payments from Google.
 
 ####   How much time do you plan to invest in the project before, during, and after the Summer of Code?
-I have my Summer Vacations in the month of May, June and till Mid July. I am not pursuing any kind of internship during this time nor do I have any plan for the vacations. So, I will be able to give atleast 40hrs a week. After the vacations, I will be able to give atleast 30hrs a week.
+I have my Summer Vacations in the month of May, June and till Mid July. I am not pursuing any kind of internship during this time nor do I have any plan for the vacations. So, I will be able to give at least 40hrs a week. After the vacations, I will be able to give at least 30hrs a week.
 
 ####   Will you continue contributing to SunPy after the Summer of Code too ?
 Yes, I will keep contributing to SunPy after the Summer of Code too.

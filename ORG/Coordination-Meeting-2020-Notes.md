@@ -145,7 +145,7 @@ these two days as well.
   * Addition of maintainers
   * Release of 1.0
   * Removal of `astropy-helpers`
-    * [New template for affiliated pacakges](https://github.com/sunpy/package-template) generated from [OpenAstronomy's](https://github.com/OpenAstronomy/packaging-guide) (made by Tom and Stuart). that Sunspex has been the first one to benefit from it.
+    * [New template for affiliated packages](https://github.com/sunpy/package-template) generated from [OpenAstronomy's](https://github.com/OpenAstronomy/packaging-guide) (made by Tom and Stuart). that Sunspex has been the first one to benefit from it.
     * Infrastructure takes *a lot* of time
 * Need a package template maintainer!
 
@@ -178,7 +178,7 @@ these two days as well.
   * Eventually this will be wrapped by a higher-level function
   * Challenges
     * Verifying accuracy to high precision
-    * Coordinates provided by external sources may be innacurate! (e.g. JPL, AIA, SUVI, HMI)
+    * Coordinates provided by external sources may be inaccurate! (e.g. JPL, AIA, SUVI, HMI)
   * A new paper should be written (follow on to [Bill Thompsons paper](https://ui.adsabs.harvard.edu/abs/2006A%26A...449..791T/abstract)) that describes new frames as well as compares accuracy between different implementations and lays out some best practices.
   * Supporting velocities in the coordinates framework
     * works!
@@ -281,7 +281,7 @@ these two days as well.
   * talk to Nabil if you have other packages that you want a package to be re-templated
   * 0.9 test suites - read the docs/travis/circle CI used to be very slow - now with Azure much quicker
   * 100% mock coverages of all - most don't need to be online tests
-  * discrepency of CI on master to other packages needs to be addressed
+  * discrepancy of CI on master to other packages needs to be addressed
   * why do we run things on circle?
     * quick and easy to use
     * good artifact support uploads for docs/figure tests
@@ -299,11 +299,11 @@ these two days as well.
     * First release out very very soon (maybe today!)
   * Quick tour
     * Can update pointing information from external metadata, fix FITS observer location keywords
-    * Correct for instrument degredation
+    * Correct for instrument degradation
     * 'aiaprep' functionality
     * Includes AIA wavelength response functions and PSF functions
   * Lessons learned
-    * Very simple package, builing on other packages where possible
+    * Very simple package, building on other packages where possible
     * Took a lot of time and effort to build the infrastructure
     * *Very* important to have a sunpy developer in the room, to communicate existing functionality in other packages
     * Not helpful to pigeon-hole people between SunPy team and instrument teams
@@ -322,7 +322,7 @@ these two days as well.
   * Should SunPy host (in docs) a mapping of instruments > python packages?
   * How can we make sure there are SunPy developers being consulted as new python packages are being written?
 * Communication Between SunPy Developers and Instrument Teams (Kevin, Bin)
-  * A SunPy instrumentaiton working group exists, a forum (ie. chat) to exchange SunPy and instrument team knowledge
+  * A SunPy instrumentation working group exists, a forum (ie. chat) to exchange SunPy and instrument team knowledge
 * Affiliated Package Criteria / Review Process
   * General summary about affiliated
   * Actions:
@@ -372,7 +372,7 @@ these two days as well.
     * TSIS
 
   * More available on [LISIRD](https://lasp.colorado.edu/lisird/)
-    * James Mason and Doug Lindholm putting in an HDEE proposal to build a python interface with LaTiS, which is the backend API to access LISIRD; plan to tie it into Fido analagous to JSOC, VSO
+    * James Mason and Doug Lindholm putting in an HDEE proposal to build a python interface with LaTiS, which is the backend API to access LISIRD; plan to tie it into Fido analogous to JSOC, VSO
 
 * Requirements
 
@@ -425,8 +425,8 @@ methods:
   * broad issue rather than specific (i.e. with implementation) issue that can be added as sunpy repo issue.
   * the would feed into issue on sunpy core issue tracker, issue tracker on sunpy core at the moment is very busy
   * place for people to have discussions e.g. 'maybe AIAMap should be removed' - and then chat about it, can become community accepted or not.
-  * concern that people wont see it - the community is target audience
-  * visability and education about it has to happen if we want to start using it
+  * concern that people won't see it - the community is target audience
+  * visibility and education about it has to happen if we want to start using it
   * this together with SEP repo may be too much? however there is a gap between sunpy core repo and SEP repo. i.e. can you have meta discussion on core?
   * we need to think of the roadmap for the SunPy project rather than sunpy core.
   * generally agreed that need another place to discuss higher level topics - however everyone not convinced that it should be in the roadmap repo (potentially with the SEP or another place other than github)
@@ -473,7 +473,7 @@ methods:
   * Suggestion from Jack:
     * replace with extensive matplotlib tutorial on how to overplot multiple maps
   * What it *could* do - temporally aligned data and holds those as a bunch of unordered maps which can then be rectificed to the same grid (using reproject) or plot contours on one. The composite map container could work out spatial extents etc or calculate WCS thangs etc.
-  * Alot of people want this (or assume it already exists!) - should it be on the roadmap?
+  * A lot of people want this (or assume it already exists!) - should it be on the roadmap?
   * However at the moment, what CompositeMap does at the moment can be removed and replaced with examples - and can be removed from 2.
   * A scope needs to be written on what a future improved version should be and look like. Maybe a GSOC project for implementing such scope.
 
@@ -483,7 +483,7 @@ So, ndcube 2.0 yeah, go for it, heheh, at the end of the notes there's a link to
 
 * Many implementations of cubes in python
   * NDCube started on 2018 with a GSoC student. (History, a brief summary)
-    * Some basic funtionality
+    * Some basic functionality
     * iterations over the years. Released a version
     * IRISpy (now sunraster) uses it as well as some DKIST and EISPy
     * NDCube 2. to be released in the future (somethings may end on astropy)
@@ -502,7 +502,7 @@ So, ndcube 2.0 yeah, go for it, heheh, at the end of the notes there's a link to
     * Keep a function like `submap` or rename it as `crop` which it makes more sense from a data agnostic view. `submap` could be a wrapper of crop.
       * You define a region (in wc) which may not fit with pixels, then that would be transformed into pixel coordinates to the closest value.
       * Map was a ndarray when we had a slicing option, then moved to data, then is now the point to move it to nddata? there will be a `.data` which is where the array is kept. Now map is subclass of `nddata`. We turned-off the slicing.
-      * Inconsistency? We had units everywhere except in this case. This is like a numpy array, wher e you use the items of the array.
+      * Inconsistency? We had units everywhere except in this case. This is like a numpy array, where you use the items of the array.
       * `crop` could take px units though we may not want to encourage people to do that. The `[]` would do that.
       * `.crop()` input is a wc object or set of quantities. A tuple of quantity objects, that are related with the axis.
       * Can we have only wcs instead of both? The fact that ndcube has to accept quantities as not all are wcs. The map version could enforce to take only wcs.
@@ -532,7 +532,7 @@ So, ndcube 2.0 yeah, go for it, heheh, at the end of the notes there's a link to
         * NDCube then will implement resample and superpixel and then call reproject.
         * map could do something similar. get a new wcs for the place, rotate and mathematically could be done as flux conserv. In the future we could reimplement that in the future. (most certainly change the results).
         * If the origin of the coordinate system changes reproject can't do the transformation, you need a 3 points (??).
-        * `map1.reproject(map2.wcs)` if they are on-disk or same origin it will allign.
+        * `map1.reproject(map2.wcs)` if they are on-disk or same origin it will align.
     * CompositeMap (way forward if we keep it)
       * NDCollection with additions that plot in the way you want.
       * Other stuff like Boundingbox that may live on NDCollection.
@@ -546,7 +546,7 @@ So, ndcube 2.0 yeah, go for it, heheh, at the end of the notes there's a link to
       * Many uses for it! (adds your here!)
         * you can still do world2pixel to them,...
         * track features,...
-    * What to remove fro the map api
+    * What to remove from the map api
       * get rid of `max`, `min`, `std`,... It's under `.data.min`
       * `shift`: moves the wcs. It should be kept in NDCube... as resamples is. Modifies the wcs in some way.
       * it won't require a call to reproject as resample or superpixel
@@ -565,7 +565,7 @@ So, ndcube 2.0 yeah, go for it, heheh, at the end of the notes there's a link to
       * It can have a basic visualisation, intentionally not using a colour map,... facilitating inspection but not science.
       * Keep a clear distintion of `peek` as for `plot` where many think that it's the best it can be done. They do the same thing, but `peek` is looking a bit better.
       * Not really thought on NDCube how to visualise.
-      * We need to be really carefull to what we remove as `peek` is now a visual wrapup. But since it looks like a better version of `plot` why will the users care more?
+      * We need to be really careful to what we remove as `peek` is now a visual wrapup. But since it looks like a better version of `plot` why will the users care more?
       * Other names like `inspect`, `report` or something else may help people to separate the understanding of what that does.
       * Quicklook™ can be used for a new version of peek
 
@@ -645,7 +645,7 @@ Here is a link to a google doc for future drafts and gathering comments.
     * No new examples made to date. Something like learn.astropy.org would be great
     * Proposal suggests using pytest-cov, codecov, python-api-inspect - are there any other tools we should be using? flake-8
 
-* Danny's project - *Further developement for NDCube 2.0*
+* Danny's project - *Further development for NDCube 2.0*
   * Priorities:
     * Support for gWCS (8-14)
     * Resampling - so the work on reproject

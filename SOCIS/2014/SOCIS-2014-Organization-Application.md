@@ -12,7 +12,7 @@ SunPy
 _Describe in a few word your open-source project, why you would like to participate
 to SOCIS and what you hope to gain by participating._
 
-SunPy has recenlty turn 3 years old.  Sunpy is a young open-source project which aims
+SunPy has recently turn 3 years old.  Sunpy is a young open-source project which aims
 to provide a complete framework in Python for solar, heliospheric, and space weather
 data analysis.
 We envision it as an alternate choice to the ''de facto'' standard library

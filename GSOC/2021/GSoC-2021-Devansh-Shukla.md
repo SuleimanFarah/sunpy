@@ -148,7 +148,7 @@ believe this would be critical in the long run.
 
 - May 24, 2021 - June 1, 2021
   - Plan for the API.
-  - Throughly understand and test the existing code.
+  - Thoroughly understand and test the existing code.
   - Continue learning about the dependencies.
 
 - June 7, 2021 - June 14, 2021

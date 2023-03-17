@@ -142,7 +142,7 @@ Milestones:
                                   interface.
 :August 26 -- September 1 (1 week): Document and test the undo and redo
                                     features. Because this is part of the
-                                    database interface which is seperated
+                                    database interface which is separated
                                     from the query and download
                                     functionality, these features can be
                                     tested without any connections to a
@@ -181,7 +181,7 @@ I am interested in esoteric programming languages and therefore wrote a
 debugging programs written in befunge_, I wrote an interactive shell
 for it, see befungeshell_.
 
-To excercise my newly developed skills in the programming language Go, I
+To exercise my newly developed skills in the programming language Go, I
 wrote a (still experimental) library for parsing and making images in the
 `Netpbm format`_, see netpbm_ to have a look at the code.
 
@@ -213,7 +213,7 @@ I have thorough experience with git, sphinx, the testing framework py.test
 and working on open source projects in general. When I used Python from
 web programming, I used Werkzeug_ and Flask_ as web frameworks and Genshi_
 as the template engine. I also have basic experience with (web-based)
-databse applications using SQLAlchemy_.
+database applications using SQLAlchemy_.
 
 Other Schedule Information
 --------------------------

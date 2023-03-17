@@ -6,7 +6,7 @@ X-ray VIsibility Synthesis ImagiNg or Xray-VISION
 
 ## Self introduction
 
-### Basic informations
+### Basic information
 
 **Name:** Gábor Péterffy
 

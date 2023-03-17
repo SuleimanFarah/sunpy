@@ -146,7 +146,7 @@ The inference obtained will not only be used to choose the appropriate models, b
 Here is where most of the heavy-lifting will be done.
 
 * Implementing a [Deep Flare Net (DeFN) for Solar Flare Prediction](https://arxiv.org/abs/1805.03421). It will involve:
-  * Multilayer Image-based DNN to predict the probability of flares occuring within the next X hr of time in an active region
+  * Multilayer Image-based DNN to predict the probability of flares occurring within the next X hr of time in an active region
   * Further used to determine the most likely maximum classes of flares
   * The cost function this NN will be the minimization of cross entropy
   * **A major advantage of this implementation are that the features are human readable unlike CNNs which extract imaging features that we cannot understand.**
@@ -286,7 +286,7 @@ Conversion notes:
   * Matching catalogues
     * Write lambdas to identify common parameters
     * Implement [matching algorithm](http://www.star.bris.ac.uk/~mbt/topcat/sun253/matchAlgorithm.html) from TOPCAT for the identified common parameters
-  * Expand hek2vso to be able to accomodate any data archive obtained from Fido and other sources
+  * Expand hek2vso to be able to accommodate any data archive obtained from Fido and other sources
   * Setup uniformity between different data catalogues such that all catalogues have the same attributes, thus increasing their usability
   * Other SunPy related tasks that may come up on the way
 

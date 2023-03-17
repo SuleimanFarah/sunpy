@@ -6,7 +6,7 @@ Name: Pouyan Azari
 Email: pouyan.azari (at) uni-wuerzburg.de, pouaza-4 (at) student.ltu.se
 Studies: 2Year Space Science and Technology Student at Lulea Technical University in Sweden. Bachelor in  Aerospace Computer Science from University of Würzburg in Germany.
 Languages: English, German
-Github Handel: pouyana
+Github Handle: pouyana
 
 # Background
 
@@ -14,7 +14,7 @@ I study aerospace computer science at Würzburg university. During the bachelor 
 mage data. With sikit, I am mostly familiar with scikit-learn which I used for NLTK (See my Github). During last month I also get my self to work with scikit-image for
 NASA space App challenge I was working on to use neural networks and scikit-image for machine learning. During master I had radar and optics course which also contain
 lot of matrix manipulations and processing which I used to solve in Matlab. As a part time developer at the university, I am familiar with different object oriented
-anguage mostly ruby, python or php.
+language mostly ruby, python or php.
 
 # Idea
 

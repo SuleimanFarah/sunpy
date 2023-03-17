@@ -72,7 +72,7 @@
     * Decide what we will present at SPD
     * We at least have an hour long "splinter" session
     * Do we want to ask for something longer?
-    * If we have an hour, what do we want to show? Two hours? 
+    * If we have an hour, what do we want to show? Two hours?
     * Retrospective on what went right/wrong at TESS...
 * DASH Session Proposal
     * https://dash.heliophysics.net/
@@ -100,7 +100,7 @@
         - project members delegate responsibilities to the steering committee
         - as many people as meet the criteria can become project members
         - Alasdair: should add coherence to code of conduct to project members criteria
-        - Don't necessarily have to be members of the solar physics community; Stuart, Albert pointed out that we've had signficant contributions from those outside of the solar community
+        - Don't necessarily have to be members of the solar physics community; Stuart, Albert pointed out that we've had significant contributions from those outside of the solar community
         - Debate about whether we should just explicitly list the initial project members in the SEP
         - Extended debate about initial member list
             - Albert: we should see the list in order to determine whether our criteria our adequate
@@ -208,10 +208,10 @@ numpy isn't really appropriate, too many missing features.
 xarray is pretty much a straight upgrade on pandas, only real selling point to pandas is things stay the same.
 NDCube, stores data with WCS. Timeseries data has different requirements to imaging / spectral data, and NDCube is more focused on the latter data. Also NDCube exists because of WCS, without WCS we would probably be using xarray.
 
-The main comparision is between xarray and astropy timeseries:
+The main comparison is between xarray and astropy timeseries:
 
-Xarray dosen't support different time scales (as indicies) but there may be a path to extending it.
-Xarray also dosen't support physical units. There is some ongoing work, but it's a big problem for the whole scipy ecosystem.
+Xarray doesn't support different time scales (as indices) but there may be a path to extending it.
+Xarray also doesn't support physical units. There is some ongoing work, but it's a big problem for the whole scipy ecosystem.
 
 Astropy timeseries has limited out of memory support (columns can be dask arrays).
 Astropy timeseries has no multi-index / multi-dimensional data.
@@ -221,7 +221,7 @@ Discussion on relative priorities of requirements:
 
 Leap seconds is a known requirement on our currently supported timeseries data.
 Multi-dimensional data support in astropy timeseries, is a bit of an unknown, you can store the data in the table, but you can't access it based on index.
-Observer coordinates: Supported as SkyCoord columns in Astropy, but SkyCoord probably not supported in xarray, although xarray's non-dimensional coordinats support the workflow.
+Observer coordinates: Supported as SkyCoord columns in Astropy, but SkyCoord probably not supported in xarray, although xarray's non-dimensional coordinates support the workflow.
 Swarm spacecraft, PSP, SolO, etc all need to know the spacecraft location, so probably an important future feature.
 
 Can xarray ever be brought close enough to sunpy to feel sunpy or will it always feel different to our other classes.
@@ -305,7 +305,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * where should the code to read these kinds of files go?
     * two files needed
     * consensus seems to be that it isn't worth a Fido client
-    * Separate TimeSeries source? Combine with exisiting XRS source?
+    * Separate TimeSeries source? Combine with existing XRS source?
     * Example for now
 * sunkit-instruments
     * Will asking if it makes sense to put code in sunkit-instruments that is too specific for core but can be used across instrument packages
@@ -429,7 +429,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * decide on a new base data container
     * currently using pandas but this has issues (e.g. leap seconds)
     * https://hackmd.io/-0y4uN9lSYyAHa_3_LjQ-A
-    * want to accomodate multi-dimensional data as well (e.g. in-situ data from SolO)
+    * want to accommodate multi-dimensional data as well (e.g. in-situ data from SolO)
 
 ## 7 December 2022
 
@@ -736,7 +736,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * Question of whether this should be done in SunPy
     * This is an ontology defined in Python objects
     * Trade study on existing ontologies and understand which ones are useful before completely inventing a new one
-    * We want complext Python objects--do we also want the components blown out as separate attributes to be accessed?
+    * We want complexity Python objects--do we also want the components blown out as separate attributes to be accessed?
         * e.g. distance from the Sun to observer as its own property
     * Living document that can be updated as we find more metadata that should be part of the standard
         * Common metadata that people want
@@ -1007,7 +1007,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
     * Check in with Shane re: LOC things
     * What do we need to do "on the ground" prior to the meeting?
     * [Agenda](https://demo.hedgedoc.org/C9AvEImbTyav1NIy36PuZg?edit): ideally we would firm this up by **1 July**
-    * Accomodation?
+    * Accommodation?
 * Oh god `draw_` methods make it stop: https://github.com/sunpy/sunpy/pull/6251#pullrequestreview-1006105303
 * PR Review
 
@@ -1106,7 +1106,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
 
 ### Agenda
 
-* Adopting sunpy-soar: Maintenence promises and precidents.
+* Adopting sunpy-soar: Maintenance promises and precidents.
     * Will got a response back from the help desk re: SOAR query errors--open up line of communication this way? or better for those closer to SolO (i.e. Laura/Shane) to make this contact
 * Presence at TESS
     * SunPy after-hours tutorial per usual?
@@ -1209,7 +1209,7 @@ Stuart: xarray brings massive interoperability with sci python, docs, api etc ar
   * Does GH have a way to adjust permissions on who can mark as draft?
 * SSL Certificate Verification Failure on things that access NOAA data?
   * <https://github.com/sunpy/sunpy/runs/6083862087?check_suite_focus=true#step:8:23179>
-  * The NGDC NOAA domain is currently undergoing maintaince until the 21st <https://www.ngdc.noaa.gov/index.html>, this is probably the issue
+  * The NGDC NOAA domain is currently undergoing maintenance until the 21st <https://www.ngdc.noaa.gov/index.html>, this is probably the issue
 * PR Review
 
 ### Notes
@@ -1474,7 +1474,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
     * Polynomial distortion algo needs to be worked into (interfaced with) SunPy's `map` module
     * Can use Astropy `wcs.WCS` to handle the projection
     * (Thanks so Solar-Probe)
-    * SunPy map objects - represents meta tranlator / standardizer (for the converstion between coordinate systems)
+    * SunPy map objects - represents meta tranlator / standardizer (for the conversion between coordinate systems)
     * Aiming for APE 14 compliance
     * I/O issues as observed by Matt (exporting/importing after transformation), cannot be regenerated with SunPy currently without a patch
     * Stuart: A valid FITS header conforming to APE 14 standard should allow such I/O issues to be resolved
@@ -1489,14 +1489,14 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
     * Dan R.: Respect PUNCH is mission-based
     * PUNCH: Open to relying on SunPy chatroom for the time-being, with specific questions to be redirected to PUNCH specific channel later (as suggested by Dan R.)
     * Stuart: Affiliated package application is currently being updated to remain relevant, all are welcome to open an issue there
-    * Matt: What happens to deprecated affiliated packages (Stuart: As long as it works we would keep it, despite it being outdated, unless there is serious issues with the exising package)
+    * Matt: What happens to deprecated affiliated packages (Stuart: As long as it works we would keep it, despite it being outdated, unless there is serious issues with the existing package)
     * Matt: Concerned for time to process the application (Laura clarified), worried might get stuck
     * Stuart: SunPy is very open to feedback from PUNCH
     * Matt: See SunPy as a potential "wrapper"
     * Stuart: Expected something that are missing from the transforms package originally written in Perl by Dan S.
     * Matt: Package architecture developed about 10 years ago, so may need reworking
     * Matt: Some mem tests have been conducted on the existing codebase as benchmarking
-    * Matt: Jacobian in there probably will not be rewritten as it is written (def: a matrix for storing 2nd order derivatives for the tranformation?)
+    * Matt: Jacobian in there probably will not be rewritten as it is written (def: a matrix for storing 2nd order derivatives for the transformation?)
     * Craig may be attending future SunPy meetings
     * Specific Python questions... (to be continued)
       * Superclass with a whole bunch of methods
@@ -1513,7 +1513,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
   * Could be useful if more feedback can be gotten regarding the API
   * Previously received feedback is too technical and not general enough
   * Dan would really want new user to try it out and give honest feedback regarding functionality
-  * Before next week would be great (hoping possbily before Christmas)
+  * Before next week would be great (hoping possibly before Christmas)
   * A focused discussion during next week's / next next week's community meeting would be great
   * Ideally NDCube 2.0 should come out before SunPy 2.1, at least that's the expectations
 
@@ -1630,7 +1630,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 ### Reorganize
 
 * Large future project design
-    Scope out and describe on issues project plans for large features i.e. metadata rewrite. To facillitate contributions or funding from other places etc. Also have discussions about these things before the dev work happens.
+    Scope out and describe on issues project plans for large features i.e. metadata rewrite. To facilitate contributions or funding from other places etc. Also have discussions about these things before the dev work happens.
 
 * Day-to-day Duties
   * Issue triage
@@ -1706,7 +1706,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 * The sponsored package dashboard is cool
 * We have a lot of sponsored packages, maintaining them is hard
   * e.g. `radiospectra` and `drms` need retemplating
-  * Everytime the package template gets updated, it would be nice to be able to propagate these changes downstream
+  * Every time the package template gets updated, it would be nice to be able to propagate these changes downstream
 * Laura interested in doing more work on `radiospectra`, possibly with help of students; needs reviving!
 
 ## 7th October 2020
@@ -1970,7 +1970,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 
 ### Minutes
 
-* Upadates on GSoC projects:
+* Updates on GSoC projects:
   * Fido
   * Sunspotter (Rahuul is unwell, so he gave an update on the channel)
         1. Further progress on the Search Events Object. We figured out where to get the NOAA number matched with SunSpotter data. There was a problem with the units that was mostly resolved. The SEO as was discussed should be done mostly by the end of the week.
@@ -2001,7 +2001,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 
 ### Minutes
 
-* Upadates on GSoC projects:
+* Updates on GSoC projects:
   * Fido
     * Generalized the way we get URLs from DR Clients from query attrs
     * Concatenation of query results
@@ -2038,7 +2038,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 
 ### Minutes
 
-* Upadates on GSoC projects: Fido, Sunspotter, Glue
+* Updates on GSoC projects: Fido, Sunspotter, Glue
 * 2.0 Release
   * Finish the "What's New"
   * Failures on the "devdeps" test point to problem with bleeding edge astropy and behavior of how `astropy.time.Time` behaves under numpy operations; possibly related to [astropy/astropy#10337](https://github.com/astropy/astropy/pull/10337)
@@ -2063,7 +2063,7 @@ Dan Ryan presented a notebook showing a comparison between `Map` and `NDCube` 2.
 
 ##### Sunspotter
 
-* [#4238](https://github.com/sunpy/sunpy/pull/4238) table matcher, in progress with euclidian distance and cosine similarity.
+* [#4238](https://github.com/sunpy/sunpy/pull/4238) table matcher, in progress with euclidean distance and cosine similarity.
 * Requested to have it also as example in the gallery.
 * Some people not convinced this should live on core
 
@@ -2106,7 +2106,7 @@ See <https://docs.google.com/spreadsheets/d/1gsEQ3_xxHw4_gPnkfEna2IPqN9e7Cdom8KM
 * 2.0 PRs
   * Rectangle - leave for Albert to review
   * Attr registration - waiting on changes in response to review
-  * User config - needs another review, should change funciton name to `copy_default_config`
+  * User config - needs another review, should change function name to `copy_default_config`
   * JSOC error - re-milestone to 2.1
   * VSO fetch fix - re-milestone to 2.1
   * Moving constants - restarted failing build, waiting for Albert to review
@@ -2122,7 +2122,7 @@ See <https://docs.google.com/spreadsheets/d/1gsEQ3_xxHw4_gPnkfEna2IPqN9e7Cdom8KM
 
 - **Added an HTML summary for Map and MapSequence** -<https://github.com/sunpy/sunpy/pull/3951>
 * **Add contour map method** - <https://github.com/sunpy/sunpy/pull/3909>
-  * Suggestions for meaninful tests?
+  * Suggestions for meaningful tests?
 * **Map now raises the file that failed to load if it errors on reading** - <https://github.com/sunpy/sunpy/pull/3727>
   * David S. suggests opening a new PR/branch, as devs are now just force pushing to the original contributor's branch...
   * Nabil suggests its ok.

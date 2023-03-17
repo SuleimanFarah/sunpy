@@ -73,7 +73,7 @@ This should (re)start the tag job on [GitHub Actions](https://github.com/sunpy/s
 *For a major release:*
 
 - [ ] Commit the final rendered changelog to main. (The fragments should have been removed at feature freeze time)
-- [ ] Update the index.rst file in sunpy.org repo to point to the new whats new and update the version number.
+- [ ] Update the index.rst file in sunpy.org repo to point to the new what is new and update the version number.
 
 ## Announcements
 

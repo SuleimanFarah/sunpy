@@ -36,15 +36,15 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 
 1. Solar coordinate handling capabilities
 1. Database record viewing. Browsing, edit, add and delete database records
-1. Viewing and Plotting of solar co-ordinates that are contained in files pointed to in the database.
-1. Browse, edit, add and delete solar co-ordinates from solar data files.
+1. Viewing and Plotting of solar coordinates that are contained in files pointed to in the database.
+1. Browse, edit, add and delete solar coordinates from solar data files.
 1. Preview of one or multiple records and their associated data
 1. Filtering/Searching of records based on various parameters/meta-data in database like source, provider, instrument, etc.
 1. Plotting facility from Ginga
 1. We may need to extend Ginga itself to handle 3d analysis of fits files
 1. Ability to run various scientific operations from within the plugin and also display the results
 1. Import and export database records as text and from/to CSV, Spreadsheet, HTML files
-1. Import and export solar co-ordinates from one file format to another
+1. Import and export solar coordinates from one file format to another
 
 ## Project Implementation and Tasks
 
@@ -73,7 +73,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 * _**Implementation**_: Integrate the SunPy's database explorer module with the GUI to perform the following functions
   * Connecting to the database
   * Fetching entries
-  * Adding entries: Adding entires from one or more FITS (Flexible Image Transport System) files, from VSO (Virtual Solar Observatory) interface, and also manually
+  * Adding entries: Adding entries from one or more FITS (Flexible Image Transport System) files, from VSO (Virtual Solar Observatory) interface, and also manually
   * Displaying entries in a tabular form
   * Deleting entries
   * Editing entries: Starring and unstarring entries, Setting and removing tags, Changing custom attributes,
@@ -84,13 +84,13 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
   * Caching
   * _**Reference**_: <http://docs.sunpy.org/en/stable/guide/acquiring_data/database.html>
 
-1. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates
+1. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar coordinates
 
 * Ginga already has FITS (Flexible Image Transport System) support, as it is basically a scientific image viewer
-* Implement functionality to read data (solar co-ordinates) from files, typically FITS files, and use the capabilities in AstroPy's WCS module to handle the data and map images as described above
+* Implement functionality to read data (solar coordinates) from files, typically FITS files, and use the capabilities in AstroPy's WCS module to handle the data and map images as described above
 * Use the already implemented FITS reference viewer in Ginga complete with- a panning widget, information panels, zoom widget, analysis panes-- implemented as plugins: encapsulated modules that interface with the viewing shell using a standardized API, to render the data
 
-1. Develop plotting capability of solar data (solar co-ordinates) and rendering graph/image (ginga is basically an astronomical FITS file viewer)
+1. Develop plotting capability of solar data (solar coordinates) and rendering graph/image (ginga is basically an astronomical FITS file viewer)
 
 * Ginga has fair plotting capabilities. We can build upon those.
 * Ginga does direct rendering depending on backend and uses matplotlib for plotting of data
@@ -115,7 +115,7 @@ We need a plugin for Ginga, that shall have the following capabilities for brows
 | **21 April to 18 May** | Community Bonding period. Besides I shall also like to utilize this time to come up to speed with the Documentation and Design and codebase of SunPy, Ginga |
 | **19 May to 31 May (14 Days)** | Design and Developing a GUI interface based on Ginga using Qt, for browsing SunPy database and solar data |
 | **1 June to 10 June (10 days)** | Develop Solar coordinate handling capabilities in the plugin |
-| **11 June to 20 June: (10 days)** | Developing an interactive viewing functionality of database records. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar co-ordinates |
+| **11 June to 20 June: (10 days)** | Developing an interactive viewing functionality of database records. Developing interactive viewing functionality of the solar data contained in a file pointed to in a database record, and viewing of solar coordinates |
 | **21 June to 27 June (7 days)** |  Extend upon the plotting capability of Ginga and rendering graph/image of Solar data. _**23 June to 27 June**_: Mid-Term Evaluation |
 | **28 June to 4 July (7 days)** | Extend Ginga itself to handle 3d analysis of fits files |
 | **5 July to 11 July (7 days)** | Packaging of the developed plugins |

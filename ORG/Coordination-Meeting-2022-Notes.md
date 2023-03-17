@@ -36,7 +36,7 @@ Points requiring further discussion and a decision are marked with the 🌻 emoj
     - A list of features that people external to the core development team (e.g. instrument teams) think are missing from the SunPy ecosystem.
     - A Roadmap that serves as the long term vision for the project
     - A strategy for the long term sustainability of the package beyond the current core contributors
-    - Some clear documentation on the whats and whys of the affiliated package system, with separate sections aimed at both users of the packages and developers of the packages
+    - Some clear documentation on the what is and whys of the affiliated package system, with separate sections aimed at both users of the packages and developers of the packages
     - Decide what we want out of metadata handling...
     - Create a clear user-focused explanation of how the "sunpy ecosystem" works
 
@@ -550,7 +550,7 @@ TODOs
 * VSO currently has available ~83% of the data that it says it will provide
 
 * Propagation of errors to sunpy - how can a VSO error message become less opaque?
-    * show there be a VSO dashboard to show errors, or whats down or not down. The VSO health status - e.g. "please check the VSO health status: `link`"
+    * show there be a VSO dashboard to show errors, or what is down or not down. The VSO health status - e.g. "please check the VSO health status: `link`"
     * How to differentiate whether the search is wrong or cant be made due to server down or whether there is no actually no data available
     * The VSO also wants to point to the issue - for example the HAO could be down and want to propagate this (i.e. its not the VSO thats the issue its another server etc)
     * VSO also wants to provide an easy machine readable health report that checks every hour or so.
@@ -777,13 +777,13 @@ EIS [(github)](https://github.com/USNavalResearchLaboratory/eispac):
     * Lots of opportunity to collaborate
 
 * EISPAC focused on L1 data, and several things in EISPAC that are specific to EIS and not needed, for example the (EIS) L1 file archive for SPICE. But of course SPICE has its own requirements.
-    * Speed of developement for need of analysis tools meant that the two were independently worked on (although communication between two was had)
+    * Speed of development for need of analysis tools meant that the two were independently worked on (although communication between two was had)
 
 * Some issues with NDCube with slicing and saving back to fits as some coordinate information is lost. More to do from NDCube side on this. EISPAC have overwritten the slicing of NDCube to keep track of coordinate information to save to fits file for loading into a sunpy map. Currently quite "hacky" in EISPAC.
 
 Data search:
 
-* EIS has a Fido client in developement. EIS data is available from a directory tree, so first Fido client was a scraper on the site and searches for files between a certain time and not on any other factors. EISPAC searches the EIS catalogue rather than just the time period thats availale in the directory tree
+* EIS has a Fido client in development. EIS data is available from a directory tree, so first Fido client was a scraper on the site and searches for files between a certain time and not on any other factors. EISPAC searches the EIS catalogue rather than just the time period thats availale in the directory tree
 
 * SOAR webpage has limited flexibility to search for specific data (such as currently its indexed over time and dataset ID and level). But ideally want to search over some metadata (not available at moment through sunpy_soar either).
     * What is needed is also to search over an observing mode/SOOP/event list etc.
@@ -848,7 +848,7 @@ HERMES:
     * all space physics instruments
     * electron and proton flux, magnetic field vector, fluxgate sensor, ion flux/density/charge etc
 
-* Link of this to sunpy -> Steve. But wants to base it on the developement behind sunpy
+* Link of this to sunpy -> Steve. But wants to base it on the development behind sunpy
 
 * 4 instruments -> 4 packages (actually 5 packages)
     * this is a challenge and takes time, some help would be good

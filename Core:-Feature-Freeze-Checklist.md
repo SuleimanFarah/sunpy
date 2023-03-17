@@ -61,5 +61,5 @@ Unlike a normal release, **DO NOT RENDER THE CHANGELOG**.
 Things to remember to test during the pre-release phase are:
 
 1. Open a PR to the conda-forge feedstock testing building the conda package with at least one rc release. **DO NOT MERGE IT**.
-2. Ensure all sponsored packages tests pass with the rc (or lastest main if tested regularly), sunpy core versions which break sponsored packages should not be released.
+2. Ensure all sponsored packages tests pass with the rc (or latest main if tested regularly), sunpy core versions which break sponsored packages should not be released.
    Make a new release of the package if needed.

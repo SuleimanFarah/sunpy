@@ -298,7 +298,7 @@ How do we rebase map onto ndcube 2.0? - Dan Ryan/Stuart Mumford
     - Array order (row major) same as C- python
   - NDCube is built around being WCS compliant
 
-- PUNCH will have secondary header arrays - as some images will have whats good/bad in data array and information about how image is made from multiple images
+- PUNCH will have secondary header arrays - as some images will have what is good/bad in data array and information about how image is made from multiple images
   - are they the same dimension as data array and described by a WCS? not entirely sure yet.
 
 - can you carry some extra non-standard information?

@@ -226,7 +226,7 @@ def get_cached_urls():
 
 ##### `delete_cache(file)`
 
-- It deletes the cached files along with URLs in cached databse.
+- It deletes the cached files along with URLs in cached database.
 
 ```python
 def delete_cache(file):

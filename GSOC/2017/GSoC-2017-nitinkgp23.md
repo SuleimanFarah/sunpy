@@ -105,7 +105,7 @@ Here is a detailed study of the differences between the present JSOC Client and 
 * Upon doing `Client.query()`, drms returns a `Pandas` data frame while the present client returns a `JSOCResonse` object. This contains an `astropy.table.Table` and also has attributes that stores the query parameters and the length of the table. Hence, `JSOCResponse` object will be preferred over a `Pandas` data frame.
 
 * The drms module provides only a very basic download routine that sequentially downloads the requested files.
-SunPy's downloader, instead, is a threaded-download manager which parallely downloads the requested files, hence greatly reducing the download time.
+SunPy's downloader, instead, is a threaded-download manager which parallelly downloads the requested files, hence greatly reducing the download time.
 
     Sunpy's downloader also gives the user custom options to modify the downloading as required, for e.g. by passing the path as parameter, or an option to whether overwrite or ignore the files in case the names of files match. Path, if not passed, can be taken up from sunpy's config file and be downloaded in the default download directory.
 
@@ -119,7 +119,7 @@ The project can be divided into 3 main parts:
 
     The drms module needs a few improvements in its codebase. The current codebase has almost no test coverage. An important part in improving the drms package is to add tests for all the functions present in the drms module. The code coverage is expected to reach 100% after the midterms of the coding period.
 
-    After adding all the tests, and maybe simulataneously, we will be adding the Travis CI testing to check the build of the module whenever an event is triggered. Adding Coveralls will allow to keep a check on the percentage of codebase covered by tests.
+    After adding all the tests, and maybe simultaneously, we will be adding the Travis CI testing to check the build of the module whenever an event is triggered. Adding Coveralls will allow to keep a check on the percentage of codebase covered by tests.
 
     If needed, we can make drms use astropy-helpers which includes many build, installation and documentation related tools, used by the astropy project. This won't have any user-end impact, but will provide very nice helpers such as python setup.py develop to install the current version, python setup.py test to run all the tests automatically, and python setup.py build_docs for building the docs locally. Moreover, it will also work nicely with astropy's CI-helpers for running tests on Travis etc.
 
@@ -158,7 +158,7 @@ The project can be divided into 3 main parts:
 ## Implementation
 ### Improving drms module
 
-The code needs to be covered by tests. The module consists of 3 main classes `SeriesInfo`, `ExportRequest` and `Client`. The tests will, first be written for the main API, and then consecutively, internal functions will be covered. `query` and `export` will require use of `unittest.mock`. A `MagicMock()` object will be used, which will create all related objects and methods, so that we don't need to interact with JSOC Servers, everytime the test is run.
+The code needs to be covered by tests. The module consists of 3 main classes `SeriesInfo`, `ExportRequest` and `Client`. The tests will, first be written for the main API, and then consecutively, internal functions will be covered. `query` and `export` will require use of `unittest.mock`. A `MagicMock()` object will be used, which will create all related objects and methods, so that we don't need to interact with JSOC Servers, every time the test is run.
 
 `@patch` decorator available in `unittest.mock` allows us to monkey-patch an object, within the scope of the decorator. This will allow us to replace the JSOC database with a custom object, and fetch data from the custom object itself, thus avoiding interaction with JSOC servers.
 

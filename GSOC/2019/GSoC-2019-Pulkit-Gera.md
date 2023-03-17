@@ -42,7 +42,7 @@ The proposal is on the project **“Remote Data in SunPy”.** The idea is the s
 ### Implementation
 
 **Idea**
-The idea here is that we already have parfive, a asyncio downloader integrated into sunpy recently. It is a powerful library for downloading parallely and is now included in the last Sunpy release. Parfive therefore forms the core of the Remote data manager downloading.
+The idea here is that we already have parfive, a asyncio downloader integrated into sunpy recently. It is a powerful library for downloading parallelly and is now included in the last Sunpy release. Parfive therefore forms the core of the Remote data manager downloading.
 Once the data is downloaded, we can now cache the data on the disk and store the metadata on a sql database, which can be easily accessed through sql-alchemy.
 We also are able to mirror download the data through parfive. Not only that we could implement downloading by parts in parfive so that we can speed up the downloading process.
 

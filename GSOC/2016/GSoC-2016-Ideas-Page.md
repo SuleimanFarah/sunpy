@@ -136,7 +136,7 @@ the project.
 The [CHIANTI](http://www.chiantidatabase.org/) atomic physics database is a valuable resource for solar physics.
 The CHIANTI database holds a large amount of information on the physical properties of different elements in different ionisation states and enables the calculation of various parameters from this information.
 Using CHIANTI it is possible to calculate the spectra of various types of solar plasma (e.g., flare, quiet sun, etc.) from the observed elemental abundances and ionisation states.
-These synthetic spectra are essential for calculating reponse functions of various instruments.
+These synthetic spectra are essential for calculating response functions of various instruments.
 An instrument's wavelength response function describes how much light emitted at a given wavelength is measured by the instrument.
 Similarly, the temperature response function describes the instrument's sensitivity to light emitted by plasma at a particular temperature.
 These response functions play a vital role in correctly interpreting observations, as does proper calculation of these functions.
@@ -149,7 +149,7 @@ A detailed discussion of the AIA response functions can be found in [Boerner et 
 Other potential applications of ChiantiPy in SunPy include:
 
 1. Generalisation of the code to produce response functions using arbitrary values of physical parameters (elemental abundances, etc.).
-1. Calculation of reponse functions for other instruments.
+1. Calculation of response functions for other instruments.
 1. Conversion of ChiantiPy spectra objects to SunPy Spectra objects.
 
 **Expected Outcomes**: This project would facilitate SunPy becoming independent from Solar SoftWare (SSW) for analysing AIA data, particularly with respect to inferring plasma properties such as temperature and density.

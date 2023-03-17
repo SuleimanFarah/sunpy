@@ -55,7 +55,7 @@ ARs2days = hfq.service.TimeQuery('2010-01-01T00:00:00','2010-01-02T00:00:00','VI
 ARsLat = hfq.service.Query('2010-01-01T00:00:00','2010-01-01T02:00:00','VIEW_AR_HQI','FEAT_HG_LAT_DEG,-30/0; CODE,*smart*')
 ```
 
-The first example ARs2days searchs using TimeQuery and it just allows a time range from a certain table. The second example ARsLat searchs with conditions.  This is following PQL syntax where the fields are separated by ';' and the values by ','.  In the example above it searching for ARs between -30 and 0 degrees in heliographic latitude and code name like 'smart'.
+The first example ARs2days searches using TimeQuery and it just allows a time range from a certain table. The second example ARsLat searches with conditions.  This is following PQL syntax where the fields are separated by ';' and the values by ','.  In the example above it searching for ARs between -30 and 0 degrees in heliographic latitude and code name like 'smart'.
 
 The interface for this should hide most of this PQL and table names away.  It should accept time objects.
 Using [Taverna webservice]() we can get more info and do some sql queries
@@ -67,7 +67,7 @@ print hfqTav.service.getTableNames() #Tells which tables we can query
 ARsLatCC = hfqTav.service.SQLSelect('CC_X_PIX,CC_Y_PIX,CC','VIEW_AR_HQI',"DATE(DATE_OBS) BETWEEN DATE('2010-01-01T00:00:00') AND DATE('2010-01-02T00:00:00') AND FEAT_HG_LAT_DEG between -30 and 0 AND CODE like '%smart%'")
 ```
 
-Should give the chaincode (and their starting point) for the same results than the query from above, this time using SQL sintax.  The chaincode could then be used with the chaincode routine to overplot them on a map.
+Should give the chaincode (and their starting point) for the same results than the query from above, this time using SQL syntax.  The chaincode could then be used with the chaincode routine to overplot them on a map.
 
 Notice these examples have been based on time queries, they could work similarly without date inputs. For example if we would like to get all the active regions with certain property.
 

@@ -80,7 +80,7 @@ Implementing Image Registration methods to align the images in a MapCube with a 
 * deshake the series of Maps in Mapcube using Sun's center as the reference
 * find the features/keypoints in both the images
 * correspond/match the detected features in both the images
-* find the transformation between two images and then align the second image in first's co-ordinate frame.
+* find the transformation between two images and then align the second image in first's coordinate frame.
 A reasonable first implementation would be completed in two weeks with scipy.ndimage as the base library followed by improvements and optimizations in the next week to achieve high accuracy.
 
 ##### Week 6 and Midterm Evaluation Period (22nd July - 2nd Aug)

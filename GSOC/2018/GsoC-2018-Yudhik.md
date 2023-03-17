@@ -181,7 +181,7 @@ Class roi(object):
 
 **Returns:**
 
-* **Returns**  – A final ROI response which can be overlayed on an image.
+* **Returns**  – A final ROI response which can be overlaid on an image.
 
 **Actual Image of AIA_171**
 

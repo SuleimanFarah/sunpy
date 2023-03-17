@@ -39,7 +39,7 @@ Time Line
 
 - ```Week 7-8:``` Midterm review. Design and Implement "image registration routine upgrade". Get feedback, debug written code, write tests and documentation.
 
-- ```Week 9-10:``` Cleanup written code. Fix potential bug or write additional requested functionality by the community. Discuss approach for implementing "list<->np.ndarray converstion".
+- ```Week 9-10:``` Cleanup written code. Fix potential bug or write additional requested functionality by the community. Discuss approach for implementing "list<->np.ndarray conversion".
 
 - ```Week 11-12:``` Implement "list<->np.ndarray conversion". Get feedback, cleanup and document implementation. Design and implement prototype for "storing MapCube of CompositeMaps" feature.
 
@@ -50,4 +50,4 @@ Experience with SunPy
 
 I'm already familiar with the SunPy development workflow (Git/GitHub) although I'm not a long time SunPy user or developer.
 
-I wanted to understand the SunPy code so I've gone trough the issues marked on the SunPy GitHub page and tried to fix some of them (<https://github.com/sunpy/sunpy/pull/512>). I think the code is pretty well written and easy to read/understand for me.
+I wanted to understand the SunPy code so I've gone through the issues marked on the SunPy GitHub page and tried to fix some of them (<https://github.com/sunpy/sunpy/pull/512>). I think the code is pretty well written and easy to read/understand for me.

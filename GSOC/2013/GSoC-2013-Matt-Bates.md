@@ -82,7 +82,7 @@ SunPy currently does not have the capabilities to easily manage spectroscopy dat
 
 ## Proposal Detailed Description
 
-Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges). The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like intensity at different wavelengths, turbulence in the medium, and speed of the plasma. Besides, other information such as temperature or electron density of the plasma can also be obtained. The project will consist in finding the most appropiate class to handle this dataset, and how to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
+Spectroscopy data are usually stored in 3 dimensional arrays (x,y, lambda; or time, y, lambda) with multiple windows (different spectral ranges). The implementation of this data type on SunPy is essential as these datasets are the one which most information contain, like intensity at different wavelengths, turbulence in the medium, and speed of the plasma. Besides, other information such as temperature or electron density of the plasma can also be obtained. The project will consist in finding the most appropriate class to handle this dataset, and how to make it to interoperate with other data objects like maps (overplot the images), time-series and spectra.
 
 ##### Week 1
 
