@@ -14,7 +14,7 @@
 GitHub: [@adwaitbhope](https://www.github.com/adwaitbhope/)
 Matrix: @adwaitbhope
 
-Final year CS undergrad at **Univerity of Pune**(SPPU), admitted to **Pune Vidyarthi Griha's College of Engineering and Technology**, India.
+Final year CS undergrad at **University of Pune**(SPPU), admitted to **Pune Vidyarthi Griha's College of Engineering and Technology**, India.
 
 ## Google Summer of Code
 

@@ -88,7 +88,7 @@ All the classes and methods implemented will be properly documented and unit tes
 
 My current progress can be tracked on Jupyter Notebook on [Github](https://github.com/swapsha96/socis/blob/master/Playing%20with%20Sunspotter%20Dataset.ipynb).
 
-**I have finished getting familiar with Sunspotter datas** (point 1 of possible ideas in SunPy SOCIS wiki page). It involves extracting the dates, coordinates and file names from the database. It contains three CSV files (`lookup_properties, lookup_timesfits and rankings`) which contain details of images and the Elo rating score. `classifications.csv` contains pairwise comparisons of images.
+**I have finished getting familiar with Sunspotter data** (point 1 of possible ideas in SunPy SOCIS wiki page). It involves extracting the dates, coordinates and file names from the database. It contains three CSV files (`lookup_properties, lookup_timesfits and rankings`) which contain details of images and the Elo rating score. `classifications.csv` contains pairwise comparisons of images.
 
 ![Flux vs Score Scatter Plot](https://i.imgur.com/q0C21E2.png)
 

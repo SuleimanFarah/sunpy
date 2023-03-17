@@ -41,7 +41,7 @@ Although I haven't really had much experience contributing to Open source Projec
 
 * I also  implemented a grain strain measurement software based on Electron BackScattering Diffraction (EBSD) maps last semester using Python, numpy, scipy and matplotlibs for my Mechanical Properties Lab. It would read in grain data from EBSD files, store them and correlate them to data points in second EBSD file, recognize closed grains and calculate grain strain [Grain Strain Measurement](https://github.com/ankitkmr/Grain_Strain_Measurement)
 
-* In Current semester as well I am heading the development of SaaS project, a cloud based extractive metallurgy simulation by using Python for module development of all the ore processing units, Bootstrap for frontend and Python web micro-framework flask for backend. [Extractive Metallurgy (currently being developed this semester as part of a course)](https://github.com/ankitkmr/Extractive_Metallurgy)
+* In Current semester as well I am heading the development of SaaS project, a cloud based extractive metallurgy simulation by using Python for module development of all the processing units, Bootstrap for frontend and Python web micro-framework flask for backend. [Extractive Metallurgy (currently being developed this semester as part of a course)](https://github.com/ankitkmr/Extractive_Metallurgy)
 
 You may find my software source code here: <https://github.com/ankitkmr>
 
@@ -160,7 +160,7 @@ I'd like to suggest/add a new feature. (This will be optional and added with fur
 
 Event Recognition and Response Mechanism : I plan to at least start the development of events recognition and corresponding response for a few sample popularly monitored events in the solar weather.
 
-The approach here is to not just build tools but build features for a larger system sunpy.  A long shot might be developing a registeration mechanism where we can register for events. But a more realistic would be direct implementation for recognition of and response to a few popularly monitored events so that they can be recognized and responded to appropriately.
+The approach here is to not just build tools but build features for a larger system sunpy.  A long shot might be developing a registration mechanism where we can register for events. But a more realistic would be direct implementation for recognition of and response to a few popularly monitored events so that they can be recognized and responded to appropriately.
 
 **17 August:  Suggested 'pencils down' date. Take a week to scrub code, write tests, improve documentation, etc.**
 

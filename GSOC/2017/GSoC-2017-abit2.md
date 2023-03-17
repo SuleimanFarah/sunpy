@@ -15,7 +15,7 @@
 
 Currently, I'm a third year undergraduate enrolled in Computer Science & Engineering at Indian Institute of Technology, Kharagpur, West Bengal.
 
-Courses taken (releted to computer science) - Algorithms / Data Structures, Software Engineering, Discrete Structures, Formal Language and Automata Theory, Probability and Statistics, Compilers and Compiler's Lab, Computer Architecture, Computer Architecture Lab, *Operating Systems Theory and Lab*, *Networks Theory and Lab*, *Database and Management System*.
+Courses taken (related to computer science) - Algorithms / Data Structures, Software Engineering, Discrete Structures, Formal Language and Automata Theory, Probability and Statistics, Compilers and Compiler's Lab, Computer Architecture, Computer Architecture Lab, *Operating Systems Theory and Lab*, *Networks Theory and Lab*, *Database and Management System*.
 
 *italic* => ongoing
 
@@ -55,7 +55,7 @@ I use a Linux Ubuntu machine for development now and have been using it for the 
 
 ### 5. Proposal abstract
 
-IRIS (Inteface Region Imaging Spectrometer) is a science satellite  designed to study energy transport in the solar atmosphere at high spatial, temporal and spectral resolution.  IRIS has two instruments.  The first is a slit-spectrograph which measures the intensity of ultraviolet light from the Sun as a function of its wavelength and produces 2D spectra via a narrow slit in several spectral windows/wavelength ranges.  The second is a slit jaw imager which takes 2D context images of the regions from which  the spectra are measured.  Therefore,to handle this data using Python, two basic classes are required:
+IRIS (Interface Region Imaging Spectrometer) is a science satellite  designed to study energy transport in the solar atmosphere at high spatial, temporal and spectral resolution.  IRIS has two instruments.  The first is a slit-spectrograph which measures the intensity of ultraviolet light from the Sun as a function of its wavelength and produces 2D spectra via a narrow slit in several spectral windows/wavelength ranges.  The second is a slit jaw imager which takes 2D context images of the regions from which  the spectra are measured.  Therefore,to handle this data using Python, two basic classes are required:
 
 * IRISRaster class (to read and anlyse IRIS spectra) and
 * IRISSJI class (to read and analyse slit-jaw-images).
@@ -83,7 +83,7 @@ After the two classes have been implemented with all the tools for analysis, an 
 
 ### 7. How I propose to complete this project
 
-Since February, I have been working on IRISpy (the Python IRIS data analysis package) with its founders, Dan Ryan, Stuart Mumford, and Steven Christe.  I attend weekly development telecons with the IRISpy team and the IRIS instrument team and have thus become familar with the compexity of the IRIS data, the current code base, and current dependencies, such as Xarray.  I have made contributions to the IRISpy repository, my PR's are ([#8](https://github.com/sunpy/irispy/pull/8)),([#7](https://github.com/sunpy/irispy/pull/7)),([#4](https://github.com/sunpy/irispy/pull/4)) the last two being tests for ``iris_tools`` and ``spectrograph``. The ([#8](https://github.com/sunpy/irispy/pull/8)) PR show my familiarity with the Xarray, this PR implements a tool that helps to truncate the data by it's axis, slice or index.
+Since February, I have been working on IRISpy (the Python IRIS data analysis package) with its founders, Dan Ryan, Stuart Mumford, and Steven Christe.  I attend weekly development telecons with the IRISpy team and the IRIS instrument team and have thus become familiar with the compexity of the IRIS data, the current code base, and current dependencies, such as Xarray.  I have made contributions to the IRISpy repository, my PR's are ([#8](https://github.com/sunpy/irispy/pull/8)),([#7](https://github.com/sunpy/irispy/pull/7)),([#4](https://github.com/sunpy/irispy/pull/4)) the last two being tests for ``iris_tools`` and ``spectrograph``. The ([#8](https://github.com/sunpy/irispy/pull/8)) PR show my familiarity with the Xarray, this PR implements a tool that helps to truncate the data by it's axis, slice or index.
 
 IRISpy can use Sunpy's already existing modules to implement different tools and functionalities.
 The visualisation tools can use the ``sunpy.visualization`` package, the downloading of fits files can use ```sunpy.net``` package.  Additionally SunPy contains several useful tools for manipulating IRIS data, e.g. derotation. Meanwhile, the sunpycube package can be used as a basis for an IRISSJI object.

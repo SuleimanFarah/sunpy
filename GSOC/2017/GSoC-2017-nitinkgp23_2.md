@@ -119,7 +119,7 @@ We get a number of such array of tuples, each depicting a unique coronal loop.
 
     The goal of the algorithm is to depict as many loops as possible, keeping in mind not to pick up false signals, which would otherwise be a mere noise in the image. Therefore, the challenges in the implementation of the algorithm are:
 
-    * An optimum threshold level should be evaluated so as to seperate noise levels from existing loops.
+    * An optimum threshold level should be evaluated so as to separate noise levels from existing loops.
     * Retrieve coronal loops for the maximum length possible, and avoid dividing it into smaller segments.
 
     A two-dimensional search algorithm will have a computation time that will grow with the square of the image-size, hence our strategy will be to extract the loops in a one-dimensional search algorithm. Apart from the one-dimensional parameter S<sub>k</sub> , we use two other parameters A<sub>l</sub> (Local direction angle) and R<sub>m</sub> (Curvature radius). After selecting the brightest point from the image (X<sub>0</sub>,Y<sub>0</sub>) and using these 3 parameters, we continue tracing the loop following the principle of **Orientation-guided tracing**.
@@ -129,7 +129,7 @@ We get a number of such array of tuples, each depicting a unique coronal loop.
     * Baseline difference
     * One-sided running difference
     * Symmetric running difference
-    * Minimum runnnig difference
+    * Minimum running difference
 
     All these enhancement methods have their own pros and cons, hence it is important to implement all of them. This part requires a detailed study of the paper, and related online journals, and a thorough discussion with the mentors.
 6. **Wrapping FLCT code**
@@ -356,7 +356,7 @@ This week will act as a **buffer period** for the work done so far.
 
 ### Week 9 - Week 10 (Jul 25 - Aug 7)
 
-This 2 week period will consist of **wrapping up FLCT code**. The C code of FLCT is over 2500 lines, and since I haven't done wrapping before, I cant foresee how much time I will require to wrap up the full code. Still, I expect it to be completed in the 2 week period. If it is not achieved successfully, the task will be carry forwarded to next week.
+This 2 week period will consist of **wrapping up FLCT code**. The C code of FLCT is over 2500 lines, and since I haven't done wrapping before, I can not foresee how much time I will require to wrap up the full code. Still, I expect it to be completed in the 2 week period. If it is not achieved successfully, the task will be carry forwarded to next week.
 
 ### Week 11 (Aug 8 - Aug 14)
 

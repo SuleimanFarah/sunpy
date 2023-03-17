@@ -44,7 +44,7 @@ current solar activity and flare forecasting.
 The data it uses it comes from multitude of real-time data archive that differs from
 the archived data.
 By creating a `now` module in SunPy we will provide to the SunPy user to download,
-visualise and analise near real-time data.
+visualise and analyse near real-time data.
 This module then could be used by SolarMonitor directly which it will help to advertise
 worldwide SunPy capabilities.
 

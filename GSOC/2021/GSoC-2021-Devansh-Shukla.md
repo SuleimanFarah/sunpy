@@ -37,7 +37,7 @@ My Resume is available at <a href="https://github.com/devanshshukla99/devanshshu
 <b>Languages</b>: Python, C <br>
 <b>Platforms</b>: Linux, Windows <br>
 <b>Source Control</b>: git <br>
-<b>Softwares & Tools</b>: LaTeX, conda, WxMaxima, Mathematica, +.
+<b>Software & Tools</b>: LaTeX, conda, WxMaxima, Mathematica, +.
 
 ## Open Source Experience
 
@@ -67,7 +67,7 @@ I have been very interested in the Astrophysics and Cosmology domain for a long 
 caught my eye due to my course, Intro. to Space Physics, which included a seminar on Sun-spots in which I
 utilized SunPy to generate AIA and HMI Image of the Sun, thereby showing the correlation of sunspots and
 magnetic field; I have been reading about SunPy since then, slowly learning about the incredible community.
-I choosed this project since it brings out the best of both worlds, some Solar Physics and some Programming; for
+I chose this project since it brings out the best of both worlds, some Solar Physics and some Programming; for
 me, it looked like a natural choice in my career to learn and hopefully contribute positively to the community;
 more specifically, next subsection points to some reasons and benefits of such a project; of course, I'm open
 to finding more in the future.

@@ -19,7 +19,7 @@ This project aims to re-implement the current wcs as `sunpy.coordinates` using t
 
 1. Creation of classes for coordinate representation(Cartesian, Spherical, cylindrical) . These classes would inherit from a common base class to avoid code duplication. Also the various methods for transformation between the representation would be present here.
 
-2. Creating coordinate frame class(helio projective,  helio-centric and helio grahpic). These will be subclasses of a parent coordinate frame class. Much of the transformation algorithm between them would be re-usable from the existing `sunpy.wcs`.
+2. Creating coordinate frame class(helio projective,  helio-centric and helio graphic). These will be subclasses of a parent coordinate frame class. Much of the transformation algorithm between them would be re-usable from the existing `sunpy.wcs`.
 
 ### Deliveries
 1. Fully implemented and usable Representation Classes.

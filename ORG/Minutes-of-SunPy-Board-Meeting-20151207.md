@@ -50,7 +50,7 @@ is to become more consistent with the Map object.
   - SunPy could join this - means can accept money (donations, grants)
   - could also set up a non-profit on our own. Probably would use an attorney for this. Might be expensive. This would avoid Numfocus overhead, but not clear which is the better approach.
   - need pluses and minuses of Numfocus. Not clear at the moment.
-  - Numfocus overhead e.g. if AstroPy recieved $10,000, 7% goes to Numfocus + some base charge. Total approximately 10%. Rate goes down as the amount donated increases. For $1M, it would be around 5%. Might be room to negotiate amounts.
+  - Numfocus overhead e.g. if AstroPy received $10,000, 7% goes to Numfocus + some base charge. Total approximately 10%. Rate goes down as the amount donated increases. For $1M, it would be around 5%. Might be room to negotiate amounts.
   - Numfocus seems easier overall.
   - Copyright issues
   - **Stuart** offers to open a dialogue with Numfocus.

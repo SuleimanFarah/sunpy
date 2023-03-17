@@ -83,7 +83,7 @@ The modules `net` and `instr` uses `TimeRange`. `TimeRange.start` and `TimeRange
 - **Planned contributions to astropy**
   - Format class for `numpy.datetime64`: This would add support for `numpy.datetime64` as input and output.([Link](https://github.com/astropy/astropy/issues/4982) to the issue on astropy)
 
-  - Fix `to_datetime` in `astropy.TimeDelta`: Right now, `to_datetime` in `TimeDelta` doesnot work as expected. ([Link](https://github.com/astropy/astropy/issues/4982) to the issue on astropy.)
+  - Fix `to_datetime` in `astropy.TimeDelta`: Right now, `to_datetime` in `TimeDelta` does not work as expected. ([Link](https://github.com/astropy/astropy/issues/4982) to the issue on astropy.)
 
   - Formatting of time: `Time` does not provide a good way to format it now (like `strftime` for `datetime`). I would add a similar function based on the comments from community. ([Link](https://github.com/astropy/astropy/pull/7323) to the PR on astropy)
 

@@ -16,9 +16,9 @@
 
 ## HELIO & HEK
 
-* Description: SunPy has already the capability to access to the Heliophysics Event Knowledgebase.  This database provide a large list of events detected on SDO data.  However, there's room to improve what to do with the results, for example to overplot the contour of the feature requested on the images, or have more complicated queries.  Also, the HELiophisics Integrated Observatory has put together a list of services which allows the scientist to query them in order to discover data in the heliosphere.  For example, when found an event of interest in the Sun it can be propagated forward through the whole heliosphere, finding the adequate intervals where to look for data to meassure the event in-situ.
+* Description: SunPy has already the capability to access to the Heliophysics Event Knowledgebase.  This database provide a large list of events detected on SDO data.  However, there's room to improve what to do with the results, for example to overplot the contour of the feature requested on the images, or have more complicated queries.  Also, the HELiophisics Integrated Observatory has put together a list of services which allows the scientist to query them in order to discover data in the heliosphere.  For example, when found an event of interest in the Sun it can be propagated forward through the whole heliosphere, finding the adequate intervals where to look for data to measure the event in-situ.
 
-* Requirements: All the services from HEK and HELIO are through webservices (SOAP, REST), thus some understanding on that would be benefitial.
+* Requirements: All the services from HEK and HELIO are through webservices (SOAP, REST), thus some understanding on that would be beneficial.
 
 * Mentors: David Perez-Suarez, Jack Ireland (ADNET Systems, Inc. / NASA GSFC)
 

@@ -111,7 +111,7 @@ The remote_data_manager will be implemented as a factory with multiple functiona
 `@remote_data_manager_add_to_buffer`
 This will basically add the file, function name to the cache. When the function is called, it will check the cache. If hit, do nothing, else download,verify the hash and add to cache.The idea is that it is responsible for providing the files to other functions.
 `def read_file_obj()`
-This will basically read and return the contents of the file after it fetches from the buffer mentioned above. The user doesnt have to worry about the file descriptors
+This will basically read and return the contents of the file after it fetches from the buffer mentioned above. The user does not have to worry about the file descriptors
 
 `def ret_file()`
 This will be implemented as a context manager where we return the file contents.

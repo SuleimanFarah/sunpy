@@ -167,7 +167,7 @@ table.loc([label1,label2....])-> returns list of rows corresponding to labels
 
 *     https://github.com/sunpy/sunpy/pull/894
 
-      Filed bug #882, and solved it as a moral obligation. Small issue of repition in EVE
+      Filed bug #882, and solved it as a moral obligation. Small issue of repetition in EVE
       LightCurve header.
 Also made a small change to developer guide.
 

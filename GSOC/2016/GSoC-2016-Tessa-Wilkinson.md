@@ -82,7 +82,7 @@ I will:
 
 * Utilize CHIANTI and ChiantiPy to develop a spectral contribution function by using intensityRatio to show relative emissivity per line, or mspectrum to get spectral line intensities as a function of wavelength.
 * Assess instrument wavelength response and develop a wavelength response function using effective area vs wavelength of the strongest emission lines present in the solar feature.
-* Develop an emissivity spectral structure based on plasma properties without utilizing SSW.  Essentially, I will be rewriting the idl  function aia_get_response() and all it encompases.
+* Develop an emissivity spectral structure based on plasma properties without utilizing SSW.  Essentially, I will be rewriting the idl  function aia_get_response() and all it encompasses.
 * Use the spectral contribution function developed with CHIANTI to develop a temperature response function
 * Close the SunPy pull request: [SDO/AIA response function #1663](https://github.com/sunpy/sunpy/issues/1663) (directly related to this project.
 
@@ -136,7 +136,7 @@ Week 9-10 (July 25, 2016)
 Week 11-12 (August 8, 2016)
 
 * At this time, try to generalise the code to produce response functions using arbitrary values of physical parameters.
-* Add optional additionals as time allows.
+* Add optional additional as time allows.
 * Resolve merge conflicts (if applicable).
 
 Week 13-14 (August 22, 2016)

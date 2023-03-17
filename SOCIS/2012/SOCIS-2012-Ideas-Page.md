@@ -55,7 +55,7 @@ It is helpful to plot a grid on the Sun that represents its true spherical natur
 
 ## Prep-server
 
-* **Description**: The prep-server is a custom web service that has been developed to provide access to a number of data preperation routines which are currently available in IDL. Many solar missions provide and maintain tools in prepare their data for scientific data analysis as such it is a key component to allow SunPy users to analyze data from certain missions without the need for IDL. The goal of this project is first to aid in the setup of the server itself using existing server code, and then write a Python interface to this service needs to be written.
+* **Description**: The prep-server is a custom web service that has been developed to provide access to a number of data preparation routines which are currently available in IDL. Many solar missions provide and maintain tools in prepare their data for scientific data analysis as such it is a key component to allow SunPy users to analyze data from certain missions without the need for IDL. The goal of this project is first to aid in the setup of the server itself using existing server code, and then write a Python interface to this service needs to be written.
 * **Requirements**: Java
 * **Mentor**: David Pérez-Suárez
 

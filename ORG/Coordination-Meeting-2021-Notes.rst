@@ -188,7 +188,7 @@ How do we rebase map onto ndcube 2.0? - Dan Ryan/Stuart Mumford
     - NDCube now agnostic to WCS-type
     - upstreams several NDCube features (slicing WCS)
     - Brings API into APE-14 in certain naming conventions
-  - Whats new?
+  - What is is new?
     - Global Coords  e.g. a scalar time object (if you slice an axis along a time dimension how do you deal with that coordinate? this now allows for this)
     - ExtraCoords class - allows tabular/array-based coordinates. Can also serve as a secondary set of coordinate transformations
       - Because ExtraCoords can now be converted to a WCS, enables unification of NDCube cropping (crop by coord/extra coord)
@@ -257,7 +257,7 @@ How do we rebase map onto ndcube 2.0? - Dan Ryan/Stuart Mumford
       - Will: would be `map.plotter.plot()` - should we alias to `map.plot()`? Yes (Danny says no :P (But agrees he's outvoted :) )
       - Stuart: Break up plot - i.e. have something like plotter.imshow? enable users to build up layer by layer, and then `.plot` would use `plotter.imshow` with extra title, grid etc.
       - should only alias `.plot` and then rest by ``.plotter.draw_limb` etc.
-      - Albert: Should it really return entire Axes (i.e. objects to returing WCSSubAxes), however as Will notes that its very handy that the WCSAxes is returned for setting up axes for then doing more nitty gritty things.
+      - Albert: Should it really return entire Axes (i.e. objects to returning WCSSubAxes), however as Will notes that its very handy that the WCSAxes is returned for setting up axes for then doing more nitty gritty things.
       - Should `.plot` just be more like `.peek`?
   - NDCube has fully APE-14 ordering nomenclature: array order (row major), pixel (column major), world order (column major)
     - should we remove PixelPair?
@@ -273,11 +273,11 @@ How do we rebase map onto ndcube 2.0? - Dan Ryan/Stuart Mumford
 
 **Questions from Matt:**
 
-- Whats timescale of release of NDCube 2.0?
+- What is is timescale of release of NDCube 2.0?
   - within next 8-10 weeks as an absolute max (Stuart)
 
 - How does NDCube handle memory? PUNCH will be using pretty big data arrays (from many images to one)
-  - Short answer is it doesnt, it doesn't currently manipulate data in any way (the upcoming reproject PR will change this)
+  - Short answer is it does not, it doesn't currently manipulate data in any way (the upcoming reproject PR will change this)
   - However suggestion for larger than memory data is to load the data into a Dask array - Will has done this before with Dask and NDCube for AIA analysis.
 
 - Is parent class NDData getting updated?
@@ -320,7 +320,7 @@ Wednesday 30th Jun
 - Sponsored and affliated package outside scope of core but part of the great sunpy escosystem
 - Sponsored - maintained by SunPy
 - Affiliated - maintained by others
-- Create and applied reivew critera to all sponsered and some affilated packages
+- Create and applied reivew criteria to all sponsored and some affilated packages
 - Criteria
   - Functionality
   - Integration
@@ -329,20 +329,20 @@ Wednesday 30th Jun
   - Duplication
   - Community
 - Traffic light review system accepted, provisional, not-acccpeted?
-- No submissions from outside the projec - why?
+- No submissions from outside the project - why?
 - What more can be done to get more instrument teams on board?
 - Tweaks to the review process
 - Formal role - Affilated Package Liaison
-- What is the benifit of being an affilated package in general and for the maintainer?
+- What is the benefit of being an affilated package in general and for the maintainer?
   - Stamp of approval certain standand and will work with sunpy
   - Premotion of affiliated packages
 
 - Punch plans on being affliated packages but may have some duplication so how will that work?
   - pipeline code may have some duplication would that fail the the duplication
   - frozen requiments on older packages what would happen - would it go from pass to fail status?
-- STIX plans to have seperate packages for pipeline 'stixcore' and user facing 'stixpy' which aims to be sunpy affliated
-- Pipline instrumemt code maybe a special case?
-- Going through the review process does not transfer control of deveolpment - still held by repo owners
+- STIX plans to have separate packages for pipeline 'stixcore' and user facing 'stixpy' which aims to be sunpy affliated
+- Pipeline instrumemt code maybe a special case?
+- Going through the review process does not transfer control of development - still held by repo owners
 - Yearly re-review
 - Goal is to help improve, not shame or demand
 - Heliopy standards - not clear on web page
@@ -350,8 +350,8 @@ Wednesday 30th Jun
   - <https://zenodo.org/record/2529131#.YNyRI5NKhA4>
 - List of know packages or software for calibration python or otherwise
 - Ultimate goal is to provide a better end user experience (scientists and developers) - through standards, documentation, etc
-- How can this be supported in the sense of time to do re-reviews etc - and should try and grow at the moment if can't support what currenly have?
-- How to incourage conrtibutions especially from first time commiters
+- How can this be supported in the sense of time to do re-reviews etc - and should try and grow at the moment if can't support what currently have?
+- How to incourage conrtibutions especially from first time committers
 - Advertise sunkit-instra as incubator for instrument specific code?
 - Need to run sunkit-instra through review process sponsored or affiliated?
 
@@ -420,7 +420,7 @@ Solutions?
   - SUVI
   - NoRH (intended, but has been for a long time)
 - Dan: If these clients are moved out of core, how will users know about them?  Is a point of sunpy core to make data access easy and discoverable?
-- Stuart: Even if mkaing clients opt-in/move them out of core, Fido still has value:
+- Stuart: Even if making clients opt-in/move them out of core, Fido still has value:
   - API is the same
   - Can search multiple sources simultaneously
 - Chris B: What about defining default clients for each instrument.  If users want it from a different source, they can explicitly ask to call a different client.
@@ -498,7 +498,7 @@ Thursday 1st July
 
 Question
 
-- Do people think this is still useful given Map can now "auto-align" to existin WCS Axes?
+- Do people think this is still useful given Map can now "auto-align" to existing WCS Axes?
 
 Discussion
 
@@ -532,7 +532,7 @@ Let's consider creating an object that takes a collection/list of Maps and a tar
 
 - What does it do?
   - Ingest a search result into a SQLAlchemy-like database
-  - Stores FITS header, parameters from VSO search result, and absolut path to file
+  - Stores FITS header, parameters from VSO search result, and absolute path to file
   - Provides ways of searching the database on your local machine
   - i.e. if you do the same VSO search twice, it'll tell you you've already got it
   - Arbitrary FITS header keyword search
@@ -585,7 +585,7 @@ Let's consider creating an object that takes a collection/list of Maps and a tar
 - Typical US non-profit structure but is not itself a non-profit organisation
 
 - Self electing board
-- Lead dev elected by board and day to day running delgated to this person
+- Lead dev elected by board and day to day running delegated to this person
 - Financial matters still remit of the board
 - Numfocus has oversight to make sure follow US non-profit rules (mainly financial)
 - What does the project spend money on?

@@ -122,15 +122,15 @@ Package updates:
 - **sunraster**
 - **sunxpex**: package for solar x-ray spectroscopy. **Not released or stable!**
     - Includes thermal and non-thermal models of emission and code to fit them to observational spectral
-    - Most funcitonality translated from solarsoft equivalents
+    - Most functionality translated from solarsoft equivalents
     - will be rebranded sunkit-spex
     - roadmap to 0.1 under construction
-- **sunkit-image**: for iamge processing on sunpy maps.
+- **sunkit-image**: for image processing on sunpy maps.
     - Haven't done a great job or promoting this, but it is potentially really widely useful!
     - Reasonably mature package
     - Still need to make sure everything operates on `Map`s instead of bare arrays.
 - **aiapy**: for AIA image analysis
-    - Nabil is primarly dev/maintainer
+    - Nabil is primarily dev/maintainer
     - Developed by instrument team itself.
     - Has a Journal of Open Source Science paper.
     - Spinning this out from sunpy core gave the instrument team ownership over code, and prevented them from being bound from the sunpy core release cycle.
@@ -152,7 +152,7 @@ General discsussion
     - On a technical level a sponsored package means the lead SunPy developer decides who has commit access to a package.
     - Perhaps sponsored packages split into "generic packages" and "packages that are useful but at risk of being unmaintained"
     - Should add reason why there affiliated & sponsored packages, e.g. for aiapy reason it's affiliated is so instrument team retains control over the code
-- Mabye useful to have a new library external to astropy/sunpy/ndcube into `gwcs
+- Maybe useful to have a new library external to astropy/sunpy/ndcube into `gwcs
 - `NDCube` example gallery please - we probably already have a lot of how-to guides locally on our laptops, but these should be collated and made public.
 - Also `NDCube.io` please
 
@@ -551,7 +551,7 @@ TODOs
 
 * Propagation of errors to sunpy - how can a VSO error message become less opaque?
     * show there be a VSO dashboard to show errors, or what is down or not down. The VSO health status - e.g. "please check the VSO health status: `link`"
-    * How to differentiate whether the search is wrong or cant be made due to server down or whether there is no actually no data available
+    * How to differentiate whether the search is wrong or can not be made due to server down or whether there is no actually no data available
     * The VSO also wants to point to the issue - for example the HAO could be down and want to propagate this (i.e. its not the VSO thats the issue its another server etc)
     * VSO also wants to provide an easy machine readable health report that checks every hour or so.
     * Future version of Fido could first check the health status of the VSO before going to query
@@ -567,7 +567,7 @@ TODOs
 
 * No exchange of funds between NASA and NJAO but the VSO still provides the data. This is more of a mutual agreement - want data to be provided to community
 
-* Difference between SOHO and Solar Orbiter in terms of combining in-situ and remote sensing data is that the data analysis environment have changed. Having one environment to combine both would be ideal. The VSO doesnt need to change etc.
+* Difference between SOHO and Solar Orbiter in terms of combining in-situ and remote sensing data is that the data analysis environment have changed. Having one environment to combine both would be ideal. The VSO does not need to change etc.
 
 
 * Could Fido be taken out of sunpy and be "one provider to rule them all"?
@@ -601,7 +601,7 @@ TODOs
 * Data providers in both places (e.g. sunpy writes a client, but then it becomes available on VSO what should be done?)
     * VSO could be the institutional contact before we develop a client - support and assist in this as they have those relationships with instrument teams/providers
 
-* How should the VSO be contacted? Whats the best way to message the VSO with an example?
+* How should the VSO be contacted? What is is the best way to message the VSO with an example?
     * VSO chat? Stuart and Will currently on the VSO chat
     * However the sunpy developers chat is also a place monitored
     * The shared chat system works well!
@@ -818,7 +818,7 @@ PUNCH:
 * Level 3 products are full resolution of brightness and polarization brightness and other things
 * Pipeline is called "PUNCHBOWL", managed by Prefect, provide a python tools
 * NDCube is core data handler!
-* PUNCH can contribute the polarization resolution code as a seperate package (affiliate package), and punchbowl too.
+* PUNCH can contribute the polarization resolution code as a separate package (affiliate package), and punchbowl too.
 * Imaging mosaic using astropy reproject
 * PUNCH wants a strong relationship with sunpy as it's being developed  :tada:
 * how is reproject dealt with for different observer location?
@@ -868,7 +868,7 @@ HERMES:
 
 * Everything is being developed openly [(github)](https://github.com/HERMES-SOC)
 
-* Space physics doesnt typically use WCS, so no real need for NDCube
+* Space physics does not typically use WCS, so no real need for NDCube
     * if we want interoperability between in-situ, we need to think about how we develop wcs-driven data conatiners for remote sensing.
 
 * Steve: someone should maintain a set of package templates that do not necessarily depend on sunpy
@@ -925,7 +925,7 @@ CubiXSS/MOXSI:
 
 SST:
 * Most people use the two main instruments: CHROMIS and CRISP
-* Images of same field of view, scanning slit spectro-polarimetry (CHROMIS currently doesnt have polarimetry but may have in the future)
+* Images of same field of view, scanning slit spectro-polarimetry (CHROMIS currently does not have polarimetry but may have in the future)
 * SST is one of the highest throughput instruments currently operating - can be 2.9TB/hr, and can observe for many hours
 * Existing pipeline called SSTRED in IDL [(on github)](https://github.com/ISP-SST/sstred)
     * users dont do this, this is done by an institute and provided

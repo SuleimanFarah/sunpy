@@ -118,7 +118,7 @@ Ace data seems to be available as HDF files, at:
  If you have a energy band: 10-15 MeV, and 15-20 MeV.  "Simple average"
  for energy binning means to add them together and divide it by two.
 
-- **Weigh chanels with energy bin widths**:
+- **Weigh channels with energy bin widths**:
  The channels are usually more or less logarithmically spaced.
  This could be improved by taking into account the
  spectrum in the weighing and calculating also the weighted energy
