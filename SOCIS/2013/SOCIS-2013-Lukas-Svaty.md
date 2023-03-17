@@ -14,7 +14,7 @@ At this moment Glymur is using openJPEG for images stored in JPEG
 format. Support latest versions of openJPEG with full support and 1.5
 with read support only. As openJPEG is defaultly in version 1.5 in most
 operation systems (ArchLinux, Fedora...). Full support of openJPEG 1.5
-is requiered.
+is required.
 
 ### INTENTS
 My intention is to add write support for openJPEG 1.5. Creating write

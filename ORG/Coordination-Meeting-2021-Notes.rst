@@ -139,7 +139,7 @@ Metadata in Map - David Stansby
 - David's suggestion solution
   - Add setters to the meta abstraction layer, e.g. `m.observer_coord = observer_coord`
   - Create objects from the FITS metadata. Then ignore the FITS metadata.
-  - This way Map would not carry FITS metdata around, just Python objects.
+  - This way Map would not carry FITS metadata around, just Python objects.
   - `Map` is glued to the assumption that `.meta` is a FITS header
 
 Discussion
@@ -155,7 +155,7 @@ Discussion
 
 Metadata:
 
-- Should we have a longer disucssion about metadata on Friday? Stuart has notes.
+- Should we have a longer discussion about metadata on Friday? Stuart has notes.
 - Albert: What is our responsibility to keep metadata (i.e. don't throw it out)? For example, another pipeline might need to use another observer coordinate etc.
 - Carrying around "unknown/untrusted" meta is fine unless you do something like rotate.
 
@@ -167,7 +167,7 @@ How do we rebase map onto ndcube 2.0? - Dan Ryan/Stuart Mumford
 - Danny demonstrates that sunraster has a MetaData object
   - has generic defined instrument, detector, observer locaton.
   - Then can have object specific meta (e.g. spectrogram etc)
-  - Then instrument specific that has metadata that inherets from the MetaData ABCs
+  - Then instrument specific that has metadata that inherits from the MetaData ABCs
   - everything on data object level is generic, and then everything instrument specific is on the metadata object
 - Stuart: User-facing API for sunpy would be similar to this, but the implementation would be different
 - Should the properties be elevated up so that they can be accessed on the class (e.g. do my_map.observer rather than my_map.meta.observer)

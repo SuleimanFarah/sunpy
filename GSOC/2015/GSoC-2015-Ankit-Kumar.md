@@ -123,7 +123,7 @@ As of now the lightcurve class reads in data and stores it as pandas.DataFrame t
 
 **II  {22 June -  9 July} (2.5 weeks)**
 
-Correspondingly add the analytical functions to sunpy.instr module for each of the three new instruments that'll help analyze the data retrieved from the instrument. Also goes.py might need some new analyzing functions (thats up for discussion with mentor later)
+Correspondingly add the analytical functions to sunpy.instr module for each of the three new instruments that'll help analyze the data retrieved from the instrument. Also goes.py might need some new analyzing functions (that's up for discussion with mentor later)
 
 * add analytical functions to sunpy.instr module for analyzing data from above three instruments
 

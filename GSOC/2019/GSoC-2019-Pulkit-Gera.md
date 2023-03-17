@@ -237,7 +237,7 @@ Also will write documentation for the code as well as complete the tests.
 **Week 6-7 (June 25 - July 7)**
 
 * Review API design and make required changes. Keeping in mind scalability.
-* Implement replace_file function to allow overide
+* Implement replace_file function to allow override
 * Write functions which query the cache on last modified version, whose hash was mentioned,etc
 
 **Week 8 (July 8 - July 14)**

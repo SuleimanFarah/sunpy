@@ -183,7 +183,7 @@ General discsussion
 - Talking just about the core library here, but our discussion and choices will shape sponsored package documentation
 - Documentation issues:
     - No updates to the user guide since sunpy 1.0
-    - Exmaples are scattered and hard to find, no way to search just the examples.
+    - Examples are scattered and hard to find, no way to search just the examples.
     - Gallery has a mix of examples and tutorials
     - See slides (link above) for more issues
 - Django **put link here** https://developer.mozilla.org/en-US/docs/Learn is an example of good documentation structure - they have a page about how the documentation is structured itself, and which bit you should go to depending on what you're looking for.
@@ -296,7 +296,7 @@ Roadmap Items - should be associated to issues found
 * Clear messaging around project structure and Affiliated Packages
     * Package / functionality discovery
     * Clearly define the benefits of being an affiliated package
-    * Expalin why a package might / might not be sponsored
+    * Explain why a package might / might not be sponsored
 * Develop a set of outreach materials for regular use
     * Tutorials
     * Branding
@@ -410,7 +410,7 @@ TODOs?
 * Hierarchy of metaclasses/ABCs define standardised names for common metadata, e.g. `meta.observatory`
 * Should not be tied to FITS
 * Nabil: Have you considered adding automatic attribute generation when adding keys?
-    * Danny's initial feeling is no because the attributes should be drawn from the community-agreed standardised names. Users can add any metadata names, not necessarily just those agreed by the community and defined in the hierachy of metaclasses
+    * Danny's initial feeling is no because the attributes should be drawn from the community-agreed standardised names. Users can add any metadata names, not necessarily just those agreed by the community and defined in the hierarchy of metaclasses
 * Sliceable part
     * Some metadata is "axis-dependent", i.e. that are different at different pixels along an axis, e.g. exposure time.
     * This metadata does not necessarily have a unique mapping from pixel to world, i.e. two images could have the same exposure time.  Therefore they are not coordinates and can't be described by WCS.
@@ -436,7 +436,7 @@ Is this model an acceptable way forward for SunPy data objects?
 * How does this related to WCS metadata?
     * Stuart - Map generates WCS on the fly from the meta.  Plus other WCS-related metadata is built from the metadata, e.g. `.observer_coordinate`.
     * FITS keys are flat, but many include both "normal" metadata keys as well as those used to create the WCS.
-    * However, this is not always the case. In FITS with multiple extensions, the 0th extension has no data and "noraml" metadata, while other extensions have data and only WCS metadata.
+    * However, this is not always the case. In FITS with multiple extensions, the 0th extension has no data and "normal" metadata, while other extensions have data and only WCS metadata.
     * Danny & Nabil - WCS information should be stored in a WCS object.  That way they can be broken away from the rest of the metadata. Stuart was concerned by this.
     * Nabil - Where should the `observer_coordinate` live?
         * It currently lives at `Map.observer_coordinate` but is built of the fly from the metadata.
@@ -498,7 +498,7 @@ TODOs
 * Stuart involved in astropy governance review to address astropy issue to obtain funding
     * project members - trusted community members who vote to elect the committee
         * how/how are project members defined?
-            * nominated from existing members wtih min threshold
+            * nominated from existing members with min threshold
         * are you a member for life? emeritus members
         * how is it bootstrapped - small initial set created and then immdiate round of elections
     * executive (steering committee) become elected committee >=2 people ~4+/-
@@ -506,10 +506,10 @@ TODOs
         * commit access control etc
         * odd or even number has implications for decision making
     * advisory board have no hard power but run elections and meet with and committee to advise (could trigger election if executive in stalemate)
-    * seperation of concerns - members/executive/board?
+    * separation of concerns - members/executive/board?
     * does this not add more bureaucracy?
     * is the need for 4/5 people driven by time constraints or because of desire to ensure no 1/2 people could missmange
-    * how do currrent project roles and executive interact
+    * how do current project roles and executive interact
     * smaller version
         * members vote in lead dev
         * members also vote in other key roles instead of lead dev
@@ -522,7 +522,7 @@ TODOs
     * what roles should be voted - proposals:
         * lead and deputy and 3rd role?
         * why not two co-lead devs?
-        * sepcific financial role
+        * specific financial role
     * How do these proposal change/alter interaction with current and future funding
         * Do numfocus require a min number of people on executive?
 
@@ -537,22 +537,22 @@ TODOs
     * Yes from Jack, effort for older data to be brought up to standards e.g. SOHO/LASCO data
 
 * If there are instruments that need help in getting data into better standards for meta data etc there is scope to do this (maybe even SkyLab(!))
-* VSO can also give assistance/advice for older datasets to be more easily queried etc (I think thats what was said?)
+* VSO can also give assistance/advice for older datasets to be more easily queried etc (I think that's what was said?)
 * How does support for sunpy development etc get accessed from this source?
     * Someone sends Jack an unsolicited proposal, and it is reviewed by people in the community
     * Decision would be made by folks on larger sunpy community (e.g. board etc) for larger proposed efforts/changes
 
-* From VSO meeting - where do the VSO and sunpy responsibilites meet?
+* From VSO meeting - where do the VSO and sunpy responsibilities meet?
     * e.g. VSO client code
     * SOAR - David: two sides, want people to have access to the data, but on the other side dont want to write a specific client for every mission, so this is why the VSO is ideal
-    * Another example, SUVI, level 2 data available online, however NOAA have asked not to provide it through the VSO due to fact its not of "scientific quality", however it is availble through sunpy
+    * Another example, SUVI, level 2 data available online, however NOAA have asked not to provide it through the VSO due to fact its not of "scientific quality", however it is available through sunpy
 
 * VSO currently has available ~83% of the data that it says it will provide
 
 * Propagation of errors to sunpy - how can a VSO error message become less opaque?
     * show there be a VSO dashboard to show errors, or what is down or not down. The VSO health status - e.g. "please check the VSO health status: `link`"
     * How to differentiate whether the search is wrong or can not be made due to server down or whether there is no actually no data available
-    * The VSO also wants to point to the issue - for example the HAO could be down and want to propagate this (i.e. its not the VSO thats the issue its another server etc)
+    * The VSO also wants to point to the issue - for example the HAO could be down and want to propagate this (i.e. its not the VSO that's the issue its another server etc)
     * VSO also wants to provide an easy machine readable health report that checks every hour or so.
     * Future version of Fido could first check the health status of the VSO before going to query
         * however this would be a challenge as you build the query before you know what provider you are pinging
@@ -593,7 +593,7 @@ TODOs
 * Bigger picture - what clients should be in core?
     * could it be opt in?
     * should sunpy core only have vso/jsoc?
-    * what about SOAR? shouldnt that be in core? It will be indexed by the VSO but the SOAR is still the official source.
+    * what about SOAR? should not that be in core? It will be indexed by the VSO but the SOAR is still the official source.
     * VSO is more institutional but sunpy are more like talking to users
     * Should there be a formalized relationship between sunpy and VSO to have link between providers users?
 
@@ -617,7 +617,7 @@ TODOs
 | Time | Title | Presenter | Moderator | Scribe | Desired Outcome |
 |:----:|:-----:|:---------:|:---------:|:------:|:---------------:|
 | 9:00 | State of the CI | Conor Macbride | | | |
-| 9:30 | Standards and Formatting | Nabil Freij/Stuart Mumford | | | Decide whether to apply black to the core repo; plan of action for doing cleanup/maintance throughout the repository; `mypy`????? |
+| 9:30 | Standards and Formatting | Nabil Freij/Stuart Mumford | | | Decide whether to apply black to the core repo; plan of action for doing cleanup/maintenance throughout the repository; `mypy`????? |
 | 11:00 | Supporting SolO | Shane Maloney/Laura Hayes | | | |
 | 14:00 | IWG--Lightning Talks | instrument teams | Will Barnes | | Better understanding of how instrument teams are using sunpy and the SunPy ecosystem |
 | 16:00 | IWG--Feedback Forum | instrument teams | Will Barnes | | Better understanding of the software needs of instrument teams and a plan for meeting those needs within the ecosystem |
@@ -638,7 +638,7 @@ TODOs
     -  Azure pipelines is still used for some affiliated packages
 -  Recent updates:
     -  Migrated from Azure Pipelines > GitHub actions on sunpy core
-    -  New figure HMTL dashboard
+    -  New figure HTML dashboard
     -  Both of these updates have been contributed upstream, giving them wider use beyond `sunpy` :tada:
 -  Future updates:
     -  Improvements to benchmarking (currently using `asv`)
@@ -772,7 +772,7 @@ EIS [(github)](https://github.com/USNavalResearchLaboratory/eispac):
     * Expansion of fit_spectra() to use other fitting packages such as astropy.modelling (but currently VERY slow)
 
 * What overlap is there between EISPAC and the tools developed for SPICE?
-    * There is alot of overlap, but EISPAC was developed in particular to analyse EIS in python
+    * There is a lot of overlap, but EISPAC was developed in particular to analyse EIS in python
     * One of the main goals was continuity between IDL tools and Python tools which drove the choice of using mpfit
     * Lots of opportunity to collaborate
 
@@ -783,7 +783,7 @@ EIS [(github)](https://github.com/USNavalResearchLaboratory/eispac):
 
 Data search:
 
-* EIS has a Fido client in development. EIS data is available from a directory tree, so first Fido client was a scraper on the site and searches for files between a certain time and not on any other factors. EISPAC searches the EIS catalogue rather than just the time period thats availale in the directory tree
+* EIS has a Fido client in development. EIS data is available from a directory tree, so first Fido client was a scraper on the site and searches for files between a certain time and not on any other factors. EISPAC searches the EIS catalogue rather than just the time period that's available in the directory tree
 
 * SOAR webpage has limited flexibility to search for specific data (such as currently its indexed over time and dataset ID and level). But ideally want to search over some metadata (not available at moment through sunpy_soar either).
     * What is needed is also to search over an observing mode/SOOP/event list etc.
@@ -796,7 +796,7 @@ SunCASA/EOVSA (Sijie):
 * Dynamic spectra (freqtime), complex visibilities (polarization x baseline x frequency x time) and imaging products (freq x time x space x space)
 * Relies on CASA, not ported to Python 3.7+, then SunCASA depends on SunPy 2
 * EOVSASpectrogram class which subclassed from radiospectra and is in development
-* Pure python development of reading measurment sets into Dask arrays (without needing CASA) see: https://casa-formats-io.readthedocs.io/en/latest/ :tada:
+* Pure python development of reading measurement sets into Dask arrays (without needing CASA) see: https://casa-formats-io.readthedocs.io/en/latest/ :tada:
 * Also developing pygsfit for fitting gyrosynchrotron emission. Its a widget based tool to visualize and analyse high-dimensional radio spectral imaging data. Spectral fitting based on GS and thermal emission model.
     * The fitting capability is available outside the GUI, it is also CLI
 
@@ -812,7 +812,7 @@ SunCASA/EOVSA (Sijie):
 
 PUNCH:
 
-* PUNCH constallation of satellites to look at white light/polarisation of the Sun with a large field of view (6-180 solar radii)
+* PUNCH constellation of satellites to look at white light/polarisation of the Sun with a large field of view (6-180 solar radii)
 * Pipeline:
     * instrument specific calibrarion -> alignment -> polarization resolution -> quality marking -> mosaic building -> F-corona and starfield subtraction
 * Level 3 products are full resolution of brightness and polarization brightness and other things
@@ -824,7 +824,7 @@ PUNCH:
 * how is reproject dealt with for different observer location?
     * how is the 3d position assumption used with PUNCH?
 * There is currently no Affiliated Package Liaison - who should PUNCH contact directly -> Will! but also on the sunpy chat.
-    * Will has now been added as the Affiliated Package Liason :tada:
+    * Will has now been added as the Affiliated Package Liaison :tada:
 * Data representation: currently PUNCH uses dictionaries of NDCubes. Need advice
     * NDCollections could be the solution! But PUNCH found issue with aligned axis - will chat offline
     * Other point -> Dan: Maybe the Metadata class could be a way to go, maybe we should standardise some metadata standard in solar? More discussion here
@@ -834,13 +834,13 @@ PUNCH:
 HERMES:
 
 * HERMES a payload as part of the Lunar Gateway, which kind of like the ISS orbiting the Moon as part of the Artemis program
-* HERMES : Heliophysics Environment and Radiation Measurment Experiment Suite
+* HERMES : Heliophysics Environment and Radiation Measurement Experiment Suite
     * Particles and field instruments for radiation and space weather instruments
     * ESA also has a payload which is part of this too (ERSA)
 
 * Launch was previously Nov 2024, but probably more like spring 2025. While to Moon, so data more like 2026
     * 2 years nominal science mission
-    * Studies interplanetary medium (solar wind) and terrestial magnetotail
+    * Studies interplanetary medium (solar wind) and terrestrial magnetotail
     * Pathfinder for space weather payloads for science and space weather
 
 * 4 instruments on payload
@@ -853,7 +853,7 @@ HERMES:
 * 4 instruments -> 4 packages (actually 5 packages)
     * this is a challenge and takes time, some help would be good
 
-* NASA Heliophysics Division Science Data Management Policiy
+* NASA Heliophysics Division Science Data Management Policy
     * all packages open source
     * codes for analysis will be available
     * but also code to go from lower level data to higher level data
@@ -869,12 +869,12 @@ HERMES:
 * Everything is being developed openly [(github)](https://github.com/HERMES-SOC)
 
 * Space physics does not typically use WCS, so no real need for NDCube
-    * if we want interoperability between in-situ, we need to think about how we develop wcs-driven data conatiners for remote sensing.
+    * if we want interoperability between in-situ, we need to think about how we develop wcs-driven data containers for remote sensing.
 
 * Steve: someone should maintain a set of package templates that do not necessarily depend on sunpy
     * send them all to stuart
 
-* There should be an instrument specific package template as requirments are different for analysis packages and instrument packages.
+* There should be an instrument specific package template as requirements are different for analysis packages and instrument packages.
 
 
 * Steve: We consider our userbase as people running locally, but we also have to consider people running on the cloud, and this is something we should think about, especially about running environments (and dev environments) on docker.
@@ -886,7 +886,7 @@ DKIST:
      * imagers, scanning split spectrograph + polarisation, spectropolarimetry
 
  * 12 TB a day of data once everything is up and running
- * All calibration codes are publically available on bitbucket, majority in python
+ * All calibration codes are publicly available on bitbucket, majority in python
  * Could end up 100s of 1000's of fits files per observation
  * NDCube 2.0 development was for DKIST datacenter (stuart)
  * Using dask for data within files, and gwcs for coordinates within array, all built upon NDCube
@@ -895,12 +895,12 @@ DKIST:
     * asdf approach of having all metadata in one place is extremely useful, tested 100,000 files in one go, to check fits headers etc.
     * Want to make use of building [dask](https://www.dask.org) arrays for this
 
-* Dask is great, lots to be done in solar/astro extensions of using it for our analysis (Will working on this amoung some others)
+* Dask is great, lots to be done in solar/astro extensions of using it for our analysis (Will working on this among some others)
     *  Dask can be confusing on how it works - will that be abstracted away with sunpy/dkist tools? should be relatively easy locally but can be "fun" (really complicated) when doing things on severval remote servers
 
 
-* Challenges for large data with sunpy - e.g. ground-based instruments. Cant load/play movie etc.
-    * IDL does very well in terms of plotting images, matplotlib isnt build for this, and unable to do.
+* Challenges for large data with sunpy - e.g. ground-based instruments. Can not load/play movie etc.
+    * IDL does very well in terms of plotting images, matplotlib isn't build for this, and unable to do.
     * WCSAxis slows this down
     * Coordinate information not that important, unless you want to combine with other observations. If you want a quick look movie or look at a feature in particular, you really only need pixels
     * [PyQtGraph](https://www.pyqtgraph.org) is a good package for doing this
@@ -914,7 +914,7 @@ DKIST:
 
 STIX:
  * STIX is great and developing well within sunpy ecosystem
- * could STIXMap and TimeSeries be upstreamed to core in the future? maybe but probably not a good idea -> core shouldnt have instrument specific sources
+ * could STIXMap and TimeSeries be upstreamed to core in the future? maybe but probably not a good idea -> core should not have instrument specific sources
 
 
 CubiXSS/MOXSI:
@@ -932,7 +932,7 @@ SST:
     * data is typically propriety but this is changing
     * issue as data is so large, hard to share
     * end result of pipeline is fits file. To write final files take at least one day
-    * metadata is complient to SOLARNET standards
+    * metadata is compliant to SOLARNET standards
     * WCS-TAB is what is used
 
 * data is visualized with a tool called CRISPEX (IDL)
@@ -953,13 +953,13 @@ SST:
     * documentation: doc template which includes CMAD which is a requirement now from NASA Heliophysics
     * as procssing pileline now has to be available, this must be described and documented so needed in template
     * Would be good to agree on a high level API for thesis instrument packages. e.g. "calibrate_file" or something along those lines. It could be nice to provide a model API within the package. Another example is wavelength response class as this is used by many instruments etc.
-    * Maybe get rid of tox - (Stuart shakes his head), just as things are tested within environement
+    * Maybe get rid of tox - (Stuart shakes his head), just as things are tested within environment
 
 What is benefit of a package that already exists to use a template?
 * Steve: If you are using a template, indivudal maintainers dont need to continuously maintain the template, this can be done if the template updated. For example, if github actions changed etc. For easy of maintaining several packages
 * You could have a template that maintains itself (opens PRs automatically to do updates)
 * Same package structure between packages - easier for contributing and familiarity between them, more potential contributors (lower barrier to entry)
-* On the other side, if you are not maintaining lots of packages (unlike HERMES/SunPy), this isnt as important. You have one package so easy enough to keep up to date as these package updates happen on longer timescales
+* On the other side, if you are not maintaining lots of packages (unlike HERMES/SunPy), this isn't as important. You have one package so easy enough to keep up to date as these package updates happen on longer timescales
 * If starting from scratch, lots of benefits
 * another example, setup.py is going away in next two years, so you would need to update the package. but if you had a bot to do updates, it would sort it out
 
@@ -1025,7 +1025,7 @@ What is benefit of a package that already exists to use a template?
     * Best of both worlds (astro-specific stuff + power of xarray)
     * data-tree example of glueing collection of things together with xarray subclasses
 * We want something that benefits the users, unlocks different parts of the ecosystem
-* Stuart: we stil have a lot to learn about xarray
+* Stuart: we still have a lot to learn about xarray
 * Danny: long term project of collaboration between these communities
     * Not competitive
 * With large data volumes, not practical to pull everything down to your machine locally
@@ -1105,7 +1105,7 @@ Timeseries and xarray
         * Reproject?
 * Also I/O problems
     * Difficult
-* Data formats are going to play a signficiant issue in how we enable science in the cloud
+* Data formats are going to play a significant issue in how we enable science in the cloud
     * experiments with Zarr
     * kerchunk very useful -- translation layer between zarr and fits
 * Zarr is two things
@@ -1145,7 +1145,7 @@ Brainstorm your ideas here. Once we settle on a few projects, we can write more 
 * Funding in Europe -- Shane
 * Re-do the sunpy.org landing page to put the sponsored package ecosystem front and center -- David
 * Presentation branding -- Will
-* Do some outstanding affiliated package reveiws
+* Do some outstanding affiliated package reviews
 * Draft an SEP defining an API for a generalised metadata object
 * ASV -- Albert
 * SolarOrbiter Meeting -- Shane

@@ -55,7 +55,7 @@ Following are the points identified for the changes to be made.
 
 `Database.download(…, path='/abs/path')` - This is the current implementations. This will download data with path as the given absolute path
 
-`Database.download(…, path='rel/path')` - absolute path is taken as base_path+relative_path adn use it to download data.
+`Database.download(…, path='rel/path')` - absolute path is taken as base_path+relative_path and use it to download data.
 
 `Database.fetch` - This also operates as the download method mentioned above.
 
