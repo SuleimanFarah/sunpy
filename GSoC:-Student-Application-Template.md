@@ -50,6 +50,8 @@ Also, please use your full real name in your GSoC portal profile, so that it app
 * How much time do you plan to invest in the project before, during, and after the Summer of Code?
 
     We expect the full time commitment of \~18h per week during GSoC.
+    This will vary depending on the size of the project (175 vs 350 hours) and the 12 to 22 weeks that is now allowed.
+    You need to discuss this with the mentors.
     If you plan to take any vacations over the summer or if you have exams or any other commitments (like an internship), let us know about it here.
 
 ## You the programmer
