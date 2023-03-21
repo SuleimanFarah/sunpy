@@ -1,5 +1,18 @@
 # Weekly Community Meetings Archive
 
+## 15 March 2023
+
+### Agenda
+
+* Welcome to Newcomers
+* DASH Astropy Proposal
+* PR Review
+
+### Notes
+
+- Docs sprint next week (3/22) 4 PM--7 PM (UK time) (12-3 PM EST US)
+    - make progress in rewriting the tutorial in the "continuous-sit-down-and-read-it" style
+
 ## 8 March 2023
 
 ### Agenda
