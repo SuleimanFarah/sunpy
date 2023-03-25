@@ -64,6 +64,9 @@ To do this:
     Take the initiative as it is your responsibility to ask questions and start preparing your application.
     We will provide feedback on your application, and inform you if something is missing or if any of the goals are unrealistic, but we will not write the application.
 
+    We ask that all applications are added to this wiki, to serve as reference for future students.
+    If you want to see other applications from accepted students, the Python Software Foundation has them on their [GSoC blog](https://blogs.python-gsoc.org/en/).
+
 * Submit your application
 
     **YOU MUST SUBMIT YOUR APPLICATION ON THE GSoC WEBSITE**.
